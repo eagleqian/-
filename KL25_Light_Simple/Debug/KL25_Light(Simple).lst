@@ -1,0 +1,893 @@
+
+KL25_Light(Simple).elf:     file format elf32-littlearm
+KL25_Light(Simple).elf
+architecture: arm, flags 0x00000012:
+EXEC_P, HAS_SYMS
+start address 0x00000411
+
+Program Header:
+    LOAD off    0x000000b4 vaddr 0x00000000 paddr 0x00000000 align 2**2
+         filesz 0x000000c0 memsz 0x000000c0 flags r--
+    LOAD off    0x00000174 vaddr 0x00000400 paddr 0x00000400 align 2**0
+         filesz 0x00000010 memsz 0x00000010 flags r--
+    LOAD off    0x00000184 vaddr 0x00000410 paddr 0x00000410 align 2**2
+         filesz 0x0000030c memsz 0x0000030c flags r-x
+    LOAD off    0x00000490 vaddr 0x1ffff000 paddr 0x1ffff000 align 2**0
+         filesz 0x00000000 memsz 0x00000800 flags rw-
+private flags = 5000002: [Version5 EABI] [has entry point]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn  Flags
+  0 .interrupts   000000c0  00000000  00000000  000000b4  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .flash_config 00000010  00000400  00000400  00000174  2**0  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .text         0000030c  00000410  00000410  00000184  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .heap         00000400  1ffff000  1ffff000  00000490  2**0  ALLOC
+  4 .stack        00000400  1ffff400  1ffff400  00000490  2**0  ALLOC
+  5 .ARM.attributes 00000030  00000000  00000000  00000490  2**0  CONTENTS, READONLY
+  6 .debug_info   000008c1  00000000  00000000  000004c0  2**0  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000001e4  00000000  00000000  00000d81  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_aranges 00000090  00000000  00000000  00000f68  2**3  CONTENTS, READONLY, DEBUGGING
+  9 .debug_ranges 00000040  00000000  00000000  00000ff8  2**0  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_macro  000094b2  00000000  00000000  00001038  2**0  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_line   0000079d  00000000  00000000  0000a4ea  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_str    00032065  00000000  00000000  0000ac87  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .comment      00000070  00000000  00000000  0003ccec  2**0  CONTENTS, READONLY
+ 14 .debug_frame  000000c0  00000000  00000000  0003cd5c  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00000000 l    d  .interrupts	00000000 .interrupts
+00000400 l    d  .flash_config	00000000 .flash_config
+00000410 l    d  .text	00000000 .text
+1ffff000 l    d  .heap	00000000 .heap
+1ffff400 l    d  .stack	00000000 .stack
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./03_MCU/startup_MKL25Z4.o
+00000000 l    df *ABS*	00000000 isr.c
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 system_MKL25Z4.c
+00000000 l    df *ABS*	00000000 
+00000400 l       *ABS*	00000000 STACK_SIZE
+1ffff400 l       .heap	00000000 __HeapLimit
+00000400 l       *ABS*	00000000 HEAP_SIZE
+0000071c l       .text	00000000 __DATA_ROM
+20002c00 l       *ABS*	00000000 __StackLimit
+1ffff000 g       .heap	00000000 __HeapBase
+1ffff000 g       .text	00000000 __data_start__
+00000454  w    F .text	00000004 I2C0_IRQHandler
+00000454  w    F .text	00000004 HardFault_Handler
+00000454  w    F .text	00000004 SysTick_Handler
+00000454  w    F .text	00000004 PendSV_Handler
+00000454  w    F .text	00000004 NMI_Handler
+0000071c g       .text	00000000 __exidx_end
+00000454  w    F .text	00000004 I2C1_IRQHandler
+00000464 g     F .text	00000008 UART1_IRQHandler
+0000071c g       .text	00000000 __etext
+00000454  w    F .text	00000004 DMA2_IRQHandler
+00000454  w    F .text	00000004 TPM0_IRQHandler
+00000454  w    F .text	00000004 LLWU_IRQHandler
+00000454  w    F .text	00000004 TSI0_IRQHandler
+0000045c g     F .text	00000008 UART0_IRQHandler
+0000071c g       .text	00000000 __DTOR_END__
+00000454  w    F .text	00000004 ADC0_IRQHandler
+00000454  w    F .text	00000004 Reserved39_IRQHandler
+1ffff000 g       .text	00000000 __START_BSS
+1ffff000 g       .text	00000000 __bss_start__
+00000454  w    F .text	00000004 SPI1_IRQHandler
+00000454  w    F .text	00000004 DefaultISR
+00000454  w    F .text	00000004 PORTD_IRQHandler
+0000071c g       .text	00000000 __exidx_start
+00000454  w    F .text	00000004 TPM2_IRQHandler
+00000454  w    F .text	00000004 RTC_IRQHandler
+00000410  w    F .text	00000044 Reset_Handler
+00000454  w    F .text	00000004 RTC_Seconds_IRQHandler
+00000454  w    F .text	00000004 MCG_IRQHandler
+0000046c g     F .text	00000008 UART2_IRQHandler
+1ffff000 g       .text	00000000 __data_end__
+0000071c g       .text	00000000 __CTOR_LIST__
+1ffff000 g       .text	00000000 __bss_end__
+00000454  w    F .text	00000004 Reserved20_IRQHandler
+00000454  w    F .text	00000004 USB0_IRQHandler
+00000000 g       .interrupts	000000c0 __isr_vector
+00000474 g     F .text	00000120 main
+00000454  w    F .text	00000004 PIT_IRQHandler
+00000454  w    F .text	00000004 SVC_Handler
+1ffff000 g       .text	00000000 __DATA_RAM
+1ffff000 g       .heap	00000000 __end__
+0000071c g       .text	00000000 __CTOR_END__
+00000454  w    F .text	00000004 DMA3_IRQHandler
+0000071c g       .text	00000000 __DTOR_LIST__
+1ffff000 g       .text	00000000 __END_BSS
+00000594 g     F .text	00000188 SystemInit
+00000454  w    F .text	00000004 DMA0_IRQHandler
+00000454  w    F .text	00000004 DAC0_IRQHandler
+20003000 g       *ABS*	00000000 __StackTop
+1ffff000 g       .text	00000000 _mtb_end
+0000071c g       .text	00000000 __DATA_END
+00000454  w    F .text	00000004 Reserved45_IRQHandler
+00000454  w    F .text	00000004 TPM1_IRQHandler
+00000454  w    F .text	00000004 LVD_LVW_IRQHandler
+00000454  w    F .text	00000004 SPI0_IRQHandler
+00000454  w    F .text	00000004 PORTA_IRQHandler
+00000000 g       .interrupts	00000000 __VECTOR_TABLE
+00000454  w    F .text	00000004 FTFA_IRQHandler
+1ffff000 g       .text	00000000 _mtb_start
+00000454  w    F .text	00000004 LPTMR0_IRQHandler
+00000454  w    F .text	00000004 CMP0_IRQHandler
+00000454  w    F .text	00000004 DMA1_IRQHandler
+
+
+
+Disassembly of section .text:
+
+00000410 <Reset_Handler>:
+Reset_Handler():
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:117
+    .align 2
+    .globl   Reset_Handler
+    .weak    Reset_Handler
+    .type    Reset_Handler, %function
+Reset_Handler:
+    cpsid   i               /* 屏蔽中断 */
+ 410:	b672      	cpsid	i
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:119
+#ifndef __NO_SYSTEM_INIT
+    bl SystemInit           /* 跳转到系统初始化函数，在system_MKL25Z4.c中 */
+ 412:	f000 f8bf 	bl	594 <SystemInit>
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:121
+#endif
+    cpsie   i               /* 解除屏蔽中断 */
+ 416:	b662      	cpsie	i
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+ 418:	4909      	ldr	r1, [pc, #36]	; (440 <Reset_Handler+0x30>)
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+ 41a:	4a0a      	ldr	r2, [pc, #40]	; (444 <Reset_Handler+0x34>)
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+ 41c:	4b0a      	ldr	r3, [pc, #40]	; (448 <Reset_Handler+0x38>)
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:131
+
+    subs    r3, r2
+ 41e:	1a9b      	subs	r3, r3, r2
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:132
+    ble     .LC0
+ 420:	dd03      	ble.n	42a <Reset_Handler+0x1a>
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:135
+
+.LC1:
+    subs    r3, 4
+ 422:	3b04      	subs	r3, #4
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:136
+    ldr    r0, [r1,r3]
+ 424:	58c8      	ldr	r0, [r1, r3]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:137
+    str    r0, [r2,r3]
+ 426:	50d0      	str	r0, [r2, r3]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:138
+    bgt    .LC1
+ 428:	dcfb      	bgt.n	422 <Reset_Handler+0x12>
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+ 42a:	4908      	ldr	r1, [pc, #32]	; (44c <Reset_Handler+0x3c>)
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+ 42c:	4a08      	ldr	r2, [pc, #32]	; (450 <Reset_Handler+0x40>)
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:153
+
+    subs    r2, r1
+ 42e:	1a52      	subs	r2, r2, r1
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:154
+    ble .LC3
+ 430:	dd03      	ble.n	43a <Reset_Handler+0x2a>
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:156
+
+    movs    r0, 0
+ 432:	2000      	movs	r0, #0
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:158
+.LC2:
+    str r0, [r1, r2]
+ 434:	5088      	str	r0, [r1, r2]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:159
+    subs    r2, 4
+ 436:	3a04      	subs	r2, #4
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:160
+    bge .LC2
+ 438:	dafc      	bge.n	434 <Reset_Handler+0x24>
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:166
+.LC3:
+#endif
+#ifndef __START
+#define __START main
+#endif
+    bl    __START
+ 43a:	f000 f81b 	bl	474 <main>
+ 43e:	0000      	.short	0x0000
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+ 440:	0000071c 	.word	0x0000071c
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+ 444:	1ffff000 	.word	0x1ffff000
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+ 448:	1ffff000 	.word	0x1ffff000
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+ 44c:	1ffff000 	.word	0x1ffff000
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+ 450:	1ffff000 	.word	0x1ffff000
+
+00000454 <ADC0_IRQHandler>:
+I2C0_IRQHandler():
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+ 454:	4800      	ldr	r0, [pc, #0]	; (458 <ADC0_IRQHandler+0x4>)
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:176
+    bx r0
+ 456:	4700      	bx	r0
+$d():
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+ 458:	00000455 	.word	0x00000455
+
+0000045c <UART0_IRQHandler>:
+UART0_IRQHandler():
+F:\kds\KL25_Light_Simple\Debug/../08_Source/isr.c:12
+#include "includes.h"
+
+//========================中断函数服务例程===============================
+//串口0接收中断服务例程
+void UART0_IRQHandler(void)
+{
+ 45c:	b580      	push	{r7, lr}
+ 45e:	af00      	add	r7, sp, #0
+F:\kds\KL25_Light_Simple\Debug/../08_Source/isr.c:14
+
+}
+ 460:	46bd      	mov	sp, r7
+ 462:	bd80      	pop	{r7, pc}
+
+00000464 <UART1_IRQHandler>:
+UART1_IRQHandler():
+F:\kds\KL25_Light_Simple\Debug/../08_Source/isr.c:19
+
+
+//串口1接收中断服务例程
+void UART1_IRQHandler(void)
+{
+ 464:	b580      	push	{r7, lr}
+ 466:	af00      	add	r7, sp, #0
+F:\kds\KL25_Light_Simple\Debug/../08_Source/isr.c:21
+
+}
+ 468:	46bd      	mov	sp, r7
+ 46a:	bd80      	pop	{r7, pc}
+
+0000046c <UART2_IRQHandler>:
+UART2_IRQHandler():
+F:\kds\KL25_Light_Simple\Debug/../08_Source/isr.c:25
+
+//串口2接收中断服务例程
+void UART2_IRQHandler(void)
+{
+ 46c:	b580      	push	{r7, lr}
+ 46e:	af00      	add	r7, sp, #0
+F:\kds\KL25_Light_Simple\Debug/../08_Source/isr.c:27
+
+}
+ 470:	46bd      	mov	sp, r7
+ 472:	bd80      	pop	{r7, pc}
+
+00000474 <main>:
+main():
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:6
+//说明见工程文件夹下的Doc文件夹内Readme.txt文件
+//============================================================================
+
+#include "includes.h"   //包含总头文件
+
+int main(void) {
+ 474:	b580      	push	{r7, lr}
+ 476:	b08e      	sub	sp, #56	; 0x38
+ 478:	af00      	add	r7, sp, #0
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:8
+	//1. 声明主函数使用的变量
+	uint_32 mRuncount = 0;     //主循环计数器
+ 47a:	2300      	movs	r3, #0
+ 47c:	637b      	str	r3, [r7, #52]	; 0x34
+__disable_irq():
+F:/kds/KL25_Light_Simple/02_CPU/core_cmFunc.h:344
+  This function disables IRQ interrupts by setting the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+{
+  __ASM volatile ("cpsid i" : : : "memory");
+ 47e:	b672      	cpsid	i
+main():
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:17
+
+	//GPIO基本编程步骤：
+
+	//(1)计算给出PORTB9的引脚控制寄存器地址
+	//PORTB端口的引脚控制寄存器基地址为0x4004A000u（后缀u表示无符号数）
+	volatile uint_32 *portB_ptr = (uint_32*) 0x4004A000u;
+ 480:	4b3e      	ldr	r3, [pc, #248]	; (57c <main+0x108>)
+ 482:	633b      	str	r3, [r7, #48]	; 0x30
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:19
+	//PORTB9的引脚控制寄存器地址=基地址+偏移量
+	volatile uint_32 *portB_PCR_9 = portB_ptr + 18;
+ 484:	6b3b      	ldr	r3, [r7, #48]	; 0x30
+ 486:	3348      	adds	r3, #72	; 0x48
+ 488:	62fb      	str	r3, [r7, #44]	; 0x2c
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:21
+
+	volatile uint_32 *portA_ptr = (uint_32*) 0x40049000u;
+ 48a:	4b3d      	ldr	r3, [pc, #244]	; (580 <main+0x10c>)
+ 48c:	62bb      	str	r3, [r7, #40]	; 0x28
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:22
+	volatile uint_32 *portA_PCR_1 = portA_ptr + 1;	//端口A引脚1的寄存器
+ 48e:	6abb      	ldr	r3, [r7, #40]	; 0x28
+ 490:	3304      	adds	r3, #4
+ 492:	627b      	str	r3, [r7, #36]	; 0x24
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:23
+	volatile uint_32 *portA_PCR_2 = portA_ptr + 2;
+ 494:	6abb      	ldr	r3, [r7, #40]	; 0x28
+ 496:	3308      	adds	r3, #8
+ 498:	623b      	str	r3, [r7, #32]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:24
+	*portA_PCR_1 &= 0b11111111111111111111100011111111; //清MUX位段
+ 49a:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ 49c:	681a      	ldr	r2, [r3, #0]
+ 49e:	4b39      	ldr	r3, [pc, #228]	; (584 <main+0x110>)
+ 4a0:	401a      	ands	r2, r3
+ 4a2:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ 4a4:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:25
+	*portA_PCR_1 |= 0b00000000000000000000000100000000;
+ 4a6:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ 4a8:	681b      	ldr	r3, [r3, #0]
+ 4aa:	2280      	movs	r2, #128	; 0x80
+ 4ac:	0052      	lsls	r2, r2, #1
+ 4ae:	431a      	orrs	r2, r3
+ 4b0:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+ 4b2:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:26
+	*portA_PCR_2 &= 0b11111111111111111111100011111111; //清MUX位段
+ 4b4:	6a3b      	ldr	r3, [r7, #32]
+ 4b6:	681a      	ldr	r2, [r3, #0]
+ 4b8:	4b32      	ldr	r3, [pc, #200]	; (584 <main+0x110>)
+ 4ba:	401a      	ands	r2, r3
+ 4bc:	6a3b      	ldr	r3, [r7, #32]
+ 4be:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:27
+	*portA_PCR_2 |= 0b00000000000000000000000100000000;
+ 4c0:	6a3b      	ldr	r3, [r7, #32]
+ 4c2:	681b      	ldr	r3, [r3, #0]
+ 4c4:	2280      	movs	r2, #128	; 0x80
+ 4c6:	0052      	lsls	r2, r2, #1
+ 4c8:	431a      	orrs	r2, r3
+ 4ca:	6a3b      	ldr	r3, [r7, #32]
+ 4cc:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:31
+
+	//(2)计算给出PORTB的数据方向寄存器、输出反转寄存器地址
+	//PORTA的基地址
+	volatile uint_32 *gpioA_ptr = (uint_32*) 0x400FF000u;
+ 4ce:	4b2e      	ldr	r3, [pc, #184]	; (588 <main+0x114>)
+ 4d0:	61fb      	str	r3, [r7, #28]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:32
+	volatile uint_32 *portA_PDIR = gpioA_ptr + 4;
+ 4d2:	69fb      	ldr	r3, [r7, #28]
+ 4d4:	3310      	adds	r3, #16
+ 4d6:	61bb      	str	r3, [r7, #24]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:33
+	volatile uint_32 *portA_PDDR = gpioA_ptr + 5;
+ 4d8:	69fb      	ldr	r3, [r7, #28]
+ 4da:	3314      	adds	r3, #20
+ 4dc:	617b      	str	r3, [r7, #20]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:35
+
+	*portA_PDDR &= ~(1 << 1);
+ 4de:	697b      	ldr	r3, [r7, #20]
+ 4e0:	681b      	ldr	r3, [r3, #0]
+ 4e2:	2202      	movs	r2, #2
+ 4e4:	1c19      	adds	r1, r3, #0
+ 4e6:	4391      	bics	r1, r2
+ 4e8:	1c0a      	adds	r2, r1, #0
+ 4ea:	697b      	ldr	r3, [r7, #20]
+ 4ec:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:38
+
+	//PORTB端口（作为GPIO功能）的基地址为0x400FF040u
+	volatile uint_32 *gpioB_ptr = (uint_32*) 0x400FF040u;
+ 4ee:	4b27      	ldr	r3, [pc, #156]	; (58c <main+0x118>)
+ 4f0:	613b      	str	r3, [r7, #16]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:40
+	//PORTB的数据方向寄存器地址=基地址+偏移量
+	volatile uint_32 *portB_PDDR = gpioB_ptr + 5;
+ 4f2:	693b      	ldr	r3, [r7, #16]
+ 4f4:	3314      	adds	r3, #20
+ 4f6:	60fb      	str	r3, [r7, #12]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:42
+	//PORTB的输出寄存器地址=基地址+偏移量
+	volatile uint_32 *portB_PDO = gpioB_ptr + 0;
+ 4f8:	693b      	ldr	r3, [r7, #16]
+ 4fa:	60bb      	str	r3, [r7, #8]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:44
+	//PORTB的输出反转寄存器地址=基地址+偏移量
+	volatile uint_32 *portB_PTOR = gpioB_ptr + 3;
+ 4fc:	693b      	ldr	r3, [r7, #16]
+ 4fe:	330c      	adds	r3, #12
+ 500:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:48
+
+	//(3)设置PORTB9引脚为GPIO引脚，即令相应引脚控制寄存器的10-8位
+	//(MUX)字段为001
+	*portB_PCR_9 &= 0b11111111111111111111100011111111; //清MUX位段
+ 502:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 504:	681a      	ldr	r2, [r3, #0]
+ 506:	4b1f      	ldr	r3, [pc, #124]	; (584 <main+0x110>)
+ 508:	401a      	ands	r2, r3
+ 50a:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 50c:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:49
+	*portB_PCR_9 |= 0b00000000000000000000000100000000;
+ 50e:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 510:	681b      	ldr	r3, [r3, #0]
+ 512:	2280      	movs	r2, #128	; 0x80
+ 514:	0052      	lsls	r2, r2, #1
+ 516:	431a      	orrs	r2, r3
+ 518:	6afb      	ldr	r3, [r7, #44]	; 0x2c
+ 51a:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:52
+
+	//(4)通过PORTB的输出寄存器(给蓝色小灯的寄存器）赋初值1，保证定义为输出时为暗
+	*portB_PDO |= (1 << 18);
+ 51c:	68bb      	ldr	r3, [r7, #8]
+ 51e:	681b      	ldr	r3, [r3, #0]
+ 520:	2280      	movs	r2, #128	; 0x80
+ 522:	02d2      	lsls	r2, r2, #11
+ 524:	431a      	orrs	r2, r3
+ 526:	68bb      	ldr	r3, [r7, #8]
+ 528:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:55
+
+	//(5)通过PORTB的方向寄存器，定义PORTB9引脚输出
+	*portB_PDDR |= (1 << 18);
+ 52a:	68fb      	ldr	r3, [r7, #12]
+ 52c:	681b      	ldr	r3, [r3, #0]
+ 52e:	2280      	movs	r2, #128	; 0x80
+ 530:	02d2      	lsls	r2, r2, #11
+ 532:	431a      	orrs	r2, r3
+ 534:	68fb      	ldr	r3, [r7, #12]
+ 536:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:59
+
+	//(6)通过PORTB的输出寄存器给蓝色小灯赋初值（0-亮）
+	//（以下供单步调试观察）
+	*portB_PDO &= ~(1 << 18);   //亮
+ 538:	68bb      	ldr	r3, [r7, #8]
+ 53a:	681a      	ldr	r2, [r3, #0]
+ 53c:	4b14      	ldr	r3, [pc, #80]	; (590 <main+0x11c>)
+ 53e:	401a      	ands	r2, r3
+ 540:	68bb      	ldr	r3, [r7, #8]
+ 542:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:60
+	*portB_PDO |= (1 << 18);    //暗
+ 544:	68bb      	ldr	r3, [r7, #8]
+ 546:	681b      	ldr	r3, [r3, #0]
+ 548:	2280      	movs	r2, #128	; 0x80
+ 54a:	02d2      	lsls	r2, r2, #11
+ 54c:	431a      	orrs	r2, r3
+ 54e:	68bb      	ldr	r3, [r7, #8]
+ 550:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:61
+	*portB_PDO &= ~(1 << 18);   //亮
+ 552:	68bb      	ldr	r3, [r7, #8]
+ 554:	681a      	ldr	r2, [r3, #0]
+ 556:	4b0e      	ldr	r3, [pc, #56]	; (590 <main+0x11c>)
+ 558:	401a      	ands	r2, r3
+ 55a:	68bb      	ldr	r3, [r7, #8]
+ 55c:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:62
+	*portB_PDO |= (1 << 18);    //暗
+ 55e:	68bb      	ldr	r3, [r7, #8]
+ 560:	681b      	ldr	r3, [r3, #0]
+ 562:	2280      	movs	r2, #128	; 0x80
+ 564:	02d2      	lsls	r2, r2, #11
+ 566:	431a      	orrs	r2, r3
+ 568:	68bb      	ldr	r3, [r7, #8]
+ 56a:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:65
+
+	//4. 给有关变量赋初值
+	mRuncount = 0;                         //主循环计数器
+ 56c:	2300      	movs	r3, #0
+ 56e:	637b      	str	r3, [r7, #52]	; 0x34
+__enable_irq():
+F:/kds/KL25_Light_Simple/02_CPU/core_cmFunc.h:333
+  This function enables IRQ interrupts by clearing the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+{
+  __ASM volatile ("cpsie i" : : : "memory");
+ 570:	b662      	cpsie	i
+main():
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:91
+
+		 } //end_for
+		 }
+		 */
+		//主循环结束===================================================================
+		return 0;
+ 572:	2300      	movs	r3, #0
+F:\kds\KL25_Light_Simple\Debug/../08_Source/main.c:93
+	}
+}
+ 574:	1c18      	adds	r0, r3, #0
+ 576:	46bd      	mov	sp, r7
+ 578:	b00e      	add	sp, #56	; 0x38
+ 57a:	bd80      	pop	{r7, pc}
+ 57c:	4004a000 	.word	0x4004a000
+ 580:	40049000 	.word	0x40049000
+ 584:	fffff8ff 	.word	0xfffff8ff
+ 588:	400ff000 	.word	0x400ff000
+ 58c:	400ff040 	.word	0x400ff040
+ 590:	fffbffff 	.word	0xfffbffff
+
+00000594 <SystemInit>:
+SystemInit():
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:111
+//函数名称：SystemInit
+//函数返回：无
+//参数说明：无
+//功能概要：初始化系统的时钟
+//===========================================================================
+void SystemInit (void) {
+ 594:	b580      	push	{r7, lr}
+ 596:	af00      	add	r7, sp, #0
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:114
+
+#if (DISABLE_WDOG)  //关闭看门狗
+    SIM->COPC = (uint32_t)0x00u;    //SIM_COPC: COPT=0,COPCLKS=0,COPW=0
+ 598:	4a53      	ldr	r2, [pc, #332]	; (6e8 <SystemInit+0x154>)
+ 59a:	2388      	movs	r3, #136	; 0x88
+ 59c:	015b      	lsls	r3, r3, #5
+ 59e:	2100      	movs	r1, #0
+ 5a0:	50d1      	str	r1, [r2, r3]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:118
+#endif
+
+#ifdef CLOCK_SETUP
+  if((RCM->SRS0 & RCM_SRS0_WAKEUP_MASK) != 0x00U)
+ 5a2:	4b52      	ldr	r3, [pc, #328]	; (6ec <SystemInit+0x158>)
+ 5a4:	781b      	ldrb	r3, [r3, #0]
+ 5a6:	b2db      	uxtb	r3, r3
+ 5a8:	1c1a      	adds	r2, r3, #0
+ 5aa:	2301      	movs	r3, #1
+ 5ac:	4013      	ands	r3, r2
+ 5ae:	d00e      	beq.n	5ce <SystemInit+0x3a>
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:120
+  {
+    if((PMC->REGSC & PMC_REGSC_ACKISO_MASK) != 0x00U)
+ 5b0:	4b4f      	ldr	r3, [pc, #316]	; (6f0 <SystemInit+0x15c>)
+ 5b2:	789b      	ldrb	r3, [r3, #2]
+ 5b4:	b2db      	uxtb	r3, r3
+ 5b6:	1c1a      	adds	r2, r3, #0
+ 5b8:	2308      	movs	r3, #8
+ 5ba:	4013      	ands	r3, r2
+ 5bc:	d007      	beq.n	5ce <SystemInit+0x3a>
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:122
+    {
+       PMC->REGSC |= PMC_REGSC_ACKISO_MASK; /* 释放ACKISO */
+ 5be:	4b4c      	ldr	r3, [pc, #304]	; (6f0 <SystemInit+0x15c>)
+ 5c0:	4a4b      	ldr	r2, [pc, #300]	; (6f0 <SystemInit+0x15c>)
+ 5c2:	7892      	ldrb	r2, [r2, #2]
+ 5c4:	b2d2      	uxtb	r2, r2
+ 5c6:	2108      	movs	r1, #8
+ 5c8:	430a      	orrs	r2, r1
+ 5ca:	b2d2      	uxtb	r2, r2
+ 5cc:	709a      	strb	r2, [r3, #2]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:128
+    }
+  }
+
+  /* 电源模式保护初始化 */
+#ifdef SYSTEM_SMC_PMPROT_VALUE
+  SMC->PMPROT = SYSTEM_SMC_PMPROT_VALUE;
+ 5ce:	4b49      	ldr	r3, [pc, #292]	; (6f4 <SystemInit+0x160>)
+ 5d0:	222a      	movs	r2, #42	; 0x2a
+ 5d2:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:148
+#if defined(SLOW_TRIM_ADDRESS)
+  }
+  #endif
+
+  /* 设置系统预分频和时钟的值 */
+  SIM->CLKDIV1 = SYSTEM_SIM_CLKDIV1_VALUE; /* Set system prescalers */
+ 5d4:	4a44      	ldr	r2, [pc, #272]	; (6e8 <SystemInit+0x154>)
+ 5d6:	4b48      	ldr	r3, [pc, #288]	; (6f8 <SystemInit+0x164>)
+ 5d8:	4948      	ldr	r1, [pc, #288]	; (6fc <SystemInit+0x168>)
+ 5da:	50d1      	str	r1, [r2, r3]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:149
+  SIM->SOPT1 = ((SIM->SOPT1) & (uint32_t)(~(SIM_SOPT1_OSC32KSEL_MASK))) | ((SYSTEM_SIM_SOPT1_VALUE) & (SIM_SOPT1_OSC32KSEL_MASK)); /* Set 32 kHz clock source (ERCLK32K) */
+ 5dc:	4b42      	ldr	r3, [pc, #264]	; (6e8 <SystemInit+0x154>)
+ 5de:	4a42      	ldr	r2, [pc, #264]	; (6e8 <SystemInit+0x154>)
+ 5e0:	6812      	ldr	r2, [r2, #0]
+ 5e2:	21c0      	movs	r1, #192	; 0xc0
+ 5e4:	0309      	lsls	r1, r1, #12
+ 5e6:	430a      	orrs	r2, r1
+ 5e8:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:150
+  SIM->SOPT2 = ((SIM->SOPT2) & (uint32_t)(~(SIM_SOPT2_PLLFLLSEL_MASK))) | ((SYSTEM_SIM_SOPT2_VALUE) & (SIM_SOPT2_PLLFLLSEL_MASK)); /* Selects the high frequency clock for various peripheral clocking options. */
+ 5ea:	4a3f      	ldr	r2, [pc, #252]	; (6e8 <SystemInit+0x154>)
+ 5ec:	493e      	ldr	r1, [pc, #248]	; (6e8 <SystemInit+0x154>)
+ 5ee:	4b44      	ldr	r3, [pc, #272]	; (700 <SystemInit+0x16c>)
+ 5f0:	58cb      	ldr	r3, [r1, r3]
+ 5f2:	2180      	movs	r1, #128	; 0x80
+ 5f4:	0249      	lsls	r1, r1, #9
+ 5f6:	4319      	orrs	r1, r3
+ 5f8:	4b41      	ldr	r3, [pc, #260]	; (700 <SystemInit+0x16c>)
+ 5fa:	50d1      	str	r1, [r2, r3]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:151
+  SIM->SOPT2 = ((SIM->SOPT2) & (uint32_t)(~(SIM_SOPT2_TPMSRC_MASK))) | ((SYSTEM_SIM_SOPT2_VALUE) & (SIM_SOPT2_TPMSRC_MASK)); /* Selects the clock source for the TPM counter clock. */
+ 5fc:	4a3a      	ldr	r2, [pc, #232]	; (6e8 <SystemInit+0x154>)
+ 5fe:	493a      	ldr	r1, [pc, #232]	; (6e8 <SystemInit+0x154>)
+ 600:	4b3f      	ldr	r3, [pc, #252]	; (700 <SystemInit+0x16c>)
+ 602:	58c9      	ldr	r1, [r1, r3]
+ 604:	4b3f      	ldr	r3, [pc, #252]	; (704 <SystemInit+0x170>)
+ 606:	400b      	ands	r3, r1
+ 608:	2180      	movs	r1, #128	; 0x80
+ 60a:	0449      	lsls	r1, r1, #17
+ 60c:	4319      	orrs	r1, r3
+ 60e:	4b3c      	ldr	r3, [pc, #240]	; (700 <SystemInit+0x16c>)
+ 610:	50d1      	str	r1, [r2, r3]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:185
+  #endif
+
+#else /* MCG_MODE */
+  /* Set MCG and OSC */
+  /* SIM_SCGC5: PORTA=1 */
+  SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
+ 612:	4a35      	ldr	r2, [pc, #212]	; (6e8 <SystemInit+0x154>)
+ 614:	4934      	ldr	r1, [pc, #208]	; (6e8 <SystemInit+0x154>)
+ 616:	4b3c      	ldr	r3, [pc, #240]	; (708 <SystemInit+0x174>)
+ 618:	58cb      	ldr	r3, [r1, r3]
+ 61a:	2180      	movs	r1, #128	; 0x80
+ 61c:	0089      	lsls	r1, r1, #2
+ 61e:	4319      	orrs	r1, r3
+ 620:	4b39      	ldr	r3, [pc, #228]	; (708 <SystemInit+0x174>)
+ 622:	50d1      	str	r1, [r2, r3]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:187
+  /* PORTA_PCR18: ISF=0,MUX=0 */
+  PORTA_PCR18 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
+ 624:	4b39      	ldr	r3, [pc, #228]	; (70c <SystemInit+0x178>)
+ 626:	4a39      	ldr	r2, [pc, #228]	; (70c <SystemInit+0x178>)
+ 628:	6c91      	ldr	r1, [r2, #72]	; 0x48
+ 62a:	4a39      	ldr	r2, [pc, #228]	; (710 <SystemInit+0x17c>)
+ 62c:	400a      	ands	r2, r1
+ 62e:	649a      	str	r2, [r3, #72]	; 0x48
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:190
+  if (((SYSTEM_MCG_C2_VALUE) & MCG_C2_EREFS0_MASK) != 0x00U) {
+  /* PORTA_PCR19: ISF=0,MUX=0 */
+  PORTA_PCR19 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
+ 630:	4b36      	ldr	r3, [pc, #216]	; (70c <SystemInit+0x178>)
+ 632:	4a36      	ldr	r2, [pc, #216]	; (70c <SystemInit+0x178>)
+ 634:	6cd1      	ldr	r1, [r2, #76]	; 0x4c
+ 636:	4a36      	ldr	r2, [pc, #216]	; (710 <SystemInit+0x17c>)
+ 638:	400a      	ands	r2, r1
+ 63a:	64da      	str	r2, [r3, #76]	; 0x4c
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:192
+  }
+  MCG->SC = SYSTEM_MCG_SC_VALUE;       /* Set SC (fast clock internal reference divider) */
+ 63c:	4b35      	ldr	r3, [pc, #212]	; (714 <SystemInit+0x180>)
+ 63e:	2200      	movs	r2, #0
+ 640:	721a      	strb	r2, [r3, #8]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:193
+  MCG->C2 = (SYSTEM_MCG_C2_VALUE) & (uint8_t)(~(MCG_C2_LP_MASK)); /* Set C2 (freq. range, ext. and int. reference selection etc.; low power bit is set later) */
+ 642:	4b34      	ldr	r3, [pc, #208]	; (714 <SystemInit+0x180>)
+ 644:	2224      	movs	r2, #36	; 0x24
+ 646:	705a      	strb	r2, [r3, #1]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:194
+  OSC0->CR = SYSTEM_OSC0_CR_VALUE;     /* Set OSC_CR (OSCERCLK enable, oscillator capacitor load) */
+ 648:	4b33      	ldr	r3, [pc, #204]	; (718 <SystemInit+0x184>)
+ 64a:	2280      	movs	r2, #128	; 0x80
+ 64c:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:196
+  #if (MCG_MODE == MCG_MODE_PEE)
+  MCG->C1 = (SYSTEM_MCG_C1_VALUE) | MCG_C1_CLKS(0x02); /* Set C1 (clock source selection, FLL ext. reference divider, int. reference enable etc.) - PBE mode*/
+ 64e:	4b31      	ldr	r3, [pc, #196]	; (714 <SystemInit+0x180>)
+ 650:	229a      	movs	r2, #154	; 0x9a
+ 652:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:201
+  #else
+  MCG->C1 = SYSTEM_MCG_C1_VALUE;       /* Set C1 (clock source selection, FLL ext. reference divider, int. reference enable etc.) */
+  #endif
+  if (((SYSTEM_MCG_C2_VALUE) & MCG_C2_EREFS0_MASK) != 0x00U) {
+    while((MCG->S & MCG_S_OSCINIT0_MASK) == 0x00U) { /* Check that the oscillator is running */
+ 654:	46c0      	nop			; (mov r8, r8)
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:201 (discriminator 1)
+ 656:	4b2f      	ldr	r3, [pc, #188]	; (714 <SystemInit+0x180>)
+ 658:	799b      	ldrb	r3, [r3, #6]
+ 65a:	b2db      	uxtb	r3, r3
+ 65c:	1c1a      	adds	r2, r3, #0
+ 65e:	2302      	movs	r3, #2
+ 660:	4013      	ands	r3, r2
+ 662:	d0f8      	beq.n	656 <SystemInit+0xc2>
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:209
+  /* Check that the source of the FLL reference clock is the requested one. */
+  if (((SYSTEM_MCG_C1_VALUE) & MCG_C1_IREFS_MASK) != 0x00U) {
+    while((MCG->S & MCG_S_IREFST_MASK) == 0x00U) {
+    }
+  } else {
+    while((MCG->S & MCG_S_IREFST_MASK) != 0x00U) {
+ 664:	46c0      	nop			; (mov r8, r8)
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:209 (discriminator 1)
+ 666:	4b2b      	ldr	r3, [pc, #172]	; (714 <SystemInit+0x180>)
+ 668:	799b      	ldrb	r3, [r3, #6]
+ 66a:	b2db      	uxtb	r3, r3
+ 66c:	1c1a      	adds	r2, r3, #0
+ 66e:	2310      	movs	r3, #16
+ 670:	4013      	ands	r3, r2
+ 672:	d1f8      	bne.n	666 <SystemInit+0xd2>
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:212
+    }
+  }
+  MCG->C4 = ((SYSTEM_MCG_C4_VALUE)  & (uint8_t)(~(MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK))) | (MCG->C4 & (MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK)); /* Set C4 (FLL output; trim values not changed) */
+ 674:	4b27      	ldr	r3, [pc, #156]	; (714 <SystemInit+0x180>)
+ 676:	4a27      	ldr	r2, [pc, #156]	; (714 <SystemInit+0x180>)
+ 678:	78d2      	ldrb	r2, [r2, #3]
+ 67a:	b2d1      	uxtb	r1, r2
+ 67c:	221f      	movs	r2, #31
+ 67e:	400a      	ands	r2, r1
+ 680:	b2d2      	uxtb	r2, r2
+ 682:	70da      	strb	r2, [r3, #3]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:218
+#endif /* MCG_MODE */
+
+  /* Common for all MCG modes */
+
+  /* PLL clock can be used to generate clock for some devices regardless of clock generator (MCGOUTCLK) mode. */
+  MCG->C5 = (SYSTEM_MCG_C5_VALUE) & (uint8_t)(~(MCG_C5_PLLCLKEN0_MASK)); /* Set C5 (PLL settings, PLL reference divider etc.) */
+ 684:	4b23      	ldr	r3, [pc, #140]	; (714 <SystemInit+0x180>)
+ 686:	2201      	movs	r2, #1
+ 688:	711a      	strb	r2, [r3, #4]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:219
+  MCG->C6 = (SYSTEM_MCG_C6_VALUE) & (uint8_t)~(MCG_C6_PLLS_MASK); /* Set C6 (PLL select, VCO divider etc.) */
+ 68a:	4b22      	ldr	r3, [pc, #136]	; (714 <SystemInit+0x180>)
+ 68c:	2200      	movs	r2, #0
+ 68e:	715a      	strb	r2, [r3, #5]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:228
+  /* BLPE, PEE and PBE MCG mode specific */
+
+#if (MCG_MODE == MCG_MODE_BLPE)
+  MCG->C2 |= (MCG_C2_LP_MASK);         /* Disable FLL and PLL in bypass mode */
+#elif ((MCG_MODE == MCG_MODE_PBE) || (MCG_MODE == MCG_MODE_PEE))
+  MCG->C6 |= (MCG_C6_PLLS_MASK);       /* Set C6 (PLL select, VCO divider etc.) */
+ 690:	4b20      	ldr	r3, [pc, #128]	; (714 <SystemInit+0x180>)
+ 692:	4a20      	ldr	r2, [pc, #128]	; (714 <SystemInit+0x180>)
+ 694:	7952      	ldrb	r2, [r2, #5]
+ 696:	b2d2      	uxtb	r2, r2
+ 698:	2140      	movs	r1, #64	; 0x40
+ 69a:	430a      	orrs	r2, r1
+ 69c:	b2d2      	uxtb	r2, r2
+ 69e:	715a      	strb	r2, [r3, #5]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:229
+  while((MCG->S & MCG_S_LOCK0_MASK) == 0x00U) { /* Wait until PLL is locked*/
+ 6a0:	46c0      	nop			; (mov r8, r8)
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:229 (discriminator 1)
+ 6a2:	4b1c      	ldr	r3, [pc, #112]	; (714 <SystemInit+0x180>)
+ 6a4:	799b      	ldrb	r3, [r3, #6]
+ 6a6:	b2db      	uxtb	r3, r3
+ 6a8:	1c1a      	adds	r2, r3, #0
+ 6aa:	2340      	movs	r3, #64	; 0x40
+ 6ac:	4013      	ands	r3, r2
+ 6ae:	d0f8      	beq.n	6a2 <SystemInit+0x10e>
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:232
+  }
+  #if (MCG_MODE == MCG_MODE_PEE)
+  MCG->C1 &= (uint8_t)~(MCG_C1_CLKS_MASK);
+ 6b0:	4b18      	ldr	r3, [pc, #96]	; (714 <SystemInit+0x180>)
+ 6b2:	4a18      	ldr	r2, [pc, #96]	; (714 <SystemInit+0x180>)
+ 6b4:	7812      	ldrb	r2, [r2, #0]
+ 6b6:	b2d1      	uxtb	r1, r2
+ 6b8:	223f      	movs	r2, #63	; 0x3f
+ 6ba:	400a      	ands	r2, r1
+ 6bc:	b2d2      	uxtb	r2, r2
+ 6be:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:255
+  }
+#elif ((MCG_MODE == MCG_MODE_FBE) || (MCG_MODE == MCG_MODE_PBE) || (MCG_MODE == MCG_MODE_BLPE))
+  while((MCG->S & MCG_S_CLKST_MASK) != 0x08U) { /* Wait until external reference clock is selected as MCG output */
+  }
+#elif (MCG_MODE == MCG_MODE_PEE)
+  while((MCG->S & MCG_S_CLKST_MASK) != 0x0CU) { /* Wait until output of the PLL is selected */
+ 6c0:	46c0      	nop			; (mov r8, r8)
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:255 (discriminator 1)
+ 6c2:	4b14      	ldr	r3, [pc, #80]	; (714 <SystemInit+0x180>)
+ 6c4:	799b      	ldrb	r3, [r3, #6]
+ 6c6:	b2db      	uxtb	r3, r3
+ 6c8:	1c1a      	adds	r2, r3, #0
+ 6ca:	230c      	movs	r3, #12
+ 6cc:	4013      	ands	r3, r2
+ 6ce:	2b0c      	cmp	r3, #12
+ 6d0:	d1f7      	bne.n	6c2 <SystemInit+0x12e>
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:271
+    NVIC_EnableIRQ(MCG_IRQn);          /* Enable PLL loss of lock interrupt request */
+  }
+#endif
+
+    //初始化后，开始PORT模块时钟
+    SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK
+ 6d2:	4a05      	ldr	r2, [pc, #20]	; (6e8 <SystemInit+0x154>)
+ 6d4:	4904      	ldr	r1, [pc, #16]	; (6e8 <SystemInit+0x154>)
+ 6d6:	4b0c      	ldr	r3, [pc, #48]	; (708 <SystemInit+0x174>)
+ 6d8:	58cb      	ldr	r3, [r1, r3]
+ 6da:	21f8      	movs	r1, #248	; 0xf8
+ 6dc:	0189      	lsls	r1, r1, #6
+ 6de:	4319      	orrs	r1, r3
+ 6e0:	4b09      	ldr	r3, [pc, #36]	; (708 <SystemInit+0x174>)
+ 6e2:	50d1      	str	r1, [r2, r3]
+F:\kds\KL25_Light_Simple\Debug/../03_MCU/system_MKL25Z4.c:276
+  			  | SIM_SCGC5_PORTB_MASK
+  			  | SIM_SCGC5_PORTC_MASK
+  			  | SIM_SCGC5_PORTD_MASK
+  			  | SIM_SCGC5_PORTE_MASK;
+}
+ 6e4:	46bd      	mov	sp, r7
+ 6e6:	bd80      	pop	{r7, pc}
+ 6e8:	40047000 	.word	0x40047000
+ 6ec:	4007f000 	.word	0x4007f000
+ 6f0:	4007d000 	.word	0x4007d000
+ 6f4:	4007e000 	.word	0x4007e000
+ 6f8:	00001044 	.word	0x00001044
+ 6fc:	10010000 	.word	0x10010000
+ 700:	00001004 	.word	0x00001004
+ 704:	fcffffff 	.word	0xfcffffff
+ 708:	00001038 	.word	0x00001038
+ 70c:	40049000 	.word	0x40049000
+ 710:	fefff8ff 	.word	0xfefff8ff
+ 714:	40064000 	.word	0x40064000
+ 718:	40065000 	.word	0x40065000

@@ -1,0 +1,521 @@
+
+Discarded input sections
+
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/isr.o
+ .text          0x00000000        0x0 ./08_NOS_Prg/isr.o
+ .data          0x00000000        0x0 ./08_NOS_Prg/isr.o
+ .bss           0x00000000        0x0 ./08_NOS_Prg/isr.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./08_NOS_Prg/main.o
+ .text          0x00000000        0x0 ./08_NOS_Prg/main.o
+ .data          0x00000000        0x0 ./08_NOS_Prg/main.o
+ .bss           0x00000000        0x0 ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000      0x7f6 ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000       0x16 ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000       0x16 ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000       0x44 ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000      0x209 ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000       0x3a ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000       0x3a ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000       0x26 ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000      0x306 ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000       0x10 ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000     0x839f ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000       0x2e ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000       0x52 ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000       0x40 ./08_NOS_Prg/main.o
+ .debug_macro   0x00000000       0x16 ./08_NOS_Prg/main.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./06_App_Component/key/key.o
+ .text          0x00000000        0x0 ./06_App_Component/key/key.o
+ .data          0x00000000        0x0 ./06_App_Component/key/key.o
+ .bss           0x00000000        0x0 ./06_App_Component/key/key.o
+ .debug_macro   0x00000000      0x7f6 ./06_App_Component/key/key.o
+ .debug_macro   0x00000000       0x16 ./06_App_Component/key/key.o
+ .debug_macro   0x00000000       0x16 ./06_App_Component/key/key.o
+ .debug_macro   0x00000000       0x44 ./06_App_Component/key/key.o
+ .debug_macro   0x00000000      0x209 ./06_App_Component/key/key.o
+ .debug_macro   0x00000000       0x3a ./06_App_Component/key/key.o
+ .debug_macro   0x00000000       0x3a ./06_App_Component/key/key.o
+ .debug_macro   0x00000000       0x26 ./06_App_Component/key/key.o
+ .debug_macro   0x00000000      0x306 ./06_App_Component/key/key.o
+ .debug_macro   0x00000000       0x10 ./06_App_Component/key/key.o
+ .debug_macro   0x00000000     0x839f ./06_App_Component/key/key.o
+ .debug_macro   0x00000000       0x2e ./06_App_Component/key/key.o
+ .debug_macro   0x00000000       0x52 ./06_App_Component/key/key.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .text          0x00000000        0x0 ./05_Driver/gpio/gpio.o
+ .data          0x00000000        0x0 ./05_Driver/gpio/gpio.o
+ .bss           0x00000000        0x0 ./05_Driver/gpio/gpio.o
+ .text.NVIC_EnableIRQ
+                0x00000000       0x2c ./05_Driver/gpio/gpio.o
+ .text.NVIC_DisableIRQ
+                0x00000000       0x2c ./05_Driver/gpio/gpio.o
+ .text.gpio_pull
+                0x00000000      0x11c ./05_Driver/gpio/gpio.o
+ .text.gpio_enable_int
+                0x00000000       0xb0 ./05_Driver/gpio/gpio.o
+ .text.gpio_disable_int
+                0x00000000       0x80 ./05_Driver/gpio/gpio.o
+ .text.gpio_get_int
+                0x00000000       0x58 ./05_Driver/gpio/gpio.o
+ .text.gpio_clear_int
+                0x00000000       0x60 ./05_Driver/gpio/gpio.o
+ .text.gpio_clear_allint
+                0x00000000       0x3c ./05_Driver/gpio/gpio.o
+ .text.gpio_drive_strength
+                0x00000000       0xb4 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000      0x7f6 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x16 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x16 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x44 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000      0x209 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x3a ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x3a ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x26 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000      0x306 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x10 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000     0x839f ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x2e ./05_Driver/gpio/gpio.o
+ .data          0x00000000        0x0 ./03_MCU/startup_MKL25Z4.o
+ .bss           0x00000000        0x0 ./03_MCU/startup_MKL25Z4.o
+ .group         0x00000000        0x8 ./03_MCU/system_MKL25Z4.o
+ .group         0x00000000        0x8 ./03_MCU/system_MKL25Z4.o
+ .group         0x00000000        0x8 ./03_MCU/system_MKL25Z4.o
+ .group         0x00000000        0x8 ./03_MCU/system_MKL25Z4.o
+ .group         0x00000000        0x8 ./03_MCU/system_MKL25Z4.o
+ .group         0x00000000        0x8 ./03_MCU/system_MKL25Z4.o
+ .group         0x00000000        0x8 ./03_MCU/system_MKL25Z4.o
+ .group         0x00000000        0x8 ./03_MCU/system_MKL25Z4.o
+ .group         0x00000000        0x8 ./03_MCU/system_MKL25Z4.o
+ .group         0x00000000        0x8 ./03_MCU/system_MKL25Z4.o
+ .text          0x00000000        0x0 ./03_MCU/system_MKL25Z4.o
+ .data          0x00000000        0x0 ./03_MCU/system_MKL25Z4.o
+ .bss           0x00000000        0x0 ./03_MCU/system_MKL25Z4.o
+ .data.SystemCoreClock
+                0x00000000        0x4 ./03_MCU/system_MKL25Z4.o
+ .debug_macro   0x00000000      0x7f6 ./03_MCU/system_MKL25Z4.o
+ .debug_macro   0x00000000       0x16 ./03_MCU/system_MKL25Z4.o
+ .debug_macro   0x00000000       0x44 ./03_MCU/system_MKL25Z4.o
+ .debug_macro   0x00000000      0x209 ./03_MCU/system_MKL25Z4.o
+ .debug_macro   0x00000000       0x3a ./03_MCU/system_MKL25Z4.o
+ .debug_macro   0x00000000       0x26 ./03_MCU/system_MKL25Z4.o
+ .debug_macro   0x00000000      0x306 ./03_MCU/system_MKL25Z4.o
+ .debug_macro   0x00000000       0x10 ./03_MCU/system_MKL25Z4.o
+ .debug_macro   0x00000000     0x839f ./03_MCU/system_MKL25Z4.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+m_interrupts     0x00000000         0x00000100         xr
+m_flash_config   0x00000400         0x00000010         xr
+//m_text         0x00000410         0x0001fbf0         xr
+m_text           0x00000800         0x0001f7ff         xr
+m_data           0x1ffff000         0x00004000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./08_NOS_Prg/isr.o
+LOAD ./08_NOS_Prg/main.o
+LOAD ./06_App_Component/key/key.o
+LOAD ./05_Driver/gpio/gpio.o
+LOAD ./03_MCU/startup_MKL25Z4.o
+LOAD ./03_MCU/system_MKL25Z4.o
+LOAD e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a
+LOAD e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libstdc++.a
+LOAD e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libm.a
+START GROUP
+LOAD e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a
+LOAD e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg.a
+LOAD e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libc.a
+END GROUP
+                0x00000400                HEAP_SIZE = DEFINED (__heap_size__)?__heap_size__:0x400
+                0x00000400                STACK_SIZE = DEFINED (__stack_size__)?__stack_size__:0x400
+
+.interrupts     0x00000000       0xc0
+                0x00000000                __VECTOR_TABLE = .
+                0x00000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xc0 ./03_MCU/startup_MKL25Z4.o
+                0x00000000                __isr_vector
+                0x000000c0                . = ALIGN (0x4)
+
+.flash_config   0x00000400       0x10
+                0x00000400                . = ALIGN (0x4)
+ *(.FlashConfig)
+ .FlashConfig   0x00000400       0x10 ./03_MCU/startup_MKL25Z4.o
+                0x00000410                . = ALIGN (0x4)
+
+.text           0x00000800      0x714
+                0x00000800                . = ALIGN (0x4)
+ *(.text)
+ .text          0x00000800       0x4c ./03_MCU/startup_MKL25Z4.o
+                0x00000800                Reset_Handler
+                0x00000844                HardFault_Handler
+                0x00000844                SysTick_Handler
+                0x00000844                PendSV_Handler
+                0x00000844                NMI_Handler
+                0x00000844                I2C1_IRQHandler
+                0x00000844                DMA2_IRQHandler
+                0x00000844                TPM0_IRQHandler
+                0x00000844                LLWU_IRQHandler
+                0x00000844                TSI0_IRQHandler
+                0x00000844                ADC0_IRQHandler
+                0x00000844                Reserved39_IRQHandler
+                0x00000844                SPI1_IRQHandler
+                0x00000844                DefaultISR
+                0x00000844                PORTD_IRQHandler
+                0x00000844                TPM2_IRQHandler
+                0x00000844                RTC_IRQHandler
+                0x00000844                I2C0_IRQHandler
+                0x00000844                RTC_Seconds_IRQHandler
+                0x00000844                MCG_IRQHandler
+                0x00000844                Reserved20_IRQHandler
+                0x00000844                USB0_IRQHandler
+                0x00000844                PIT_IRQHandler
+                0x00000844                SVC_Handler
+                0x00000844                DMA3_IRQHandler
+                0x00000844                DMA0_IRQHandler
+                0x00000844                DAC0_IRQHandler
+                0x00000844                Reserved45_IRQHandler
+                0x00000844                TPM1_IRQHandler
+                0x00000844                LVD_LVW_IRQHandler
+                0x00000844                SPI0_IRQHandler
+                0x00000844                PORTA_IRQHandler
+                0x00000844                FTFA_IRQHandler
+                0x00000844                LPTMR0_IRQHandler
+                0x00000844                CMP0_IRQHandler
+                0x00000844                DMA1_IRQHandler
+ *(.text*)
+ .text.UART0_IRQHandler
+                0x0000084c        0x8 ./08_NOS_Prg/isr.o
+                0x0000084c                UART0_IRQHandler
+ .text.UART1_IRQHandler
+                0x00000854        0x8 ./08_NOS_Prg/isr.o
+                0x00000854                UART1_IRQHandler
+ .text.UART2_IRQHandler
+                0x0000085c        0x8 ./08_NOS_Prg/isr.o
+                0x0000085c                UART2_IRQHandler
+ .text.main     0x00000864      0x1f4 ./08_NOS_Prg/main.o
+                0x00000864                main
+ .text.light_init
+                0x00000a58       0x2c ./06_App_Component/key/key.o
+                0x00000a58                light_init
+ .text.light_control
+                0x00000a84       0x28 ./06_App_Component/key/key.o
+                0x00000a84                light_control
+ .text.light_change
+                0x00000aac       0x1c ./06_App_Component/key/key.o
+                0x00000aac                light_change
+ .text.key_init
+                0x00000ac8       0x20 ./06_App_Component/key/key.o
+                0x00000ac8                key_init
+ .text.key_get  0x00000ae8       0x20 ./06_App_Component/key/key.o
+                0x00000ae8                key_get
+ .text.gpio_init
+                0x00000b08       0xe8 ./05_Driver/gpio/gpio.o
+                0x00000b08                gpio_init
+ .text.gpio_set
+                0x00000bf0       0x80 ./05_Driver/gpio/gpio.o
+                0x00000bf0                gpio_set
+ .text.gpio_get
+                0x00000c70       0x54 ./05_Driver/gpio/gpio.o
+                0x00000c70                gpio_get
+ .text.gpio_reverse
+                0x00000cc4       0x54 ./05_Driver/gpio/gpio.o
+                0x00000cc4                gpio_reverse
+ .text.gpio_get_port_pin
+                0x00000d18       0x34 ./05_Driver/gpio/gpio.o
+                0x00000d18                gpio_get_port_pin
+ .text.SystemInit
+                0x00000d4c      0x1a0 ./03_MCU/system_MKL25Z4.o
+                0x00000d4c                SystemInit
+ *(.rodata)
+ *(.rodata*)
+ .rodata.PORT_ARR
+                0x00000eec       0x14 ./05_Driver/gpio/gpio.o
+                0x00000eec                PORT_ARR
+ .rodata.GPIO_ARR
+                0x00000f00       0x14 ./05_Driver/gpio/gpio.o
+                0x00000f00                GPIO_ARR
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+                0x00000f14                . = ALIGN (0x4)
+
+.vfp11_veneer   0x00000f14        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000f14        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00000f14        0x0
+ .iplt          0x00000000        0x0 ./08_NOS_Prg/isr.o
+
+.rel.dyn        0x00000f14        0x0
+ .rel.iplt      0x00000000        0x0 ./08_NOS_Prg/isr.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x00000f14        0x0
+                0x00000f14                __exidx_start = .
+ *(.ARM.exidx*)
+                0x00000f14                __exidx_end = .
+
+.ctors          0x00000f14        0x0
+                0x00000f14                __CTOR_LIST__ = .
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x00000f14                __CTOR_END__ = .
+
+.dtors          0x00000f14        0x0
+                0x00000f14                __DTOR_LIST__ = .
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x00000f14                __DTOR_END__ = .
+
+.preinit_array  0x00000f14        0x0
+                0x00000f14                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                0x00000f14                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x00000f14        0x0
+                0x00000f14                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array*)
+                0x00000f14                PROVIDE (__init_array_end, .)
+
+.fini_array     0x00000f14        0x0
+                0x00000f14                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array*)
+                0x00000f14                PROVIDE (__fini_array_end, .)
+                0x00000f14                __etext = .
+                0x00000f14                __DATA_ROM = .
+
+.mtb            0x1ffff000        0x0
+                0x1ffff000                . = ALIGN (0x8)
+                0x1ffff000                _mtb_start = .
+ *(.mtb_buf)
+                0x1ffff000                . = ALIGN (0x8)
+                0x1ffff000                _mtb_end = .
+
+.data           0x1ffff000        0x0 load address 0x00000f14
+                0x1ffff000                . = ALIGN (0x4)
+                0x1ffff000                __DATA_RAM = .
+                0x1ffff000                __data_start__ = .
+ *(.data)
+ *(.data*)
+ *(.jcr*)
+                0x1ffff000                . = ALIGN (0x4)
+                0x1ffff000                __data_end__ = .
+                0x00000f14                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+
+.igot.plt       0x1ffff000        0x0
+ .igot.plt      0x00000000        0x0 ./08_NOS_Prg/isr.o
+
+.bss            0x1ffff000        0x0
+                0x1ffff000                . = ALIGN (0x4)
+                0x1ffff000                __START_BSS = .
+                0x1ffff000                __bss_start__ = .
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+                0x1ffff000                . = ALIGN (0x4)
+                0x1ffff000                __bss_end__ = .
+                0x1ffff000                __END_BSS = .
+
+.heap           0x1ffff000      0x400
+                0x1ffff000                . = ALIGN (0x8)
+                0x1ffff000                __end__ = .
+                0x1ffff000                PROVIDE (end, .)
+                0x1ffff000                __HeapBase = .
+                0x1ffff400                . = (. + HEAP_SIZE)
+ *fill*         0x1ffff000      0x400 
+                0x1ffff400                __HeapLimit = .
+
+.stack          0x1ffff400      0x400
+                0x1ffff400                . = ALIGN (0x8)
+                0x1ffff800                . = (. + STACK_SIZE)
+ *fill*         0x1ffff400      0x400 
+                0x20003000                __StackTop = (ORIGIN (m_data) + 0x4000)
+                0x20002c00                __StackLimit = (__StackTop - STACK_SIZE)
+                0x20003000                PROVIDE (__stack, __StackTop)
+
+.ARM.attributes
+                0x00000000       0x30
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x32 ./08_NOS_Prg/isr.o
+ .ARM.attributes
+                0x00000032       0x32 ./08_NOS_Prg/main.o
+ .ARM.attributes
+                0x00000064       0x32 ./06_App_Component/key/key.o
+ .ARM.attributes
+                0x00000096       0x32 ./05_Driver/gpio/gpio.o
+ .ARM.attributes
+                0x000000c8       0x1b ./03_MCU/startup_MKL25Z4.o
+ .ARM.attributes
+                0x000000e3       0x32 ./03_MCU/system_MKL25Z4.o
+                0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data overflowed with stack and heap)
+OUTPUT(KL25_Light(Component).elf elf32-littlearm)
+
+.debug_info     0x00000000      0xfbf
+ .debug_info    0x00000000       0xb1 ./08_NOS_Prg/isr.o
+ .debug_info    0x000000b1      0x124 ./08_NOS_Prg/main.o
+ .debug_info    0x000001d5      0x164 ./06_App_Component/key/key.o
+ .debug_info    0x00000339      0x858 ./05_Driver/gpio/gpio.o
+ .debug_info    0x00000b91       0x66 ./03_MCU/startup_MKL25Z4.o
+ .debug_info    0x00000bf7      0x3c8 ./03_MCU/system_MKL25Z4.o
+
+.debug_abbrev   0x00000000      0x45c
+ .debug_abbrev  0x00000000       0x45 ./08_NOS_Prg/isr.o
+ .debug_abbrev  0x00000045       0x9d ./08_NOS_Prg/main.o
+ .debug_abbrev  0x000000e2       0x7d ./06_App_Component/key/key.o
+ .debug_abbrev  0x0000015f      0x1e9 ./05_Driver/gpio/gpio.o
+ .debug_abbrev  0x00000348       0x14 ./03_MCU/startup_MKL25Z4.o
+ .debug_abbrev  0x0000035c      0x100 ./03_MCU/system_MKL25Z4.o
+
+.debug_aranges  0x00000000      0x158
+ .debug_aranges
+                0x00000000       0x30 ./08_NOS_Prg/isr.o
+ .debug_aranges
+                0x00000030       0x20 ./08_NOS_Prg/main.o
+ .debug_aranges
+                0x00000050       0x40 ./06_App_Component/key/key.o
+ .debug_aranges
+                0x00000090       0x88 ./05_Driver/gpio/gpio.o
+ .debug_aranges
+                0x00000118       0x20 ./03_MCU/startup_MKL25Z4.o
+ .debug_aranges
+                0x00000138       0x20 ./03_MCU/system_MKL25Z4.o
+
+.debug_ranges   0x00000000       0xe8
+ .debug_ranges  0x00000000       0x20 ./08_NOS_Prg/isr.o
+ .debug_ranges  0x00000020       0x10 ./08_NOS_Prg/main.o
+ .debug_ranges  0x00000030       0x30 ./06_App_Component/key/key.o
+ .debug_ranges  0x00000060       0x78 ./05_Driver/gpio/gpio.o
+ .debug_ranges  0x000000d8       0x10 ./03_MCU/system_MKL25Z4.o
+
+.debug_macro    0x00000000     0x96b5
+ .debug_macro   0x00000000       0xbb ./08_NOS_Prg/isr.o
+ .debug_macro   0x000000bb      0x7f6 ./08_NOS_Prg/isr.o
+ .debug_macro   0x000008b1       0x16 ./08_NOS_Prg/isr.o
+ .debug_macro   0x000008c7       0x16 ./08_NOS_Prg/isr.o
+ .debug_macro   0x000008dd       0x44 ./08_NOS_Prg/isr.o
+ .debug_macro   0x00000921      0x209 ./08_NOS_Prg/isr.o
+ .debug_macro   0x00000b2a       0x3a ./08_NOS_Prg/isr.o
+ .debug_macro   0x00000b64       0x3a ./08_NOS_Prg/isr.o
+ .debug_macro   0x00000b9e       0x26 ./08_NOS_Prg/isr.o
+ .debug_macro   0x00000bc4      0x306 ./08_NOS_Prg/isr.o
+ .debug_macro   0x00000eca       0x10 ./08_NOS_Prg/isr.o
+ .debug_macro   0x00000eda     0x839f ./08_NOS_Prg/isr.o
+ .debug_macro   0x00009279       0x2e ./08_NOS_Prg/isr.o
+ .debug_macro   0x000092a7       0x52 ./08_NOS_Prg/isr.o
+ .debug_macro   0x000092f9       0x40 ./08_NOS_Prg/isr.o
+ .debug_macro   0x00009339       0x16 ./08_NOS_Prg/isr.o
+ .debug_macro   0x0000934f       0xbb ./08_NOS_Prg/main.o
+ .debug_macro   0x0000940a       0xb2 ./06_App_Component/key/key.o
+ .debug_macro   0x000094bc       0x3a ./06_App_Component/key/key.o
+ .debug_macro   0x000094f6       0xa9 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x0000959f       0x4c ./05_Driver/gpio/gpio.o
+ .debug_macro   0x000095eb       0x7e ./03_MCU/system_MKL25Z4.o
+ .debug_macro   0x00009669       0x4c ./03_MCU/system_MKL25Z4.o
+
+.debug_line     0x00000000      0xf8b
+ .debug_line    0x00000000      0x2ee ./08_NOS_Prg/isr.o
+ .debug_line    0x000002ee      0x341 ./08_NOS_Prg/main.o
+ .debug_line    0x0000062f      0x2de ./06_App_Component/key/key.o
+ .debug_line    0x0000090d      0x3af ./05_Driver/gpio/gpio.o
+ .debug_line    0x00000cbc       0x70 ./03_MCU/startup_MKL25Z4.o
+ .debug_line    0x00000d2c      0x25f ./03_MCU/system_MKL25Z4.o
+
+.debug_str      0x00000000    0x320c7
+ .debug_str     0x00000000    0x31b5f ./08_NOS_Prg/isr.o
+                              0x31f58 (size before relaxing)
+ .debug_str     0x00031b5f       0x54 ./08_NOS_Prg/main.o
+                              0x31f65 (size before relaxing)
+ .debug_str     0x00031bb3       0x63 ./06_App_Component/key/key.o
+                              0x31f32 (size before relaxing)
+ .debug_str     0x00031c16      0x392 ./05_Driver/gpio/gpio.o
+                              0x321ff (size before relaxing)
+ .debug_str     0x00031fa8      0x11f ./03_MCU/system_MKL25Z4.o
+                              0x31d82 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./08_NOS_Prg/isr.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./08_NOS_Prg/main.o
+ .comment       0x00000000       0x71 ./06_App_Component/key/key.o
+ .comment       0x00000000       0x71 ./05_Driver/gpio/gpio.o
+ .comment       0x00000000       0x71 ./03_MCU/system_MKL25Z4.o
+
+.debug_frame    0x00000000      0x344
+ .debug_frame   0x00000000       0x64 ./08_NOS_Prg/isr.o
+ .debug_frame   0x00000064       0x30 ./08_NOS_Prg/main.o
+ .debug_frame   0x00000094       0xb0 ./06_App_Component/key/key.o
+ .debug_frame   0x00000144      0x1d0 ./05_Driver/gpio/gpio.o
+ .debug_frame   0x00000314       0x30 ./03_MCU/system_MKL25Z4.o

@@ -1,0 +1,1736 @@
+
+KL25_Light(Component).elf:     file format elf32-littlearm
+KL25_Light(Component).elf
+architecture: arm, flags 0x00000012:
+EXEC_P, HAS_SYMS
+start address 0x00000801
+
+Program Header:
+    LOAD off    0x000000b4 vaddr 0x00000000 paddr 0x00000000 align 2**2
+         filesz 0x000000c0 memsz 0x000000c0 flags r--
+    LOAD off    0x00000174 vaddr 0x00000400 paddr 0x00000400 align 2**0
+         filesz 0x00000010 memsz 0x00000010 flags r--
+    LOAD off    0x00000184 vaddr 0x00000800 paddr 0x00000800 align 2**2
+         filesz 0x00000714 memsz 0x00000714 flags r-x
+    LOAD off    0x00000898 vaddr 0x1ffff000 paddr 0x1ffff000 align 2**0
+         filesz 0x00000000 memsz 0x00000800 flags rw-
+private flags = 5000002: [Version5 EABI] [has entry point]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn  Flags
+  0 .interrupts   000000c0  00000000  00000000  000000b4  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .flash_config 00000010  00000400  00000400  00000174  2**0  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .text         00000714  00000800  00000800  00000184  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .heap         00000400  1ffff000  1ffff000  00000898  2**0  ALLOC
+  4 .stack        00000400  1ffff400  1ffff400  00000898  2**0  ALLOC
+  5 .ARM.attributes 00000030  00000000  00000000  00000898  2**0  CONTENTS, READONLY
+  6 .debug_info   00000fbf  00000000  00000000  000008c8  2**0  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000045c  00000000  00000000  00001887  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_aranges 00000158  00000000  00000000  00001ce8  2**3  CONTENTS, READONLY, DEBUGGING
+  9 .debug_ranges 000000e8  00000000  00000000  00001e40  2**0  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_macro  000096b5  00000000  00000000  00001f28  2**0  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_line   00000f8b  00000000  00000000  0000b5dd  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_str    000320c7  00000000  00000000  0000c568  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .comment      00000070  00000000  00000000  0003e62f  2**0  CONTENTS, READONLY
+ 14 .debug_frame  00000344  00000000  00000000  0003e6a0  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00000000 l    d  .interrupts	00000000 .interrupts
+00000400 l    d  .flash_config	00000000 .flash_config
+00000800 l    d  .text	00000000 .text
+1ffff000 l    d  .heap	00000000 .heap
+1ffff400 l    d  .stack	00000000 .stack
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./03_MCU/startup_MKL25Z4.o
+00000000 l    df *ABS*	00000000 isr.c
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 key.c
+00000000 l    df *ABS*	00000000 gpio.c
+00000000 l    df *ABS*	00000000 system_MKL25Z4.c
+00000000 l    df *ABS*	00000000 
+00000400 l       *ABS*	00000000 STACK_SIZE
+1ffff400 l       .heap	00000000 __HeapLimit
+00000400 l       *ABS*	00000000 HEAP_SIZE
+00000f14 l       .text	00000000 __DATA_ROM
+20002c00 l       *ABS*	00000000 __StackLimit
+1ffff000 g       .heap	00000000 __HeapBase
+1ffff000 g       .text	00000000 __data_start__
+00000844  w    F .text	00000004 I2C0_IRQHandler
+00000844  w    F .text	00000004 HardFault_Handler
+00000ac8 g     F .text	00000020 key_init
+00000844  w    F .text	00000004 SysTick_Handler
+00000a58 g     F .text	0000002a light_init
+00000844  w    F .text	00000004 PendSV_Handler
+00000844  w    F .text	00000004 NMI_Handler
+00000f14 g       .text	00000000 __exidx_end
+00000844  w    F .text	00000004 I2C1_IRQHandler
+00000854 g     F .text	00000008 UART1_IRQHandler
+00000f14 g       .text	00000000 __etext
+00000844  w    F .text	00000004 DMA2_IRQHandler
+00000844  w    F .text	00000004 TPM0_IRQHandler
+00000844  w    F .text	00000004 LLWU_IRQHandler
+00000844  w    F .text	00000004 TSI0_IRQHandler
+0000084c g     F .text	00000008 UART0_IRQHandler
+00000f14 g       .text	00000000 __DTOR_END__
+00000844  w    F .text	00000004 ADC0_IRQHandler
+00000844  w    F .text	00000004 Reserved39_IRQHandler
+1ffff000 g       .text	00000000 __START_BSS
+1ffff000 g       .text	00000000 __bss_start__
+00000844  w    F .text	00000004 SPI1_IRQHandler
+00000844  w    F .text	00000004 DefaultISR
+00000844  w    F .text	00000004 PORTD_IRQHandler
+00000f14 g       .text	00000000 __exidx_start
+00000844  w    F .text	00000004 TPM2_IRQHandler
+00000844  w    F .text	00000004 RTC_IRQHandler
+00000eec g     O .text	00000014 PORT_ARR
+00000800  w    F .text	00000044 Reset_Handler
+00000844  w    F .text	00000004 RTC_Seconds_IRQHandler
+00000844  w    F .text	00000004 MCG_IRQHandler
+0000085c g     F .text	00000008 UART2_IRQHandler
+1ffff000 g       .text	00000000 __data_end__
+00000f14 g       .text	00000000 __CTOR_LIST__
+1ffff000 g       .text	00000000 __bss_end__
+00000c70 g     F .text	00000054 gpio_get
+00000844  w    F .text	00000004 Reserved20_IRQHandler
+00000844  w    F .text	00000004 USB0_IRQHandler
+00000aac g     F .text	0000001c light_change
+00000000 g       .interrupts	000000c0 __isr_vector
+00000864 g     F .text	000001f4 main
+00000844  w    F .text	00000004 PIT_IRQHandler
+00000844  w    F .text	00000004 SVC_Handler
+1ffff000 g       .text	00000000 __DATA_RAM
+00000d18 g     F .text	00000034 gpio_get_port_pin
+1ffff000 g       .heap	00000000 __end__
+00000f14 g       .text	00000000 __CTOR_END__
+00000844  w    F .text	00000004 DMA3_IRQHandler
+00000f14 g       .text	00000000 __DTOR_LIST__
+1ffff000 g       .text	00000000 __END_BSS
+00000d4c g     F .text	000001a0 SystemInit
+00000844  w    F .text	00000004 DMA0_IRQHandler
+00000844  w    F .text	00000004 DAC0_IRQHandler
+20003000 g       *ABS*	00000000 __StackTop
+00000ae8 g     F .text	00000020 key_get
+1ffff000 g       .text	00000000 _mtb_end
+00000f14 g       .text	00000000 __DATA_END
+00000844  w    F .text	00000004 Reserved45_IRQHandler
+00000844  w    F .text	00000004 TPM1_IRQHandler
+00000a84 g     F .text	00000028 light_control
+00000844  w    F .text	00000004 LVD_LVW_IRQHandler
+00000844  w    F .text	00000004 SPI0_IRQHandler
+00000844  w    F .text	00000004 PORTA_IRQHandler
+00000000 g       .interrupts	00000000 __VECTOR_TABLE
+00000844  w    F .text	00000004 FTFA_IRQHandler
+00000f00 g     O .text	00000014 GPIO_ARR
+1ffff000 g       .text	00000000 _mtb_start
+00000844  w    F .text	00000004 LPTMR0_IRQHandler
+00000bf0 g     F .text	00000080 gpio_set
+00000cc4 g     F .text	00000054 gpio_reverse
+00000b08 g     F .text	000000e8 gpio_init
+00000844  w    F .text	00000004 CMP0_IRQHandler
+00000844  w    F .text	00000004 DMA1_IRQHandler
+
+
+
+Disassembly of section .text:
+
+00000800 <Reset_Handler>:
+Reset_Handler():
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:117
+    .align 2
+    .globl   Reset_Handler
+    .weak    Reset_Handler
+    .type    Reset_Handler, %function
+Reset_Handler:
+    cpsid   i               /* 屏蔽中断 */
+ 800:	b672      	cpsid	i
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:119
+#ifndef __NO_SYSTEM_INIT
+    bl SystemInit           /* 跳转到系统初始化函数，在system_MKL25Z4.c中 */
+ 802:	f000 faa3 	bl	d4c <SystemInit>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:121
+#endif
+    cpsie   i               /* 解除屏蔽中断 */
+ 806:	b662      	cpsie	i
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+ 808:	4909      	ldr	r1, [pc, #36]	; (830 <Reset_Handler+0x30>)
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+ 80a:	4a0a      	ldr	r2, [pc, #40]	; (834 <Reset_Handler+0x34>)
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+ 80c:	4b0a      	ldr	r3, [pc, #40]	; (838 <Reset_Handler+0x38>)
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:131
+
+    subs    r3, r2
+ 80e:	1a9b      	subs	r3, r3, r2
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:132
+    ble     .LC0
+ 810:	dd03      	ble.n	81a <Reset_Handler+0x1a>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:135
+
+.LC1:
+    subs    r3, 4
+ 812:	3b04      	subs	r3, #4
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:136
+    ldr    r0, [r1,r3]
+ 814:	58c8      	ldr	r0, [r1, r3]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:137
+    str    r0, [r2,r3]
+ 816:	50d0      	str	r0, [r2, r3]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:138
+    bgt    .LC1
+ 818:	dcfb      	bgt.n	812 <Reset_Handler+0x12>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+ 81a:	4908      	ldr	r1, [pc, #32]	; (83c <Reset_Handler+0x3c>)
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+ 81c:	4a08      	ldr	r2, [pc, #32]	; (840 <Reset_Handler+0x40>)
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:153
+
+    subs    r2, r1
+ 81e:	1a52      	subs	r2, r2, r1
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:154
+    ble .LC3
+ 820:	dd03      	ble.n	82a <Reset_Handler+0x2a>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:156
+
+    movs    r0, 0
+ 822:	2000      	movs	r0, #0
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:158
+.LC2:
+    str r0, [r1, r2]
+ 824:	5088      	str	r0, [r1, r2]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:159
+    subs    r2, 4
+ 826:	3a04      	subs	r2, #4
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:160
+    bge .LC2
+ 828:	dafc      	bge.n	824 <Reset_Handler+0x24>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:166
+.LC3:
+#endif
+#ifndef __START
+#define __START main
+#endif
+    bl    __START
+ 82a:	f000 f81b 	bl	864 <main>
+ 82e:	0000      	.short	0x0000
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+ 830:	00000f14 	.word	0x00000f14
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+ 834:	1ffff000 	.word	0x1ffff000
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+ 838:	1ffff000 	.word	0x1ffff000
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+ 83c:	1ffff000 	.word	0x1ffff000
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+ 840:	1ffff000 	.word	0x1ffff000
+
+00000844 <ADC0_IRQHandler>:
+I2C0_IRQHandler():
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+ 844:	4800      	ldr	r0, [pc, #0]	; (848 <ADC0_IRQHandler+0x4>)
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:176
+    bx r0
+ 846:	4700      	bx	r0
+$d():
+F:\kds\KL25_Light_Component\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+ 848:	00000845 	.word	0x00000845
+
+0000084c <UART0_IRQHandler>:
+UART0_IRQHandler():
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/isr.c:12
+#include "includes.h"
+
+//========================中断函数服务例程===============================
+//串口0接收中断服务例程
+void UART0_IRQHandler(void)
+{
+ 84c:	b580      	push	{r7, lr}
+ 84e:	af00      	add	r7, sp, #0
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/isr.c:14
+
+}
+ 850:	46bd      	mov	sp, r7
+ 852:	bd80      	pop	{r7, pc}
+
+00000854 <UART1_IRQHandler>:
+UART1_IRQHandler():
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/isr.c:19
+
+
+//串口1接收中断服务例程
+void UART1_IRQHandler(void)
+{
+ 854:	b580      	push	{r7, lr}
+ 856:	af00      	add	r7, sp, #0
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/isr.c:21
+
+}
+ 858:	46bd      	mov	sp, r7
+ 85a:	bd80      	pop	{r7, pc}
+
+0000085c <UART2_IRQHandler>:
+UART2_IRQHandler():
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/isr.c:25
+
+//串口2接收中断服务例程
+void UART2_IRQHandler(void)
+{
+ 85c:	b580      	push	{r7, lr}
+ 85e:	af00      	add	r7, sp, #0
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/isr.c:27
+
+}
+ 860:	46bd      	mov	sp, r7
+ 862:	bd80      	pop	{r7, pc}
+
+00000864 <main>:
+main():
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:6
+//说明见工程文件夹下的Doc文件夹内Readme.txt文件
+//======================================================================
+
+#include "includes.h"   //包含总头文件
+
+int main(void) {
+ 864:	b590      	push	{r4, r7, lr}
+ 866:	b083      	sub	sp, #12
+ 868:	af00      	add	r7, sp, #0
+__disable_irq():
+F:/kds/KL25_Light_Component/02_CPU/core_cmFunc.h:344
+  This function disables IRQ interrupts by setting the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+{
+  __ASM volatile ("cpsid i" : : : "memory");
+ 86a:	b672      	cpsid	i
+main():
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:22
+
+	//（2） 关总中断
+	DISABLE_INTERRUPTS;
+
+	//（3） 给有关变量赋初值
+	mRuncount = 0;            //主循环计数器
+ 86c:	2300      	movs	r3, #0
+ 86e:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:23
+	mflag = 0;               //灯控制标志
+ 870:	1cfb      	adds	r3, r7, #3
+ 872:	2200      	movs	r2, #0
+ 874:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:26
+
+	//（4） 初始化外设模块
+	light_init(LIGHT_RED, LIGHT_OFF);      //红灯初始化
+ 876:	2314      	movs	r3, #20
+ 878:	33ff      	adds	r3, #255	; 0xff
+ 87a:	1c18      	adds	r0, r3, #0
+ 87c:	2101      	movs	r1, #1
+ 87e:	f000 f8eb 	bl	a58 <light_init>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:27
+	light_init(LIGHT_BLUE, LIGHT_OFF);     //蓝灯初始化
+ 882:	230a      	movs	r3, #10
+ 884:	33ff      	adds	r3, #255	; 0xff
+ 886:	1c18      	adds	r0, r3, #0
+ 888:	2101      	movs	r1, #1
+ 88a:	f000 f8e5 	bl	a58 <light_init>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:28
+	light_init(LIGHT_GREEN, LIGHT_OFF);    //绿灯初始化
+ 88e:	2389      	movs	r3, #137	; 0x89
+ 890:	005b      	lsls	r3, r3, #1
+ 892:	1c18      	adds	r0, r3, #0
+ 894:	2101      	movs	r1, #1
+ 896:	f000 f8df 	bl	a58 <light_init>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:31
+
+	//初始化开关为输入引脚
+	key_init(key1);
+ 89a:	2380      	movs	r3, #128	; 0x80
+ 89c:	005b      	lsls	r3, r3, #1
+ 89e:	1c18      	adds	r0, r3, #0
+ 8a0:	f000 f912 	bl	ac8 <key_init>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:32
+	key_init(key2);
+ 8a4:	2381      	movs	r3, #129	; 0x81
+ 8a6:	005b      	lsls	r3, r3, #1
+ 8a8:	1c18      	adds	r0, r3, #0
+ 8aa:	f000 f90d 	bl	ac8 <key_init>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:33
+	key_init(key3);
+ 8ae:	2002      	movs	r0, #2
+ 8b0:	f000 f90a 	bl	ac8 <key_init>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:34
+	key_init(key4);
+ 8b4:	2005      	movs	r0, #5
+ 8b6:	f000 f907 	bl	ac8 <key_init>
+__enable_irq():
+F:/kds/KL25_Light_Component/02_CPU/core_cmFunc.h:333
+  This function enables IRQ interrupts by clearing the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+{
+  __ASM volatile ("cpsie i" : : : "memory");
+ 8ba:	b662      	cpsie	i
+main():
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:45
+
+	//进入主循环
+	//主循环开始==================================================================
+
+	for (;;) {
+		k1 = key_get(key1);
+ 8bc:	1cbc      	adds	r4, r7, #2
+ 8be:	2380      	movs	r3, #128	; 0x80
+ 8c0:	005b      	lsls	r3, r3, #1
+ 8c2:	1c18      	adds	r0, r3, #0
+ 8c4:	f000 f910 	bl	ae8 <key_get>
+ 8c8:	1c03      	adds	r3, r0, #0
+ 8ca:	7023      	strb	r3, [r4, #0]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:46
+		k2 = key_get(key2);
+ 8cc:	1c7c      	adds	r4, r7, #1
+ 8ce:	2381      	movs	r3, #129	; 0x81
+ 8d0:	005b      	lsls	r3, r3, #1
+ 8d2:	1c18      	adds	r0, r3, #0
+ 8d4:	f000 f908 	bl	ae8 <key_get>
+ 8d8:	1c03      	adds	r3, r0, #0
+ 8da:	7023      	strb	r3, [r4, #0]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:48
+
+		if ((k1 == 1) && (k2 == 0)) {
+ 8dc:	1cbb      	adds	r3, r7, #2
+ 8de:	781b      	ldrb	r3, [r3, #0]
+ 8e0:	2b01      	cmp	r3, #1
+ 8e2:	d158      	bne.n	996 <main+0x132>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:48 (discriminator 1)
+ 8e4:	1c7b      	adds	r3, r7, #1
+ 8e6:	781b      	ldrb	r3, [r3, #0]
+ 8e8:	2b00      	cmp	r3, #0
+ 8ea:	d154      	bne.n	996 <main+0x132>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:51
+			for (;;) {
+
+				mRuncount++;	//主循环次数计数器+1
+ 8ec:	687b      	ldr	r3, [r7, #4]
+ 8ee:	3301      	adds	r3, #1
+ 8f0:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:52
+				if (mRuncount >= RUN_COUNTER_MAX)  //主循环次数计数器大于设定的宏常数
+ 8f2:	687a      	ldr	r2, [r7, #4]
+ 8f4:	4b57      	ldr	r3, [pc, #348]	; (a54 <main+0x1f0>)
+ 8f6:	429a      	cmp	r2, r3
+ 8f8:	d94c      	bls.n	994 <main+0x130>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:54
+				{
+					mRuncount = 0;
+ 8fa:	2300      	movs	r3, #0
+ 8fc:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:55
+					k1 = key_get(key1);
+ 8fe:	1cbc      	adds	r4, r7, #2
+ 900:	2380      	movs	r3, #128	; 0x80
+ 902:	005b      	lsls	r3, r3, #1
+ 904:	1c18      	adds	r0, r3, #0
+ 906:	f000 f8ef 	bl	ae8 <key_get>
+ 90a:	1c03      	adds	r3, r0, #0
+ 90c:	7023      	strb	r3, [r4, #0]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:56
+					k2 = key_get(key2);
+ 90e:	1c7c      	adds	r4, r7, #1
+ 910:	2381      	movs	r3, #129	; 0x81
+ 912:	005b      	lsls	r3, r3, #1
+ 914:	1c18      	adds	r0, r3, #0
+ 916:	f000 f8e7 	bl	ae8 <key_get>
+ 91a:	1c03      	adds	r3, r0, #0
+ 91c:	7023      	strb	r3, [r4, #0]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:57
+					if ((k1 == 0) && (k2 == 1))
+ 91e:	1cbb      	adds	r3, r7, #2
+ 920:	781b      	ldrb	r3, [r3, #0]
+ 922:	2b00      	cmp	r3, #0
+ 924:	d105      	bne.n	932 <main+0xce>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:57 (discriminator 1)
+ 926:	1c7b      	adds	r3, r7, #1
+ 928:	781b      	ldrb	r3, [r3, #0]
+ 92a:	2b01      	cmp	r3, #1
+ 92c:	d101      	bne.n	932 <main+0xce>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:58
+						break;
+ 92e:	46c0      	nop			; (mov r8, r8)
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:48
+
+	for (;;) {
+		k1 = key_get(key1);
+		k2 = key_get(key2);
+
+		if ((k1 == 1) && (k2 == 0)) {
+ 930:	e08e      	b.n	a50 <main+0x1ec>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:60
+					k1 = key_get(key1);
+					k2 = key_get(key2);
+					if ((k1 == 0) && (k2 == 1))
+						break;
+
+					switch (mflag) {
+ 932:	1cfb      	adds	r3, r7, #3
+ 934:	781b      	ldrb	r3, [r3, #0]
+ 936:	2b00      	cmp	r3, #0
+ 938:	d002      	beq.n	940 <main+0xdc>
+ 93a:	2b01      	cmp	r3, #1
+ 93c:	d015      	beq.n	96a <main+0x106>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:80
+					default: {
+
+					}
+					}
+				}
+			}
+ 93e:	e7d5      	b.n	8ec <main+0x88>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:62
+					if ((k1 == 0) && (k2 == 1))
+						break;
+
+					switch (mflag) {
+					case 0: {
+						light_change(LIGHT_RED);
+ 940:	2314      	movs	r3, #20
+ 942:	33ff      	adds	r3, #255	; 0xff
+ 944:	1c18      	adds	r0, r3, #0
+ 946:	f000 f8b1 	bl	aac <light_change>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:63
+						light_control(LIGHT_BLUE, LIGHT_OFF);
+ 94a:	230a      	movs	r3, #10
+ 94c:	33ff      	adds	r3, #255	; 0xff
+ 94e:	1c18      	adds	r0, r3, #0
+ 950:	2101      	movs	r1, #1
+ 952:	f000 f897 	bl	a84 <light_control>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:64
+						light_control(LIGHT_GREEN, LIGHT_OFF);
+ 956:	2389      	movs	r3, #137	; 0x89
+ 958:	005b      	lsls	r3, r3, #1
+ 95a:	1c18      	adds	r0, r3, #0
+ 95c:	2101      	movs	r1, #1
+ 95e:	f000 f891 	bl	a84 <light_control>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:65
+						mflag = 1;
+ 962:	1cfb      	adds	r3, r7, #3
+ 964:	2201      	movs	r2, #1
+ 966:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:66
+						break;
+ 968:	e014      	b.n	994 <main+0x130>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:69
+					}
+					case 1: {
+						light_change(LIGHT_BLUE);
+ 96a:	230a      	movs	r3, #10
+ 96c:	33ff      	adds	r3, #255	; 0xff
+ 96e:	1c18      	adds	r0, r3, #0
+ 970:	f000 f89c 	bl	aac <light_change>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:70
+						light_control(LIGHT_RED, LIGHT_OFF);
+ 974:	2314      	movs	r3, #20
+ 976:	33ff      	adds	r3, #255	; 0xff
+ 978:	1c18      	adds	r0, r3, #0
+ 97a:	2101      	movs	r1, #1
+ 97c:	f000 f882 	bl	a84 <light_control>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:71
+						light_control(LIGHT_GREEN, LIGHT_OFF);
+ 980:	2389      	movs	r3, #137	; 0x89
+ 982:	005b      	lsls	r3, r3, #1
+ 984:	1c18      	adds	r0, r3, #0
+ 986:	2101      	movs	r1, #1
+ 988:	f000 f87c 	bl	a84 <light_control>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:72
+						mflag = 0;
+ 98c:	1cfb      	adds	r3, r7, #3
+ 98e:	2200      	movs	r2, #0
+ 990:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:73
+						break;
+ 992:	46c0      	nop			; (mov r8, r8)
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:80
+					default: {
+
+					}
+					}
+				}
+			}
+ 994:	e7aa      	b.n	8ec <main+0x88>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:81
+		} else if ((k1 == 0) && (k2 == 1)) {
+ 996:	1cbb      	adds	r3, r7, #2
+ 998:	781b      	ldrb	r3, [r3, #0]
+ 99a:	2b00      	cmp	r3, #0
+ 99c:	d158      	bne.n	a50 <main+0x1ec>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:81 (discriminator 1)
+ 99e:	1c7b      	adds	r3, r7, #1
+ 9a0:	781b      	ldrb	r3, [r3, #0]
+ 9a2:	2b01      	cmp	r3, #1
+ 9a4:	d154      	bne.n	a50 <main+0x1ec>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:84
+
+			for (;;) {
+				mRuncount++;	//主循环次数计数器+1
+ 9a6:	687b      	ldr	r3, [r7, #4]
+ 9a8:	3301      	adds	r3, #1
+ 9aa:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:86
+
+				if (mRuncount >= RUN_COUNTER_MAX)  //主循环次数计数器大于设定的宏常数
+ 9ac:	687a      	ldr	r2, [r7, #4]
+ 9ae:	4b29      	ldr	r3, [pc, #164]	; (a54 <main+0x1f0>)
+ 9b0:	429a      	cmp	r2, r3
+ 9b2:	d94c      	bls.n	a4e <main+0x1ea>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:88
+				{
+					mRuncount = 0;
+ 9b4:	2300      	movs	r3, #0
+ 9b6:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:89
+					k1 = key_get(key1);
+ 9b8:	1cbc      	adds	r4, r7, #2
+ 9ba:	2380      	movs	r3, #128	; 0x80
+ 9bc:	005b      	lsls	r3, r3, #1
+ 9be:	1c18      	adds	r0, r3, #0
+ 9c0:	f000 f892 	bl	ae8 <key_get>
+ 9c4:	1c03      	adds	r3, r0, #0
+ 9c6:	7023      	strb	r3, [r4, #0]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:90
+					k2 = key_get(key2);
+ 9c8:	1c7c      	adds	r4, r7, #1
+ 9ca:	2381      	movs	r3, #129	; 0x81
+ 9cc:	005b      	lsls	r3, r3, #1
+ 9ce:	1c18      	adds	r0, r3, #0
+ 9d0:	f000 f88a 	bl	ae8 <key_get>
+ 9d4:	1c03      	adds	r3, r0, #0
+ 9d6:	7023      	strb	r3, [r4, #0]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:91
+					if ((k1 == 1) && (k2 == 0))
+ 9d8:	1cbb      	adds	r3, r7, #2
+ 9da:	781b      	ldrb	r3, [r3, #0]
+ 9dc:	2b01      	cmp	r3, #1
+ 9de:	d105      	bne.n	9ec <main+0x188>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:91 (discriminator 1)
+ 9e0:	1c7b      	adds	r3, r7, #1
+ 9e2:	781b      	ldrb	r3, [r3, #0]
+ 9e4:	2b00      	cmp	r3, #0
+ 9e6:	d101      	bne.n	9ec <main+0x188>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:92
+						break;
+ 9e8:	46c0      	nop			; (mov r8, r8)
+ 9ea:	e031      	b.n	a50 <main+0x1ec>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:94
+
+					switch (mflag) {
+ 9ec:	1cfb      	adds	r3, r7, #3
+ 9ee:	781b      	ldrb	r3, [r3, #0]
+ 9f0:	2b00      	cmp	r3, #0
+ 9f2:	d002      	beq.n	9fa <main+0x196>
+ 9f4:	2b01      	cmp	r3, #1
+ 9f6:	d015      	beq.n	a24 <main+0x1c0>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:114
+					default: {
+
+					}
+					}
+				}
+			}
+ 9f8:	e7d5      	b.n	9a6 <main+0x142>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:96
+					if ((k1 == 1) && (k2 == 0))
+						break;
+
+					switch (mflag) {
+					case 0: {
+						light_change(LIGHT_GREEN);
+ 9fa:	2389      	movs	r3, #137	; 0x89
+ 9fc:	005b      	lsls	r3, r3, #1
+ 9fe:	1c18      	adds	r0, r3, #0
+ a00:	f000 f854 	bl	aac <light_change>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:97
+						light_control(LIGHT_BLUE, LIGHT_OFF);
+ a04:	230a      	movs	r3, #10
+ a06:	33ff      	adds	r3, #255	; 0xff
+ a08:	1c18      	adds	r0, r3, #0
+ a0a:	2101      	movs	r1, #1
+ a0c:	f000 f83a 	bl	a84 <light_control>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:98
+						light_control(LIGHT_RED, LIGHT_OFF);
+ a10:	2314      	movs	r3, #20
+ a12:	33ff      	adds	r3, #255	; 0xff
+ a14:	1c18      	adds	r0, r3, #0
+ a16:	2101      	movs	r1, #1
+ a18:	f000 f834 	bl	a84 <light_control>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:99
+						mflag = 1;
+ a1c:	1cfb      	adds	r3, r7, #3
+ a1e:	2201      	movs	r2, #1
+ a20:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:100
+						break;
+ a22:	e014      	b.n	a4e <main+0x1ea>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:103
+					}
+					case 1: {
+						light_change(LIGHT_BLUE);
+ a24:	230a      	movs	r3, #10
+ a26:	33ff      	adds	r3, #255	; 0xff
+ a28:	1c18      	adds	r0, r3, #0
+ a2a:	f000 f83f 	bl	aac <light_change>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:104
+						light_control(LIGHT_RED, LIGHT_OFF);
+ a2e:	2314      	movs	r3, #20
+ a30:	33ff      	adds	r3, #255	; 0xff
+ a32:	1c18      	adds	r0, r3, #0
+ a34:	2101      	movs	r1, #1
+ a36:	f000 f825 	bl	a84 <light_control>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:105
+						light_control(LIGHT_GREEN, LIGHT_OFF);
+ a3a:	2389      	movs	r3, #137	; 0x89
+ a3c:	005b      	lsls	r3, r3, #1
+ a3e:	1c18      	adds	r0, r3, #0
+ a40:	2101      	movs	r1, #1
+ a42:	f000 f81f 	bl	a84 <light_control>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:106
+						mflag = 0;
+ a46:	1cfb      	adds	r3, r7, #3
+ a48:	2200      	movs	r2, #0
+ a4a:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:107
+						break;
+ a4c:	46c0      	nop			; (mov r8, r8)
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:114
+					default: {
+
+					}
+					}
+				}
+			}
+ a4e:	e7aa      	b.n	9a6 <main+0x142>
+F:\kds\KL25_Light_Component\Debug/../08_NOS_Prg/main.c:118
+		} else {
+		}
+
+	}
+ a50:	e734      	b.n	8bc <main+0x58>
+ a52:	46c0      	nop			; (mov r8, r8)
+ a54:	0016e35f 	.word	0x0016e35f
+
+00000a58 <light_init>:
+light_init():
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:16
+//       state：设定小灯状态。由light.h中宏定义。
+//函数返回：无
+//功能概要：指示灯驱动初始化。
+//=====================================================================
+void light_init(uint_16 port_pin, uint_8 state)
+{
+ a58:	b580      	push	{r7, lr}
+ a5a:	b082      	sub	sp, #8
+ a5c:	af00      	add	r7, sp, #0
+ a5e:	1c0a      	adds	r2, r1, #0
+ a60:	1dbb      	adds	r3, r7, #6
+ a62:	1c01      	adds	r1, r0, #0
+ a64:	8019      	strh	r1, [r3, #0]
+ a66:	1d7b      	adds	r3, r7, #5
+ a68:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:17
+    gpio_init(port_pin, GPIO_OUTPUT, state);
+ a6a:	1dbb      	adds	r3, r7, #6
+ a6c:	881a      	ldrh	r2, [r3, #0]
+ a6e:	1d7b      	adds	r3, r7, #5
+ a70:	781b      	ldrb	r3, [r3, #0]
+ a72:	1c10      	adds	r0, r2, #0
+ a74:	2101      	movs	r1, #1
+ a76:	1c1a      	adds	r2, r3, #0
+ a78:	f000 f846 	bl	b08 <gpio_init>
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:18
+}
+ a7c:	46bd      	mov	sp, r7
+ a7e:	b002      	add	sp, #8
+ a80:	bd80      	pop	{r7, pc}
+ a82:	46c0      	nop			; (mov r8, r8)
+
+00000a84 <light_control>:
+light_control():
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:28
+//       state：设定小灯状态。由light.h中宏定义。
+//函数返回：无
+//功能概要：控制指示灯亮暗。
+//=====================================================================
+void light_control(uint_16 port_pin, uint_8 state)
+{
+ a84:	b580      	push	{r7, lr}
+ a86:	b082      	sub	sp, #8
+ a88:	af00      	add	r7, sp, #0
+ a8a:	1c0a      	adds	r2, r1, #0
+ a8c:	1dbb      	adds	r3, r7, #6
+ a8e:	1c01      	adds	r1, r0, #0
+ a90:	8019      	strh	r1, [r3, #0]
+ a92:	1d7b      	adds	r3, r7, #5
+ a94:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:29
+    gpio_set(port_pin, state);
+ a96:	1dbb      	adds	r3, r7, #6
+ a98:	881a      	ldrh	r2, [r3, #0]
+ a9a:	1d7b      	adds	r3, r7, #5
+ a9c:	781b      	ldrb	r3, [r3, #0]
+ a9e:	1c10      	adds	r0, r2, #0
+ aa0:	1c19      	adds	r1, r3, #0
+ aa2:	f000 f8a5 	bl	bf0 <gpio_set>
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:30
+}
+ aa6:	46bd      	mov	sp, r7
+ aa8:	b002      	add	sp, #8
+ aaa:	bd80      	pop	{r7, pc}
+
+00000aac <light_change>:
+light_change():
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:39
+//函数参数：port_pin：(端口号)|(引脚号)（如：(PTB_NUM)|(9) 表示为B口9号脚）
+//函数返回：无
+//功能概要：切换指示灯亮暗。
+//=====================================================================
+void light_change(uint_16 port_pin)
+{
+ aac:	b580      	push	{r7, lr}
+ aae:	b082      	sub	sp, #8
+ ab0:	af00      	add	r7, sp, #0
+ ab2:	1c02      	adds	r2, r0, #0
+ ab4:	1dbb      	adds	r3, r7, #6
+ ab6:	801a      	strh	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:40
+    gpio_reverse(port_pin);
+ ab8:	1dbb      	adds	r3, r7, #6
+ aba:	881b      	ldrh	r3, [r3, #0]
+ abc:	1c18      	adds	r0, r3, #0
+ abe:	f000 f901 	bl	cc4 <gpio_reverse>
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:41
+}
+ ac2:	46bd      	mov	sp, r7
+ ac4:	b002      	add	sp, #8
+ ac6:	bd80      	pop	{r7, pc}
+
+00000ac8 <key_init>:
+key_init():
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:44
+
+void key_init(uint_16 port_pin)
+{
+ ac8:	b580      	push	{r7, lr}
+ aca:	b082      	sub	sp, #8
+ acc:	af00      	add	r7, sp, #0
+ ace:	1c02      	adds	r2, r0, #0
+ ad0:	1dbb      	adds	r3, r7, #6
+ ad2:	801a      	strh	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:45
+	gpio_init(port_pin,0,1);//定义为输入引脚
+ ad4:	1dbb      	adds	r3, r7, #6
+ ad6:	881b      	ldrh	r3, [r3, #0]
+ ad8:	1c18      	adds	r0, r3, #0
+ ada:	2100      	movs	r1, #0
+ adc:	2201      	movs	r2, #1
+ ade:	f000 f813 	bl	b08 <gpio_init>
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:46
+}
+ ae2:	46bd      	mov	sp, r7
+ ae4:	b002      	add	sp, #8
+ ae6:	bd80      	pop	{r7, pc}
+
+00000ae8 <key_get>:
+key_get():
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:49
+
+uint_8 key_get(uint_16 port_pin)
+{
+ ae8:	b580      	push	{r7, lr}
+ aea:	b082      	sub	sp, #8
+ aec:	af00      	add	r7, sp, #0
+ aee:	1c02      	adds	r2, r0, #0
+ af0:	1dbb      	adds	r3, r7, #6
+ af2:	801a      	strh	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:50
+	 return gpio_get(port_pin);//获得输入引脚的输入
+ af4:	1dbb      	adds	r3, r7, #6
+ af6:	881b      	ldrh	r3, [r3, #0]
+ af8:	1c18      	adds	r0, r3, #0
+ afa:	f000 f8b9 	bl	c70 <gpio_get>
+ afe:	1c03      	adds	r3, r0, #0
+F:\kds\KL25_Light_Component\Debug/../06_App_Component/key/key.c:51
+}
+ b00:	1c18      	adds	r0, r3, #0
+ b02:	46bd      	mov	sp, r7
+ b04:	b002      	add	sp, #8
+ b06:	bd80      	pop	{r7, pc}
+
+00000b08 <gpio_init>:
+gpio_init():
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:27
+//          state：端口引脚初始状态（0=低电平，1=高电平）
+//功能概要：初始化指定端口引脚作为GPIO引脚功能，并定义为输入或输出，若是输出，
+//          还指定初始状态是低电平或高电平
+//=====================================================================
+void gpio_init(uint_16 port_pin, uint_8 dir, uint_8 state)
+{
+ b08:	b580      	push	{r7, lr}
+ b0a:	b086      	sub	sp, #24
+ b0c:	af00      	add	r7, sp, #0
+ b0e:	1dbb      	adds	r3, r7, #6
+ b10:	8018      	strh	r0, [r3, #0]
+ b12:	1d7b      	adds	r3, r7, #5
+ b14:	7019      	strb	r1, [r3, #0]
+ b16:	1d3b      	adds	r3, r7, #4
+ b18:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:33
+    //局部变量声明
+    PORT_MemMapPtr port_ptr;    //声明port_ptr为PORT结构体类型指针 
+    GPIO_MemMapPtr gpio_ptr;    //声明port_ptr为GPIO结构体类型指针
+    uint_8 port,pin;            //声明端口port、引脚pin变量
+    //根据带入参数port_pin，解析出端口与引脚分别赋给port,pin
+    gpio_get_port_pin(port_pin , &port , &pin);
+ b1a:	1dbb      	adds	r3, r7, #6
+ b1c:	8819      	ldrh	r1, [r3, #0]
+ b1e:	1c3a      	adds	r2, r7, #0
+ b20:	320f      	adds	r2, #15
+ b22:	1c3b      	adds	r3, r7, #0
+ b24:	330e      	adds	r3, #14
+ b26:	1c08      	adds	r0, r1, #0
+ b28:	1c11      	adds	r1, r2, #0
+ b2a:	1c1a      	adds	r2, r3, #0
+ b2c:	f000 f8f4 	bl	d18 <gpio_get_port_pin>
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:35
+    //根据port，给局部变量port_ptr、gpio_ptr赋值（获得两个基地址）
+    port_ptr = PORT_ARR[port];  //获得PORT模块相应口基地址
+ b30:	1c3b      	adds	r3, r7, #0
+ b32:	330f      	adds	r3, #15
+ b34:	781b      	ldrb	r3, [r3, #0]
+ b36:	1c1a      	adds	r2, r3, #0
+ b38:	4b2a      	ldr	r3, [pc, #168]	; (be4 <gpio_init+0xdc>)
+ b3a:	0092      	lsls	r2, r2, #2
+ b3c:	58d3      	ldr	r3, [r2, r3]
+ b3e:	617b      	str	r3, [r7, #20]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:36
+    gpio_ptr = GPIO_ARR[port];  //获得GPIO模块相应口基地址
+ b40:	1c3b      	adds	r3, r7, #0
+ b42:	330f      	adds	r3, #15
+ b44:	781b      	ldrb	r3, [r3, #0]
+ b46:	1c1a      	adds	r2, r3, #0
+ b48:	4b27      	ldr	r3, [pc, #156]	; (be8 <gpio_init+0xe0>)
+ b4a:	0092      	lsls	r2, r2, #2
+ b4c:	58d3      	ldr	r3, [r2, r3]
+ b4e:	613b      	str	r3, [r7, #16]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:39
+
+    //设定相应端口的相应引脚功能为GPIO（即令引脚控制寄存器的MUX=0b001）
+    PORT_PCR_REG(port_ptr, pin) &= ~PORT_PCR_MUX_MASK; //置D10-D8=000
+ b50:	1c3b      	adds	r3, r7, #0
+ b52:	330e      	adds	r3, #14
+ b54:	781b      	ldrb	r3, [r3, #0]
+ b56:	1c1a      	adds	r2, r3, #0
+ b58:	1c3b      	adds	r3, r7, #0
+ b5a:	330e      	adds	r3, #14
+ b5c:	781b      	ldrb	r3, [r3, #0]
+ b5e:	1c19      	adds	r1, r3, #0
+ b60:	697b      	ldr	r3, [r7, #20]
+ b62:	0089      	lsls	r1, r1, #2
+ b64:	58c9      	ldr	r1, [r1, r3]
+ b66:	4b21      	ldr	r3, [pc, #132]	; (bec <gpio_init+0xe4>)
+ b68:	4019      	ands	r1, r3
+ b6a:	697b      	ldr	r3, [r7, #20]
+ b6c:	0092      	lsls	r2, r2, #2
+ b6e:	50d1      	str	r1, [r2, r3]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:40
+    PORT_PCR_REG(port_ptr, pin) |= PORT_PCR_MUX(1);    //置D10-D8=001
+ b70:	1c3b      	adds	r3, r7, #0
+ b72:	330e      	adds	r3, #14
+ b74:	781b      	ldrb	r3, [r3, #0]
+ b76:	1c1a      	adds	r2, r3, #0
+ b78:	1c3b      	adds	r3, r7, #0
+ b7a:	330e      	adds	r3, #14
+ b7c:	781b      	ldrb	r3, [r3, #0]
+ b7e:	1c19      	adds	r1, r3, #0
+ b80:	697b      	ldr	r3, [r7, #20]
+ b82:	0089      	lsls	r1, r1, #2
+ b84:	58cb      	ldr	r3, [r1, r3]
+ b86:	2180      	movs	r1, #128	; 0x80
+ b88:	0049      	lsls	r1, r1, #1
+ b8a:	4319      	orrs	r1, r3
+ b8c:	697b      	ldr	r3, [r7, #20]
+ b8e:	0092      	lsls	r2, r2, #2
+ b90:	50d1      	str	r1, [r2, r3]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:43
+
+    //根据带入参数dir，决定引脚为输出还是输入
+    if (1 == dir)   //希望为输出
+ b92:	1d7b      	adds	r3, r7, #5
+ b94:	781b      	ldrb	r3, [r3, #0]
+ b96:	2b01      	cmp	r3, #1
+ b98:	d114      	bne.n	bc4 <gpio_init+0xbc>
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:45
+    {
+         BSET(pin,GPIO_PDDR_REG(gpio_ptr));//数据方向寄存器的pin位=1，定义为输出
+ b9a:	693b      	ldr	r3, [r7, #16]
+ b9c:	695a      	ldr	r2, [r3, #20]
+ b9e:	1c3b      	adds	r3, r7, #0
+ ba0:	330e      	adds	r3, #14
+ ba2:	781b      	ldrb	r3, [r3, #0]
+ ba4:	2101      	movs	r1, #1
+ ba6:	1c08      	adds	r0, r1, #0
+ ba8:	4098      	lsls	r0, r3
+ baa:	1c03      	adds	r3, r0, #0
+ bac:	431a      	orrs	r2, r3
+ bae:	693b      	ldr	r3, [r7, #16]
+ bb0:	615a      	str	r2, [r3, #20]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:46
+         gpio_set(port_pin, state);  //调用gpio_set函数，设定引脚初始状态
+ bb2:	1dbb      	adds	r3, r7, #6
+ bb4:	881a      	ldrh	r2, [r3, #0]
+ bb6:	1d3b      	adds	r3, r7, #4
+ bb8:	781b      	ldrb	r3, [r3, #0]
+ bba:	1c10      	adds	r0, r2, #0
+ bbc:	1c19      	adds	r1, r3, #0
+ bbe:	f000 f817 	bl	bf0 <gpio_set>
+ bc2:	e00c      	b.n	bde <gpio_init+0xd6>
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:50
+    }
+    else           //希望为输入
+    {
+        BCLR(pin,GPIO_PDDR_REG(gpio_ptr));//数据方向寄存器的pin位=0，定义为输入
+ bc4:	693b      	ldr	r3, [r7, #16]
+ bc6:	695b      	ldr	r3, [r3, #20]
+ bc8:	1c3a      	adds	r2, r7, #0
+ bca:	320e      	adds	r2, #14
+ bcc:	7812      	ldrb	r2, [r2, #0]
+ bce:	2101      	movs	r1, #1
+ bd0:	1c08      	adds	r0, r1, #0
+ bd2:	4090      	lsls	r0, r2
+ bd4:	1c02      	adds	r2, r0, #0
+ bd6:	43d2      	mvns	r2, r2
+ bd8:	401a      	ands	r2, r3
+ bda:	693b      	ldr	r3, [r7, #16]
+ bdc:	615a      	str	r2, [r3, #20]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:52
+    }
+}
+ bde:	46bd      	mov	sp, r7
+ be0:	b006      	add	sp, #24
+ be2:	bd80      	pop	{r7, pc}
+ be4:	00000eec 	.word	0x00000eec
+ be8:	00000f00 	.word	0x00000f00
+ bec:	fffff8ff 	.word	0xfffff8ff
+
+00000bf0 <gpio_set>:
+gpio_set():
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:62
+//参数说明：port_pin：端口号|引脚号（如：(PTB_NUM)|(9) 表示为B口9号脚）
+//       state：引脚初始状态（0=低电平，1=高电平）
+//功能概要：设定引脚状态为低电平或高电平
+//=====================================================================
+void gpio_set(uint_16 port_pin, uint_8 state)
+{
+ bf0:	b580      	push	{r7, lr}
+ bf2:	b084      	sub	sp, #16
+ bf4:	af00      	add	r7, sp, #0
+ bf6:	1c0a      	adds	r2, r1, #0
+ bf8:	1dbb      	adds	r3, r7, #6
+ bfa:	1c01      	adds	r1, r0, #0
+ bfc:	8019      	strh	r1, [r3, #0]
+ bfe:	1d7b      	adds	r3, r7, #5
+ c00:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:67
+    //局部变量声明
+    GPIO_MemMapPtr  gpio_ptr;  //声明port_ptr为GPIO结构体类型指针（首地址）
+    uint_8 port,pin;           //声明端口port、引脚pin变量
+    //根据带入参数port_pin，解析出端口与引脚分别赋给port,pin
+    gpio_get_port_pin(port_pin , &port , &pin);
+ c02:	1dbb      	adds	r3, r7, #6
+ c04:	8819      	ldrh	r1, [r3, #0]
+ c06:	1c3a      	adds	r2, r7, #0
+ c08:	320b      	adds	r2, #11
+ c0a:	1c3b      	adds	r3, r7, #0
+ c0c:	330a      	adds	r3, #10
+ c0e:	1c08      	adds	r0, r1, #0
+ c10:	1c11      	adds	r1, r2, #0
+ c12:	1c1a      	adds	r2, r3, #0
+ c14:	f000 f880 	bl	d18 <gpio_get_port_pin>
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:70
+
+    //根据port，给局部变量gpio_ptr赋值（GPIO基地址）
+    gpio_ptr = GPIO_ARR[port]; 
+ c18:	1c3b      	adds	r3, r7, #0
+ c1a:	330b      	adds	r3, #11
+ c1c:	781b      	ldrb	r3, [r3, #0]
+ c1e:	1c1a      	adds	r2, r3, #0
+ c20:	4b12      	ldr	r3, [pc, #72]	; (c6c <gpio_set+0x7c>)
+ c22:	0092      	lsls	r2, r2, #2
+ c24:	58d3      	ldr	r3, [r2, r3]
+ c26:	60fb      	str	r3, [r7, #12]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:73
+
+    //根据带入参数state，决定引脚为输出1还是0
+    if (1==state)
+ c28:	1d7b      	adds	r3, r7, #5
+ c2a:	781b      	ldrb	r3, [r3, #0]
+ c2c:	2b01      	cmp	r3, #1
+ c2e:	d10c      	bne.n	c4a <gpio_set+0x5a>
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:75
+    {
+        BSET(pin,GPIO_PDOR_REG(gpio_ptr));
+ c30:	68fb      	ldr	r3, [r7, #12]
+ c32:	681a      	ldr	r2, [r3, #0]
+ c34:	1c3b      	adds	r3, r7, #0
+ c36:	330a      	adds	r3, #10
+ c38:	781b      	ldrb	r3, [r3, #0]
+ c3a:	2101      	movs	r1, #1
+ c3c:	1c08      	adds	r0, r1, #0
+ c3e:	4098      	lsls	r0, r3
+ c40:	1c03      	adds	r3, r0, #0
+ c42:	431a      	orrs	r2, r3
+ c44:	68fb      	ldr	r3, [r7, #12]
+ c46:	601a      	str	r2, [r3, #0]
+ c48:	e00c      	b.n	c64 <gpio_set+0x74>
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:79
+    }
+    else
+    {
+        BCLR(pin,GPIO_PDOR_REG(gpio_ptr));
+ c4a:	68fb      	ldr	r3, [r7, #12]
+ c4c:	681b      	ldr	r3, [r3, #0]
+ c4e:	1c3a      	adds	r2, r7, #0
+ c50:	320a      	adds	r2, #10
+ c52:	7812      	ldrb	r2, [r2, #0]
+ c54:	2101      	movs	r1, #1
+ c56:	1c08      	adds	r0, r1, #0
+ c58:	4090      	lsls	r0, r2
+ c5a:	1c02      	adds	r2, r0, #0
+ c5c:	43d2      	mvns	r2, r2
+ c5e:	401a      	ands	r2, r3
+ c60:	68fb      	ldr	r3, [r7, #12]
+ c62:	601a      	str	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:81
+    }
+}
+ c64:	46bd      	mov	sp, r7
+ c66:	b004      	add	sp, #16
+ c68:	bd80      	pop	{r7, pc}
+ c6a:	46c0      	nop			; (mov r8, r8)
+ c6c:	00000f00 	.word	0x00000f00
+
+00000c70 <gpio_get>:
+gpio_get():
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:90
+//函数返回：指定引脚的状态（1或0）
+//参数说明：port_pin：端口号|引脚号（如：(PTB_NUM)|(9) 表示为B口9号脚）
+//功能概要：获取指定引脚的状态（1或0）
+//=====================================================================
+uint_8 gpio_get(uint_16 port_pin)
+{
+ c70:	b580      	push	{r7, lr}
+ c72:	b084      	sub	sp, #16
+ c74:	af00      	add	r7, sp, #0
+ c76:	1c02      	adds	r2, r0, #0
+ c78:	1dbb      	adds	r3, r7, #6
+ c7a:	801a      	strh	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:95
+    //局部变量声明
+    GPIO_MemMapPtr  gpio_ptr;  //声明port_ptr为GPIO结构体类型指针（首地址）
+    uint_8 port,pin;           //声明端口port、引脚pin变量
+    //根据带入参数port_pin，解析出端口与引脚分别赋给port,pin
+    gpio_get_port_pin(port_pin , &port , &pin);
+ c7c:	1dbb      	adds	r3, r7, #6
+ c7e:	8819      	ldrh	r1, [r3, #0]
+ c80:	1c3a      	adds	r2, r7, #0
+ c82:	320b      	adds	r2, #11
+ c84:	1c3b      	adds	r3, r7, #0
+ c86:	330a      	adds	r3, #10
+ c88:	1c08      	adds	r0, r1, #0
+ c8a:	1c11      	adds	r1, r2, #0
+ c8c:	1c1a      	adds	r2, r3, #0
+ c8e:	f000 f843 	bl	d18 <gpio_get_port_pin>
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:98
+
+    //根据port，给局部变量gpio_ptr赋值（GPIO基地址）
+    gpio_ptr = GPIO_ARR[port];
+ c92:	1c3b      	adds	r3, r7, #0
+ c94:	330b      	adds	r3, #11
+ c96:	781b      	ldrb	r3, [r3, #0]
+ c98:	1c1a      	adds	r2, r3, #0
+ c9a:	4b09      	ldr	r3, [pc, #36]	; (cc0 <gpio_get+0x50>)
+ c9c:	0092      	lsls	r2, r2, #2
+ c9e:	58d3      	ldr	r3, [r2, r3]
+ ca0:	60fb      	str	r3, [r7, #12]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:101
+
+    //返回引脚的状态
+    return ((BGET(pin,GPIO_PDIR_REG(gpio_ptr)))>=1 ? 1:0);
+ ca2:	68fb      	ldr	r3, [r7, #12]
+ ca4:	691a      	ldr	r2, [r3, #16]
+ ca6:	1c3b      	adds	r3, r7, #0
+ ca8:	330a      	adds	r3, #10
+ caa:	781b      	ldrb	r3, [r3, #0]
+ cac:	40da      	lsrs	r2, r3
+ cae:	2301      	movs	r3, #1
+ cb0:	4013      	ands	r3, r2
+ cb2:	1e5a      	subs	r2, r3, #1
+ cb4:	4193      	sbcs	r3, r2
+ cb6:	b2db      	uxtb	r3, r3
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:102
+}
+ cb8:	1c18      	adds	r0, r3, #0
+ cba:	46bd      	mov	sp, r7
+ cbc:	b004      	add	sp, #16
+ cbe:	bd80      	pop	{r7, pc}
+ cc0:	00000f00 	.word	0x00000f00
+
+00000cc4 <gpio_reverse>:
+gpio_reverse():
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:111
+//函数返回：无
+//参数说明：port_pin：端口号|引脚号（如：(PTB_NUM)|(9) 表示为B口9号脚）
+//功能概要：反转指定引脚输出状态。
+//=====================================================================
+void gpio_reverse(uint_16 port_pin)
+{
+ cc4:	b580      	push	{r7, lr}
+ cc6:	b084      	sub	sp, #16
+ cc8:	af00      	add	r7, sp, #0
+ cca:	1c02      	adds	r2, r0, #0
+ ccc:	1dbb      	adds	r3, r7, #6
+ cce:	801a      	strh	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:116
+    //局部变量声明
+    GPIO_MemMapPtr  gpio_ptr;  //声明port_ptr为GPIO结构体类型指针（首地址）
+    uint_8 port,pin;           //声明端口port、引脚pin变量
+    //根据带入参数port_pin，解析出端口与引脚分别赋给port,pin
+    gpio_get_port_pin(port_pin , &port , &pin);
+ cd0:	1dbb      	adds	r3, r7, #6
+ cd2:	8819      	ldrh	r1, [r3, #0]
+ cd4:	1c3a      	adds	r2, r7, #0
+ cd6:	320b      	adds	r2, #11
+ cd8:	1c3b      	adds	r3, r7, #0
+ cda:	330a      	adds	r3, #10
+ cdc:	1c08      	adds	r0, r1, #0
+ cde:	1c11      	adds	r1, r2, #0
+ ce0:	1c1a      	adds	r2, r3, #0
+ ce2:	f000 f819 	bl	d18 <gpio_get_port_pin>
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:119
+
+    //根据port，给局部变量gpio_ptr赋值（GPIO基地址）
+    gpio_ptr = GPIO_ARR[port]; 
+ ce6:	1c3b      	adds	r3, r7, #0
+ ce8:	330b      	adds	r3, #11
+ cea:	781b      	ldrb	r3, [r3, #0]
+ cec:	1c1a      	adds	r2, r3, #0
+ cee:	4b09      	ldr	r3, [pc, #36]	; (d14 <gpio_reverse+0x50>)
+ cf0:	0092      	lsls	r2, r2, #2
+ cf2:	58d3      	ldr	r3, [r2, r3]
+ cf4:	60fb      	str	r3, [r7, #12]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:122
+
+    //反转指定引脚输出状态
+    BSET(pin,GPIO_PTOR_REG(gpio_ptr));
+ cf6:	68fb      	ldr	r3, [r7, #12]
+ cf8:	68da      	ldr	r2, [r3, #12]
+ cfa:	1c3b      	adds	r3, r7, #0
+ cfc:	330a      	adds	r3, #10
+ cfe:	781b      	ldrb	r3, [r3, #0]
+ d00:	2101      	movs	r1, #1
+ d02:	1c08      	adds	r0, r1, #0
+ d04:	4098      	lsls	r0, r3
+ d06:	1c03      	adds	r3, r0, #0
+ d08:	431a      	orrs	r2, r3
+ d0a:	68fb      	ldr	r3, [r7, #12]
+ d0c:	60da      	str	r2, [r3, #12]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:123
+}
+ d0e:	46bd      	mov	sp, r7
+ d10:	b004      	add	sp, #16
+ d12:	bd80      	pop	{r7, pc}
+ d14:	00000f00 	.word	0x00000f00
+
+00000d18 <gpio_get_port_pin>:
+gpio_get_port_pin():
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:334
+//       pin:引脚号（0~31，实际取值由芯片的物理引脚决定）（传指带出参数）
+//功能概要：将传进参数port_pin进行解析，得出具体端口号与引脚号，分别赋值给port与pin,返回。
+//       （例：(PTB_NUM)|(9)解析为PORTB与9，并将其分别赋值给port与pin）。
+//=====================================================================
+void gpio_get_port_pin(uint_16 port_pin,uint_8* port,uint_8* pin)
+{
+ d18:	b580      	push	{r7, lr}
+ d1a:	b084      	sub	sp, #16
+ d1c:	af00      	add	r7, sp, #0
+ d1e:	60b9      	str	r1, [r7, #8]
+ d20:	607a      	str	r2, [r7, #4]
+ d22:	1c3b      	adds	r3, r7, #0
+ d24:	330e      	adds	r3, #14
+ d26:	1c02      	adds	r2, r0, #0
+ d28:	801a      	strh	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:335
+    *port = (port_pin>>8);
+ d2a:	1c3b      	adds	r3, r7, #0
+ d2c:	330e      	adds	r3, #14
+ d2e:	881b      	ldrh	r3, [r3, #0]
+ d30:	0a1b      	lsrs	r3, r3, #8
+ d32:	b29b      	uxth	r3, r3
+ d34:	b2da      	uxtb	r2, r3
+ d36:	68bb      	ldr	r3, [r7, #8]
+ d38:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:336
+    *pin = port_pin;
+ d3a:	1c3b      	adds	r3, r7, #0
+ d3c:	330e      	adds	r3, #14
+ d3e:	881b      	ldrh	r3, [r3, #0]
+ d40:	b2da      	uxtb	r2, r3
+ d42:	687b      	ldr	r3, [r7, #4]
+ d44:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../05_Driver/gpio/gpio.c:337
+}
+ d46:	46bd      	mov	sp, r7
+ d48:	b004      	add	sp, #16
+ d4a:	bd80      	pop	{r7, pc}
+
+00000d4c <SystemInit>:
+SystemInit():
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:111
+//函数名称：SystemInit
+//功能概要：初始化系统的时钟，并把PORT时钟门启用
+//参数说明：无
+//函数返回：无
+//======================================================================
+void SystemInit (void) {
+ d4c:	b580      	push	{r7, lr}
+ d4e:	b082      	sub	sp, #8
+ d50:	af00      	add	r7, sp, #0
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:113
+
+	unsigned int i = 0;
+ d52:	2300      	movs	r3, #0
+ d54:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:114
+	char temp_reg = 0;
+ d56:	1cfb      	adds	r3, r7, #3
+ d58:	2200      	movs	r2, #0
+ d5a:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:117
+
+#if (DISABLE_WDOG)  //关闭看门狗
+    SIM->COPC = (uint32_t)0x00u;    //SIM_COPC: COPT=0,COPCLKS=0,COPW=0
+ d5c:	4a5b      	ldr	r2, [pc, #364]	; (ecc <SystemInit+0x180>)
+ d5e:	2388      	movs	r3, #136	; 0x88
+ d60:	015b      	lsls	r3, r3, #5
+ d62:	2100      	movs	r1, #0
+ d64:	50d1      	str	r1, [r2, r3]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:125
+//1.首先从FEI模式过渡到FBE模式
+
+    //C2= 0x1C，因为我们的核心板上采用了外部晶振为8Mhz，属于高频率范围，
+    //C2[RANGE]设置为0b01；C2[HGO]设为1以配置晶振来进行高增益操作；因为
+    //正在使用的外部参考时钟源是晶振，所以C2[EREFS]设置为1。
+    MCG_C2 = (MCG_C2_RANGE0(1) | MCG_C2_EREFS0_MASK);
+ d66:	4b5a      	ldr	r3, [pc, #360]	; (ed0 <SystemInit+0x184>)
+ d68:	2214      	movs	r2, #20
+ d6a:	705a      	strb	r2, [r3, #1]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:130
+    //C1 = 0x90 ，C1[CLKS]设置为2’b10，以便选择作为系统时钟源的外部参考时钟。
+    //C1[FRDIV]设置为3'b011，对应256分频,因为8MHz/256=31.25kHz在由FLL要求的
+    //31.25kHz至39.0625 kHz频率范围内。C1[IREFS]清除为0，选择外部参考时钟和
+    //外部晶振。
+    MCG_C1 = (MCG_C1_CLKS(2) | MCG_C1_FRDIV(3));
+ d6c:	4b58      	ldr	r3, [pc, #352]	; (ed0 <SystemInit+0x184>)
+ d6e:	2298      	movs	r2, #152	; 0x98
+ d70:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:132
+    //需要等到S[OSCINIT]被置位外部晶振才能使用
+    for (i = 0 ; i < 20000 ; i++)
+ d72:	2300      	movs	r3, #0
+ d74:	607b      	str	r3, [r7, #4]
+ d76:	e00a      	b.n	d8e <SystemInit+0x42>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:135
+    {
+        //如果S[OSCINIT]在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_OSCINIT0_MASK) break;
+ d78:	4b55      	ldr	r3, [pc, #340]	; (ed0 <SystemInit+0x184>)
+ d7a:	799b      	ldrb	r3, [r3, #6]
+ d7c:	b2db      	uxtb	r3, r3
+ d7e:	1c1a      	adds	r2, r3, #0
+ d80:	2302      	movs	r3, #2
+ d82:	4013      	ands	r3, r2
+ d84:	d000      	beq.n	d88 <SystemInit+0x3c>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:135 (discriminator 1)
+ d86:	e006      	b.n	d96 <SystemInit+0x4a>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:132
+    //C1[FRDIV]设置为3'b011，对应256分频,因为8MHz/256=31.25kHz在由FLL要求的
+    //31.25kHz至39.0625 kHz频率范围内。C1[IREFS]清除为0，选择外部参考时钟和
+    //外部晶振。
+    MCG_C1 = (MCG_C1_CLKS(2) | MCG_C1_FRDIV(3));
+    //需要等到S[OSCINIT]被置位外部晶振才能使用
+    for (i = 0 ; i < 20000 ; i++)
+ d88:	687b      	ldr	r3, [r7, #4]
+ d8a:	3301      	adds	r3, #1
+ d8c:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:132 (discriminator 1)
+ d8e:	687a      	ldr	r2, [r7, #4]
+ d90:	4b50      	ldr	r3, [pc, #320]	; (ed4 <SystemInit+0x188>)
+ d92:	429a      	cmp	r2, r3
+ d94:	d9f0      	bls.n	d78 <SystemInit+0x2c>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:138
+    {
+        //如果S[OSCINIT]在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_OSCINIT0_MASK) break;
+    }
+    //等待参考时钟状态位清0
+    for (i = 0 ; i < 2000 ; i++)
+ d96:	2300      	movs	r3, #0
+ d98:	607b      	str	r3, [r7, #4]
+ d9a:	e00a      	b.n	db2 <SystemInit+0x66>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:141
+    {
+        //如果IREFST在循环结束之前被清0就跳出循环
+        if (!(MCG_S & MCG_S_IREFST_MASK)) break;
+ d9c:	4b4c      	ldr	r3, [pc, #304]	; (ed0 <SystemInit+0x184>)
+ d9e:	799b      	ldrb	r3, [r3, #6]
+ da0:	b2db      	uxtb	r3, r3
+ da2:	1c1a      	adds	r2, r3, #0
+ da4:	2310      	movs	r3, #16
+ da6:	4013      	ands	r3, r2
+ da8:	d100      	bne.n	dac <SystemInit+0x60>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:141 (discriminator 1)
+ daa:	e006      	b.n	dba <SystemInit+0x6e>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:138
+    {
+        //如果S[OSCINIT]在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_OSCINIT0_MASK) break;
+    }
+    //等待参考时钟状态位清0
+    for (i = 0 ; i < 2000 ; i++)
+ dac:	687b      	ldr	r3, [r7, #4]
+ dae:	3301      	adds	r3, #1
+ db0:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:138 (discriminator 1)
+ db2:	687a      	ldr	r2, [r7, #4]
+ db4:	4b48      	ldr	r3, [pc, #288]	; (ed8 <SystemInit+0x18c>)
+ db6:	429a      	cmp	r2, r3
+ db8:	d9f0      	bls.n	d9c <SystemInit+0x50>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:144
+    {
+        //如果IREFST在循环结束之前被清0就跳出循环
+        if (!(MCG_S & MCG_S_IREFST_MASK)) break;
+    }
+    //等待时钟状态位以显示时钟源为外部参考时钟
+    for (i = 0 ; i < 2000 ; i++)
+ dba:	2300      	movs	r3, #0
+ dbc:	607b      	str	r3, [r7, #4]
+ dbe:	e00c      	b.n	dda <SystemInit+0x8e>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:147
+    {
+        //如果CLKST显示外部时钟被选择，在循环结束之前就跳出循环
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x2) break;
+ dc0:	4b43      	ldr	r3, [pc, #268]	; (ed0 <SystemInit+0x184>)
+ dc2:	799b      	ldrb	r3, [r3, #6]
+ dc4:	b2db      	uxtb	r3, r3
+ dc6:	1c1a      	adds	r2, r3, #0
+ dc8:	230c      	movs	r3, #12
+ dca:	4013      	ands	r3, r2
+ dcc:	089b      	lsrs	r3, r3, #2
+ dce:	2b02      	cmp	r3, #2
+ dd0:	d100      	bne.n	dd4 <SystemInit+0x88>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:147 (discriminator 1)
+ dd2:	e006      	b.n	de2 <SystemInit+0x96>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:144
+    {
+        //如果IREFST在循环结束之前被清0就跳出循环
+        if (!(MCG_S & MCG_S_IREFST_MASK)) break;
+    }
+    //等待时钟状态位以显示时钟源为外部参考时钟
+    for (i = 0 ; i < 2000 ; i++)
+ dd4:	687b      	ldr	r3, [r7, #4]
+ dd6:	3301      	adds	r3, #1
+ dd8:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:144 (discriminator 1)
+ dda:	687a      	ldr	r2, [r7, #4]
+ ddc:	4b3e      	ldr	r3, [pc, #248]	; (ed8 <SystemInit+0x18c>)
+ dde:	429a      	cmp	r2, r3
+ de0:	d9ee      	bls.n	dc0 <SystemInit+0x74>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:152
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x2) break;
+    }
+
+//2.现在处于FBE状态，使能时钟监视器，由FBE直接转换为PBE模式
+
+    MCG_C6 |= MCG_C6_CME0_MASK;
+ de2:	4b3b      	ldr	r3, [pc, #236]	; (ed0 <SystemInit+0x184>)
+ de4:	4a3a      	ldr	r2, [pc, #232]	; (ed0 <SystemInit+0x184>)
+ de6:	7952      	ldrb	r2, [r2, #5]
+ de8:	b2d2      	uxtb	r2, r2
+ dea:	2120      	movs	r1, #32
+ dec:	430a      	orrs	r2, r1
+ dee:	b2d2      	uxtb	r2, r2
+ df0:	715a      	strb	r2, [r3, #5]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:154
+    //配置PLL为2分频
+    MCG_C5 |= MCG_C5_PRDIV0(1);
+ df2:	4b37      	ldr	r3, [pc, #220]	; (ed0 <SystemInit+0x184>)
+ df4:	4a36      	ldr	r2, [pc, #216]	; (ed0 <SystemInit+0x184>)
+ df6:	7912      	ldrb	r2, [r2, #4]
+ df8:	b2d2      	uxtb	r2, r2
+ dfa:	2101      	movs	r1, #1
+ dfc:	430a      	orrs	r2, r1
+ dfe:	b2d2      	uxtb	r2, r2
+ e00:	711a      	strb	r2, [r3, #4]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:156
+    //配置MCG_C6 以设置PLL倍频因子并且时能PLL，PLLS位被置位来时能PLL，MCGOUT时钟源仍然是外部参考时钟
+    temp_reg = MCG_C6; //存储当前C6的值（因为CME0位之前被置位了）
+ e02:	4b33      	ldr	r3, [pc, #204]	; (ed0 <SystemInit+0x184>)
+ e04:	795b      	ldrb	r3, [r3, #5]
+ e06:	b2da      	uxtb	r2, r3
+ e08:	1cfb      	adds	r3, r7, #3
+ e0a:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:157
+    temp_reg &= ~MCG_C6_VDIV0_MASK; //将VDIV清0
+ e0c:	1cfb      	adds	r3, r7, #3
+ e0e:	1cfa      	adds	r2, r7, #3
+ e10:	7812      	ldrb	r2, [r2, #0]
+ e12:	211f      	movs	r1, #31
+ e14:	438a      	bics	r2, r1
+ e16:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:158
+    temp_reg |= MCG_C6_PLLS_MASK | MCG_C6_VDIV0(0); // 重新写值到VDIV 并且时能PLL
+ e18:	1cfb      	adds	r3, r7, #3
+ e1a:	1cfa      	adds	r2, r7, #3
+ e1c:	7812      	ldrb	r2, [r2, #0]
+ e1e:	2140      	movs	r1, #64	; 0x40
+ e20:	430a      	orrs	r2, r1
+ e22:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:159
+    MCG_C6 = temp_reg; // 更新MCG_C6的值
+ e24:	4b2a      	ldr	r3, [pc, #168]	; (ed0 <SystemInit+0x184>)
+ e26:	1cfa      	adds	r2, r7, #3
+ e28:	7812      	ldrb	r2, [r2, #0]
+ e2a:	715a      	strb	r2, [r3, #5]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:161
+    // 等待PLLST状态位被置
+    for (i = 0 ; i < 2000 ; i++)
+ e2c:	2300      	movs	r3, #0
+ e2e:	607b      	str	r3, [r7, #4]
+ e30:	e00a      	b.n	e48 <SystemInit+0xfc>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:164
+    {
+        //如果PLLST在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_PLLST_MASK)
+ e32:	4b27      	ldr	r3, [pc, #156]	; (ed0 <SystemInit+0x184>)
+ e34:	799b      	ldrb	r3, [r3, #6]
+ e36:	b2db      	uxtb	r3, r3
+ e38:	1c1a      	adds	r2, r3, #0
+ e3a:	2320      	movs	r3, #32
+ e3c:	4013      	ands	r3, r2
+ e3e:	d000      	beq.n	e42 <SystemInit+0xf6>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:165
+        	break;
+ e40:	e006      	b.n	e50 <SystemInit+0x104>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:161
+    temp_reg = MCG_C6; //存储当前C6的值（因为CME0位之前被置位了）
+    temp_reg &= ~MCG_C6_VDIV0_MASK; //将VDIV清0
+    temp_reg |= MCG_C6_PLLS_MASK | MCG_C6_VDIV0(0); // 重新写值到VDIV 并且时能PLL
+    MCG_C6 = temp_reg; // 更新MCG_C6的值
+    // 等待PLLST状态位被置
+    for (i = 0 ; i < 2000 ; i++)
+ e42:	687b      	ldr	r3, [r7, #4]
+ e44:	3301      	adds	r3, #1
+ e46:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:161 (discriminator 1)
+ e48:	687a      	ldr	r2, [r7, #4]
+ e4a:	4b23      	ldr	r3, [pc, #140]	; (ed8 <SystemInit+0x18c>)
+ e4c:	429a      	cmp	r2, r3
+ e4e:	d9f0      	bls.n	e32 <SystemInit+0xe6>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:168
+        //如果PLLST在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_PLLST_MASK)
+        	break;
+    }
+    //等待LOCK位被置
+    for (i = 0 ; i < 4000 ; i++)
+ e50:	2300      	movs	r3, #0
+ e52:	607b      	str	r3, [r7, #4]
+ e54:	e00a      	b.n	e6c <SystemInit+0x120>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:171
+    {
+        //如果LOCK在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_LOCK0_MASK)
+ e56:	4b1e      	ldr	r3, [pc, #120]	; (ed0 <SystemInit+0x184>)
+ e58:	799b      	ldrb	r3, [r3, #6]
+ e5a:	b2db      	uxtb	r3, r3
+ e5c:	1c1a      	adds	r2, r3, #0
+ e5e:	2340      	movs	r3, #64	; 0x40
+ e60:	4013      	ands	r3, r2
+ e62:	d000      	beq.n	e66 <SystemInit+0x11a>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:172
+        	break;
+ e64:	e006      	b.n	e74 <SystemInit+0x128>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:168
+        //如果PLLST在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_PLLST_MASK)
+        	break;
+    }
+    //等待LOCK位被置
+    for (i = 0 ; i < 4000 ; i++)
+ e66:	687b      	ldr	r3, [r7, #4]
+ e68:	3301      	adds	r3, #1
+ e6a:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:168 (discriminator 1)
+ e6c:	687a      	ldr	r2, [r7, #4]
+ e6e:	4b1b      	ldr	r3, [pc, #108]	; (edc <SystemInit+0x190>)
+ e70:	429a      	cmp	r2, r3
+ e72:	d9f0      	bls.n	e56 <SystemInit+0x10a>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:178
+    }
+
+//3.现在处于PBE模式。最后，PBE模式转换成PEE模式
+    // 设置核心时钟分频器2分频
+    //设置总线时钟分频器2分频 (总线时钟的时钟源是核心时钟)
+    SIM_CLKDIV1 = (SIM_CLKDIV1_OUTDIV1(1) | SIM_CLKDIV1_OUTDIV4(1) );
+ e74:	4a15      	ldr	r2, [pc, #84]	; (ecc <SystemInit+0x180>)
+ e76:	4b1a      	ldr	r3, [pc, #104]	; (ee0 <SystemInit+0x194>)
+ e78:	491a      	ldr	r1, [pc, #104]	; (ee4 <SystemInit+0x198>)
+ e7a:	50d1      	str	r1, [r2, r3]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:180
+    //清CLKS来打开CLKS多路复用器来选择PLL作为MCGCLKOUT
+    MCG_C1 &= ~MCG_C1_CLKS_MASK;
+ e7c:	4b14      	ldr	r3, [pc, #80]	; (ed0 <SystemInit+0x184>)
+ e7e:	4a14      	ldr	r2, [pc, #80]	; (ed0 <SystemInit+0x184>)
+ e80:	7812      	ldrb	r2, [r2, #0]
+ e82:	b2d1      	uxtb	r1, r2
+ e84:	223f      	movs	r2, #63	; 0x3f
+ e86:	400a      	ands	r2, r1
+ e88:	b2d2      	uxtb	r2, r2
+ e8a:	701a      	strb	r2, [r3, #0]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:182
+    // 等待时钟状态位更新
+    for (i = 0 ; i < 2000 ; i++)
+ e8c:	2300      	movs	r3, #0
+ e8e:	607b      	str	r3, [r7, #4]
+ e90:	e00c      	b.n	eac <SystemInit+0x160>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:185
+    {
+        //如果CLKST在循环结束之前等于3就跳出循环
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x3) break;
+ e92:	4b0f      	ldr	r3, [pc, #60]	; (ed0 <SystemInit+0x184>)
+ e94:	799b      	ldrb	r3, [r3, #6]
+ e96:	b2db      	uxtb	r3, r3
+ e98:	1c1a      	adds	r2, r3, #0
+ e9a:	230c      	movs	r3, #12
+ e9c:	4013      	ands	r3, r2
+ e9e:	089b      	lsrs	r3, r3, #2
+ ea0:	2b03      	cmp	r3, #3
+ ea2:	d100      	bne.n	ea6 <SystemInit+0x15a>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:185 (discriminator 1)
+ ea4:	e006      	b.n	eb4 <SystemInit+0x168>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:182
+    //设置总线时钟分频器2分频 (总线时钟的时钟源是核心时钟)
+    SIM_CLKDIV1 = (SIM_CLKDIV1_OUTDIV1(1) | SIM_CLKDIV1_OUTDIV4(1) );
+    //清CLKS来打开CLKS多路复用器来选择PLL作为MCGCLKOUT
+    MCG_C1 &= ~MCG_C1_CLKS_MASK;
+    // 等待时钟状态位更新
+    for (i = 0 ; i < 2000 ; i++)
+ ea6:	687b      	ldr	r3, [r7, #4]
+ ea8:	3301      	adds	r3, #1
+ eaa:	607b      	str	r3, [r7, #4]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:182 (discriminator 1)
+ eac:	687a      	ldr	r2, [r7, #4]
+ eae:	4b0a      	ldr	r3, [pc, #40]	; (ed8 <SystemInit+0x18c>)
+ eb0:	429a      	cmp	r2, r3
+ eb2:	d9ee      	bls.n	e92 <SystemInit+0x146>
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:190
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x3) break;
+    }
+//4.现在处于PEE模式
+
+    //初始化后，开始PORT模块时钟
+    SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK
+ eb4:	4a05      	ldr	r2, [pc, #20]	; (ecc <SystemInit+0x180>)
+ eb6:	4905      	ldr	r1, [pc, #20]	; (ecc <SystemInit+0x180>)
+ eb8:	4b0b      	ldr	r3, [pc, #44]	; (ee8 <SystemInit+0x19c>)
+ eba:	58cb      	ldr	r3, [r1, r3]
+ ebc:	21f8      	movs	r1, #248	; 0xf8
+ ebe:	0189      	lsls	r1, r1, #6
+ ec0:	4319      	orrs	r1, r3
+ ec2:	4b09      	ldr	r3, [pc, #36]	; (ee8 <SystemInit+0x19c>)
+ ec4:	50d1      	str	r1, [r2, r3]
+F:\kds\KL25_Light_Component\Debug/../03_MCU/system_MKL25Z4.c:195
+  			  | SIM_SCGC5_PORTB_MASK
+  			  | SIM_SCGC5_PORTC_MASK
+  			  | SIM_SCGC5_PORTD_MASK
+  			  | SIM_SCGC5_PORTE_MASK;
+}
+ ec6:	46bd      	mov	sp, r7
+ ec8:	b002      	add	sp, #8
+ eca:	bd80      	pop	{r7, pc}
+ ecc:	40047000 	.word	0x40047000
+ ed0:	40064000 	.word	0x40064000
+ ed4:	00004e1f 	.word	0x00004e1f
+ ed8:	000007cf 	.word	0x000007cf
+ edc:	00000f9f 	.word	0x00000f9f
+ ee0:	00001044 	.word	0x00001044
+ ee4:	10010000 	.word	0x10010000
+ ee8:	00001038 	.word	0x00001038
+
+00000eec <PORT_ARR>:
+$d():
+ eec:	40049000 4004a000 4004b000 4004c000     ...@...@...@...@
+ efc:	4004d000                                ...@
+
+00000f00 <GPIO_ARR>:
+ f00:	400ff000 400ff040 400ff080 400ff0c0     ...@@..@...@...@
+ f10:	400ff100                                ...@
