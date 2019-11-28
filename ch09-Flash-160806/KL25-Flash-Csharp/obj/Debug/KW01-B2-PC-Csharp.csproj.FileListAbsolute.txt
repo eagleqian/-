@@ -1,0 +1,86 @@
+F:\LS\KW01-B2-20150812-1\KW01-B2-PC-Csharp\bin\Debug\KW01 ED.exe.config
+F:\LS\KW01-B2-20150812-1\KW01-B2-PC-Csharp\bin\Debug\KW01 ED.exe
+F:\LS\KW01-B2-20150812-1\KW01-B2-PC-Csharp\bin\Debug\KW01 ED.pdb
+F:\LS\KW01-B2-20150812-1\KW01-B2-PC-Csharp\obj\Debug\SerialPort.FrmMain.resources
+F:\LS\KW01-B2-20150812-1\KW01-B2-PC-Csharp\obj\Debug\SerialPort.Properties.Resources.resources
+F:\LS\KW01-B2-20150812-1\KW01-B2-PC-Csharp\obj\Debug\KW01-B2-PC-Csharp.csproj.GenerateResource.Cache
+F:\LS\KW01-B2-20150812-1\KW01-B2-PC-Csharp\obj\Debug\KW01 ED.exe
+F:\LS\KW01-B2-20150812-1\KW01-B2-PC-Csharp\obj\Debug\KW01 ED.pdb
+D:\KW01_TEST\KW01-B2-20150812-1\KW01-B2-PC-Csharp\bin\Debug\KW01 ED.exe.config
+D:\KW01_TEST\KW01-B2-20150812-1\KW01-B2-PC-Csharp\obj\Debug\KW01 ED.exe
+D:\KW01_TEST\KW01-B2-20150812-1\KW01-B2-PC-Csharp\obj\Debug\KW01 ED.pdb
+D:\KW01_TEST\KW01-B2-20150812-1\KW01-B2-PC-Csharp\bin\Debug\KW01 ED.exe
+D:\KW01_TEST\KW01-B2-20150812-1\KW01-B2-PC-Csharp\bin\Debug\KW01 ED.pdb
+D:\KW01_TEST\KW01-B2-20150812-1\KW01-B2-PC-Csharp\obj\Debug\KW01-B2-PC-Csharp.csprojResolveAssemblyReference.cache
+D:\KW01_TEST\KW01-B2-20150812-1\KW01-B2-PC-Csharp\obj\Debug\SerialPort.FrmMain.resources
+D:\KW01_TEST\KW01-B2-20150812-1\KW01-B2-PC-Csharp\obj\Debug\SerialPort.Properties.Resources.resources
+D:\KW01_TEST\KW01-B2-20150812-1\KW01-B2-PC-Csharp\obj\Debug\KW01-B2-PC-Csharp.csproj.GenerateResource.Cache
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp\bin\Debug\KW01.exe.config
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp\bin\Debug\KW01.exe
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp\bin\Debug\KW01.pdb
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp\obj\Debug\KW01-B2-PC-Csharp.csprojResolveAssemblyReference.cache
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp\obj\Debug\SerialPort.FrmMain.resources
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp\obj\Debug\SerialPort.Properties.Resources.resources
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp\obj\Debug\KW01-B2-PC-Csharp.csproj.GenerateResource.Cache
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp\obj\Debug\KW01.exe
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp\obj\Debug\KW01.pdb
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp - 副本\bin\Debug\KW01.exe.config
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp - 副本\obj\Debug\KW01.exe
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp - 副本\obj\Debug\KW01.pdb
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp - 副本\bin\Debug\KW01.exe
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp - 副本\bin\Debug\KW01.pdb
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp - 副本\obj\Debug\KW01-B2-PC-Csharp.csprojResolveAssemblyReference.cache
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp - 副本\obj\Debug\SerialPort.FrmMain.resources
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp - 副本\obj\Debug\SerialPort.Properties.Resources.resources
+C:\Users\SD\Desktop\KW01-B2-20150812-3(WYH)\KW01-B2-PC-Csharp - 副本\obj\Debug\KW01-B2-PC-Csharp.csproj.GenerateResource.Cache
+F:\LS\KW01-B2-20150813-1\KW01-B2-PC-Csharp\bin\Debug\KW01.exe.config
+F:\LS\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\KW01.exe
+F:\LS\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\KW01.pdb
+F:\LS\KW01-B2-20150813-1\KW01-B2-PC-Csharp\bin\Debug\KW01.exe
+F:\LS\KW01-B2-20150813-1\KW01-B2-PC-Csharp\bin\Debug\KW01.pdb
+F:\LS\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\KW01-B2-PC-Csharp.csprojResolveAssemblyReference.cache
+F:\LS\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\SerialPort.FrmMain.resources
+F:\LS\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\SerialPort.Properties.Resources.resources
+F:\LS\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\KW01-B2-PC-Csharp.csproj.GenerateResource.Cache
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp\bin\Debug\KW01.exe.config
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\KW01.exe
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\KW01.pdb
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp\bin\Debug\KW01.exe
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp\bin\Debug\KW01.pdb
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\KW01-B2-PC-Csharp.csprojResolveAssemblyReference.cache
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\SerialPort.FrmMain.resources
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\SerialPort.Properties.Resources.resources
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp\obj\Debug\KW01-B2-PC-Csharp.csproj.GenerateResource.Cache
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp-2015-8-14\bin\Debug\KW01.exe.config
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.exe
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.pdb
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp-2015-8-14\bin\Debug\KW01.exe
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp-2015-8-14\bin\Debug\KW01.pdb
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01-B2-PC-Csharp.csprojResolveAssemblyReference.cache
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\SerialPort.FrmMain.resources
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\SerialPort.Properties.Resources.resources
+E:\KW01-B2-20150813-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01-B2-PC-Csharp.csproj.GenerateResource.Cache
+H:\KW01-B2\KW01-B2-PC-Csharp-2015-8-14\bin\Debug\KW01.exe.config
+H:\KW01-B2\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.exe
+H:\KW01-B2\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.pdb
+E:\KW01-B2-2015-8-15\KW01-B2-PC-Csharp-2015-8-14\bin\Debug\KW01.exe.config
+E:\KW01-B2-2015-8-15\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.exe
+E:\KW01-B2-2015-8-15\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.pdb
+E:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\bin\Debug\KW01.exe.config
+E:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.exe
+E:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.pdb
+E:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\bin\Debug\KW01.exe
+E:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\bin\Debug\KW01.pdb
+E:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01-B2-PC-Csharp.csprojResolveAssemblyReference.cache
+E:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\SerialPort.FrmMain.resources
+E:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\SerialPort.Properties.Resources.resources
+E:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01-B2-PC-Csharp.csproj.GenerateResource.Cache
+H:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\bin\Debug\KW01.exe.config
+H:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.exe
+H:\KW01-B2-2015-8-15-1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.pdb
+H:\dsbdb-c1\KW01-B2-PC-Csharp-2015-8-14\bin\Debug\KW01.exe.config
+H:\dsbdb-c1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.exe
+H:\dsbdb-c1\KW01-B2-PC-Csharp-2015-8-14\obj\Debug\KW01.pdb
+F:\2005-2015 study notes\2013-2015 KW01-Zigbee\06-user\KW01-CD(V5.0)-20150816\02-software\program\KW01-C1-20150815-2\KW01-B2-PC-Csharp\bin\Debug\KW01.exe.config
+F:\2005-2015 study notes\2013-2015 KW01-Zigbee\06-user\KW01-CD(V5.0)-20150816\02-software\program\KW01-C1-20150815-2\KW01-B2-PC-Csharp\obj\Debug\KW01.exe
+F:\2005-2015 study notes\2013-2015 KW01-Zigbee\06-user\KW01-CD(V5.0)-20150816\02-software\program\KW01-C1-20150815-2\KW01-B2-PC-Csharp\obj\Debug\KW01.pdb
