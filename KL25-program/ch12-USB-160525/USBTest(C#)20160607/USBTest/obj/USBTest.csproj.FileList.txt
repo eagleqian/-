@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\USBTest.Properties.Resources.resources
+obj\Debug\USBTest.csproj.GenerateResource.Cache
+bin\Debug\USBTest.exe
+bin\Debug\USBTest.pdb
+bin\Debug\LibUsbDotNet.dll
+obj\Debug\USBTest.exe
+obj\Debug\USBTest.pdb
+obj\Debug\USBTest.USBTest.resources

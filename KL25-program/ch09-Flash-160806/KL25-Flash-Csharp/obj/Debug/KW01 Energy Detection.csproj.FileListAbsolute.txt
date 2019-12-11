@@ -1,0 +1,148 @@
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\SCI-C#\SCI\bin\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\SCI-C#\SCI\bin\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\SCI-C#\SCI\obj\Debug\ResolveAssemblyReference.cache
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\SCI-C#\SCI\obj\Debug\SerialPort.FrmSCI.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\SCI-C#\SCI\obj\Debug\SerialPort.Properties.Resources.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\SCI-C#\SCI\obj\Debug\ResGen.read.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\SCI-C#\SCI\obj\Debug\ResGen.write.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\SCI-C#\SCI\obj\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\SCI-C#\SCI\obj\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\KW01-C#\SCI\obj\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\KW01-C#\SCI\obj\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\KW01-C#\KW01 Energy Detection\bin\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\KW01-C#\KW01 Energy Detection\bin\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\KW01-C#\KW01 Energy Detection\obj\Debug\ResolveAssemblyReference.cache
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.FrmSCI.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.Properties.Resources.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-12\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-12\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-12\KW01-C#\KW01 Energy Detection\bin\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-12\KW01-C#\KW01 Energy Detection\bin\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-12\KW01-C#\KW01 Energy Detection\obj\Debug\ResolveAssemblyReference.cache
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-12\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.FrmSCI.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-12\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.Properties.Resources.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-12\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-12\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-14\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-14\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\ResolveAssemblyReference.cache
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.FrmSCI.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.Properties.Resources.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.4.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.6.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.7.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.4.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.6.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.7.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\bin\Debug\KW01 ED.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\bin\Debug\KW01 ED.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\KW01 ED.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\KW01 ED.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\KW01 ED.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-17\2014-8-17\KW01-C#\KW01 Energy Detection\obj\Debug\KW01 ED.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\KW01 ED.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\KW01 ED.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\bin\Debug\KW01 ED.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\bin\Debug\KW01 ED.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\ResolveAssemblyReference.cache
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.FrmSCI.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.Properties.Resources.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.4.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.5.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.6.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.7.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.4.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.5.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.6.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-18\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.7.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\bin\Debug\KW01 ED.exe.config
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\KW01 ED.exe
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\KW01 ED.pdb
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\bin\Debug\KW01 ED.exe
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\bin\Debug\KW01 ED.pdb
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\ResolveAssemblyReference.cache
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.FrmSCI.resources
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\SerialPort.Properties.Resources.resources
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\GenerateResource.read.1.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.1.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.4.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.5.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.6.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.read.7.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\GenerateResource.write.1.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.1.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.4.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.5.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.6.tlog
+E:\2014_2015_1\suda\project\Kw01 public\04-software\140830-2\KW01-C#\KW01 Energy Detection\obj\Debug\ResGen.write.7.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\bin\Debug\KW01 ED.exe.config
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\KW01 ED.exe
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\KW01 ED.pdb
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\bin\Debug\KW01 ED.exe
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\bin\Debug\KW01 ED.pdb
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\ResolveAssemblyReference.cache
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\SerialPort.FrmSCI.resources
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\SerialPort.Properties.Resources.resources
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\GenerateResource.read.1.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\ResGen.read.1.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\ResGen.read.4.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\ResGen.read.5.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\ResGen.read.6.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\ResGen.read.7.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\GenerateResource.write.1.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\ResGen.write.1.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\ResGen.write.4.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\ResGen.write.5.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\ResGen.write.6.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.9)-20140830\software\KW01-PC(C#)20140829\KW01 Energy Detection\obj\Debug\ResGen.write.7.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\bin\Debug\KW01 ED.exe.config
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\KW01 ED.exe
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\KW01 ED.pdb
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\ResolveAssemblyReference.cache
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\SerialPort.FrmSCI.resources
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\SerialPort.Properties.Resources.resources
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\GenerateResource.read.1.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\ResGen.read.1.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\ResGen.read.4.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\ResGen.read.5.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\ResGen.read.6.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\ResGen.read.7.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\GenerateResource.write.1.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\ResGen.write.1.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\ResGen.write.4.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\ResGen.write.5.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\ResGen.write.6.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\obj\Debug\ResGen.write.7.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\bin\Debug\KW01 ED.exe
+E:\2014_2015_1\suda\project\KW01-CD(V0.91)-20140830\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01 Energy Detection\bin\Debug\KW01 ED.pdb
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\bin\Debug\KW01 ED.exe.config
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\KW01 ED.exe
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\KW01 ED.pdb
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\bin\Debug\KW01 ED.exe
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\bin\Debug\KW01 ED.pdb
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\ResolveAssemblyReference.cache
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\SerialPort.FrmSCI.resources
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\SerialPort.Properties.Resources.resources
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\GenerateResource.read.1.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\ResGen.read.1.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\ResGen.read.4.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\ResGen.read.5.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\ResGen.read.6.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\ResGen.read.7.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\GenerateResource.write.1.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\ResGen.write.1.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\ResGen.write.4.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\ResGen.write.5.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\ResGen.write.6.tlog
+F:\masterA\2013-2015(WL)\Gu-Zhifeng\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)\KW01\obj\Debug\ResGen.write.7.tlog
+E:\2014_2015_1\suda\project\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)-1\KW01\bin\Debug\KW01 ED.exe.config
+E:\2014_2015_1\suda\project\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)-1\KW01\obj\Debug\KW01 ED.exe
+E:\2014_2015_1\suda\project\KW01-CD(V0.92)-20140831\02-software(MQXLite-KDS)\WSCN-01\PC(C#)(20140831)-1\KW01\obj\Debug\KW01 ED.pdb

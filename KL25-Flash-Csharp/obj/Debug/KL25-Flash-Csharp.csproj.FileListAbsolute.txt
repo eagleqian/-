@@ -1,0 +1,60 @@
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KW01-B1-PC-Csharp\bin\Debug\KW01.exe.config
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KW01-B1-PC-Csharp\bin\Debug\KW01.exe
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KW01-B1-PC-Csharp\bin\Debug\KW01.pdb
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KW01-B1-PC-Csharp\obj\Debug\SerialPort.FrmMain.resources
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KW01-B1-PC-Csharp\obj\Debug\SerialPort.Properties.Resources.resources
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KW01-B1-PC-Csharp\obj\Debug\KL25-Flash-Csharp.csproj.GenerateResource.Cache
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KW01-B1-PC-Csharp\obj\Debug\KW01.exe
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KW01-B1-PC-Csharp\obj\Debug\KW01.pdb
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KL25-Flash-Csharp\obj\Debug\SerialPort.FrmMain.resources
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KL25-Flash-Csharp\obj\Debug\SerialPort.Properties.Resources.resources
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KL25-Flash-Csharp\obj\Debug\KL25-Flash-Csharp.csproj.GenerateResource.Cache
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KL25-Flash-Csharp\bin\Debug\KL25.exe.config
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KL25-Flash-Csharp\bin\Debug\KL25.exe
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KL25-Flash-Csharp\bin\Debug\KL25.pdb
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KL25-Flash-Csharp\obj\Debug\KL25.exe
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160510 KL25_Chap9_Flash\program-flash-20160510\KL25-Flash-Csharp\obj\Debug\KL25.pdb
+E:\work-201605\2012-2016 M0+1-20160318\M0+2-20160504\06-User\SD-KL-CD(V6.6)-20160510\02-Software\KL25-program\ch09-Flash\KL25-Flash-Csharp\bin\Debug\KL25.exe.config
+E:\work-201605\2012-2016 M0+1-20160318\M0+2-20160504\06-User\SD-KL-CD(V6.6)-20160510\02-Software\KL25-program\ch09-Flash\KL25-Flash-Csharp\obj\Debug\KL25.exe
+E:\work-201605\2012-2016 M0+1-20160318\M0+2-20160504\06-User\SD-KL-CD(V6.6)-20160510\02-Software\KL25-program\ch09-Flash\KL25-Flash-Csharp\obj\Debug\KL25.pdb
+E:\work-201605\2012-2016 M0+1-20160318\M0+2-20160504\06-User\SD-KL-CD(V6.6)-20160510\02-Software\KL25-program\ch09-Flash\KL25-Flash-Csharp\bin\Debug\KL25.exe
+E:\work-201605\2012-2016 M0+1-20160318\M0+2-20160504\06-User\SD-KL-CD(V6.6)-20160510\02-Software\KL25-program\ch09-Flash\KL25-Flash-Csharp\bin\Debug\KL25.pdb
+E:\work-201605\2012-2016 M0+1-20160318\M0+2-20160504\06-User\SD-KL-CD(V6.6)-20160510\02-Software\KL25-program\ch09-Flash\KL25-Flash-Csharp\obj\Debug\KL25-Flash-Csharp.csprojResolveAssemblyReference.cache
+E:\work-201605\2012-2016 M0+1-20160318\M0+2-20160504\06-User\SD-KL-CD(V6.6)-20160510\02-Software\KL25-program\ch09-Flash\KL25-Flash-Csharp\obj\Debug\SerialPort.FrmMain.resources
+E:\work-201605\2012-2016 M0+1-20160318\M0+2-20160504\06-User\SD-KL-CD(V6.6)-20160510\02-Software\KL25-program\ch09-Flash\KL25-Flash-Csharp\obj\Debug\SerialPort.Properties.Resources.resources
+E:\work-201605\2012-2016 M0+1-20160318\M0+2-20160504\06-User\SD-KL-CD(V6.6)-20160510\02-Software\KL25-program\ch09-Flash\KL25-Flash-Csharp\obj\Debug\KL25-Flash-Csharp.csproj.GenerateResource.Cache
+C:\Users\Wang Shaodan\Desktop\20160513\ch09-Flash\KL25-Flash-Csharp\bin\Debug\KL25.exe.config
+C:\Users\Wang Shaodan\Desktop\20160513\ch09-Flash\KL25-Flash-Csharp\bin\Debug\KL25.exe
+C:\Users\Wang Shaodan\Desktop\20160513\ch09-Flash\KL25-Flash-Csharp\obj\Debug\SerialPort.FrmMain.resources
+C:\Users\Wang Shaodan\Desktop\20160513\ch09-Flash\KL25-Flash-Csharp\obj\Debug\SerialPort.Properties.Resources.resources
+C:\Users\Wang Shaodan\Desktop\20160513\ch09-Flash\KL25-Flash-Csharp\obj\Debug\KL25-Flash-Csharp.csproj.GenerateResource.Cache
+C:\Users\Wang Shaodan\Desktop\20160513\ch09-Flash\KL25-Flash-Csharp\obj\Debug\KL25.exe
+C:\Users\Wang Shaodan\Desktop\20160513\ch09-Flash\KL25-Flash-Csharp\obj\Debug\KL25.pdb
+C:\Users\Wang Shaodan\Desktop\20160513\ch09-Flash\KL25-Flash-Csharp\bin\Debug\KL25.pdb
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160515 KL25_Chap9_Flash\ch09-Flash\KL25-Flash-Csharp\bin\Debug\KL25.exe.config
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160515 KL25_Chap9_Flash\ch09-Flash\KL25-Flash-Csharp\bin\Debug\KL25.exe
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160515 KL25_Chap9_Flash\ch09-Flash\KL25-Flash-Csharp\bin\Debug\KL25.pdb
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160515 KL25_Chap9_Flash\ch09-Flash\KL25-Flash-Csharp\obj\Debug\SerialPort.FrmMain.resources
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160515 KL25_Chap9_Flash\ch09-Flash\KL25-Flash-Csharp\obj\Debug\SerialPort.Properties.Resources.resources
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160515 KL25_Chap9_Flash\ch09-Flash\KL25-Flash-Csharp\obj\Debug\KL25-Flash-Csharp.csproj.GenerateResource.Cache
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160515 KL25_Chap9_Flash\ch09-Flash\KL25-Flash-Csharp\obj\Debug\KL25.exe
+F:\LbLearning\My Projects\20160314 KL25-NewBook\20160515 KL25_Chap9_Flash\ch09-Flash\KL25-Flash-Csharp\obj\Debug\KL25.pdb
+E:\01_Reseach\2013-2016 BOOK-170121\2012-2016 M0+-161220\06-User\SD-(M0+)-CD(V2.5)-170216\02-Software\KL25-program-160611\ch09-Flash-160806\KL25-Flash-C#\bin\Debug\KL25.exe.config
+E:\01_Reseach\2013-2016 BOOK-170121\2012-2016 M0+-161220\06-User\SD-(M0+)-CD(V2.5)-170216\02-Software\KL25-program-160611\ch09-Flash-160806\KL25-Flash-C#\obj\Debug\KL25.exe
+E:\01_Reseach\2013-2016 BOOK-170121\2012-2016 M0+-161220\06-User\SD-(M0+)-CD(V2.5)-170216\02-Software\KL25-program-160611\ch09-Flash-160806\KL25-Flash-C#\obj\Debug\KL25.pdb
+E:\01_Reseach\2013-2016 BOOK-170121\2012-2016 M0+-161220\06-User\SD-(M0+)-CD(V2.5)-170216\02-Software\KL25-program-160611\ch09-Flash-160806\KL25-Flash-C#\bin\Debug\KL25.exe
+E:\01_Reseach\2013-2016 BOOK-170121\2012-2016 M0+-161220\06-User\SD-(M0+)-CD(V2.5)-170216\02-Software\KL25-program-160611\ch09-Flash-160806\KL25-Flash-C#\bin\Debug\KL25.pdb
+E:\01_Reseach\2013-2016 BOOK-170121\2012-2016 M0+-161220\06-User\SD-(M0+)-CD(V2.5)-170216\02-Software\KL25-program-160611\ch09-Flash-160806\KL25-Flash-C#\obj\Debug\KL25-Flash-Csharp.csprojResolveAssemblyReference.cache
+E:\01_Reseach\2013-2016 BOOK-170121\2012-2016 M0+-161220\06-User\SD-(M0+)-CD(V2.5)-170216\02-Software\KL25-program-160611\ch09-Flash-160806\KL25-Flash-C#\obj\Debug\SerialPort.FrmMain.resources
+E:\01_Reseach\2013-2016 BOOK-170121\2012-2016 M0+-161220\06-User\SD-(M0+)-CD(V2.5)-170216\02-Software\KL25-program-160611\ch09-Flash-160806\KL25-Flash-C#\obj\Debug\SerialPort.Properties.Resources.resources
+E:\01_Reseach\2013-2016 BOOK-170121\2012-2016 M0+-161220\06-User\SD-(M0+)-CD(V2.5)-170216\02-Software\KL25-program-160611\ch09-Flash-160806\KL25-Flash-C#\obj\Debug\KL25-Flash-Csharp.csproj.GenerateResource.Cache
+F:\kds\KL25-Flash-Csharp\bin\Debug\KL25.exe.config
+F:\kds\KL25-Flash-Csharp\bin\Debug\KL25.exe
+F:\kds\KL25-Flash-Csharp\bin\Debug\KL25.pdb
+F:\kds\KL25-Flash-Csharp\obj\Debug\KL25-Flash-Csharp.csprojAssemblyReference.cache
+F:\kds\KL25-Flash-Csharp\obj\Debug\SerialPort.FrmMain.resources
+F:\kds\KL25-Flash-Csharp\obj\Debug\SerialPort.Properties.Resources.resources
+F:\kds\KL25-Flash-Csharp\obj\Debug\KL25-Flash-Csharp.csproj.GenerateResource.cache
+F:\kds\KL25-Flash-Csharp\obj\Debug\KL25-Flash-Csharp.csproj.CoreCompileInputs.cache
+F:\kds\KL25-Flash-Csharp\obj\Debug\KL25.exe
+F:\kds\KL25-Flash-Csharp\obj\Debug\KL25.pdb

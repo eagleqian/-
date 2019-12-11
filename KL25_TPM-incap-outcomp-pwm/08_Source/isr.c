@@ -13,23 +13,34 @@
 //         调用SecAdd1，给全局变量数组g_time赋值（时、分、秒）
 //=====================================================================
 
-//设置UART模块输入的duty值传输给TPM2_CH_0的中间全局静态变量
-static float conDuty = 90.0;
-
-//组帧函数的声明
+//组帧函数原型声明
 uint8_t CreateFrame(uint_8 Data, uint_8 * buffer);
 
 void TPM0_IRQHandler(void) {
-	static uint_8 cnt;       //中断次数
+	static uint_32 cnt;       //中断次数
 	if (tpm_get_int(0) == 1)   //若有TPM0的溢出中断
 			{
 		tpm_clear_int(0);     //清TPM0的溢出中断标志
 		cnt++;                //中断次数+1
 		if (cnt >= 100)        //若达到100次（即1秒）
 				{
+
+			//实现数值向数字字符ASCII码值的转换,组成时间字符串
+			uart_send1(UART_1, (g_time[0] / 10) + 48);
+			uart_send1(UART_1, (g_time[0] % 10) + 48);
+			uart_send1(UART_1, ':');
+
+			uart_send1(UART_1, (g_time[1] / 10) + 48);
+			uart_send1(UART_1, (g_time[1] % 10) + 48);
+			uart_send1(UART_1, ':');
+
+			uart_send1(UART_1, (g_time[2] / 10) + 48);
+			uart_send1(UART_1, (g_time[2] % 10) + 48);
+
 			cnt = 0;          //中断次数清0
 			//调用“秒+1计时子函数”，给全局变量数组g_time赋值（时、分、秒）
 			SecAdd1(g_time);
+
 		}
 	}
 }
@@ -40,6 +51,7 @@ void TPM0_IRQHandler(void) {
 //         再由100.0减到0.0，然后根据duty值来改变pwm的占空比的值，
 //         对应的PWM输出引脚可以测得相应的PWM波形
 //=====================================================================
+
 void TPM1_IRQHandler(void) {
 	static float duty = 0.0;     //静态变量duty（占空比）
 	static uint_8 Up_Down = 1;   //占空比增减标志
@@ -47,7 +59,7 @@ void TPM1_IRQHandler(void) {
 	if (tpm_get_int(1) == 1)   //若有TPM1的溢出中断
 			{
 		tpm_clear_int(1);     //清TPM1的溢出中断标志
-		pwm_update(TPM1_CH0, duty);    //PWN更新，注意参数！指明了哪个模块的那个通道！
+		pwm_update(TPM1_CH0, duty);    //PWN更新
 		if (Up_Down == 1)              //占空比逐渐增加
 				{
 			duty = duty + 0.5;
@@ -66,27 +78,6 @@ void TPM1_IRQHandler(void) {
 			}
 		}
 	}
-	/*static uint_32 Cap_Value[10];    //捕获的通道值
-	 static uint_32 cnt = 0;            //扑捉次数
-
-	 //若有TPM2的溢出中断,清其中断标志
-	 if (tpm_get_int(2) == 1)
-	 tpm_clear_int(2);
-	 //有通道中断产生
-	 if (tpm_chl_get_int(2, 0) == 1)  //判断中断类型是否为通道中断
-	 {
-	 tpm_clear_chl_int(2, 0);    //清除通道中断标志
-	 Cap_Value[cnt] = tpm_get_capvalue(TPM1_CH0);  //获取通道捕获值
-	 cnt++;    //扑捉次数+1
-	 if (cnt >= 10)        //连续获取10次捕获值
-	 {
-	 while (cnt)    //将10个捕获值统一通过串口打出
-	 {
-	 cnt--;
-	 printf("TPM2通道0的输入捕捉通道值：%d\n", Cap_Value[cnt]);
-	 }
-	 }
-	 }*/
 }
 //=====================================================================
 //函数名称：TPM2_IRQHandler（TPM2中断服务例程）
@@ -95,50 +86,26 @@ void TPM1_IRQHandler(void) {
 //         满十个值后，将这10个值一并从串口打出
 //=====================================================================
 void TPM2_IRQHandler(void) {
-	/*static uint_32 Cap_Value[10];    //捕获的通道值
-	 static uint_32 cnt=0;            //扑捉次数
+	static uint_32 Cap_Value[10];    //捕获的通道值
+	static uint_32 cnt = 0;            //扑捉次数
 
-	 //若有TPM2的溢出中断,清其中断标志
-	 if(tpm_get_int(2)==1)  tpm_clear_int(2);
-	 //有通道中断产生
-	 if(tpm_chl_get_int(2,0) == 1)  //判断中断类型是否为通道中断
-	 {
-	 tpm_clear_chl_int(2,0);    //清除通道中断标志
-	 Cap_Value[cnt]=tpm_get_capvalue(TPM2_CH0);  //获取通道捕获值
-	 cnt++;    //扑捉次数+1
-	 if(cnt>=10)        //连续获取10次捕获值
-	 {
-	 while(cnt)    //将10个捕获值统一通过串口打出
-	 {
-	 cnt--;
-	 printf("TPM2通道0的输入捕捉通道值：%d\n",Cap_Value[cnt]);
-	 }
-	 }
-	 }*/
-	static float duty = 90.0;     //静态变量duty（占空比），数值越高，灯越暗
-	static uint_8 Up_Down = 1;   //占空比增减标志
-
-	if (tpm_get_int(1) == 1)   //若有TPM1的溢出中断
+//若有TPM2的溢出中断,清其中断标志
+	if (tpm_get_int(2) == 1)
+		tpm_clear_int(2);
+//有通道中断产生
+	if (tpm_chl_get_int(2, 0) == 1)  //判断中断类型是否为通道中断
 			{
-		tpm_clear_int(1);     //清TPM1的溢出中断标志
-		pwm_update(TPM2_CH0, conDuty);    //PWN更新，注意参数！指明了哪个模块的那个通道！
-		/*if (Up_Down == 1)              //占空比逐渐增加
-		 {
-		 duty = duty + 0.5;
-		 if (duty > 100.0)          //防止占空比越界
-		 {
-		 duty = 100.0;
-		 Up_Down = 0;
-		 }
-		 } else                       //占空比逐渐减小
-		 {
-		 duty = duty - 0.5;
-		 if (duty < 0)             //防止占空比越界
-		 {
-		 duty = 0;
-		 Up_Down = 1;
-		 }
-		 }*/
+		tpm_clear_chl_int(2, 0);    //清除通道中断标志
+		Cap_Value[cnt] = tpm_get_capvalue(TPM2_CH0);  //获取通道捕获值
+		cnt++;    //扑捉次数+1
+		if (cnt >= 10)        //连续获取10次捕获值
+				{
+			while (cnt)    //将10个捕获值统一通过串口打出
+			{
+				cnt--;
+				printf("TPM2通道0的输入捕捉通道值：%d\n", Cap_Value[cnt]);
+			}
+		}
 	}
 }
 
@@ -170,39 +137,48 @@ void UART1_IRQHandler(void) {
 	static uint_8 buffer[64];
 
 	DISABLE_INTERRUPTS;
-
-	//获取一个字节的输入
-
 	if (uart_get_re_int(UART_1)) {
 		ch = uart_re1(UART_1, &flag);
-
 		if (CreateFrame(ch, buffer) != 0) {
+			if (buffer[1] == 8) { //C#输入的数字都是字符型，每个数字字符都对应一个ASCII（码）值
 
-			//进行条件选择，看看是几位数；
-			if (buffer[1] == 1) {
-				conDuty = buffer[2];    //进行值传递;
-			} else if (buffer[1] == 2) {
-				conDuty = 0;
-				uint_8 count = buffer[2] * 10 + buffer[3];
-				uint_8 i = 0;
-				for (i; i < count; i++) {
-					conDuty++;
-				}
-			} else if (buffer[1] == 3) {
-				if (buffer[2] == '1' && buffer[3] == '0' && buffer[4] == '0') {
+				//buffer缓存中的数字部分每位字节运算都是用对应的ASCII码值计算
+				//但是发送给c#的时候，必须发送数字相应的字符ASCII码值；
 
-					conDuty = 100;    //进行值传递;
-				}
-			} else {
+				//计算hh:mm:ss
+				uint_8 g_time0 = (buffer[2]);
+				g_time0 -= 48;
+				g_time0 *= 10;
+				buffer[3] -= 48;
+				g_time0 += (buffer[3]);
+
+				uint_8 g_time1 = (buffer[5]);
+				g_time1 -= 48;
+				g_time1 *= 10;
+				buffer[6] -= 48;
+				g_time1 += (buffer[6]);
+
+				uint_8 g_time2 = (buffer[8]);
+				g_time2 -= 48;
+				g_time2 *= 10;
+				buffer[9] -= 48;
+				g_time2 += (buffer[9]);
+
+				g_time[0] = g_time0;
+				g_time[1] = g_time1;
+				g_time[2] = g_time2;
+
 			}
+
 		}
-
 	}
-
 	if (flag) {
-		uart_send1(UART_1, ch);     //向原串口发回一个字节
+		uart_send1(UART_1, ch);
+
 	}
+
 	ENABLE_INTERRUPTS;
+
 }
 
 //=====================================================================
@@ -248,6 +224,7 @@ void SecAdd1(uint_8 *p) {
 	}
 }
 
+//组帧函数，用来组成输入的帧
 #define FrameHead    (0x50)       //帧头     ASCII码对应P
 #define FrameTail    (0x43)       //帧尾     ASCII码对应C
 
@@ -256,7 +233,7 @@ uint8_t CreateFrame(uint_8 Data, uint_8 * buffer) {
 	uint_8 frameFlag;            //组帧状态
 
 	frameFlag = 0;            //组帧状态初始化
-	//根据静态变量frameCount组帧
+//根据静态变量frameCount组帧
 	switch (frameLen) {
 	case 0:    //第一个数据
 	{
@@ -270,6 +247,7 @@ uint8_t CreateFrame(uint_8 Data, uint_8 * buffer) {
 	}
 	case 1:    //第二个数据，该数据是随后接收的数据个数
 	{
+		//这才是关键所在！对ASCII码值进行了转换！
 		buffer[1] = Data - 0x30;
 		frameLen++;
 		break;
