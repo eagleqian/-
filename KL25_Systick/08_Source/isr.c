@@ -20,7 +20,7 @@ uint_8 tickCount = 1;
 static uint_8 modeChange = 0; //模式切换标志，用于切换不同闪烁模式
 
 
-//函数原型声明
+//组帧函数原型声明
 uint8_t CreateFrame(uint_8 Data, uint_8 * buffer);
 
 void SysTick_Handler(void) //深入了解中断的内涵
@@ -93,20 +93,7 @@ void UART1_IRQHandler(void) {
 	DISABLE_INTERRUPTS;
 	if (uart_get_re_int(UART_1)) {
 		ch = uart_re1(UART_1, &flag);
-		/*if (CreateFrame(ch, buffer) != 0) {
-		 if (buffer[2] == 'e' && buffer[3] == 'r' && buffer[4] == 'r'
-		 && buffer[5] == 'o' && buffer[6] == 'r') {
-		 colorChange = 1;
-		 tickCount = 30;      //改变闪烁的频率
 
-		 } else {
-		 colorChange = 0;
-		 tickCount = 100;      //改变闪烁的频率前提要输入正确的帧！
-		 }
-		 } else {
-		 colorChange = 0;
-		 tickCount = 100;      //改变闪烁的频率前提要输入正确的帧！
-		 }*/
 		if (ch == '1') {
 			tickCount = 1;
 			modeChange=1;
@@ -154,6 +141,7 @@ void UART2_IRQHandler(void) {
 
 	ENABLE_INTERRUPTS;
 }
+
 
 //组帧函数，用来组成输入的帧
 #define FrameHead    (0x50)       //帧头     ASCII码对应P

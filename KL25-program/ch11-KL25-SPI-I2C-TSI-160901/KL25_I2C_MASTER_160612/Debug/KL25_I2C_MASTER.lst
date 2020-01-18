@@ -1,0 +1,3417 @@
+
+KL25_I2C_MASTER.elf:     file format elf32-littlearm
+KL25_I2C_MASTER.elf
+architecture: arm, flags 0x00000012:
+EXEC_P, HAS_SYMS
+start address 0x00000411
+
+Program Header:
+    LOAD off    0x000000b4 vaddr 0x00000000 paddr 0x00000000 align 2**2
+         filesz 0x000000c0 memsz 0x000000c0 flags r--
+    LOAD off    0x00000174 vaddr 0x00000400 paddr 0x00000400 align 2**0
+         filesz 0x00000010 memsz 0x00000010 flags r--
+    LOAD off    0x00000184 vaddr 0x00000410 paddr 0x00000410 align 2**2
+         filesz 0x00000fd0 memsz 0x00000fd0 flags r-x
+    LOAD off    0x00001154 vaddr 0x1ffff000 paddr 0x000013e0 align 2**2
+         filesz 0x00000004 memsz 0x00000808 flags rw-
+private flags = 5000002: [Version5 EABI] [has entry point]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn  Flags
+  0 .interrupts   000000c0  00000000  00000000  000000b4  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .flash_config 00000010  00000400  00000400  00000174  2**0  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .text         00000fd0  00000410  00000410  00000184  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .data         00000004  1ffff000  000013e0  00001154  2**2  CONTENTS, ALLOC, LOAD, DATA
+  4 .heap         00000404  1ffff004  000013e4  00001158  2**0  ALLOC
+  5 .stack        00000400  1ffff408  000017e8  00001158  2**0  ALLOC
+  6 .ARM.attributes 00000030  00000000  00000000  00001158  2**0  CONTENTS, READONLY
+  7 .debug_info   000021e5  00000000  00000000  00001188  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 0000083b  00000000  00000000  0000336d  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_aranges 000001f0  00000000  00000000  00003ba8  2**3  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000160  00000000  00000000  00003d98  2**0  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_macro  000099eb  00000000  00000000  00003ef8  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_line   000020ab  00000000  00000000  0000d8e3  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_str    00032918  00000000  00000000  0000f98e  2**0  CONTENTS, READONLY, DEBUGGING
+ 14 .comment      00000070  00000000  00000000  000422a6  2**0  CONTENTS, READONLY
+ 15 .debug_frame  0000052c  00000000  00000000  00042318  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00000000 l    d  .interrupts	00000000 .interrupts
+00000400 l    d  .flash_config	00000000 .flash_config
+00000410 l    d  .text	00000000 .text
+1ffff000 l    d  .data	00000000 .data
+1ffff004 l    d  .heap	00000000 .heap
+1ffff408 l    d  .stack	00000000 .stack
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./03_MCU/startup_MKL25Z4.o
+00000000 l    df *ABS*	00000000 _udivsi3.o
+00000460 l       .text	00000000 .udivsi3_skip_div0_test
+00000000 l    df *ABS*	00000000 _dvmd_tls.o
+00000000 l    df *ABS*	00000000 isr.c
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 light.c
+00000000 l    df *ABS*	00000000 uart.c
+000006b8 l     F .text	0000002c NVIC_EnableIRQ
+000013a4 l     O .text	00000008 UART_ARR
+1ffff000 l     O .data	00000003 table_irq_uart
+00000000 l    df *ABS*	00000000 i2c.c
+000013ac l     O .text	0000000a data
+00000b24 l     F .text	000000a4 send_signal
+00000ffc l     F .text	00000034 i2c_get_base_address
+00000bc8 l     F .text	000000b4 wait
+00000000 l    df *ABS*	00000000 gpio.c
+000013b8 l     O .text	00000014 PORT_ARR
+000013cc l     O .text	00000014 GPIO_ARR
+00001030 l     F .text	00000034 gpio_port_pin_resolution
+00000000 l    df *ABS*	00000000 system_MKL25Z4.c
+00000000 l    df *ABS*	00000000 
+00000400 l       *ABS*	00000000 STACK_SIZE
+1ffff408 l       .heap	00000000 __HeapLimit
+00000400 l       *ABS*	00000000 HEAP_SIZE
+000013e0 l       .text	00000000 __DATA_ROM
+20002c00 l       *ABS*	00000000 __StackLimit
+1ffff008 g       .heap	00000000 __HeapBase
+1ffff000 g       .data	00000000 __data_start__
+00000454  w    F .text	00000004 I2C0_IRQHandler
+00000454  w    F .text	00000004 HardFault_Handler
+00000454  w    F .text	00000004 SysTick_Handler
+00000670 g     F .text	0000002a light_init
+00000454  w    F .text	00000004 PendSV_Handler
+00000454  w    F .text	00000004 NMI_Handler
+000013e0 g       .data	00000000 __exidx_end
+00000454  w    F .text	00000004 I2C1_IRQHandler
+00000538 g     F .text	0000003a UART1_IRQHandler
+000013e0 g       .text	00000000 __etext
+00000454  w    F .text	00000004 DMA2_IRQHandler
+00000ab8 g     F .text	0000006c uart_enable_re_int
+00000454  w    F .text	00000004 TPM0_IRQHandler
+00000454  w    F .text	00000004 LLWU_IRQHandler
+00000454  w    F .text	00000004 TSI0_IRQHandler
+000004fc g     F .text	0000003a UART0_IRQHandler
+000013e0 g       .data	00000000 __DTOR_END__
+00000efc g     F .text	00000100 i2c_write1
+00000454  w    F .text	00000004 ADC0_IRQHandler
+00000454  w    F .text	00000004 Reserved39_IRQHandler
+0000045c g     F .text	00000088 .hidden __udivsi3
+1ffff004 g       .data	00000000 __START_BSS
+1ffff004 g       .data	00000000 __bss_start__
+00000454  w    F .text	00000004 SPI1_IRQHandler
+00000454  w    F .text	00000004 DefaultISR
+00000454  w    F .text	00000004 PORTD_IRQHandler
+000013e0 g       .data	00000000 __exidx_start
+00000454  w    F .text	00000004 TPM2_IRQHandler
+00000454  w    F .text	00000004 RTC_IRQHandler
+00000410  w    F .text	00000044 Reset_Handler
+00000454  w    F .text	00000004 RTC_Seconds_IRQHandler
+00000454  w    F .text	00000004 MCG_IRQHandler
+0000099c g     F .text	0000006e uart_send_string
+00000574 g     F .text	0000003a UART2_IRQHandler
+1ffff004 g       .data	00000000 __data_end__
+000013e0 g       .data	00000000 __CTOR_LIST__
+000006e4 g     F .text	00000224 uart_init
+1ffff004 g       .data	00000000 __bss_end__
+00000454  w    F .text	00000004 Reserved20_IRQHandler
+000004f8  w    F .text	00000002 .hidden __aeabi_ldiv0
+00000454  w    F .text	00000004 USB0_IRQHandler
+00000a0c g     F .text	000000ac uart_re1
+0000069c g     F .text	0000001c light_change
+00000000 g       .interrupts	000000c0 __isr_vector
+000005b0 g     F .text	000000c0 main
+00000454  w    F .text	00000004 PIT_IRQHandler
+0000045c g     F .text	00000000 .hidden __aeabi_uidiv
+00000454  w    F .text	00000004 SVC_Handler
+1ffff000 g       .data	00000000 __DATA_RAM
+1ffff008 g       .heap	00000000 __end__
+000013e0 g       .data	00000000 __CTOR_END__
+00000454  w    F .text	00000004 DMA3_IRQHandler
+000013e0 g       .data	00000000 __DTOR_LIST__
+1ffff004 g       .data	00000000 __END_BSS
+000011fc g     F .text	00000188 SystemInit
+00000454  w    F .text	00000004 DMA0_IRQHandler
+00000454  w    F .text	00000004 DAC0_IRQHandler
+20003000 g       *ABS*	00000000 __StackTop
+1ffff000 g       .data	00000000 _mtb_end
+00000c7c g     F .text	00000280 i2c_init
+000013e4 g       .text	00000000 __DATA_END
+00000454  w    F .text	00000004 Reserved45_IRQHandler
+00000454  w    F .text	00000004 TPM1_IRQHandler
+000004e4 g     F .text	00000012 .hidden __aeabi_uidivmod
+00000454  w    F .text	00000004 LVD_LVW_IRQHandler
+00000454  w    F .text	00000004 SPI0_IRQHandler
+00000454  w    F .text	00000004 PORTA_IRQHandler
+00000000 g       .interrupts	00000000 __VECTOR_TABLE
+00000454  w    F .text	00000004 FTFA_IRQHandler
+1ffff000 g       .data	00000000 _mtb_start
+000004f8  w    F .text	00000002 .hidden __aeabi_idiv0
+00000454  w    F .text	00000004 LPTMR0_IRQHandler
+00000908 g     F .text	00000094 uart_send1
+00001128 g     F .text	00000080 gpio_set
+000011a8 g     F .text	00000054 gpio_reverse
+00001064 g     F .text	000000c4 gpio_init
+00000454  w    F .text	00000004 CMP0_IRQHandler
+00000454  w    F .text	00000004 DMA1_IRQHandler
+
+
+
+Disassembly of section .text:
+
+00000410 <Reset_Handler>:
+Reset_Handler():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:117
+    .align 2
+    .globl   Reset_Handler
+    .weak    Reset_Handler
+    .type    Reset_Handler, %function
+Reset_Handler:
+    cpsid   i               /* 屏蔽中断 */
+     410:	b672      	cpsid	i
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:119
+#ifndef __NO_SYSTEM_INIT
+    bl SystemInit           /* 跳转到系统初始化函数，在system_MKL25Z4.c中 */
+     412:	f000 fef3 	bl	11fc <SystemInit>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:121
+#endif
+    cpsie   i               /* 解除屏蔽中断 */
+     416:	b662      	cpsie	i
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+     418:	4909      	ldr	r1, [pc, #36]	; (440 <Reset_Handler+0x30>)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+     41a:	4a0a      	ldr	r2, [pc, #40]	; (444 <Reset_Handler+0x34>)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+     41c:	4b0a      	ldr	r3, [pc, #40]	; (448 <Reset_Handler+0x38>)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:131
+
+    subs    r3, r2
+     41e:	1a9b      	subs	r3, r3, r2
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:132
+    ble     .LC0
+     420:	dd03      	ble.n	42a <Reset_Handler+0x1a>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:135
+
+.LC1:
+    subs    r3, 4
+     422:	3b04      	subs	r3, #4
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:136
+    ldr    r0, [r1,r3]
+     424:	58c8      	ldr	r0, [r1, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:137
+    str    r0, [r2,r3]
+     426:	50d0      	str	r0, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:138
+    bgt    .LC1
+     428:	dcfb      	bgt.n	422 <Reset_Handler+0x12>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+     42a:	4908      	ldr	r1, [pc, #32]	; (44c <Reset_Handler+0x3c>)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+     42c:	4a08      	ldr	r2, [pc, #32]	; (450 <Reset_Handler+0x40>)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:153
+
+    subs    r2, r1
+     42e:	1a52      	subs	r2, r2, r1
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:154
+    ble .LC3
+     430:	dd03      	ble.n	43a <Reset_Handler+0x2a>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:156
+
+    movs    r0, 0
+     432:	2000      	movs	r0, #0
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:158
+.LC2:
+    str r0, [r1, r2]
+     434:	5088      	str	r0, [r1, r2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:159
+    subs    r2, 4
+     436:	3a04      	subs	r2, #4
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:160
+    bge .LC2
+     438:	dafc      	bge.n	434 <Reset_Handler+0x24>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:166
+.LC3:
+#endif
+#ifndef __START
+#define __START main
+#endif
+    bl    __START
+     43a:	f000 f8b9 	bl	5b0 <main>
+     43e:	0000      	.short	0x0000
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+     440:	000013e0 	.word	0x000013e0
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+     444:	1ffff000 	.word	0x1ffff000
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+     448:	1ffff004 	.word	0x1ffff004
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+     44c:	1ffff004 	.word	0x1ffff004
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+     450:	1ffff004 	.word	0x1ffff004
+
+00000454 <ADC0_IRQHandler>:
+I2C0_IRQHandler():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+     454:	4800      	ldr	r0, [pc, #0]	; (458 <ADC0_IRQHandler+0x4>)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:176
+    bx r0
+     456:	4700      	bx	r0
+$d():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+     458:	00000455 	.word	0x00000455
+
+0000045c <__aeabi_uidiv>:
+__udivsi3():
+     45c:	2900      	cmp	r1, #0
+     45e:	d034      	beq.n	4ca <.udivsi3_skip_div0_test+0x6a>
+
+00000460 <.udivsi3_skip_div0_test>:
+     460:	2301      	movs	r3, #1
+     462:	2200      	movs	r2, #0
+     464:	b410      	push	{r4}
+     466:	4288      	cmp	r0, r1
+     468:	d32c      	bcc.n	4c4 <.udivsi3_skip_div0_test+0x64>
+     46a:	2401      	movs	r4, #1
+     46c:	0724      	lsls	r4, r4, #28
+     46e:	42a1      	cmp	r1, r4
+     470:	d204      	bcs.n	47c <.udivsi3_skip_div0_test+0x1c>
+     472:	4281      	cmp	r1, r0
+     474:	d202      	bcs.n	47c <.udivsi3_skip_div0_test+0x1c>
+     476:	0109      	lsls	r1, r1, #4
+     478:	011b      	lsls	r3, r3, #4
+     47a:	e7f8      	b.n	46e <.udivsi3_skip_div0_test+0xe>
+     47c:	00e4      	lsls	r4, r4, #3
+     47e:	42a1      	cmp	r1, r4
+     480:	d204      	bcs.n	48c <.udivsi3_skip_div0_test+0x2c>
+     482:	4281      	cmp	r1, r0
+     484:	d202      	bcs.n	48c <.udivsi3_skip_div0_test+0x2c>
+     486:	0049      	lsls	r1, r1, #1
+     488:	005b      	lsls	r3, r3, #1
+     48a:	e7f8      	b.n	47e <.udivsi3_skip_div0_test+0x1e>
+     48c:	4288      	cmp	r0, r1
+     48e:	d301      	bcc.n	494 <.udivsi3_skip_div0_test+0x34>
+     490:	1a40      	subs	r0, r0, r1
+     492:	431a      	orrs	r2, r3
+     494:	084c      	lsrs	r4, r1, #1
+     496:	42a0      	cmp	r0, r4
+     498:	d302      	bcc.n	4a0 <.udivsi3_skip_div0_test+0x40>
+     49a:	1b00      	subs	r0, r0, r4
+     49c:	085c      	lsrs	r4, r3, #1
+     49e:	4322      	orrs	r2, r4
+     4a0:	088c      	lsrs	r4, r1, #2
+     4a2:	42a0      	cmp	r0, r4
+     4a4:	d302      	bcc.n	4ac <.udivsi3_skip_div0_test+0x4c>
+     4a6:	1b00      	subs	r0, r0, r4
+     4a8:	089c      	lsrs	r4, r3, #2
+     4aa:	4322      	orrs	r2, r4
+     4ac:	08cc      	lsrs	r4, r1, #3
+     4ae:	42a0      	cmp	r0, r4
+     4b0:	d302      	bcc.n	4b8 <.udivsi3_skip_div0_test+0x58>
+     4b2:	1b00      	subs	r0, r0, r4
+     4b4:	08dc      	lsrs	r4, r3, #3
+     4b6:	4322      	orrs	r2, r4
+     4b8:	2800      	cmp	r0, #0
+     4ba:	d003      	beq.n	4c4 <.udivsi3_skip_div0_test+0x64>
+     4bc:	091b      	lsrs	r3, r3, #4
+     4be:	d001      	beq.n	4c4 <.udivsi3_skip_div0_test+0x64>
+     4c0:	0909      	lsrs	r1, r1, #4
+     4c2:	e7e3      	b.n	48c <.udivsi3_skip_div0_test+0x2c>
+     4c4:	1c10      	adds	r0, r2, #0
+     4c6:	bc10      	pop	{r4}
+     4c8:	4770      	bx	lr
+     4ca:	2800      	cmp	r0, #0
+     4cc:	d001      	beq.n	4d2 <.udivsi3_skip_div0_test+0x72>
+     4ce:	2000      	movs	r0, #0
+     4d0:	43c0      	mvns	r0, r0
+     4d2:	b407      	push	{r0, r1, r2}
+     4d4:	4802      	ldr	r0, [pc, #8]	; (4e0 <.udivsi3_skip_div0_test+0x80>)
+     4d6:	a102      	add	r1, pc, #8	; (adr r1, 4e0 <.udivsi3_skip_div0_test+0x80>)
+     4d8:	1840      	adds	r0, r0, r1
+     4da:	9002      	str	r0, [sp, #8]
+     4dc:	bd03      	pop	{r0, r1, pc}
+     4de:	46c0      	nop			; (mov r8, r8)
+     4e0:	00000019 	.word	0x00000019
+
+000004e4 <__aeabi_uidivmod>:
+__aeabi_uidivmod():
+     4e4:	2900      	cmp	r1, #0
+     4e6:	d0f0      	beq.n	4ca <.udivsi3_skip_div0_test+0x6a>
+     4e8:	b503      	push	{r0, r1, lr}
+     4ea:	f7ff ffb9 	bl	460 <.udivsi3_skip_div0_test>
+     4ee:	bc0e      	pop	{r1, r2, r3}
+     4f0:	4342      	muls	r2, r0
+     4f2:	1a89      	subs	r1, r1, r2
+     4f4:	4718      	bx	r3
+     4f6:	46c0      	nop			; (mov r8, r8)
+
+000004f8 <__aeabi_idiv0>:
+__aeabi_ldiv0():
+     4f8:	4770      	bx	lr
+     4fa:	46c0      	nop			; (mov r8, r8)
+
+000004fc <UART0_IRQHandler>:
+UART0_IRQHandler():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:18
+//参  数: 无
+//返  回: 无
+//说  明: 需要启动中断并注册才可使用
+//=====================================================================
+void UART0_IRQHandler(void)
+{
+     4fc:	b590      	push	{r4, r7, lr}
+     4fe:	b083      	sub	sp, #12
+     500:	af00      	add	r7, sp, #0
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:20
+    uint_8 ch;
+    uint_8 flag = 1;
+     502:	1dbb      	adds	r3, r7, #6
+     504:	2201      	movs	r2, #1
+     506:	701a      	strb	r2, [r3, #0]
+__disable_irq():
+C:/Users/PNN/Downloads/M0+2-160612/ch11-KL25-SPI-I2C-TSI/ch11-KL25-SPI-I2C-TSI/KL25_I2C_MASTER(20160511)/02_CPU/core_cmFunc.h:344
+  This function disables IRQ interrupts by setting the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+{
+  __ASM volatile ("cpsid i" : : : "memory");
+     508:	b672      	cpsid	i
+UART0_IRQHandler():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:24
+    
+    DISABLE_INTERRUPTS;
+    
+    ch = uart_re1(UART_0, &flag);
+     50a:	1dfc      	adds	r4, r7, #7
+     50c:	1dbb      	adds	r3, r7, #6
+     50e:	2000      	movs	r0, #0
+     510:	1c19      	adds	r1, r3, #0
+     512:	f000 fa7b 	bl	a0c <uart_re1>
+     516:	1c03      	adds	r3, r0, #0
+     518:	7023      	strb	r3, [r4, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:25
+    if (0 == flag)
+     51a:	1dbb      	adds	r3, r7, #6
+     51c:	781b      	ldrb	r3, [r3, #0]
+     51e:	2b00      	cmp	r3, #0
+     520:	d105      	bne.n	52e <UART0_IRQHandler+0x32>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:27
+    {
+        uart_send1(UART_0, ch);
+     522:	1dfb      	adds	r3, r7, #7
+     524:	781b      	ldrb	r3, [r3, #0]
+     526:	2000      	movs	r0, #0
+     528:	1c19      	adds	r1, r3, #0
+     52a:	f000 f9ed 	bl	908 <uart_send1>
+__enable_irq():
+C:/Users/PNN/Downloads/M0+2-160612/ch11-KL25-SPI-I2C-TSI/ch11-KL25-SPI-I2C-TSI/KL25_I2C_MASTER(20160511)/02_CPU/core_cmFunc.h:333
+  This function enables IRQ interrupts by clearing the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+{
+  __ASM volatile ("cpsie i" : : : "memory");
+     52e:	b662      	cpsie	i
+UART0_IRQHandler():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:31
+    }
+    
+    ENABLE_INTERRUPTS;
+}
+     530:	46bd      	mov	sp, r7
+     532:	b003      	add	sp, #12
+     534:	bd90      	pop	{r4, r7, pc}
+     536:	46c0      	nop			; (mov r8, r8)
+
+00000538 <UART1_IRQHandler>:
+UART1_IRQHandler():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:41
+//参  数: 无
+//返  回: 无
+//说  明: 需要启动中断并注册才可使用
+//=====================================================================
+void UART1_IRQHandler(void)
+{
+     538:	b590      	push	{r4, r7, lr}
+     53a:	b083      	sub	sp, #12
+     53c:	af00      	add	r7, sp, #0
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:43
+    uint_8 ch;
+    uint_8 flag = 1;
+     53e:	1dbb      	adds	r3, r7, #6
+     540:	2201      	movs	r2, #1
+     542:	701a      	strb	r2, [r3, #0]
+__disable_irq():
+C:/Users/PNN/Downloads/M0+2-160612/ch11-KL25-SPI-I2C-TSI/ch11-KL25-SPI-I2C-TSI/KL25_I2C_MASTER(20160511)/02_CPU/core_cmFunc.h:344
+  This function disables IRQ interrupts by setting the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+{
+  __ASM volatile ("cpsid i" : : : "memory");
+     544:	b672      	cpsid	i
+UART1_IRQHandler():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:47
+    
+    DISABLE_INTERRUPTS;
+    
+    ch = uart_re1(UART_1, &flag);
+     546:	1dfc      	adds	r4, r7, #7
+     548:	1dbb      	adds	r3, r7, #6
+     54a:	2001      	movs	r0, #1
+     54c:	1c19      	adds	r1, r3, #0
+     54e:	f000 fa5d 	bl	a0c <uart_re1>
+     552:	1c03      	adds	r3, r0, #0
+     554:	7023      	strb	r3, [r4, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:48
+    if (0 == flag)
+     556:	1dbb      	adds	r3, r7, #6
+     558:	781b      	ldrb	r3, [r3, #0]
+     55a:	2b00      	cmp	r3, #0
+     55c:	d105      	bne.n	56a <UART1_IRQHandler+0x32>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:50
+    {
+        uart_send1(UART_1, ch);
+     55e:	1dfb      	adds	r3, r7, #7
+     560:	781b      	ldrb	r3, [r3, #0]
+     562:	2001      	movs	r0, #1
+     564:	1c19      	adds	r1, r3, #0
+     566:	f000 f9cf 	bl	908 <uart_send1>
+__enable_irq():
+C:/Users/PNN/Downloads/M0+2-160612/ch11-KL25-SPI-I2C-TSI/ch11-KL25-SPI-I2C-TSI/KL25_I2C_MASTER(20160511)/02_CPU/core_cmFunc.h:333
+  This function enables IRQ interrupts by clearing the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+{
+  __ASM volatile ("cpsie i" : : : "memory");
+     56a:	b662      	cpsie	i
+UART1_IRQHandler():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:54
+    }
+ 
+    ENABLE_INTERRUPTS;
+}
+     56c:	46bd      	mov	sp, r7
+     56e:	b003      	add	sp, #12
+     570:	bd90      	pop	{r4, r7, pc}
+     572:	46c0      	nop			; (mov r8, r8)
+
+00000574 <UART2_IRQHandler>:
+UART2_IRQHandler():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:63
+//参  数: 无
+//返  回: 无
+//说  明: 需要启动中断并注册才可使用
+//=====================================================================
+void UART2_IRQHandler(void)
+{
+     574:	b590      	push	{r4, r7, lr}
+     576:	b083      	sub	sp, #12
+     578:	af00      	add	r7, sp, #0
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:65
+    uint_8 ch;
+    uint_8 flag = 1;
+     57a:	1dbb      	adds	r3, r7, #6
+     57c:	2201      	movs	r2, #1
+     57e:	701a      	strb	r2, [r3, #0]
+__disable_irq():
+C:/Users/PNN/Downloads/M0+2-160612/ch11-KL25-SPI-I2C-TSI/ch11-KL25-SPI-I2C-TSI/KL25_I2C_MASTER(20160511)/02_CPU/core_cmFunc.h:344
+  This function disables IRQ interrupts by setting the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+{
+  __ASM volatile ("cpsid i" : : : "memory");
+     580:	b672      	cpsid	i
+UART2_IRQHandler():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:69
+    
+    DISABLE_INTERRUPTS;
+    
+    ch = uart_re1(UART_2, &flag);
+     582:	1dfc      	adds	r4, r7, #7
+     584:	1dbb      	adds	r3, r7, #6
+     586:	2002      	movs	r0, #2
+     588:	1c19      	adds	r1, r3, #0
+     58a:	f000 fa3f 	bl	a0c <uart_re1>
+     58e:	1c03      	adds	r3, r0, #0
+     590:	7023      	strb	r3, [r4, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:70
+    if (0 == flag)
+     592:	1dbb      	adds	r3, r7, #6
+     594:	781b      	ldrb	r3, [r3, #0]
+     596:	2b00      	cmp	r3, #0
+     598:	d105      	bne.n	5a6 <UART2_IRQHandler+0x32>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:72
+    {
+        uart_send1(UART_2, ch);
+     59a:	1dfb      	adds	r3, r7, #7
+     59c:	781b      	ldrb	r3, [r3, #0]
+     59e:	2002      	movs	r0, #2
+     5a0:	1c19      	adds	r1, r3, #0
+     5a2:	f000 f9b1 	bl	908 <uart_send1>
+__enable_irq():
+C:/Users/PNN/Downloads/M0+2-160612/ch11-KL25-SPI-I2C-TSI/ch11-KL25-SPI-I2C-TSI/KL25_I2C_MASTER(20160511)/02_CPU/core_cmFunc.h:333
+  This function enables IRQ interrupts by clearing the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+{
+  __ASM volatile ("cpsie i" : : : "memory");
+     5a6:	b662      	cpsie	i
+UART2_IRQHandler():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/isr.c:76
+    }
+        
+    ENABLE_INTERRUPTS;
+}
+     5a8:	46bd      	mov	sp, r7
+     5aa:	b003      	add	sp, #12
+     5ac:	bd90      	pop	{r4, r7, pc}
+     5ae:	46c0      	nop			; (mov r8, r8)
+
+000005b0 <main>:
+main():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:12
+//说明见工程文件夹下的Doc文件夹内Readme.txt文件
+//===========================================================================
+#include "includes.h"
+// 定义全局变量
+int main(void)
+{
+     5b0:	b590      	push	{r4, r7, lr}
+     5b2:	b087      	sub	sp, #28
+     5b4:	af00      	add	r7, sp, #0
+__disable_irq():
+C:/Users/PNN/Downloads/M0+2-160612/ch11-KL25-SPI-I2C-TSI/ch11-KL25-SPI-I2C-TSI/KL25_I2C_MASTER(20160511)/02_CPU/core_cmFunc.h:344
+  This function disables IRQ interrupts by setting the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+{
+  __ASM volatile ("cpsid i" : : : "memory");
+     5b6:	b672      	cpsid	i
+main():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:21
+    uint_32 mRunCount1;                 //发送间隔计数器1
+    uint_32 mRunCount2;                 //发送间隔计数器2
+    //2. 关总中断
+    DISABLE_INTERRUPTS;
+    //3. 初始化外设模块
+    light_init(RUN_LIGHT_BLUE,LIGHT_OFF);
+     5b8:	230a      	movs	r3, #10
+     5ba:	33ff      	adds	r3, #255	; 0xff
+     5bc:	1c18      	adds	r0, r3, #0
+     5be:	2101      	movs	r1, #1
+     5c0:	f000 f856 	bl	670 <light_init>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:22
+    i2c_init(I2C0,1,MasterAddress,100);     //第四个参数为波特率，其单位为KB/S
+     5c4:	2000      	movs	r0, #0
+     5c6:	2101      	movs	r1, #1
+     5c8:	2263      	movs	r2, #99	; 0x63
+     5ca:	2364      	movs	r3, #100	; 0x64
+     5cc:	f000 fb56 	bl	c7c <i2c_init>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:23
+    uart_init (UART_TEST, 9600);//串口1初始化, 总线时钟24000Khz,波特率9600
+     5d0:	2396      	movs	r3, #150	; 0x96
+     5d2:	019b      	lsls	r3, r3, #6
+     5d4:	2001      	movs	r0, #1
+     5d6:	1c19      	adds	r1, r3, #0
+     5d8:	f000 f884 	bl	6e4 <uart_init>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:24
+    uart_send_string(UART_TEST, "This is i2c Test!\r\n");
+     5dc:	4b21      	ldr	r3, [pc, #132]	; (664 <main+0xb4>)
+     5de:	2001      	movs	r0, #1
+     5e0:	1c19      	adds	r1, r3, #0
+     5e2:	f000 f9db 	bl	99c <uart_send_string>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:26
+    //4. 给有关变量赋初值
+    strcpy(data,"Version3.4\n");               //为data数组赋值
+     5e6:	1c3b      	adds	r3, r7, #0
+     5e8:	4a1f      	ldr	r2, [pc, #124]	; (668 <main+0xb8>)
+     5ea:	ca13      	ldmia	r2!, {r0, r1, r4}
+     5ec:	c313      	stmia	r3!, {r0, r1, r4}
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:27
+    Num_flag=0;
+     5ee:	1c3b      	adds	r3, r7, #0
+     5f0:	3317      	adds	r3, #23
+     5f2:	2200      	movs	r2, #0
+     5f4:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:29
+    //5. 使能模块中断
+    uart_enable_re_int(UART_TEST);
+     5f6:	2001      	movs	r0, #1
+     5f8:	f000 fa5e 	bl	ab8 <uart_enable_re_int>
+__enable_irq():
+C:/Users/PNN/Downloads/M0+2-160612/ch11-KL25-SPI-I2C-TSI/ch11-KL25-SPI-I2C-TSI/KL25_I2C_MASTER(20160511)/02_CPU/core_cmFunc.h:333
+  This function enables IRQ interrupts by clearing the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+{
+  __ASM volatile ("cpsie i" : : : "memory");
+     5fc:	b662      	cpsie	i
+main():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:37
+    //i2c_write1(0, 0x73, 0x02, data);           //向从机写 A，0X73为从机地址
+    //进入主循环
+    //主循环开始============================================================
+    for(;;)
+    {
+        mRunCount1++;
+     5fe:	693b      	ldr	r3, [r7, #16]
+     600:	3301      	adds	r3, #1
+     602:	613b      	str	r3, [r7, #16]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:38
+        mRunCount2++;
+     604:	68fb      	ldr	r3, [r7, #12]
+     606:	3301      	adds	r3, #1
+     608:	60fb      	str	r3, [r7, #12]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:39
+        if(mRunCount1 > 2000000)
+     60a:	693a      	ldr	r2, [r7, #16]
+     60c:	4b17      	ldr	r3, [pc, #92]	; (66c <main+0xbc>)
+     60e:	429a      	cmp	r2, r3
+     610:	d906      	bls.n	620 <main+0x70>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:41
+        {
+            mRunCount1=0;
+     612:	2300      	movs	r3, #0
+     614:	613b      	str	r3, [r7, #16]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:42
+            light_change(RUN_LIGHT_BLUE);
+     616:	230a      	movs	r3, #10
+     618:	33ff      	adds	r3, #255	; 0xff
+     61a:	1c18      	adds	r0, r3, #0
+     61c:	f000 f83e 	bl	69c <light_change>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:46
+        }
+
+        //以下加入用户程序-----------------------------------------------------
+        if(mRunCount2 > 2000000)
+     620:	68fa      	ldr	r2, [r7, #12]
+     622:	4b12      	ldr	r3, [pc, #72]	; (66c <main+0xbc>)
+     624:	429a      	cmp	r2, r3
+     626:	d91c      	bls.n	662 <main+0xb2>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:49
+        {
+            //依次向从机写 data中数据，0X73为从机地址
+            i2c_write1(I2C0, 0x73, 0x02, data[Num_flag]);
+     628:	1c3b      	adds	r3, r7, #0
+     62a:	3317      	adds	r3, #23
+     62c:	781b      	ldrb	r3, [r3, #0]
+     62e:	1c3a      	adds	r2, r7, #0
+     630:	5cd3      	ldrb	r3, [r2, r3]
+     632:	2000      	movs	r0, #0
+     634:	2173      	movs	r1, #115	; 0x73
+     636:	2202      	movs	r2, #2
+     638:	f000 fc60 	bl	efc <i2c_write1>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:50
+            Num_flag++;
+     63c:	1c3b      	adds	r3, r7, #0
+     63e:	3317      	adds	r3, #23
+     640:	781a      	ldrb	r2, [r3, #0]
+     642:	1c3b      	adds	r3, r7, #0
+     644:	3317      	adds	r3, #23
+     646:	3201      	adds	r2, #1
+     648:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:51
+            if(Num_flag > 10 )
+     64a:	1c3b      	adds	r3, r7, #0
+     64c:	3317      	adds	r3, #23
+     64e:	781b      	ldrb	r3, [r3, #0]
+     650:	2b0a      	cmp	r3, #10
+     652:	d903      	bls.n	65c <main+0xac>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:52
+            Num_flag=0;
+     654:	1c3b      	adds	r3, r7, #0
+     656:	3317      	adds	r3, #23
+     658:	2200      	movs	r2, #0
+     65a:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:53
+            mRunCount2=0;
+     65c:	2300      	movs	r3, #0
+     65e:	60fb      	str	r3, [r7, #12]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../08_Source/main.c:55
+        }
+    }//主循环end_for
+     660:	e7cd      	b.n	5fe <main+0x4e>
+     662:	e7cc      	b.n	5fe <main+0x4e>
+     664:	00001384 	.word	0x00001384
+     668:	00001398 	.word	0x00001398
+     66c:	001e8480 	.word	0x001e8480
+
+00000670 <light_init>:
+light_init():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../06_App_Component/light/light.c:18
+//       state：设定小灯状态。由light.h中宏定义。
+//函数返回：无
+//功能概要：指示灯驱动初始化。
+//===========================================================================
+void light_init(uint_16 port_pin, uint_8 state)
+{
+     670:	b580      	push	{r7, lr}
+     672:	b082      	sub	sp, #8
+     674:	af00      	add	r7, sp, #0
+     676:	1c0a      	adds	r2, r1, #0
+     678:	1dbb      	adds	r3, r7, #6
+     67a:	1c01      	adds	r1, r0, #0
+     67c:	8019      	strh	r1, [r3, #0]
+     67e:	1d7b      	adds	r3, r7, #5
+     680:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../06_App_Component/light/light.c:19
+    gpio_init(port_pin, GPIO_OUTPUT, state);
+     682:	1dbb      	adds	r3, r7, #6
+     684:	881a      	ldrh	r2, [r3, #0]
+     686:	1d7b      	adds	r3, r7, #5
+     688:	781b      	ldrb	r3, [r3, #0]
+     68a:	1c10      	adds	r0, r2, #0
+     68c:	2101      	movs	r1, #1
+     68e:	1c1a      	adds	r2, r3, #0
+     690:	f000 fce8 	bl	1064 <gpio_init>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../06_App_Component/light/light.c:20
+}
+     694:	46bd      	mov	sp, r7
+     696:	b002      	add	sp, #8
+     698:	bd80      	pop	{r7, pc}
+     69a:	46c0      	nop			; (mov r8, r8)
+
+0000069c <light_change>:
+light_change():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../06_App_Component/light/light.c:41
+//函数参数：port_pin：(端口号)|(引脚号)（如：(PORTB)|(5) 表示为B口5号脚）
+//函数返回：无
+//功能概要：切换指示灯亮暗。
+//===========================================================================
+void light_change(uint_16 port_pin)
+{
+     69c:	b580      	push	{r7, lr}
+     69e:	b082      	sub	sp, #8
+     6a0:	af00      	add	r7, sp, #0
+     6a2:	1c02      	adds	r2, r0, #0
+     6a4:	1dbb      	adds	r3, r7, #6
+     6a6:	801a      	strh	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../06_App_Component/light/light.c:42
+    gpio_reverse(port_pin);
+     6a8:	1dbb      	adds	r3, r7, #6
+     6aa:	881b      	ldrh	r3, [r3, #0]
+     6ac:	1c18      	adds	r0, r3, #0
+     6ae:	f000 fd7b 	bl	11a8 <gpio_reverse>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../06_App_Component/light/light.c:43
+}
+     6b2:	46bd      	mov	sp, r7
+     6b4:	b002      	add	sp, #8
+     6b6:	bd80      	pop	{r7, pc}
+
+000006b8 <NVIC_EnableIRQ>:
+NVIC_EnableIRQ():
+C:/Users/PNN/Downloads/M0+2-160612/ch11-KL25-SPI-I2C-TSI/ch11-KL25-SPI-I2C-TSI/KL25_I2C_MASTER(20160511)/02_CPU/core_cm0plus.h:684
+    The function enables a device-specific interrupt in the NVIC interrupt controller.
+
+    \param [in]      IRQn  External interrupt number. Value cannot be negative.
+ */
+__STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+{
+     6b8:	b580      	push	{r7, lr}
+     6ba:	b082      	sub	sp, #8
+     6bc:	af00      	add	r7, sp, #0
+     6be:	1c02      	adds	r2, r0, #0
+     6c0:	1dfb      	adds	r3, r7, #7
+     6c2:	701a      	strb	r2, [r3, #0]
+C:/Users/PNN/Downloads/M0+2-160612/ch11-KL25-SPI-I2C-TSI/ch11-KL25-SPI-I2C-TSI/KL25_I2C_MASTER(20160511)/02_CPU/core_cm0plus.h:685
+  NVIC->ISER[0] = (uint32_t)(1UL << (((uint32_t)(int32_t)IRQn) & 0x1FUL));
+     6c4:	4b06      	ldr	r3, [pc, #24]	; (6e0 <NVIC_EnableIRQ+0x28>)
+     6c6:	1dfa      	adds	r2, r7, #7
+     6c8:	7812      	ldrb	r2, [r2, #0]
+     6ca:	1c11      	adds	r1, r2, #0
+     6cc:	221f      	movs	r2, #31
+     6ce:	400a      	ands	r2, r1
+     6d0:	2101      	movs	r1, #1
+     6d2:	1c08      	adds	r0, r1, #0
+     6d4:	4090      	lsls	r0, r2
+     6d6:	1c02      	adds	r2, r0, #0
+     6d8:	601a      	str	r2, [r3, #0]
+C:/Users/PNN/Downloads/M0+2-160612/ch11-KL25-SPI-I2C-TSI/ch11-KL25-SPI-I2C-TSI/KL25_I2C_MASTER(20160511)/02_CPU/core_cm0plus.h:686
+}
+     6da:	46bd      	mov	sp, r7
+     6dc:	b002      	add	sp, #8
+     6de:	bd80      	pop	{r7, pc}
+     6e0:	e000e100 	.word	0xe000e100
+
+000006e4 <uart_init>:
+uart_init():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:23
+//参数说明：uartNo:串口号：UART_0、UART_1、UART_2 
+//          baud:波特率：300、600、1200、2400、4800、9600、19200、115200...
+//函数返回：无
+//============================================================================
+ void  uart_init (uint_8 uartNo, uint_32 baud_rate)
+ {	  
+     6e4:	b580      	push	{r7, lr}
+     6e6:	b086      	sub	sp, #24
+     6e8:	af00      	add	r7, sp, #0
+     6ea:	1c02      	adds	r2, r0, #0
+     6ec:	6039      	str	r1, [r7, #0]
+     6ee:	1dfb      	adds	r3, r7, #7
+     6f0:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:27
+	//局部变量声明
+	uint_16 sbr;
+	uint_8 temp;  
+	UART0_MemMapPtr uartch1=UART0_BASE_PTR;//声明uartch1为UARTLP_MemMapPtr结构体类型指针
+     6f2:	4b7d      	ldr	r3, [pc, #500]	; (8e8 <uart_init+0x204>)
+     6f4:	617b      	str	r3, [r7, #20]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:32
+    UART_MemMapPtr uartch2;     //声明uartch2为UART_MemMapPtr结构体类型指针 
+	
+	//根据带入参数uartNo，给局部变量uartch1赋值
+	
+	if(uartNo==0)
+     6f6:	1dfb      	adds	r3, r7, #7
+     6f8:	781b      	ldrb	r3, [r3, #0]
+     6fa:	2b00      	cmp	r3, #0
+     6fc:	d176      	bne.n	7ec <uart_init+0x108>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:35
+	{
+
+		SIM_SOPT2 |= SIM_SOPT2_UART0SRC(0x1);   //UART0选择MCGFLLCLK_khz=48000Khz时钟源
+     6fe:	4a7b      	ldr	r2, [pc, #492]	; (8ec <uart_init+0x208>)
+     700:	497a      	ldr	r1, [pc, #488]	; (8ec <uart_init+0x208>)
+     702:	4b7b      	ldr	r3, [pc, #492]	; (8f0 <uart_init+0x20c>)
+     704:	58cb      	ldr	r3, [r1, r3]
+     706:	2180      	movs	r1, #128	; 0x80
+     708:	04c9      	lsls	r1, r1, #19
+     70a:	4319      	orrs	r1, r3
+     70c:	4b78      	ldr	r3, [pc, #480]	; (8f0 <uart_init+0x20c>)
+     70e:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:36
+		SIM_SOPT2 |= SIM_SOPT2_PLLFLLSEL_MASK;
+     710:	4a76      	ldr	r2, [pc, #472]	; (8ec <uart_init+0x208>)
+     712:	4976      	ldr	r1, [pc, #472]	; (8ec <uart_init+0x208>)
+     714:	4b76      	ldr	r3, [pc, #472]	; (8f0 <uart_init+0x20c>)
+     716:	58cb      	ldr	r3, [r1, r3]
+     718:	2180      	movs	r1, #128	; 0x80
+     71a:	0249      	lsls	r1, r1, #9
+     71c:	4319      	orrs	r1, r3
+     71e:	4b74      	ldr	r3, [pc, #464]	; (8f0 <uart_init+0x20c>)
+     720:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:65
+			PORTD_PCR7 |= PORT_PCR_MUX(0x3);     //使能UART0_TXD
+			PORTD_PCR6 |= PORT_PCR_MUX(0x3);     //使能UART0_RXD
+			break;
+		}
+#endif
+		SIM_SCGC4 |= SIM_SCGC4_UART0_MASK;    //启动串口0时钟
+     722:	4a72      	ldr	r2, [pc, #456]	; (8ec <uart_init+0x208>)
+     724:	4971      	ldr	r1, [pc, #452]	; (8ec <uart_init+0x208>)
+     726:	4b73      	ldr	r3, [pc, #460]	; (8f4 <uart_init+0x210>)
+     728:	58cb      	ldr	r3, [r1, r3]
+     72a:	2180      	movs	r1, #128	; 0x80
+     72c:	00c9      	lsls	r1, r1, #3
+     72e:	4319      	orrs	r1, r3
+     730:	4b70      	ldr	r3, [pc, #448]	; (8f4 <uart_init+0x210>)
+     732:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:68
+		
+		//暂时关闭串口0发送与接收功能  
+		uartch1->C2 &= ~(UART_C2_TE_MASK | UART_C2_RE_MASK); 
+     734:	697b      	ldr	r3, [r7, #20]
+     736:	78db      	ldrb	r3, [r3, #3]
+     738:	b2db      	uxtb	r3, r3
+     73a:	220c      	movs	r2, #12
+     73c:	4393      	bics	r3, r2
+     73e:	b2da      	uxtb	r2, r3
+     740:	697b      	ldr	r3, [r7, #20]
+     742:	70da      	strb	r2, [r3, #3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:71
+   
+		//配置串口工作模式:8位无校验模式
+		sbr = (uint_16)((SYSTEM_CLK_KHZ*1000)/(baud_rate * 16));
+     744:	683b      	ldr	r3, [r7, #0]
+     746:	011b      	lsls	r3, r3, #4
+     748:	486b      	ldr	r0, [pc, #428]	; (8f8 <uart_init+0x214>)
+     74a:	1c19      	adds	r1, r3, #0
+     74c:	f7ff fe86 	bl	45c <__aeabi_uidiv>
+     750:	1c03      	adds	r3, r0, #0
+     752:	1c1a      	adds	r2, r3, #0
+     754:	1c3b      	adds	r3, r7, #0
+     756:	3312      	adds	r3, #18
+     758:	801a      	strh	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:72
+		temp = UART_BDH_REG(uartch1) & ~(UART_BDH_SBR(0x1F));
+     75a:	697b      	ldr	r3, [r7, #20]
+     75c:	781b      	ldrb	r3, [r3, #0]
+     75e:	b2da      	uxtb	r2, r3
+     760:	1c3b      	adds	r3, r7, #0
+     762:	3311      	adds	r3, #17
+     764:	211f      	movs	r1, #31
+     766:	438a      	bics	r2, r1
+     768:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:73
+		UART_BDH_REG(uartch1) = temp |  UART_BDH_SBR(((sbr & 0x1F00) >> 8));
+     76a:	1c3b      	adds	r3, r7, #0
+     76c:	3312      	adds	r3, #18
+     76e:	881a      	ldrh	r2, [r3, #0]
+     770:	23f8      	movs	r3, #248	; 0xf8
+     772:	015b      	lsls	r3, r3, #5
+     774:	4013      	ands	r3, r2
+     776:	121b      	asrs	r3, r3, #8
+     778:	b2da      	uxtb	r2, r3
+     77a:	231f      	movs	r3, #31
+     77c:	4013      	ands	r3, r2
+     77e:	b2da      	uxtb	r2, r3
+     780:	1c3b      	adds	r3, r7, #0
+     782:	3311      	adds	r3, #17
+     784:	781b      	ldrb	r3, [r3, #0]
+     786:	4313      	orrs	r3, r2
+     788:	b2da      	uxtb	r2, r3
+     78a:	697b      	ldr	r3, [r7, #20]
+     78c:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:74
+		UART_BDL_REG(uartch1) = (uint_8)(sbr & UART_BDL_SBR_MASK);
+     78e:	1c3b      	adds	r3, r7, #0
+     790:	3312      	adds	r3, #18
+     792:	881b      	ldrh	r3, [r3, #0]
+     794:	b2da      	uxtb	r2, r3
+     796:	697b      	ldr	r3, [r7, #20]
+     798:	705a      	strb	r2, [r3, #1]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:77
+
+		//初始化控制寄存器、清标志位
+		UART0_C4 = 0x0F;
+     79a:	4b53      	ldr	r3, [pc, #332]	; (8e8 <uart_init+0x204>)
+     79c:	220f      	movs	r2, #15
+     79e:	729a      	strb	r2, [r3, #10]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:78
+		UART0_C1 = 0x00;
+     7a0:	4b51      	ldr	r3, [pc, #324]	; (8e8 <uart_init+0x204>)
+     7a2:	2200      	movs	r2, #0
+     7a4:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:79
+		UART0_C3 = 0x00;
+     7a6:	4b50      	ldr	r3, [pc, #320]	; (8e8 <uart_init+0x204>)
+     7a8:	2200      	movs	r2, #0
+     7aa:	719a      	strb	r2, [r3, #6]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:80
+		UART0_MA1 = 0x00;
+     7ac:	4b4e      	ldr	r3, [pc, #312]	; (8e8 <uart_init+0x204>)
+     7ae:	2200      	movs	r2, #0
+     7b0:	721a      	strb	r2, [r3, #8]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:81
+		UART0_MA2 = 0x00;
+     7b2:	4b4d      	ldr	r3, [pc, #308]	; (8e8 <uart_init+0x204>)
+     7b4:	2200      	movs	r2, #0
+     7b6:	725a      	strb	r2, [r3, #9]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:82
+		UART0_S1 |= 0x1F;
+     7b8:	4b4b      	ldr	r3, [pc, #300]	; (8e8 <uart_init+0x204>)
+     7ba:	4a4b      	ldr	r2, [pc, #300]	; (8e8 <uart_init+0x204>)
+     7bc:	7912      	ldrb	r2, [r2, #4]
+     7be:	b2d2      	uxtb	r2, r2
+     7c0:	211f      	movs	r1, #31
+     7c2:	430a      	orrs	r2, r1
+     7c4:	b2d2      	uxtb	r2, r2
+     7c6:	711a      	strb	r2, [r3, #4]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:83
+		UART0_S2 |= 0xC0;    
+     7c8:	4b47      	ldr	r3, [pc, #284]	; (8e8 <uart_init+0x204>)
+     7ca:	4a47      	ldr	r2, [pc, #284]	; (8e8 <uart_init+0x204>)
+     7cc:	7952      	ldrb	r2, [r2, #5]
+     7ce:	b2d2      	uxtb	r2, r2
+     7d0:	2140      	movs	r1, #64	; 0x40
+     7d2:	4249      	negs	r1, r1
+     7d4:	430a      	orrs	r2, r1
+     7d6:	b2d2      	uxtb	r2, r2
+     7d8:	715a      	strb	r2, [r3, #5]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:86
+	   	
+		//启动发送接收
+		uartch1->C2 |= (UART_C2_TE_MASK | UART_C2_RE_MASK);    
+     7da:	697b      	ldr	r3, [r7, #20]
+     7dc:	78db      	ldrb	r3, [r3, #3]
+     7de:	b2db      	uxtb	r3, r3
+     7e0:	220c      	movs	r2, #12
+     7e2:	4313      	orrs	r3, r2
+     7e4:	b2da      	uxtb	r2, r3
+     7e6:	697b      	ldr	r3, [r7, #20]
+     7e8:	70da      	strb	r2, [r3, #3]
+     7ea:	e07a      	b.n	8e2 <uart_init+0x1fe>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:90
+	}
+	else
+	{
+		 switch (uartNo)
+     7ec:	1dfb      	adds	r3, r7, #7
+     7ee:	781b      	ldrb	r3, [r3, #0]
+     7f0:	2b01      	cmp	r3, #1
+     7f2:	d002      	beq.n	7fa <uart_init+0x116>
+     7f4:	2b02      	cmp	r3, #2
+     7f6:	d013      	beq.n	820 <uart_init+0x13c>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:135
+		    	   }
+#endif
+		           SIM_SCGC4 |= SIM_SCGC4_UART2_MASK;//启动串口2时钟
+		           break;
+		       default:
+		    	   break;  //传参错误，返回
+     7f8:	e025      	b.n	846 <uart_init+0x162>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:97
+		       case UART_1:
+#ifdef UART_1_GROUP
+		    	   switch(UART_1_GROUP)
+		    	   {
+		    	   case 0:
+		    		   PORTE_PCR0 = PORT_PCR_MUX(0x3);    //使能UART1_TXD
+     7fa:	4b40      	ldr	r3, [pc, #256]	; (8fc <uart_init+0x218>)
+     7fc:	22c0      	movs	r2, #192	; 0xc0
+     7fe:	0092      	lsls	r2, r2, #2
+     800:	601a      	str	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:98
+		    		   PORTE_PCR1 = PORT_PCR_MUX(0x3);    //使能UART1_RXD
+     802:	4b3e      	ldr	r3, [pc, #248]	; (8fc <uart_init+0x218>)
+     804:	22c0      	movs	r2, #192	; 0xc0
+     806:	0092      	lsls	r2, r2, #2
+     808:	605a      	str	r2, [r3, #4]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:99
+		    		   break;
+     80a:	46c0      	nop			; (mov r8, r8)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:111
+		    		   PORTC_PCR4 = PORT_PCR_MUX(0x3);    //使能UART1_TXD
+		    		   PORTC_PCR5 = PORT_PCR_MUX(0x3);    //使能UART1_RXD
+		    		   break;
+		    	   }
+#endif
+		           SIM_SCGC4 |= SIM_SCGC4_UART1_MASK; //启动串口1时钟
+     80c:	4a37      	ldr	r2, [pc, #220]	; (8ec <uart_init+0x208>)
+     80e:	4937      	ldr	r1, [pc, #220]	; (8ec <uart_init+0x208>)
+     810:	4b38      	ldr	r3, [pc, #224]	; (8f4 <uart_init+0x210>)
+     812:	58cb      	ldr	r3, [r1, r3]
+     814:	2180      	movs	r1, #128	; 0x80
+     816:	0109      	lsls	r1, r1, #4
+     818:	4319      	orrs	r1, r3
+     81a:	4b36      	ldr	r3, [pc, #216]	; (8f4 <uart_init+0x210>)
+     81c:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:112
+		           break;
+     81e:	e012      	b.n	846 <uart_init+0x162>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:118
+		       case UART_2:
+#ifdef UART_2_GROUP
+		    	   switch(UART_2_GROUP)
+		    	   {
+		    	   case 0:
+		    		   PORTE_PCR22 = PORT_PCR_MUX(0x4); //使能UART2_TXD
+     820:	4b36      	ldr	r3, [pc, #216]	; (8fc <uart_init+0x218>)
+     822:	2280      	movs	r2, #128	; 0x80
+     824:	00d2      	lsls	r2, r2, #3
+     826:	659a      	str	r2, [r3, #88]	; 0x58
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:119
+		    		   PORTE_PCR23 = PORT_PCR_MUX(0x4); //使能UART2_RXD
+     828:	4b34      	ldr	r3, [pc, #208]	; (8fc <uart_init+0x218>)
+     82a:	2280      	movs	r2, #128	; 0x80
+     82c:	00d2      	lsls	r2, r2, #3
+     82e:	65da      	str	r2, [r3, #92]	; 0x5c
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:120
+		    		   break;
+     830:	46c0      	nop			; (mov r8, r8)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:132
+		    		   PORTD_PCR5 = PORT_PCR_MUX(0x3); //使能UART2_TXD
+		    		   PORTD_PCR6 = PORT_PCR_MUX(0x3); //使能UART2_RXD
+		    		   break;
+		    	   }
+#endif
+		           SIM_SCGC4 |= SIM_SCGC4_UART2_MASK;//启动串口2时钟
+     832:	4a2e      	ldr	r2, [pc, #184]	; (8ec <uart_init+0x208>)
+     834:	492d      	ldr	r1, [pc, #180]	; (8ec <uart_init+0x208>)
+     836:	4b2f      	ldr	r3, [pc, #188]	; (8f4 <uart_init+0x210>)
+     838:	58cb      	ldr	r3, [r1, r3]
+     83a:	2180      	movs	r1, #128	; 0x80
+     83c:	0149      	lsls	r1, r1, #5
+     83e:	4319      	orrs	r1, r3
+     840:	4b2c      	ldr	r3, [pc, #176]	; (8f4 <uart_init+0x210>)
+     842:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:133
+		           break;
+     844:	46c0      	nop			; (mov r8, r8)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:138
+		       default:
+		    	   break;  //传参错误，返回
+		       }
+
+		uartch2 = UART_ARR[uartNo-1]; //获得UART1、2模块相应口基地址
+     846:	1dfb      	adds	r3, r7, #7
+     848:	781b      	ldrb	r3, [r3, #0]
+     84a:	1e5a      	subs	r2, r3, #1
+     84c:	4b2c      	ldr	r3, [pc, #176]	; (900 <uart_init+0x21c>)
+     84e:	0092      	lsls	r2, r2, #2
+     850:	58d3      	ldr	r3, [r2, r3]
+     852:	60fb      	str	r3, [r7, #12]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:141
+
+		 //暂时关闭串口1、2发送与接收功能  
+		uartch2->C2 &= ~(UART_C2_TE_MASK | UART_C2_RE_MASK);
+     854:	68fb      	ldr	r3, [r7, #12]
+     856:	78db      	ldrb	r3, [r3, #3]
+     858:	b2db      	uxtb	r3, r3
+     85a:	220c      	movs	r2, #12
+     85c:	4393      	bics	r3, r2
+     85e:	b2da      	uxtb	r2, r3
+     860:	68fb      	ldr	r3, [r7, #12]
+     862:	70da      	strb	r2, [r3, #3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:145
+		   	  
+		//配置波特率,KL25串口1、2时钟频率使用 Bus clock = 24M 总线时钟
+		//配置串口工作模式,8位无校验模式
+		uartch2->C1 = 0;          
+     864:	68fb      	ldr	r3, [r7, #12]
+     866:	2200      	movs	r2, #0
+     868:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:146
+		sbr = (uint_16)((BUS_CLK_KHZ*1000)/(baud_rate * 16));
+     86a:	683b      	ldr	r3, [r7, #0]
+     86c:	011b      	lsls	r3, r3, #4
+     86e:	4825      	ldr	r0, [pc, #148]	; (904 <uart_init+0x220>)
+     870:	1c19      	adds	r1, r3, #0
+     872:	f7ff fdf3 	bl	45c <__aeabi_uidiv>
+     876:	1c03      	adds	r3, r0, #0
+     878:	1c1a      	adds	r2, r3, #0
+     87a:	1c3b      	adds	r3, r7, #0
+     87c:	3312      	adds	r3, #18
+     87e:	801a      	strh	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:147
+		temp = UART_BDH_REG(uartch2) & ~(UART_BDH_SBR(0x1F));
+     880:	68fb      	ldr	r3, [r7, #12]
+     882:	781b      	ldrb	r3, [r3, #0]
+     884:	b2da      	uxtb	r2, r3
+     886:	1c3b      	adds	r3, r7, #0
+     888:	3311      	adds	r3, #17
+     88a:	211f      	movs	r1, #31
+     88c:	438a      	bics	r2, r1
+     88e:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:148
+		UART_BDH_REG(uartch2) = temp |  UART_BDH_SBR(((sbr & 0x1F00) >> 8));
+     890:	1c3b      	adds	r3, r7, #0
+     892:	3312      	adds	r3, #18
+     894:	881a      	ldrh	r2, [r3, #0]
+     896:	23f8      	movs	r3, #248	; 0xf8
+     898:	015b      	lsls	r3, r3, #5
+     89a:	4013      	ands	r3, r2
+     89c:	121b      	asrs	r3, r3, #8
+     89e:	b2da      	uxtb	r2, r3
+     8a0:	231f      	movs	r3, #31
+     8a2:	4013      	ands	r3, r2
+     8a4:	b2da      	uxtb	r2, r3
+     8a6:	1c3b      	adds	r3, r7, #0
+     8a8:	3311      	adds	r3, #17
+     8aa:	781b      	ldrb	r3, [r3, #0]
+     8ac:	4313      	orrs	r3, r2
+     8ae:	b2da      	uxtb	r2, r3
+     8b0:	68fb      	ldr	r3, [r7, #12]
+     8b2:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:149
+		UART_BDL_REG(uartch2) = (uint_8)(sbr & UART_BDL_SBR_MASK);
+     8b4:	1c3b      	adds	r3, r7, #0
+     8b6:	3312      	adds	r3, #18
+     8b8:	881b      	ldrh	r3, [r3, #0]
+     8ba:	b2da      	uxtb	r2, r3
+     8bc:	68fb      	ldr	r3, [r7, #12]
+     8be:	705a      	strb	r2, [r3, #1]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:152
+		           
+		//初始化控制寄存器、清标志位
+		uartch2->C1 = 0x00;
+     8c0:	68fb      	ldr	r3, [r7, #12]
+     8c2:	2200      	movs	r2, #0
+     8c4:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:153
+		uartch2->C3 = 0x00;
+     8c6:	68fb      	ldr	r3, [r7, #12]
+     8c8:	2200      	movs	r2, #0
+     8ca:	719a      	strb	r2, [r3, #6]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:155
+//		uartch2->S1 = 0x1F;
+		uartch2->S2 = 0x00;   	               
+     8cc:	68fb      	ldr	r3, [r7, #12]
+     8ce:	2200      	movs	r2, #0
+     8d0:	715a      	strb	r2, [r3, #5]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:157
+		//启动发送接收
+		uartch2->C2 |= (UART_C2_TE_MASK | UART_C2_RE_MASK);                           	
+     8d2:	68fb      	ldr	r3, [r7, #12]
+     8d4:	78db      	ldrb	r3, [r3, #3]
+     8d6:	b2db      	uxtb	r3, r3
+     8d8:	220c      	movs	r2, #12
+     8da:	4313      	orrs	r3, r2
+     8dc:	b2da      	uxtb	r2, r3
+     8de:	68fb      	ldr	r3, [r7, #12]
+     8e0:	70da      	strb	r2, [r3, #3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:159
+	}
+ }
+     8e2:	46bd      	mov	sp, r7
+     8e4:	b006      	add	sp, #24
+     8e6:	bd80      	pop	{r7, pc}
+     8e8:	4006a000 	.word	0x4006a000
+     8ec:	40047000 	.word	0x40047000
+     8f0:	00001004 	.word	0x00001004
+     8f4:	00001034 	.word	0x00001034
+     8f8:	02dc6c00 	.word	0x02dc6c00
+     8fc:	4004d000 	.word	0x4004d000
+     900:	000013a4 	.word	0x000013a4
+     904:	016e3600 	.word	0x016e3600
+
+00000908 <uart_send1>:
+uart_send1():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:168
+//          ch:要发送的字节
+//函数返回：函数执行状态：0=正常；非0=异常。
+//功能概要：串行发送1个字节
+ //============================================================================
+uint_8 uart_send1(uint_8 uartNo, uint_8 ch)
+{
+     908:	b580      	push	{r7, lr}
+     90a:	b086      	sub	sp, #24
+     90c:	af00      	add	r7, sp, #0
+     90e:	1c0a      	adds	r2, r1, #0
+     910:	1dfb      	adds	r3, r7, #7
+     912:	1c01      	adds	r1, r0, #0
+     914:	7019      	strb	r1, [r3, #0]
+     916:	1dbb      	adds	r3, r7, #6
+     918:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:170
+    uint_32 t;       
+    UART0_MemMapPtr uartch1=UART0_BASE_PTR; //获取UART0基地址
+     91a:	4b1d      	ldr	r3, [pc, #116]	; (990 <uart_send1+0x88>)
+     91c:	613b      	str	r3, [r7, #16]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:171
+    UART_MemMapPtr uartch2 = UART_ARR[uartNo-1]; //获取UART1或者2基地址
+     91e:	1dfb      	adds	r3, r7, #7
+     920:	781b      	ldrb	r3, [r3, #0]
+     922:	1e5a      	subs	r2, r3, #1
+     924:	4b1b      	ldr	r3, [pc, #108]	; (994 <uart_send1+0x8c>)
+     926:	0092      	lsls	r2, r2, #2
+     928:	58d3      	ldr	r3, [r2, r3]
+     92a:	60fb      	str	r3, [r7, #12]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:173
+    
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     92c:	2300      	movs	r3, #0
+     92e:	617b      	str	r3, [r7, #20]
+     930:	e01e      	b.n	970 <uart_send1+0x68>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:176
+    {
+        
+    	if(0==uartNo)     //判断使用的哪个串口
+     932:	1dfb      	adds	r3, r7, #7
+     934:	781b      	ldrb	r3, [r3, #0]
+     936:	2b00      	cmp	r3, #0
+     938:	d10b      	bne.n	952 <uart_send1+0x4a>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:178
+    	{
+			if ( (uartch1->S1) & UART_S1_TDRE_MASK )//判断发送缓冲区是否为空
+     93a:	693b      	ldr	r3, [r7, #16]
+     93c:	791b      	ldrb	r3, [r3, #4]
+     93e:	b2db      	uxtb	r3, r3
+     940:	b2db      	uxtb	r3, r3
+     942:	b25b      	sxtb	r3, r3
+     944:	2b00      	cmp	r3, #0
+     946:	da10      	bge.n	96a <uart_send1+0x62>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:180
+			{
+				uartch1->D = ch;   //获取数据并发送
+     948:	693b      	ldr	r3, [r7, #16]
+     94a:	1dba      	adds	r2, r7, #6
+     94c:	7812      	ldrb	r2, [r2, #0]
+     94e:	71da      	strb	r2, [r3, #7]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:181
+				break;             //跳出循环
+     950:	e012      	b.n	978 <uart_send1+0x70>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:186
+			}
+    	}
+    	else
+    	{
+			if ( (uartch2->S1) & UART_S1_TDRE_MASK )//判断发送缓冲区是否为空
+     952:	68fb      	ldr	r3, [r7, #12]
+     954:	791b      	ldrb	r3, [r3, #4]
+     956:	b2db      	uxtb	r3, r3
+     958:	b2db      	uxtb	r3, r3
+     95a:	b25b      	sxtb	r3, r3
+     95c:	2b00      	cmp	r3, #0
+     95e:	da04      	bge.n	96a <uart_send1+0x62>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:188
+			{
+				uartch2->D = ch;   //获取数据并发送
+     960:	68fb      	ldr	r3, [r7, #12]
+     962:	1dba      	adds	r2, r7, #6
+     964:	7812      	ldrb	r2, [r2, #0]
+     966:	71da      	strb	r2, [r3, #7]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:189
+				break;             //跳出循环
+     968:	e006      	b.n	978 <uart_send1+0x70>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:173
+{
+    uint_32 t;       
+    UART0_MemMapPtr uartch1=UART0_BASE_PTR; //获取UART0基地址
+    UART_MemMapPtr uartch2 = UART_ARR[uartNo-1]; //获取UART1或者2基地址
+    
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     96a:	697b      	ldr	r3, [r7, #20]
+     96c:	3301      	adds	r3, #1
+     96e:	617b      	str	r3, [r7, #20]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:173 (discriminator 1)
+     970:	697a      	ldr	r2, [r7, #20]
+     972:	4b09      	ldr	r3, [pc, #36]	; (998 <uart_send1+0x90>)
+     974:	429a      	cmp	r2, r3
+     976:	d9dc      	bls.n	932 <uart_send1+0x2a>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:194
+				break;             //跳出循环
+			}
+    	}
+        
+    }//end for
+    if (t >= 0xFBBB)
+     978:	697a      	ldr	r2, [r7, #20]
+     97a:	4b07      	ldr	r3, [pc, #28]	; (998 <uart_send1+0x90>)
+     97c:	429a      	cmp	r2, r3
+     97e:	d901      	bls.n	984 <uart_send1+0x7c>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:195
+        return 1; //发送超时，发送失败
+     980:	2301      	movs	r3, #1
+     982:	e000      	b.n	986 <uart_send1+0x7e>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:197
+    else
+        return 0; //成功发送
+     984:	2300      	movs	r3, #0
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:199
+        
+}
+     986:	1c18      	adds	r0, r3, #0
+     988:	46bd      	mov	sp, r7
+     98a:	b006      	add	sp, #24
+     98c:	bd80      	pop	{r7, pc}
+     98e:	46c0      	nop			; (mov r8, r8)
+     990:	4006a000 	.word	0x4006a000
+     994:	000013a4 	.word	0x000013a4
+     998:	0000fbba 	.word	0x0000fbba
+
+0000099c <uart_send_string>:
+uart_send_string():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:233
+//          buff:要发送的字符串的首地址
+//函数返回： 函数执行状态：0=正常；非0=异常。
+//功能概要：从指定UART端口发送一个以'\0'结束的字符串
+//============================================================================
+uint_8 uart_send_string(uint_8 uartNo, void *buff)
+{
+     99c:	b580      	push	{r7, lr}
+     99e:	b084      	sub	sp, #16
+     9a0:	af00      	add	r7, sp, #0
+     9a2:	1c02      	adds	r2, r0, #0
+     9a4:	6039      	str	r1, [r7, #0]
+     9a6:	1dfb      	adds	r3, r7, #7
+     9a8:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:234
+    uint_16 i = 0;
+     9aa:	1c3b      	adds	r3, r7, #0
+     9ac:	330e      	adds	r3, #14
+     9ae:	2200      	movs	r2, #0
+     9b0:	801a      	strh	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:235
+    uint_8 *buff_ptr = (uint_8 *)buff;    //定义指针指向要发送字符串首地址
+     9b2:	683b      	ldr	r3, [r7, #0]
+     9b4:	60bb      	str	r3, [r7, #8]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:236
+    for(i = 0; buff_ptr[i] != '\0'; i++)  //遍历字符串里的字符
+     9b6:	1c3b      	adds	r3, r7, #0
+     9b8:	330e      	adds	r3, #14
+     9ba:	2200      	movs	r2, #0
+     9bc:	801a      	strh	r2, [r3, #0]
+     9be:	e017      	b.n	9f0 <uart_send_string+0x54>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:238
+    {
+        if (uart_send1(uartNo,buff_ptr[i]))//发送指针对应的字符
+     9c0:	1c3b      	adds	r3, r7, #0
+     9c2:	330e      	adds	r3, #14
+     9c4:	881b      	ldrh	r3, [r3, #0]
+     9c6:	68ba      	ldr	r2, [r7, #8]
+     9c8:	18d3      	adds	r3, r2, r3
+     9ca:	781b      	ldrb	r3, [r3, #0]
+     9cc:	1dfa      	adds	r2, r7, #7
+     9ce:	7812      	ldrb	r2, [r2, #0]
+     9d0:	1c10      	adds	r0, r2, #0
+     9d2:	1c19      	adds	r1, r3, #0
+     9d4:	f7ff ff98 	bl	908 <uart_send1>
+     9d8:	1c03      	adds	r3, r0, #0
+     9da:	2b00      	cmp	r3, #0
+     9dc:	d001      	beq.n	9e2 <uart_send_string+0x46>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:239
+            return 1;  //发送失败
+     9de:	2301      	movs	r3, #1
+     9e0:	e00f      	b.n	a02 <uart_send_string+0x66>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:236
+//============================================================================
+uint_8 uart_send_string(uint_8 uartNo, void *buff)
+{
+    uint_16 i = 0;
+    uint_8 *buff_ptr = (uint_8 *)buff;    //定义指针指向要发送字符串首地址
+    for(i = 0; buff_ptr[i] != '\0'; i++)  //遍历字符串里的字符
+     9e2:	1c3b      	adds	r3, r7, #0
+     9e4:	330e      	adds	r3, #14
+     9e6:	881a      	ldrh	r2, [r3, #0]
+     9e8:	1c3b      	adds	r3, r7, #0
+     9ea:	330e      	adds	r3, #14
+     9ec:	3201      	adds	r2, #1
+     9ee:	801a      	strh	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:236 (discriminator 1)
+     9f0:	1c3b      	adds	r3, r7, #0
+     9f2:	330e      	adds	r3, #14
+     9f4:	881b      	ldrh	r3, [r3, #0]
+     9f6:	68ba      	ldr	r2, [r7, #8]
+     9f8:	18d3      	adds	r3, r2, r3
+     9fa:	781b      	ldrb	r3, [r3, #0]
+     9fc:	2b00      	cmp	r3, #0
+     9fe:	d1df      	bne.n	9c0 <uart_send_string+0x24>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:241
+    {
+        if (uart_send1(uartNo,buff_ptr[i]))//发送指针对应的字符
+            return 1;  //发送失败
+    }
+    return 0;         //发送成功
+     a00:	2300      	movs	r3, #0
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:242
+}
+     a02:	1c18      	adds	r0, r3, #0
+     a04:	46bd      	mov	sp, r7
+     a06:	b004      	add	sp, #16
+     a08:	bd80      	pop	{r7, pc}
+     a0a:	46c0      	nop			; (mov r8, r8)
+
+00000a0c <uart_re1>:
+uart_re1():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:252
+//          fp:接收成功标志的指针:*fp=0，成功接收；*fp=1，接收失败
+//函数返回：接收返回字节
+//功能概要：串行接收1个字节
+//============================================================================
+uint_8 uart_re1 (uint_8 uartNo,uint_8 *fp)
+{
+     a0c:	b580      	push	{r7, lr}
+     a0e:	b086      	sub	sp, #24
+     a10:	af00      	add	r7, sp, #0
+     a12:	1c02      	adds	r2, r0, #0
+     a14:	6039      	str	r1, [r7, #0]
+     a16:	1dfb      	adds	r3, r7, #7
+     a18:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:255
+    uint_32 t;
+    uint_8  dat;
+    UART0_MemMapPtr uartch1=UART0_BASE_PTR;    //获取UART0基地址
+     a1a:	4b24      	ldr	r3, [pc, #144]	; (aac <uart_re1+0xa0>)
+     a1c:	60fb      	str	r3, [r7, #12]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:256
+    UART_MemMapPtr uartch2 = UART_ARR[uartNo-1];//获取UART1或者2基地址
+     a1e:	1dfb      	adds	r3, r7, #7
+     a20:	781b      	ldrb	r3, [r3, #0]
+     a22:	1e5a      	subs	r2, r3, #1
+     a24:	4b22      	ldr	r3, [pc, #136]	; (ab0 <uart_re1+0xa4>)
+     a26:	0092      	lsls	r2, r2, #2
+     a28:	58d3      	ldr	r3, [r2, r3]
+     a2a:	60bb      	str	r3, [r7, #8]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:258
+
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     a2c:	2300      	movs	r3, #0
+     a2e:	617b      	str	r3, [r7, #20]
+     a30:	e026      	b.n	a80 <uart_re1+0x74>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:260
+    {
+    	if(0==uartNo)  //判断使用的哪个串口
+     a32:	1dfb      	adds	r3, r7, #7
+     a34:	781b      	ldrb	r3, [r3, #0]
+     a36:	2b00      	cmp	r3, #0
+     a38:	d10f      	bne.n	a5a <uart_re1+0x4e>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:263
+    	{
+            //判断接收缓冲区是否满
+            if ((uartch1->S1) & UART_S1_RDRF_MASK )
+     a3a:	68fb      	ldr	r3, [r7, #12]
+     a3c:	791b      	ldrb	r3, [r3, #4]
+     a3e:	b2db      	uxtb	r3, r3
+     a40:	1c1a      	adds	r2, r3, #0
+     a42:	2320      	movs	r3, #32
+     a44:	4013      	ands	r3, r2
+     a46:	d018      	beq.n	a7a <uart_re1+0x6e>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:265
+            {
+                dat = uartch1->D; //获取数据 
+     a48:	1c3b      	adds	r3, r7, #0
+     a4a:	3313      	adds	r3, #19
+     a4c:	68fa      	ldr	r2, [r7, #12]
+     a4e:	79d2      	ldrb	r2, [r2, #7]
+     a50:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:266
+                *fp= 0;  //接受成功
+     a52:	683b      	ldr	r3, [r7, #0]
+     a54:	2200      	movs	r2, #0
+     a56:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:267
+                break;
+     a58:	e016      	b.n	a88 <uart_re1+0x7c>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:273
+            }
+    	}
+    	else
+    	{
+            //判断接收缓冲区是否满
+            if ((uartch2->S1) & UART_S1_RDRF_MASK )
+     a5a:	68bb      	ldr	r3, [r7, #8]
+     a5c:	791b      	ldrb	r3, [r3, #4]
+     a5e:	b2db      	uxtb	r3, r3
+     a60:	1c1a      	adds	r2, r3, #0
+     a62:	2320      	movs	r3, #32
+     a64:	4013      	ands	r3, r2
+     a66:	d008      	beq.n	a7a <uart_re1+0x6e>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:275
+            {
+                dat = uartch2->D; //获取数据 
+     a68:	1c3b      	adds	r3, r7, #0
+     a6a:	3313      	adds	r3, #19
+     a6c:	68ba      	ldr	r2, [r7, #8]
+     a6e:	79d2      	ldrb	r2, [r2, #7]
+     a70:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:276
+                *fp= 0;  //接受成功
+     a72:	683b      	ldr	r3, [r7, #0]
+     a74:	2200      	movs	r2, #0
+     a76:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:277
+                break;
+     a78:	e006      	b.n	a88 <uart_re1+0x7c>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:258
+    uint_32 t;
+    uint_8  dat;
+    UART0_MemMapPtr uartch1=UART0_BASE_PTR;    //获取UART0基地址
+    UART_MemMapPtr uartch2 = UART_ARR[uartNo-1];//获取UART1或者2基地址
+
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     a7a:	697b      	ldr	r3, [r7, #20]
+     a7c:	3301      	adds	r3, #1
+     a7e:	617b      	str	r3, [r7, #20]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:258 (discriminator 1)
+     a80:	697a      	ldr	r2, [r7, #20]
+     a82:	4b0c      	ldr	r3, [pc, #48]	; (ab4 <uart_re1+0xa8>)
+     a84:	429a      	cmp	r2, r3
+     a86:	d9d4      	bls.n	a32 <uart_re1+0x26>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:282
+                break;
+            }
+    	}
+
+    }//end for
+    if(t >= 0xFBBB) 
+     a88:	697a      	ldr	r2, [r7, #20]
+     a8a:	4b0a      	ldr	r3, [pc, #40]	; (ab4 <uart_re1+0xa8>)
+     a8c:	429a      	cmp	r2, r3
+     a8e:	d906      	bls.n	a9e <uart_re1+0x92>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:284
+    {
+        dat = 0xFF; 
+     a90:	1c3b      	adds	r3, r7, #0
+     a92:	3313      	adds	r3, #19
+     a94:	22ff      	movs	r2, #255	; 0xff
+     a96:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:285
+        *fp = 1;    //未收到数据
+     a98:	683b      	ldr	r3, [r7, #0]
+     a9a:	2201      	movs	r2, #1
+     a9c:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:287
+    }
+    return dat;    //返回接收到的数据
+     a9e:	1c3b      	adds	r3, r7, #0
+     aa0:	3313      	adds	r3, #19
+     aa2:	781b      	ldrb	r3, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:289
+    
+}
+     aa4:	1c18      	adds	r0, r3, #0
+     aa6:	46bd      	mov	sp, r7
+     aa8:	b006      	add	sp, #24
+     aaa:	bd80      	pop	{r7, pc}
+     aac:	4006a000 	.word	0x4006a000
+     ab0:	000013a4 	.word	0x000013a4
+     ab4:	0000fbba 	.word	0x0000fbba
+
+00000ab8 <uart_enable_re_int>:
+uart_enable_re_int():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:322
+//参数说明：uartNo: 串口号:UART_0、UART_1、UART_2 
+//函数返回：无
+//功能概要：开串口接收中断
+//============================================================================
+void uart_enable_re_int(uint_8 uartNo)
+{
+     ab8:	b580      	push	{r7, lr}
+     aba:	b084      	sub	sp, #16
+     abc:	af00      	add	r7, sp, #0
+     abe:	1c02      	adds	r2, r0, #0
+     ac0:	1dfb      	adds	r3, r7, #7
+     ac2:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:323
+	UART0_MemMapPtr uartch1=UART0_BASE_PTR;
+     ac4:	4b14      	ldr	r3, [pc, #80]	; (b18 <uart_enable_re_int+0x60>)
+     ac6:	60fb      	str	r3, [r7, #12]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:324
+    UART_MemMapPtr uartch2 = UART_ARR[uartNo-1];
+     ac8:	1dfb      	adds	r3, r7, #7
+     aca:	781b      	ldrb	r3, [r3, #0]
+     acc:	1e5a      	subs	r2, r3, #1
+     ace:	4b13      	ldr	r3, [pc, #76]	; (b1c <uart_enable_re_int+0x64>)
+     ad0:	0092      	lsls	r2, r2, #2
+     ad2:	58d3      	ldr	r3, [r2, r3]
+     ad4:	60bb      	str	r3, [r7, #8]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:325
+    if(0 == uartNo)
+     ad6:	1dfb      	adds	r3, r7, #7
+     ad8:	781b      	ldrb	r3, [r3, #0]
+     ada:	2b00      	cmp	r3, #0
+     adc:	d108      	bne.n	af0 <uart_enable_re_int+0x38>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:326
+      uartch1->C2 |= UART_C2_RIE_MASK;        //开放UART接收中断
+     ade:	68fb      	ldr	r3, [r7, #12]
+     ae0:	78db      	ldrb	r3, [r3, #3]
+     ae2:	b2db      	uxtb	r3, r3
+     ae4:	2220      	movs	r2, #32
+     ae6:	4313      	orrs	r3, r2
+     ae8:	b2da      	uxtb	r2, r3
+     aea:	68fb      	ldr	r3, [r7, #12]
+     aec:	70da      	strb	r2, [r3, #3]
+     aee:	e007      	b.n	b00 <uart_enable_re_int+0x48>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:328
+    else 
+      uartch2->C2 |= UART_C2_RIE_MASK;        //开放UART接收中断
+     af0:	68bb      	ldr	r3, [r7, #8]
+     af2:	78db      	ldrb	r3, [r3, #3]
+     af4:	b2db      	uxtb	r3, r3
+     af6:	2220      	movs	r2, #32
+     af8:	4313      	orrs	r3, r2
+     afa:	b2da      	uxtb	r2, r3
+     afc:	68bb      	ldr	r3, [r7, #8]
+     afe:	70da      	strb	r2, [r3, #3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:329
+    NVIC_EnableIRQ(table_irq_uart[uartNo]);   //开中断控制器IRQ中断
+     b00:	1dfb      	adds	r3, r7, #7
+     b02:	781b      	ldrb	r3, [r3, #0]
+     b04:	4a06      	ldr	r2, [pc, #24]	; (b20 <uart_enable_re_int+0x68>)
+     b06:	5cd3      	ldrb	r3, [r2, r3]
+     b08:	b25b      	sxtb	r3, r3
+     b0a:	1c18      	adds	r0, r3, #0
+     b0c:	f7ff fdd4 	bl	6b8 <NVIC_EnableIRQ>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/uart/uart.c:330
+}
+     b10:	46bd      	mov	sp, r7
+     b12:	b004      	add	sp, #16
+     b14:	bd80      	pop	{r7, pc}
+     b16:	46c0      	nop			; (mov r8, r8)
+     b18:	4006a000 	.word	0x4006a000
+     b1c:	000013a4 	.word	0x000013a4
+     b20:	1ffff000 	.word	0x1ffff000
+
+00000b24 <send_signal>:
+send_signal():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:23
+//参数说明： I2C_No:模块号，其取值为0，1
+//       Signal: 'S'(Start),产生开始信号      'O'(Over),  产生停止信号
+//函数返回：无
+//=====================================================================
+void send_signal(uint_8 Signal,uint_8 I2C_No)
+{
+     b24:	b580      	push	{r7, lr}
+     b26:	b084      	sub	sp, #16
+     b28:	af00      	add	r7, sp, #0
+     b2a:	1c0a      	adds	r2, r1, #0
+     b2c:	1dfb      	adds	r3, r7, #7
+     b2e:	1c01      	adds	r1, r0, #0
+     b30:	7019      	strb	r1, [r3, #0]
+     b32:	1dbb      	adds	r3, r7, #6
+     b34:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:25
+    //获取i2c模块基址
+    I2C_MemMapPtr num = i2c_get_base_address(I2C_No);
+     b36:	1dbb      	adds	r3, r7, #6
+     b38:	781b      	ldrb	r3, [r3, #0]
+     b3a:	1c18      	adds	r0, r3, #0
+     b3c:	f000 fa5e 	bl	ffc <i2c_get_base_address>
+     b40:	1c03      	adds	r3, r0, #0
+     b42:	60fb      	str	r3, [r7, #12]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:26
+    if(num==I2C0)
+     b44:	68fa      	ldr	r2, [r7, #12]
+     b46:	4b1e      	ldr	r3, [pc, #120]	; (bc0 <send_signal+0x9c>)
+     b48:	429a      	cmp	r2, r3
+     b4a:	d119      	bne.n	b80 <send_signal+0x5c>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:28
+    {
+        if (Signal  == 'S')
+     b4c:	1dfb      	adds	r3, r7, #7
+     b4e:	781b      	ldrb	r3, [r3, #0]
+     b50:	2b53      	cmp	r3, #83	; 0x53
+     b52:	d108      	bne.n	b66 <send_signal+0x42>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:31
+        {
+              //i2c0_c主机模式选择位MST由0变为1,可以产生开始信号
+              BSET(I2C_C1_MST_SHIFT,I2C0_C1);
+     b54:	4b1a      	ldr	r3, [pc, #104]	; (bc0 <send_signal+0x9c>)
+     b56:	4a1a      	ldr	r2, [pc, #104]	; (bc0 <send_signal+0x9c>)
+     b58:	7892      	ldrb	r2, [r2, #2]
+     b5a:	b2d2      	uxtb	r2, r2
+     b5c:	2120      	movs	r1, #32
+     b5e:	430a      	orrs	r2, r1
+     b60:	b2d2      	uxtb	r2, r2
+     b62:	709a      	strb	r2, [r3, #2]
+     b64:	e029      	b.n	bba <send_signal+0x96>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:33
+         }
+         else if (Signal == 'O')
+     b66:	1dfb      	adds	r3, r7, #7
+     b68:	781b      	ldrb	r3, [r3, #0]
+     b6a:	2b4f      	cmp	r3, #79	; 0x4f
+     b6c:	d125      	bne.n	bba <send_signal+0x96>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:36
+        {
+              //主机模式选择位MST由1变为0,可以产生停止信号
+        	 BCLR(I2C_C1_MST_SHIFT,I2C0_C1);
+     b6e:	4b14      	ldr	r3, [pc, #80]	; (bc0 <send_signal+0x9c>)
+     b70:	4a13      	ldr	r2, [pc, #76]	; (bc0 <send_signal+0x9c>)
+     b72:	7892      	ldrb	r2, [r2, #2]
+     b74:	b2d2      	uxtb	r2, r2
+     b76:	2120      	movs	r1, #32
+     b78:	438a      	bics	r2, r1
+     b7a:	b2d2      	uxtb	r2, r2
+     b7c:	709a      	strb	r2, [r3, #2]
+     b7e:	e01c      	b.n	bba <send_signal+0x96>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:39
+        }
+    }
+    else if(num==I2C1)
+     b80:	68fa      	ldr	r2, [r7, #12]
+     b82:	4b10      	ldr	r3, [pc, #64]	; (bc4 <send_signal+0xa0>)
+     b84:	429a      	cmp	r2, r3
+     b86:	d118      	bne.n	bba <send_signal+0x96>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:41
+    {
+         if (Signal == 'S')
+     b88:	1dfb      	adds	r3, r7, #7
+     b8a:	781b      	ldrb	r3, [r3, #0]
+     b8c:	2b53      	cmp	r3, #83	; 0x53
+     b8e:	d108      	bne.n	ba2 <send_signal+0x7e>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:44
+         {
+              //i2c0_c主机模式选择位MST由0变为1,可以产生开始信号
+        	 BSET(I2C_C1_MST_SHIFT,I2C1_C1);
+     b90:	4b0c      	ldr	r3, [pc, #48]	; (bc4 <send_signal+0xa0>)
+     b92:	4a0c      	ldr	r2, [pc, #48]	; (bc4 <send_signal+0xa0>)
+     b94:	7892      	ldrb	r2, [r2, #2]
+     b96:	b2d2      	uxtb	r2, r2
+     b98:	2120      	movs	r1, #32
+     b9a:	430a      	orrs	r2, r1
+     b9c:	b2d2      	uxtb	r2, r2
+     b9e:	709a      	strb	r2, [r3, #2]
+     ba0:	e00b      	b.n	bba <send_signal+0x96>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:46
+          }
+          else if (Signal == 'O')
+     ba2:	1dfb      	adds	r3, r7, #7
+     ba4:	781b      	ldrb	r3, [r3, #0]
+     ba6:	2b4f      	cmp	r3, #79	; 0x4f
+     ba8:	d107      	bne.n	bba <send_signal+0x96>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:49
+         {
+              //主机模式选择位MST由1变为0,可以产生停止信号
+        	  BCLR(I2C_C1_MST_SHIFT,I2C1_C1);
+     baa:	4b06      	ldr	r3, [pc, #24]	; (bc4 <send_signal+0xa0>)
+     bac:	4a05      	ldr	r2, [pc, #20]	; (bc4 <send_signal+0xa0>)
+     bae:	7892      	ldrb	r2, [r2, #2]
+     bb0:	b2d2      	uxtb	r2, r2
+     bb2:	2120      	movs	r1, #32
+     bb4:	438a      	bics	r2, r1
+     bb6:	b2d2      	uxtb	r2, r2
+     bb8:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:52
+          }
+    }
+}
+     bba:	46bd      	mov	sp, r7
+     bbc:	b004      	add	sp, #16
+     bbe:	bd80      	pop	{r7, pc}
+     bc0:	40066000 	.word	0x40066000
+     bc4:	40067000 	.word	0x40067000
+
+00000bc8 <wait>:
+wait():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:63
+//          x:x = 'A'(Ack),等待应答;x = 'T'(Transmission),等待一个字节数据传输完成
+//函数返回：  0:收到应答信号或一个字节传送完毕;
+//        1:未收到应答信号或一个 字节没传送完
+//=====================================================================
+uint_8 wait(uint_8 x,uint_8 I2C_No)
+{
+     bc8:	b580      	push	{r7, lr}
+     bca:	b086      	sub	sp, #24
+     bcc:	af00      	add	r7, sp, #0
+     bce:	1c0a      	adds	r2, r1, #0
+     bd0:	1dfb      	adds	r3, r7, #7
+     bd2:	1c01      	adds	r1, r0, #0
+     bd4:	7019      	strb	r1, [r3, #0]
+     bd6:	1dbb      	adds	r3, r7, #6
+     bd8:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:66
+    uint_16 ErrTime, i;
+    //获取i2c模块基地址
+    I2C_MemMapPtr num = i2c_get_base_address(I2C_No);
+     bda:	1dbb      	adds	r3, r7, #6
+     bdc:	781b      	ldrb	r3, [r3, #0]
+     bde:	1c18      	adds	r0, r3, #0
+     be0:	f000 fa0c 	bl	ffc <i2c_get_base_address>
+     be4:	1c03      	adds	r3, r0, #0
+     be6:	613b      	str	r3, [r7, #16]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:67
+    ErrTime = 255*10;            //定义查询超时时限
+     be8:	1c3b      	adds	r3, r7, #0
+     bea:	330e      	adds	r3, #14
+     bec:	4a22      	ldr	r2, [pc, #136]	; (c78 <wait+0xb0>)
+     bee:	801a      	strh	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:68
+    for (i = 0;i < ErrTime;i++)
+     bf0:	1c3b      	adds	r3, r7, #0
+     bf2:	3316      	adds	r3, #22
+     bf4:	2200      	movs	r2, #0
+     bf6:	801a      	strh	r2, [r3, #0]
+     bf8:	e028      	b.n	c4c <wait+0x84>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:70
+    {
+         if (x == 'A')           //等待应答信号
+     bfa:	1dfb      	adds	r3, r7, #7
+     bfc:	781b      	ldrb	r3, [r3, #0]
+     bfe:	2b41      	cmp	r3, #65	; 0x41
+     c00:	d108      	bne.n	c14 <wait+0x4c>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:72
+         {
+              if(( I2C_S_REG(num)  & I2C_S_RXAK_MASK)==0)
+     c02:	693b      	ldr	r3, [r7, #16]
+     c04:	78db      	ldrb	r3, [r3, #3]
+     c06:	b2db      	uxtb	r3, r3
+     c08:	1c1a      	adds	r2, r3, #0
+     c0a:	2301      	movs	r3, #1
+     c0c:	4013      	ands	r3, r2
+     c0e:	d116      	bne.n	c3e <wait+0x76>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:73
+                   return 0;      //传送完一个字节后,收到了从机的应答信号
+     c10:	2300      	movs	r3, #0
+     c12:	e02d      	b.n	c70 <wait+0xa8>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:75
+          }
+         else if (x == 'T')      //等待传送完成一个字节信号
+     c14:	1dfb      	adds	r3, r7, #7
+     c16:	781b      	ldrb	r3, [r3, #0]
+     c18:	2b54      	cmp	r3, #84	; 0x54
+     c1a:	d110      	bne.n	c3e <wait+0x76>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:77
+         {
+             if ((I2C_S_REG(num) & I2C_S_IICIF_MASK) != 0)
+     c1c:	693b      	ldr	r3, [r7, #16]
+     c1e:	78db      	ldrb	r3, [r3, #3]
+     c20:	b2db      	uxtb	r3, r3
+     c22:	1c1a      	adds	r2, r3, #0
+     c24:	2302      	movs	r3, #2
+     c26:	4013      	ands	r3, r2
+     c28:	d009      	beq.n	c3e <wait+0x76>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:79
+             {
+                  (I2C_S_REG(num) |=(0 | I2C_S_IICIF_MASK));  //清IICIF标志位
+     c2a:	693b      	ldr	r3, [r7, #16]
+     c2c:	78db      	ldrb	r3, [r3, #3]
+     c2e:	b2db      	uxtb	r3, r3
+     c30:	2202      	movs	r2, #2
+     c32:	4313      	orrs	r3, r2
+     c34:	b2da      	uxtb	r2, r3
+     c36:	693b      	ldr	r3, [r7, #16]
+     c38:	70da      	strb	r2, [r3, #3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:80
+                       return 0;       //成功发送完一个字节
+     c3a:	2300      	movs	r3, #0
+     c3c:	e018      	b.n	c70 <wait+0xa8>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:68
+{
+    uint_16 ErrTime, i;
+    //获取i2c模块基地址
+    I2C_MemMapPtr num = i2c_get_base_address(I2C_No);
+    ErrTime = 255*10;            //定义查询超时时限
+    for (i = 0;i < ErrTime;i++)
+     c3e:	1c3b      	adds	r3, r7, #0
+     c40:	3316      	adds	r3, #22
+     c42:	881a      	ldrh	r2, [r3, #0]
+     c44:	1c3b      	adds	r3, r7, #0
+     c46:	3316      	adds	r3, #22
+     c48:	3201      	adds	r2, #1
+     c4a:	801a      	strh	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:68 (discriminator 1)
+     c4c:	1c3a      	adds	r2, r7, #0
+     c4e:	3216      	adds	r2, #22
+     c50:	1c3b      	adds	r3, r7, #0
+     c52:	330e      	adds	r3, #14
+     c54:	8812      	ldrh	r2, [r2, #0]
+     c56:	881b      	ldrh	r3, [r3, #0]
+     c58:	429a      	cmp	r2, r3
+     c5a:	d3ce      	bcc.n	bfa <wait+0x32>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:84
+                  (I2C_S_REG(num) |=(0 | I2C_S_IICIF_MASK));  //清IICIF标志位
+                       return 0;       //成功发送完一个字节
+              }
+          }
+     }
+    if (i >= ErrTime)
+     c5c:	1c3a      	adds	r2, r7, #0
+     c5e:	3216      	adds	r2, #22
+     c60:	1c3b      	adds	r3, r7, #0
+     c62:	330e      	adds	r3, #14
+     c64:	8812      	ldrh	r2, [r2, #0]
+     c66:	881b      	ldrh	r3, [r3, #0]
+     c68:	429a      	cmp	r2, r3
+     c6a:	d301      	bcc.n	c70 <wait+0xa8>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:85
+         return 1;               //超时,没有收到应答信号或发送完一个字节
+     c6c:	2301      	movs	r3, #1
+     c6e:	e7ff      	b.n	c70 <wait+0xa8>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:86
+}
+     c70:	1c18      	adds	r0, r3, #0
+     c72:	46bd      	mov	sp, r7
+     c74:	b006      	add	sp, #24
+     c76:	bd80      	pop	{r7, pc}
+     c78:	000009f6 	.word	0x000009f6
+
+00000c7c <i2c_init>:
+i2c_init():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:98
+//       address 本模块初始化地址    范围(1~255)
+//       BaudRate为波特率，其单位为Kb/s，其取值为50,75,100,150,300
+//函数返回：无                                                                  
+//=====================================================================
+void i2c_init(uint_8 I2C_No,uint_8 Mode,uint_8 address,uint_8 BaudRate)
+{
+     c7c:	b590      	push	{r4, r7, lr}
+     c7e:	b085      	sub	sp, #20
+     c80:	af00      	add	r7, sp, #0
+     c82:	1c04      	adds	r4, r0, #0
+     c84:	1c08      	adds	r0, r1, #0
+     c86:	1c11      	adds	r1, r2, #0
+     c88:	1c1a      	adds	r2, r3, #0
+     c8a:	1dfb      	adds	r3, r7, #7
+     c8c:	701c      	strb	r4, [r3, #0]
+     c8e:	1dbb      	adds	r3, r7, #6
+     c90:	7018      	strb	r0, [r3, #0]
+     c92:	1d7b      	adds	r3, r7, #5
+     c94:	7019      	strb	r1, [r3, #0]
+     c96:	1d3b      	adds	r3, r7, #4
+     c98:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:101
+    //获取I2C模块的基址
+	uint_8 index;
+    I2C_MemMapPtr num = i2c_get_base_address(I2C_No);
+     c9a:	1dfb      	adds	r3, r7, #7
+     c9c:	781b      	ldrb	r3, [r3, #0]
+     c9e:	1c18      	adds	r0, r3, #0
+     ca0:	f000 f9ac 	bl	ffc <i2c_get_base_address>
+     ca4:	1c03      	adds	r3, r0, #0
+     ca6:	60bb      	str	r3, [r7, #8]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:102
+    if(I2C_No<0||I2C_No>1)//如果模块号错误则强制其为0
+     ca8:	1dfb      	adds	r3, r7, #7
+     caa:	781b      	ldrb	r3, [r3, #0]
+     cac:	2b01      	cmp	r3, #1
+     cae:	d902      	bls.n	cb6 <i2c_init+0x3a>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:104
+    {
+    	I2C_No=0;
+     cb0:	1dfb      	adds	r3, r7, #7
+     cb2:	2200      	movs	r2, #0
+     cb4:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:106
+    }
+    if(num==I2C0)
+     cb6:	68ba      	ldr	r2, [r7, #8]
+     cb8:	4b8a      	ldr	r3, [pc, #552]	; (ee4 <i2c_init+0x268>)
+     cba:	429a      	cmp	r2, r3
+     cbc:	d000      	beq.n	cc0 <i2c_init+0x44>
+     cbe:	e087      	b.n	dd0 <i2c_init+0x154>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:109
+    {
+        //I2C0 Clock Gate Control --enable
+    	BSET(SIM_SCGC4_I2C0_SHIFT,SIM_SCGC4);
+     cc0:	4a89      	ldr	r2, [pc, #548]	; (ee8 <i2c_init+0x26c>)
+     cc2:	4989      	ldr	r1, [pc, #548]	; (ee8 <i2c_init+0x26c>)
+     cc4:	4b89      	ldr	r3, [pc, #548]	; (eec <i2c_init+0x270>)
+     cc6:	58cb      	ldr	r3, [r1, r3]
+     cc8:	2140      	movs	r1, #64	; 0x40
+     cca:	4319      	orrs	r1, r3
+     ccc:	4b87      	ldr	r3, [pc, #540]	; (eec <i2c_init+0x270>)
+     cce:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:110
+        I2C0_C1=0X00;
+     cd0:	4b84      	ldr	r3, [pc, #528]	; (ee4 <i2c_init+0x268>)
+     cd2:	2200      	movs	r2, #0
+     cd4:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:111
+        BSET(I2C_S_IICIF_SHIFT,I2C0_S);
+     cd6:	4b83      	ldr	r3, [pc, #524]	; (ee4 <i2c_init+0x268>)
+     cd8:	4a82      	ldr	r2, [pc, #520]	; (ee4 <i2c_init+0x268>)
+     cda:	78d2      	ldrb	r2, [r2, #3]
+     cdc:	b2d2      	uxtb	r2, r2
+     cde:	2102      	movs	r1, #2
+     ce0:	430a      	orrs	r2, r1
+     ce2:	b2d2      	uxtb	r2, r2
+     ce4:	70da      	strb	r2, [r3, #3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:131
+		PORTB_PCR2 = PORT_PCR_MUX(0x2);      //使能IIC0_SCL
+		PORTB_PCR3 = PORT_PCR_MUX(0x2);      //使能IIC0_SDA
+		#endif
+
+		#if (IIC_0_GROUP == 4)
+		PORTC_PCR8 = PORT_PCR_MUX(0x2);      //使能IIC0_SCL
+     ce6:	4b82      	ldr	r3, [pc, #520]	; (ef0 <i2c_init+0x274>)
+     ce8:	2280      	movs	r2, #128	; 0x80
+     cea:	0092      	lsls	r2, r2, #2
+     cec:	621a      	str	r2, [r3, #32]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:132
+		PORTC_PCR9 = PORT_PCR_MUX(0x2);      //使能IIC0_SDA
+     cee:	4b80      	ldr	r3, [pc, #512]	; (ef0 <i2c_init+0x274>)
+     cf0:	2280      	movs	r2, #128	; 0x80
+     cf2:	0092      	lsls	r2, r2, #2
+     cf4:	625a      	str	r2, [r3, #36]	; 0x24
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:136
+		#endif
+
+        //设置 MULT 和 ICR,kL25的MCU总线频率为24M，在总线上分频得75K波特率  
+        I2C0_A1=address;                    //本机作为从机时的默认地址
+     cf6:	4b7b      	ldr	r3, [pc, #492]	; (ee4 <i2c_init+0x268>)
+     cf8:	1d7a      	adds	r2, r7, #5
+     cfa:	7812      	ldrb	r2, [r2, #0]
+     cfc:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:137
+        for(index=0;index<10;index+=2)
+     cfe:	1c3b      	adds	r3, r7, #0
+     d00:	330f      	adds	r3, #15
+     d02:	2200      	movs	r2, #0
+     d04:	701a      	strb	r2, [r3, #0]
+     d06:	e01e      	b.n	d46 <i2c_init+0xca>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:139
+        {
+        	if(data[index]==BaudRate)
+     d08:	1c3b      	adds	r3, r7, #0
+     d0a:	330f      	adds	r3, #15
+     d0c:	781b      	ldrb	r3, [r3, #0]
+     d0e:	4a79      	ldr	r2, [pc, #484]	; (ef4 <i2c_init+0x278>)
+     d10:	5cd3      	ldrb	r3, [r2, r3]
+     d12:	1d3a      	adds	r2, r7, #4
+     d14:	7812      	ldrb	r2, [r2, #0]
+     d16:	429a      	cmp	r2, r3
+     d18:	d10e      	bne.n	d38 <i2c_init+0xbc>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:141
+        	{
+        		index++;
+     d1a:	1c3b      	adds	r3, r7, #0
+     d1c:	330f      	adds	r3, #15
+     d1e:	781a      	ldrb	r2, [r3, #0]
+     d20:	1c3b      	adds	r3, r7, #0
+     d22:	330f      	adds	r3, #15
+     d24:	3201      	adds	r2, #1
+     d26:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:142
+        		I2C0_F=data[index];        //将定义的参数赋给I2C1_F
+     d28:	4b6e      	ldr	r3, [pc, #440]	; (ee4 <i2c_init+0x268>)
+     d2a:	1c3a      	adds	r2, r7, #0
+     d2c:	320f      	adds	r2, #15
+     d2e:	7812      	ldrb	r2, [r2, #0]
+     d30:	4970      	ldr	r1, [pc, #448]	; (ef4 <i2c_init+0x278>)
+     d32:	5c8a      	ldrb	r2, [r1, r2]
+     d34:	705a      	strb	r2, [r3, #1]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:143
+        		break;
+     d36:	e00b      	b.n	d50 <i2c_init+0xd4>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:137
+		PORTC_PCR9 = PORT_PCR_MUX(0x2);      //使能IIC0_SDA
+		#endif
+
+        //设置 MULT 和 ICR,kL25的MCU总线频率为24M，在总线上分频得75K波特率  
+        I2C0_A1=address;                    //本机作为从机时的默认地址
+        for(index=0;index<10;index+=2)
+     d38:	1c3b      	adds	r3, r7, #0
+     d3a:	330f      	adds	r3, #15
+     d3c:	1c3a      	adds	r2, r7, #0
+     d3e:	320f      	adds	r2, #15
+     d40:	7812      	ldrb	r2, [r2, #0]
+     d42:	3202      	adds	r2, #2
+     d44:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:137 (discriminator 1)
+     d46:	1c3b      	adds	r3, r7, #0
+     d48:	330f      	adds	r3, #15
+     d4a:	781b      	ldrb	r3, [r3, #0]
+     d4c:	2b09      	cmp	r3, #9
+     d4e:	d9db      	bls.n	d08 <i2c_init+0x8c>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:147
+        		I2C0_F=data[index];        //将定义的参数赋给I2C1_F
+        		break;
+        	}
+        }
+
+        if(1 == Mode)   //主机模式
+     d50:	1dbb      	adds	r3, r7, #6
+     d52:	781b      	ldrb	r3, [r3, #0]
+     d54:	2b01      	cmp	r3, #1
+     d56:	d111      	bne.n	d7c <i2c_init+0x100>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:149
+        {
+            BSET(I2C_C1_IICEN_SHIFT,I2C0_C1);//开i2c0模块使能
+     d58:	4b62      	ldr	r3, [pc, #392]	; (ee4 <i2c_init+0x268>)
+     d5a:	4a62      	ldr	r2, [pc, #392]	; (ee4 <i2c_init+0x268>)
+     d5c:	7892      	ldrb	r2, [r2, #2]
+     d5e:	b2d2      	uxtb	r2, r2
+     d60:	2180      	movs	r1, #128	; 0x80
+     d62:	4249      	negs	r1, r1
+     d64:	430a      	orrs	r2, r1
+     d66:	b2d2      	uxtb	r2, r2
+     d68:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:150
+            BSET(I2C_C1_TXAK_SHIFT,I2C0_C1); //置位i2c0 TXAK
+     d6a:	4b5e      	ldr	r3, [pc, #376]	; (ee4 <i2c_init+0x268>)
+     d6c:	4a5d      	ldr	r2, [pc, #372]	; (ee4 <i2c_init+0x268>)
+     d6e:	7892      	ldrb	r2, [r2, #2]
+     d70:	b2d2      	uxtb	r2, r2
+     d72:	2108      	movs	r1, #8
+     d74:	430a      	orrs	r2, r1
+     d76:	b2d2      	uxtb	r2, r2
+     d78:	709a      	strb	r2, [r3, #2]
+     d7a:	e0b0      	b.n	ede <i2c_init+0x262>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:154
+        }
+        else            //从机模式
+        {
+            BSET(I2C_C1_IICEN_SHIFT,I2C0_C1);//使能I2C模块
+     d7c:	4b59      	ldr	r3, [pc, #356]	; (ee4 <i2c_init+0x268>)
+     d7e:	4a59      	ldr	r2, [pc, #356]	; (ee4 <i2c_init+0x268>)
+     d80:	7892      	ldrb	r2, [r2, #2]
+     d82:	b2d2      	uxtb	r2, r2
+     d84:	2180      	movs	r1, #128	; 0x80
+     d86:	4249      	negs	r1, r1
+     d88:	430a      	orrs	r2, r1
+     d8a:	b2d2      	uxtb	r2, r2
+     d8c:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:155
+            BSET(I2C_C1_IICIE_SHIFT,I2C0_C1);//来I2C中断
+     d8e:	4b55      	ldr	r3, [pc, #340]	; (ee4 <i2c_init+0x268>)
+     d90:	4a54      	ldr	r2, [pc, #336]	; (ee4 <i2c_init+0x268>)
+     d92:	7892      	ldrb	r2, [r2, #2]
+     d94:	b2d2      	uxtb	r2, r2
+     d96:	2140      	movs	r1, #64	; 0x40
+     d98:	430a      	orrs	r2, r1
+     d9a:	b2d2      	uxtb	r2, r2
+     d9c:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:156
+            BSET(I2C_C1_MST_SHIFT,I2C0_C1);//设置成主机模式
+     d9e:	4b51      	ldr	r3, [pc, #324]	; (ee4 <i2c_init+0x268>)
+     da0:	4a50      	ldr	r2, [pc, #320]	; (ee4 <i2c_init+0x268>)
+     da2:	7892      	ldrb	r2, [r2, #2]
+     da4:	b2d2      	uxtb	r2, r2
+     da6:	2120      	movs	r1, #32
+     da8:	430a      	orrs	r2, r1
+     daa:	b2d2      	uxtb	r2, r2
+     dac:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:157
+            BCLR(I2C_C1_TX_SHIFT,I2C0_C1);//TX = 0,MCU设置为接收模式
+     dae:	4b4d      	ldr	r3, [pc, #308]	; (ee4 <i2c_init+0x268>)
+     db0:	4a4c      	ldr	r2, [pc, #304]	; (ee4 <i2c_init+0x268>)
+     db2:	7892      	ldrb	r2, [r2, #2]
+     db4:	b2d2      	uxtb	r2, r2
+     db6:	2110      	movs	r1, #16
+     db8:	438a      	bics	r2, r1
+     dba:	b2d2      	uxtb	r2, r2
+     dbc:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:159
+//            i=I2C0_D;                        //读出IIC1D,准备接收数据
+            BCLR(I2C_C1_MST_SHIFT,I2C0_C1);//MST位由1变成0，设置为从机模式
+     dbe:	4b49      	ldr	r3, [pc, #292]	; (ee4 <i2c_init+0x268>)
+     dc0:	4a48      	ldr	r2, [pc, #288]	; (ee4 <i2c_init+0x268>)
+     dc2:	7892      	ldrb	r2, [r2, #2]
+     dc4:	b2d2      	uxtb	r2, r2
+     dc6:	2120      	movs	r1, #32
+     dc8:	438a      	bics	r2, r1
+     dca:	b2d2      	uxtb	r2, r2
+     dcc:	709a      	strb	r2, [r3, #2]
+     dce:	e086      	b.n	ede <i2c_init+0x262>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:166
+
+    }
+    else
+    {
+        //I2C1 Clock Gate Control --enable
+    	BSET(SIM_SCGC4_I2C1_SHIFT,SIM_SCGC4);
+     dd0:	4a45      	ldr	r2, [pc, #276]	; (ee8 <i2c_init+0x26c>)
+     dd2:	4945      	ldr	r1, [pc, #276]	; (ee8 <i2c_init+0x26c>)
+     dd4:	4b45      	ldr	r3, [pc, #276]	; (eec <i2c_init+0x270>)
+     dd6:	58cb      	ldr	r3, [r1, r3]
+     dd8:	2180      	movs	r1, #128	; 0x80
+     dda:	4319      	orrs	r1, r3
+     ddc:	4b43      	ldr	r3, [pc, #268]	; (eec <i2c_init+0x270>)
+     dde:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:168
+        //SIM_SCGC4 |=SIM_SCGC4_I2C1_MASK;
+        I2C1_C1=0X00;
+     de0:	4b45      	ldr	r3, [pc, #276]	; (ef8 <i2c_init+0x27c>)
+     de2:	2200      	movs	r2, #0
+     de4:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:169
+        BSET(I2C_S_IICIF_SHIFT,I2C1_S);
+     de6:	4b44      	ldr	r3, [pc, #272]	; (ef8 <i2c_init+0x27c>)
+     de8:	4a43      	ldr	r2, [pc, #268]	; (ef8 <i2c_init+0x27c>)
+     dea:	78d2      	ldrb	r2, [r2, #3]
+     dec:	b2d2      	uxtb	r2, r2
+     dee:	2102      	movs	r1, #2
+     df0:	430a      	orrs	r2, r1
+     df2:	b2d2      	uxtb	r2, r2
+     df4:	70da      	strb	r2, [r3, #3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:184
+		PORTA_PCR3 = PORT_PCR_MUX(0x2);      //使能IIC1_SCL
+		PORTA_PCR4 = PORT_PCR_MUX(0x2);      //使能IIC1_SDA
+		#endif
+
+		#if (IIC_1_GROUP == 3)
+		PORTC_PCR1 = PORT_PCR_MUX(0x2);      //使能IIC1_SCL
+     df6:	4b3e      	ldr	r3, [pc, #248]	; (ef0 <i2c_init+0x274>)
+     df8:	2280      	movs	r2, #128	; 0x80
+     dfa:	0092      	lsls	r2, r2, #2
+     dfc:	605a      	str	r2, [r3, #4]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:185
+		PORTC_PCR2 = PORT_PCR_MUX(0x2);      //使能IIC1_SDA
+     dfe:	4b3c      	ldr	r3, [pc, #240]	; (ef0 <i2c_init+0x274>)
+     e00:	2280      	movs	r2, #128	; 0x80
+     e02:	0092      	lsls	r2, r2, #2
+     e04:	609a      	str	r2, [r3, #8]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:193
+		#if (IIC_1_GROUP == 4)
+		PORTC_PCR10 = PORT_PCR_MUX(0x2);      //使能IIC1_SCL
+		PORTC_PCR11 = PORT_PCR_MUX(0x2);      //使能IIC1_SDA
+		#endif
+
+        I2C1_A1=address;                    //本机作为从机时的默认地址
+     e06:	4b3c      	ldr	r3, [pc, #240]	; (ef8 <i2c_init+0x27c>)
+     e08:	1d7a      	adds	r2, r7, #5
+     e0a:	7812      	ldrb	r2, [r2, #0]
+     e0c:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:194
+        for(index=0;index<10;index+=2)
+     e0e:	1c3b      	adds	r3, r7, #0
+     e10:	330f      	adds	r3, #15
+     e12:	2200      	movs	r2, #0
+     e14:	701a      	strb	r2, [r3, #0]
+     e16:	e01e      	b.n	e56 <i2c_init+0x1da>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:196
+        {
+            if(data[index]==BaudRate)
+     e18:	1c3b      	adds	r3, r7, #0
+     e1a:	330f      	adds	r3, #15
+     e1c:	781b      	ldrb	r3, [r3, #0]
+     e1e:	4a35      	ldr	r2, [pc, #212]	; (ef4 <i2c_init+0x278>)
+     e20:	5cd3      	ldrb	r3, [r2, r3]
+     e22:	1d3a      	adds	r2, r7, #4
+     e24:	7812      	ldrb	r2, [r2, #0]
+     e26:	429a      	cmp	r2, r3
+     e28:	d10e      	bne.n	e48 <i2c_init+0x1cc>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:198
+            {
+               index++;
+     e2a:	1c3b      	adds	r3, r7, #0
+     e2c:	330f      	adds	r3, #15
+     e2e:	781a      	ldrb	r2, [r3, #0]
+     e30:	1c3b      	adds	r3, r7, #0
+     e32:	330f      	adds	r3, #15
+     e34:	3201      	adds	r2, #1
+     e36:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:199
+               I2C1_F=data[index];        //将定义的参数赋给I2C1_F
+     e38:	4b2f      	ldr	r3, [pc, #188]	; (ef8 <i2c_init+0x27c>)
+     e3a:	1c3a      	adds	r2, r7, #0
+     e3c:	320f      	adds	r2, #15
+     e3e:	7812      	ldrb	r2, [r2, #0]
+     e40:	492c      	ldr	r1, [pc, #176]	; (ef4 <i2c_init+0x278>)
+     e42:	5c8a      	ldrb	r2, [r1, r2]
+     e44:	705a      	strb	r2, [r3, #1]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:200
+               break;
+     e46:	e00b      	b.n	e60 <i2c_init+0x1e4>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:194
+		PORTC_PCR10 = PORT_PCR_MUX(0x2);      //使能IIC1_SCL
+		PORTC_PCR11 = PORT_PCR_MUX(0x2);      //使能IIC1_SDA
+		#endif
+
+        I2C1_A1=address;                    //本机作为从机时的默认地址
+        for(index=0;index<10;index+=2)
+     e48:	1c3b      	adds	r3, r7, #0
+     e4a:	330f      	adds	r3, #15
+     e4c:	1c3a      	adds	r2, r7, #0
+     e4e:	320f      	adds	r2, #15
+     e50:	7812      	ldrb	r2, [r2, #0]
+     e52:	3202      	adds	r2, #2
+     e54:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:194 (discriminator 1)
+     e56:	1c3b      	adds	r3, r7, #0
+     e58:	330f      	adds	r3, #15
+     e5a:	781b      	ldrb	r3, [r3, #0]
+     e5c:	2b09      	cmp	r3, #9
+     e5e:	d9db      	bls.n	e18 <i2c_init+0x19c>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:204
+               I2C1_F=data[index];        //将定义的参数赋给I2C1_F
+               break;
+            }
+        }
+
+        if(1 == Mode)   //主机模式
+     e60:	1dbb      	adds	r3, r7, #6
+     e62:	781b      	ldrb	r3, [r3, #0]
+     e64:	2b01      	cmp	r3, #1
+     e66:	d111      	bne.n	e8c <i2c_init+0x210>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:206
+        {
+            BSET(I2C_C1_IICEN_SHIFT,I2C1_C1);//开i2c0模块使能
+     e68:	4b23      	ldr	r3, [pc, #140]	; (ef8 <i2c_init+0x27c>)
+     e6a:	4a23      	ldr	r2, [pc, #140]	; (ef8 <i2c_init+0x27c>)
+     e6c:	7892      	ldrb	r2, [r2, #2]
+     e6e:	b2d2      	uxtb	r2, r2
+     e70:	2180      	movs	r1, #128	; 0x80
+     e72:	4249      	negs	r1, r1
+     e74:	430a      	orrs	r2, r1
+     e76:	b2d2      	uxtb	r2, r2
+     e78:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:207
+            BSET(I2C_C1_TXAK_SHIFT,I2C1_C1); //置位i2c0 TXAK
+     e7a:	4b1f      	ldr	r3, [pc, #124]	; (ef8 <i2c_init+0x27c>)
+     e7c:	4a1e      	ldr	r2, [pc, #120]	; (ef8 <i2c_init+0x27c>)
+     e7e:	7892      	ldrb	r2, [r2, #2]
+     e80:	b2d2      	uxtb	r2, r2
+     e82:	2108      	movs	r1, #8
+     e84:	430a      	orrs	r2, r1
+     e86:	b2d2      	uxtb	r2, r2
+     e88:	709a      	strb	r2, [r3, #2]
+     e8a:	e028      	b.n	ede <i2c_init+0x262>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:211
+        }
+        else            //从机模式
+        {
+            BSET(I2C_C1_IICEN_SHIFT,I2C1_C1);//使能I2C模块
+     e8c:	4b1a      	ldr	r3, [pc, #104]	; (ef8 <i2c_init+0x27c>)
+     e8e:	4a1a      	ldr	r2, [pc, #104]	; (ef8 <i2c_init+0x27c>)
+     e90:	7892      	ldrb	r2, [r2, #2]
+     e92:	b2d2      	uxtb	r2, r2
+     e94:	2180      	movs	r1, #128	; 0x80
+     e96:	4249      	negs	r1, r1
+     e98:	430a      	orrs	r2, r1
+     e9a:	b2d2      	uxtb	r2, r2
+     e9c:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:212
+            BSET(I2C_C1_IICIE_SHIFT,I2C1_C1);//来I2C中断
+     e9e:	4b16      	ldr	r3, [pc, #88]	; (ef8 <i2c_init+0x27c>)
+     ea0:	4a15      	ldr	r2, [pc, #84]	; (ef8 <i2c_init+0x27c>)
+     ea2:	7892      	ldrb	r2, [r2, #2]
+     ea4:	b2d2      	uxtb	r2, r2
+     ea6:	2140      	movs	r1, #64	; 0x40
+     ea8:	430a      	orrs	r2, r1
+     eaa:	b2d2      	uxtb	r2, r2
+     eac:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:213
+            BSET(I2C_C1_MST_SHIFT,I2C1_C1);//设置成主机模式
+     eae:	4b12      	ldr	r3, [pc, #72]	; (ef8 <i2c_init+0x27c>)
+     eb0:	4a11      	ldr	r2, [pc, #68]	; (ef8 <i2c_init+0x27c>)
+     eb2:	7892      	ldrb	r2, [r2, #2]
+     eb4:	b2d2      	uxtb	r2, r2
+     eb6:	2120      	movs	r1, #32
+     eb8:	430a      	orrs	r2, r1
+     eba:	b2d2      	uxtb	r2, r2
+     ebc:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:214
+            BCLR(I2C_C1_TX_SHIFT,I2C1_C1);//TX = 0,MCU设置为接收模式
+     ebe:	4b0e      	ldr	r3, [pc, #56]	; (ef8 <i2c_init+0x27c>)
+     ec0:	4a0d      	ldr	r2, [pc, #52]	; (ef8 <i2c_init+0x27c>)
+     ec2:	7892      	ldrb	r2, [r2, #2]
+     ec4:	b2d2      	uxtb	r2, r2
+     ec6:	2110      	movs	r1, #16
+     ec8:	438a      	bics	r2, r1
+     eca:	b2d2      	uxtb	r2, r2
+     ecc:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:216
+//            i=I2C0_D;                        //读出IIC1D,准备接收数据
+            BCLR(I2C_C1_MST_SHIFT,I2C1_C1);//MST位由1变成0，设置为从机模式
+     ece:	4b0a      	ldr	r3, [pc, #40]	; (ef8 <i2c_init+0x27c>)
+     ed0:	4a09      	ldr	r2, [pc, #36]	; (ef8 <i2c_init+0x27c>)
+     ed2:	7892      	ldrb	r2, [r2, #2]
+     ed4:	b2d2      	uxtb	r2, r2
+     ed6:	2120      	movs	r1, #32
+     ed8:	438a      	bics	r2, r1
+     eda:	b2d2      	uxtb	r2, r2
+     edc:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:219
+        }
+    }
+}
+     ede:	46bd      	mov	sp, r7
+     ee0:	b005      	add	sp, #20
+     ee2:	bd90      	pop	{r4, r7, pc}
+     ee4:	40066000 	.word	0x40066000
+     ee8:	40047000 	.word	0x40047000
+     eec:	00001034 	.word	0x00001034
+     ef0:	4004b000 	.word	0x4004b000
+     ef4:	000013ac 	.word	0x000013ac
+     ef8:	40067000 	.word	0x40067000
+
+00000efc <i2c_write1>:
+i2c_write1():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:289
+//函数返回：为0,成功写一个字节;为1,写一个字节失败 
+//函数说明: 内部调用 send_signal,wait  
+//============================================================================
+
+uint_8 i2c_write1(uint_8 I2C_No,uint_8 DeviceAddr, uint_8 DataLocation, uint_8 Data)
+{
+     efc:	b590      	push	{r4, r7, lr}
+     efe:	b085      	sub	sp, #20
+     f00:	af00      	add	r7, sp, #0
+     f02:	1c04      	adds	r4, r0, #0
+     f04:	1c08      	adds	r0, r1, #0
+     f06:	1c11      	adds	r1, r2, #0
+     f08:	1c1a      	adds	r2, r3, #0
+     f0a:	1dfb      	adds	r3, r7, #7
+     f0c:	701c      	strb	r4, [r3, #0]
+     f0e:	1dbb      	adds	r3, r7, #6
+     f10:	7018      	strb	r0, [r3, #0]
+     f12:	1d7b      	adds	r3, r7, #5
+     f14:	7019      	strb	r1, [r3, #0]
+     f16:	1d3b      	adds	r3, r7, #4
+     f18:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:291
+	 //获取i2c模块基址
+     I2C_MemMapPtr num = i2c_get_base_address(I2C_No);	
+     f1a:	1dfb      	adds	r3, r7, #7
+     f1c:	781b      	ldrb	r3, [r3, #0]
+     f1e:	1c18      	adds	r0, r3, #0
+     f20:	f000 f86c 	bl	ffc <i2c_get_base_address>
+     f24:	1c03      	adds	r3, r0, #0
+     f26:	60fb      	str	r3, [r7, #12]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:292
+     BSET(I2C_C1_TX_SHIFT,I2C_C1_REG(num)); //TX = 1,MCU设置为发送模式
+     f28:	68fb      	ldr	r3, [r7, #12]
+     f2a:	789b      	ldrb	r3, [r3, #2]
+     f2c:	b2db      	uxtb	r3, r3
+     f2e:	2210      	movs	r2, #16
+     f30:	4313      	orrs	r3, r2
+     f32:	b2da      	uxtb	r2, r3
+     f34:	68fb      	ldr	r3, [r7, #12]
+     f36:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:293
+     send_signal('S',I2C_No);          //发送开始信号
+     f38:	1dfb      	adds	r3, r7, #7
+     f3a:	781b      	ldrb	r3, [r3, #0]
+     f3c:	2053      	movs	r0, #83	; 0x53
+     f3e:	1c19      	adds	r1, r3, #0
+     f40:	f7ff fdf0 	bl	b24 <send_signal>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:294
+     I2C_D_REG(num) = DeviceAddr & 0xfe;  //发送设备地址,并通知从机接收数据
+     f44:	1dbb      	adds	r3, r7, #6
+     f46:	781b      	ldrb	r3, [r3, #0]
+     f48:	2201      	movs	r2, #1
+     f4a:	4393      	bics	r3, r2
+     f4c:	b2da      	uxtb	r2, r3
+     f4e:	68fb      	ldr	r3, [r7, #12]
+     f50:	711a      	strb	r2, [r3, #4]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:295
+     if (wait('T',I2C_No))             //等待一个字节数据传送完成
+     f52:	1dfb      	adds	r3, r7, #7
+     f54:	781b      	ldrb	r3, [r3, #0]
+     f56:	2054      	movs	r0, #84	; 0x54
+     f58:	1c19      	adds	r1, r3, #0
+     f5a:	f7ff fe35 	bl	bc8 <wait>
+     f5e:	1c03      	adds	r3, r0, #0
+     f60:	2b00      	cmp	r3, #0
+     f62:	d001      	beq.n	f68 <i2c_write1+0x6c>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:296
+          return 1;                        //没有传送成功,写一个字节失败
+     f64:	2301      	movs	r3, #1
+     f66:	e045      	b.n	ff4 <i2c_write1+0xf8>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:297
+     if (wait('A',I2C_No))             //等待从机应答信号
+     f68:	1dfb      	adds	r3, r7, #7
+     f6a:	781b      	ldrb	r3, [r3, #0]
+     f6c:	2041      	movs	r0, #65	; 0x41
+     f6e:	1c19      	adds	r1, r3, #0
+     f70:	f7ff fe2a 	bl	bc8 <wait>
+     f74:	1c03      	adds	r3, r0, #0
+     f76:	2b00      	cmp	r3, #0
+     f78:	d001      	beq.n	f7e <i2c_write1+0x82>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:298
+          return 1;                        //没有等到应答信号,写一个字节失败   
+     f7a:	2301      	movs	r3, #1
+     f7c:	e03a      	b.n	ff4 <i2c_write1+0xf8>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:299
+     I2C_D_REG(num) = DataLocation;         //发送数据在从机接收数组中的位置
+     f7e:	68fb      	ldr	r3, [r7, #12]
+     f80:	1d7a      	adds	r2, r7, #5
+     f82:	7812      	ldrb	r2, [r2, #0]
+     f84:	711a      	strb	r2, [r3, #4]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:300
+     if (wait('T',I2C_No))             //等待一个字节数据传送完成
+     f86:	1dfb      	adds	r3, r7, #7
+     f88:	781b      	ldrb	r3, [r3, #0]
+     f8a:	2054      	movs	r0, #84	; 0x54
+     f8c:	1c19      	adds	r1, r3, #0
+     f8e:	f7ff fe1b 	bl	bc8 <wait>
+     f92:	1c03      	adds	r3, r0, #0
+     f94:	2b00      	cmp	r3, #0
+     f96:	d001      	beq.n	f9c <i2c_write1+0xa0>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:301
+          return 1;                        //没有传送成功,写一个字节失败
+     f98:	2301      	movs	r3, #1
+     f9a:	e02b      	b.n	ff4 <i2c_write1+0xf8>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:302
+     if (wait('A',I2C_No))             //等待从机应答信号
+     f9c:	1dfb      	adds	r3, r7, #7
+     f9e:	781b      	ldrb	r3, [r3, #0]
+     fa0:	2041      	movs	r0, #65	; 0x41
+     fa2:	1c19      	adds	r1, r3, #0
+     fa4:	f7ff fe10 	bl	bc8 <wait>
+     fa8:	1c03      	adds	r3, r0, #0
+     faa:	2b00      	cmp	r3, #0
+     fac:	d001      	beq.n	fb2 <i2c_write1+0xb6>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:303
+          return 1;                        //没有等到应答信号,写一个字节失败   
+     fae:	2301      	movs	r3, #1
+     fb0:	e020      	b.n	ff4 <i2c_write1+0xf8>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:304
+     I2C_D_REG(num) = Data;               //写数据
+     fb2:	68fb      	ldr	r3, [r7, #12]
+     fb4:	1d3a      	adds	r2, r7, #4
+     fb6:	7812      	ldrb	r2, [r2, #0]
+     fb8:	711a      	strb	r2, [r3, #4]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:305
+     if (wait('T',I2C_No))             //等待一个字节数据传送完成
+     fba:	1dfb      	adds	r3, r7, #7
+     fbc:	781b      	ldrb	r3, [r3, #0]
+     fbe:	2054      	movs	r0, #84	; 0x54
+     fc0:	1c19      	adds	r1, r3, #0
+     fc2:	f7ff fe01 	bl	bc8 <wait>
+     fc6:	1c03      	adds	r3, r0, #0
+     fc8:	2b00      	cmp	r3, #0
+     fca:	d001      	beq.n	fd0 <i2c_write1+0xd4>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:306
+          return 1;                        //没有传送成功,写一个字节失败
+     fcc:	2301      	movs	r3, #1
+     fce:	e011      	b.n	ff4 <i2c_write1+0xf8>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:307
+     if (wait('A',I2C_No))             //等待从机应答信号
+     fd0:	1dfb      	adds	r3, r7, #7
+     fd2:	781b      	ldrb	r3, [r3, #0]
+     fd4:	2041      	movs	r0, #65	; 0x41
+     fd6:	1c19      	adds	r1, r3, #0
+     fd8:	f7ff fdf6 	bl	bc8 <wait>
+     fdc:	1c03      	adds	r3, r0, #0
+     fde:	2b00      	cmp	r3, #0
+     fe0:	d001      	beq.n	fe6 <i2c_write1+0xea>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:308
+          return 1;                        //没有等到应答信号,写一个字节失败   
+     fe2:	2301      	movs	r3, #1
+     fe4:	e006      	b.n	ff4 <i2c_write1+0xf8>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:309
+     send_signal('O',I2C_No);          //发送停止信号
+     fe6:	1dfb      	adds	r3, r7, #7
+     fe8:	781b      	ldrb	r3, [r3, #0]
+     fea:	204f      	movs	r0, #79	; 0x4f
+     fec:	1c19      	adds	r1, r3, #0
+     fee:	f7ff fd99 	bl	b24 <send_signal>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:310
+          return 0;
+     ff2:	2300      	movs	r3, #0
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:311
+}
+     ff4:	1c18      	adds	r0, r3, #0
+     ff6:	46bd      	mov	sp, r7
+     ff8:	b005      	add	sp, #20
+     ffa:	bd90      	pop	{r4, r7, pc}
+
+00000ffc <i2c_get_base_address>:
+i2c_get_base_address():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:389
+//功能概要：获取i2c模块的基址                                                
+//参数说明：i2cNO:i2c模块号      ，其取值为0，1
+//函数返回：i2c模块的基址值                                                                  
+//============================================================================
+I2C_MemMapPtr i2c_get_base_address(uint_8 I2C_No)
+{
+     ffc:	b580      	push	{r7, lr}
+     ffe:	b082      	sub	sp, #8
+    1000:	af00      	add	r7, sp, #0
+    1002:	1c02      	adds	r2, r0, #0
+    1004:	1dfb      	adds	r3, r7, #7
+    1006:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:390
+        switch(I2C_No)
+    1008:	1dfb      	adds	r3, r7, #7
+    100a:	781b      	ldrb	r3, [r3, #0]
+    100c:	2b00      	cmp	r3, #0
+    100e:	d002      	beq.n	1016 <i2c_get_base_address+0x1a>
+    1010:	2b01      	cmp	r3, #1
+    1012:	d002      	beq.n	101a <i2c_get_base_address+0x1e>
+    1014:	e003      	b.n	101e <i2c_get_base_address+0x22>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:393
+        {
+            case 0:
+                    return I2C0_BASE_PTR;
+    1016:	4b04      	ldr	r3, [pc, #16]	; (1028 <i2c_get_base_address+0x2c>)
+    1018:	e001      	b.n	101e <i2c_get_base_address+0x22>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:396
+                      break;
+            case 1:
+                    return I2C1_BASE_PTR;
+    101a:	4b04      	ldr	r3, [pc, #16]	; (102c <i2c_get_base_address+0x30>)
+    101c:	e7ff      	b.n	101e <i2c_get_base_address+0x22>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/i2c/i2c.c:399
+                       break;
+	}
+}
+    101e:	1c18      	adds	r0, r3, #0
+    1020:	46bd      	mov	sp, r7
+    1022:	b002      	add	sp, #8
+    1024:	bd80      	pop	{r7, pc}
+    1026:	46c0      	nop			; (mov r8, r8)
+    1028:	40066000 	.word	0x40066000
+    102c:	40067000 	.word	0x40067000
+
+00001030 <gpio_port_pin_resolution>:
+gpio_port_pin_resolution():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:27
+//		   pin:引脚号（0~31，实际取值由芯片的物理引脚决定）
+//功能概要：将传进参数port_pin进行解析，得出具体端口号与引脚号（例：PORTB|(5)
+//         解析为PORTB与5，并将其分别赋值给port与pin）。
+//===========================================================================
+static void gpio_port_pin_resolution(uint_16 port_pin,uint_8* port,uint_8* pin)
+{
+    1030:	b580      	push	{r7, lr}
+    1032:	b084      	sub	sp, #16
+    1034:	af00      	add	r7, sp, #0
+    1036:	60b9      	str	r1, [r7, #8]
+    1038:	607a      	str	r2, [r7, #4]
+    103a:	1c3b      	adds	r3, r7, #0
+    103c:	330e      	adds	r3, #14
+    103e:	1c02      	adds	r2, r0, #0
+    1040:	801a      	strh	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:28
+	*port = (port_pin>>8);
+    1042:	1c3b      	adds	r3, r7, #0
+    1044:	330e      	adds	r3, #14
+    1046:	881b      	ldrh	r3, [r3, #0]
+    1048:	0a1b      	lsrs	r3, r3, #8
+    104a:	b29b      	uxth	r3, r3
+    104c:	b2da      	uxtb	r2, r3
+    104e:	68bb      	ldr	r3, [r7, #8]
+    1050:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:29
+	*pin = port_pin;
+    1052:	1c3b      	adds	r3, r7, #0
+    1054:	330e      	adds	r3, #14
+    1056:	881b      	ldrh	r3, [r3, #0]
+    1058:	b2da      	uxtb	r2, r3
+    105a:	687b      	ldr	r3, [r7, #4]
+    105c:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:30
+}
+    105e:	46bd      	mov	sp, r7
+    1060:	b004      	add	sp, #16
+    1062:	bd80      	pop	{r7, pc}
+
+00001064 <gpio_init>:
+gpio_init():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:43
+//          state：端口引脚初始状态（0=低电平，1=高电平）
+//功能概要：初始化指定端口引脚作为GPIO引脚功能，并定义为输入或输出，若是输出，
+//          还指定初始状态是低电平或高电平
+//===========================================================================
+void gpio_init(uint_16 port_pin, uint_8 dir, uint_8 state)
+{
+    1064:	b580      	push	{r7, lr}
+    1066:	b086      	sub	sp, #24
+    1068:	af00      	add	r7, sp, #0
+    106a:	1dbb      	adds	r3, r7, #6
+    106c:	8018      	strh	r0, [r3, #0]
+    106e:	1d7b      	adds	r3, r7, #5
+    1070:	7019      	strb	r1, [r3, #0]
+    1072:	1d3b      	adds	r3, r7, #4
+    1074:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:49
+	//局部变量声明
+	PORT_MemMapPtr port_ptr;    //声明port_ptr为PORT结构体类型指针 
+	GPIO_MemMapPtr gpio_ptr;    //声明port_ptr为GPIO结构体类型指针
+	uint_8 port;
+	uint_8 pin;
+	gpio_port_pin_resolution(port_pin , &port , &pin);
+    1076:	1dbb      	adds	r3, r7, #6
+    1078:	8819      	ldrh	r1, [r3, #0]
+    107a:	1c3a      	adds	r2, r7, #0
+    107c:	320f      	adds	r2, #15
+    107e:	1c3b      	adds	r3, r7, #0
+    1080:	330e      	adds	r3, #14
+    1082:	1c08      	adds	r0, r1, #0
+    1084:	1c11      	adds	r1, r2, #0
+    1086:	1c1a      	adds	r2, r3, #0
+    1088:	f7ff ffd2 	bl	1030 <gpio_port_pin_resolution>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:53
+	
+	
+	//根据带入参数port，给局部变量port_ptr、gpio_ptr赋值（获得两个基地址）
+	port_ptr = PORT_ARR[port];  //获得PORT模块相应口基地址
+    108c:	1c3b      	adds	r3, r7, #0
+    108e:	330f      	adds	r3, #15
+    1090:	781b      	ldrb	r3, [r3, #0]
+    1092:	1c1a      	adds	r2, r3, #0
+    1094:	4b22      	ldr	r3, [pc, #136]	; (1120 <gpio_init+0xbc>)
+    1096:	0092      	lsls	r2, r2, #2
+    1098:	58d3      	ldr	r3, [r2, r3]
+    109a:	617b      	str	r3, [r7, #20]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:54
+	gpio_ptr = GPIO_ARR[port];  //获得GPIO模块相应口基地址
+    109c:	1c3b      	adds	r3, r7, #0
+    109e:	330f      	adds	r3, #15
+    10a0:	781b      	ldrb	r3, [r3, #0]
+    10a2:	1c1a      	adds	r2, r3, #0
+    10a4:	4b1f      	ldr	r3, [pc, #124]	; (1124 <gpio_init+0xc0>)
+    10a6:	0092      	lsls	r2, r2, #2
+    10a8:	58d3      	ldr	r3, [r2, r3]
+    10aa:	613b      	str	r3, [r7, #16]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:59
+	
+	//根据带入参数pin,指定该引脚功能为GPIO功能（即令引脚控制寄存器的MUX=0b001）
+
+//	PORT_PCR_REG(port_ptr, pin) &= ~PORT_PCR_MUX_MASK;
+	PORT_PCR_REG(port_ptr, pin) |= PORT_PCR_MUX(1);
+    10ac:	1c3b      	adds	r3, r7, #0
+    10ae:	330e      	adds	r3, #14
+    10b0:	781b      	ldrb	r3, [r3, #0]
+    10b2:	1c1a      	adds	r2, r3, #0
+    10b4:	1c3b      	adds	r3, r7, #0
+    10b6:	330e      	adds	r3, #14
+    10b8:	781b      	ldrb	r3, [r3, #0]
+    10ba:	1c19      	adds	r1, r3, #0
+    10bc:	697b      	ldr	r3, [r7, #20]
+    10be:	0089      	lsls	r1, r1, #2
+    10c0:	58cb      	ldr	r3, [r1, r3]
+    10c2:	2180      	movs	r1, #128	; 0x80
+    10c4:	0049      	lsls	r1, r1, #1
+    10c6:	4319      	orrs	r1, r3
+    10c8:	697b      	ldr	r3, [r7, #20]
+    10ca:	0092      	lsls	r2, r2, #2
+    10cc:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:62
+    
+      //根据带入参数dir，决定引脚为输出还是输入
+    if (1 == dir)   //希望为输出
+    10ce:	1d7b      	adds	r3, r7, #5
+    10d0:	781b      	ldrb	r3, [r3, #0]
+    10d2:	2b01      	cmp	r3, #1
+    10d4:	d114      	bne.n	1100 <gpio_init+0x9c>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:64
+    {
+	    BSET(pin,gpio_ptr->PDDR);     //数据方向寄存器的pin位=1，定义为输出
+    10d6:	693b      	ldr	r3, [r7, #16]
+    10d8:	695a      	ldr	r2, [r3, #20]
+    10da:	1c3b      	adds	r3, r7, #0
+    10dc:	330e      	adds	r3, #14
+    10de:	781b      	ldrb	r3, [r3, #0]
+    10e0:	2101      	movs	r1, #1
+    10e2:	1c08      	adds	r0, r1, #0
+    10e4:	4098      	lsls	r0, r3
+    10e6:	1c03      	adds	r3, r0, #0
+    10e8:	431a      	orrs	r2, r3
+    10ea:	693b      	ldr	r3, [r7, #16]
+    10ec:	615a      	str	r2, [r3, #20]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:65
+	    gpio_set(port_pin, state);   //调用gpio_set函数，设定引脚初始状态
+    10ee:	1dbb      	adds	r3, r7, #6
+    10f0:	881a      	ldrh	r2, [r3, #0]
+    10f2:	1d3b      	adds	r3, r7, #4
+    10f4:	781b      	ldrb	r3, [r3, #0]
+    10f6:	1c10      	adds	r0, r2, #0
+    10f8:	1c19      	adds	r1, r3, #0
+    10fa:	f000 f815 	bl	1128 <gpio_set>
+    10fe:	e00c      	b.n	111a <gpio_init+0xb6>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:68
+    }
+    else           //希望为输入
+	    BCLR(pin,gpio_ptr->PDDR);  //数据方向寄存器的pin位=0，定义为输入
+    1100:	693b      	ldr	r3, [r7, #16]
+    1102:	695b      	ldr	r3, [r3, #20]
+    1104:	1c3a      	adds	r2, r7, #0
+    1106:	320e      	adds	r2, #14
+    1108:	7812      	ldrb	r2, [r2, #0]
+    110a:	2101      	movs	r1, #1
+    110c:	1c08      	adds	r0, r1, #0
+    110e:	4090      	lsls	r0, r2
+    1110:	1c02      	adds	r2, r0, #0
+    1112:	43d2      	mvns	r2, r2
+    1114:	401a      	ands	r2, r3
+    1116:	693b      	ldr	r3, [r7, #16]
+    1118:	615a      	str	r2, [r3, #20]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:69
+}
+    111a:	46bd      	mov	sp, r7
+    111c:	b006      	add	sp, #24
+    111e:	bd80      	pop	{r7, pc}
+    1120:	000013b8 	.word	0x000013b8
+    1124:	000013cc 	.word	0x000013cc
+
+00001128 <gpio_set>:
+gpio_set():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:79
+//参数说明：port_pin：端口号|引脚号（例：PORTB|(5) 表示为B口5号脚）
+//         state：引脚初始状态（0=低电平，1=高电平）
+//功能概要：设定引脚状态为低电平或高电平
+//===========================================================================
+void gpio_set(uint_16 port_pin, uint_8 state)
+{
+    1128:	b580      	push	{r7, lr}
+    112a:	b084      	sub	sp, #16
+    112c:	af00      	add	r7, sp, #0
+    112e:	1c0a      	adds	r2, r1, #0
+    1130:	1dbb      	adds	r3, r7, #6
+    1132:	1c01      	adds	r1, r0, #0
+    1134:	8019      	strh	r1, [r3, #0]
+    1136:	1d7b      	adds	r3, r7, #5
+    1138:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:83
+	GPIO_MemMapPtr gpio_ptr;    //声明port_ptr为GPIO结构体类型指针
+	uint_8 port;
+	uint_8 pin;
+	gpio_port_pin_resolution(port_pin , &port , &pin);
+    113a:	1dbb      	adds	r3, r7, #6
+    113c:	8819      	ldrh	r1, [r3, #0]
+    113e:	1c3a      	adds	r2, r7, #0
+    1140:	320b      	adds	r2, #11
+    1142:	1c3b      	adds	r3, r7, #0
+    1144:	330a      	adds	r3, #10
+    1146:	1c08      	adds	r0, r1, #0
+    1148:	1c11      	adds	r1, r2, #0
+    114a:	1c1a      	adds	r2, r3, #0
+    114c:	f7ff ff70 	bl	1030 <gpio_port_pin_resolution>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:86
+	
+	//根据带入参数port，给局部变量gpio_ptr赋值（GPIO基地址）
+	gpio_ptr = GPIO_ARR[port]; 
+    1150:	1c3b      	adds	r3, r7, #0
+    1152:	330b      	adds	r3, #11
+    1154:	781b      	ldrb	r3, [r3, #0]
+    1156:	1c1a      	adds	r2, r3, #0
+    1158:	4b12      	ldr	r3, [pc, #72]	; (11a4 <gpio_set+0x7c>)
+    115a:	0092      	lsls	r2, r2, #2
+    115c:	58d3      	ldr	r3, [r2, r3]
+    115e:	60fb      	str	r3, [r7, #12]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:89
+	
+	//根据带入参数state，决定引脚为输出1还是0
+	if (1==state)
+    1160:	1d7b      	adds	r3, r7, #5
+    1162:	781b      	ldrb	r3, [r3, #0]
+    1164:	2b01      	cmp	r3, #1
+    1166:	d10c      	bne.n	1182 <gpio_set+0x5a>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:90
+	    {BSET(pin,gpio_ptr->PDOR);}
+    1168:	68fb      	ldr	r3, [r7, #12]
+    116a:	681a      	ldr	r2, [r3, #0]
+    116c:	1c3b      	adds	r3, r7, #0
+    116e:	330a      	adds	r3, #10
+    1170:	781b      	ldrb	r3, [r3, #0]
+    1172:	2101      	movs	r1, #1
+    1174:	1c08      	adds	r0, r1, #0
+    1176:	4098      	lsls	r0, r3
+    1178:	1c03      	adds	r3, r0, #0
+    117a:	431a      	orrs	r2, r3
+    117c:	68fb      	ldr	r3, [r7, #12]
+    117e:	601a      	str	r2, [r3, #0]
+    1180:	e00c      	b.n	119c <gpio_set+0x74>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:92
+	else
+	    {BCLR(pin,gpio_ptr->PDOR);}
+    1182:	68fb      	ldr	r3, [r7, #12]
+    1184:	681b      	ldr	r3, [r3, #0]
+    1186:	1c3a      	adds	r2, r7, #0
+    1188:	320a      	adds	r2, #10
+    118a:	7812      	ldrb	r2, [r2, #0]
+    118c:	2101      	movs	r1, #1
+    118e:	1c08      	adds	r0, r1, #0
+    1190:	4090      	lsls	r0, r2
+    1192:	1c02      	adds	r2, r0, #0
+    1194:	43d2      	mvns	r2, r2
+    1196:	401a      	ands	r2, r3
+    1198:	68fb      	ldr	r3, [r7, #12]
+    119a:	601a      	str	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:93
+}
+    119c:	46bd      	mov	sp, r7
+    119e:	b004      	add	sp, #16
+    11a0:	bd80      	pop	{r7, pc}
+    11a2:	46c0      	nop			; (mov r8, r8)
+    11a4:	000013cc 	.word	0x000013cc
+
+000011a8 <gpio_reverse>:
+gpio_reverse():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:122
+//函数返回：无
+//参数说明：port_pin：端口号|引脚号（例：PORTB|(5) 表示为B口5号脚）
+//功能概要：反转指定引脚输出状态。
+//===========================================================================
+void gpio_reverse(uint_16 port_pin)
+{
+    11a8:	b580      	push	{r7, lr}
+    11aa:	b084      	sub	sp, #16
+    11ac:	af00      	add	r7, sp, #0
+    11ae:	1c02      	adds	r2, r0, #0
+    11b0:	1dbb      	adds	r3, r7, #6
+    11b2:	801a      	strh	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:126
+	GPIO_MemMapPtr gpio_ptr;    //声明port_ptr为GPIO结构体类型指针（首地址）
+	uint_8 port;
+	uint_8 pin;
+	gpio_port_pin_resolution(port_pin , &port , &pin);
+    11b4:	1dbb      	adds	r3, r7, #6
+    11b6:	8819      	ldrh	r1, [r3, #0]
+    11b8:	1c3a      	adds	r2, r7, #0
+    11ba:	320b      	adds	r2, #11
+    11bc:	1c3b      	adds	r3, r7, #0
+    11be:	330a      	adds	r3, #10
+    11c0:	1c08      	adds	r0, r1, #0
+    11c2:	1c11      	adds	r1, r2, #0
+    11c4:	1c1a      	adds	r2, r3, #0
+    11c6:	f7ff ff33 	bl	1030 <gpio_port_pin_resolution>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:129
+	
+	//根据带入参数port，给局部变量port_ptr赋值（GPIO基地址）
+	gpio_ptr = GPIO_ARR[port]; 
+    11ca:	1c3b      	adds	r3, r7, #0
+    11cc:	330b      	adds	r3, #11
+    11ce:	781b      	ldrb	r3, [r3, #0]
+    11d0:	1c1a      	adds	r2, r3, #0
+    11d2:	4b09      	ldr	r3, [pc, #36]	; (11f8 <gpio_reverse+0x50>)
+    11d4:	0092      	lsls	r2, r2, #2
+    11d6:	58d3      	ldr	r3, [r2, r3]
+    11d8:	60fb      	str	r3, [r7, #12]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:132
+	
+	//反转指定引脚输出状态
+	BSET(pin,gpio_ptr->PTOR);
+    11da:	68fb      	ldr	r3, [r7, #12]
+    11dc:	68da      	ldr	r2, [r3, #12]
+    11de:	1c3b      	adds	r3, r7, #0
+    11e0:	330a      	adds	r3, #10
+    11e2:	781b      	ldrb	r3, [r3, #0]
+    11e4:	2101      	movs	r1, #1
+    11e6:	1c08      	adds	r0, r1, #0
+    11e8:	4098      	lsls	r0, r3
+    11ea:	1c03      	adds	r3, r0, #0
+    11ec:	431a      	orrs	r2, r3
+    11ee:	68fb      	ldr	r3, [r7, #12]
+    11f0:	60da      	str	r2, [r3, #12]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../05_Driver/gpio/gpio.c:133
+}
+    11f2:	46bd      	mov	sp, r7
+    11f4:	b004      	add	sp, #16
+    11f6:	bd80      	pop	{r7, pc}
+    11f8:	000013cc 	.word	0x000013cc
+
+000011fc <SystemInit>:
+SystemInit():
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:111
+//函数名称：SystemInit
+//函数返回：无
+//参数说明：无
+//功能概要：初始化系统的时钟
+//===========================================================================
+void SystemInit (void) {
+    11fc:	b580      	push	{r7, lr}
+    11fe:	af00      	add	r7, sp, #0
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:114
+
+#if (DISABLE_WDOG)  //关闭看门狗
+    SIM->COPC = (uint32_t)0x00u;    //SIM_COPC: COPT=0,COPCLKS=0,COPW=0
+    1200:	4a53      	ldr	r2, [pc, #332]	; (1350 <SystemInit+0x154>)
+    1202:	2388      	movs	r3, #136	; 0x88
+    1204:	015b      	lsls	r3, r3, #5
+    1206:	2100      	movs	r1, #0
+    1208:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:118
+#endif
+
+#ifdef CLOCK_SETUP
+  if((RCM->SRS0 & RCM_SRS0_WAKEUP_MASK) != 0x00U)
+    120a:	4b52      	ldr	r3, [pc, #328]	; (1354 <SystemInit+0x158>)
+    120c:	781b      	ldrb	r3, [r3, #0]
+    120e:	b2db      	uxtb	r3, r3
+    1210:	1c1a      	adds	r2, r3, #0
+    1212:	2301      	movs	r3, #1
+    1214:	4013      	ands	r3, r2
+    1216:	d00e      	beq.n	1236 <SystemInit+0x3a>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:120
+  {
+    if((PMC->REGSC & PMC_REGSC_ACKISO_MASK) != 0x00U)
+    1218:	4b4f      	ldr	r3, [pc, #316]	; (1358 <SystemInit+0x15c>)
+    121a:	789b      	ldrb	r3, [r3, #2]
+    121c:	b2db      	uxtb	r3, r3
+    121e:	1c1a      	adds	r2, r3, #0
+    1220:	2308      	movs	r3, #8
+    1222:	4013      	ands	r3, r2
+    1224:	d007      	beq.n	1236 <SystemInit+0x3a>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:122
+    {
+       PMC->REGSC |= PMC_REGSC_ACKISO_MASK; /* 释放ACKISO */
+    1226:	4b4c      	ldr	r3, [pc, #304]	; (1358 <SystemInit+0x15c>)
+    1228:	4a4b      	ldr	r2, [pc, #300]	; (1358 <SystemInit+0x15c>)
+    122a:	7892      	ldrb	r2, [r2, #2]
+    122c:	b2d2      	uxtb	r2, r2
+    122e:	2108      	movs	r1, #8
+    1230:	430a      	orrs	r2, r1
+    1232:	b2d2      	uxtb	r2, r2
+    1234:	709a      	strb	r2, [r3, #2]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:128
+    }
+  }
+
+  /* 电源模式保护初始化 */
+#ifdef SYSTEM_SMC_PMPROT_VALUE
+  SMC->PMPROT = SYSTEM_SMC_PMPROT_VALUE;
+    1236:	4b49      	ldr	r3, [pc, #292]	; (135c <SystemInit+0x160>)
+    1238:	222a      	movs	r2, #42	; 0x2a
+    123a:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:148
+#if defined(SLOW_TRIM_ADDRESS)
+  }
+  #endif
+
+  /* 设置系统预分频和时钟的值 */
+  SIM->CLKDIV1 = SYSTEM_SIM_CLKDIV1_VALUE; /* Set system prescalers */
+    123c:	4a44      	ldr	r2, [pc, #272]	; (1350 <SystemInit+0x154>)
+    123e:	4b48      	ldr	r3, [pc, #288]	; (1360 <SystemInit+0x164>)
+    1240:	4948      	ldr	r1, [pc, #288]	; (1364 <SystemInit+0x168>)
+    1242:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:149
+  SIM->SOPT1 = ((SIM->SOPT1) & (uint32_t)(~(SIM_SOPT1_OSC32KSEL_MASK))) | ((SYSTEM_SIM_SOPT1_VALUE) & (SIM_SOPT1_OSC32KSEL_MASK)); /* Set 32 kHz clock source (ERCLK32K) */
+    1244:	4b42      	ldr	r3, [pc, #264]	; (1350 <SystemInit+0x154>)
+    1246:	4a42      	ldr	r2, [pc, #264]	; (1350 <SystemInit+0x154>)
+    1248:	6812      	ldr	r2, [r2, #0]
+    124a:	21c0      	movs	r1, #192	; 0xc0
+    124c:	0309      	lsls	r1, r1, #12
+    124e:	430a      	orrs	r2, r1
+    1250:	601a      	str	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:150
+  SIM->SOPT2 = ((SIM->SOPT2) & (uint32_t)(~(SIM_SOPT2_PLLFLLSEL_MASK))) | ((SYSTEM_SIM_SOPT2_VALUE) & (SIM_SOPT2_PLLFLLSEL_MASK)); /* Selects the high frequency clock for various peripheral clocking options. */
+    1252:	4a3f      	ldr	r2, [pc, #252]	; (1350 <SystemInit+0x154>)
+    1254:	493e      	ldr	r1, [pc, #248]	; (1350 <SystemInit+0x154>)
+    1256:	4b44      	ldr	r3, [pc, #272]	; (1368 <SystemInit+0x16c>)
+    1258:	58cb      	ldr	r3, [r1, r3]
+    125a:	2180      	movs	r1, #128	; 0x80
+    125c:	0249      	lsls	r1, r1, #9
+    125e:	4319      	orrs	r1, r3
+    1260:	4b41      	ldr	r3, [pc, #260]	; (1368 <SystemInit+0x16c>)
+    1262:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:151
+  SIM->SOPT2 = ((SIM->SOPT2) & (uint32_t)(~(SIM_SOPT2_TPMSRC_MASK))) | ((SYSTEM_SIM_SOPT2_VALUE) & (SIM_SOPT2_TPMSRC_MASK)); /* Selects the clock source for the TPM counter clock. */
+    1264:	4a3a      	ldr	r2, [pc, #232]	; (1350 <SystemInit+0x154>)
+    1266:	493a      	ldr	r1, [pc, #232]	; (1350 <SystemInit+0x154>)
+    1268:	4b3f      	ldr	r3, [pc, #252]	; (1368 <SystemInit+0x16c>)
+    126a:	58c9      	ldr	r1, [r1, r3]
+    126c:	4b3f      	ldr	r3, [pc, #252]	; (136c <SystemInit+0x170>)
+    126e:	400b      	ands	r3, r1
+    1270:	2180      	movs	r1, #128	; 0x80
+    1272:	0449      	lsls	r1, r1, #17
+    1274:	4319      	orrs	r1, r3
+    1276:	4b3c      	ldr	r3, [pc, #240]	; (1368 <SystemInit+0x16c>)
+    1278:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:185
+  #endif
+
+#else /* MCG_MODE */
+  /* Set MCG and OSC */
+  /* SIM_SCGC5: PORTA=1 */
+  SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
+    127a:	4a35      	ldr	r2, [pc, #212]	; (1350 <SystemInit+0x154>)
+    127c:	4934      	ldr	r1, [pc, #208]	; (1350 <SystemInit+0x154>)
+    127e:	4b3c      	ldr	r3, [pc, #240]	; (1370 <SystemInit+0x174>)
+    1280:	58cb      	ldr	r3, [r1, r3]
+    1282:	2180      	movs	r1, #128	; 0x80
+    1284:	0089      	lsls	r1, r1, #2
+    1286:	4319      	orrs	r1, r3
+    1288:	4b39      	ldr	r3, [pc, #228]	; (1370 <SystemInit+0x174>)
+    128a:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:187
+  /* PORTA_PCR18: ISF=0,MUX=0 */
+  PORTA_PCR18 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
+    128c:	4b39      	ldr	r3, [pc, #228]	; (1374 <SystemInit+0x178>)
+    128e:	4a39      	ldr	r2, [pc, #228]	; (1374 <SystemInit+0x178>)
+    1290:	6c91      	ldr	r1, [r2, #72]	; 0x48
+    1292:	4a39      	ldr	r2, [pc, #228]	; (1378 <SystemInit+0x17c>)
+    1294:	400a      	ands	r2, r1
+    1296:	649a      	str	r2, [r3, #72]	; 0x48
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:190
+  if (((SYSTEM_MCG_C2_VALUE) & MCG_C2_EREFS0_MASK) != 0x00U) {
+  /* PORTA_PCR19: ISF=0,MUX=0 */
+  PORTA_PCR19 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
+    1298:	4b36      	ldr	r3, [pc, #216]	; (1374 <SystemInit+0x178>)
+    129a:	4a36      	ldr	r2, [pc, #216]	; (1374 <SystemInit+0x178>)
+    129c:	6cd1      	ldr	r1, [r2, #76]	; 0x4c
+    129e:	4a36      	ldr	r2, [pc, #216]	; (1378 <SystemInit+0x17c>)
+    12a0:	400a      	ands	r2, r1
+    12a2:	64da      	str	r2, [r3, #76]	; 0x4c
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:192
+  }
+  MCG->SC = SYSTEM_MCG_SC_VALUE;       /* Set SC (fast clock internal reference divider) */
+    12a4:	4b35      	ldr	r3, [pc, #212]	; (137c <SystemInit+0x180>)
+    12a6:	2200      	movs	r2, #0
+    12a8:	721a      	strb	r2, [r3, #8]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:193
+  MCG->C2 = (SYSTEM_MCG_C2_VALUE) & (uint8_t)(~(MCG_C2_LP_MASK)); /* Set C2 (freq. range, ext. and int. reference selection etc.; low power bit is set later) */
+    12aa:	4b34      	ldr	r3, [pc, #208]	; (137c <SystemInit+0x180>)
+    12ac:	2224      	movs	r2, #36	; 0x24
+    12ae:	705a      	strb	r2, [r3, #1]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:194
+  OSC0->CR = SYSTEM_OSC0_CR_VALUE;     /* Set OSC_CR (OSCERCLK enable, oscillator capacitor load) */
+    12b0:	4b33      	ldr	r3, [pc, #204]	; (1380 <SystemInit+0x184>)
+    12b2:	2280      	movs	r2, #128	; 0x80
+    12b4:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:196
+  #if (MCG_MODE == MCG_MODE_PEE)
+  MCG->C1 = (SYSTEM_MCG_C1_VALUE) | MCG_C1_CLKS(0x02); /* Set C1 (clock source selection, FLL ext. reference divider, int. reference enable etc.) - PBE mode*/
+    12b6:	4b31      	ldr	r3, [pc, #196]	; (137c <SystemInit+0x180>)
+    12b8:	229a      	movs	r2, #154	; 0x9a
+    12ba:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:201
+  #else
+  MCG->C1 = SYSTEM_MCG_C1_VALUE;       /* Set C1 (clock source selection, FLL ext. reference divider, int. reference enable etc.) */
+  #endif
+  if (((SYSTEM_MCG_C2_VALUE) & MCG_C2_EREFS0_MASK) != 0x00U) {
+    while((MCG->S & MCG_S_OSCINIT0_MASK) == 0x00U) { /* Check that the oscillator is running */
+    12bc:	46c0      	nop			; (mov r8, r8)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:201 (discriminator 1)
+    12be:	4b2f      	ldr	r3, [pc, #188]	; (137c <SystemInit+0x180>)
+    12c0:	799b      	ldrb	r3, [r3, #6]
+    12c2:	b2db      	uxtb	r3, r3
+    12c4:	1c1a      	adds	r2, r3, #0
+    12c6:	2302      	movs	r3, #2
+    12c8:	4013      	ands	r3, r2
+    12ca:	d0f8      	beq.n	12be <SystemInit+0xc2>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:209
+  /* Check that the source of the FLL reference clock is the requested one. */
+  if (((SYSTEM_MCG_C1_VALUE) & MCG_C1_IREFS_MASK) != 0x00U) {
+    while((MCG->S & MCG_S_IREFST_MASK) == 0x00U) {
+    }
+  } else {
+    while((MCG->S & MCG_S_IREFST_MASK) != 0x00U) {
+    12cc:	46c0      	nop			; (mov r8, r8)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:209 (discriminator 1)
+    12ce:	4b2b      	ldr	r3, [pc, #172]	; (137c <SystemInit+0x180>)
+    12d0:	799b      	ldrb	r3, [r3, #6]
+    12d2:	b2db      	uxtb	r3, r3
+    12d4:	1c1a      	adds	r2, r3, #0
+    12d6:	2310      	movs	r3, #16
+    12d8:	4013      	ands	r3, r2
+    12da:	d1f8      	bne.n	12ce <SystemInit+0xd2>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:212
+    }
+  }
+  MCG->C4 = ((SYSTEM_MCG_C4_VALUE)  & (uint8_t)(~(MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK))) | (MCG->C4 & (MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK)); /* Set C4 (FLL output; trim values not changed) */
+    12dc:	4b27      	ldr	r3, [pc, #156]	; (137c <SystemInit+0x180>)
+    12de:	4a27      	ldr	r2, [pc, #156]	; (137c <SystemInit+0x180>)
+    12e0:	78d2      	ldrb	r2, [r2, #3]
+    12e2:	b2d1      	uxtb	r1, r2
+    12e4:	221f      	movs	r2, #31
+    12e6:	400a      	ands	r2, r1
+    12e8:	b2d2      	uxtb	r2, r2
+    12ea:	70da      	strb	r2, [r3, #3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:218
+#endif /* MCG_MODE */
+
+  /* Common for all MCG modes */
+
+  /* PLL clock can be used to generate clock for some devices regardless of clock generator (MCGOUTCLK) mode. */
+  MCG->C5 = (SYSTEM_MCG_C5_VALUE) & (uint8_t)(~(MCG_C5_PLLCLKEN0_MASK)); /* Set C5 (PLL settings, PLL reference divider etc.) */
+    12ec:	4b23      	ldr	r3, [pc, #140]	; (137c <SystemInit+0x180>)
+    12ee:	2201      	movs	r2, #1
+    12f0:	711a      	strb	r2, [r3, #4]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:219
+  MCG->C6 = (SYSTEM_MCG_C6_VALUE) & (uint8_t)~(MCG_C6_PLLS_MASK); /* Set C6 (PLL select, VCO divider etc.) */
+    12f2:	4b22      	ldr	r3, [pc, #136]	; (137c <SystemInit+0x180>)
+    12f4:	2200      	movs	r2, #0
+    12f6:	715a      	strb	r2, [r3, #5]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:228
+  /* BLPE, PEE and PBE MCG mode specific */
+
+#if (MCG_MODE == MCG_MODE_BLPE)
+  MCG->C2 |= (MCG_C2_LP_MASK);         /* Disable FLL and PLL in bypass mode */
+#elif ((MCG_MODE == MCG_MODE_PBE) || (MCG_MODE == MCG_MODE_PEE))
+  MCG->C6 |= (MCG_C6_PLLS_MASK);       /* Set C6 (PLL select, VCO divider etc.) */
+    12f8:	4b20      	ldr	r3, [pc, #128]	; (137c <SystemInit+0x180>)
+    12fa:	4a20      	ldr	r2, [pc, #128]	; (137c <SystemInit+0x180>)
+    12fc:	7952      	ldrb	r2, [r2, #5]
+    12fe:	b2d2      	uxtb	r2, r2
+    1300:	2140      	movs	r1, #64	; 0x40
+    1302:	430a      	orrs	r2, r1
+    1304:	b2d2      	uxtb	r2, r2
+    1306:	715a      	strb	r2, [r3, #5]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:229
+  while((MCG->S & MCG_S_LOCK0_MASK) == 0x00U) { /* Wait until PLL is locked*/
+    1308:	46c0      	nop			; (mov r8, r8)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:229 (discriminator 1)
+    130a:	4b1c      	ldr	r3, [pc, #112]	; (137c <SystemInit+0x180>)
+    130c:	799b      	ldrb	r3, [r3, #6]
+    130e:	b2db      	uxtb	r3, r3
+    1310:	1c1a      	adds	r2, r3, #0
+    1312:	2340      	movs	r3, #64	; 0x40
+    1314:	4013      	ands	r3, r2
+    1316:	d0f8      	beq.n	130a <SystemInit+0x10e>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:232
+  }
+  #if (MCG_MODE == MCG_MODE_PEE)
+  MCG->C1 &= (uint8_t)~(MCG_C1_CLKS_MASK);
+    1318:	4b18      	ldr	r3, [pc, #96]	; (137c <SystemInit+0x180>)
+    131a:	4a18      	ldr	r2, [pc, #96]	; (137c <SystemInit+0x180>)
+    131c:	7812      	ldrb	r2, [r2, #0]
+    131e:	b2d1      	uxtb	r1, r2
+    1320:	223f      	movs	r2, #63	; 0x3f
+    1322:	400a      	ands	r2, r1
+    1324:	b2d2      	uxtb	r2, r2
+    1326:	701a      	strb	r2, [r3, #0]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:255
+  }
+#elif ((MCG_MODE == MCG_MODE_FBE) || (MCG_MODE == MCG_MODE_PBE) || (MCG_MODE == MCG_MODE_BLPE))
+  while((MCG->S & MCG_S_CLKST_MASK) != 0x08U) { /* Wait until external reference clock is selected as MCG output */
+  }
+#elif (MCG_MODE == MCG_MODE_PEE)
+  while((MCG->S & MCG_S_CLKST_MASK) != 0x0CU) { /* Wait until output of the PLL is selected */
+    1328:	46c0      	nop			; (mov r8, r8)
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:255 (discriminator 1)
+    132a:	4b14      	ldr	r3, [pc, #80]	; (137c <SystemInit+0x180>)
+    132c:	799b      	ldrb	r3, [r3, #6]
+    132e:	b2db      	uxtb	r3, r3
+    1330:	1c1a      	adds	r2, r3, #0
+    1332:	230c      	movs	r3, #12
+    1334:	4013      	ands	r3, r2
+    1336:	2b0c      	cmp	r3, #12
+    1338:	d1f7      	bne.n	132a <SystemInit+0x12e>
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:271
+    NVIC_EnableIRQ(MCG_IRQn);          /* Enable PLL loss of lock interrupt request */
+  }
+#endif
+
+    //初始化后，开始PORT模块时钟
+    SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK
+    133a:	4a05      	ldr	r2, [pc, #20]	; (1350 <SystemInit+0x154>)
+    133c:	4904      	ldr	r1, [pc, #16]	; (1350 <SystemInit+0x154>)
+    133e:	4b0c      	ldr	r3, [pc, #48]	; (1370 <SystemInit+0x174>)
+    1340:	58cb      	ldr	r3, [r1, r3]
+    1342:	21f8      	movs	r1, #248	; 0xf8
+    1344:	0189      	lsls	r1, r1, #6
+    1346:	4319      	orrs	r1, r3
+    1348:	4b09      	ldr	r3, [pc, #36]	; (1370 <SystemInit+0x174>)
+    134a:	50d1      	str	r1, [r2, r3]
+C:\Users\PNN\Downloads\M0+2-160612\ch11-KL25-SPI-I2C-TSI\ch11-KL25-SPI-I2C-TSI\KL25_I2C_MASTER(20160511)\Debug/../03_MCU/system_MKL25Z4.c:276
+  			  | SIM_SCGC5_PORTB_MASK
+  			  | SIM_SCGC5_PORTC_MASK
+  			  | SIM_SCGC5_PORTD_MASK
+  			  | SIM_SCGC5_PORTE_MASK;
+}
+    134c:	46bd      	mov	sp, r7
+    134e:	bd80      	pop	{r7, pc}
+    1350:	40047000 	.word	0x40047000
+    1354:	4007f000 	.word	0x4007f000
+    1358:	4007d000 	.word	0x4007d000
+    135c:	4007e000 	.word	0x4007e000
+    1360:	00001044 	.word	0x00001044
+    1364:	10010000 	.word	0x10010000
+    1368:	00001004 	.word	0x00001004
+    136c:	fcffffff 	.word	0xfcffffff
+    1370:	00001038 	.word	0x00001038
+    1374:	40049000 	.word	0x40049000
+    1378:	fefff8ff 	.word	0xfefff8ff
+    137c:	40064000 	.word	0x40064000
+    1380:	40065000 	.word	0x40065000
+$d():
+    1384:	73696854 	.word	0x73696854
+    1388:	20736920 	.word	0x20736920
+    138c:	20633269 	.word	0x20633269
+    1390:	74736554 	.word	0x74736554
+    1394:	000a0d21 	.word	0x000a0d21
+    1398:	73726556 	.word	0x73726556
+    139c:	336e6f69 	.word	0x336e6f69
+    13a0:	000a342e 	.word	0x000a342e
+
+000013a4 <UART_ARR>:
+    13a4:	4006b000 4006c000                       ...@...@
+
+000013ac <data>:
+    13ac:	5496142c 254b1f64 00005f32              ,..Td.K%2_..
+
+000013b8 <PORT_ARR>:
+    13b8:	40049000 4004a000 4004b000 4004c000     ...@...@...@...@
+    13c8:	4004d000                                ...@
+
+000013cc <GPIO_ARR>:
+    13cc:	400ff000 400ff040 400ff080 400ff0c0     ...@@..@...@...@
+    13dc:	400ff100                                ...@

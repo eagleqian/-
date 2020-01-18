@@ -1,0 +1,9 @@
+E:\ls\K60_USB_book\My USBTest by ZLL 2010年9月28日144439\USBTest\obj\Debug\USBTest.exe
+E:\ls\K60_USB_book\My USBTest by ZLL 2010年9月28日144439\USBTest\obj\Debug\USBTest.pdb
+E:\ls\K60_USB_book\My USBTest by ZLL 2010年9月28日144439\USBTest\bin\Debug\USBTest.exe
+E:\ls\K60_USB_book\My USBTest by ZLL 2010年9月28日144439\USBTest\bin\Debug\USBTest.pdb
+E:\ls\K60_USB_book\My USBTest by ZLL 2010年9月28日144439\USBTest\bin\Debug\LibUsbDotNet.dll
+E:\ls\K60_USB_book\My USBTest by ZLL 2010年9月28日144439\USBTest\obj\Debug\ResolveAssemblyReference.cache
+E:\ls\K60_USB_book\My USBTest by ZLL 2010年9月28日144439\USBTest\obj\Debug\USBTest.USBTest.resources
+E:\ls\K60_USB_book\My USBTest by ZLL 2010年9月28日144439\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+E:\ls\K60_USB_book\My USBTest by ZLL 2010年9月28日144439\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache

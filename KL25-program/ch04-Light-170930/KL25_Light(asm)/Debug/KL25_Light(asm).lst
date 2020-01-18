@@ -1,0 +1,1946 @@
+
+KL25_Light(asm).elf:     file format elf32-littlearm
+KL25_Light(asm).elf
+architecture: arm, flags 0x00000012:
+EXEC_P, HAS_SYMS
+start address 0x00000a95
+
+Program Header:
+    LOAD off    0x000000b4 vaddr 0x00000000 paddr 0x00000000 align 2**2
+         filesz 0x000000c0 memsz 0x000000c0 flags r--
+    LOAD off    0x00000174 vaddr 0x00000400 paddr 0x00000400 align 2**0
+         filesz 0x00000010 memsz 0x00000010 flags r--
+    LOAD off    0x00000184 vaddr 0x00000800 paddr 0x00000800 align 2**2
+         filesz 0x000004a0 memsz 0x000004a0 flags r-x
+    LOAD off    0x00000624 vaddr 0x1ffff000 paddr 0x1ffff000 align 2**0
+         filesz 0x00000000 memsz 0x00000800 flags rw-
+private flags = 5000002: [Version5 EABI] [has entry point]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn  Flags
+  0 .interrupts   000000c0  00000000  00000000  000000b4  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .flash_config 00000010  00000400  00000400  00000174  2**0  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .text         000004a0  00000800  00000800  00000184  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .heap         00000400  1ffff000  1ffff000  00000624  2**0  ALLOC
+  4 .stack        00000400  1ffff400  1ffff400  00000624  2**0  ALLOC
+  5 .ARM.attributes 0000002e  00000000  00000000  00000624  2**0  CONTENTS, READONLY
+  6 .debug_line   0000063b  00000000  00000000  00000652  2**0  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   000005f0  00000000  00000000  00000c8d  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 00000126  00000000  00000000  0000127d  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_aranges 00000068  00000000  00000000  000013a8  2**3  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000030  00000000  00000000  00001410  2**3  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_macro  00009238  00000000  00000000  00001440  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_str    000319e6  00000000  00000000  0000a678  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .comment      00000070  00000000  00000000  0003c05e  2**0  CONTENTS, READONLY
+ 14 .debug_frame  00000030  00000000  00000000  0003c0d0  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00000000 l    d  .interrupts	00000000 .interrupts
+00000400 l    d  .flash_config	00000000 .flash_config
+00000800 l    d  .text	00000000 .text
+1ffff000 l    d  .heap	00000000 .heap
+1ffff400 l    d  .stack	00000000 .stack
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./03_MCU/startup_MKL25Z4.o
+00000000 l    df *ABS*	00000000 ./08_Source/main.o
+00000000 l       *ABS*	00000000 PTA_NUM
+00000100 l       *ABS*	00000000 PTB_NUM
+00000200 l       *ABS*	00000000 PTC_NUM
+00000300 l       *ABS*	00000000 PTD_NUM
+00000400 l       *ABS*	00000000 PTE_NUM
+00000000 l       *ABS*	00000000 GPIO_IN
+00000001 l       *ABS*	00000000 GPIO_OUTPUT
+00000008 l       *ABS*	00000000 LOW_LEVEL
+0000000c l       *ABS*	00000000 HIGH_LEVEL
+00000009 l       *ABS*	00000000 RISING_EDGE
+0000000a l       *ABS*	00000000 FALLING_EDGE
+0000000b l       *ABS*	00000000 DOUBLE_EDGE
+40049000 l       *ABS*	00000000 PORT_PCR_BASE
+400ff000 l       *ABS*	00000000 PORT_GPIO
+00000800 l       .text	00000000 gpio_port_pin_resolution
+00000812 l       .text	00000000 gpio_init
+00000852 l       .text	00000000 gpio_init_1
+0000085a l       .text	00000000 gpio_init_2
+0000086e l       .text	00000000 gpio_init_3
+00000876 l       .text	00000000 gpio_init_4
+00000878 l       .text	00000000 gpio_set
+00000896 l       .text	00000000 gpio_set_1
+000008a0 l       .text	00000000 gpio_set_2
+000008a2 l       .text	00000000 gpio_get
+000008c4 l       .text	00000000 gpio_get_1
+000008c6 l       .text	00000000 gpio_get_2
+000008c8 l       .text	00000000 gpio_reverse
+000008e8 l       .text	00000000 gpio_pull
+0000091c l       .text	00000000 gpio_pull_0
+0000092a l       .text	00000000 gpio_pull_1
+00000938 l       .text	00000000 gpio_pull_2
+0000093c l       .text	00000000 gpio_pull_3
+0000093e l       .text	00000000 gpio_drive_strength
+00000966 l       .text	00000000 gpio_enable_int
+000009a0 l       .text	00000000 gpio_enable_int_0
+000009c6 l       .text	00000000 gpio_enable_int_1
+000009e8 l       .text	00000000 gpio_enable_int_2
+000009ea l       .text	00000000 gpio_disable_int
+00000a20 l       .text	00000000 gpio_disable_int_0
+00000a2c l       .text	00000000 gpio_disable_int_1
+00000a34 l       .text	00000000 gpio_disable_int_2
+00000113 l       *ABS*	00000000 LIGHT_RED
+00000109 l       *ABS*	00000000 LIGHT_BLUE
+00000112 l       *ABS*	00000000 LIGHT_GREEN
+00000000 l       *ABS*	00000000 LIGHT_ON
+00000001 l       *ABS*	00000000 LIGHT_OFF
+00000a36 l       .text	00000000 light_init
+00000a40 l       .text	00000000 light_control
+00000a4a l       .text	00000000 light_change
+00000005 l       *ABS*	00000000 RUN_COUNTER_MAX
+00000aec l       .text	00000000 main_loop1
+00000af0 l       .text	00000000 loop
+00000000 l    df *ABS*	00000000 system_MKL25Z4.c
+00000000 l    df *ABS*	00000000 
+00000400 l       *ABS*	00000000 STACK_SIZE
+1ffff400 l       .heap	00000000 __HeapLimit
+00000400 l       *ABS*	00000000 HEAP_SIZE
+00000ca0 l       .text	00000000 __DATA_ROM
+20002c00 l       *ABS*	00000000 __StackLimit
+1ffff000 g       .heap	00000000 __HeapBase
+1ffff000 g       .text	00000000 __data_start__
+00000ad8  w    F .text	00000004 I2C0_IRQHandler
+00000ad8  w    F .text	00000004 HardFault_Handler
+00000ad8  w    F .text	00000004 SysTick_Handler
+00000ad8  w    F .text	00000004 PendSV_Handler
+00000ad8  w    F .text	00000004 NMI_Handler
+00000ca0 g       .text	00000000 __exidx_end
+00000ad8  w    F .text	00000004 I2C1_IRQHandler
+00000ad8  w    F .text	00000004 UART1_IRQHandler
+00000ca0 g       .text	00000000 __etext
+00000ad8  w    F .text	00000004 DMA2_IRQHandler
+00000ad8  w    F .text	00000004 TPM0_IRQHandler
+00000ad8  w    F .text	00000004 LLWU_IRQHandler
+00000ad8  w    F .text	00000004 TSI0_IRQHandler
+00000ad8  w    F .text	00000004 UART0_IRQHandler
+00000ca0 g       .text	00000000 __DTOR_END__
+00000ad8  w    F .text	00000004 ADC0_IRQHandler
+00000ad8  w    F .text	00000004 Reserved39_IRQHandler
+1ffff000 g       .text	00000000 __START_BSS
+1ffff000 g       .text	00000000 __bss_start__
+00000ad8  w    F .text	00000004 SPI1_IRQHandler
+00000ad8  w    F .text	00000004 DefaultISR
+00000ad8  w    F .text	00000004 PORTD_IRQHandler
+00000ca0 g       .text	00000000 __exidx_start
+00000ad8  w    F .text	00000004 TPM2_IRQHandler
+00000ad8  w    F .text	00000004 RTC_IRQHandler
+00000a94  w    F .text	00000044 Reset_Handler
+00000ad8  w    F .text	00000004 RTC_Seconds_IRQHandler
+00000ad8  w    F .text	00000004 MCG_IRQHandler
+00000ad8  w    F .text	00000004 UART2_IRQHandler
+1ffff000 g       .text	00000000 __data_end__
+00000ca0 g       .text	00000000 __CTOR_LIST__
+1ffff000 g       .text	00000000 __bss_end__
+00000ad8  w    F .text	00000004 Reserved20_IRQHandler
+00000ad8  w    F .text	00000004 USB0_IRQHandler
+00000000 g       .interrupts	000000c0 __isr_vector
+00000ae0 g     F .text	00000000 main
+00000ad8  w    F .text	00000004 PIT_IRQHandler
+00000ad8  w    F .text	00000004 SVC_Handler
+1ffff000 g       .text	00000000 __DATA_RAM
+1ffff000 g       .heap	00000000 __end__
+00000ca0 g       .text	00000000 __CTOR_END__
+00000ad8  w    F .text	00000004 DMA3_IRQHandler
+00000ca0 g       .text	00000000 __DTOR_LIST__
+1ffff000 g       .text	00000000 __END_BSS
+00000b00 g     F .text	000001a0 SystemInit
+00000ad8  w    F .text	00000004 DMA0_IRQHandler
+00000ad8  w    F .text	00000004 DAC0_IRQHandler
+20003000 g       *ABS*	00000000 __StackTop
+1ffff000 g       .text	00000000 _mtb_end
+00000ca0 g       .text	00000000 __DATA_END
+00000ad8  w    F .text	00000004 Reserved45_IRQHandler
+00000ad8  w    F .text	00000004 TPM1_IRQHandler
+00000ad8  w    F .text	00000004 LVD_LVW_IRQHandler
+00000ad8  w    F .text	00000004 SPI0_IRQHandler
+00000ad8  w    F .text	00000004 PORTA_IRQHandler
+00000000 g       .interrupts	00000000 __VECTOR_TABLE
+00000ad8  w    F .text	00000004 FTFA_IRQHandler
+1ffff000 g       .text	00000000 _mtb_start
+00000ad8  w    F .text	00000004 LPTMR0_IRQHandler
+00000ad8  w    F .text	00000004 CMP0_IRQHandler
+00000ad8  w    F .text	00000004 DMA1_IRQHandler
+
+
+
+Disassembly of section .text:
+
+00000800 <gpio_port_pin_resolution>:
+gpio_port_pin_resolution():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:16
+#参数说明：r0：端口号|引脚号,例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+#功能概要：将传进参数r0进行解析，得出具体端口号与引脚号（如：PORTB|(5)
+#          解析为PORTB与5，并将其分别赋值给r0与r1）。
+#======================================================================
+gpio_port_pin_resolution:
+    push {lr}             @保存现场，pc(lr)入栈
+ 800:	b500      	push	{lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:18
+    #------------------------------------------------------------------------
+    mov r4,r0             @r4=r0=端口号|引脚号
+ 802:	1c04      	adds	r4, r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:19
+    mov r5,r0             @r5=r0=端口号|引脚号
+ 804:	1c05      	adds	r5, r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:20
+    lsr r4,#8             @逻辑左移获得端口号，r4=端口号
+ 806:	0a24      	lsrs	r4, r4, #8
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:21
+    mov r0,r4             @r0=r4=端口号
+ 808:	1c20      	adds	r0, r4, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:22
+    mov r6,#0x000000ff
+ 80a:	26ff      	movs	r6, #255	; 0xff
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:23
+    and r5,r6             @r5=引脚号
+ 80c:	4035      	ands	r5, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:24
+    mov r1,r5             @r1=r5=引脚号
+ 80e:	1c29      	adds	r1, r5, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:26
+    #-----------------------------------------------------------------------
+    pop {pc}              @恢复现场，lr出栈到pc（即子程序返回）
+ 810:	bd00      	pop	{pc}
+
+00000812 <gpio_init>:
+gpio_init():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:44
+#          还指定初始状态是低电平或高电平
+# 备    注：端口x的每个引脚控制寄存器PORTx_PCRn的地址=PORT_PCR_BASE+x*0x1000+n*4
+#           其中:x=0~4，对应A~E;n=0~31
+#======================================================================
+gpio_init:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈
+ 812:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:47
+    #------------------------------------------------------------------------
+    #从入口参数r0中解析出端口号引脚号，分别放在r0和r1中
+    bl gpio_port_pin_resolution  @调用内部解析函数,r0=端口号,r1=引脚号
+ 814:	f7ff fff4 	bl	800 <gpio_port_pin_resolution>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:49
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+ 818:	1c07      	adds	r7, r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:50
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+ 81a:	4c8e      	ldr	r4, [pc, #568]	; (a54 <light_change+0xa>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:51
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+ 81c:	4367      	muls	r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:52
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE)
+ 81e:	4c8e      	ldr	r4, [pc, #568]	; (a58 <light_change+0xe>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:53
+    add r7,r4                    @r7=待操作端口的第一个PCR寄存器的地址
+ 820:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:55
+    #获得待操作引脚PCR寄存器的地址
+    mov r4,r1                    @r4=r1=引脚号
+ 822:	1c0c      	adds	r4, r1, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:56
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+ 824:	2504      	movs	r5, #4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:57
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+ 826:	436c      	muls	r4, r5
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:58
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+ 828:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:60
+    #待操作引脚PCR寄存器的MUX位（10-8位）清0
+    ldr r4,=0xfffff8ff
+ 82a:	4c8c      	ldr	r4, [pc, #560]	; (a5c <light_change+0x12>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:61
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+ 82c:	683d      	ldr	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:62
+    and r5,r4                    @待操作引脚PCR寄存器的MUX字段清零，其余位不变
+ 82e:	4025      	ands	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:64
+    #待操作引脚PCR寄存器的MUX位（10-8位）置001,即设置为GPIO功能
+    ldr r4,=0x00000100
+ 830:	4c8b      	ldr	r4, [pc, #556]	; (a60 <light_change+0x16>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:65
+    orr r5,r4                    @或运算设MUX=001，引脚被配置为GPIO功能
+ 832:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:66
+    str r5,[r7]                  @将r5中的MUX值更新到待操作引脚PCR寄存器中
+ 834:	603d      	str	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:68
+    #求待操作GPIO口的基地址（也就是PDOR的地址）
+    ldr r4,=PORT_GPIO            @r4=PORTA基地址（GPIO的基地址）
+ 836:	4c8b      	ldr	r4, [pc, #556]	; (a64 <light_change+0x1a>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:69
+    mov r7,r0                    @r7=r0=端口号
+ 838:	1c07      	adds	r7, r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:70
+    mov r6,#0x40                 @r6=各GPIO口基地址差值（40h）
+ 83a:	2640      	movs	r6, #64	; 0x40
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:71
+    mul r6,r6,r7                 @r6=待操作GPIO口的地址偏移
+ 83c:	437e      	muls	r6, r7
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:72
+    add r4,r6                    @r4=待操作GPIO口的地址,也就是PDOR的地址
+ 83e:	19a4      	adds	r4, r4, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:75
+
+    #根据入口参数r3，通过对PDOR的编程，设置相应引脚为低电平或者高电平
+    mov r6,#1
+ 840:	2601      	movs	r6, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:76
+    lsl r6,r6,r1                 @r6=待操作的PDOR掩码（为1的位由r1决定）
+ 842:	408e      	lsls	r6, r1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:77
+    cmp r3,#1
+ 844:	2b01      	cmp	r3, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:78
+    bne gpio_init_1              @r3≠1转gpio_init_1，r3=1继续执行
+ 846:	d104      	bne.n	852 <gpio_init_1>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:80
+    #r3=1，设置PDOR相应位为1
+    ldr r5,[r4]                  @r5=PDOR中内容
+ 848:	6825      	ldr	r5, [r4, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:81
+    orr r5,r6                    @或运算设置PDOR相应位为1
+ 84a:	4335      	orrs	r5, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:82
+    str r5,[r4]                  @将r5中的值更新到待操作端口PDOR寄存器中
+ 84c:	6025      	str	r5, [r4, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:83
+    bl gpio_init_2
+ 84e:	f000 f804 	bl	85a <gpio_init_2>
+
+00000852 <gpio_init_1>:
+gpio_init_1():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:86
+gpio_init_1:
+    #r3=0，设置PDOR相应位为0
+    mvn r6,r6                    @r6进行取反，即0变1,1变0
+ 852:	43f6      	mvns	r6, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:87
+    ldr r5,[r4]                  @r5=PDOR中内容
+ 854:	6825      	ldr	r5, [r4, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:88
+    and r5,r6                    @与运算设置PDOR相应位为0
+ 856:	4035      	ands	r5, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:89
+    str r5,[r4]                  @将r5中的值更新到待操作端口PDOR寄存器中
+ 858:	6025      	str	r5, [r4, #0]
+
+0000085a <gpio_init_2>:
+gpio_init_2():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:91
+gpio_init_2:
+    add r4,#0x14                 @r4=待操作GPIO口PDDR寄存器的地址
+ 85a:	3414      	adds	r4, #20
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:93
+    #根据入口参数r2，通过对PDDR进行编程，确定引脚为输入或者输出（0为输入，1为输出）
+    mov r6,#1
+ 85c:	2601      	movs	r6, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:94
+    lsl r6,r6,r1                 @r6=待操作引脚的PDDR掩码（为1的位由r1决定）
+ 85e:	408e      	lsls	r6, r1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:95
+    cmp r2,#1
+ 860:	2a01      	cmp	r2, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:96
+    bne gpio_init_3              @r2≠1转gpio_init_3，r2=1继续执行
+ 862:	d104      	bne.n	86e <gpio_init_3>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:98
+    #r2=1，设置PDDR相应位为1
+    ldr r5,[r4]                  @r5=PDDR中内容
+ 864:	6825      	ldr	r5, [r4, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:99
+    orr r5,r6                    @或运算设置PDDR相应位为1
+ 866:	4335      	orrs	r5, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:100
+    str r5,[r4]                  @将r5中的值更新到待操作端口PDDR寄存器中
+ 868:	6025      	str	r5, [r4, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:101
+    bl gpio_init_4
+ 86a:	f000 f804 	bl	876 <gpio_init_4>
+
+0000086e <gpio_init_3>:
+gpio_init_3():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:104
+gpio_init_3:
+    #r2=0，设置PDDR相应位为0
+    mvn r6,r6                    @r6进行取反,即0变1,1变0
+ 86e:	43f6      	mvns	r6, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:105
+    ldr r5,[r4]                  @r5=PDDR中内容
+ 870:	6825      	ldr	r5, [r4, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:106
+    and r5,r6                    @与运算设置PDDR相应位为0
+ 872:	4035      	ands	r5, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:107
+    str r5,[r4]                  @将r5中的值更新到待操作端口PDDR寄存器中
+ 874:	6025      	str	r5, [r4, #0]
+
+00000876 <gpio_init_4>:
+gpio_init_4():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:110
+gpio_init_4:
+    #-----------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+ 876:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+00000878 <gpio_set>:
+gpio_set():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:120
+# 参数说明：r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+#         r3：希望设置的端口引脚状态（0=低电平，1=高电平）
+# 功能概要： 当指定端口引脚被定义为GPIO功能且为输出时，本函数设定引脚状态
+#======================================================================
+gpio_set:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈
+ 878:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:123
+    #------------------------------------------------------------------------
+    #从入口参数r0中解析出端口号引脚号，分别放在r0和r1中
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+ 87a:	f7ff ffc1 	bl	800 <gpio_port_pin_resolution>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:125
+    #通过对PSOR进行编程，将PDOR相应位置1
+    mov r5,r0                    @r5=r0=端口号
+ 87e:	1c05      	adds	r5, r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:126
+    mov r6,#0x40                 @r6=各GPIO口的基地址差值（40h）
+ 880:	2640      	movs	r6, #64	; 0x40
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:127
+    mul r6,r6,r5                 @r6=待操作GPIO口与PORTA的地址偏移
+ 882:	436e      	muls	r6, r5
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:128
+    cmp r3,#1                    @判断引脚初始状态
+ 884:	2b01      	cmp	r3, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:129
+    bne gpio_set_1               @若为低电平，转到gpio_set_1，将PDOR相应位清0
+ 886:	d106      	bne.n	896 <gpio_set_1>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:130
+    ldr r5,=PORT_GPIO+0x04       @r5=PORTA的输出置1寄存器PSOR的地址
+ 888:	4d77      	ldr	r5, [pc, #476]	; (a68 <light_change+0x1e>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:131
+    add r5,r6                    @r5=待操作引脚PSOR的地址
+ 88a:	19ad      	adds	r5, r5, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:132
+    mov r6,#1
+ 88c:	2601      	movs	r6, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:133
+    lsl r6,r6,r1                 @r6=待操作引脚的PSOR掩码（为1的位由r1决定）
+ 88e:	408e      	lsls	r6, r1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:134
+    str r6,[r5]                  @将相应引脚的PSOR寄存器置1
+ 890:	602e      	str	r6, [r5, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:135
+    bl  gpio_set_2
+ 892:	f000 f805 	bl	8a0 <gpio_set_2>
+
+00000896 <gpio_set_1>:
+gpio_set_1():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:138
+gpio_set_1:
+    #通过对PCOR进行编程，将PDOR相应位清0
+    ldr r5,=PORT_GPIO+0x08       @r5=PORTA的PCOR的地址
+ 896:	4d75      	ldr	r5, [pc, #468]	; (a6c <light_change+0x22>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:139
+    add r5,r6                    @r5=待操作引脚PCOR的地址
+ 898:	19ad      	adds	r5, r5, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:140
+    mov r6,#1
+ 89a:	2601      	movs	r6, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:141
+    lsl r6,r6,r1                 @r6=待操作的PCOR掩码（为1的位由r1决定）
+ 89c:	408e      	lsls	r6, r1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:142
+    str r6,[r5]                  @将相应引脚的PCOR寄存器置1
+ 89e:	602e      	str	r6, [r5, #0]
+
+000008a0 <gpio_set_2>:
+gpio_set_2():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:145
+gpio_set_2:
+    #------------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+ 8a0:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+000008a2 <gpio_get>:
+gpio_get():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:154
+# 函数返回：r2:指定端口引脚的状态（1或0）
+# 参数说明：r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+# 功能概要：当指定端口引脚被定义为GPIO功能且为输入时，本函数获取指定引脚状态
+#======================================================================
+gpio_get:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈
+ 8a2:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:156
+    #------------------------------------------------------------------------
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+ 8a4:	f7ff ffac 	bl	800 <gpio_port_pin_resolution>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:158
+    #求待操作GPIO口的基地址（也就是PDIR的地址）
+    mov r5,r0                    @r5=r0=端口号
+ 8a8:	1c05      	adds	r5, r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:159
+    mov r6,#0x40                 @r6=各GPIO口基地址差值（40h）
+ 8aa:	2640      	movs	r6, #64	; 0x40
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:160
+    mul r6,r6,r5                 @r6=待操作GPIO口与PORTA的地址偏移
+ 8ac:	436e      	muls	r6, r5
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:161
+    ldr r5,=PORT_GPIO+0x10       @r5=PORTA的PDIR地址
+ 8ae:	4d70      	ldr	r5, [pc, #448]	; (a70 <light_change+0x26>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:162
+    add r5,r6                    @r5=待操作GPIO口的PDIR的地址
+ 8b0:	19ad      	adds	r5, r5, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:164
+    #读取PDIR相应位
+    mov r6,#1
+ 8b2:	2601      	movs	r6, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:165
+    lsl r6,r6,r1                 @r6=待操作引脚的PDIR掩码
+ 8b4:	408e      	lsls	r6, r1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:166
+    ldr r4,[r5]                  @r4=PDIR中内容
+ 8b6:	682c      	ldr	r4, [r5, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:167
+    and r4,r6
+ 8b8:	4034      	ands	r4, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:168
+    cmp r4,#0                    @判断引脚状态是否为低电平
+ 8ba:	2c00      	cmp	r4, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:169
+    bne gpio_get_1
+ 8bc:	d102      	bne.n	8c4 <gpio_get_1>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:170
+    mov r2,#0                    @r2=指定引脚状态
+ 8be:	2200      	movs	r2, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:171
+    bl gpio_get_2
+ 8c0:	f000 f801 	bl	8c6 <gpio_get_2>
+
+000008c4 <gpio_get_1>:
+gpio_get_1():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:173
+gpio_get_1:
+    mov r2,#1                    @r2=指定引脚状态
+ 8c4:	2201      	movs	r2, #1
+
+000008c6 <gpio_get_2>:
+gpio_get_2():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:176
+gpio_get_2:
+    #------------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+ 8c6:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+000008c8 <gpio_reverse>:
+gpio_reverse():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:185
+# 函数返回：无
+# 参数说明：r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+# 功能概要：反转指定引脚状态
+#======================================================================
+gpio_reverse:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈
+ 8c8:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:187
+    #------------------------------------------------------------------------
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号，r1=引脚号
+ 8ca:	f7ff ff99 	bl	800 <gpio_port_pin_resolution>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:189
+    #求待操作GPIO口的基地址（也就是PTOR的地址）
+    mov r5,r0                    @r5=r0=端口号
+ 8ce:	1c05      	adds	r5, r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:190
+    mov r6,#0x40                 @r6=各GPIO口基地址差值（40h）
+ 8d0:	2640      	movs	r6, #64	; 0x40
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:191
+    mul r6,r6,r5                 @r6=待操作GPIO口的地址偏移
+ 8d2:	436e      	muls	r6, r5
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:192
+    ldr r5,=PORT_GPIO+0x0c       @r5=PORTA的PTOR的地址
+ 8d4:	4d67      	ldr	r5, [pc, #412]	; (a74 <light_change+0x2a>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:193
+    add r5,r6                    @r5=待操作引脚PTOR的地址
+ 8d6:	19ad      	adds	r5, r5, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:195
+    #**********此段代码仅为观察PTOR对PTDR的影响，无实际意义，R7保存修改之前PTDR寄存器的值**************
+    ldr r4,=PORT_GPIO            @r4=PORTA的PTDR的地址
+ 8d8:	4c62      	ldr	r4, [pc, #392]	; (a64 <light_change+0x1a>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:196
+    add r4,r6                    @r4=待操作引脚PTDR的地址
+ 8da:	19a4      	adds	r4, r4, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:197
+    ldr r7,[r4]                  @r7=引脚输出数据寄存器内容，以待观察变化
+ 8dc:	6827      	ldr	r7, [r4, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:200
+    #*******************************************************************************************
+    #设置PTOR相应位为1
+    mov r6,#1
+ 8de:	2601      	movs	r6, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:201
+    lsl r6,r6,r1                 @r6=待操作的PTOR掩码
+ 8e0:	408e      	lsls	r6, r1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:202
+    str r6,[r5]                  @将r6中的值更新到待操作端口PTOR寄存器中
+ 8e2:	602e      	str	r6, [r5, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:204
+    #***********此段代码仅为观察PTOR对PTDR的影响，无实际意义，R7保存修改之后PTDR寄存器的值***********
+    ldr r7,[r4]                  @r7=引脚输出数据寄存器内容，观察变化操作PTOR寄存器后对PTDR的影响
+ 8e4:	6827      	ldr	r7, [r4, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:207
+    #*****************************************************************************************
+    #------------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+ 8e6:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+000008e8 <gpio_pull>:
+gpio_pull():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:217
+# 参数说明：r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+#           r3:引脚拉高低电平（ 0=拉低电平，1=拉高电平，2=关闭上下拉）
+# 功能概要：使指定引脚上拉高电平、下拉低电平或关闭上下拉
+#======================================================================
+gpio_pull:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈	            #------------------------------------------------------------------------
+ 8e8:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:218
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+ 8ea:	f7ff ff89 	bl	800 <gpio_port_pin_resolution>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:220
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+ 8ee:	1c07      	adds	r7, r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:221
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+ 8f0:	4c58      	ldr	r4, [pc, #352]	; (a54 <light_change+0xa>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:222
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+ 8f2:	4367      	muls	r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:223
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE）
+ 8f4:	4c58      	ldr	r4, [pc, #352]	; (a58 <light_change+0xe>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:224
+    add r7,r4                    @r7=待操作端口的第一个PCR寄存器的地址
+ 8f6:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:226
+    #获得待操作引脚PCR寄存器的地址
+    mov r4,r1                    @r4=r1=引脚号
+ 8f8:	1c0c      	adds	r4, r1, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:227
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+ 8fa:	2504      	movs	r5, #4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:228
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+ 8fc:	436c      	muls	r4, r5
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:229
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+ 8fe:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:231
+    #待操作引脚PCR寄存器的MUX位（10-8位）清0
+    ldr r4,=0xfffff8ff
+ 900:	4c56      	ldr	r4, [pc, #344]	; (a5c <light_change+0x12>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:232
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+ 902:	683d      	ldr	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:233
+    and r5,r4                    @待操作引脚PCR寄存器的MUX字段清零，其余位不变
+ 904:	4025      	ands	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:235
+    #待操作引脚PCR寄存器的MUX位（10-8位）置001,即设置为GPIO功能
+    ldr r4,=0x00000100
+ 906:	4c56      	ldr	r4, [pc, #344]	; (a60 <light_change+0x16>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:236
+    orr r5,r4                    @或运算设MUX=001，引脚被配置为GPIO功能
+ 908:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:237
+    str r5,[r7]                  @将r5中的MUX值更新到待操作引脚PCR寄存器中
+ 90a:	603d      	str	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:239
+    #根据入口参数r3，通过对PCR的PE及PS位的编程，使能或关闭相应引脚的上下拉功能
+    cmp r3,#0
+ 90c:	2b00      	cmp	r3, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:240
+    beq gpio_pull_0              @r3=0，转到下拉配置子程序
+ 90e:	d005      	beq.n	91c <gpio_pull_0>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:241
+    cmp r3,#1
+ 910:	2b01      	cmp	r3, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:242
+	beq gpio_pull_1              @r3=1，转到上拉配置子程序
+ 912:	d00a      	beq.n	92a <gpio_pull_1>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:243
+	cmp r3,#2
+ 914:	2b02      	cmp	r3, #2
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:244
+	beq gpio_pull_2              @r3=2，转到关闭上下拉子程序
+ 916:	d00f      	beq.n	938 <gpio_pull_2>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:245
+	bl gpio_pull_3               @r3=其他值，函数直接返回
+ 918:	f000 f810 	bl	93c <gpio_pull_3>
+
+0000091c <gpio_pull_0>:
+gpio_pull_0():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:247
+gpio_pull_0:
+	ldr r4,=0x00000002
+ 91c:	2402      	movs	r4, #2
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:248
+	orr r5,r4                    @或运算，将对应引脚PCR寄存器的PE位置1，使能引脚上下拉功能
+ 91e:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:249
+	ldr r4,=0xFFFFFFFE
+ 920:	4c55      	ldr	r4, [pc, #340]	; (a78 <light_change+0x2e>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:250
+	and r5,r4                    @与运算，将对应引脚PCR寄存器的PS位清0，使指定引脚下拉低电平
+ 922:	4025      	ands	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:251
+	str r5,[r7]                  @将r5中的PE、PS值更新到待操作引脚PCR寄存器中
+ 924:	603d      	str	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:252
+	bl gpio_pull_3
+ 926:	f000 f809 	bl	93c <gpio_pull_3>
+
+0000092a <gpio_pull_1>:
+gpio_pull_1():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:254
+gpio_pull_1:
+	ldr r4,=0x00000002
+ 92a:	2402      	movs	r4, #2
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:255
+	orr r5,r4                    @或运算，将对应引脚PCR寄存器的PE位置1，使能引脚上下拉功能
+ 92c:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:256
+	ldr r4,=0x00000001
+ 92e:	2401      	movs	r4, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:257
+	orr r5,r4                    @或运算，将对应引脚PCR寄存器的PS位置1，使指定引脚上拉高电平
+ 930:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:258
+	str r5,[r7]                  @将r5中的PE、PS值更新到待操作引脚PCR寄存器中
+ 932:	603d      	str	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:259
+	bl gpio_pull_3
+ 934:	f000 f802 	bl	93c <gpio_pull_3>
+
+00000938 <gpio_pull_2>:
+gpio_pull_2():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:261
+gpio_pull_2:
+	ldr r4,=0xFFFFFFFD
+ 938:	4c50      	ldr	r4, [pc, #320]	; (a7c <light_change+0x32>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:262
+	and r5,r4                    @与运算，将对应引脚PCR寄存器的PE位清0，关闭引脚上下拉功能
+ 93a:	4025      	ands	r5, r4
+
+0000093c <gpio_pull_3>:
+gpio_pull_3():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:265
+gpio_pull_3:	    
+    #-----------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+ 93c:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+0000093e <gpio_drive_strength>:
+gpio_drive_strength():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:277
+#                   1=高驱动能力(18mA),对KL25/KW01只有PTB0,PTB1,PTD6,PTD7可配
+#功能概要：当指定端口引脚被定义为GPIO功能，设定引脚驱动能力
+#备    注：引脚驱动能力是指引脚输入或输出电流的承受力，一般用mA单位度量
+#================================================================
+gpio_drive_strength:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈
+ 93e:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:279
+    #------------------------------------------------------------------------
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+ 940:	f7ff ff5e 	bl	800 <gpio_port_pin_resolution>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:281
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+ 944:	1c07      	adds	r7, r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:282
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+ 946:	4c43      	ldr	r4, [pc, #268]	; (a54 <light_change+0xa>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:283
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+ 948:	4367      	muls	r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:284
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE）
+ 94a:	4c43      	ldr	r4, [pc, #268]	; (a58 <light_change+0xe>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:285
+    add r7,r4                    @r7=待操作端口的第一个PCR寄存器的地址
+ 94c:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:287
+    #获得待操作引脚PCR寄存器的地址
+    mov r4,r1                    @r4=r1=引脚号
+ 94e:	1c0c      	adds	r4, r1, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:288
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+ 950:	2504      	movs	r5, #4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:289
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+ 952:	436c      	muls	r4, r5
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:290
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+ 954:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:292
+    #待操作引脚PCR寄存器的DSE位（6位）清0
+    ldr r4,=0xffffffbf
+ 956:	4c4a      	ldr	r4, [pc, #296]	; (a80 <light_change+0x36>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:293
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+ 958:	683d      	ldr	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:294
+    and r5,r4                    @待操作引脚PCR寄存器的DSE位清零，其余位不变
+ 95a:	4025      	ands	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:296
+    #对待操作引脚PCR寄存器的DSE位（6位）进行设置
+    mov r6,r3                    @r6=r3=DSE位的设置值
+ 95c:	1c1e      	adds	r6, r3, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:297
+    lsl r6,r6,#6                 @r6=设置值左移到DSE位
+ 95e:	01b6      	lsls	r6, r6, #6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:298
+    orr r5,r6                    @r5=最终得到的待操作引脚PCR寄存器的值
+ 960:	4335      	orrs	r5, r6
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:299
+    str r5,[r7]                  @将r5中的值更新到待操作引脚PCR寄存器中
+ 962:	603d      	str	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:301
+    #------------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+ 964:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+00000966 <gpio_enable_int>:
+gpio_enable_int():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:319
+#           中断触发条件。
+# 备    注： KL25芯片，只有PORTA、PORTD口具有GPIO类中断功能
+#           KW01芯片，只有PORTA、PORTC、PORTD口具有GPIO类中断功能
+#======================================================================
+gpio_enable_int:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈	            #------------------------------------------------------------------------
+ 966:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:320
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+ 968:	f7ff ff4a 	bl	800 <gpio_port_pin_resolution>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:322
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+ 96c:	1c07      	adds	r7, r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:323
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+ 96e:	4c39      	ldr	r4, [pc, #228]	; (a54 <light_change+0xa>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:324
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+ 970:	4367      	muls	r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:325
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE）
+ 972:	4c39      	ldr	r4, [pc, #228]	; (a58 <light_change+0xe>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:326
+    add r7,r4                    @r7=待操作端口的第一个PCR寄存器的地址
+ 974:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:328
+    #获得待操作引脚PCR寄存器的地址
+    mov r4,r1                    @r4=r1=引脚号
+ 976:	1c0c      	adds	r4, r1, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:329
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+ 978:	2504      	movs	r5, #4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:330
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+ 97a:	436c      	muls	r4, r5
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:331
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+ 97c:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:333
+    #待操作引脚PCR寄存器的ISF位（第24位）置1（清除引脚中断标志）
+    ldr r4,=0x01000000           @r4=对应引脚PCR_ISF位的掩码
+ 97e:	4c41      	ldr	r4, [pc, #260]	; (a84 <light_change+0x3a>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:334
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+ 980:	683d      	ldr	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:335
+    orr r5,r4                    @待操作引脚PCR寄存器的ISF位置1，其余位不变
+ 982:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:337
+    #待操作引脚PCR寄存器的IRQC字段（19-16位）清0
+    ldr r4,=0xfff0ffff
+ 984:	4c40      	ldr	r4, [pc, #256]	; (a88 <light_change+0x3e>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:338
+    and r5,r4                    @待操作引脚PCR寄存器的IRQC字段清零，其余位不变
+ 986:	4025      	ands	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:340
+    #待操作引脚PCR寄存器的IRQC字段（19-16位）置为r3的值，即设置中断类型
+    mov r4,r3                    @r4=r3=引脚的中断类型
+ 988:	1c1c      	adds	r4, r3, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:341
+    lsl r4,r4,#16                @r4=待操作的IRQC掩码
+ 98a:	0424      	lsls	r4, r4, #16
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:342
+    orr r5,r4                    @或运算设MUX=001，引脚被配置为GPIO功能
+ 98c:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:343
+    str r5,[r7]                  @将r5中的MUX值更新到待操作引脚PCR寄存器中
+ 98e:	603d      	str	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:346
+
+	#根据引脚号r0，通过对NVIC的ICPR及ISER的编程，使能中断控制器中的对应口的IRQ中断
+	cmp r0,#0
+ 990:	2800      	cmp	r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:347
+	beq gpio_enable_int_0        @r0=0(PTA口)，跳转到相应子程序
+ 992:	d005      	beq.n	9a0 <gpio_enable_int_0>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:348
+	cmp r0,#2
+ 994:	2802      	cmp	r0, #2
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:349
+	beq gpio_enable_int_1        @r0=0(PTC口)，跳转到相应子程序
+ 996:	d016      	beq.n	9c6 <gpio_enable_int_1>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:350
+	cmp r0,#3
+ 998:	2803      	cmp	r0, #3
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:351
+	beq gpio_enable_int_1        @r0=0(PTD口)，跳转到相应子程序
+ 99a:	d014      	beq.n	9c6 <gpio_enable_int_1>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:352
+	bl gpio_enable_int_2         @r0=其他值，函数直接返回
+ 99c:	f000 f824 	bl	9e8 <gpio_enable_int_2>
+
+000009a0 <gpio_enable_int_0>:
+gpio_enable_int_0():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:355
+gpio_enable_int_0:                   @开中断控制器中PTA的IRQ中断
+	#将PTA口对应的NVIC_ICPR置1（清挂起中断）
+	ldr r6,=0xE000E100           @r6=NVIC的基地址
+ 9a0:	4e3a      	ldr	r6, [pc, #232]	; (a8c <light_change+0x42>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:356
+	ldr r4,=0x180                @r4=ICPR的偏移地址
+ 9a2:	4c3b      	ldr	r4, [pc, #236]	; (a90 <light_change+0x46>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:357
+	mov r7,r6
+ 9a4:	1c37      	adds	r7, r6, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:358
+	add r7,r4                    @r7=NVIC_ICPR的地址
+ 9a6:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:359
+	ldr r5,[r7]                  @r5=NVIC_ICPR寄存器的值
+ 9a8:	683d      	ldr	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:360
+	mov r4,#1;
+ 9aa:	2401      	movs	r4, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:361
+	lsl r4,r4,#30                @r4=PTA的NVIC_ICPR掩码
+ 9ac:	07a4      	lsls	r4, r4, #30
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:362
+	orr r5,r4                    @或运算，清PTA的挂起中断
+ 9ae:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:363
+	str r5,[r7]                  @将r5中的值更新到NVIC_ICPR寄存器中
+ 9b0:	603d      	str	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:365
+	#将PTA口对应的NVIC_ISER置1（使能中断）
+	ldr r4,=0x0                  @r4=ISER的偏移地址
+ 9b2:	2400      	movs	r4, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:366
+	mov r7,r6
+ 9b4:	1c37      	adds	r7, r6, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:367
+	add r7,r4                    @r7=NVIC_ISER的地址
+ 9b6:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:368
+	ldr r5,[r7]                  @r5=NVIC_ICPR寄存器的值
+ 9b8:	683d      	ldr	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:369
+	mov r4,#1;
+ 9ba:	2401      	movs	r4, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:370
+	lsl r4,r4,#30                @r4=PTA的NVIC_ISER掩码
+ 9bc:	07a4      	lsls	r4, r4, #30
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:371
+	orr r5,r4                    @或运算，使能PTA中断
+ 9be:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:372
+	str r5,[r7]                  @将r5中的值更新到NVIC_ISER寄存器中
+ 9c0:	603d      	str	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:373
+	bl gpio_enable_int_2
+ 9c2:	f000 f811 	bl	9e8 <gpio_enable_int_2>
+
+000009c6 <gpio_enable_int_1>:
+gpio_enable_int_1():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:376
+gpio_enable_int_1:                   @开中断控制器中PTC、PTD的IRQ中断
+	#将PTC、PTD口对应的NVIC_ICPR置1（清挂起中断）
+	ldr r6,=0xE000E100           @r6=NVIC的基地址
+ 9c6:	4e31      	ldr	r6, [pc, #196]	; (a8c <light_change+0x42>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:377
+	ldr r4,=0x180                @r4=ICPR的偏移地址
+ 9c8:	4c31      	ldr	r4, [pc, #196]	; (a90 <light_change+0x46>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:378
+	mov r7,r6
+ 9ca:	1c37      	adds	r7, r6, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:379
+	add r7,r4                    @r7=NVIC_ICPR的地址
+ 9cc:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:380
+	ldr r5,[r7]                  @r5=NVIC_ICPR寄存器的值
+ 9ce:	683d      	ldr	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:381
+	mov r4,#1;
+ 9d0:	2401      	movs	r4, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:382
+	lsl r4,r4,#31                @r4=PTC、PTD的NVIC_ICPR掩码
+ 9d2:	07e4      	lsls	r4, r4, #31
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:383
+	orr r5,r4                    @或运算，清PTC、PTD的挂起中断
+ 9d4:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:384
+	str r5,[r7]                  @将r5中的值更新到NVIC_ICPR寄存器中
+ 9d6:	603d      	str	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:386
+	#将PTA口对应的NVIC_ISER置1（使能中断）
+	ldr r4,=0x0                  @r4=ISER的偏移地址
+ 9d8:	2400      	movs	r4, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:387
+	mov r7,r6
+ 9da:	1c37      	adds	r7, r6, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:388
+	add r7,r4                    @r7=NVIC_ISER的地址
+ 9dc:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:389
+	ldr r5,[r7]                  @r5=NVIC_ICPR寄存器的值
+ 9de:	683d      	ldr	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:390
+	mov r4,#1;
+ 9e0:	2401      	movs	r4, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:391
+	lsl r4,r4,#31                @r4=PTA的NVIC_ISER掩码
+ 9e2:	07e4      	lsls	r4, r4, #31
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:392
+	orr r5,r4                    @或运算，使能PTC、PTD中断
+ 9e4:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:393
+	str r5,[r7]                  @将r5中的值更新到NVIC_ISER寄存器中
+ 9e6:	603d      	str	r5, [r7, #0]
+
+000009e8 <gpio_enable_int_2>:
+gpio_enable_int_2():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:396
+gpio_enable_int_2:	    
+    #-----------------------------------------------------------------------
+    pop {r0-r7,pc}                   @恢复现场，lr出栈到pc（即子程序返回）
+ 9e8:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+000009ea <gpio_disable_int>:
+gpio_disable_int():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:407
+# 功能概要：当指定端口引脚被定义为GPIO功能且为输入时，本函数关闭引脚中断
+# 备    注： KL25芯片，只有PORTA、PORTD口具有GPIO类中断功能
+#           KW01芯片，只有PORTA、PORTC、PORTD口具有GPIO类中断功能
+#======================================================================
+gpio_disable_int:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈	
+ 9ea:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:409
+    #------------------------------------------------------------------------
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+ 9ec:	f7ff ff08 	bl	800 <gpio_port_pin_resolution>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:411
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+ 9f0:	1c07      	adds	r7, r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:412
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+ 9f2:	4c18      	ldr	r4, [pc, #96]	; (a54 <light_change+0xa>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:413
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+ 9f4:	4367      	muls	r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:414
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE）
+ 9f6:	4c18      	ldr	r4, [pc, #96]	; (a58 <light_change+0xe>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:415
+    add r7,r4                    @r7=待操作端口的第一个PCR寄存器的地址
+ 9f8:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:417
+    #获得待操作引脚PCR寄存器的地址
+    mov r4,r1                    @r4=r1=引脚号
+ 9fa:	1c0c      	adds	r4, r1, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:418
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+ 9fc:	2504      	movs	r5, #4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:419
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+ 9fe:	436c      	muls	r4, r5
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:420
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+ a00:	193f      	adds	r7, r7, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:422
+    #待操作引脚PCR寄存器的IRQC字段（19-16位）清0(禁用引脚中断)
+    ldr r4,=0xfff0ffff
+ a02:	4c21      	ldr	r4, [pc, #132]	; (a88 <light_change+0x3e>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:423
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+ a04:	683d      	ldr	r5, [r7, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:424
+    and r5,r4                    @待操作引脚PCR寄存器的IRQC字段清零，其余位不变
+ a06:	4025      	ands	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:427
+
+	#获取NVIC_ICER寄存器的地址
+	ldr r6,=0xE000E100           @r6=NVIC的基地址
+ a08:	4e20      	ldr	r6, [pc, #128]	; (a8c <light_change+0x42>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:428
+	ldr r4,=0x80                 @r4=ICER的偏移地址
+ a0a:	2480      	movs	r4, #128	; 0x80
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:429
+	add r6,r4                    @r6=NVIC_ICER的地址
+ a0c:	1936      	adds	r6, r6, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:430
+	ldr r5,[r6]                  @r5=NVIC_ICER寄存器的值
+ a0e:	6835      	ldr	r5, [r6, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:433
+
+	#根据引脚号r0，通过对NVIC的ICER寄存器的编程，关闭中断控制器中的对应口的IRQ中断
+	cmp r0,#0
+ a10:	2800      	cmp	r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:434
+	beq gpio_disable_int_0       @r0=0(PTA口)，跳转到相应子程序
+ a12:	d005      	beq.n	a20 <gpio_disable_int_0>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:435
+	cmp r0,#2
+ a14:	2802      	cmp	r0, #2
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:436
+	beq gpio_disable_int_1       @r0=0(PTC口)，跳转到相应子程序
+ a16:	d009      	beq.n	a2c <gpio_disable_int_1>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:437
+	cmp r0,#3
+ a18:	2803      	cmp	r0, #3
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:438
+	beq gpio_disable_int_1       @r0=0(PTD口)，跳转到相应子程序
+ a1a:	d007      	beq.n	a2c <gpio_disable_int_1>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:439
+	bl gpio_disable_int_2        @r0=其他值，函数直接返回
+ a1c:	f000 f80a 	bl	a34 <gpio_disable_int_2>
+
+00000a20 <gpio_disable_int_0>:
+gpio_disable_int_0():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:442
+gpio_disable_int_0:                  @关中断控制器中PTA的IRQ中断
+	#将PTA口对应的NVIC_ICER置1（关闭中断）
+	mov r4,#1;
+ a20:	2401      	movs	r4, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:443
+	lsl r4,r4,#30                @r4=PTA的NVIC_ICER掩码
+ a22:	07a4      	lsls	r4, r4, #30
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:444
+	orr r5,r4                    @或运算，关闭PTA口的中断
+ a24:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:445
+	str r5,[r6]                  @将r5中的值更新到NVIC_ICER寄存器中
+ a26:	6035      	str	r5, [r6, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:446
+	bl gpio_enable_int_2
+ a28:	f7ff ffde 	bl	9e8 <gpio_enable_int_2>
+
+00000a2c <gpio_disable_int_1>:
+gpio_disable_int_1():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:449
+gpio_disable_int_1:                  @关中断控制器中PTC、PTD的IRQ中断
+	#将PTC、PTD口对应的NVIC_ICER置1（关闭中断）
+	mov r4,#1;
+ a2c:	2401      	movs	r4, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:450
+	lsl r4,r4,#31                @r4=PTC、PTD的NVIC_ICER掩码
+ a2e:	07e4      	lsls	r4, r4, #31
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:451
+	orr r5,r4                    @或运算，关闭PTC、PTD口的中断
+ a30:	4325      	orrs	r5, r4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:452
+	str r5,[r6]                  @将r5中的值更新到NVIC_ICER寄存器中
+ a32:	6035      	str	r5, [r6, #0]
+
+00000a34 <gpio_disable_int_2>:
+gpio_disable_int_2():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:455
+gpio_disable_int_2:
+    #-----------------------------------------------------------------------
+    pop {r0-r7,pc}                   @恢复现场，lr出栈到pc（即子程序返回）
+ a34:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+00000a36 <light_init>:
+light_init():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\06_App_Component\light/light.S:15
+# 参数说明：r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+#          r3:设定小灯状态。由light.inc中宏定义。
+# 功能概要：  指示灯驱动初始化
+#======================================================================
+light_init:
+    push {r0-r3,lr}         @保存现场，将下一条指令地址入栈
+ a36:	b50f      	push	{r0, r1, r2, r3, lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\06_App_Component\light/light.S:16
+    mov r2,#1               @小灯为输出
+ a38:	2201      	movs	r2, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\06_App_Component\light/light.S:17
+    bl gpio_init            @调用gpio初始化函数
+ a3a:	f7ff feea 	bl	812 <gpio_init>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\06_App_Component\light/light.S:18
+    pop {r0-r3,pc}          @恢复现场，返回主程序处继续执行
+ a3e:	bd0f      	pop	{r0, r1, r2, r3, pc}
+
+00000a40 <light_control>:
+light_control():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\06_App_Component\light/light.S:28
+# 参数说明：   r0：(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+#            r3：设定小灯状态。由light.inc中宏定义。
+# 功能概要：控制指示灯亮暗。
+#======================================================================
+light_control:
+    push {r0-r3,lr}
+ a40:	b50f      	push	{r0, r1, r2, r3, lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\06_App_Component\light/light.S:29
+    mov r2,#1               @小灯为输出
+ a42:	2201      	movs	r2, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\06_App_Component\light/light.S:30
+    bl gpio_set             @调用gpio引脚设置函数
+ a44:	f7ff ff18 	bl	878 <gpio_set>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\06_App_Component\light/light.S:31
+    pop {r0-r3,pc}
+ a48:	bd0f      	pop	{r0, r1, r2, r3, pc}
+
+00000a4a <light_change>:
+light_change():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\06_App_Component\light/light.S:40
+# 函数返回：     无                
+# 参数说明：    r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+# 功能概要：切换指示灯亮暗。
+#======================================================================
+light_change:
+    push {r0-r3,lr}
+ a4a:	b50f      	push	{r0, r1, r2, r3, lr}
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\06_App_Component\light/light.S:41
+    bl gpio_reverse            @调用后sgpio引脚反转函数
+ a4c:	f7ff ff3c 	bl	8c8 <gpio_reverse>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\06_App_Component\light/light.S:42
+    pop {r0-r3,pc}
+ a50:	bd0f      	pop	{r0, r1, r2, r3, pc}
+$d():
+ a52:	0000      	.short	0x0000
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:50
+    #------------------------------------------------------------------------
+    #从入口参数r0中解析出端口号引脚号，分别放在r0和r1中
+    bl gpio_port_pin_resolution  @调用内部解析函数,r0=端口号,r1=引脚号
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+ a54:	00001000 	.word	0x00001000
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:52
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE)
+ a58:	40049000 	.word	0x40049000
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:60
+    mov r4,r1                    @r4=r1=引脚号
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+    #待操作引脚PCR寄存器的MUX位（10-8位）清0
+    ldr r4,=0xfffff8ff
+ a5c:	fffff8ff 	.word	0xfffff8ff
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:64
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+    and r5,r4                    @待操作引脚PCR寄存器的MUX字段清零，其余位不变
+    #待操作引脚PCR寄存器的MUX位（10-8位）置001,即设置为GPIO功能
+    ldr r4,=0x00000100
+ a60:	00000100 	.word	0x00000100
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:68
+    orr r5,r4                    @或运算设MUX=001，引脚被配置为GPIO功能
+    str r5,[r7]                  @将r5中的MUX值更新到待操作引脚PCR寄存器中
+    #求待操作GPIO口的基地址（也就是PDOR的地址）
+    ldr r4,=PORT_GPIO            @r4=PORTA基地址（GPIO的基地址）
+ a64:	400ff000 	.word	0x400ff000
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:130
+    mov r5,r0                    @r5=r0=端口号
+    mov r6,#0x40                 @r6=各GPIO口的基地址差值（40h）
+    mul r6,r6,r5                 @r6=待操作GPIO口与PORTA的地址偏移
+    cmp r3,#1                    @判断引脚初始状态
+    bne gpio_set_1               @若为低电平，转到gpio_set_1，将PDOR相应位清0
+    ldr r5,=PORT_GPIO+0x04       @r5=PORTA的输出置1寄存器PSOR的地址
+ a68:	400ff004 	.word	0x400ff004
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:138
+    lsl r6,r6,r1                 @r6=待操作引脚的PSOR掩码（为1的位由r1决定）
+    str r6,[r5]                  @将相应引脚的PSOR寄存器置1
+    bl  gpio_set_2
+gpio_set_1:
+    #通过对PCOR进行编程，将PDOR相应位清0
+    ldr r5,=PORT_GPIO+0x08       @r5=PORTA的PCOR的地址
+ a6c:	400ff008 	.word	0x400ff008
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:161
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+    #求待操作GPIO口的基地址（也就是PDIR的地址）
+    mov r5,r0                    @r5=r0=端口号
+    mov r6,#0x40                 @r6=各GPIO口基地址差值（40h）
+    mul r6,r6,r5                 @r6=待操作GPIO口与PORTA的地址偏移
+    ldr r5,=PORT_GPIO+0x10       @r5=PORTA的PDIR地址
+ a70:	400ff010 	.word	0x400ff010
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:192
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号，r1=引脚号
+    #求待操作GPIO口的基地址（也就是PTOR的地址）
+    mov r5,r0                    @r5=r0=端口号
+    mov r6,#0x40                 @r6=各GPIO口基地址差值（40h）
+    mul r6,r6,r5                 @r6=待操作GPIO口的地址偏移
+    ldr r5,=PORT_GPIO+0x0c       @r5=PORTA的PTOR的地址
+ a74:	400ff00c 	.word	0x400ff00c
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:249
+	beq gpio_pull_2              @r3=2，转到关闭上下拉子程序
+	bl gpio_pull_3               @r3=其他值，函数直接返回
+gpio_pull_0:
+	ldr r4,=0x00000002
+	orr r5,r4                    @或运算，将对应引脚PCR寄存器的PE位置1，使能引脚上下拉功能
+	ldr r4,=0xFFFFFFFE
+ a78:	fffffffe 	.word	0xfffffffe
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:261
+	ldr r4,=0x00000001
+	orr r5,r4                    @或运算，将对应引脚PCR寄存器的PS位置1，使指定引脚上拉高电平
+	str r5,[r7]                  @将r5中的PE、PS值更新到待操作引脚PCR寄存器中
+	bl gpio_pull_3
+gpio_pull_2:
+	ldr r4,=0xFFFFFFFD
+ a7c:	fffffffd 	.word	0xfffffffd
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:292
+    mov r4,r1                    @r4=r1=引脚号
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+    #待操作引脚PCR寄存器的DSE位（6位）清0
+    ldr r4,=0xffffffbf
+ a80:	ffffffbf 	.word	0xffffffbf
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:333
+    mov r4,r1                    @r4=r1=引脚号
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+    #待操作引脚PCR寄存器的ISF位（第24位）置1（清除引脚中断标志）
+    ldr r4,=0x01000000           @r4=对应引脚PCR_ISF位的掩码
+ a84:	01000000 	.word	0x01000000
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:337
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+    orr r5,r4                    @待操作引脚PCR寄存器的ISF位置1，其余位不变
+    #待操作引脚PCR寄存器的IRQC字段（19-16位）清0
+    ldr r4,=0xfff0ffff
+ a88:	fff0ffff 	.word	0xfff0ffff
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:355
+	cmp r0,#3
+	beq gpio_enable_int_1        @r0=0(PTD口)，跳转到相应子程序
+	bl gpio_enable_int_2         @r0=其他值，函数直接返回
+gpio_enable_int_0:                   @开中断控制器中PTA的IRQ中断
+	#将PTA口对应的NVIC_ICPR置1（清挂起中断）
+	ldr r6,=0xE000E100           @r6=NVIC的基地址
+ a8c:	e000e100 	.word	0xe000e100
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\05_Driver\gpio/gpio.S:356
+	ldr r4,=0x180                @r4=ICPR的偏移地址
+ a90:	00000180 	.word	0x00000180
+
+00000a94 <Reset_Handler>:
+Reset_Handler():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:117
+    .align 2
+    .globl   Reset_Handler
+    .weak    Reset_Handler
+    .type    Reset_Handler, %function
+Reset_Handler:
+    cpsid   i               /* 屏蔽中断 */
+ a94:	b672      	cpsid	i
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:119
+#ifndef __NO_SYSTEM_INIT
+    bl SystemInit           /* 跳转到系统初始化函数，在system_MKL25Z4.c中 */
+ a96:	f000 f833 	bl	b00 <SystemInit>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:121
+#endif
+    cpsie   i               /* 解除屏蔽中断 */
+ a9a:	b662      	cpsie	i
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+ a9c:	4909      	ldr	r1, [pc, #36]	; (ac4 <Reset_Handler+0x30>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+ a9e:	4a0a      	ldr	r2, [pc, #40]	; (ac8 <Reset_Handler+0x34>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+ aa0:	4b0a      	ldr	r3, [pc, #40]	; (acc <Reset_Handler+0x38>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:131
+
+    subs    r3, r2
+ aa2:	1a9b      	subs	r3, r3, r2
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:132
+    ble     .LC0
+ aa4:	dd03      	ble.n	aae <Reset_Handler+0x1a>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:135
+
+.LC1:
+    subs    r3, 4
+ aa6:	3b04      	subs	r3, #4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:136
+    ldr    r0, [r1,r3]
+ aa8:	58c8      	ldr	r0, [r1, r3]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:137
+    str    r0, [r2,r3]
+ aaa:	50d0      	str	r0, [r2, r3]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:138
+    bgt    .LC1
+ aac:	dcfb      	bgt.n	aa6 <Reset_Handler+0x12>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+ aae:	4908      	ldr	r1, [pc, #32]	; (ad0 <Reset_Handler+0x3c>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+ ab0:	4a08      	ldr	r2, [pc, #32]	; (ad4 <Reset_Handler+0x40>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:153
+
+    subs    r2, r1
+ ab2:	1a52      	subs	r2, r2, r1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:154
+    ble .LC3
+ ab4:	dd03      	ble.n	abe <Reset_Handler+0x2a>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:156
+
+    movs    r0, 0
+ ab6:	2000      	movs	r0, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:158
+.LC2:
+    str r0, [r1, r2]
+ ab8:	5088      	str	r0, [r1, r2]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:159
+    subs    r2, 4
+ aba:	3a04      	subs	r2, #4
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:160
+    bge .LC2
+ abc:	dafc      	bge.n	ab8 <Reset_Handler+0x24>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:166
+.LC3:
+#endif
+#ifndef __START
+#define __START main
+#endif
+    bl    __START
+ abe:	f000 f80f 	bl	ae0 <main>
+ ac2:	0000      	.short	0x0000
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+ ac4:	00000ca0 	.word	0x00000ca0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+ ac8:	1ffff000 	.word	0x1ffff000
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+ acc:	1ffff000 	.word	0x1ffff000
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+ ad0:	1ffff000 	.word	0x1ffff000
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+ ad4:	1ffff000 	.word	0x1ffff000
+
+00000ad8 <ADC0_IRQHandler>:
+I2C0_IRQHandler():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+ ad8:	4800      	ldr	r0, [pc, #0]	; (adc <ADC0_IRQHandler+0x4>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:176
+    bx r0
+ ada:	4700      	bx	r0
+$d():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+ adc:	00000ad9 	.word	0x00000ad9
+
+00000ae0 <main>:
+$t():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:17
+    .align 2                   @指令对齐
+    .type main function        @定义主函数类
+    .align 2
+#end  主函数定义结束
+main:
+    cpsid i                    @关闭总中断
+ ae0:	b672      	cpsid	i
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:19
+    #小灯初始化, r0,r3是light_init的入口参数
+    ldr r0,=LIGHT_BLUE         @r0指明端口和引脚（用=是因为宏常数>=256,且用ldr)
+ ae2:	4806      	ldr	r0, [pc, #24]	; (afc <loop+0xc>)
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:20
+    mov r3,#LIGHT_ON          @r3指明引脚的初始状态
+ ae4:	2300      	movs	r3, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:21
+    bl light_init              @调用小灯初始化函数
+ ae6:	f7ff ffa6 	bl	a36 <light_init>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:22
+	cpsie  i                   @开总中断
+ aea:	b662      	cpsie	i
+
+00000aec <main_loop1>:
+main_loop1():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:25
+#主循环开始==================================================================
+main_loop1:
+    ldr r4,=RUN_COUNTER_MAX    @取延时值到r4
+ aec:	2405      	movs	r4, #5
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:26
+    mov r5,#0                  @从零计数
+ aee:	2500      	movs	r5, #0
+
+00000af0 <loop>:
+loop():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:28
+loop:
+    add r5,#1                  @加1计数
+ af0:	3501      	adds	r5, #1
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:29
+    cmp r4,r5                  @r4值与r5值比较
+ af2:	42ac      	cmp	r4, r5
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:30
+    bne loop                   @不相等，则跳转loop
+ af4:	d1fc      	bne.n	af0 <loop>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:31
+    bl light_change            @相等，则调用小灯亮暗转变函数
+ af6:	f7ff ffa8 	bl	a4a <light_change>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:32
+    bne main_loop1             @跳转main_loop1
+ afa:	d1f7      	bne.n	aec <main_loop1>
+$d():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../08_Source/main.S:19
+    .align 2
+#end  主函数定义结束
+main:
+    cpsid i                    @关闭总中断
+    #小灯初始化, r0,r3是light_init的入口参数
+    ldr r0,=LIGHT_BLUE         @r0指明端口和引脚（用=是因为宏常数>=256,且用ldr)
+ afc:	00000109 	.word	0x00000109
+
+00000b00 <SystemInit>:
+SystemInit():
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:111
+//函数名称：SystemInit
+//功能概要：初始化系统的时钟，并把PORT时钟门启用
+//参数说明：无
+//函数返回：无
+//============================================================================
+void SystemInit (void) {
+ b00:	b580      	push	{r7, lr}
+ b02:	b082      	sub	sp, #8
+ b04:	af00      	add	r7, sp, #0
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:113
+
+	unsigned int i = 0;
+ b06:	2300      	movs	r3, #0
+ b08:	607b      	str	r3, [r7, #4]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:114
+	char temp_reg = 0;
+ b0a:	1cfb      	adds	r3, r7, #3
+ b0c:	2200      	movs	r2, #0
+ b0e:	701a      	strb	r2, [r3, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:117
+
+#if (DISABLE_WDOG)  //关闭看门狗
+    SIM->COPC = (uint32_t)0x00u;    //SIM_COPC: COPT=0,COPCLKS=0,COPW=0
+ b10:	4a5b      	ldr	r2, [pc, #364]	; (c80 <SystemInit+0x180>)
+ b12:	2388      	movs	r3, #136	; 0x88
+ b14:	015b      	lsls	r3, r3, #5
+ b16:	2100      	movs	r1, #0
+ b18:	50d1      	str	r1, [r2, r3]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:125
+//1.首先从FEI模式过渡到FBE模式
+
+    //C2= 0x1C，因为我们的核心板上采用了外部晶振为8Mhz，属于高频率范围，
+    //C2[RANGE]设置为0b01；C2[HGO]设为1以配置晶振来进行高增益操作；因为
+    //正在使用的外部参考时钟源是晶振，所以C2[EREFS]设置为1。
+    MCG_C2 = (MCG_C2_RANGE0(1) | MCG_C2_EREFS0_MASK);
+ b1a:	4b5a      	ldr	r3, [pc, #360]	; (c84 <SystemInit+0x184>)
+ b1c:	2214      	movs	r2, #20
+ b1e:	705a      	strb	r2, [r3, #1]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:130
+    //C1 = 0x90 ，C1[CLKS]设置为2’b10，以便选择作为系统时钟源的外部参考时钟。
+    //C1[FRDIV]设置为3'b011，对应256分频,因为8MHz/256=31.25kHz在由FLL要求的
+    //31.25kHz至39.0625 kHz频率范围内。C1[IREFS]清除为0，选择外部参考时钟和
+    //外部晶振。
+    MCG_C1 = (MCG_C1_CLKS(2) | MCG_C1_FRDIV(3));
+ b20:	4b58      	ldr	r3, [pc, #352]	; (c84 <SystemInit+0x184>)
+ b22:	2298      	movs	r2, #152	; 0x98
+ b24:	701a      	strb	r2, [r3, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:132
+    //需要等到S[OSCINIT]被置位外部晶振才能使用
+    for (i = 0 ; i < 20000 ; i++)
+ b26:	2300      	movs	r3, #0
+ b28:	607b      	str	r3, [r7, #4]
+ b2a:	e00a      	b.n	b42 <SystemInit+0x42>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:135
+    {
+        //如果S[OSCINIT]在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_OSCINIT0_MASK) break;
+ b2c:	4b55      	ldr	r3, [pc, #340]	; (c84 <SystemInit+0x184>)
+ b2e:	799b      	ldrb	r3, [r3, #6]
+ b30:	b2db      	uxtb	r3, r3
+ b32:	1c1a      	adds	r2, r3, #0
+ b34:	2302      	movs	r3, #2
+ b36:	4013      	ands	r3, r2
+ b38:	d000      	beq.n	b3c <SystemInit+0x3c>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:135 (discriminator 1)
+ b3a:	e006      	b.n	b4a <SystemInit+0x4a>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:132
+    //C1[FRDIV]设置为3'b011，对应256分频,因为8MHz/256=31.25kHz在由FLL要求的
+    //31.25kHz至39.0625 kHz频率范围内。C1[IREFS]清除为0，选择外部参考时钟和
+    //外部晶振。
+    MCG_C1 = (MCG_C1_CLKS(2) | MCG_C1_FRDIV(3));
+    //需要等到S[OSCINIT]被置位外部晶振才能使用
+    for (i = 0 ; i < 20000 ; i++)
+ b3c:	687b      	ldr	r3, [r7, #4]
+ b3e:	3301      	adds	r3, #1
+ b40:	607b      	str	r3, [r7, #4]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:132 (discriminator 1)
+ b42:	687a      	ldr	r2, [r7, #4]
+ b44:	4b50      	ldr	r3, [pc, #320]	; (c88 <SystemInit+0x188>)
+ b46:	429a      	cmp	r2, r3
+ b48:	d9f0      	bls.n	b2c <SystemInit+0x2c>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:138
+    {
+        //如果S[OSCINIT]在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_OSCINIT0_MASK) break;
+    }
+    //等待参考时钟状态位清0
+    for (i = 0 ; i < 2000 ; i++)
+ b4a:	2300      	movs	r3, #0
+ b4c:	607b      	str	r3, [r7, #4]
+ b4e:	e00a      	b.n	b66 <SystemInit+0x66>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:141
+    {
+        //如果IREFST在循环结束之前被清0就跳出循环
+        if (!(MCG_S & MCG_S_IREFST_MASK)) break;
+ b50:	4b4c      	ldr	r3, [pc, #304]	; (c84 <SystemInit+0x184>)
+ b52:	799b      	ldrb	r3, [r3, #6]
+ b54:	b2db      	uxtb	r3, r3
+ b56:	1c1a      	adds	r2, r3, #0
+ b58:	2310      	movs	r3, #16
+ b5a:	4013      	ands	r3, r2
+ b5c:	d100      	bne.n	b60 <SystemInit+0x60>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:141 (discriminator 1)
+ b5e:	e006      	b.n	b6e <SystemInit+0x6e>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:138
+    {
+        //如果S[OSCINIT]在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_OSCINIT0_MASK) break;
+    }
+    //等待参考时钟状态位清0
+    for (i = 0 ; i < 2000 ; i++)
+ b60:	687b      	ldr	r3, [r7, #4]
+ b62:	3301      	adds	r3, #1
+ b64:	607b      	str	r3, [r7, #4]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:138 (discriminator 1)
+ b66:	687a      	ldr	r2, [r7, #4]
+ b68:	4b48      	ldr	r3, [pc, #288]	; (c8c <SystemInit+0x18c>)
+ b6a:	429a      	cmp	r2, r3
+ b6c:	d9f0      	bls.n	b50 <SystemInit+0x50>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:144
+    {
+        //如果IREFST在循环结束之前被清0就跳出循环
+        if (!(MCG_S & MCG_S_IREFST_MASK)) break;
+    }
+    //等待时钟状态位以显示时钟源为外部参考时钟
+    for (i = 0 ; i < 2000 ; i++)
+ b6e:	2300      	movs	r3, #0
+ b70:	607b      	str	r3, [r7, #4]
+ b72:	e00c      	b.n	b8e <SystemInit+0x8e>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:147
+    {
+        //如果CLKST显示外部时钟被选择，在循环结束之前就跳出循环
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x2) break;
+ b74:	4b43      	ldr	r3, [pc, #268]	; (c84 <SystemInit+0x184>)
+ b76:	799b      	ldrb	r3, [r3, #6]
+ b78:	b2db      	uxtb	r3, r3
+ b7a:	1c1a      	adds	r2, r3, #0
+ b7c:	230c      	movs	r3, #12
+ b7e:	4013      	ands	r3, r2
+ b80:	089b      	lsrs	r3, r3, #2
+ b82:	2b02      	cmp	r3, #2
+ b84:	d100      	bne.n	b88 <SystemInit+0x88>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:147 (discriminator 1)
+ b86:	e006      	b.n	b96 <SystemInit+0x96>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:144
+    {
+        //如果IREFST在循环结束之前被清0就跳出循环
+        if (!(MCG_S & MCG_S_IREFST_MASK)) break;
+    }
+    //等待时钟状态位以显示时钟源为外部参考时钟
+    for (i = 0 ; i < 2000 ; i++)
+ b88:	687b      	ldr	r3, [r7, #4]
+ b8a:	3301      	adds	r3, #1
+ b8c:	607b      	str	r3, [r7, #4]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:144 (discriminator 1)
+ b8e:	687a      	ldr	r2, [r7, #4]
+ b90:	4b3e      	ldr	r3, [pc, #248]	; (c8c <SystemInit+0x18c>)
+ b92:	429a      	cmp	r2, r3
+ b94:	d9ee      	bls.n	b74 <SystemInit+0x74>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:152
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x2) break;
+    }
+
+//2.现在处于FBE状态，使能时钟监视器，由FBE直接转换为PBE模式
+
+    MCG_C6 |= MCG_C6_CME0_MASK;
+ b96:	4b3b      	ldr	r3, [pc, #236]	; (c84 <SystemInit+0x184>)
+ b98:	4a3a      	ldr	r2, [pc, #232]	; (c84 <SystemInit+0x184>)
+ b9a:	7952      	ldrb	r2, [r2, #5]
+ b9c:	b2d2      	uxtb	r2, r2
+ b9e:	2120      	movs	r1, #32
+ ba0:	430a      	orrs	r2, r1
+ ba2:	b2d2      	uxtb	r2, r2
+ ba4:	715a      	strb	r2, [r3, #5]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:154
+    //配置PLL为2分频
+    MCG_C5 |= MCG_C5_PRDIV0(1);
+ ba6:	4b37      	ldr	r3, [pc, #220]	; (c84 <SystemInit+0x184>)
+ ba8:	4a36      	ldr	r2, [pc, #216]	; (c84 <SystemInit+0x184>)
+ baa:	7912      	ldrb	r2, [r2, #4]
+ bac:	b2d2      	uxtb	r2, r2
+ bae:	2101      	movs	r1, #1
+ bb0:	430a      	orrs	r2, r1
+ bb2:	b2d2      	uxtb	r2, r2
+ bb4:	711a      	strb	r2, [r3, #4]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:156
+    //配置MCG_C6 以设置PLL倍频因子并且时能PLL，PLLS位被置位来时能PLL，MCGOUT时钟源仍然是外部参考时钟
+    temp_reg = MCG_C6; //存储当前C6的值（因为CME0位之前被置位了）
+ bb6:	4b33      	ldr	r3, [pc, #204]	; (c84 <SystemInit+0x184>)
+ bb8:	795b      	ldrb	r3, [r3, #5]
+ bba:	b2da      	uxtb	r2, r3
+ bbc:	1cfb      	adds	r3, r7, #3
+ bbe:	701a      	strb	r2, [r3, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:157
+    temp_reg &= ~MCG_C6_VDIV0_MASK; //将VDIV清0
+ bc0:	1cfb      	adds	r3, r7, #3
+ bc2:	1cfa      	adds	r2, r7, #3
+ bc4:	7812      	ldrb	r2, [r2, #0]
+ bc6:	211f      	movs	r1, #31
+ bc8:	438a      	bics	r2, r1
+ bca:	701a      	strb	r2, [r3, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:158
+    temp_reg |= MCG_C6_PLLS_MASK | MCG_C6_VDIV0(0); // 重新写值到VDIV 并且时能PLL
+ bcc:	1cfb      	adds	r3, r7, #3
+ bce:	1cfa      	adds	r2, r7, #3
+ bd0:	7812      	ldrb	r2, [r2, #0]
+ bd2:	2140      	movs	r1, #64	; 0x40
+ bd4:	430a      	orrs	r2, r1
+ bd6:	701a      	strb	r2, [r3, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:159
+    MCG_C6 = temp_reg; // 更新MCG_C6的值
+ bd8:	4b2a      	ldr	r3, [pc, #168]	; (c84 <SystemInit+0x184>)
+ bda:	1cfa      	adds	r2, r7, #3
+ bdc:	7812      	ldrb	r2, [r2, #0]
+ bde:	715a      	strb	r2, [r3, #5]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:161
+    // 等待PLLST状态位被置
+    for (i = 0 ; i < 2000 ; i++)
+ be0:	2300      	movs	r3, #0
+ be2:	607b      	str	r3, [r7, #4]
+ be4:	e00a      	b.n	bfc <SystemInit+0xfc>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:164
+    {
+        //如果PLLST在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_PLLST_MASK)
+ be6:	4b27      	ldr	r3, [pc, #156]	; (c84 <SystemInit+0x184>)
+ be8:	799b      	ldrb	r3, [r3, #6]
+ bea:	b2db      	uxtb	r3, r3
+ bec:	1c1a      	adds	r2, r3, #0
+ bee:	2320      	movs	r3, #32
+ bf0:	4013      	ands	r3, r2
+ bf2:	d000      	beq.n	bf6 <SystemInit+0xf6>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:165
+        	break;
+ bf4:	e006      	b.n	c04 <SystemInit+0x104>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:161
+    temp_reg = MCG_C6; //存储当前C6的值（因为CME0位之前被置位了）
+    temp_reg &= ~MCG_C6_VDIV0_MASK; //将VDIV清0
+    temp_reg |= MCG_C6_PLLS_MASK | MCG_C6_VDIV0(0); // 重新写值到VDIV 并且时能PLL
+    MCG_C6 = temp_reg; // 更新MCG_C6的值
+    // 等待PLLST状态位被置
+    for (i = 0 ; i < 2000 ; i++)
+ bf6:	687b      	ldr	r3, [r7, #4]
+ bf8:	3301      	adds	r3, #1
+ bfa:	607b      	str	r3, [r7, #4]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:161 (discriminator 1)
+ bfc:	687a      	ldr	r2, [r7, #4]
+ bfe:	4b23      	ldr	r3, [pc, #140]	; (c8c <SystemInit+0x18c>)
+ c00:	429a      	cmp	r2, r3
+ c02:	d9f0      	bls.n	be6 <SystemInit+0xe6>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:168
+        //如果PLLST在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_PLLST_MASK)
+        	break;
+    }
+    //等待LOCK位被置
+    for (i = 0 ; i < 4000 ; i++)
+ c04:	2300      	movs	r3, #0
+ c06:	607b      	str	r3, [r7, #4]
+ c08:	e00a      	b.n	c20 <SystemInit+0x120>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:171
+    {
+        //如果LOCK在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_LOCK0_MASK)
+ c0a:	4b1e      	ldr	r3, [pc, #120]	; (c84 <SystemInit+0x184>)
+ c0c:	799b      	ldrb	r3, [r3, #6]
+ c0e:	b2db      	uxtb	r3, r3
+ c10:	1c1a      	adds	r2, r3, #0
+ c12:	2340      	movs	r3, #64	; 0x40
+ c14:	4013      	ands	r3, r2
+ c16:	d000      	beq.n	c1a <SystemInit+0x11a>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:172
+        	break;
+ c18:	e006      	b.n	c28 <SystemInit+0x128>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:168
+        //如果PLLST在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_PLLST_MASK)
+        	break;
+    }
+    //等待LOCK位被置
+    for (i = 0 ; i < 4000 ; i++)
+ c1a:	687b      	ldr	r3, [r7, #4]
+ c1c:	3301      	adds	r3, #1
+ c1e:	607b      	str	r3, [r7, #4]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:168 (discriminator 1)
+ c20:	687a      	ldr	r2, [r7, #4]
+ c22:	4b1b      	ldr	r3, [pc, #108]	; (c90 <SystemInit+0x190>)
+ c24:	429a      	cmp	r2, r3
+ c26:	d9f0      	bls.n	c0a <SystemInit+0x10a>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:178
+    }
+
+//3.现在处于PBE模式。最后，PBE模式转换成PEE模式
+    // 设置核心时钟分频器2分频
+    //设置总线时钟分频器2分频 (总线时钟的时钟源是核心时钟)
+    SIM_CLKDIV1 = (SIM_CLKDIV1_OUTDIV1(1) | SIM_CLKDIV1_OUTDIV4(1) );
+ c28:	4a15      	ldr	r2, [pc, #84]	; (c80 <SystemInit+0x180>)
+ c2a:	4b1a      	ldr	r3, [pc, #104]	; (c94 <SystemInit+0x194>)
+ c2c:	491a      	ldr	r1, [pc, #104]	; (c98 <SystemInit+0x198>)
+ c2e:	50d1      	str	r1, [r2, r3]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:180
+    //清CLKS来打开CLKS多路复用器来选择PLL作为MCGCLKOUT
+    MCG_C1 &= ~MCG_C1_CLKS_MASK;
+ c30:	4b14      	ldr	r3, [pc, #80]	; (c84 <SystemInit+0x184>)
+ c32:	4a14      	ldr	r2, [pc, #80]	; (c84 <SystemInit+0x184>)
+ c34:	7812      	ldrb	r2, [r2, #0]
+ c36:	b2d1      	uxtb	r1, r2
+ c38:	223f      	movs	r2, #63	; 0x3f
+ c3a:	400a      	ands	r2, r1
+ c3c:	b2d2      	uxtb	r2, r2
+ c3e:	701a      	strb	r2, [r3, #0]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:182
+    // 等待时钟状态位更新
+    for (i = 0 ; i < 2000 ; i++)
+ c40:	2300      	movs	r3, #0
+ c42:	607b      	str	r3, [r7, #4]
+ c44:	e00c      	b.n	c60 <SystemInit+0x160>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:185
+    {
+        //如果CLKST在循环结束之前等于3就跳出循环
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x3) break;
+ c46:	4b0f      	ldr	r3, [pc, #60]	; (c84 <SystemInit+0x184>)
+ c48:	799b      	ldrb	r3, [r3, #6]
+ c4a:	b2db      	uxtb	r3, r3
+ c4c:	1c1a      	adds	r2, r3, #0
+ c4e:	230c      	movs	r3, #12
+ c50:	4013      	ands	r3, r2
+ c52:	089b      	lsrs	r3, r3, #2
+ c54:	2b03      	cmp	r3, #3
+ c56:	d100      	bne.n	c5a <SystemInit+0x15a>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:185 (discriminator 1)
+ c58:	e006      	b.n	c68 <SystemInit+0x168>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:182
+    //设置总线时钟分频器2分频 (总线时钟的时钟源是核心时钟)
+    SIM_CLKDIV1 = (SIM_CLKDIV1_OUTDIV1(1) | SIM_CLKDIV1_OUTDIV4(1) );
+    //清CLKS来打开CLKS多路复用器来选择PLL作为MCGCLKOUT
+    MCG_C1 &= ~MCG_C1_CLKS_MASK;
+    // 等待时钟状态位更新
+    for (i = 0 ; i < 2000 ; i++)
+ c5a:	687b      	ldr	r3, [r7, #4]
+ c5c:	3301      	adds	r3, #1
+ c5e:	607b      	str	r3, [r7, #4]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:182 (discriminator 1)
+ c60:	687a      	ldr	r2, [r7, #4]
+ c62:	4b0a      	ldr	r3, [pc, #40]	; (c8c <SystemInit+0x18c>)
+ c64:	429a      	cmp	r2, r3
+ c66:	d9ee      	bls.n	c46 <SystemInit+0x146>
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:190
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x3) break;
+    }
+//4.现在处于PEE模式
+
+    //初始化后，开始PORT模块时钟
+    SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK
+ c68:	4a05      	ldr	r2, [pc, #20]	; (c80 <SystemInit+0x180>)
+ c6a:	4905      	ldr	r1, [pc, #20]	; (c80 <SystemInit+0x180>)
+ c6c:	4b0b      	ldr	r3, [pc, #44]	; (c9c <SystemInit+0x19c>)
+ c6e:	58cb      	ldr	r3, [r1, r3]
+ c70:	21f8      	movs	r1, #248	; 0xf8
+ c72:	0189      	lsls	r1, r1, #6
+ c74:	4319      	orrs	r1, r3
+ c76:	4b09      	ldr	r3, [pc, #36]	; (c9c <SystemInit+0x19c>)
+ c78:	50d1      	str	r1, [r2, r3]
+E:\2013-2017 BOOK-170523\2012-2016 M0+-170523\06-User\SD-(M0+)-CD(V2.7)-170930\02-Software\KL25-program\ch04-Light-170930\KL25_Light(asm)\Debug/../03_MCU/system_MKL25Z4.c:195
+  			  | SIM_SCGC5_PORTB_MASK
+  			  | SIM_SCGC5_PORTC_MASK
+  			  | SIM_SCGC5_PORTD_MASK
+  			  | SIM_SCGC5_PORTE_MASK;
+}
+ c7a:	46bd      	mov	sp, r7
+ c7c:	b002      	add	sp, #8
+ c7e:	bd80      	pop	{r7, pc}
+ c80:	40047000 	.word	0x40047000
+ c84:	40064000 	.word	0x40064000
+ c88:	00004e1f 	.word	0x00004e1f
+ c8c:	000007cf 	.word	0x000007cf
+ c90:	00000f9f 	.word	0x00000f9f
+ c94:	00001044 	.word	0x00001044
+ c98:	10010000 	.word	0x10010000
+ c9c:	00001038 	.word	0x00001038

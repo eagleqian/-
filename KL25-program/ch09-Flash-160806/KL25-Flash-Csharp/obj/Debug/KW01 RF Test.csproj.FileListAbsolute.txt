@@ -1,0 +1,138 @@
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\bin\Debug\KW01 ED.exe.config
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\KW01 ED.exe
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\KW01 ED.pdb
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\bin\Debug\KW01 ED.exe
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\bin\Debug\KW01 ED.pdb
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\ResolveAssemblyReference.cache
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\SerialPort.FrmSCI.resources
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\SerialPort.Properties.Resources.resources
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\GenerateResource.read.1.tlog
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\ResGen.read.1.tlog
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\ResGen.read.4.tlog
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\ResGen.read.5.tlog
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\ResGen.read.6.tlog
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\ResGen.read.7.tlog
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\GenerateResource.write.1.tlog
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\ResGen.write.1.tlog
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\ResGen.write.4.tlog
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\ResGen.write.5.tlog
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\ResGen.write.6.tlog
+F:\KW01_20150113\KW01_A_20150113\KW01-A-PC-C#-20150113\obj\Debug\ResGen.write.7.tlog
+F:\2005-2015 study notes\2013-2015 KW01-Zigbee\06-user\KW01-CD-V13-20150113\02-software\program\KW01-A-20150113\KW01-A-PC-C#-20150113\bin\Debug\KW01 ED.exe.config
+F:\2005-2015 study notes\2013-2015 KW01-Zigbee\06-user\KW01-CD-V13-20150113\02-software\program\KW01-A-20150113\KW01-A-PC-C#-20150113\obj\Debug\KW01 ED.exe
+F:\2005-2015 study notes\2013-2015 KW01-Zigbee\06-user\KW01-CD-V13-20150113\02-software\program\KW01-A-20150113\KW01-A-PC-C#-20150113\obj\Debug\KW01 ED.pdb
+H:\KW01-CD-V13-20150113\02-software\program\KW01-A-20150113\KW01-A-PC-C#-20150113\bin\Debug\KW01 ED.exe.config
+H:\KW01-CD-V13-20150113\02-software\program\KW01-A-20150113\KW01-A-PC-C#-20150113\obj\Debug\KW01 ED.exe
+H:\KW01-CD-V13-20150113\02-software\program\KW01-A-20150113\KW01-A-PC-C#-20150113\obj\Debug\KW01 ED.pdb
+C:\Users\Administrator\Desktop\KW01-CD(V3.3)-20150126\KW01-A-20150126\KW01-A-PC-C#-20150124\bin\Debug\KW01 ED.exe.config
+C:\Users\Administrator\Desktop\KW01-CD(V3.3)-20150126\KW01-A-20150126\KW01-A-PC-C#-20150124\bin\Debug\KW01 ED.exe
+C:\Users\Administrator\Desktop\KW01-CD(V3.3)-20150126\KW01-A-20150126\KW01-A-PC-C#-20150124\bin\Debug\KW01 ED.pdb
+C:\Users\Administrator\Desktop\KW01-CD(V3.3)-20150126\KW01-A-20150126\KW01-A-PC-C#-20150124\obj\Debug\SerialPort.FrmSCI.resources
+C:\Users\Administrator\Desktop\KW01-CD(V3.3)-20150126\KW01-A-20150126\KW01-A-PC-C#-20150124\obj\Debug\SerialPort.Properties.Resources.resources
+C:\Users\Administrator\Desktop\KW01-CD(V3.3)-20150126\KW01-A-20150126\KW01-A-PC-C#-20150124\obj\Debug\KW01 RF Test.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\KW01-CD(V3.3)-20150126\KW01-A-20150126\KW01-A-PC-C#-20150124\obj\Debug\KW01 ED.exe
+C:\Users\Administrator\Desktop\KW01-CD(V3.3)-20150126\KW01-A-20150126\KW01-A-PC-C#-20150124\obj\Debug\KW01 ED.pdb
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\bin\Debug\KW01 ED.exe.config
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\KW01 ED.exe
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\KW01 ED.pdb
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\bin\Debug\KW01 ED.exe
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\bin\Debug\KW01 ED.pdb
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\ResolveAssemblyReference.cache
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\SerialPort.FrmSCI.resources
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\SerialPort.Properties.Resources.resources
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\GenerateResource.read.1.tlog
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\ResGen.read.1.tlog
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\ResGen.read.4.tlog
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\ResGen.read.5.tlog
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\ResGen.read.6.tlog
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\ResGen.read.7.tlog
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\GenerateResource.write.1.tlog
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\ResGen.write.1.tlog
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\ResGen.write.4.tlog
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\ResGen.write.5.tlog
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\ResGen.write.6.tlog
+E:\KW01-CD(V3.3)-20150126\02-software\program\KW01-A-20150126\KW01-A-PC-C#-20150126\obj\Debug\ResGen.write.7.tlog
+C:\Users\dolo\Desktop\KW01-A-PC-C#-20150126\bin\Debug\KW01 ED.exe
+C:\Users\dolo\Desktop\KW01-A-PC-C#-20150126\bin\Debug\KW01 ED.exe.config
+C:\Users\dolo\Desktop\KW01-A-PC-C#-20150126\bin\Debug\KW01 ED.pdb
+C:\Users\dolo\Desktop\KW01-A-PC-C#-20150126\obj\Debug\SerialPort.FrmSCI.resources
+C:\Users\dolo\Desktop\KW01-A-PC-C#-20150126\obj\Debug\SerialPort.Properties.Resources.resources
+C:\Users\dolo\Desktop\KW01-A-PC-C#-20150126\obj\Debug\KW01 RF Test.csproj.GenerateResource.Cache
+C:\Users\dolo\Desktop\KW01-A-PC-C#-20150126\obj\Debug\KW01 ED.exe
+C:\Users\dolo\Desktop\KW01-A-PC-C#-20150126\obj\Debug\KW01 ED.pdb
+C:\Users\dolo\Desktop\KW01-A1-20150802\KW01-A1-PC-C#-20150802\bin\Debug\KW01 ED.exe.config
+C:\Users\dolo\Desktop\KW01-A1-20150802\KW01-A1-PC-C#-20150802\bin\Debug\KW01 ED.exe
+C:\Users\dolo\Desktop\KW01-A1-20150802\KW01-A1-PC-C#-20150802\bin\Debug\KW01 ED.pdb
+C:\Users\dolo\Desktop\KW01-A1-20150802\KW01-A1-PC-C#-20150802\obj\Debug\SerialPort.FrmSCI.resources
+C:\Users\dolo\Desktop\KW01-A1-20150802\KW01-A1-PC-C#-20150802\obj\Debug\SerialPort.Properties.Resources.resources
+C:\Users\dolo\Desktop\KW01-A1-20150802\KW01-A1-PC-C#-20150802\obj\Debug\KW01 RF Test.csproj.GenerateResource.Cache
+C:\Users\dolo\Desktop\KW01-A1-20150802\KW01-A1-PC-C#-20150802\obj\Debug\KW01 ED.exe
+C:\Users\dolo\Desktop\KW01-A1-20150802\KW01-A1-PC-C#-20150802\obj\Debug\KW01 ED.pdb
+C:\Users\dolo\Desktop\KW01-A1-20150802\KW01-A1-PC-C#-20150802\obj\Debug\KW01 RF Test.csprojResolveAssemblyReference.cache
+E:\LS\KW01-A1-20150801\KW01-A1-PC-C#-20150802\bin\Debug\KW01 ED.exe.config
+E:\LS\KW01-A1-20150801\KW01-A1-PC-C#-20150802\obj\Debug\KW01 ED.exe
+E:\LS\KW01-A1-20150801\KW01-A1-PC-C#-20150802\obj\Debug\KW01 ED.pdb
+E:\LS\KW01-A1-20150801\KW01-A1-PC-C#-20150802\bin\Debug\KW01 ED.exe
+E:\LS\KW01-A1-20150801\KW01-A1-PC-C#-20150802\bin\Debug\KW01 ED.pdb
+E:\LS\KW01-A1-20150801\KW01-A1-PC-C#-20150802\obj\Debug\KW01 RF Test.csprojResolveAssemblyReference.cache
+E:\LS\KW01-A1-20150801\KW01-A1-PC-C#-20150802\obj\Debug\SerialPort.FrmSCI.resources
+E:\LS\KW01-A1-20150801\KW01-A1-PC-C#-20150802\obj\Debug\SerialPort.Properties.Resources.resources
+E:\LS\KW01-A1-20150801\KW01-A1-PC-C#-20150802\obj\Debug\KW01 RF Test.csproj.GenerateResource.Cache
+F:\LS\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.exe.config
+F:\LS\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 ED.exe
+F:\LS\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 ED.pdb
+F:\LS\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 RF Test.csprojResolveAssemblyReference.cache
+F:\LS\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\SerialPort.Properties.Resources.resources
+F:\LS\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 RF Test.csproj.GenerateResource.Cache
+F:\LS\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.exe
+F:\LS\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.pdb
+F:\LS\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\SerialPort.FrmMain.resources
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.exe.config
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 ED.exe
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 ED.pdb
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.exe
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.pdb
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResolveAssemblyReference.cache
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\SerialPort.FrmMain.resources
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\SerialPort.Properties.Resources.resources
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\GenerateResource.read.1.tlog
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.read.1.tlog
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.read.4.tlog
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.read.5.tlog
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.read.6.tlog
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.read.7.tlog
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\GenerateResource.write.1.tlog
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.write.1.tlog
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.write.4.tlog
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.write.5.tlog
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.write.6.tlog
+F:\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.write.7.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.exe.config
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 ED.exe
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 ED.pdb
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\SerialPort.FrmMain.resources
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\SerialPort.Properties.Resources.resources
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.read.1.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.read.4.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.read.5.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.read.6.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.read.7.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.write.1.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.write.4.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.write.5.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.write.6.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\ResGen.write.7.tlog
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.exe
+C:\Users\Administrator\Desktop\KW01-A1-20150803-1(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.pdb
+F:\LS\KW01-A1-20150804-2(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.exe.config
+F:\LS\KW01-A1-20150804-2(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 ED.exe
+F:\LS\KW01-A1-20150804-2(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 ED.pdb
+F:\LS\KW01-A1-20150804-2(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.exe
+F:\LS\KW01-A1-20150804-2(wyh)\KW01-A1-PC-C#-20150803\bin\Debug\KW01 ED.pdb
+F:\LS\KW01-A1-20150804-2(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 RF Test.csprojResolveAssemblyReference.cache
+F:\LS\KW01-A1-20150804-2(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\SerialPort.FrmMain.resources
+F:\LS\KW01-A1-20150804-2(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\SerialPort.Properties.Resources.resources
+F:\LS\KW01-A1-20150804-2(wyh)\KW01-A1-PC-C#-20150803\obj\Debug\KW01 RF Test.csproj.GenerateResource.Cache

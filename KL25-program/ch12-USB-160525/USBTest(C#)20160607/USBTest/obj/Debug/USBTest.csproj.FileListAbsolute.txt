@@ -1,0 +1,390 @@
+D:\2012-2013 KL25(20130217)\06-KL25CD\SD-FSL-KL25-CD(V0.6-20130216)\Program-20130319\ch12-KL25-USB\USB-Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\USBTest.exe.config
+D:\2012-2013 KL25(20130217)\06-KL25CD\SD-FSL-KL25-CD(V0.6-20130216)\Program-20130319\ch12-KL25-USB\USB-Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\USBTest.exe
+D:\2012-2013 KL25(20130217)\06-KL25CD\SD-FSL-KL25-CD(V0.6-20130216)\Program-20130319\ch12-KL25-USB\USB-Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\USBTest.pdb
+D:\2012-2013 KL25(20130217)\06-KL25CD\SD-FSL-KL25-CD(V0.6-20130216)\Program-20130319\ch12-KL25-USB\USB-Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\2012-2013 KL25(20130217)\06-KL25CD\SD-FSL-KL25-CD(V0.6-20130216)\Program-20130319\ch12-KL25-USB\USB-Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\ResolveAssemblyReference.cache
+D:\2012-2013 KL25(20130217)\06-KL25CD\SD-FSL-KL25-CD(V0.6-20130216)\Program-20130319\ch12-KL25-USB\USB-Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\2012-2013 KL25(20130217)\06-KL25CD\SD-FSL-KL25-CD(V0.6-20130216)\Program-20130319\ch12-KL25-USB\USB-Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\2012-2013 KL25(20130217)\06-KL25CD\SD-FSL-KL25-CD(V0.6-20130216)\Program-20130319\ch12-KL25-USB\USB-Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\GenerateResource.read.1.tlog
+D:\2012-2013 KL25(20130217)\06-KL25CD\SD-FSL-KL25-CD(V0.6-20130216)\Program-20130319\ch12-KL25-USB\USB-Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\GenerateResource.write.1.tlog
+D:\2012-2013 KL25(20130217)\06-KL25CD\SD-FSL-KL25-CD(V0.6-20130216)\Program-20130319\ch12-KL25-USB\USB-Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.exe
+D:\2012-2013 KL25(20130217)\06-KL25CD\SD-FSL-KL25-CD(V0.6-20130216)\Program-20130319\ch12-KL25-USB\USB-Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.pdb
+D:\Users\admin\Desktop\ch12-KL25-USB-20130428\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\USBTest.exe.config
+D:\Users\admin\Desktop\ch12-KL25-USB-20130428\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.exe
+D:\Users\admin\Desktop\ch12-KL25-USB-20130428\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.pdb
+D:\Users\admin\Desktop\ch12-KL25-USB-20130428\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\USBTest.exe
+D:\Users\admin\Desktop\ch12-KL25-USB-20130428\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\USBTest.pdb
+D:\Users\admin\Desktop\ch12-KL25-USB-20130428\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\Users\admin\Desktop\ch12-KL25-USB-20130428\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\admin\Desktop\ch12-KL25-USB-20130428\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\Users\admin\Desktop\ch12-KL25-USB-20130428\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\Users\admin\Desktop\ch12-KL25-USB-20130428\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\GenerateResource.read.1.tlog
+D:\Users\admin\Desktop\ch12-KL25-USB-20130428\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\GenerateResource.write.1.tlog
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131106)\06-KL25CD\SD-FSL-KL25-CD(V1.2)\KL25-Program\ch12-KL25-USB\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\USBTest.exe.config
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131106)\06-KL25CD\SD-FSL-KL25-CD(V1.2)\KL25-Program\ch12-KL25-USB\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.exe
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131106)\06-KL25CD\SD-FSL-KL25-CD(V1.2)\KL25-Program\ch12-KL25-USB\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.pdb
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131106)\06-KL25CD\SD-FSL-KL25-CD(V1.2)\KL25-Program\ch12-KL25-USB\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\USBTest.exe
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131106)\06-KL25CD\SD-FSL-KL25-CD(V1.2)\KL25-Program\ch12-KL25-USB\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\USBTest.pdb
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131106)\06-KL25CD\SD-FSL-KL25-CD(V1.2)\KL25-Program\ch12-KL25-USB\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\bin\Debug\LibUsbDotNet.dll
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131106)\06-KL25CD\SD-FSL-KL25-CD(V1.2)\KL25-Program\ch12-KL25-USB\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\ResolveAssemblyReference.cache
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131106)\06-KL25CD\SD-FSL-KL25-CD(V1.2)\KL25-Program\ch12-KL25-USB\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.USBTest.resources
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131106)\06-KL25CD\SD-FSL-KL25-CD(V1.2)\KL25-Program\ch12-KL25-USB\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131106)\06-KL25CD\SD-FSL-KL25-CD(V1.2)\KL25-Program\ch12-KL25-USB\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\GenerateResource.read.1.tlog
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131106)\06-KL25CD\SD-FSL-KL25-CD(V1.2)\KL25-Program\ch12-KL25-USB\USB_Device\USBTest(PC-C#)\USBTest(C#2010)\USBTest\obj\Debug\GenerateResource.write.1.tlog
+F:\kl25z128m4\Leo\USBTest(C#2010)11-20\USBTest\bin\Debug\USBTest.exe.config
+F:\kl25z128m4\Leo\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.exe
+F:\kl25z128m4\Leo\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.pdb
+F:\kl25z128m4\Leo\USBTest(C#2010)11-20\USBTest\bin\Debug\USBTest.exe
+F:\kl25z128m4\Leo\USBTest(C#2010)11-20\USBTest\bin\Debug\USBTest.pdb
+F:\kl25z128m4\Leo\USBTest(C#2010)11-20\USBTest\bin\Debug\LibUsbDotNet.dll
+F:\kl25z128m4\Leo\USBTest(C#2010)11-20\USBTest\obj\Debug\ResolveAssemblyReference.cache
+F:\kl25z128m4\Leo\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.USBTest.resources
+F:\kl25z128m4\Leo\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+F:\kl25z128m4\Leo\USBTest(C#2010)11-20\USBTest\obj\Debug\GenerateResource.read.1.tlog
+F:\kl25z128m4\Leo\USBTest(C#2010)11-20\USBTest\obj\Debug\GenerateResource.write.1.tlog
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131119)\06-KL25CD\SD-FSL-KL25-CD(V1.3)\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)11-20\USBTest\bin\Debug\USBTest.exe.config
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131119)\06-KL25CD\SD-FSL-KL25-CD(V1.3)\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.exe
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131119)\06-KL25CD\SD-FSL-KL25-CD(V1.3)\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)11-20\USBTest\bin\Debug\USBTest.exe
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131119)\06-KL25CD\SD-FSL-KL25-CD(V1.3)\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)11-20\USBTest\bin\Debug\USBTest.pdb
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131119)\06-KL25CD\SD-FSL-KL25-CD(V1.3)\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)11-20\USBTest\bin\Debug\LibUsbDotNet.dll
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131119)\06-KL25CD\SD-FSL-KL25-CD(V1.3)\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)11-20\USBTest\obj\Debug\ResolveAssemblyReference.cache
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131119)\06-KL25CD\SD-FSL-KL25-CD(V1.3)\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.USBTest.resources
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131119)\06-KL25CD\SD-FSL-KL25-CD(V1.3)\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131119)\06-KL25CD\SD-FSL-KL25-CD(V1.3)\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)11-20\USBTest\obj\Debug\GenerateResource.read.1.tlog
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131119)\06-KL25CD\SD-FSL-KL25-CD(V1.3)\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)11-20\USBTest\obj\Debug\GenerateResource.write.1.tlog
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131119)\06-KL25CD\SD-FSL-KL25-CD(V1.3)\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20\USBTest\bin\Debug\USBTest.exe.config
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.exe
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20\USBTest\bin\Debug\USBTest.exe
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20\USBTest\bin\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20\USBTest\bin\Debug\LibUsbDotNet.dll
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20\USBTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.USBTest.resources
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20\USBTest\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20\USBTest\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20 - 副本 (2)\USBTest\bin\Debug\USBTest.exe.config
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20 - 副本 (2)\USBTest\obj\Debug\USBTest.exe
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20 - 副本 (2)\USBTest\obj\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20 - 副本 (2)\USBTest\bin\Debug\USBTest.exe
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20 - 副本 (2)\USBTest\bin\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20 - 副本 (2)\USBTest\bin\Debug\LibUsbDotNet.dll
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20 - 副本 (2)\USBTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20 - 副本 (2)\USBTest\obj\Debug\USBTest.USBTest.resources
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20 - 副本 (2)\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20 - 副本 (2)\USBTest\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-20 - 副本 (2)\USBTest\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-22\USBTest\bin\Debug\USBTest.exe.config
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-22\USBTest\obj\Debug\USBTest.exe
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-22\USBTest\obj\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-22\USBTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-22\USBTest\obj\Debug\USBTest.USBTest.resources
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-22\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-22\USBTest\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-22\USBTest\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-22\USBTest\bin\Debug\USBTest.exe
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-22\USBTest\bin\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-22\USBTest\bin\Debug\LibUsbDotNet.dll
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-23\USBTest\bin\Debug\USBTest.exe.config
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-23\USBTest\obj\Debug\USBTest.exe
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-23\USBTest\obj\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-23\USBTest\bin\Debug\USBTest.exe
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-23\USBTest\bin\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-23\USBTest\bin\Debug\LibUsbDotNet.dll
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-23\USBTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-23\USBTest\obj\Debug\USBTest.USBTest.resources
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-23\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-23\USBTest\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\USBTest(C#2010)11-23\USBTest\obj\Debug\GenerateResource.write.1.tlog
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20131128\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20131128\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20131128\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20131128\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20131128\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.pdb
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20131128\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\LibUsbDotNet.dll
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20131128\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\ResolveAssemblyReference.cache
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20131128\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.USBTest.resources
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20131128\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20131128\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.read.1.tlog
+E:\2011-2013\Research\2010-2013 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20131128\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.write.1.tlog
+E:\2011-2014\Research\2010-2014 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20140108\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+E:\2011-2014\Research\2010-2014 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20140108\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+E:\2011-2014\Research\2010-2014 BOOK\2012-2013 KL25(20131127)\06-KL25CD\SD-FSL-KL25-CD(V1.3)20140108\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.1)20140302\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.1)20140302\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.1)20140302\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.1)20140302\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.1)20140302\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.pdb
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.1)20140302\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\LibUsbDotNet.dll
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.1)20140302\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\ResolveAssemblyReference.cache
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.1)20140302\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.USBTest.resources
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.1)20140302\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.1)20140302\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.read.1.tlog
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.1)20140302\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.write.1.tlog
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.3)20140505\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.3)20140505\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.3)20140505\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.3)20140505\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.3)20140505\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.pdb
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.3)20140505\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\LibUsbDotNet.dll
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.3)20140505\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\ResolveAssemblyReference.cache
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.3)20140505\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.USBTest.resources
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.3)20140505\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.3)20140505\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.read.1.tlog
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.3)20140505\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.write.1.tlog
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.pdb
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\LibUsbDotNet.dll
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\ResolveAssemblyReference.cache
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.USBTest.resources
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.read.1.tlog
+E:\BOOK\2012-2014 KL25(20130215)\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.write.1.tlog
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.pdb
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\LibUsbDotNet.dll
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\ResolveAssemblyReference.cache
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.USBTest.resources
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.read.1.tlog
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V2.4)20140526\KL25-Program\ch12-KL25-USB\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.write.1.tlog
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V3.2)KDS-20140919\KL25-Program(KDS_V1.3)\ch12-KL25-USB(KDS)\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V3.2)KDS-20140919\KL25-Program(KDS_V1.3)\ch12-KL25-USB(KDS)\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V3.2)KDS-20140919\KL25-Program(KDS_V1.3)\ch12-KL25-USB(KDS)\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V3.2)KDS-20140919\KL25-Program(KDS_V1.3)\ch12-KL25-USB(KDS)\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V3.2)KDS-20140919\KL25-Program(KDS_V1.3)\ch12-KL25-USB(KDS)\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.pdb
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V3.2)KDS-20140919\KL25-Program(KDS_V1.3)\ch12-KL25-USB(KDS)\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\LibUsbDotNet.dll
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V3.2)KDS-20140919\KL25-Program(KDS_V1.3)\ch12-KL25-USB(KDS)\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\ResolveAssemblyReference.cache
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V3.2)KDS-20140919\KL25-Program(KDS_V1.3)\ch12-KL25-USB(KDS)\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.USBTest.resources
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V3.2)KDS-20140919\KL25-Program(KDS_V1.3)\ch12-KL25-USB(KDS)\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V3.2)KDS-20140919\KL25-Program(KDS_V1.3)\ch12-KL25-USB(KDS)\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.read.1.tlog
+E:\BOOK\2012-2014 KL25\06-KL25CD\SD-FSL-KL25-CD(V3.2)KDS-20140919\KL25-Program(KDS_V1.3)\ch12-KL25-USB(KDS)\USB(Slave)\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\GenerateResource.write.1.tlog
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#)\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1228\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1228\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1228\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1228\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1228\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.pdb
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1228\USBTest(C#2010)131123\USBTest\bin\Debug\LibUsbDotNet.dll
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1228\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1228\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.USBTest.resources
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1228\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1228\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229 - 2\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229 - 2\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229 - 2\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229 - 2\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229 - 2\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.pdb
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229 - 2\USBTest(C#2010)131123\USBTest\bin\Debug\LibUsbDotNet.dll
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229 - 2\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229 - 2\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.USBTest.resources
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229 - 2\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+E:\1327404033李伟芳-MCU（各个程序）\H-20151220\USBTest(PC-C#) - 1229 - 2\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+C:\Users\HWW\Desktop\KL25_USB_FLASH\usb-pc(xiaoli)\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+C:\Users\HWW\Desktop\KL25_USB_FLASH\usb-pc(xiaoli)\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+C:\Users\HWW\Desktop\KL25_USB_FLASH\usb-pc(xiaoli)\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+C:\Users\HWW\Desktop\KL25_USB_FLASH\usb-pc(xiaoli)\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe
+C:\Users\HWW\Desktop\KL25_USB_FLASH\usb-pc(xiaoli)\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.pdb
+C:\Users\HWW\Desktop\KL25_USB_FLASH\usb-pc(xiaoli)\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\bin\Debug\LibUsbDotNet.dll
+C:\Users\HWW\Desktop\KL25_USB_FLASH\usb-pc(xiaoli)\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+C:\Users\HWW\Desktop\KL25_USB_FLASH\usb-pc(xiaoli)\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.USBTest.resources
+C:\Users\HWW\Desktop\KL25_USB_FLASH\usb-pc(xiaoli)\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+C:\Users\HWW\Desktop\KL25_USB_FLASH\usb-pc(xiaoli)\USBTest(PC-C#) - 1229\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+C:\Users\HWW\Desktop\HWW_USB\KL25_USB_FLASH_IMAGE_2016014\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe.config
+C:\Users\HWW\Desktop\HWW_USB\KL25_USB_FLASH_IMAGE_2016014\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.exe
+C:\Users\HWW\Desktop\HWW_USB\KL25_USB_FLASH_IMAGE_2016014\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.pdb
+C:\Users\HWW\Desktop\HWW_USB\KL25_USB_FLASH_IMAGE_2016014\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+C:\Users\HWW\Desktop\HWW_USB\KL25_USB_FLASH_IMAGE_2016014\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.USBTest.resources
+C:\Users\HWW\Desktop\HWW_USB\KL25_USB_FLASH_IMAGE_2016014\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+C:\Users\HWW\Desktop\HWW_USB\KL25_USB_FLASH_IMAGE_2016014\USBTest(C#2010)131123\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+C:\Users\HWW\Desktop\HWW_USB\KL25_USB_FLASH_IMAGE_2016014\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.exe
+C:\Users\HWW\Desktop\HWW_USB\KL25_USB_FLASH_IMAGE_2016014\USBTest(C#2010)131123\USBTest\bin\Debug\USBTest.pdb
+C:\Users\HWW\Desktop\HWW_USB\KL25_USB_FLASH_IMAGE_2016014\USBTest(C#2010)131123\USBTest\bin\Debug\LibUsbDotNet.dll
+C:\Users\HWW\Desktop\HWW_USB\USBTest(C#)\USBTest\bin\Debug\USBTest.exe
+C:\Users\HWW\Desktop\HWW_USB\USBTest(C#)\USBTest\bin\Debug\LibUsbDotNet.dll
+C:\Users\HWW\Desktop\HWW_USB\USBTest(C#)\USBTest\bin\Debug\USBTest.exe.config
+C:\Users\HWW\Desktop\HWW_USB\USBTest(C#)\USBTest\obj\Debug\USBTest.USBTest.resources
+C:\Users\HWW\Desktop\HWW_USB\USBTest(C#)\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+C:\Users\HWW\Desktop\HWW_USB\USBTest(C#)\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+C:\Users\HWW\Desktop\HWW_USB\USBTest(C#)\USBTest\obj\Debug\USBTest.exe
+C:\Users\HWW\Desktop\HWW_USB\USBTest(C#)\USBTest\obj\Debug\USBTest.pdb
+C:\Users\HWW\Desktop\HWW_USB\USBTest(C#)\USBTest\bin\Debug\USBTest.pdb
+C:\Users\HWW\Desktop\HWW_USB\USBTest(C#)\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+C:\Users\HWW\Desktop\KL25_USB-HWW_NEW(20160412)\USBTest(C#)—20160412\USBTest\bin\Debug\USBTest.exe.config
+C:\Users\HWW\Desktop\KL25_USB-HWW_NEW(20160412)\USBTest(C#)—20160412\USBTest\obj\Debug\USBTest.exe
+C:\Users\HWW\Desktop\KL25_USB-HWW_NEW(20160412)\USBTest(C#)—20160412\USBTest\obj\Debug\USBTest.pdb
+C:\Users\HWW\Desktop\KL25_USB-HWW_NEW(20160412)\USBTest(C#)—20160412\USBTest\bin\Debug\USBTest.exe
+C:\Users\HWW\Desktop\KL25_USB-HWW_NEW(20160412)\USBTest(C#)—20160412\USBTest\bin\Debug\LibUsbDotNet.dll
+C:\Users\HWW\Desktop\KL25_USB-HWW_NEW(20160412)\USBTest(C#)—20160412\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+C:\Users\HWW\Desktop\KL25_USB-HWW_NEW(20160412)\USBTest(C#)—20160412\USBTest\obj\Debug\USBTest.USBTest.resources
+C:\Users\HWW\Desktop\KL25_USB-HWW_NEW(20160412)\USBTest(C#)—20160412\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+C:\Users\HWW\Desktop\KL25_USB-HWW_NEW(20160412)\USBTest(C#)—20160412\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+C:\Users\HWW\Desktop\KL25_USB-HWW_NEW(20160412)\USBTest(C#)—20160412\USBTest\bin\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\ch12-USB(HWW)-(20160512)\USBTest(C#)—20160418\USBTest\bin\Debug\USBTest.exe.config
+C:\Users\Administrator\Desktop\ch12-USB(HWW)-(20160512)\USBTest(C#)—20160418\USBTest\obj\Debug\USBTest.exe
+C:\Users\Administrator\Desktop\ch12-USB(HWW)-(20160512)\USBTest(C#)—20160418\USBTest\obj\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\ch12-USB(HWW)-(20160512)\USBTest(C#)—20160418\USBTest\bin\Debug\USBTest.exe
+C:\Users\Administrator\Desktop\ch12-USB(HWW)-(20160512)\USBTest(C#)—20160418\USBTest\bin\Debug\USBTest.pdb
+C:\Users\Administrator\Desktop\ch12-USB(HWW)-(20160512)\USBTest(C#)—20160418\USBTest\bin\Debug\LibUsbDotNet.dll
+C:\Users\Administrator\Desktop\ch12-USB(HWW)-(20160512)\USBTest(C#)—20160418\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\ch12-USB(HWW)-(20160512)\USBTest(C#)—20160418\USBTest\obj\Debug\USBTest.USBTest.resources
+C:\Users\Administrator\Desktop\ch12-USB(HWW)-(20160512)\USBTest(C#)—20160418\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+C:\Users\Administrator\Desktop\ch12-USB(HWW)-(20160512)\USBTest(C#)—20160418\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160418\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160418\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160418\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160418\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160418\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160418\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160418\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160418\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160418\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160418\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160515\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160515\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160515\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160515\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160515\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160515\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160515\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160515\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160515\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160515\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160516\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160516\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160516\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160516\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160516\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160516\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160516\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160516\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160516\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160516\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160517\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160517\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160517\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160517\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160517\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160517\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160517\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160517\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160517\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160517\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160518\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160518\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160518\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160518\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160518\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160518\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160518\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160518\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160518\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160518\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160520\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160520\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160520\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160520\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160520\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160520\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160520\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160520\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160520\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160520\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-3\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-3\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-3\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-3\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-3\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-3\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-3\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-3\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-3\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-3\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-正常\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-正常\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160521-正常\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160522\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160522\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160522\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160522\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160522\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160522\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160522\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160522\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160522\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160522\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160523\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160523\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160523\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160523\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160523\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160523\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160523\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160523\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160523\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160523\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160524\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160524\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160524\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160524\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160524\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160524\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160524\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160524\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160524\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160524\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160525\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160525\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160525\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160525\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160525\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160525\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160525\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160525\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160525\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160525\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160527\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160527\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160527\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160527\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160527\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160527\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160527\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160527\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160527\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160527\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160530\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160530\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160530\USBTest\obj\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160530\USBTest\bin\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160530\USBTest\bin\Debug\USBTest.pdb
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160530\USBTest\bin\Debug\LibUsbDotNet.dll
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160530\USBTest\obj\Debug\USBTest.csprojResolveAssemblyReference.cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160530\USBTest\obj\Debug\USBTest.USBTest.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160530\USBTest\obj\Debug\USBTest.Properties.Resources.resources
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160530\USBTest\obj\Debug\USBTest.csproj.GenerateResource.Cache
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160607\USBTest\bin\Debug\USBTest.exe.config
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160607\USBTest\obj\Debug\USBTest.exe
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch12-USB(HWW)-(20160512)\USBTest(C#)20160607\USBTest\obj\Debug\USBTest.pdb

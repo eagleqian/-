@@ -1,0 +1,12 @@
+F:\LS\KW01-A1-20150804-3(wyh)\A1-PC-C#-20150804\bin\Debug\KW01 ED.exe.config
+F:\LS\KW01-A1-20150804-3(wyh)\A1-PC-C#-20150804\obj\Debug\KW01 ED.exe
+F:\LS\KW01-A1-20150804-3(wyh)\A1-PC-C#-20150804\obj\Debug\KW01 ED.pdb
+F:\LS\KW01-A1-20150804-3(wyh)\A1-PC-C#-20150804\obj\Debug\A1-PC.csprojResolveAssemblyReference.cache
+F:\LS\KW01-A1-20150804-3(wyh)\A1-PC-C#-20150804\obj\Debug\SerialPort.FrmMain.resources
+F:\LS\KW01-A1-20150804-3(wyh)\A1-PC-C#-20150804\obj\Debug\A1-PC.csproj.GenerateResource.Cache
+F:\LS\KW01-A1-20150804-3(wyh)\A1-PC-C#-20150804\bin\Debug\KW01 ED.exe
+F:\LS\KW01-A1-20150804-3(wyh)\A1-PC-C#-20150804\bin\Debug\KW01 ED.pdb
+F:\LS\KW01-A1-20150804-3(wyh)\A1-PC-C#-20150804\obj\Debug\SerialPort.Properties.Resources.resources
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\bin\Debug\KW01 ED.exe.config
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\obj\Debug\KW01 ED.exe
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\obj\Debug\KW01 ED.pdb

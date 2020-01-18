@@ -1,0 +1,70 @@
+F:\02_project\04_能量检测\SCI-C#\SCI\bin\Debug\SerialPort.exe
+F:\02_project\04_能量检测\SCI-C#\SCI\bin\Debug\SerialPort.pdb
+F:\02_project\04_能量检测\SCI-C#\SCI\obj\Debug\ResolveAssemblyReference.cache
+F:\02_project\04_能量检测\SCI-C#\SCI\obj\Debug\SerialPort.FrmSCI.resources
+F:\02_project\04_能量检测\SCI-C#\SCI\obj\Debug\SerialPort.Properties.Resources.resources
+F:\02_project\04_能量检测\SCI-C#\SCI\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\02_project\04_能量检测\SCI-C#\SCI\obj\Debug\GenerateResource-ResGen.write.1.tlog
+F:\02_project\04_能量检测\SCI-C#\SCI\obj\Debug\SerialPort.exe
+F:\02_project\04_能量检测\SCI-C#\SCI\obj\Debug\SerialPort.pdb
+F:\02_project\04_能量检测\03_software\2.0_整理_全局整理_20130512\SCI-C#\SCI\obj\Debug\SerialPort.exe
+F:\02_project\04_能量检测\03_software\2.0_整理_全局整理_20130512\SCI-C#\SCI\obj\Debug\SerialPort.pdb
+F:\02_project\04_能量检测\03_software\2.0_整理_全局整理_20130512\SCI-C#\SCI\bin\Debug\SerialPort.exe
+F:\02_project\04_能量检测\03_software\2.0_整理_全局整理_20130512\SCI-C#\SCI\bin\Debug\SerialPort.pdb
+F:\02_project\04_能量检测\03_software\2.0_整理_全局整理_20130512\SCI-C#\SCI\obj\Debug\ResolveAssemblyReference.cache
+F:\02_project\04_能量检测\03_software\2.0_整理_全局整理_20130512\SCI-C#\SCI\obj\Debug\SerialPort.FrmSCI.resources
+F:\02_project\04_能量检测\03_software\2.0_整理_全局整理_20130512\SCI-C#\SCI\obj\Debug\SerialPort.Properties.Resources.resources
+F:\02_project\04_能量检测\03_software\2.0_整理_全局整理_20130512\SCI-C#\SCI\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\02_project\04_能量检测\03_software\2.0_整理_全局整理_20130512\SCI-C#\SCI\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\project\无线数传模块\04_Software\能量检测\SCI-C#\SCI\obj\Debug\SerialPort.exe
+E:\project\无线数传模块\04_Software\能量检测\SCI-C#\SCI\obj\Debug\SerialPort.pdb
+E:\project\无线数传模块\04_Software\能量检测\SCI-C#\SCI\bin\Debug\SerialPort.exe
+E:\project\无线数传模块\04_Software\能量检测\SCI-C#\SCI\bin\Debug\SerialPort.pdb
+E:\project\无线数传模块\04_Software\能量检测\SCI-C#\SCI\obj\Debug\ResolveAssemblyReference.cache
+E:\project\无线数传模块\04_Software\能量检测\SCI-C#\SCI\obj\Debug\SerialPort.FrmSCI.resources
+E:\project\无线数传模块\04_Software\能量检测\SCI-C#\SCI\obj\Debug\SerialPort.Properties.Resources.resources
+E:\project\无线数传模块\04_Software\能量检测\SCI-C#\SCI\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\project\无线数传模块\04_Software\能量检测\SCI-C#\SCI\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\Lib\MCU\MC13211\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\obj\Debug\SerialPort.exe
+E:\Lib\MCU\MC13211\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\obj\Debug\SerialPort.pdb
+E:\Lib\MCU\MC13211\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\bin\Debug\SerialPort.exe
+E:\Lib\MCU\MC13211\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\bin\Debug\SerialPort.pdb
+E:\Lib\MCU\MC13211\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\obj\Debug\ResolveAssemblyReference.cache
+E:\Lib\MCU\MC13211\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\obj\Debug\SerialPort.FrmSCI.resources
+E:\Lib\MCU\MC13211\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\obj\Debug\SerialPort.Properties.Resources.resources
+E:\Lib\MCU\KW01\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\obj\Debug\ResolveAssemblyReference.cache
+E:\Lib\MCU\KW01\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\obj\Debug\SerialPort.FrmSCI.resources
+E:\Lib\MCU\KW01\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\obj\Debug\SerialPort.Properties.Resources.resources
+E:\Lib\MCU\KW01\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\bin\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\bin\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\obj\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\MC13211 能量测试v3.0\SCI-C#\SCI\obj\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\SCI-C#\SCI\obj\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\SCI-C#\SCI\obj\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\SCI-C#\SCI\bin\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\SCI-C#\SCI\bin\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\SCI-C#\SCI\obj\Debug\ResolveAssemblyReference.cache
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\SCI-C#\SCI\obj\Debug\SerialPort.FrmSCI.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\SCI-C#\SCI\obj\Debug\SerialPort.Properties.Resources.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\SCI-C#\SCI\obj\Debug\ResGen.read.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\SCI-C#\SCI\obj\Debug\ResGen.write.1.tlog
+E:\Lib\MCU\KW01\04 Software\SCI-C#\SCI\obj\Debug\ResolveAssemblyReference.cache
+E:\Lib\MCU\KW01\04 Software\SCI-C#\SCI\obj\Debug\SerialPort.FrmSCI.resources
+E:\Lib\MCU\KW01\04 Software\SCI-C#\SCI\obj\Debug\SerialPort.Properties.Resources.resources
+E:\Lib\MCU\KW01\04 Software\SCI-C#\SCI\obj\Debug\ResGen.read.1.tlog
+E:\Lib\MCU\KW01\04 Software\SCI-C#\SCI\obj\Debug\ResGen.write.1.tlog
+E:\Lib\MCU\KW01\04 Software\SCI-C#\SCI\bin\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\SCI-C#\SCI\bin\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\SCI-C#\SCI\obj\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\SCI-C#\SCI\obj\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-10\SCI-C#\SCI\obj\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-10\SCI-C#\SCI\obj\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-10\SCI-C#\SCI\bin\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-10\SCI-C#\SCI\bin\Debug\SerialPort.pdb
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-10\SCI-C#\SCI\obj\Debug\ResolveAssemblyReference.cache
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-10\SCI-C#\SCI\obj\Debug\SerialPort.FrmSCI.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-10\SCI-C#\SCI\obj\Debug\SerialPort.Properties.Resources.resources
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-10\SCI-C#\SCI\obj\Debug\ResGen.read.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-10\SCI-C#\SCI\obj\Debug\ResGen.write.1.tlog
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\SCI-C#\SCI\obj\Debug\SerialPort.exe
+E:\Lib\MCU\KW01\04 Software\KW01 EnergyDetection v3.0\2014-8-11\SCI-C#\SCI\obj\Debug\SerialPort.pdb

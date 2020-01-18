@@ -1,7 +1,7 @@
 Archive member included because of file (symbol)
 
 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
-                              ./07_Soft_Component/printf/printf.o (__aeabi_uidiv)
+                              ./08_Source/isr.o (__aeabi_uidiv)
 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
                               ./07_Soft_Component/printf/printf.o (__aeabi_idiv)
 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_dvmd_tls.o)
@@ -37,7 +37,7 @@ e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libg
 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(fixsfsi.o)
                               e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_fixunssfsi.o) (__aeabi_f2iz)
 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(floatunsisf.o)
-                              ./08_Source/isr.o (__aeabi_ui2f)
+                              ./05_Driver/tpm/tpm.o (__aeabi_ui2f)
 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(eqdf2.o)
                               e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_arm_cmpdf2.o) (__eqdf2)
 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(gedf2.o)
@@ -92,10 +92,6 @@ Discarded input sections
  .text          0x00000000        0x0 ./08_Source/isr.o
  .data          0x00000000        0x0 ./08_Source/isr.o
  .bss           0x00000000        0x0 ./08_Source/isr.o
- .data.Up_Down.4943
-                0x00000000        0x1 ./08_Source/isr.o
- .data.duty.4942
-                0x00000000        0x4 ./08_Source/isr.o
  .group         0x00000000        0x8 ./08_Source/main.o
  .group         0x00000000        0x8 ./08_Source/main.o
  .group         0x00000000        0x8 ./08_Source/main.o
@@ -265,14 +261,8 @@ Discarded input sections
  .bss           0x00000000        0x0 ./05_Driver/tpm/tpm.o
  .text.NVIC_DisableIRQ
                 0x00000000       0x2c ./05_Driver/tpm/tpm.o
- .text.tpm_get_capvalue
-                0x00000000       0x58 ./05_Driver/tpm/tpm.o
  .text.tpm_disable_int
                 0x00000000       0x34 ./05_Driver/tpm/tpm.o
- .text.tpm_chl_get_int
-                0x00000000       0x40 ./05_Driver/tpm/tpm.o
- .text.tpm_clear_chl_int
-                0x00000000       0x4c ./05_Driver/tpm/tpm.o
  .debug_macro   0x00000000      0x7f6 ./05_Driver/tpm/tpm.o
  .debug_macro   0x00000000       0x16 ./05_Driver/tpm/tpm.o
  .debug_macro   0x00000000       0x16 ./05_Driver/tpm/tpm.o
@@ -472,7 +462,7 @@ END GROUP
  .FlashConfig   0x00000400       0x10 ./03_MCU/startup_MKL25Z4.o
                 0x00000410                . = ALIGN (0x4)
 
-.text           0x00000800     0x511c
+.text           0x00000800     0x5350
                 0x00000800                . = ALIGN (0x4)
  *(.text)
  .text          0x00000800       0x4c ./03_MCU/startup_MKL25Z4.o
@@ -602,141 +592,150 @@ END GROUP
                 0x00002be0                __udivdi3
  *(.text*)
  .text.TPM0_IRQHandler
-                0x00002f64       0x44 ./08_Source/isr.o
+                0x00002f64       0xfc ./08_Source/isr.o
                 0x00002f64                TPM0_IRQHandler
  .text.TPM1_IRQHandler
-                0x00002fa8       0xa8 ./08_Source/isr.o
-                0x00002fa8                TPM1_IRQHandler
+                0x00003060       0xa8 ./08_Source/isr.o
+                0x00003060                TPM1_IRQHandler
  .text.TPM2_IRQHandler
-                0x00003050       0x30 ./08_Source/isr.o
-                0x00003050                TPM2_IRQHandler
+                0x00003108       0x8c ./08_Source/isr.o
+                0x00003108                TPM2_IRQHandler
  .text.UART0_IRQHandler
-                0x00003080       0x34 ./08_Source/isr.o
-                0x00003080                UART0_IRQHandler
+                0x00003194       0x34 ./08_Source/isr.o
+                0x00003194                UART0_IRQHandler
  .text.UART1_IRQHandler
-                0x000030b4       0xfc ./08_Source/isr.o
-                0x000030b4                UART1_IRQHandler
+                0x000031c8      0x130 ./08_Source/isr.o
+                0x000031c8                UART1_IRQHandler
  .text.UART2_IRQHandler
-                0x000031b0       0x34 ./08_Source/isr.o
-                0x000031b0                UART2_IRQHandler
- .text.SecAdd1  0x000031e4       0x6c ./08_Source/isr.o
-                0x000031e4                SecAdd1
+                0x000032f8       0x34 ./08_Source/isr.o
+                0x000032f8                UART2_IRQHandler
+ .text.SecAdd1  0x0000332c       0x6c ./08_Source/isr.o
+                0x0000332c                SecAdd1
  .text.CreateFrame
-                0x00003250       0xe8 ./08_Source/isr.o
-                0x00003250                CreateFrame
- .text.main     0x00003338      0x11c ./08_Source/main.o
-                0x00003338                main
+                0x00003398       0xe8 ./08_Source/isr.o
+                0x00003398                CreateFrame
+ .text.main     0x00003480      0x110 ./08_Source/main.o
+                0x00003480                main
  .text.out_char
-                0x00003454       0x20 ./07_Soft_Component/printf/printf.o
-                0x00003454                out_char
+                0x00003590       0x20 ./07_Soft_Component/printf/printf.o
+                0x00003590                out_char
  .text.printk_putc
-                0x00003474       0x50 ./07_Soft_Component/printf/printf.o
- *fill*         0x000034c4        0x4 
+                0x000035b0       0x50 ./07_Soft_Component/printf/printf.o
  .text.printk_mkfloatstr
-                0x000034c8      0x398 ./07_Soft_Component/printf/printf.o
-                0x000034c8                printk_mkfloatstr
+                0x00003600      0x398 ./07_Soft_Component/printf/printf.o
+                0x00003600                printk_mkfloatstr
  .text.printk_mknumstr
-                0x00003860      0x100 ./07_Soft_Component/printf/printf.o
+                0x00003998      0x100 ./07_Soft_Component/printf/printf.o
  .text.printk_pad_zero
-                0x00003960       0x38 ./07_Soft_Component/printf/printf.o
+                0x00003a98       0x38 ./07_Soft_Component/printf/printf.o
  .text.printk_pad_space
-                0x00003998       0x38 ./07_Soft_Component/printf/printf.o
- .text.printk   0x000039d0      0xaa8 ./07_Soft_Component/printf/printf.o
-                0x000039d0                printk
+                0x00003ad0       0x38 ./07_Soft_Component/printf/printf.o
+ .text.printk   0x00003b08      0xaa8 ./07_Soft_Component/printf/printf.o
+                0x00003b08                printk
  .text.myprintf
-                0x00004478       0x48 ./07_Soft_Component/printf/printf.o
-                0x00004478                myprintf
+                0x000045b0       0x48 ./07_Soft_Component/printf/printf.o
+                0x000045b0                myprintf
  .text.light_init
-                0x000044c0       0x2c ./06_App_Component/light/light.o
-                0x000044c0                light_init
+                0x000045f8       0x2c ./06_App_Component/light/light.o
+                0x000045f8                light_init
  .text.light_change
-                0x000044ec       0x1c ./06_App_Component/light/light.o
-                0x000044ec                light_change
+                0x00004624       0x1c ./06_App_Component/light/light.o
+                0x00004624                light_change
  .text.NVIC_EnableIRQ
-                0x00004508       0x2c ./05_Driver/uart/uart.o
+                0x00004640       0x2c ./05_Driver/uart/uart.o
  .text.uart_init
-                0x00004534      0x29c ./05_Driver/uart/uart.o
-                0x00004534                uart_init
+                0x0000466c      0x29c ./05_Driver/uart/uart.o
+                0x0000466c                uart_init
  .text.uart_send1
-                0x000047d0       0xa8 ./05_Driver/uart/uart.o
-                0x000047d0                uart_send1
+                0x00004908       0xa8 ./05_Driver/uart/uart.o
+                0x00004908                uart_send1
  .text.uart_re1
-                0x00004878       0xc8 ./05_Driver/uart/uart.o
-                0x00004878                uart_re1
+                0x000049b0       0xc8 ./05_Driver/uart/uart.o
+                0x000049b0                uart_re1
  .text.uart_enable_re_int
-                0x00004940       0x7c ./05_Driver/uart/uart.o
-                0x00004940                uart_enable_re_int
+                0x00004a78       0x7c ./05_Driver/uart/uart.o
+                0x00004a78                uart_enable_re_int
  .text.uart_get_re_int
-                0x000049bc       0xe8 ./05_Driver/uart/uart.o
-                0x000049bc                uart_get_re_int
+                0x00004af4       0xe8 ./05_Driver/uart/uart.o
+                0x00004af4                uart_get_re_int
  .text.uart_is_uartNo
-                0x00004aa4       0x24 ./05_Driver/uart/uart.o
-                0x00004aa4                uart_is_uartNo
+                0x00004bdc       0x24 ./05_Driver/uart/uart.o
+                0x00004bdc                uart_is_uartNo
  .text.NVIC_EnableIRQ
-                0x00004ac8       0x2c ./05_Driver/tpm/tpm.o
+                0x00004c00       0x2c ./05_Driver/tpm/tpm.o
  .text.tpm_timer_init
-                0x00004af4       0xf0 ./05_Driver/tpm/tpm.o
-                0x00004af4                tpm_timer_init
+                0x00004c2c       0xf0 ./05_Driver/tpm/tpm.o
+                0x00004c2c                tpm_timer_init
  .text.pwm_init
-                0x00004be4      0x194 ./05_Driver/tpm/tpm.o
-                0x00004be4                pwm_init
+                0x00004d1c      0x194 ./05_Driver/tpm/tpm.o
+                0x00004d1c                pwm_init
  .text.pwm_update
-                0x00004d78       0x98 ./05_Driver/tpm/tpm.o
-                0x00004d78                pwm_update
+                0x00004eb0       0x98 ./05_Driver/tpm/tpm.o
+                0x00004eb0                pwm_update
  .text.incap_init
-                0x00004e10      0x160 ./05_Driver/tpm/tpm.o
-                0x00004e10                incap_init
+                0x00004f48      0x160 ./05_Driver/tpm/tpm.o
+                0x00004f48                incap_init
+ .text.tpm_get_capvalue
+                0x000050a8       0x58 ./05_Driver/tpm/tpm.o
+                0x000050a8                tpm_get_capvalue
  .text.outcompare_init
-                0x00004f70      0x16c ./05_Driver/tpm/tpm.o
-                0x00004f70                outcompare_init
+                0x00005100      0x16c ./05_Driver/tpm/tpm.o
+                0x00005100                outcompare_init
  .text.tpm_enable_int
-                0x000050dc       0x34 ./05_Driver/tpm/tpm.o
-                0x000050dc                tpm_enable_int
+                0x0000526c       0x34 ./05_Driver/tpm/tpm.o
+                0x0000526c                tpm_enable_int
  .text.tpm_get_int
-                0x00005110       0x30 ./05_Driver/tpm/tpm.o
-                0x00005110                tpm_get_int
+                0x000052a0       0x30 ./05_Driver/tpm/tpm.o
+                0x000052a0                tpm_get_int
+ .text.tpm_chl_get_int
+                0x000052d0       0x40 ./05_Driver/tpm/tpm.o
+                0x000052d0                tpm_chl_get_int
  .text.tpm_clear_int
-                0x00005140       0x34 ./05_Driver/tpm/tpm.o
-                0x00005140                tpm_clear_int
+                0x00005310       0x34 ./05_Driver/tpm/tpm.o
+                0x00005310                tpm_clear_int
+ .text.tpm_clear_chl_int
+                0x00005344       0x4c ./05_Driver/tpm/tpm.o
+                0x00005344                tpm_clear_chl_int
  .text.tpm_mux_val
-                0x00005174      0x150 ./05_Driver/tpm/tpm.o
+                0x00005390      0x148 ./05_Driver/tpm/tpm.o
  .text.gpio_init
-                0x000052c4       0xe8 ./05_Driver/gpio/gpio.o
-                0x000052c4                gpio_init
+                0x000054d8       0xe8 ./05_Driver/gpio/gpio.o
+                0x000054d8                gpio_init
  .text.gpio_set
-                0x000053ac       0x80 ./05_Driver/gpio/gpio.o
-                0x000053ac                gpio_set
+                0x000055c0       0x80 ./05_Driver/gpio/gpio.o
+                0x000055c0                gpio_set
  .text.gpio_reverse
-                0x0000542c       0x54 ./05_Driver/gpio/gpio.o
-                0x0000542c                gpio_reverse
+                0x00005640       0x54 ./05_Driver/gpio/gpio.o
+                0x00005640                gpio_reverse
  .text.gpio_get_port_pin
-                0x00005480       0x34 ./05_Driver/gpio/gpio.o
-                0x00005480                gpio_get_port_pin
+                0x00005694       0x34 ./05_Driver/gpio/gpio.o
+                0x00005694                gpio_get_port_pin
  .text.SystemInit
-                0x000054b4      0x1a0 ./03_MCU/system_MKL25Z4.o
-                0x000054b4                SystemInit
- .text.memset   0x00005654       0x9c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg.a(lib_a-memset.o)
-                0x00005654                memset
- .text.strlen   0x000056f0       0x10 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg.a(lib_a-strlen.o)
-                0x000056f0                strlen
+                0x000056c8      0x1a0 ./03_MCU/system_MKL25Z4.o
+                0x000056c8                SystemInit
+ .text.memset   0x00005868       0x9c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg.a(lib_a-memset.o)
+                0x00005868                memset
+ .text.strlen   0x00005904       0x10 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg.a(lib_a-strlen.o)
+                0x00005904                strlen
  *(.rodata)
- .rodata        0x00005700       0x50 ./08_Source/main.o
- .rodata        0x00005750       0x40 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(divsf3.o)
- .rodata        0x00005790       0x40 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(mulsf3.o)
- .rodata        0x000057d0       0x40 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(muldf3.o)
+ .rodata        0x00005914       0x20 ./08_Source/isr.o
+ .rodata        0x00005934       0x50 ./08_Source/main.o
+ .rodata        0x00005984       0x40 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(divsf3.o)
+ .rodata        0x000059c4       0x40 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(mulsf3.o)
+ .rodata        0x00005a04       0x40 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(muldf3.o)
  *(.rodata*)
  .rodata.printk
-                0x00005810       0xc8 ./07_Soft_Component/printf/printf.o
+                0x00005a44       0xc8 ./07_Soft_Component/printf/printf.o
  .rodata.UART_ARR
-                0x000058d8        0x8 ./05_Driver/uart/uart.o
+                0x00005b0c        0x8 ./05_Driver/uart/uart.o
  .rodata.PORT_ARR
-                0x000058e0       0x14 ./05_Driver/tpm/tpm.o
+                0x00005b14       0x14 ./05_Driver/tpm/tpm.o
  .rodata.PORT_ARR
-                0x000058f4       0x14 ./05_Driver/gpio/gpio.o
-                0x000058f4                PORT_ARR
+                0x00005b28       0x14 ./05_Driver/gpio/gpio.o
+                0x00005b28                PORT_ARR
  .rodata.GPIO_ARR
-                0x00005908       0x14 ./05_Driver/gpio/gpio.o
-                0x00005908                GPIO_ARR
+                0x00005b3c       0x14 ./05_Driver/gpio/gpio.o
+                0x00005b3c                GPIO_ARR
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.glue_7t)
@@ -744,67 +743,67 @@ END GROUP
  *(.eh_frame)
  *(.init)
  *(.fini)
-                0x0000591c                . = ALIGN (0x4)
+                0x00005b50                . = ALIGN (0x4)
 
-.vfp11_veneer   0x0000591c        0x0
+.vfp11_veneer   0x00005b50        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x0000591c        0x0
+.v4_bx          0x00005b50        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x0000591c        0x0
+.iplt           0x00005b50        0x0
  .iplt          0x00000000        0x0 ./08_Source/isr.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0000591c        0x8
-                0x0000591c                __exidx_start = .
+.ARM            0x00005b50        0x8
+                0x00005b50                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0000591c        0x8 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divdi3.o)
- .ARM.exidx     0x00005924        0x0 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x00005b50        0x8 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x00005b58        0x0 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivdi3.o)
                                   0x8 (size before relaxing)
-                0x00005924                __exidx_end = .
+                0x00005b58                __exidx_end = .
 
-.rel.dyn        0x00005924        0x0
+.rel.dyn        0x00005b58        0x0
  .rel.iplt      0x00000000        0x0 ./08_Source/isr.o
 
-.ctors          0x00005924        0x0
-                0x00005924                __CTOR_LIST__ = .
+.ctors          0x00005b58        0x0
+                0x00005b58                __CTOR_LIST__ = .
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x00005924                __CTOR_END__ = .
+                0x00005b58                __CTOR_END__ = .
 
-.dtors          0x00005924        0x0
-                0x00005924                __DTOR_LIST__ = .
+.dtors          0x00005b58        0x0
+                0x00005b58                __DTOR_LIST__ = .
  *crtbegin.o(.dtors)
  *crtbegin?.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x00005924                __DTOR_END__ = .
+                0x00005b58                __DTOR_END__ = .
 
-.preinit_array  0x00005924        0x0
-                0x00005924                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x00005b58        0x0
+                0x00005b58                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x00005924                PROVIDE (__preinit_array_end, .)
+                0x00005b58                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x00005924        0x0
-                0x00005924                PROVIDE (__init_array_start, .)
+.init_array     0x00005b58        0x0
+                0x00005b58                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
-                0x00005924                PROVIDE (__init_array_end, .)
+                0x00005b58                PROVIDE (__init_array_end, .)
 
-.fini_array     0x00005924        0x0
-                0x00005924                PROVIDE (__fini_array_start, .)
+.fini_array     0x00005b58        0x0
+                0x00005b58                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
-                0x00005924                PROVIDE (__fini_array_end, .)
-                0x00005924                __etext = .
-                0x00005924                __DATA_ROM = .
+                0x00005b58                PROVIDE (__fini_array_end, .)
+                0x00005b58                __etext = .
+                0x00005b58                __DATA_ROM = .
 
 .mtb            0x1ffff000        0x0
                 0x1ffff000                . = ALIGN (0x8)
@@ -813,69 +812,70 @@ END GROUP
                 0x1ffff000                . = ALIGN (0x8)
                 0x1ffff000                _mtb_end = .
 
-.data           0x1ffff000       0x20 load address 0x00005924
+.data           0x1ffff000       0x1c load address 0x00005b58
                 0x1ffff000                . = ALIGN (0x4)
                 0x1ffff000                __DATA_RAM = .
                 0x1ffff000                __data_start__ = .
  *(.data)
  *(.data*)
- .data.conDuty  0x1ffff000        0x4 ./08_Source/isr.o
- .data.Up_Down.4938
-                0x1ffff004        0x1 ./08_Source/isr.o
- *fill*         0x1ffff005        0x3 
+ .data.Up_Down.4937
+                0x1ffff000        0x1 ./08_Source/isr.o
+ *fill*         0x1ffff001        0x3 
  .data.table_irq_uart
-                0x1ffff008        0x4 ./05_Driver/uart/uart.o
- .data.TPM_ARR  0x1ffff00c        0xc ./05_Driver/tpm/tpm.o
-                0x1ffff00c                TPM_ARR
- .data.TPM_IRQ  0x1ffff018        0x4 ./05_Driver/tpm/tpm.o
-                0x1ffff018                TPM_IRQ
+                0x1ffff004        0x4 ./05_Driver/uart/uart.o
+ .data.TPM_ARR  0x1ffff008        0xc ./05_Driver/tpm/tpm.o
+                0x1ffff008                TPM_ARR
+ .data.TPM_IRQ  0x1ffff014        0x4 ./05_Driver/tpm/tpm.o
+                0x1ffff014                TPM_IRQ
  .data.SystemCoreClock
-                0x1ffff01c        0x4 ./03_MCU/system_MKL25Z4.o
-                0x1ffff01c                SystemCoreClock
+                0x1ffff018        0x4 ./03_MCU/system_MKL25Z4.o
+                0x1ffff018                SystemCoreClock
  *(.jcr*)
-                0x1ffff020                . = ALIGN (0x4)
-                0x1ffff020                __data_end__ = .
-                0x00005944                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+                0x1ffff01c                . = ALIGN (0x4)
+                0x1ffff01c                __data_end__ = .
+                0x00005b74                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
 
-.igot.plt       0x1ffff020        0x0 load address 0x00005944
+.igot.plt       0x1ffff01c        0x0 load address 0x00005b74
  .igot.plt      0x00000000        0x0 ./08_Source/isr.o
 
-.bss            0x1ffff020       0x50 load address 0x00005944
-                0x1ffff020                . = ALIGN (0x4)
-                0x1ffff020                __START_BSS = .
-                0x1ffff020                __bss_start__ = .
+.bss            0x1ffff01c       0x7c load address 0x00005b74
+                0x1ffff01c                . = ALIGN (0x4)
+                0x1ffff01c                __START_BSS = .
+                0x1ffff01c                __bss_start__ = .
  *(.bss)
  *(.bss*)
- .bss.cnt.4933  0x1ffff020        0x1 ./08_Source/isr.o
- *fill*         0x1ffff021        0x3 
- .bss.duty.4937
-                0x1ffff024        0x4 ./08_Source/isr.o
- .bss.buffer.4954
-                0x1ffff028       0x40 ./08_Source/isr.o
+ .bss.cnt.4932  0x1ffff01c        0x4 ./08_Source/isr.o
+ .bss.duty.4936
+                0x1ffff020        0x4 ./08_Source/isr.o
+ .bss.cnt.4942  0x1ffff024        0x4 ./08_Source/isr.o
+ .bss.Cap_Value.4941
+                0x1ffff028       0x28 ./08_Source/isr.o
+ .bss.buffer.4956
+                0x1ffff050       0x40 ./08_Source/isr.o
  .bss.frameLen.4972
-                0x1ffff068        0x1 ./08_Source/isr.o
+                0x1ffff090        0x1 ./08_Source/isr.o
  *(COMMON)
- *fill*         0x1ffff069        0x3 
- COMMON         0x1ffff06c        0x3 ./08_Source/isr.o
-                0x1ffff06c                g_time
-                0x1ffff070                . = ALIGN (0x4)
- *fill*         0x1ffff06f        0x1 
-                0x1ffff070                __bss_end__ = .
-                0x1ffff070                __END_BSS = .
+ *fill*         0x1ffff091        0x3 
+ COMMON         0x1ffff094        0x3 ./08_Source/isr.o
+                0x1ffff094                g_time
+                0x1ffff098                . = ALIGN (0x4)
+ *fill*         0x1ffff097        0x1 
+                0x1ffff098                __bss_end__ = .
+                0x1ffff098                __END_BSS = .
 
-.heap           0x1ffff070      0x400 load address 0x00005994
-                0x1ffff070                . = ALIGN (0x8)
-                0x1ffff070                __end__ = .
-                0x1ffff070                PROVIDE (end, .)
-                0x1ffff070                __HeapBase = .
-                0x1ffff470                . = (. + HEAP_SIZE)
- *fill*         0x1ffff070      0x400 
-                0x1ffff470                __HeapLimit = .
+.heap           0x1ffff098      0x400 load address 0x00005bf0
+                0x1ffff098                . = ALIGN (0x8)
+                0x1ffff098                __end__ = .
+                0x1ffff098                PROVIDE (end, .)
+                0x1ffff098                __HeapBase = .
+                0x1ffff498                . = (. + HEAP_SIZE)
+ *fill*         0x1ffff098      0x400 
+                0x1ffff498                __HeapLimit = .
 
-.stack          0x1ffff470      0x400 load address 0x00005d94
-                0x1ffff470                . = ALIGN (0x8)
-                0x1ffff870                . = (. + STACK_SIZE)
- *fill*         0x1ffff470      0x400 
+.stack          0x1ffff498      0x400 load address 0x00005ff0
+                0x1ffff498                . = ALIGN (0x8)
+                0x1ffff898                . = (. + STACK_SIZE)
+ *fill*         0x1ffff498      0x400 
                 0x20003000                __StackTop = (ORIGIN (m_data) + 0x4000)
                 0x20002c00                __StackLimit = (__StackTop - STACK_SIZE)
                 0x20003000                PROVIDE (__stack, __StackTop)
@@ -968,27 +968,27 @@ END GROUP
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data overflowed with stack and heap)
 OUTPUT(KL25_TPM-incap-outcomp-pwm.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x2df2
- .debug_info    0x00000000      0x335 ./08_Source/isr.o
- .debug_info    0x00000335      0x10d ./08_Source/main.o
- .debug_info    0x00000442      0x663 ./07_Soft_Component/printf/printf.o
- .debug_info    0x00000aa5      0x118 ./06_App_Component/light/light.o
- .debug_info    0x00000bbd      0xa79 ./05_Driver/uart/uart.o
- .debug_info    0x00001636      0xb30 ./05_Driver/tpm/tpm.o
- .debug_info    0x00002166      0x858 ./05_Driver/gpio/gpio.o
- .debug_info    0x000029be       0x6c ./03_MCU/startup_MKL25Z4.o
- .debug_info    0x00002a2a      0x3c8 ./03_MCU/system_MKL25Z4.o
+.debug_info     0x00000000     0x2e0b
+ .debug_info    0x00000000      0x34e ./08_Source/isr.o
+ .debug_info    0x0000034e      0x10d ./08_Source/main.o
+ .debug_info    0x0000045b      0x663 ./07_Soft_Component/printf/printf.o
+ .debug_info    0x00000abe      0x118 ./06_App_Component/light/light.o
+ .debug_info    0x00000bd6      0xa79 ./05_Driver/uart/uart.o
+ .debug_info    0x0000164f      0xb30 ./05_Driver/tpm/tpm.o
+ .debug_info    0x0000217f      0x858 ./05_Driver/gpio/gpio.o
+ .debug_info    0x000029d7       0x6c ./03_MCU/startup_MKL25Z4.o
+ .debug_info    0x00002a43      0x3c8 ./03_MCU/system_MKL25Z4.o
 
-.debug_abbrev   0x00000000      0xb45
- .debug_abbrev  0x00000000      0x12a ./08_Source/isr.o
- .debug_abbrev  0x0000012a       0xa6 ./08_Source/main.o
- .debug_abbrev  0x000001d0      0x1d8 ./07_Soft_Component/printf/printf.o
- .debug_abbrev  0x000003a8       0x7b ./06_App_Component/light/light.o
- .debug_abbrev  0x00000423      0x217 ./05_Driver/uart/uart.o
- .debug_abbrev  0x0000063a      0x20e ./05_Driver/tpm/tpm.o
- .debug_abbrev  0x00000848      0x1e9 ./05_Driver/gpio/gpio.o
- .debug_abbrev  0x00000a31       0x14 ./03_MCU/startup_MKL25Z4.o
- .debug_abbrev  0x00000a45      0x100 ./03_MCU/system_MKL25Z4.o
+.debug_abbrev   0x00000000      0xb36
+ .debug_abbrev  0x00000000      0x11b ./08_Source/isr.o
+ .debug_abbrev  0x0000011b       0xa6 ./08_Source/main.o
+ .debug_abbrev  0x000001c1      0x1d8 ./07_Soft_Component/printf/printf.o
+ .debug_abbrev  0x00000399       0x7b ./06_App_Component/light/light.o
+ .debug_abbrev  0x00000414      0x217 ./05_Driver/uart/uart.o
+ .debug_abbrev  0x0000062b      0x20e ./05_Driver/tpm/tpm.o
+ .debug_abbrev  0x00000839      0x1e9 ./05_Driver/gpio/gpio.o
+ .debug_abbrev  0x00000a22       0x14 ./03_MCU/startup_MKL25Z4.o
+ .debug_abbrev  0x00000a36      0x100 ./03_MCU/system_MKL25Z4.o
 
 .debug_aranges  0x00000000      0x2d0
  .debug_aranges
@@ -1064,33 +1064,33 @@ OUTPUT(KL25_TPM-incap-outcomp-pwm.elf elf32-littlearm)
  .debug_macro   0x0000a299       0x7e ./03_MCU/system_MKL25Z4.o
  .debug_macro   0x0000a317       0x4c ./03_MCU/system_MKL25Z4.o
 
-.debug_line     0x00000000     0x2080
- .debug_line    0x00000000      0x4cf ./08_Source/isr.o
- .debug_line    0x000004cf      0x3d7 ./08_Source/main.o
- .debug_line    0x000008a6      0x60b ./07_Soft_Component/printf/printf.o
- .debug_line    0x00000eb1      0x2da ./06_App_Component/light/light.o
- .debug_line    0x0000118b      0x416 ./05_Driver/uart/uart.o
- .debug_line    0x000015a1      0x449 ./05_Driver/tpm/tpm.o
- .debug_line    0x000019ea      0x3c1 ./05_Driver/gpio/gpio.o
- .debug_line    0x00001dab       0x70 ./03_MCU/startup_MKL25Z4.o
- .debug_line    0x00001e1b      0x265 ./03_MCU/system_MKL25Z4.o
+.debug_line     0x00000000     0x207e
+ .debug_line    0x00000000      0x4ce ./08_Source/isr.o
+ .debug_line    0x000004ce      0x3d6 ./08_Source/main.o
+ .debug_line    0x000008a4      0x60b ./07_Soft_Component/printf/printf.o
+ .debug_line    0x00000eaf      0x2da ./06_App_Component/light/light.o
+ .debug_line    0x00001189      0x416 ./05_Driver/uart/uart.o
+ .debug_line    0x0000159f      0x449 ./05_Driver/tpm/tpm.o
+ .debug_line    0x000019e8      0x3c1 ./05_Driver/gpio/gpio.o
+ .debug_line    0x00001da9       0x70 ./03_MCU/startup_MKL25Z4.o
+ .debug_line    0x00001e19      0x265 ./03_MCU/system_MKL25Z4.o
 
-.debug_str      0x00000000    0x34e35
- .debug_str     0x00000000    0x3205f ./08_Source/isr.o
-                              0x32465 (size before relaxing)
- .debug_str     0x0003205f       0x2a ./08_Source/main.o
-                              0x3238c (size before relaxing)
- .debug_str     0x00032089     0x263a ./07_Soft_Component/printf/printf.o
+.debug_str      0x00000000    0x34e4d
+ .debug_str     0x00000000    0x32079 ./08_Source/isr.o
+                              0x3247f (size before relaxing)
+ .debug_str     0x00032079       0x22 ./08_Source/main.o
+                              0x3238a (size before relaxing)
+ .debug_str     0x0003209b     0x2640 ./07_Soft_Component/printf/printf.o
                               0x34758 (size before relaxing)
- .debug_str     0x000346c3       0x56 ./06_App_Component/light/light.o
+ .debug_str     0x000346db       0x56 ./06_App_Component/light/light.o
                               0x31f21 (size before relaxing)
- .debug_str     0x00034719      0x434 ./05_Driver/uart/uart.o
+ .debug_str     0x00034731      0x434 ./05_Driver/uart/uart.o
                               0x32277 (size before relaxing)
- .debug_str     0x00034b4d      0x187 ./05_Driver/tpm/tpm.o
-                              0x324ab (size before relaxing)
- .debug_str     0x00034cd4      0x11d ./05_Driver/gpio/gpio.o
+ .debug_str     0x00034b65      0x187 ./05_Driver/tpm/tpm.o
+                              0x324a9 (size before relaxing)
+ .debug_str     0x00034cec      0x11d ./05_Driver/gpio/gpio.o
                               0x32233 (size before relaxing)
- .debug_str     0x00034df1       0x44 ./03_MCU/system_MKL25Z4.o
+ .debug_str     0x00034e09       0x44 ./03_MCU/system_MKL25Z4.o
                               0x31d88 (size before relaxing)
 
 .comment        0x00000000       0x70
@@ -1104,39 +1104,39 @@ OUTPUT(KL25_TPM-incap-outcomp-pwm.elf elf32-littlearm)
  .comment       0x00000000       0x71 ./05_Driver/gpio/gpio.o
  .comment       0x00000000       0x71 ./03_MCU/system_MKL25Z4.o
 
-.debug_frame    0x00000000      0xd74
- .debug_frame   0x00000000      0x104 ./08_Source/isr.o
- .debug_frame   0x00000104       0x30 ./08_Source/main.o
- .debug_frame   0x00000134      0x114 ./07_Soft_Component/printf/printf.o
- .debug_frame   0x00000248       0x70 ./06_App_Component/light/light.o
- .debug_frame   0x000002b8      0x190 ./05_Driver/uart/uart.o
- .debug_frame   0x00000448      0x1fc ./05_Driver/tpm/tpm.o
- .debug_frame   0x00000644      0x1d0 ./05_Driver/gpio/gpio.o
- .debug_frame   0x00000814       0x30 ./03_MCU/system_MKL25Z4.o
- .debug_frame   0x00000844       0x20 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
- .debug_frame   0x00000864       0x20 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
- .debug_frame   0x00000884       0x28 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_fixunssfsi.o)
- .debug_frame   0x000008ac       0x2c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_fixunsdfsi.o)
- .debug_frame   0x000008d8       0x2c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_fixunsdfdi.o)
- .debug_frame   0x00000904       0x50 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(bpabi.o)
- .debug_frame   0x00000954       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(addsf3.o)
- .debug_frame   0x00000984       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(divsf3.o)
- .debug_frame   0x000009c0       0x2c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(eqsf2.o)
- .debug_frame   0x000009ec       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(gesf2.o)
- .debug_frame   0x00000a1c       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(lesf2.o)
- .debug_frame   0x00000a4c       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(mulsf3.o)
- .debug_frame   0x00000a88       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(subsf3.o)
- .debug_frame   0x00000ab8       0x20 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(fixsfsi.o)
- .debug_frame   0x00000ad8       0x28 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(floatunsisf.o)
- .debug_frame   0x00000b00       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(eqdf2.o)
- .debug_frame   0x00000b3c       0x38 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(gedf2.o)
- .debug_frame   0x00000b74       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(ledf2.o)
- .debug_frame   0x00000bb0       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(muldf3.o)
- .debug_frame   0x00000bec       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(subdf3.o)
- .debug_frame   0x00000c28       0x2c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(fixdfsi.o)
- .debug_frame   0x00000c54       0x28 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(floatunsidf.o)
- .debug_frame   0x00000c7c       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_muldi3.o)
- .debug_frame   0x00000cac       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divdi3.o)
- .debug_frame   0x00000ce8       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivdi3.o)
- .debug_frame   0x00000d24       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg.a(lib_a-memset.o)
- .debug_frame   0x00000d54       0x20 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg.a(lib_a-strlen.o)
+.debug_frame    0x00000000      0xd78
+ .debug_frame   0x00000000      0x108 ./08_Source/isr.o
+ .debug_frame   0x00000108       0x30 ./08_Source/main.o
+ .debug_frame   0x00000138      0x114 ./07_Soft_Component/printf/printf.o
+ .debug_frame   0x0000024c       0x70 ./06_App_Component/light/light.o
+ .debug_frame   0x000002bc      0x190 ./05_Driver/uart/uart.o
+ .debug_frame   0x0000044c      0x1fc ./05_Driver/tpm/tpm.o
+ .debug_frame   0x00000648      0x1d0 ./05_Driver/gpio/gpio.o
+ .debug_frame   0x00000818       0x30 ./03_MCU/system_MKL25Z4.o
+ .debug_frame   0x00000848       0x20 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000868       0x20 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divsi3.o)
+ .debug_frame   0x00000888       0x28 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_fixunssfsi.o)
+ .debug_frame   0x000008b0       0x2c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_fixunsdfsi.o)
+ .debug_frame   0x000008dc       0x2c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_fixunsdfdi.o)
+ .debug_frame   0x00000908       0x50 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(bpabi.o)
+ .debug_frame   0x00000958       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(addsf3.o)
+ .debug_frame   0x00000988       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(divsf3.o)
+ .debug_frame   0x000009c4       0x2c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(eqsf2.o)
+ .debug_frame   0x000009f0       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(gesf2.o)
+ .debug_frame   0x00000a20       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(lesf2.o)
+ .debug_frame   0x00000a50       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(mulsf3.o)
+ .debug_frame   0x00000a8c       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(subsf3.o)
+ .debug_frame   0x00000abc       0x20 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(fixsfsi.o)
+ .debug_frame   0x00000adc       0x28 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(floatunsisf.o)
+ .debug_frame   0x00000b04       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(eqdf2.o)
+ .debug_frame   0x00000b40       0x38 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(gedf2.o)
+ .debug_frame   0x00000b78       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(ledf2.o)
+ .debug_frame   0x00000bb4       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(muldf3.o)
+ .debug_frame   0x00000bf0       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(subdf3.o)
+ .debug_frame   0x00000c2c       0x2c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(fixdfsi.o)
+ .debug_frame   0x00000c58       0x28 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(floatunsidf.o)
+ .debug_frame   0x00000c80       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_muldi3.o)
+ .debug_frame   0x00000cb0       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_divdi3.o)
+ .debug_frame   0x00000cec       0x3c e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(_udivdi3.o)
+ .debug_frame   0x00000d28       0x30 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg.a(lib_a-memset.o)
+ .debug_frame   0x00000d58       0x20 e:/freescale/kds_3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg.a(lib_a-strlen.o)

@@ -1,0 +1,4301 @@
+
+KL25_GPIO_APP.elf:     file format elf32-littlearm
+KL25_GPIO_APP.elf
+architecture: arm, flags 0x00000012:
+EXEC_P, HAS_SYMS
+start address 0x00000411
+
+Program Header:
+    LOAD off    0x000000b4 vaddr 0x00000000 paddr 0x00000000 align 2**2
+         filesz 0x000000c0 memsz 0x000000c0 flags r--
+    LOAD off    0x00000174 vaddr 0x00000400 paddr 0x00000400 align 2**0
+         filesz 0x00000010 memsz 0x00000010 flags r--
+    LOAD off    0x00000188 vaddr 0x00000410 paddr 0x00000410 align 2**3
+         filesz 0x00001884 memsz 0x00001884 flags r-x
+    LOAD off    0x00001a0c vaddr 0x1ffff000 paddr 0x00001c94 align 2**2
+         filesz 0x00000024 memsz 0x00000850 flags rw-
+private flags = 5000002: [Version5 EABI] [has entry point]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn  Flags
+  0 .interrupts   000000c0  00000000  00000000  000000b4  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .flash_config 00000010  00000400  00000400  00000174  2**0  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .text         00001884  00000410  00000410  00000188  2**3  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .data         00000024  1ffff000  00001c94  00001a0c  2**2  CONTENTS, ALLOC, LOAD, DATA
+  4 .bss          0000002c  1ffff024  00001cb8  00001a30  2**2  ALLOC
+  5 .heap         00000400  1ffff050  00001ce4  00001a30  2**0  ALLOC
+  6 .stack        00000400  1ffff450  000020e4  00001a30  2**0  ALLOC
+  7 .ARM.attributes 00000030  00000000  00000000  00001a30  2**0  CONTENTS, READONLY
+  8 .debug_info   00001aa8  00000000  00000000  00001a60  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_abbrev 00000801  00000000  00000000  00003508  2**0  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_aranges 000001d8  00000000  00000000  00003d10  2**3  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000138  00000000  00000000  00003ee8  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_macro  00009b2a  00000000  00000000  00004020  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_line   0000272e  00000000  00000000  0000db4a  2**0  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_str    000327ce  00000000  00000000  00010278  2**0  CONTENTS, READONLY, DEBUGGING
+ 15 .comment      00000070  00000000  00000000  00042a46  2**0  CONTENTS, READONLY
+ 16 .debug_frame  00000594  00000000  00000000  00042ab8  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00000000 l    d  .interrupts	00000000 .interrupts
+00000400 l    d  .flash_config	00000000 .flash_config
+00000410 l    d  .text	00000000 .text
+1ffff000 l    d  .data	00000000 .data
+1ffff024 l    d  .bss	00000000 .bss
+1ffff050 l    d  .heap	00000000 .heap
+1ffff450 l    d  .stack	00000000 .stack
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./03_MCU/startup_MKL25Z4.o
+00000000 l    df *ABS*	00000000 _udivsi3.o
+00000460 l       .text	00000000 .udivsi3_skip_div0_test
+00000000 l    df *ABS*	00000000 _dvmd_tls.o
+00000000 l    df *ABS*	00000000 _arm_cmpdf2.o
+00000000 l    df *ABS*	00000000 eqdf2.c
+00000000 l    df *ABS*	00000000 gedf2.c
+00000000 l    df *ABS*	00000000 ledf2.c
+00000000 l    df *ABS*	00000000 muldf3.c
+00000000 l    df *ABS*	00000000 floatsidf.c
+00000000 l    df *ABS*	00000000 _clzsi2.o
+00000000 l    df *ABS*	00000000 isr.c
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 led.c
+1ffff024 l     O .bss	00000001 LEDi.4852
+00000000 l    df *ABS*	00000000 lcd.c
+1ffff000 l     O .data	00000010 LCD_D
+00000000 l    df *ABS*	00000000 kb.c
+00000000 l    df *ABS*	00000000 systick.c
+000015b4 l     F .text	000000e0 NVIC_SetPriority
+00000000 l    df *ABS*	00000000 gpio.c
+00000000 l    df *ABS*	00000000 system_MKL25Z4.c
+00000000 l    df *ABS*	00000000 
+00000400 l       *ABS*	00000000 STACK_SIZE
+1ffff450 l       .heap	00000000 __HeapLimit
+00000400 l       *ABS*	00000000 HEAP_SIZE
+00001c94 l       .text	00000000 __DATA_ROM
+20002c00 l       *ABS*	00000000 __StackLimit
+1ffff050 g       .heap	00000000 __HeapBase
+0000053c g     F .text	00000012 .hidden __aeabi_dcmple
+00000578 g     F .text	00000094 .hidden __eqdf2
+1ffff000 g       .data	00000000 __data_start__
+00001438 g     F .text	00000074 KBDef
+00000454  w    F .text	00000004 I2C0_IRQHandler
+1ffff010 g     O .data	00000008 kbm
+00000454  w    F .text	00000004 HardFault_Handler
+1ffff028 g     O .bss	00000020 g_LCDBuffer
+00000ddc g     F .text	0000004c SysTick_Handler
+00000ed4 g     F .text	00000078 LEDInit
+00000454  w    F .text	00000004 PendSV_Handler
+00000454  w    F .text	00000004 NMI_Handler
+00001c94 g       .data	00000000 __exidx_end
+00000454  w    F .text	00000004 I2C1_IRQHandler
+00000e30 g     F .text	00000008 UART1_IRQHandler
+0000060c g     F .text	000000fc .hidden __gtdf2
+00001c94 g       .text	00000000 __etext
+00000454  w    F .text	00000004 DMA2_IRQHandler
+00000454  w    F .text	00000004 TPM0_IRQHandler
+00001340 g     F .text	000000f8 KBScanN
+0000050c g     F .text	00000010 .hidden __aeabi_cdcmple
+00000454  w    F .text	00000004 LLWU_IRQHandler
+1ffff048 g     O .bss	00000001 g_kb_value
+00001048 g     F .text	000000b4 LCDInit
+00000454  w    F .text	00000004 TSI0_IRQHandler
+00000e28 g     F .text	00000008 UART0_IRQHandler
+000004fc g     F .text	00000020 .hidden __aeabi_cdrcmple
+00000708 g     F .text	000000fc .hidden __ltdf2
+00001c94 g       .data	00000000 __DTOR_END__
+1ffff020 g     O .data	00000004 SystemCoreClock
+00000454  w    F .text	00000004 ADC0_IRQHandler
+00000454  w    F .text	00000004 Reserved39_IRQHandler
+0000045c g     F .text	00000088 .hidden __udivsi3
+1ffff024 g       .bss	00000000 __START_BSS
+1ffff024 g       .bss	00000000 __bss_start__
+00000454  w    F .text	00000004 SPI1_IRQHandler
+00000454  w    F .text	00000004 DefaultISR
+00000528 g     F .text	00000012 .hidden __aeabi_dcmplt
+00000454  w    F .text	00000004 PORTD_IRQHandler
+1ffff04c g     O .bss	00000004 g_LEDBuffer
+00001c94 g       .data	00000000 __exidx_start
+00000804 g     F .text	00000520 .hidden __aeabi_dmul
+00000454  w    F .text	00000004 TPM2_IRQHandler
+00000454  w    F .text	00000004 RTC_IRQHandler
+00001c38 g     O .text	00000010 led_d
+00001c6c g     O .text	00000014 PORT_ARR
+00000410  w    F .text	00000044 Reset_Handler
+00001c18 g     O .text	00000018 LEDcodetable
+00000708 g     F .text	000000fc .hidden __ledf2
+00000454  w    F .text	00000004 RTC_Seconds_IRQHandler
+00000454  w    F .text	00000004 MCG_IRQHandler
+00000e38 g     F .text	00000008 UART2_IRQHandler
+1ffff024 g       .data	00000000 __data_end__
+00001c94 g       .data	00000000 __CTOR_LIST__
+00000550 g     F .text	00000012 .hidden __aeabi_dcmpgt
+00000da0 g     F .text	0000003c .hidden __clzsi2
+00001c48 g     O .text	00000021 KBtable
+1ffff050 g       .bss	00000000 __bss_end__
+00001888 g     F .text	00000054 gpio_get
+00000454  w    F .text	00000004 Reserved20_IRQHandler
+00000564 g     F .text	00000012 .hidden __aeabi_dcmpge
+1ffff018 g     O .data	00000008 kbn
+000010fc g     F .text	0000008e LCDShow
+00001694 g     F .text	0000008c systick_init
+00000d24 g     F .text	0000007c .hidden __aeabi_i2d
+00001c30 g     O .text	00000008 led_cs
+000004f8  w    F .text	00000002 .hidden __aeabi_ldiv0
+00000454  w    F .text	00000004 USB0_IRQHandler
+00000000 g       .interrupts	000000c0 __isr_vector
+00000e40 g     F .text	00000094 main
+00000454  w    F .text	00000004 PIT_IRQHandler
+0000045c g     F .text	00000000 .hidden __aeabi_uidiv
+00000454  w    F .text	00000004 SVC_Handler
+1ffff000 g       .data	00000000 __DATA_RAM
+000019f8 g     F .text	00000034 gpio_get_port_pin
+1ffff050 g       .heap	00000000 __end__
+000012bc g     F .text	00000084 KBInit
+00001c94 g       .data	00000000 __CTOR_END__
+00000454  w    F .text	00000004 DMA3_IRQHandler
+00001c94 g       .data	00000000 __DTOR_LIST__
+1ffff050 g       .bss	00000000 __END_BSS
+00001a2c g     F .text	00000188 SystemInit
+00000454  w    F .text	00000004 DMA0_IRQHandler
+00000578 g     F .text	00000094 .hidden __nedf2
+00000454  w    F .text	00000004 DAC0_IRQHandler
+000014ac g     F .text	00000108 KBScan1
+20003000 g       *ABS*	00000000 __StackTop
+1ffff000 g       .data	00000000 _mtb_end
+00001cb8 g       .text	00000000 __DATA_END
+00000454  w    F .text	00000004 Reserved45_IRQHandler
+00000454  w    F .text	00000004 TPM1_IRQHandler
+000004e4 g     F .text	00000012 .hidden __aeabi_uidivmod
+0000051c g     F .text	0000000c .hidden __aeabi_dcmpeq
+00000454  w    F .text	00000004 LVD_LVW_IRQHandler
+000018dc g     F .text	0000011c gpio_pull
+00000454  w    F .text	00000004 SPI0_IRQHandler
+00000f4c g     F .text	000000fc LEDshow
+00000454  w    F .text	00000004 PORTA_IRQHandler
+00000000 g       .interrupts	00000000 __VECTOR_TABLE
+00000454  w    F .text	00000004 FTFA_IRQHandler
+00001c80 g     O .text	00000014 GPIO_ARR
+0000118c g     F .text	00000130 LCDCommand
+1ffff000 g       .data	00000000 _mtb_start
+000004f8  w    F .text	00000002 .hidden __aeabi_idiv0
+00000454  w    F .text	00000004 LPTMR0_IRQHandler
+0000050c g     F .text	00000010 .hidden __aeabi_cdcmpeq
+0000060c g     F .text	000000fc .hidden __gedf2
+00001808 g     F .text	00000080 gpio_set
+00001720 g     F .text	000000e8 gpio_init
+00000454  w    F .text	00000004 CMP0_IRQHandler
+00000454  w    F .text	00000004 DMA1_IRQHandler
+
+
+
+Disassembly of section .text:
+
+00000410 <Reset_Handler>:
+Reset_Handler():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:117
+    .align 2
+    .globl   Reset_Handler
+    .weak    Reset_Handler
+    .type    Reset_Handler, %function
+Reset_Handler:
+    cpsid   i               /* 屏蔽中断 */
+     410:	b672      	cpsid	i
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:119
+#ifndef __NO_SYSTEM_INIT
+    bl SystemInit           /* 跳转到系统初始化函数，在system_MKL25Z4.c中 */
+     412:	f001 fb0b 	bl	1a2c <SystemInit>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:121
+#endif
+    cpsie   i               /* 解除屏蔽中断 */
+     416:	b662      	cpsie	i
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+     418:	4909      	ldr	r1, [pc, #36]	; (440 <Reset_Handler+0x30>)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+     41a:	4a0a      	ldr	r2, [pc, #40]	; (444 <Reset_Handler+0x34>)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+     41c:	4b0a      	ldr	r3, [pc, #40]	; (448 <Reset_Handler+0x38>)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:131
+
+    subs    r3, r2
+     41e:	1a9b      	subs	r3, r3, r2
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:132
+    ble     .LC0
+     420:	dd03      	ble.n	42a <Reset_Handler+0x1a>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:135
+
+.LC1:
+    subs    r3, 4
+     422:	3b04      	subs	r3, #4
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:136
+    ldr    r0, [r1,r3]
+     424:	58c8      	ldr	r0, [r1, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:137
+    str    r0, [r2,r3]
+     426:	50d0      	str	r0, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:138
+    bgt    .LC1
+     428:	dcfb      	bgt.n	422 <Reset_Handler+0x12>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+     42a:	4908      	ldr	r1, [pc, #32]	; (44c <Reset_Handler+0x3c>)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+     42c:	4a08      	ldr	r2, [pc, #32]	; (450 <Reset_Handler+0x40>)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:153
+
+    subs    r2, r1
+     42e:	1a52      	subs	r2, r2, r1
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:154
+    ble .LC3
+     430:	dd03      	ble.n	43a <Reset_Handler+0x2a>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:156
+
+    movs    r0, 0
+     432:	2000      	movs	r0, #0
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:158
+.LC2:
+    str r0, [r1, r2]
+     434:	5088      	str	r0, [r1, r2]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:159
+    subs    r2, 4
+     436:	3a04      	subs	r2, #4
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:160
+    bge .LC2
+     438:	dafc      	bge.n	434 <Reset_Handler+0x24>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:166
+.LC3:
+#endif
+#ifndef __START
+#define __START main
+#endif
+    bl    __START
+     43a:	f000 fd01 	bl	e40 <main>
+     43e:	0000      	.short	0x0000
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+     440:	00001c94 	.word	0x00001c94
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+     444:	1ffff000 	.word	0x1ffff000
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+     448:	1ffff024 	.word	0x1ffff024
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+     44c:	1ffff024 	.word	0x1ffff024
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+     450:	1ffff050 	.word	0x1ffff050
+
+00000454 <ADC0_IRQHandler>:
+I2C0_IRQHandler():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align    1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr    r0, =DefaultISR
+     454:	4800      	ldr	r0, [pc, #0]	; (458 <ADC0_IRQHandler+0x4>)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:176
+    bx r0
+     456:	4700      	bx	r0
+$d():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align    1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr    r0, =DefaultISR
+     458:	00000455 	.word	0x00000455
+
+0000045c <__aeabi_uidiv>:
+__udivsi3():
+     45c:	2900      	cmp	r1, #0
+     45e:	d034      	beq.n	4ca <.udivsi3_skip_div0_test+0x6a>
+
+00000460 <.udivsi3_skip_div0_test>:
+     460:	2301      	movs	r3, #1
+     462:	2200      	movs	r2, #0
+     464:	b410      	push	{r4}
+     466:	4288      	cmp	r0, r1
+     468:	d32c      	bcc.n	4c4 <.udivsi3_skip_div0_test+0x64>
+     46a:	2401      	movs	r4, #1
+     46c:	0724      	lsls	r4, r4, #28
+     46e:	42a1      	cmp	r1, r4
+     470:	d204      	bcs.n	47c <.udivsi3_skip_div0_test+0x1c>
+     472:	4281      	cmp	r1, r0
+     474:	d202      	bcs.n	47c <.udivsi3_skip_div0_test+0x1c>
+     476:	0109      	lsls	r1, r1, #4
+     478:	011b      	lsls	r3, r3, #4
+     47a:	e7f8      	b.n	46e <.udivsi3_skip_div0_test+0xe>
+     47c:	00e4      	lsls	r4, r4, #3
+     47e:	42a1      	cmp	r1, r4
+     480:	d204      	bcs.n	48c <.udivsi3_skip_div0_test+0x2c>
+     482:	4281      	cmp	r1, r0
+     484:	d202      	bcs.n	48c <.udivsi3_skip_div0_test+0x2c>
+     486:	0049      	lsls	r1, r1, #1
+     488:	005b      	lsls	r3, r3, #1
+     48a:	e7f8      	b.n	47e <.udivsi3_skip_div0_test+0x1e>
+     48c:	4288      	cmp	r0, r1
+     48e:	d301      	bcc.n	494 <.udivsi3_skip_div0_test+0x34>
+     490:	1a40      	subs	r0, r0, r1
+     492:	431a      	orrs	r2, r3
+     494:	084c      	lsrs	r4, r1, #1
+     496:	42a0      	cmp	r0, r4
+     498:	d302      	bcc.n	4a0 <.udivsi3_skip_div0_test+0x40>
+     49a:	1b00      	subs	r0, r0, r4
+     49c:	085c      	lsrs	r4, r3, #1
+     49e:	4322      	orrs	r2, r4
+     4a0:	088c      	lsrs	r4, r1, #2
+     4a2:	42a0      	cmp	r0, r4
+     4a4:	d302      	bcc.n	4ac <.udivsi3_skip_div0_test+0x4c>
+     4a6:	1b00      	subs	r0, r0, r4
+     4a8:	089c      	lsrs	r4, r3, #2
+     4aa:	4322      	orrs	r2, r4
+     4ac:	08cc      	lsrs	r4, r1, #3
+     4ae:	42a0      	cmp	r0, r4
+     4b0:	d302      	bcc.n	4b8 <.udivsi3_skip_div0_test+0x58>
+     4b2:	1b00      	subs	r0, r0, r4
+     4b4:	08dc      	lsrs	r4, r3, #3
+     4b6:	4322      	orrs	r2, r4
+     4b8:	2800      	cmp	r0, #0
+     4ba:	d003      	beq.n	4c4 <.udivsi3_skip_div0_test+0x64>
+     4bc:	091b      	lsrs	r3, r3, #4
+     4be:	d001      	beq.n	4c4 <.udivsi3_skip_div0_test+0x64>
+     4c0:	0909      	lsrs	r1, r1, #4
+     4c2:	e7e3      	b.n	48c <.udivsi3_skip_div0_test+0x2c>
+     4c4:	1c10      	adds	r0, r2, #0
+     4c6:	bc10      	pop	{r4}
+     4c8:	4770      	bx	lr
+     4ca:	2800      	cmp	r0, #0
+     4cc:	d001      	beq.n	4d2 <.udivsi3_skip_div0_test+0x72>
+     4ce:	2000      	movs	r0, #0
+     4d0:	43c0      	mvns	r0, r0
+     4d2:	b407      	push	{r0, r1, r2}
+     4d4:	4802      	ldr	r0, [pc, #8]	; (4e0 <.udivsi3_skip_div0_test+0x80>)
+     4d6:	a102      	add	r1, pc, #8	; (adr r1, 4e0 <.udivsi3_skip_div0_test+0x80>)
+     4d8:	1840      	adds	r0, r0, r1
+     4da:	9002      	str	r0, [sp, #8]
+     4dc:	bd03      	pop	{r0, r1, pc}
+     4de:	46c0      	nop			; (mov r8, r8)
+     4e0:	00000019 	.word	0x00000019
+
+000004e4 <__aeabi_uidivmod>:
+__aeabi_uidivmod():
+     4e4:	2900      	cmp	r1, #0
+     4e6:	d0f0      	beq.n	4ca <.udivsi3_skip_div0_test+0x6a>
+     4e8:	b503      	push	{r0, r1, lr}
+     4ea:	f7ff ffb9 	bl	460 <.udivsi3_skip_div0_test>
+     4ee:	bc0e      	pop	{r1, r2, r3}
+     4f0:	4342      	muls	r2, r0
+     4f2:	1a89      	subs	r1, r1, r2
+     4f4:	4718      	bx	r3
+     4f6:	46c0      	nop			; (mov r8, r8)
+
+000004f8 <__aeabi_idiv0>:
+__aeabi_ldiv0():
+     4f8:	4770      	bx	lr
+     4fa:	46c0      	nop			; (mov r8, r8)
+
+000004fc <__aeabi_cdrcmple>:
+__aeabi_cdrcmple():
+     4fc:	4684      	mov	ip, r0
+     4fe:	1c10      	adds	r0, r2, #0
+     500:	4662      	mov	r2, ip
+     502:	468c      	mov	ip, r1
+     504:	1c19      	adds	r1, r3, #0
+     506:	4663      	mov	r3, ip
+     508:	e000      	b.n	50c <__aeabi_cdcmpeq>
+     50a:	46c0      	nop			; (mov r8, r8)
+
+0000050c <__aeabi_cdcmpeq>:
+     50c:	b51f      	push	{r0, r1, r2, r3, r4, lr}
+     50e:	f000 f8fb 	bl	708 <__ledf2>
+     512:	2800      	cmp	r0, #0
+     514:	d401      	bmi.n	51a <__aeabi_cdcmpeq+0xe>
+     516:	2100      	movs	r1, #0
+     518:	42c8      	cmn	r0, r1
+     51a:	bd1f      	pop	{r0, r1, r2, r3, r4, pc}
+
+0000051c <__aeabi_dcmpeq>:
+__aeabi_dcmpeq():
+     51c:	b510      	push	{r4, lr}
+     51e:	f000 f82b 	bl	578 <__eqdf2>
+     522:	4240      	negs	r0, r0
+     524:	3001      	adds	r0, #1
+     526:	bd10      	pop	{r4, pc}
+
+00000528 <__aeabi_dcmplt>:
+__aeabi_dcmplt():
+     528:	b510      	push	{r4, lr}
+     52a:	f000 f8ed 	bl	708 <__ledf2>
+     52e:	2800      	cmp	r0, #0
+     530:	db01      	blt.n	536 <__aeabi_dcmplt+0xe>
+     532:	2000      	movs	r0, #0
+     534:	bd10      	pop	{r4, pc}
+     536:	2001      	movs	r0, #1
+     538:	bd10      	pop	{r4, pc}
+     53a:	46c0      	nop			; (mov r8, r8)
+
+0000053c <__aeabi_dcmple>:
+__aeabi_dcmple():
+     53c:	b510      	push	{r4, lr}
+     53e:	f000 f8e3 	bl	708 <__ledf2>
+     542:	2800      	cmp	r0, #0
+     544:	dd01      	ble.n	54a <__aeabi_dcmple+0xe>
+     546:	2000      	movs	r0, #0
+     548:	bd10      	pop	{r4, pc}
+     54a:	2001      	movs	r0, #1
+     54c:	bd10      	pop	{r4, pc}
+     54e:	46c0      	nop			; (mov r8, r8)
+
+00000550 <__aeabi_dcmpgt>:
+__aeabi_dcmpgt():
+     550:	b510      	push	{r4, lr}
+     552:	f000 f85b 	bl	60c <__gedf2>
+     556:	2800      	cmp	r0, #0
+     558:	dc01      	bgt.n	55e <__aeabi_dcmpgt+0xe>
+     55a:	2000      	movs	r0, #0
+     55c:	bd10      	pop	{r4, pc}
+     55e:	2001      	movs	r0, #1
+     560:	bd10      	pop	{r4, pc}
+     562:	46c0      	nop			; (mov r8, r8)
+
+00000564 <__aeabi_dcmpge>:
+__aeabi_dcmpge():
+     564:	b510      	push	{r4, lr}
+     566:	f000 f851 	bl	60c <__gedf2>
+     56a:	2800      	cmp	r0, #0
+     56c:	da01      	bge.n	572 <__aeabi_dcmpge+0xe>
+     56e:	2000      	movs	r0, #0
+     570:	bd10      	pop	{r4, pc}
+     572:	2001      	movs	r0, #1
+     574:	bd10      	pop	{r4, pc}
+     576:	46c0      	nop			; (mov r8, r8)
+
+00000578 <__eqdf2>:
+__eqdf2():
+     578:	b5f0      	push	{r4, r5, r6, r7, lr}
+     57a:	465f      	mov	r7, fp
+     57c:	4656      	mov	r6, sl
+     57e:	464d      	mov	r5, r9
+     580:	4644      	mov	r4, r8
+     582:	b4f0      	push	{r4, r5, r6, r7}
+     584:	1c0d      	adds	r5, r1, #0
+     586:	1c04      	adds	r4, r0, #0
+     588:	4680      	mov	r8, r0
+     58a:	0fe8      	lsrs	r0, r5, #31
+     58c:	4681      	mov	r9, r0
+     58e:	0318      	lsls	r0, r3, #12
+     590:	030f      	lsls	r7, r1, #12
+     592:	0b00      	lsrs	r0, r0, #12
+     594:	0b3f      	lsrs	r7, r7, #12
+     596:	b083      	sub	sp, #12
+     598:	4684      	mov	ip, r0
+     59a:	481b      	ldr	r0, [pc, #108]	; (608 <__eqdf2+0x90>)
+     59c:	9700      	str	r7, [sp, #0]
+     59e:	0049      	lsls	r1, r1, #1
+     5a0:	005e      	lsls	r6, r3, #1
+     5a2:	0fdf      	lsrs	r7, r3, #31
+     5a4:	0d49      	lsrs	r1, r1, #21
+     5a6:	4692      	mov	sl, r2
+     5a8:	0d76      	lsrs	r6, r6, #21
+     5aa:	46bb      	mov	fp, r7
+     5ac:	4281      	cmp	r1, r0
+     5ae:	d00c      	beq.n	5ca <__eqdf2+0x52>
+     5b0:	4815      	ldr	r0, [pc, #84]	; (608 <__eqdf2+0x90>)
+     5b2:	4286      	cmp	r6, r0
+     5b4:	d010      	beq.n	5d8 <__eqdf2+0x60>
+     5b6:	2001      	movs	r0, #1
+     5b8:	42b1      	cmp	r1, r6
+     5ba:	d015      	beq.n	5e8 <__eqdf2+0x70>
+     5bc:	b003      	add	sp, #12
+     5be:	bc3c      	pop	{r2, r3, r4, r5}
+     5c0:	4690      	mov	r8, r2
+     5c2:	4699      	mov	r9, r3
+     5c4:	46a2      	mov	sl, r4
+     5c6:	46ab      	mov	fp, r5
+     5c8:	bdf0      	pop	{r4, r5, r6, r7, pc}
+     5ca:	9f00      	ldr	r7, [sp, #0]
+     5cc:	2001      	movs	r0, #1
+     5ce:	4327      	orrs	r7, r4
+     5d0:	d1f4      	bne.n	5bc <__eqdf2+0x44>
+     5d2:	480d      	ldr	r0, [pc, #52]	; (608 <__eqdf2+0x90>)
+     5d4:	4286      	cmp	r6, r0
+     5d6:	d1ee      	bne.n	5b6 <__eqdf2+0x3e>
+     5d8:	4660      	mov	r0, ip
+     5da:	4302      	orrs	r2, r0
+     5dc:	2001      	movs	r0, #1
+     5de:	2a00      	cmp	r2, #0
+     5e0:	d1ec      	bne.n	5bc <__eqdf2+0x44>
+     5e2:	2001      	movs	r0, #1
+     5e4:	42b1      	cmp	r1, r6
+     5e6:	d1e9      	bne.n	5bc <__eqdf2+0x44>
+     5e8:	9b00      	ldr	r3, [sp, #0]
+     5ea:	4563      	cmp	r3, ip
+     5ec:	d1e6      	bne.n	5bc <__eqdf2+0x44>
+     5ee:	45d0      	cmp	r8, sl
+     5f0:	d1e4      	bne.n	5bc <__eqdf2+0x44>
+     5f2:	45d9      	cmp	r9, fp
+     5f4:	d006      	beq.n	604 <__eqdf2+0x8c>
+     5f6:	2900      	cmp	r1, #0
+     5f8:	d1e0      	bne.n	5bc <__eqdf2+0x44>
+     5fa:	431c      	orrs	r4, r3
+     5fc:	1c20      	adds	r0, r4, #0
+     5fe:	1e44      	subs	r4, r0, #1
+     600:	41a0      	sbcs	r0, r4
+     602:	e7db      	b.n	5bc <__eqdf2+0x44>
+     604:	2000      	movs	r0, #0
+     606:	e7d9      	b.n	5bc <__eqdf2+0x44>
+     608:	000007ff 	.word	0x000007ff
+
+0000060c <__gedf2>:
+__gtdf2():
+     60c:	b5f0      	push	{r4, r5, r6, r7, lr}
+     60e:	465f      	mov	r7, fp
+     610:	4656      	mov	r6, sl
+     612:	464d      	mov	r5, r9
+     614:	4644      	mov	r4, r8
+     616:	b4f0      	push	{r4, r5, r6, r7}
+     618:	0fcd      	lsrs	r5, r1, #31
+     61a:	0fde      	lsrs	r6, r3, #31
+     61c:	46ac      	mov	ip, r5
+     61e:	031d      	lsls	r5, r3, #12
+     620:	0b2d      	lsrs	r5, r5, #12
+     622:	46b1      	mov	r9, r6
+     624:	4e37      	ldr	r6, [pc, #220]	; (704 <__gedf2+0xf8>)
+     626:	030f      	lsls	r7, r1, #12
+     628:	004c      	lsls	r4, r1, #1
+     62a:	46ab      	mov	fp, r5
+     62c:	005d      	lsls	r5, r3, #1
+     62e:	4680      	mov	r8, r0
+     630:	0b3f      	lsrs	r7, r7, #12
+     632:	0d64      	lsrs	r4, r4, #21
+     634:	4692      	mov	sl, r2
+     636:	0d6d      	lsrs	r5, r5, #21
+     638:	42b4      	cmp	r4, r6
+     63a:	d032      	beq.n	6a2 <__gedf2+0x96>
+     63c:	4e31      	ldr	r6, [pc, #196]	; (704 <__gedf2+0xf8>)
+     63e:	42b5      	cmp	r5, r6
+     640:	d035      	beq.n	6ae <__gedf2+0xa2>
+     642:	2c00      	cmp	r4, #0
+     644:	d10e      	bne.n	664 <__gedf2+0x58>
+     646:	4338      	orrs	r0, r7
+     648:	4241      	negs	r1, r0
+     64a:	4141      	adcs	r1, r0
+     64c:	1c08      	adds	r0, r1, #0
+     64e:	2d00      	cmp	r5, #0
+     650:	d00b      	beq.n	66a <__gedf2+0x5e>
+     652:	2900      	cmp	r1, #0
+     654:	d119      	bne.n	68a <__gedf2+0x7e>
+     656:	45cc      	cmp	ip, r9
+     658:	d02d      	beq.n	6b6 <__gedf2+0xaa>
+     65a:	4665      	mov	r5, ip
+     65c:	4268      	negs	r0, r5
+     65e:	2301      	movs	r3, #1
+     660:	4318      	orrs	r0, r3
+     662:	e018      	b.n	696 <__gedf2+0x8a>
+     664:	2d00      	cmp	r5, #0
+     666:	d1f6      	bne.n	656 <__gedf2+0x4a>
+     668:	1c28      	adds	r0, r5, #0
+     66a:	4659      	mov	r1, fp
+     66c:	430a      	orrs	r2, r1
+     66e:	4253      	negs	r3, r2
+     670:	4153      	adcs	r3, r2
+     672:	2800      	cmp	r0, #0
+     674:	d106      	bne.n	684 <__gedf2+0x78>
+     676:	2b00      	cmp	r3, #0
+     678:	d0ed      	beq.n	656 <__gedf2+0x4a>
+     67a:	4663      	mov	r3, ip
+     67c:	4258      	negs	r0, r3
+     67e:	2301      	movs	r3, #1
+     680:	4318      	orrs	r0, r3
+     682:	e008      	b.n	696 <__gedf2+0x8a>
+     684:	2000      	movs	r0, #0
+     686:	2b00      	cmp	r3, #0
+     688:	d105      	bne.n	696 <__gedf2+0x8a>
+     68a:	464a      	mov	r2, r9
+     68c:	4250      	negs	r0, r2
+     68e:	4150      	adcs	r0, r2
+     690:	4240      	negs	r0, r0
+     692:	2301      	movs	r3, #1
+     694:	4318      	orrs	r0, r3
+     696:	bc3c      	pop	{r2, r3, r4, r5}
+     698:	4690      	mov	r8, r2
+     69a:	4699      	mov	r9, r3
+     69c:	46a2      	mov	sl, r4
+     69e:	46ab      	mov	fp, r5
+     6a0:	bdf0      	pop	{r4, r5, r6, r7, pc}
+     6a2:	1c3e      	adds	r6, r7, #0
+     6a4:	4306      	orrs	r6, r0
+     6a6:	d0c9      	beq.n	63c <__gedf2+0x30>
+     6a8:	2002      	movs	r0, #2
+     6aa:	4240      	negs	r0, r0
+     6ac:	e7f3      	b.n	696 <__gedf2+0x8a>
+     6ae:	465e      	mov	r6, fp
+     6b0:	4316      	orrs	r6, r2
+     6b2:	d0c6      	beq.n	642 <__gedf2+0x36>
+     6b4:	e7f8      	b.n	6a8 <__gedf2+0x9c>
+     6b6:	42ac      	cmp	r4, r5
+     6b8:	dc07      	bgt.n	6ca <__gedf2+0xbe>
+     6ba:	da0b      	bge.n	6d4 <__gedf2+0xc8>
+     6bc:	4661      	mov	r1, ip
+     6be:	4248      	negs	r0, r1
+     6c0:	4148      	adcs	r0, r1
+     6c2:	4240      	negs	r0, r0
+     6c4:	2301      	movs	r3, #1
+     6c6:	4318      	orrs	r0, r3
+     6c8:	e7e5      	b.n	696 <__gedf2+0x8a>
+     6ca:	4666      	mov	r6, ip
+     6cc:	4270      	negs	r0, r6
+     6ce:	2301      	movs	r3, #1
+     6d0:	4318      	orrs	r0, r3
+     6d2:	e7e0      	b.n	696 <__gedf2+0x8a>
+     6d4:	455f      	cmp	r7, fp
+     6d6:	d80a      	bhi.n	6ee <__gedf2+0xe2>
+     6d8:	d00e      	beq.n	6f8 <__gedf2+0xec>
+     6da:	2000      	movs	r0, #0
+     6dc:	455f      	cmp	r7, fp
+     6de:	d2da      	bcs.n	696 <__gedf2+0x8a>
+     6e0:	4665      	mov	r5, ip
+     6e2:	4268      	negs	r0, r5
+     6e4:	4168      	adcs	r0, r5
+     6e6:	4240      	negs	r0, r0
+     6e8:	2301      	movs	r3, #1
+     6ea:	4318      	orrs	r0, r3
+     6ec:	e7d3      	b.n	696 <__gedf2+0x8a>
+     6ee:	4662      	mov	r2, ip
+     6f0:	4250      	negs	r0, r2
+     6f2:	2301      	movs	r3, #1
+     6f4:	4318      	orrs	r0, r3
+     6f6:	e7ce      	b.n	696 <__gedf2+0x8a>
+     6f8:	45d0      	cmp	r8, sl
+     6fa:	d8f8      	bhi.n	6ee <__gedf2+0xe2>
+     6fc:	2000      	movs	r0, #0
+     6fe:	45d0      	cmp	r8, sl
+     700:	d3ee      	bcc.n	6e0 <__gedf2+0xd4>
+     702:	e7c8      	b.n	696 <__gedf2+0x8a>
+     704:	000007ff 	.word	0x000007ff
+
+00000708 <__ledf2>:
+__ltdf2():
+     708:	b5f0      	push	{r4, r5, r6, r7, lr}
+     70a:	4656      	mov	r6, sl
+     70c:	464d      	mov	r5, r9
+     70e:	4644      	mov	r4, r8
+     710:	465f      	mov	r7, fp
+     712:	b4f0      	push	{r4, r5, r6, r7}
+     714:	1c0d      	adds	r5, r1, #0
+     716:	b083      	sub	sp, #12
+     718:	1c04      	adds	r4, r0, #0
+     71a:	9001      	str	r0, [sp, #4]
+     71c:	0fe8      	lsrs	r0, r5, #31
+     71e:	4681      	mov	r9, r0
+     720:	0318      	lsls	r0, r3, #12
+     722:	030f      	lsls	r7, r1, #12
+     724:	0b00      	lsrs	r0, r0, #12
+     726:	0b3f      	lsrs	r7, r7, #12
+     728:	4684      	mov	ip, r0
+     72a:	4835      	ldr	r0, [pc, #212]	; (800 <__ledf2+0xf8>)
+     72c:	9700      	str	r7, [sp, #0]
+     72e:	0049      	lsls	r1, r1, #1
+     730:	005e      	lsls	r6, r3, #1
+     732:	0fdf      	lsrs	r7, r3, #31
+     734:	0d49      	lsrs	r1, r1, #21
+     736:	4692      	mov	sl, r2
+     738:	0d76      	lsrs	r6, r6, #21
+     73a:	46b8      	mov	r8, r7
+     73c:	4281      	cmp	r1, r0
+     73e:	d034      	beq.n	7aa <__ledf2+0xa2>
+     740:	482f      	ldr	r0, [pc, #188]	; (800 <__ledf2+0xf8>)
+     742:	4286      	cmp	r6, r0
+     744:	d036      	beq.n	7b4 <__ledf2+0xac>
+     746:	2900      	cmp	r1, #0
+     748:	d018      	beq.n	77c <__ledf2+0x74>
+     74a:	2e00      	cmp	r6, #0
+     74c:	d11f      	bne.n	78e <__ledf2+0x86>
+     74e:	1c34      	adds	r4, r6, #0
+     750:	4667      	mov	r7, ip
+     752:	433a      	orrs	r2, r7
+     754:	4253      	negs	r3, r2
+     756:	4153      	adcs	r3, r2
+     758:	2c00      	cmp	r4, #0
+     75a:	d01f      	beq.n	79c <__ledf2+0x94>
+     75c:	2000      	movs	r0, #0
+     75e:	2b00      	cmp	r3, #0
+     760:	d105      	bne.n	76e <__ledf2+0x66>
+     762:	4642      	mov	r2, r8
+     764:	4250      	negs	r0, r2
+     766:	4150      	adcs	r0, r2
+     768:	4240      	negs	r0, r0
+     76a:	2301      	movs	r3, #1
+     76c:	4318      	orrs	r0, r3
+     76e:	b003      	add	sp, #12
+     770:	bc3c      	pop	{r2, r3, r4, r5}
+     772:	4690      	mov	r8, r2
+     774:	4699      	mov	r9, r3
+     776:	46a2      	mov	sl, r4
+     778:	46ab      	mov	fp, r5
+     77a:	bdf0      	pop	{r4, r5, r6, r7, pc}
+     77c:	9800      	ldr	r0, [sp, #0]
+     77e:	4304      	orrs	r4, r0
+     780:	4260      	negs	r0, r4
+     782:	4160      	adcs	r0, r4
+     784:	1c04      	adds	r4, r0, #0
+     786:	2e00      	cmp	r6, #0
+     788:	d0e2      	beq.n	750 <__ledf2+0x48>
+     78a:	2800      	cmp	r0, #0
+     78c:	d1e9      	bne.n	762 <__ledf2+0x5a>
+     78e:	45c1      	cmp	r9, r8
+     790:	d015      	beq.n	7be <__ledf2+0xb6>
+     792:	464f      	mov	r7, r9
+     794:	4278      	negs	r0, r7
+     796:	2301      	movs	r3, #1
+     798:	4318      	orrs	r0, r3
+     79a:	e7e8      	b.n	76e <__ledf2+0x66>
+     79c:	2b00      	cmp	r3, #0
+     79e:	d0f6      	beq.n	78e <__ledf2+0x86>
+     7a0:	464b      	mov	r3, r9
+     7a2:	4258      	negs	r0, r3
+     7a4:	2301      	movs	r3, #1
+     7a6:	4318      	orrs	r0, r3
+     7a8:	e7e1      	b.n	76e <__ledf2+0x66>
+     7aa:	9f00      	ldr	r7, [sp, #0]
+     7ac:	2002      	movs	r0, #2
+     7ae:	4327      	orrs	r7, r4
+     7b0:	d1dd      	bne.n	76e <__ledf2+0x66>
+     7b2:	e7c5      	b.n	740 <__ledf2+0x38>
+     7b4:	4667      	mov	r7, ip
+     7b6:	2002      	movs	r0, #2
+     7b8:	4317      	orrs	r7, r2
+     7ba:	d1d8      	bne.n	76e <__ledf2+0x66>
+     7bc:	e7c3      	b.n	746 <__ledf2+0x3e>
+     7be:	42b1      	cmp	r1, r6
+     7c0:	dd04      	ble.n	7cc <__ledf2+0xc4>
+     7c2:	464a      	mov	r2, r9
+     7c4:	4250      	negs	r0, r2
+     7c6:	2301      	movs	r3, #1
+     7c8:	4318      	orrs	r0, r3
+     7ca:	e7d0      	b.n	76e <__ledf2+0x66>
+     7cc:	42b1      	cmp	r1, r6
+     7ce:	db07      	blt.n	7e0 <__ledf2+0xd8>
+     7d0:	9800      	ldr	r0, [sp, #0]
+     7d2:	4560      	cmp	r0, ip
+     7d4:	d8e4      	bhi.n	7a0 <__ledf2+0x98>
+     7d6:	d00a      	beq.n	7ee <__ledf2+0xe6>
+     7d8:	9f00      	ldr	r7, [sp, #0]
+     7da:	2000      	movs	r0, #0
+     7dc:	4567      	cmp	r7, ip
+     7de:	d2c6      	bcs.n	76e <__ledf2+0x66>
+     7e0:	464f      	mov	r7, r9
+     7e2:	4278      	negs	r0, r7
+     7e4:	4178      	adcs	r0, r7
+     7e6:	4240      	negs	r0, r0
+     7e8:	2301      	movs	r3, #1
+     7ea:	4318      	orrs	r0, r3
+     7ec:	e7bf      	b.n	76e <__ledf2+0x66>
+     7ee:	9a01      	ldr	r2, [sp, #4]
+     7f0:	4552      	cmp	r2, sl
+     7f2:	d8d5      	bhi.n	7a0 <__ledf2+0x98>
+     7f4:	9a01      	ldr	r2, [sp, #4]
+     7f6:	2000      	movs	r0, #0
+     7f8:	4552      	cmp	r2, sl
+     7fa:	d3f1      	bcc.n	7e0 <__ledf2+0xd8>
+     7fc:	e7b7      	b.n	76e <__ledf2+0x66>
+     7fe:	46c0      	nop			; (mov r8, r8)
+     800:	000007ff 	.word	0x000007ff
+
+00000804 <__aeabi_dmul>:
+__aeabi_dmul():
+     804:	b5f0      	push	{r4, r5, r6, r7, lr}
+     806:	4656      	mov	r6, sl
+     808:	4644      	mov	r4, r8
+     80a:	465f      	mov	r7, fp
+     80c:	464d      	mov	r5, r9
+     80e:	b4f0      	push	{r4, r5, r6, r7}
+     810:	1c1f      	adds	r7, r3, #0
+     812:	030b      	lsls	r3, r1, #12
+     814:	0b1b      	lsrs	r3, r3, #12
+     816:	469a      	mov	sl, r3
+     818:	004b      	lsls	r3, r1, #1
+     81a:	b087      	sub	sp, #28
+     81c:	1c04      	adds	r4, r0, #0
+     81e:	4680      	mov	r8, r0
+     820:	0d5b      	lsrs	r3, r3, #21
+     822:	0fc8      	lsrs	r0, r1, #31
+     824:	1c16      	adds	r6, r2, #0
+     826:	9302      	str	r3, [sp, #8]
+     828:	4681      	mov	r9, r0
+     82a:	2b00      	cmp	r3, #0
+     82c:	d068      	beq.n	900 <__aeabi_dmul+0xfc>
+     82e:	4b69      	ldr	r3, [pc, #420]	; (9d4 <__aeabi_dmul+0x1d0>)
+     830:	9902      	ldr	r1, [sp, #8]
+     832:	4299      	cmp	r1, r3
+     834:	d032      	beq.n	89c <__aeabi_dmul+0x98>
+     836:	2280      	movs	r2, #128	; 0x80
+     838:	4653      	mov	r3, sl
+     83a:	0352      	lsls	r2, r2, #13
+     83c:	431a      	orrs	r2, r3
+     83e:	00d2      	lsls	r2, r2, #3
+     840:	0f63      	lsrs	r3, r4, #29
+     842:	431a      	orrs	r2, r3
+     844:	4692      	mov	sl, r2
+     846:	4a64      	ldr	r2, [pc, #400]	; (9d8 <__aeabi_dmul+0x1d4>)
+     848:	00e0      	lsls	r0, r4, #3
+     84a:	1889      	adds	r1, r1, r2
+     84c:	4680      	mov	r8, r0
+     84e:	9102      	str	r1, [sp, #8]
+     850:	2400      	movs	r4, #0
+     852:	2500      	movs	r5, #0
+     854:	033b      	lsls	r3, r7, #12
+     856:	0b1b      	lsrs	r3, r3, #12
+     858:	469b      	mov	fp, r3
+     85a:	0078      	lsls	r0, r7, #1
+     85c:	0ffb      	lsrs	r3, r7, #31
+     85e:	1c32      	adds	r2, r6, #0
+     860:	0d40      	lsrs	r0, r0, #21
+     862:	9303      	str	r3, [sp, #12]
+     864:	d100      	bne.n	868 <__aeabi_dmul+0x64>
+     866:	e075      	b.n	954 <__aeabi_dmul+0x150>
+     868:	4b5a      	ldr	r3, [pc, #360]	; (9d4 <__aeabi_dmul+0x1d0>)
+     86a:	4298      	cmp	r0, r3
+     86c:	d069      	beq.n	942 <__aeabi_dmul+0x13e>
+     86e:	2280      	movs	r2, #128	; 0x80
+     870:	4659      	mov	r1, fp
+     872:	0352      	lsls	r2, r2, #13
+     874:	430a      	orrs	r2, r1
+     876:	0f73      	lsrs	r3, r6, #29
+     878:	00d2      	lsls	r2, r2, #3
+     87a:	431a      	orrs	r2, r3
+     87c:	4b56      	ldr	r3, [pc, #344]	; (9d8 <__aeabi_dmul+0x1d4>)
+     87e:	4693      	mov	fp, r2
+     880:	18c0      	adds	r0, r0, r3
+     882:	00f2      	lsls	r2, r6, #3
+     884:	2300      	movs	r3, #0
+     886:	9903      	ldr	r1, [sp, #12]
+     888:	464e      	mov	r6, r9
+     88a:	4071      	eors	r1, r6
+     88c:	431c      	orrs	r4, r3
+     88e:	2c0f      	cmp	r4, #15
+     890:	d900      	bls.n	894 <__aeabi_dmul+0x90>
+     892:	e0a9      	b.n	9e8 <__aeabi_dmul+0x1e4>
+     894:	4e51      	ldr	r6, [pc, #324]	; (9dc <__aeabi_dmul+0x1d8>)
+     896:	00a4      	lsls	r4, r4, #2
+     898:	5934      	ldr	r4, [r6, r4]
+     89a:	46a7      	mov	pc, r4
+     89c:	4653      	mov	r3, sl
+     89e:	431c      	orrs	r4, r3
+     8a0:	d000      	beq.n	8a4 <__aeabi_dmul+0xa0>
+     8a2:	e087      	b.n	9b4 <__aeabi_dmul+0x1b0>
+     8a4:	2500      	movs	r5, #0
+     8a6:	46aa      	mov	sl, r5
+     8a8:	46a8      	mov	r8, r5
+     8aa:	2408      	movs	r4, #8
+     8ac:	2502      	movs	r5, #2
+     8ae:	e7d1      	b.n	854 <__aeabi_dmul+0x50>
+     8b0:	4649      	mov	r1, r9
+     8b2:	2d02      	cmp	r5, #2
+     8b4:	d06c      	beq.n	990 <__aeabi_dmul+0x18c>
+     8b6:	2d03      	cmp	r5, #3
+     8b8:	d100      	bne.n	8bc <__aeabi_dmul+0xb8>
+     8ba:	e217      	b.n	cec <__aeabi_dmul+0x4e8>
+     8bc:	2d01      	cmp	r5, #1
+     8be:	d000      	beq.n	8c2 <__aeabi_dmul+0xbe>
+     8c0:	e158      	b.n	b74 <__aeabi_dmul+0x370>
+     8c2:	400d      	ands	r5, r1
+     8c4:	b2ed      	uxtb	r5, r5
+     8c6:	2400      	movs	r4, #0
+     8c8:	46a9      	mov	r9, r5
+     8ca:	2300      	movs	r3, #0
+     8cc:	46a0      	mov	r8, r4
+     8ce:	2000      	movs	r0, #0
+     8d0:	2100      	movs	r1, #0
+     8d2:	0325      	lsls	r5, r4, #12
+     8d4:	0d0a      	lsrs	r2, r1, #20
+     8d6:	051c      	lsls	r4, r3, #20
+     8d8:	0b2d      	lsrs	r5, r5, #12
+     8da:	0512      	lsls	r2, r2, #20
+     8dc:	4b40      	ldr	r3, [pc, #256]	; (9e0 <__aeabi_dmul+0x1dc>)
+     8de:	432a      	orrs	r2, r5
+     8e0:	4013      	ands	r3, r2
+     8e2:	4323      	orrs	r3, r4
+     8e4:	005b      	lsls	r3, r3, #1
+     8e6:	464c      	mov	r4, r9
+     8e8:	085b      	lsrs	r3, r3, #1
+     8ea:	07e2      	lsls	r2, r4, #31
+     8ec:	1c19      	adds	r1, r3, #0
+     8ee:	4640      	mov	r0, r8
+     8f0:	4311      	orrs	r1, r2
+     8f2:	b007      	add	sp, #28
+     8f4:	bc3c      	pop	{r2, r3, r4, r5}
+     8f6:	4690      	mov	r8, r2
+     8f8:	4699      	mov	r9, r3
+     8fa:	46a2      	mov	sl, r4
+     8fc:	46ab      	mov	fp, r5
+     8fe:	bdf0      	pop	{r4, r5, r6, r7, pc}
+     900:	4653      	mov	r3, sl
+     902:	4323      	orrs	r3, r4
+     904:	d050      	beq.n	9a8 <__aeabi_dmul+0x1a4>
+     906:	4653      	mov	r3, sl
+     908:	2b00      	cmp	r3, #0
+     90a:	d100      	bne.n	90e <__aeabi_dmul+0x10a>
+     90c:	e184      	b.n	c18 <__aeabi_dmul+0x414>
+     90e:	4650      	mov	r0, sl
+     910:	f000 fa46 	bl	da0 <__clzsi2>
+     914:	1e03      	subs	r3, r0, #0
+     916:	2b27      	cmp	r3, #39	; 0x27
+     918:	dd00      	ble.n	91c <__aeabi_dmul+0x118>
+     91a:	e176      	b.n	c0a <__aeabi_dmul+0x406>
+     91c:	2128      	movs	r1, #40	; 0x28
+     91e:	1a0d      	subs	r5, r1, r0
+     920:	1c21      	adds	r1, r4, #0
+     922:	3b08      	subs	r3, #8
+     924:	4652      	mov	r2, sl
+     926:	40e9      	lsrs	r1, r5
+     928:	409a      	lsls	r2, r3
+     92a:	1c0d      	adds	r5, r1, #0
+     92c:	4315      	orrs	r5, r2
+     92e:	1c22      	adds	r2, r4, #0
+     930:	409a      	lsls	r2, r3
+     932:	46aa      	mov	sl, r5
+     934:	4690      	mov	r8, r2
+     936:	4b2b      	ldr	r3, [pc, #172]	; (9e4 <__aeabi_dmul+0x1e0>)
+     938:	2400      	movs	r4, #0
+     93a:	1a1b      	subs	r3, r3, r0
+     93c:	9302      	str	r3, [sp, #8]
+     93e:	2500      	movs	r5, #0
+     940:	e788      	b.n	854 <__aeabi_dmul+0x50>
+     942:	465b      	mov	r3, fp
+     944:	431e      	orrs	r6, r3
+     946:	2303      	movs	r3, #3
+     948:	2e00      	cmp	r6, #0
+     94a:	d19c      	bne.n	886 <__aeabi_dmul+0x82>
+     94c:	46b3      	mov	fp, r6
+     94e:	2200      	movs	r2, #0
+     950:	2302      	movs	r3, #2
+     952:	e798      	b.n	886 <__aeabi_dmul+0x82>
+     954:	465b      	mov	r3, fp
+     956:	4333      	orrs	r3, r6
+     958:	d021      	beq.n	99e <__aeabi_dmul+0x19a>
+     95a:	4658      	mov	r0, fp
+     95c:	2800      	cmp	r0, #0
+     95e:	d100      	bne.n	962 <__aeabi_dmul+0x15e>
+     960:	e14e      	b.n	c00 <__aeabi_dmul+0x3fc>
+     962:	f000 fa1d 	bl	da0 <__clzsi2>
+     966:	2827      	cmp	r0, #39	; 0x27
+     968:	dd00      	ble.n	96c <__aeabi_dmul+0x168>
+     96a:	e142      	b.n	bf2 <__aeabi_dmul+0x3ee>
+     96c:	2128      	movs	r1, #40	; 0x28
+     96e:	1a0f      	subs	r7, r1, r0
+     970:	1c02      	adds	r2, r0, #0
+     972:	1c31      	adds	r1, r6, #0
+     974:	3a08      	subs	r2, #8
+     976:	465b      	mov	r3, fp
+     978:	40f9      	lsrs	r1, r7
+     97a:	4093      	lsls	r3, r2
+     97c:	1c0f      	adds	r7, r1, #0
+     97e:	431f      	orrs	r7, r3
+     980:	1c33      	adds	r3, r6, #0
+     982:	4093      	lsls	r3, r2
+     984:	46bb      	mov	fp, r7
+     986:	1c1a      	adds	r2, r3, #0
+     988:	4b16      	ldr	r3, [pc, #88]	; (9e4 <__aeabi_dmul+0x1e0>)
+     98a:	1a18      	subs	r0, r3, r0
+     98c:	2300      	movs	r3, #0
+     98e:	e77a      	b.n	886 <__aeabi_dmul+0x82>
+     990:	2301      	movs	r3, #1
+     992:	400b      	ands	r3, r1
+     994:	2400      	movs	r4, #0
+     996:	4699      	mov	r9, r3
+     998:	46a0      	mov	r8, r4
+     99a:	4b0e      	ldr	r3, [pc, #56]	; (9d4 <__aeabi_dmul+0x1d0>)
+     99c:	e797      	b.n	8ce <__aeabi_dmul+0xca>
+     99e:	2700      	movs	r7, #0
+     9a0:	46bb      	mov	fp, r7
+     9a2:	2200      	movs	r2, #0
+     9a4:	2301      	movs	r3, #1
+     9a6:	e76e      	b.n	886 <__aeabi_dmul+0x82>
+     9a8:	2100      	movs	r1, #0
+     9aa:	2404      	movs	r4, #4
+     9ac:	468a      	mov	sl, r1
+     9ae:	4688      	mov	r8, r1
+     9b0:	2501      	movs	r5, #1
+     9b2:	e74f      	b.n	854 <__aeabi_dmul+0x50>
+     9b4:	240c      	movs	r4, #12
+     9b6:	2503      	movs	r5, #3
+     9b8:	e74c      	b.n	854 <__aeabi_dmul+0x50>
+     9ba:	2500      	movs	r5, #0
+     9bc:	2480      	movs	r4, #128	; 0x80
+     9be:	46a9      	mov	r9, r5
+     9c0:	0324      	lsls	r4, r4, #12
+     9c2:	46a8      	mov	r8, r5
+     9c4:	4b03      	ldr	r3, [pc, #12]	; (9d4 <__aeabi_dmul+0x1d0>)
+     9c6:	e782      	b.n	8ce <__aeabi_dmul+0xca>
+     9c8:	46da      	mov	sl, fp
+     9ca:	4690      	mov	r8, r2
+     9cc:	9903      	ldr	r1, [sp, #12]
+     9ce:	1c1d      	adds	r5, r3, #0
+     9d0:	e76f      	b.n	8b2 <__aeabi_dmul+0xae>
+     9d2:	46c0      	nop			; (mov r8, r8)
+     9d4:	000007ff 	.word	0x000007ff
+     9d8:	fffffc01 	.word	0xfffffc01
+     9dc:	00001bd8 	.word	0x00001bd8
+     9e0:	800fffff 	.word	0x800fffff
+     9e4:	fffffc0d 	.word	0xfffffc0d
+     9e8:	9f02      	ldr	r7, [sp, #8]
+     9ea:	0c16      	lsrs	r6, r2, #16
+     9ec:	1838      	adds	r0, r7, r0
+     9ee:	9004      	str	r0, [sp, #16]
+     9f0:	4640      	mov	r0, r8
+     9f2:	0c07      	lsrs	r7, r0, #16
+     9f4:	0400      	lsls	r0, r0, #16
+     9f6:	0c00      	lsrs	r0, r0, #16
+     9f8:	0412      	lsls	r2, r2, #16
+     9fa:	0c12      	lsrs	r2, r2, #16
+     9fc:	1c03      	adds	r3, r0, #0
+     9fe:	4353      	muls	r3, r2
+     a00:	1c04      	adds	r4, r0, #0
+     a02:	1c3d      	adds	r5, r7, #0
+     a04:	4374      	muls	r4, r6
+     a06:	4355      	muls	r5, r2
+     a08:	4698      	mov	r8, r3
+     a0a:	1c3b      	adds	r3, r7, #0
+     a0c:	4373      	muls	r3, r6
+     a0e:	1964      	adds	r4, r4, r5
+     a10:	46a4      	mov	ip, r4
+     a12:	4644      	mov	r4, r8
+     a14:	9302      	str	r3, [sp, #8]
+     a16:	0c23      	lsrs	r3, r4, #16
+     a18:	4463      	add	r3, ip
+     a1a:	429d      	cmp	r5, r3
+     a1c:	d904      	bls.n	a28 <__aeabi_dmul+0x224>
+     a1e:	9d02      	ldr	r5, [sp, #8]
+     a20:	2480      	movs	r4, #128	; 0x80
+     a22:	0264      	lsls	r4, r4, #9
+     a24:	192d      	adds	r5, r5, r4
+     a26:	9502      	str	r5, [sp, #8]
+     a28:	0c1d      	lsrs	r5, r3, #16
+     a2a:	9503      	str	r5, [sp, #12]
+     a2c:	4645      	mov	r5, r8
+     a2e:	042c      	lsls	r4, r5, #16
+     a30:	041b      	lsls	r3, r3, #16
+     a32:	0c24      	lsrs	r4, r4, #16
+     a34:	191c      	adds	r4, r3, r4
+     a36:	9405      	str	r4, [sp, #20]
+     a38:	465c      	mov	r4, fp
+     a3a:	0c23      	lsrs	r3, r4, #16
+     a3c:	1c05      	adds	r5, r0, #0
+     a3e:	4358      	muls	r0, r3
+     a40:	0424      	lsls	r4, r4, #16
+     a42:	0c24      	lsrs	r4, r4, #16
+     a44:	4684      	mov	ip, r0
+     a46:	1c38      	adds	r0, r7, #0
+     a48:	4360      	muls	r0, r4
+     a4a:	4365      	muls	r5, r4
+     a4c:	435f      	muls	r7, r3
+     a4e:	4681      	mov	r9, r0
+     a50:	44cc      	add	ip, r9
+     a52:	0c28      	lsrs	r0, r5, #16
+     a54:	4460      	add	r0, ip
+     a56:	46bb      	mov	fp, r7
+     a58:	4581      	cmp	r9, r0
+     a5a:	d902      	bls.n	a62 <__aeabi_dmul+0x25e>
+     a5c:	2780      	movs	r7, #128	; 0x80
+     a5e:	027f      	lsls	r7, r7, #9
+     a60:	44bb      	add	fp, r7
+     a62:	042d      	lsls	r5, r5, #16
+     a64:	0c07      	lsrs	r7, r0, #16
+     a66:	0c2d      	lsrs	r5, r5, #16
+     a68:	0400      	lsls	r0, r0, #16
+     a6a:	1940      	adds	r0, r0, r5
+     a6c:	4655      	mov	r5, sl
+     a6e:	46bc      	mov	ip, r7
+     a70:	042f      	lsls	r7, r5, #16
+     a72:	44e3      	add	fp, ip
+     a74:	4684      	mov	ip, r0
+     a76:	0c28      	lsrs	r0, r5, #16
+     a78:	0c3d      	lsrs	r5, r7, #16
+     a7a:	1c2f      	adds	r7, r5, #0
+     a7c:	4357      	muls	r7, r2
+     a7e:	46b8      	mov	r8, r7
+     a80:	1c2f      	adds	r7, r5, #0
+     a82:	4377      	muls	r7, r6
+     a84:	4342      	muls	r2, r0
+     a86:	46b9      	mov	r9, r7
+     a88:	4647      	mov	r7, r8
+     a8a:	0c3f      	lsrs	r7, r7, #16
+     a8c:	4491      	add	r9, r2
+     a8e:	46ba      	mov	sl, r7
+     a90:	44d1      	add	r9, sl
+     a92:	4346      	muls	r6, r0
+     a94:	454a      	cmp	r2, r9
+     a96:	d902      	bls.n	a9e <__aeabi_dmul+0x29a>
+     a98:	2280      	movs	r2, #128	; 0x80
+     a9a:	0252      	lsls	r2, r2, #9
+     a9c:	18b6      	adds	r6, r6, r2
+     a9e:	464f      	mov	r7, r9
+     aa0:	0c3a      	lsrs	r2, r7, #16
+     aa2:	18b6      	adds	r6, r6, r2
+     aa4:	043a      	lsls	r2, r7, #16
+     aa6:	4647      	mov	r7, r8
+     aa8:	043f      	lsls	r7, r7, #16
+     aaa:	0c3f      	lsrs	r7, r7, #16
+     aac:	46b8      	mov	r8, r7
+     aae:	1c2f      	adds	r7, r5, #0
+     ab0:	4367      	muls	r7, r4
+     ab2:	435d      	muls	r5, r3
+     ab4:	4344      	muls	r4, r0
+     ab6:	4358      	muls	r0, r3
+     ab8:	1965      	adds	r5, r4, r5
+     aba:	9001      	str	r0, [sp, #4]
+     abc:	0c38      	lsrs	r0, r7, #16
+     abe:	182d      	adds	r5, r5, r0
+     ac0:	4442      	add	r2, r8
+     ac2:	46b8      	mov	r8, r7
+     ac4:	42ac      	cmp	r4, r5
+     ac6:	d904      	bls.n	ad2 <__aeabi_dmul+0x2ce>
+     ac8:	9801      	ldr	r0, [sp, #4]
+     aca:	2380      	movs	r3, #128	; 0x80
+     acc:	025b      	lsls	r3, r3, #9
+     ace:	18c0      	adds	r0, r0, r3
+     ad0:	9001      	str	r0, [sp, #4]
+     ad2:	9c03      	ldr	r4, [sp, #12]
+     ad4:	9f02      	ldr	r7, [sp, #8]
+     ad6:	1c20      	adds	r0, r4, #0
+     ad8:	4460      	add	r0, ip
+     ada:	19c0      	adds	r0, r0, r7
+     adc:	4560      	cmp	r0, ip
+     ade:	41a4      	sbcs	r4, r4
+     ae0:	4647      	mov	r7, r8
+     ae2:	4264      	negs	r4, r4
+     ae4:	46a4      	mov	ip, r4
+     ae6:	042b      	lsls	r3, r5, #16
+     ae8:	043c      	lsls	r4, r7, #16
+     aea:	4699      	mov	r9, r3
+     aec:	0c24      	lsrs	r4, r4, #16
+     aee:	444c      	add	r4, r9
+     af0:	46a0      	mov	r8, r4
+     af2:	44d8      	add	r8, fp
+     af4:	1880      	adds	r0, r0, r2
+     af6:	46c2      	mov	sl, r8
+     af8:	44e2      	add	sl, ip
+     afa:	4290      	cmp	r0, r2
+     afc:	4192      	sbcs	r2, r2
+     afe:	4657      	mov	r7, sl
+     b00:	4252      	negs	r2, r2
+     b02:	4691      	mov	r9, r2
+     b04:	19f2      	adds	r2, r6, r7
+     b06:	45e2      	cmp	sl, ip
+     b08:	41bf      	sbcs	r7, r7
+     b0a:	427f      	negs	r7, r7
+     b0c:	464b      	mov	r3, r9
+     b0e:	46bc      	mov	ip, r7
+     b10:	45d8      	cmp	r8, fp
+     b12:	41bf      	sbcs	r7, r7
+     b14:	18d4      	adds	r4, r2, r3
+     b16:	427f      	negs	r7, r7
+     b18:	4663      	mov	r3, ip
+     b1a:	431f      	orrs	r7, r3
+     b1c:	0c2d      	lsrs	r5, r5, #16
+     b1e:	197f      	adds	r7, r7, r5
+     b20:	42b2      	cmp	r2, r6
+     b22:	4192      	sbcs	r2, r2
+     b24:	454c      	cmp	r4, r9
+     b26:	41ad      	sbcs	r5, r5
+     b28:	4252      	negs	r2, r2
+     b2a:	426d      	negs	r5, r5
+     b2c:	4315      	orrs	r5, r2
+     b2e:	9e01      	ldr	r6, [sp, #4]
+     b30:	197d      	adds	r5, r7, r5
+     b32:	19ab      	adds	r3, r5, r6
+     b34:	0de2      	lsrs	r2, r4, #23
+     b36:	025b      	lsls	r3, r3, #9
+     b38:	9f05      	ldr	r7, [sp, #20]
+     b3a:	4313      	orrs	r3, r2
+     b3c:	0242      	lsls	r2, r0, #9
+     b3e:	433a      	orrs	r2, r7
+     b40:	469a      	mov	sl, r3
+     b42:	1e53      	subs	r3, r2, #1
+     b44:	419a      	sbcs	r2, r3
+     b46:	0dc3      	lsrs	r3, r0, #23
+     b48:	1c10      	adds	r0, r2, #0
+     b4a:	4318      	orrs	r0, r3
+     b4c:	0264      	lsls	r4, r4, #9
+     b4e:	4320      	orrs	r0, r4
+     b50:	4680      	mov	r8, r0
+     b52:	4650      	mov	r0, sl
+     b54:	01c0      	lsls	r0, r0, #7
+     b56:	d50d      	bpl.n	b74 <__aeabi_dmul+0x370>
+     b58:	4645      	mov	r5, r8
+     b5a:	2201      	movs	r2, #1
+     b5c:	4656      	mov	r6, sl
+     b5e:	9c04      	ldr	r4, [sp, #16]
+     b60:	086b      	lsrs	r3, r5, #1
+     b62:	402a      	ands	r2, r5
+     b64:	431a      	orrs	r2, r3
+     b66:	07f3      	lsls	r3, r6, #31
+     b68:	3401      	adds	r4, #1
+     b6a:	431a      	orrs	r2, r3
+     b6c:	0876      	lsrs	r6, r6, #1
+     b6e:	9404      	str	r4, [sp, #16]
+     b70:	4690      	mov	r8, r2
+     b72:	46b2      	mov	sl, r6
+     b74:	9e04      	ldr	r6, [sp, #16]
+     b76:	4f63      	ldr	r7, [pc, #396]	; (d04 <__aeabi_dmul+0x500>)
+     b78:	19f3      	adds	r3, r6, r7
+     b7a:	2b00      	cmp	r3, #0
+     b7c:	dd61      	ble.n	c42 <__aeabi_dmul+0x43e>
+     b7e:	4640      	mov	r0, r8
+     b80:	0740      	lsls	r0, r0, #29
+     b82:	d00b      	beq.n	b9c <__aeabi_dmul+0x398>
+     b84:	220f      	movs	r2, #15
+     b86:	4644      	mov	r4, r8
+     b88:	4022      	ands	r2, r4
+     b8a:	2a04      	cmp	r2, #4
+     b8c:	d006      	beq.n	b9c <__aeabi_dmul+0x398>
+     b8e:	4642      	mov	r2, r8
+     b90:	3204      	adds	r2, #4
+     b92:	4542      	cmp	r2, r8
+     b94:	4180      	sbcs	r0, r0
+     b96:	4240      	negs	r0, r0
+     b98:	4482      	add	sl, r0
+     b9a:	4690      	mov	r8, r2
+     b9c:	4655      	mov	r5, sl
+     b9e:	01ed      	lsls	r5, r5, #7
+     ba0:	d507      	bpl.n	bb2 <__aeabi_dmul+0x3ae>
+     ba2:	4b59      	ldr	r3, [pc, #356]	; (d08 <__aeabi_dmul+0x504>)
+     ba4:	4656      	mov	r6, sl
+     ba6:	9f04      	ldr	r7, [sp, #16]
+     ba8:	2080      	movs	r0, #128	; 0x80
+     baa:	401e      	ands	r6, r3
+     bac:	00c0      	lsls	r0, r0, #3
+     bae:	46b2      	mov	sl, r6
+     bb0:	183b      	adds	r3, r7, r0
+     bb2:	4a56      	ldr	r2, [pc, #344]	; (d0c <__aeabi_dmul+0x508>)
+     bb4:	4293      	cmp	r3, r2
+     bb6:	dd00      	ble.n	bba <__aeabi_dmul+0x3b6>
+     bb8:	e6ea      	b.n	990 <__aeabi_dmul+0x18c>
+     bba:	4644      	mov	r4, r8
+     bbc:	4655      	mov	r5, sl
+     bbe:	08e2      	lsrs	r2, r4, #3
+     bc0:	0768      	lsls	r0, r5, #29
+     bc2:	4310      	orrs	r0, r2
+     bc4:	2201      	movs	r2, #1
+     bc6:	026c      	lsls	r4, r5, #9
+     bc8:	055b      	lsls	r3, r3, #21
+     bca:	400a      	ands	r2, r1
+     bcc:	4680      	mov	r8, r0
+     bce:	0b24      	lsrs	r4, r4, #12
+     bd0:	0d5b      	lsrs	r3, r3, #21
+     bd2:	4691      	mov	r9, r2
+     bd4:	e67b      	b.n	8ce <__aeabi_dmul+0xca>
+     bd6:	46da      	mov	sl, fp
+     bd8:	4690      	mov	r8, r2
+     bda:	1c1d      	adds	r5, r3, #0
+     bdc:	e669      	b.n	8b2 <__aeabi_dmul+0xae>
+     bde:	2480      	movs	r4, #128	; 0x80
+     be0:	0324      	lsls	r4, r4, #12
+     be2:	4657      	mov	r7, sl
+     be4:	4227      	tst	r7, r4
+     be6:	d11c      	bne.n	c22 <__aeabi_dmul+0x41e>
+     be8:	433c      	orrs	r4, r7
+     bea:	0324      	lsls	r4, r4, #12
+     bec:	0b24      	lsrs	r4, r4, #12
+     bee:	4b48      	ldr	r3, [pc, #288]	; (d10 <__aeabi_dmul+0x50c>)
+     bf0:	e66d      	b.n	8ce <__aeabi_dmul+0xca>
+     bf2:	1c03      	adds	r3, r0, #0
+     bf4:	3b28      	subs	r3, #40	; 0x28
+     bf6:	1c31      	adds	r1, r6, #0
+     bf8:	4099      	lsls	r1, r3
+     bfa:	468b      	mov	fp, r1
+     bfc:	2200      	movs	r2, #0
+     bfe:	e6c3      	b.n	988 <__aeabi_dmul+0x184>
+     c00:	1c30      	adds	r0, r6, #0
+     c02:	f000 f8cd 	bl	da0 <__clzsi2>
+     c06:	3020      	adds	r0, #32
+     c08:	e6ad      	b.n	966 <__aeabi_dmul+0x162>
+     c0a:	3b28      	subs	r3, #40	; 0x28
+     c0c:	1c21      	adds	r1, r4, #0
+     c0e:	4099      	lsls	r1, r3
+     c10:	2200      	movs	r2, #0
+     c12:	468a      	mov	sl, r1
+     c14:	4690      	mov	r8, r2
+     c16:	e68e      	b.n	936 <__aeabi_dmul+0x132>
+     c18:	1c20      	adds	r0, r4, #0
+     c1a:	f000 f8c1 	bl	da0 <__clzsi2>
+     c1e:	3020      	adds	r0, #32
+     c20:	e678      	b.n	914 <__aeabi_dmul+0x110>
+     c22:	4658      	mov	r0, fp
+     c24:	4220      	tst	r0, r4
+     c26:	d107      	bne.n	c38 <__aeabi_dmul+0x434>
+     c28:	4304      	orrs	r4, r0
+     c2a:	9903      	ldr	r1, [sp, #12]
+     c2c:	0324      	lsls	r4, r4, #12
+     c2e:	0b24      	lsrs	r4, r4, #12
+     c30:	4689      	mov	r9, r1
+     c32:	4690      	mov	r8, r2
+     c34:	4b36      	ldr	r3, [pc, #216]	; (d10 <__aeabi_dmul+0x50c>)
+     c36:	e64a      	b.n	8ce <__aeabi_dmul+0xca>
+     c38:	433c      	orrs	r4, r7
+     c3a:	0324      	lsls	r4, r4, #12
+     c3c:	0b24      	lsrs	r4, r4, #12
+     c3e:	4b34      	ldr	r3, [pc, #208]	; (d10 <__aeabi_dmul+0x50c>)
+     c40:	e645      	b.n	8ce <__aeabi_dmul+0xca>
+     c42:	4b34      	ldr	r3, [pc, #208]	; (d14 <__aeabi_dmul+0x510>)
+     c44:	9e04      	ldr	r6, [sp, #16]
+     c46:	1b9b      	subs	r3, r3, r6
+     c48:	2b38      	cmp	r3, #56	; 0x38
+     c4a:	dd06      	ble.n	c5a <__aeabi_dmul+0x456>
+     c4c:	2301      	movs	r3, #1
+     c4e:	400b      	ands	r3, r1
+     c50:	2400      	movs	r4, #0
+     c52:	4699      	mov	r9, r3
+     c54:	46a0      	mov	r8, r4
+     c56:	2300      	movs	r3, #0
+     c58:	e639      	b.n	8ce <__aeabi_dmul+0xca>
+     c5a:	2b1f      	cmp	r3, #31
+     c5c:	dc25      	bgt.n	caa <__aeabi_dmul+0x4a6>
+     c5e:	9c04      	ldr	r4, [sp, #16]
+     c60:	4d2d      	ldr	r5, [pc, #180]	; (d18 <__aeabi_dmul+0x514>)
+     c62:	4646      	mov	r6, r8
+     c64:	1960      	adds	r0, r4, r5
+     c66:	4652      	mov	r2, sl
+     c68:	4644      	mov	r4, r8
+     c6a:	4086      	lsls	r6, r0
+     c6c:	40dc      	lsrs	r4, r3
+     c6e:	4082      	lsls	r2, r0
+     c70:	4657      	mov	r7, sl
+     c72:	1c30      	adds	r0, r6, #0
+     c74:	4322      	orrs	r2, r4
+     c76:	40df      	lsrs	r7, r3
+     c78:	1e44      	subs	r4, r0, #1
+     c7a:	41a0      	sbcs	r0, r4
+     c7c:	4302      	orrs	r2, r0
+     c7e:	1c3b      	adds	r3, r7, #0
+     c80:	0754      	lsls	r4, r2, #29
+     c82:	d009      	beq.n	c98 <__aeabi_dmul+0x494>
+     c84:	200f      	movs	r0, #15
+     c86:	4010      	ands	r0, r2
+     c88:	2804      	cmp	r0, #4
+     c8a:	d005      	beq.n	c98 <__aeabi_dmul+0x494>
+     c8c:	1d10      	adds	r0, r2, #4
+     c8e:	4290      	cmp	r0, r2
+     c90:	4192      	sbcs	r2, r2
+     c92:	4252      	negs	r2, r2
+     c94:	189b      	adds	r3, r3, r2
+     c96:	1c02      	adds	r2, r0, #0
+     c98:	021d      	lsls	r5, r3, #8
+     c9a:	d51a      	bpl.n	cd2 <__aeabi_dmul+0x4ce>
+     c9c:	2301      	movs	r3, #1
+     c9e:	400b      	ands	r3, r1
+     ca0:	2400      	movs	r4, #0
+     ca2:	4699      	mov	r9, r3
+     ca4:	46a0      	mov	r8, r4
+     ca6:	2301      	movs	r3, #1
+     ca8:	e611      	b.n	8ce <__aeabi_dmul+0xca>
+     caa:	481c      	ldr	r0, [pc, #112]	; (d1c <__aeabi_dmul+0x518>)
+     cac:	9c04      	ldr	r4, [sp, #16]
+     cae:	4655      	mov	r5, sl
+     cb0:	1b00      	subs	r0, r0, r4
+     cb2:	40c5      	lsrs	r5, r0
+     cb4:	1c28      	adds	r0, r5, #0
+     cb6:	2b20      	cmp	r3, #32
+     cb8:	d016      	beq.n	ce8 <__aeabi_dmul+0x4e4>
+     cba:	4e19      	ldr	r6, [pc, #100]	; (d20 <__aeabi_dmul+0x51c>)
+     cbc:	4657      	mov	r7, sl
+     cbe:	19a2      	adds	r2, r4, r6
+     cc0:	4097      	lsls	r7, r2
+     cc2:	1c3a      	adds	r2, r7, #0
+     cc4:	4643      	mov	r3, r8
+     cc6:	431a      	orrs	r2, r3
+     cc8:	1e53      	subs	r3, r2, #1
+     cca:	419a      	sbcs	r2, r3
+     ccc:	4302      	orrs	r2, r0
+     cce:	2300      	movs	r3, #0
+     cd0:	e7d6      	b.n	c80 <__aeabi_dmul+0x47c>
+     cd2:	0758      	lsls	r0, r3, #29
+     cd4:	025b      	lsls	r3, r3, #9
+     cd6:	08d2      	lsrs	r2, r2, #3
+     cd8:	0b1c      	lsrs	r4, r3, #12
+     cda:	2301      	movs	r3, #1
+     cdc:	400b      	ands	r3, r1
+     cde:	4310      	orrs	r0, r2
+     ce0:	4699      	mov	r9, r3
+     ce2:	4680      	mov	r8, r0
+     ce4:	2300      	movs	r3, #0
+     ce6:	e5f2      	b.n	8ce <__aeabi_dmul+0xca>
+     ce8:	2200      	movs	r2, #0
+     cea:	e7eb      	b.n	cc4 <__aeabi_dmul+0x4c0>
+     cec:	2480      	movs	r4, #128	; 0x80
+     cee:	0324      	lsls	r4, r4, #12
+     cf0:	4650      	mov	r0, sl
+     cf2:	2301      	movs	r3, #1
+     cf4:	4304      	orrs	r4, r0
+     cf6:	4019      	ands	r1, r3
+     cf8:	0324      	lsls	r4, r4, #12
+     cfa:	0b24      	lsrs	r4, r4, #12
+     cfc:	4689      	mov	r9, r1
+     cfe:	4b04      	ldr	r3, [pc, #16]	; (d10 <__aeabi_dmul+0x50c>)
+     d00:	e5e5      	b.n	8ce <__aeabi_dmul+0xca>
+     d02:	46c0      	nop			; (mov r8, r8)
+     d04:	000003ff 	.word	0x000003ff
+     d08:	feffffff 	.word	0xfeffffff
+     d0c:	000007fe 	.word	0x000007fe
+     d10:	000007ff 	.word	0x000007ff
+     d14:	fffffc02 	.word	0xfffffc02
+     d18:	0000041e 	.word	0x0000041e
+     d1c:	fffffbe2 	.word	0xfffffbe2
+     d20:	0000043e 	.word	0x0000043e
+
+00000d24 <__aeabi_i2d>:
+__aeabi_i2d():
+     d24:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+     d26:	1e04      	subs	r4, r0, #0
+     d28:	d031      	beq.n	d8e <__aeabi_i2d+0x6a>
+     d2a:	0fc7      	lsrs	r7, r0, #31
+     d2c:	d000      	beq.n	d30 <__aeabi_i2d+0xc>
+     d2e:	4244      	negs	r4, r0
+     d30:	1c20      	adds	r0, r4, #0
+     d32:	f000 f835 	bl	da0 <__clzsi2>
+     d36:	4d18      	ldr	r5, [pc, #96]	; (d98 <__aeabi_i2d+0x74>)
+     d38:	1a2d      	subs	r5, r5, r0
+     d3a:	280a      	cmp	r0, #10
+     d3c:	dd19      	ble.n	d72 <__aeabi_i2d+0x4e>
+     d3e:	380b      	subs	r0, #11
+     d40:	4084      	lsls	r4, r0
+     d42:	0324      	lsls	r4, r4, #12
+     d44:	056d      	lsls	r5, r5, #21
+     d46:	0b24      	lsrs	r4, r4, #12
+     d48:	0d6d      	lsrs	r5, r5, #21
+     d4a:	1c3a      	adds	r2, r7, #0
+     d4c:	2600      	movs	r6, #0
+     d4e:	2000      	movs	r0, #0
+     d50:	2100      	movs	r1, #0
+     d52:	0d0b      	lsrs	r3, r1, #20
+     d54:	0324      	lsls	r4, r4, #12
+     d56:	0b24      	lsrs	r4, r4, #12
+     d58:	051b      	lsls	r3, r3, #20
+     d5a:	4323      	orrs	r3, r4
+     d5c:	4c0f      	ldr	r4, [pc, #60]	; (d9c <__aeabi_i2d+0x78>)
+     d5e:	052d      	lsls	r5, r5, #20
+     d60:	401c      	ands	r4, r3
+     d62:	432c      	orrs	r4, r5
+     d64:	0064      	lsls	r4, r4, #1
+     d66:	0864      	lsrs	r4, r4, #1
+     d68:	07d3      	lsls	r3, r2, #31
+     d6a:	1c21      	adds	r1, r4, #0
+     d6c:	1c30      	adds	r0, r6, #0
+     d6e:	4319      	orrs	r1, r3
+     d70:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
+     d72:	1c06      	adds	r6, r0, #0
+     d74:	3615      	adds	r6, #21
+     d76:	1c23      	adds	r3, r4, #0
+     d78:	40b3      	lsls	r3, r6
+     d7a:	1c1e      	adds	r6, r3, #0
+     d7c:	230b      	movs	r3, #11
+     d7e:	1a18      	subs	r0, r3, r0
+     d80:	40c4      	lsrs	r4, r0
+     d82:	0324      	lsls	r4, r4, #12
+     d84:	056d      	lsls	r5, r5, #21
+     d86:	0b24      	lsrs	r4, r4, #12
+     d88:	0d6d      	lsrs	r5, r5, #21
+     d8a:	1c3a      	adds	r2, r7, #0
+     d8c:	e7df      	b.n	d4e <__aeabi_i2d+0x2a>
+     d8e:	2200      	movs	r2, #0
+     d90:	2500      	movs	r5, #0
+     d92:	2400      	movs	r4, #0
+     d94:	2600      	movs	r6, #0
+     d96:	e7da      	b.n	d4e <__aeabi_i2d+0x2a>
+     d98:	0000041e 	.word	0x0000041e
+     d9c:	800fffff 	.word	0x800fffff
+
+00000da0 <__clzsi2>:
+__clzsi2():
+     da0:	211c      	movs	r1, #28
+     da2:	2301      	movs	r3, #1
+     da4:	041b      	lsls	r3, r3, #16
+     da6:	4298      	cmp	r0, r3
+     da8:	d301      	bcc.n	dae <__clzsi2+0xe>
+     daa:	0c00      	lsrs	r0, r0, #16
+     dac:	3910      	subs	r1, #16
+     dae:	0a1b      	lsrs	r3, r3, #8
+     db0:	4298      	cmp	r0, r3
+     db2:	d301      	bcc.n	db8 <__clzsi2+0x18>
+     db4:	0a00      	lsrs	r0, r0, #8
+     db6:	3908      	subs	r1, #8
+     db8:	091b      	lsrs	r3, r3, #4
+     dba:	4298      	cmp	r0, r3
+     dbc:	d301      	bcc.n	dc2 <__clzsi2+0x22>
+     dbe:	0900      	lsrs	r0, r0, #4
+     dc0:	3904      	subs	r1, #4
+     dc2:	a202      	add	r2, pc, #8	; (adr r2, dcc <__clzsi2+0x2c>)
+     dc4:	5c10      	ldrb	r0, [r2, r0]
+     dc6:	1840      	adds	r0, r0, r1
+     dc8:	4770      	bx	lr
+     dca:	46c0      	nop			; (mov r8, r8)
+     dcc:	02020304 	.word	0x02020304
+     dd0:	01010101 	.word	0x01010101
+	...
+
+00000ddc <SysTick_Handler>:
+SysTick_Handler():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:16
+//函数名称：SysTick_Handler（SysTick中断函数服务例程）
+//中断条件：根据main函数中的对SysTick初始化，每10ms产生一次SysTick中断，执行本程序
+//功能概要：LED刷新、扫描键盘，如有实际按键，在LCD的右下角显示键定义值
+//======================================================================
+void SysTick_Handler(void)
+{
+     ddc:	b590      	push	{r4, r7, lr}
+     dde:	b083      	sub	sp, #12
+     de0:	af00      	add	r7, sp, #0
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:19
+    uint_8 kb;
+
+    LEDshow(g_LEDBuffer);    //LED显示刷新
+     de2:	4b0f      	ldr	r3, [pc, #60]	; (e20 <SysTick_Handler+0x44>)
+     de4:	1c18      	adds	r0, r3, #0
+     de6:	f000 f8b1 	bl	f4c <LEDshow>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:21
+
+    kb=KBScanN(10);          //扫描键盘
+     dea:	1dfc      	adds	r4, r7, #7
+     dec:	200a      	movs	r0, #10
+     dee:	f000 faa7 	bl	1340 <KBScanN>
+     df2:	1c03      	adds	r3, r0, #0
+     df4:	7023      	strb	r3, [r4, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:22
+    if (kb != 0xff)  //有实际按键
+     df6:	1dfb      	adds	r3, r7, #7
+     df8:	781b      	ldrb	r3, [r3, #0]
+     dfa:	2bff      	cmp	r3, #255	; 0xff
+     dfc:	d00c      	beq.n	e18 <SysTick_Handler+0x3c>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:24
+    {
+        g_LCDBuffer[31] = KBDef(kb);  //填写 LCD缓冲区
+     dfe:	1dfb      	adds	r3, r7, #7
+     e00:	781b      	ldrb	r3, [r3, #0]
+     e02:	1c18      	adds	r0, r3, #0
+     e04:	f000 fb18 	bl	1438 <KBDef>
+     e08:	1c03      	adds	r3, r0, #0
+     e0a:	1c1a      	adds	r2, r3, #0
+     e0c:	4b05      	ldr	r3, [pc, #20]	; (e24 <SysTick_Handler+0x48>)
+     e0e:	77da      	strb	r2, [r3, #31]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:25
+        LCDShow(g_LCDBuffer);	              //LCD显示
+     e10:	4b04      	ldr	r3, [pc, #16]	; (e24 <SysTick_Handler+0x48>)
+     e12:	1c18      	adds	r0, r3, #0
+     e14:	f000 f972 	bl	10fc <LCDShow>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:27
+    }
+}
+     e18:	46bd      	mov	sp, r7
+     e1a:	b003      	add	sp, #12
+     e1c:	bd90      	pop	{r4, r7, pc}
+     e1e:	46c0      	nop			; (mov r8, r8)
+     e20:	1ffff04c 	.word	0x1ffff04c
+     e24:	1ffff028 	.word	0x1ffff028
+
+00000e28 <UART0_IRQHandler>:
+UART0_IRQHandler():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:31
+
+//串口0接收中断服务例程
+void UART0_IRQHandler(void)
+{
+     e28:	b580      	push	{r7, lr}
+     e2a:	af00      	add	r7, sp, #0
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:33
+
+}
+     e2c:	46bd      	mov	sp, r7
+     e2e:	bd80      	pop	{r7, pc}
+
+00000e30 <UART1_IRQHandler>:
+UART1_IRQHandler():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:38
+
+
+//串口1接收中断服务例程
+void UART1_IRQHandler(void)
+{
+     e30:	b580      	push	{r7, lr}
+     e32:	af00      	add	r7, sp, #0
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:40
+
+}
+     e34:	46bd      	mov	sp, r7
+     e36:	bd80      	pop	{r7, pc}
+
+00000e38 <UART2_IRQHandler>:
+UART2_IRQHandler():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:44
+
+//串口2接收中断服务例程
+void UART2_IRQHandler(void)
+{
+     e38:	b580      	push	{r7, lr}
+     e3a:	af00      	add	r7, sp, #0
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/isr.c:46
+
+}
+     e3c:	46bd      	mov	sp, r7
+     e3e:	bd80      	pop	{r7, pc}
+
+00000e40 <main>:
+main():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:7
+//======================================================================
+
+#include "includes.h"   //包含总头文件
+
+int main(void)
+{
+     e40:	b590      	push	{r4, r7, lr}
+     e42:	b08b      	sub	sp, #44	; 0x2c
+     e44:	af00      	add	r7, sp, #0
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:10
+    //1.声明主函数使用的局部变量
+    uint_8 i;
+    uint_8 g_temp[32]="The keyboard you just input is .";
+     e46:	1d3b      	adds	r3, r7, #4
+     e48:	4a1f      	ldr	r2, [pc, #124]	; (ec8 <main+0x88>)
+     e4a:	ca13      	ldmia	r2!, {r0, r1, r4}
+     e4c:	c313      	stmia	r3!, {r0, r1, r4}
+     e4e:	ca13      	ldmia	r2!, {r0, r1, r4}
+     e50:	c313      	stmia	r3!, {r0, r1, r4}
+     e52:	ca03      	ldmia	r2!, {r0, r1}
+     e54:	c303      	stmia	r3!, {r0, r1}
+__disable_irq():
+D:/suda/KL25_BOOK/SD-KL-CD(V6.5)-20160505/02-Software/KL25-program/ch08-KB-LED-LCD-20160509/KB-LED-LCD-kbwithoutint/02_CPU/core_cmFunc.h:344
+  This function disables IRQ interrupts by setting the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+{
+  __ASM volatile ("cpsid i" : : : "memory");
+     e56:	b672      	cpsid	i
+main():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:14
+    //2.关总中断
+    DISABLE_INTERRUPTS;   //关总中断
+    //3. 初始化外设模块
+    LEDInit();                            //LED初始化
+     e58:	f000 f83c 	bl	ed4 <LEDInit>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:15
+    LCDInit();                            //LCD初始化
+     e5c:	f000 f8f4 	bl	1048 <LCDInit>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:16
+    KBInit();                             //键盘初始化
+     e60:	f000 fa2c 	bl	12bc <KBInit>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:17
+    systick_init(CORE_CLOCK_DIV_16, 5);   //初始化SysTick周期、开中断、启动计数
+     e64:	2000      	movs	r0, #0
+     e66:	2105      	movs	r1, #5
+     e68:	f000 fc14 	bl	1694 <systick_init>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:19
+    //4.变量赋初值
+    g_LEDBuffer[0]=8;    //LED缓冲区赋值
+     e6c:	4b17      	ldr	r3, [pc, #92]	; (ecc <main+0x8c>)
+     e6e:	2208      	movs	r2, #8
+     e70:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:20
+    g_LEDBuffer[1]=6;
+     e72:	4b16      	ldr	r3, [pc, #88]	; (ecc <main+0x8c>)
+     e74:	2206      	movs	r2, #6
+     e76:	705a      	strb	r2, [r3, #1]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:21
+    g_LEDBuffer[2]=9;
+     e78:	4b14      	ldr	r3, [pc, #80]	; (ecc <main+0x8c>)
+     e7a:	2209      	movs	r2, #9
+     e7c:	709a      	strb	r2, [r3, #2]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:22
+    g_LEDBuffer[3]=2;
+     e7e:	4b13      	ldr	r3, [pc, #76]	; (ecc <main+0x8c>)
+     e80:	2202      	movs	r2, #2
+     e82:	70da      	strb	r2, [r3, #3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:23
+    for(i=0;i<32;i++)  {g_LCDBuffer[i]=g_temp[i];}  //LCD缓冲区赋值
+     e84:	1c3b      	adds	r3, r7, #0
+     e86:	3327      	adds	r3, #39	; 0x27
+     e88:	2200      	movs	r2, #0
+     e8a:	701a      	strb	r2, [r3, #0]
+     e8c:	e010      	b.n	eb0 <main+0x70>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:23 (discriminator 2)
+     e8e:	1c3b      	adds	r3, r7, #0
+     e90:	3327      	adds	r3, #39	; 0x27
+     e92:	781b      	ldrb	r3, [r3, #0]
+     e94:	1c3a      	adds	r2, r7, #0
+     e96:	3227      	adds	r2, #39	; 0x27
+     e98:	7812      	ldrb	r2, [r2, #0]
+     e9a:	1d39      	adds	r1, r7, #4
+     e9c:	5c89      	ldrb	r1, [r1, r2]
+     e9e:	4a0c      	ldr	r2, [pc, #48]	; (ed0 <main+0x90>)
+     ea0:	54d1      	strb	r1, [r2, r3]
+     ea2:	1c3b      	adds	r3, r7, #0
+     ea4:	3327      	adds	r3, #39	; 0x27
+     ea6:	781a      	ldrb	r2, [r3, #0]
+     ea8:	1c3b      	adds	r3, r7, #0
+     eaa:	3327      	adds	r3, #39	; 0x27
+     eac:	3201      	adds	r2, #1
+     eae:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:23 (discriminator 1)
+     eb0:	1c3b      	adds	r3, r7, #0
+     eb2:	3327      	adds	r3, #39	; 0x27
+     eb4:	781b      	ldrb	r3, [r3, #0]
+     eb6:	2b1f      	cmp	r3, #31
+     eb8:	d9e9      	bls.n	e8e <main+0x4e>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:24
+    LCDShow(g_LCDBuffer);  //lcd显示初始字符
+     eba:	4b05      	ldr	r3, [pc, #20]	; (ed0 <main+0x90>)
+     ebc:	1c18      	adds	r0, r3, #0
+     ebe:	f000 f91d 	bl	10fc <LCDShow>
+__enable_irq():
+D:/suda/KL25_BOOK/SD-KL-CD(V6.5)-20160505/02-Software/KL25-program/ch08-KB-LED-LCD-20160509/KB-LED-LCD-kbwithoutint/02_CPU/core_cmFunc.h:333
+  This function enables IRQ interrupts by clearing the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+{
+  __ASM volatile ("cpsie i" : : : "memory");
+     ec2:	b662      	cpsie	i
+main():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../08_Source/main.c:32 (discriminator 1)
+    //6. 开总中断
+    ENABLE_INTERRUPTS;   //开总中断
+    //======================================================================
+    while(1)
+    {
+    }
+     ec4:	e7fe      	b.n	ec4 <main+0x84>
+     ec6:	46c0      	nop			; (mov r8, r8)
+     ec8:	00001bb4 	.word	0x00001bb4
+     ecc:	1ffff04c 	.word	0x1ffff04c
+     ed0:	1ffff028 	.word	0x1ffff028
+
+00000ed4 <LEDInit>:
+LEDInit():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:47
+//函数返回：无
+//参数说明：无  
+//功能概要：LED初始化。即从MCU角度，定义所有线输出，并给出初始值一律为0（全暗）
+//=====================================================================
+void LEDInit()
+{ 
+     ed4:	b580      	push	{r7, lr}
+     ed6:	b082      	sub	sp, #8
+     ed8:	af00      	add	r7, sp, #0
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:48
+    uint_8 i = 0;
+     eda:	1dfb      	adds	r3, r7, #7
+     edc:	2200      	movs	r2, #0
+     ede:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:50
+    //定义8根数据线为输出 ，初始输出0
+    for(i = 0;i < 8;i++)  gpio_init (led_d[i], 1, 0);
+     ee0:	1dfb      	adds	r3, r7, #7
+     ee2:	2200      	movs	r2, #0
+     ee4:	701a      	strb	r2, [r3, #0]
+     ee6:	e00e      	b.n	f06 <LEDInit+0x32>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:50 (discriminator 2)
+     ee8:	1dfb      	adds	r3, r7, #7
+     eea:	781a      	ldrb	r2, [r3, #0]
+     eec:	4b15      	ldr	r3, [pc, #84]	; (f44 <LEDInit+0x70>)
+     eee:	0052      	lsls	r2, r2, #1
+     ef0:	5ad3      	ldrh	r3, [r2, r3]
+     ef2:	1c18      	adds	r0, r3, #0
+     ef4:	2101      	movs	r1, #1
+     ef6:	2200      	movs	r2, #0
+     ef8:	f000 fc12 	bl	1720 <gpio_init>
+     efc:	1dfb      	adds	r3, r7, #7
+     efe:	781a      	ldrb	r2, [r3, #0]
+     f00:	1dfb      	adds	r3, r7, #7
+     f02:	3201      	adds	r2, #1
+     f04:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:50 (discriminator 1)
+     f06:	1dfb      	adds	r3, r7, #7
+     f08:	781b      	ldrb	r3, [r3, #0]
+     f0a:	2b07      	cmp	r3, #7
+     f0c:	d9ec      	bls.n	ee8 <LEDInit+0x14>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:52
+    //定义4位选线定义为输出 ，初始输出0
+    for(i = 0;i < 4;i++)  gpio_init (led_cs[i], 1, 0);
+     f0e:	1dfb      	adds	r3, r7, #7
+     f10:	2200      	movs	r2, #0
+     f12:	701a      	strb	r2, [r3, #0]
+     f14:	e00e      	b.n	f34 <LEDInit+0x60>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:52 (discriminator 2)
+     f16:	1dfb      	adds	r3, r7, #7
+     f18:	781a      	ldrb	r2, [r3, #0]
+     f1a:	4b0b      	ldr	r3, [pc, #44]	; (f48 <LEDInit+0x74>)
+     f1c:	0052      	lsls	r2, r2, #1
+     f1e:	5ad3      	ldrh	r3, [r2, r3]
+     f20:	1c18      	adds	r0, r3, #0
+     f22:	2101      	movs	r1, #1
+     f24:	2200      	movs	r2, #0
+     f26:	f000 fbfb 	bl	1720 <gpio_init>
+     f2a:	1dfb      	adds	r3, r7, #7
+     f2c:	781a      	ldrb	r2, [r3, #0]
+     f2e:	1dfb      	adds	r3, r7, #7
+     f30:	3201      	adds	r2, #1
+     f32:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:52 (discriminator 1)
+     f34:	1dfb      	adds	r3, r7, #7
+     f36:	781b      	ldrb	r3, [r3, #0]
+     f38:	2b03      	cmp	r3, #3
+     f3a:	d9ec      	bls.n	f16 <LEDInit+0x42>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:53
+}
+     f3c:	46bd      	mov	sp, r7
+     f3e:	b002      	add	sp, #8
+     f40:	bd80      	pop	{r7, pc}
+     f42:	46c0      	nop			; (mov r8, r8)
+     f44:	00001c38 	.word	0x00001c38
+     f48:	00001c30 	.word	0x00001c30
+
+00000f4c <LEDshow>:
+LEDshow():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:63
+//参数说明：data[4]：显示的内容。可显示的数字0~9,0.~9.,E,F,全亮，全暗（见显示码表）
+//功能概要：将数组data内容显示在LED上。本函数调用一次会显示数组中的一个字符，
+//        因此需延时10ms左右调用一次本函数才能将数组内容全部显示在LED上
+//=====================================================================
+void LEDshow(uint_8 data[4])
+{
+     f4c:	b580      	push	{r7, lr}
+     f4e:	b084      	sub	sp, #16
+     f50:	af00      	add	r7, sp, #0
+     f52:	6078      	str	r0, [r7, #4]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:67
+    static  uint_8  LEDi=0;    //声明静态变量（位选线索引变量）并赋初值0
+    uint_8  i,j,m,n;
+    //（1）取待显示数组的第LEDi字节的数据，并转为显示码，赋给m
+    j=data[LEDi];        //取待显示数字或序号
+     f54:	4b38      	ldr	r3, [pc, #224]	; (1038 <LEDshow+0xec>)
+     f56:	781b      	ldrb	r3, [r3, #0]
+     f58:	687a      	ldr	r2, [r7, #4]
+     f5a:	18d2      	adds	r2, r2, r3
+     f5c:	1c3b      	adds	r3, r7, #0
+     f5e:	330e      	adds	r3, #14
+     f60:	7812      	ldrb	r2, [r2, #0]
+     f62:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:68
+    m=LEDcodetable[j];   //使用头文件中常数表，将数字或序号转为显示码
+     f64:	1c3b      	adds	r3, r7, #0
+     f66:	330e      	adds	r3, #14
+     f68:	781a      	ldrb	r2, [r3, #0]
+     f6a:	1c3b      	adds	r3, r7, #0
+     f6c:	330d      	adds	r3, #13
+     f6e:	4933      	ldr	r1, [pc, #204]	; (103c <LEDshow+0xf0>)
+     f70:	5c8a      	ldrb	r2, [r1, r2]
+     f72:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:70
+    //（2）在LED的第LEDi位置显示m
+    for (i=0;i<=3;i++) gpio_set (led_cs[i], 0);  //位选全部置0（全暗）
+     f74:	1c3b      	adds	r3, r7, #0
+     f76:	330f      	adds	r3, #15
+     f78:	2200      	movs	r2, #0
+     f7a:	701a      	strb	r2, [r3, #0]
+     f7c:	e010      	b.n	fa0 <LEDshow+0x54>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:70 (discriminator 2)
+     f7e:	1c3b      	adds	r3, r7, #0
+     f80:	330f      	adds	r3, #15
+     f82:	781a      	ldrb	r2, [r3, #0]
+     f84:	4b2e      	ldr	r3, [pc, #184]	; (1040 <LEDshow+0xf4>)
+     f86:	0052      	lsls	r2, r2, #1
+     f88:	5ad3      	ldrh	r3, [r2, r3]
+     f8a:	1c18      	adds	r0, r3, #0
+     f8c:	2100      	movs	r1, #0
+     f8e:	f000 fc3b 	bl	1808 <gpio_set>
+     f92:	1c3b      	adds	r3, r7, #0
+     f94:	330f      	adds	r3, #15
+     f96:	781a      	ldrb	r2, [r3, #0]
+     f98:	1c3b      	adds	r3, r7, #0
+     f9a:	330f      	adds	r3, #15
+     f9c:	3201      	adds	r2, #1
+     f9e:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:70 (discriminator 1)
+     fa0:	1c3b      	adds	r3, r7, #0
+     fa2:	330f      	adds	r3, #15
+     fa4:	781b      	ldrb	r3, [r3, #0]
+     fa6:	2b03      	cmp	r3, #3
+     fa8:	d9e9      	bls.n	f7e <LEDshow+0x32>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:71
+    for (i=0;i<=7;i++)          //一个字节数据m上线
+     faa:	1c3b      	adds	r3, r7, #0
+     fac:	330f      	adds	r3, #15
+     fae:	2200      	movs	r2, #0
+     fb0:	701a      	strb	r2, [r3, #0]
+     fb2:	e022      	b.n	ffa <LEDshow+0xae>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:73 (discriminator 2)
+    {
+        n = (m>>i) & 0x01;       //获得m的一位
+     fb4:	1c3b      	adds	r3, r7, #0
+     fb6:	330d      	adds	r3, #13
+     fb8:	781a      	ldrb	r2, [r3, #0]
+     fba:	1c3b      	adds	r3, r7, #0
+     fbc:	330f      	adds	r3, #15
+     fbe:	781b      	ldrb	r3, [r3, #0]
+     fc0:	1c11      	adds	r1, r2, #0
+     fc2:	4119      	asrs	r1, r3
+     fc4:	1c0b      	adds	r3, r1, #0
+     fc6:	b2d9      	uxtb	r1, r3
+     fc8:	1c3b      	adds	r3, r7, #0
+     fca:	330c      	adds	r3, #12
+     fcc:	2201      	movs	r2, #1
+     fce:	400a      	ands	r2, r1
+     fd0:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:74 (discriminator 2)
+        gpio_set (led_d[i], n);  //一位数据上线
+     fd2:	1c3b      	adds	r3, r7, #0
+     fd4:	330f      	adds	r3, #15
+     fd6:	781a      	ldrb	r2, [r3, #0]
+     fd8:	4b1a      	ldr	r3, [pc, #104]	; (1044 <LEDshow+0xf8>)
+     fda:	0052      	lsls	r2, r2, #1
+     fdc:	5ad2      	ldrh	r2, [r2, r3]
+     fde:	1c3b      	adds	r3, r7, #0
+     fe0:	330c      	adds	r3, #12
+     fe2:	781b      	ldrb	r3, [r3, #0]
+     fe4:	1c10      	adds	r0, r2, #0
+     fe6:	1c19      	adds	r1, r3, #0
+     fe8:	f000 fc0e 	bl	1808 <gpio_set>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:71 (discriminator 2)
+    //（1）取待显示数组的第LEDi字节的数据，并转为显示码，赋给m
+    j=data[LEDi];        //取待显示数字或序号
+    m=LEDcodetable[j];   //使用头文件中常数表，将数字或序号转为显示码
+    //（2）在LED的第LEDi位置显示m
+    for (i=0;i<=3;i++) gpio_set (led_cs[i], 0);  //位选全部置0（全暗）
+    for (i=0;i<=7;i++)          //一个字节数据m上线
+     fec:	1c3b      	adds	r3, r7, #0
+     fee:	330f      	adds	r3, #15
+     ff0:	781a      	ldrb	r2, [r3, #0]
+     ff2:	1c3b      	adds	r3, r7, #0
+     ff4:	330f      	adds	r3, #15
+     ff6:	3201      	adds	r2, #1
+     ff8:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:71 (discriminator 1)
+     ffa:	1c3b      	adds	r3, r7, #0
+     ffc:	330f      	adds	r3, #15
+     ffe:	781b      	ldrb	r3, [r3, #0]
+    1000:	2b07      	cmp	r3, #7
+    1002:	d9d7      	bls.n	fb4 <LEDshow+0x68>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:76
+    {
+        n = (m>>i) & 0x01;       //获得m的一位
+        gpio_set (led_d[i], n);  //一位数据上线
+    }
+    gpio_set (led_cs[LEDi], 1);  //选择的位选线置1（一个字节显示出来了）
+    1004:	4b0c      	ldr	r3, [pc, #48]	; (1038 <LEDshow+0xec>)
+    1006:	781b      	ldrb	r3, [r3, #0]
+    1008:	1c1a      	adds	r2, r3, #0
+    100a:	4b0d      	ldr	r3, [pc, #52]	; (1040 <LEDshow+0xf4>)
+    100c:	0052      	lsls	r2, r2, #1
+    100e:	5ad3      	ldrh	r3, [r2, r3]
+    1010:	1c18      	adds	r0, r3, #0
+    1012:	2101      	movs	r1, #1
+    1014:	f000 fbf8 	bl	1808 <gpio_set>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:78
+    //（3）位选线索引变量LEDi下移一位，并设定LEDi界限
+    LEDi++;           //位选线索引变量+1,下次调用，将显示下一个字符
+    1018:	4b07      	ldr	r3, [pc, #28]	; (1038 <LEDshow+0xec>)
+    101a:	781b      	ldrb	r3, [r3, #0]
+    101c:	3301      	adds	r3, #1
+    101e:	b2da      	uxtb	r2, r3
+    1020:	4b05      	ldr	r3, [pc, #20]	; (1038 <LEDshow+0xec>)
+    1022:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:79
+    if (LEDi>=4)  LEDi=0;    //大于4位选线索引变量置0，从头开始
+    1024:	4b04      	ldr	r3, [pc, #16]	; (1038 <LEDshow+0xec>)
+    1026:	781b      	ldrb	r3, [r3, #0]
+    1028:	2b03      	cmp	r3, #3
+    102a:	d902      	bls.n	1032 <LEDshow+0xe6>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:79 (discriminator 1)
+    102c:	4b02      	ldr	r3, [pc, #8]	; (1038 <LEDshow+0xec>)
+    102e:	2200      	movs	r2, #0
+    1030:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/led/led.c:80
+}
+    1032:	46bd      	mov	sp, r7
+    1034:	b004      	add	sp, #16
+    1036:	bd80      	pop	{r7, pc}
+    1038:	1ffff024 	.word	0x1ffff024
+    103c:	00001c18 	.word	0x00001c18
+    1040:	00001c30 	.word	0x00001c30
+    1044:	00001c38 	.word	0x00001c38
+
+00001048 <LCDInit>:
+LCDInit():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:23
+//函数返回：无
+//参数说明：无
+//功能概要：LCD初始化。
+//=====================================================================
+void LCDInit()
+{
+    1048:	b580      	push	{r7, lr}
+    104a:	b082      	sub	sp, #8
+    104c:	af00      	add	r7, sp, #0
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:24
+    uint_32 i = 0;
+    104e:	2300      	movs	r3, #0
+    1050:	607b      	str	r3, [r7, #4]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:26
+    //从MCU角度，定义控制线与数据线为输出引脚，以便与LCD进行并行数据传输
+    gpio_init(LCD_RS, 1,0);
+    1052:	4b25      	ldr	r3, [pc, #148]	; (10e8 <LCDInit+0xa0>)
+    1054:	1c18      	adds	r0, r3, #0
+    1056:	2101      	movs	r1, #1
+    1058:	2200      	movs	r2, #0
+    105a:	f000 fb61 	bl	1720 <gpio_init>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:27
+    gpio_init(LCD_RW, 1,0);
+    105e:	4b23      	ldr	r3, [pc, #140]	; (10ec <LCDInit+0xa4>)
+    1060:	1c18      	adds	r0, r3, #0
+    1062:	2101      	movs	r1, #1
+    1064:	2200      	movs	r2, #0
+    1066:	f000 fb5b 	bl	1720 <gpio_init>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:28
+    gpio_init(LCD_E, 1,0);
+    106a:	4b21      	ldr	r3, [pc, #132]	; (10f0 <LCDInit+0xa8>)
+    106c:	1c18      	adds	r0, r3, #0
+    106e:	2101      	movs	r1, #1
+    1070:	2200      	movs	r2, #0
+    1072:	f000 fb55 	bl	1720 <gpio_init>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:29
+    for(i = 0;i <=7;i++)
+    1076:	2300      	movs	r3, #0
+    1078:	607b      	str	r3, [r7, #4]
+    107a:	e00b      	b.n	1094 <LCDInit+0x4c>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:31 (discriminator 2)
+    {
+        gpio_init(LCD_D[i], 1,0);
+    107c:	4b1d      	ldr	r3, [pc, #116]	; (10f4 <LCDInit+0xac>)
+    107e:	687a      	ldr	r2, [r7, #4]
+    1080:	0052      	lsls	r2, r2, #1
+    1082:	5ad3      	ldrh	r3, [r2, r3]
+    1084:	1c18      	adds	r0, r3, #0
+    1086:	2101      	movs	r1, #1
+    1088:	2200      	movs	r2, #0
+    108a:	f000 fb49 	bl	1720 <gpio_init>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:29 (discriminator 2)
+    uint_32 i = 0;
+    //从MCU角度，定义控制线与数据线为输出引脚，以便与LCD进行并行数据传输
+    gpio_init(LCD_RS, 1,0);
+    gpio_init(LCD_RW, 1,0);
+    gpio_init(LCD_E, 1,0);
+    for(i = 0;i <=7;i++)
+    108e:	687b      	ldr	r3, [r7, #4]
+    1090:	3301      	adds	r3, #1
+    1092:	607b      	str	r3, [r7, #4]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:29 (discriminator 1)
+    1094:	687b      	ldr	r3, [r7, #4]
+    1096:	2b07      	cmp	r3, #7
+    1098:	d9f0      	bls.n	107c <LCDInit+0x34>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:34
+    {
+        gpio_init(LCD_D[i], 1,0);
+    }
+    //功能设置（命令）,写指令代码
+    LCDCommand(0,0x38);       //5*7点阵模式,2行显示,8位数据总线
+    109a:	2000      	movs	r0, #0
+    109c:	2138      	movs	r1, #56	; 0x38
+    109e:	f000 f875 	bl	118c <LCDCommand>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:35
+    LCDCommand(0,0x08);       //关显示,关光标显示,不闪烁
+    10a2:	2000      	movs	r0, #0
+    10a4:	2108      	movs	r1, #8
+    10a6:	f000 f871 	bl	118c <LCDCommand>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:36
+    LCDCommand(0,0x01);       //清屏
+    10aa:	2000      	movs	r0, #0
+    10ac:	2101      	movs	r1, #1
+    10ae:	f000 f86d 	bl	118c <LCDCommand>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:37
+    for (i=0; i<80000; i++)asm("NOP"); //延时
+    10b2:	2300      	movs	r3, #0
+    10b4:	607b      	str	r3, [r7, #4]
+    10b6:	e003      	b.n	10c0 <LCDInit+0x78>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:37 (discriminator 2)
+    10b8:	46c0      	nop			; (mov r8, r8)
+    10ba:	687b      	ldr	r3, [r7, #4]
+    10bc:	3301      	adds	r3, #1
+    10be:	607b      	str	r3, [r7, #4]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:37 (discriminator 1)
+    10c0:	687a      	ldr	r2, [r7, #4]
+    10c2:	4b0d      	ldr	r3, [pc, #52]	; (10f8 <LCDInit+0xb0>)
+    10c4:	429a      	cmp	r2, r3
+    10c6:	d9f7      	bls.n	10b8 <LCDInit+0x70>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:38
+    LCDCommand(0,0x06);
+    10c8:	2000      	movs	r0, #0
+    10ca:	2106      	movs	r1, #6
+    10cc:	f000 f85e 	bl	118c <LCDCommand>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:39
+    LCDCommand(0,0x14);       //光标右移一个字符位,AC自动加1
+    10d0:	2000      	movs	r0, #0
+    10d2:	2114      	movs	r1, #20
+    10d4:	f000 f85a 	bl	118c <LCDCommand>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:40
+    LCDCommand(0,0x0C);       //开显示,关光标显示,不闪烁
+    10d8:	2000      	movs	r0, #0
+    10da:	210c      	movs	r1, #12
+    10dc:	f000 f856 	bl	118c <LCDCommand>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:41
+}
+    10e0:	46bd      	mov	sp, r7
+    10e2:	b002      	add	sp, #8
+    10e4:	bd80      	pop	{r7, pc}
+    10e6:	46c0      	nop			; (mov r8, r8)
+    10e8:	00000307 	.word	0x00000307
+    10ec:	00000306 	.word	0x00000306
+    10f0:	00000305 	.word	0x00000305
+    10f4:	1ffff000 	.word	0x1ffff000
+    10f8:	0001387f 	.word	0x0001387f
+
+000010fc <LCDShow>:
+LCDShow():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:50
+//函数返回：无
+//参数说明：需要显示的数据 
+//功能概要：通过液晶显示data中的32字节数据。
+//=====================================================================
+void LCDShow(uint_8 data[32])
+{
+    10fc:	b580      	push	{r7, lr}
+    10fe:	b084      	sub	sp, #16
+    1100:	af00      	add	r7, sp, #0
+    1102:	6078      	str	r0, [r7, #4]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:53
+    uint_8 i;
+    //LCD初始化 
+    LCDInit();
+    1104:	f7ff ffa0 	bl	1048 <LCDInit>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:55
+    //显示第1行16个字符，后7位为DD RAM地址(0x00)
+    LCDCommand(0,0x80);
+    1108:	2000      	movs	r0, #0
+    110a:	2180      	movs	r1, #128	; 0x80
+    110c:	f000 f83e 	bl	118c <LCDCommand>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:57
+    //写16个数据到DD RAM
+    for (i = 0;i < 16;i++)   //将要显示在第1行上的16个数据逐个写入DD RAM中
+    1110:	1c3b      	adds	r3, r7, #0
+    1112:	330f      	adds	r3, #15
+    1114:	2200      	movs	r2, #0
+    1116:	701a      	strb	r2, [r3, #0]
+    1118:	e010      	b.n	113c <LCDShow+0x40>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:59 (discriminator 2)
+    {
+        LCDCommand(1,data[i]);
+    111a:	1c3b      	adds	r3, r7, #0
+    111c:	330f      	adds	r3, #15
+    111e:	781b      	ldrb	r3, [r3, #0]
+    1120:	687a      	ldr	r2, [r7, #4]
+    1122:	18d3      	adds	r3, r2, r3
+    1124:	781b      	ldrb	r3, [r3, #0]
+    1126:	2001      	movs	r0, #1
+    1128:	1c19      	adds	r1, r3, #0
+    112a:	f000 f82f 	bl	118c <LCDCommand>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:57 (discriminator 2)
+    //LCD初始化 
+    LCDInit();
+    //显示第1行16个字符，后7位为DD RAM地址(0x00)
+    LCDCommand(0,0x80);
+    //写16个数据到DD RAM
+    for (i = 0;i < 16;i++)   //将要显示在第1行上的16个数据逐个写入DD RAM中
+    112e:	1c3b      	adds	r3, r7, #0
+    1130:	330f      	adds	r3, #15
+    1132:	781a      	ldrb	r2, [r3, #0]
+    1134:	1c3b      	adds	r3, r7, #0
+    1136:	330f      	adds	r3, #15
+    1138:	3201      	adds	r2, #1
+    113a:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:57 (discriminator 1)
+    113c:	1c3b      	adds	r3, r7, #0
+    113e:	330f      	adds	r3, #15
+    1140:	781b      	ldrb	r3, [r3, #0]
+    1142:	2b0f      	cmp	r3, #15
+    1144:	d9e9      	bls.n	111a <LCDShow+0x1e>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:62
+    {
+        LCDCommand(1,data[i]);
+    }
+    //显示第2行16个字符 ，后7位为DD RAM地址(0x40)
+    LCDCommand(0,0xC0);
+    1146:	2000      	movs	r0, #0
+    1148:	21c0      	movs	r1, #192	; 0xc0
+    114a:	f000 f81f 	bl	118c <LCDCommand>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:63
+    for (i = 16;i < 32;i++)   //将要显示在第2行上的16个数据逐个写入DD RAM中
+    114e:	1c3b      	adds	r3, r7, #0
+    1150:	330f      	adds	r3, #15
+    1152:	2210      	movs	r2, #16
+    1154:	701a      	strb	r2, [r3, #0]
+    1156:	e010      	b.n	117a <LCDShow+0x7e>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:65 (discriminator 2)
+    {
+        LCDCommand(1,data[i]);
+    1158:	1c3b      	adds	r3, r7, #0
+    115a:	330f      	adds	r3, #15
+    115c:	781b      	ldrb	r3, [r3, #0]
+    115e:	687a      	ldr	r2, [r7, #4]
+    1160:	18d3      	adds	r3, r2, r3
+    1162:	781b      	ldrb	r3, [r3, #0]
+    1164:	2001      	movs	r0, #1
+    1166:	1c19      	adds	r1, r3, #0
+    1168:	f000 f810 	bl	118c <LCDCommand>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:63 (discriminator 2)
+    {
+        LCDCommand(1,data[i]);
+    }
+    //显示第2行16个字符 ，后7位为DD RAM地址(0x40)
+    LCDCommand(0,0xC0);
+    for (i = 16;i < 32;i++)   //将要显示在第2行上的16个数据逐个写入DD RAM中
+    116c:	1c3b      	adds	r3, r7, #0
+    116e:	330f      	adds	r3, #15
+    1170:	781a      	ldrb	r2, [r3, #0]
+    1172:	1c3b      	adds	r3, r7, #0
+    1174:	330f      	adds	r3, #15
+    1176:	3201      	adds	r2, #1
+    1178:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:63 (discriminator 1)
+    117a:	1c3b      	adds	r3, r7, #0
+    117c:	330f      	adds	r3, #15
+    117e:	781b      	ldrb	r3, [r3, #0]
+    1180:	2b1f      	cmp	r3, #31
+    1182:	d9e9      	bls.n	1158 <LCDShow+0x5c>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:67
+    {
+        LCDCommand(1,data[i]);
+    }
+}
+    1184:	46bd      	mov	sp, r7
+    1186:	b004      	add	sp, #16
+    1188:	bd80      	pop	{r7, pc}
+    118a:	46c0      	nop			; (mov r8, r8)
+
+0000118c <LCDCommand>:
+LCDCommand():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:77
+//函数返回：无
+//参数说明：cmdordata，待写命令或数据
+//功能概要：向HD44780写cmdordata,且延时。
+//=====================================================================
+void LCDCommand(uint_8 RS,uint_8 cmdordata)
+{
+    118c:	b580      	push	{r7, lr}
+    118e:	b084      	sub	sp, #16
+    1190:	af00      	add	r7, sp, #0
+    1192:	1c0a      	adds	r2, r1, #0
+    1194:	1dfb      	adds	r3, r7, #7
+    1196:	1c01      	adds	r1, r0, #0
+    1198:	7019      	strb	r1, [r3, #0]
+    119a:	1dbb      	adds	r3, r7, #6
+    119c:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:81
+    uint_8 i,temp;
+    uint_16 j;
+    //发出RS、RW信号
+    gpio_set (LCD_RS, RS);
+    119e:	4a42      	ldr	r2, [pc, #264]	; (12a8 <LCDCommand+0x11c>)
+    11a0:	1dfb      	adds	r3, r7, #7
+    11a2:	781b      	ldrb	r3, [r3, #0]
+    11a4:	1c10      	adds	r0, r2, #0
+    11a6:	1c19      	adds	r1, r3, #0
+    11a8:	f000 fb2e 	bl	1808 <gpio_set>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:82
+    gpio_set (LCD_RW, 0);
+    11ac:	4b3f      	ldr	r3, [pc, #252]	; (12ac <LCDCommand+0x120>)
+    11ae:	1c18      	adds	r0, r3, #0
+    11b0:	2100      	movs	r1, #0
+    11b2:	f000 fb29 	bl	1808 <gpio_set>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:84
+    //等待延迟防止重复调用此函数而LCD卡死
+    for (j=0; j<3600; j++);asm("NOP");
+    11b6:	1c3b      	adds	r3, r7, #0
+    11b8:	330c      	adds	r3, #12
+    11ba:	2200      	movs	r2, #0
+    11bc:	801a      	strh	r2, [r3, #0]
+    11be:	e006      	b.n	11ce <LCDCommand+0x42>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:84 (discriminator 2)
+    11c0:	1c3b      	adds	r3, r7, #0
+    11c2:	330c      	adds	r3, #12
+    11c4:	881a      	ldrh	r2, [r3, #0]
+    11c6:	1c3b      	adds	r3, r7, #0
+    11c8:	330c      	adds	r3, #12
+    11ca:	3201      	adds	r2, #1
+    11cc:	801a      	strh	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:84 (discriminator 1)
+    11ce:	1c3b      	adds	r3, r7, #0
+    11d0:	330c      	adds	r3, #12
+    11d2:	881a      	ldrh	r2, [r3, #0]
+    11d4:	4b36      	ldr	r3, [pc, #216]	; (12b0 <LCDCommand+0x124>)
+    11d6:	429a      	cmp	r2, r3
+    11d8:	d9f2      	bls.n	11c0 <LCDCommand+0x34>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:84 (discriminator 3)
+    11da:	46c0      	nop			; (mov r8, r8)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:86 (discriminator 3)
+    //数据送到LCD的数据线上
+    for(i = 0;i <=7;i++)
+    11dc:	1c3b      	adds	r3, r7, #0
+    11de:	330f      	adds	r3, #15
+    11e0:	2200      	movs	r2, #0
+    11e2:	701a      	strb	r2, [r3, #0]
+    11e4:	e010      	b.n	1208 <LCDCommand+0x7c>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:88 (discriminator 2)
+    {
+        gpio_set (LCD_D[i], 0);
+    11e6:	1c3b      	adds	r3, r7, #0
+    11e8:	330f      	adds	r3, #15
+    11ea:	781a      	ldrb	r2, [r3, #0]
+    11ec:	4b31      	ldr	r3, [pc, #196]	; (12b4 <LCDCommand+0x128>)
+    11ee:	0052      	lsls	r2, r2, #1
+    11f0:	5ad3      	ldrh	r3, [r2, r3]
+    11f2:	1c18      	adds	r0, r3, #0
+    11f4:	2100      	movs	r1, #0
+    11f6:	f000 fb07 	bl	1808 <gpio_set>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:86 (discriminator 2)
+    gpio_set (LCD_RS, RS);
+    gpio_set (LCD_RW, 0);
+    //等待延迟防止重复调用此函数而LCD卡死
+    for (j=0; j<3600; j++);asm("NOP");
+    //数据送到LCD的数据线上
+    for(i = 0;i <=7;i++)
+    11fa:	1c3b      	adds	r3, r7, #0
+    11fc:	330f      	adds	r3, #15
+    11fe:	781a      	ldrb	r2, [r3, #0]
+    1200:	1c3b      	adds	r3, r7, #0
+    1202:	330f      	adds	r3, #15
+    1204:	3201      	adds	r2, #1
+    1206:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:86 (discriminator 1)
+    1208:	1c3b      	adds	r3, r7, #0
+    120a:	330f      	adds	r3, #15
+    120c:	781b      	ldrb	r3, [r3, #0]
+    120e:	2b07      	cmp	r3, #7
+    1210:	d9e9      	bls.n	11e6 <LCDCommand+0x5a>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:90
+    {
+        gpio_set (LCD_D[i], 0);
+    }
+    for(i = 0;i <=7;i++)
+    1212:	1c3b      	adds	r3, r7, #0
+    1214:	330f      	adds	r3, #15
+    1216:	2200      	movs	r2, #0
+    1218:	701a      	strb	r2, [r3, #0]
+    121a:	e021      	b.n	1260 <LCDCommand+0xd4>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:92 (discriminator 2)
+    {
+        temp = 0x01 & (cmdordata>>(i));
+    121c:	1dbb      	adds	r3, r7, #6
+    121e:	781a      	ldrb	r2, [r3, #0]
+    1220:	1c3b      	adds	r3, r7, #0
+    1222:	330f      	adds	r3, #15
+    1224:	781b      	ldrb	r3, [r3, #0]
+    1226:	1c11      	adds	r1, r2, #0
+    1228:	4119      	asrs	r1, r3
+    122a:	1c0b      	adds	r3, r1, #0
+    122c:	b2d9      	uxtb	r1, r3
+    122e:	1c3b      	adds	r3, r7, #0
+    1230:	330b      	adds	r3, #11
+    1232:	2201      	movs	r2, #1
+    1234:	400a      	ands	r2, r1
+    1236:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:93 (discriminator 2)
+        gpio_set (LCD_D[i], temp);
+    1238:	1c3b      	adds	r3, r7, #0
+    123a:	330f      	adds	r3, #15
+    123c:	781a      	ldrb	r2, [r3, #0]
+    123e:	4b1d      	ldr	r3, [pc, #116]	; (12b4 <LCDCommand+0x128>)
+    1240:	0052      	lsls	r2, r2, #1
+    1242:	5ad2      	ldrh	r2, [r2, r3]
+    1244:	1c3b      	adds	r3, r7, #0
+    1246:	330b      	adds	r3, #11
+    1248:	781b      	ldrb	r3, [r3, #0]
+    124a:	1c10      	adds	r0, r2, #0
+    124c:	1c19      	adds	r1, r3, #0
+    124e:	f000 fadb 	bl	1808 <gpio_set>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:90 (discriminator 2)
+    //数据送到LCD的数据线上
+    for(i = 0;i <=7;i++)
+    {
+        gpio_set (LCD_D[i], 0);
+    }
+    for(i = 0;i <=7;i++)
+    1252:	1c3b      	adds	r3, r7, #0
+    1254:	330f      	adds	r3, #15
+    1256:	781a      	ldrb	r2, [r3, #0]
+    1258:	1c3b      	adds	r3, r7, #0
+    125a:	330f      	adds	r3, #15
+    125c:	3201      	adds	r2, #1
+    125e:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:90 (discriminator 1)
+    1260:	1c3b      	adds	r3, r7, #0
+    1262:	330f      	adds	r3, #15
+    1264:	781b      	ldrb	r3, [r3, #0]
+    1266:	2b07      	cmp	r3, #7
+    1268:	d9d8      	bls.n	121c <LCDCommand+0x90>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:96
+    {
+        temp = 0x01 & (cmdordata>>(i));
+        gpio_set (LCD_D[i], temp);
+    }
+    //给出E信号的下降沿(先高后低),使数据写入LCD
+    gpio_set (LCD_E, 1);
+    126a:	4b13      	ldr	r3, [pc, #76]	; (12b8 <LCDCommand+0x12c>)
+    126c:	1c18      	adds	r0, r3, #0
+    126e:	2101      	movs	r1, #1
+    1270:	f000 faca 	bl	1808 <gpio_set>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:97
+    for (j=0;j<25;j++) asm("NOP");
+    1274:	1c3b      	adds	r3, r7, #0
+    1276:	330c      	adds	r3, #12
+    1278:	2200      	movs	r2, #0
+    127a:	801a      	strh	r2, [r3, #0]
+    127c:	e007      	b.n	128e <LCDCommand+0x102>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:97 (discriminator 2)
+    127e:	46c0      	nop			; (mov r8, r8)
+    1280:	1c3b      	adds	r3, r7, #0
+    1282:	330c      	adds	r3, #12
+    1284:	881a      	ldrh	r2, [r3, #0]
+    1286:	1c3b      	adds	r3, r7, #0
+    1288:	330c      	adds	r3, #12
+    128a:	3201      	adds	r2, #1
+    128c:	801a      	strh	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:97 (discriminator 1)
+    128e:	1c3b      	adds	r3, r7, #0
+    1290:	330c      	adds	r3, #12
+    1292:	881b      	ldrh	r3, [r3, #0]
+    1294:	2b18      	cmp	r3, #24
+    1296:	d9f2      	bls.n	127e <LCDCommand+0xf2>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:98
+    gpio_set (LCD_E, 0);
+    1298:	4b07      	ldr	r3, [pc, #28]	; (12b8 <LCDCommand+0x12c>)
+    129a:	1c18      	adds	r0, r3, #0
+    129c:	2100      	movs	r1, #0
+    129e:	f000 fab3 	bl	1808 <gpio_set>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/lcd/lcd.c:99
+}
+    12a2:	46bd      	mov	sp, r7
+    12a4:	b004      	add	sp, #16
+    12a6:	bd80      	pop	{r7, pc}
+    12a8:	00000307 	.word	0x00000307
+    12ac:	00000306 	.word	0x00000306
+    12b0:	00000e0f 	.word	0x00000e0f
+    12b4:	1ffff000 	.word	0x1ffff000
+    12b8:	00000305 	.word	0x00000305
+
+000012bc <KBInit>:
+KBInit():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:31
+//函数返回：无
+//参数说明：无
+//功能概要：初始化键盘模块。
+//=====================================================================
+void KBInit(void)
+{
+    12bc:	b580      	push	{r7, lr}
+    12be:	b082      	sub	sp, #8
+    12c0:	af00      	add	r7, sp, #0
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:34
+    uint_8 i; 
+    //定义列线为输入，且上拉
+    for(i = 0;i < 4;i++)
+    12c2:	1dfb      	adds	r3, r7, #7
+    12c4:	2200      	movs	r2, #0
+    12c6:	701a      	strb	r2, [r3, #0]
+    12c8:	e017      	b.n	12fa <KBInit+0x3e>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:36 (discriminator 2)
+    {
+        gpio_init(kbn[i],GPIO_IN,0);
+    12ca:	1dfb      	adds	r3, r7, #7
+    12cc:	781a      	ldrb	r2, [r3, #0]
+    12ce:	4b1a      	ldr	r3, [pc, #104]	; (1338 <KBInit+0x7c>)
+    12d0:	0052      	lsls	r2, r2, #1
+    12d2:	5ad3      	ldrh	r3, [r2, r3]
+    12d4:	1c18      	adds	r0, r3, #0
+    12d6:	2100      	movs	r1, #0
+    12d8:	2200      	movs	r2, #0
+    12da:	f000 fa21 	bl	1720 <gpio_init>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:37 (discriminator 2)
+        gpio_pull(kbn[i],1);
+    12de:	1dfb      	adds	r3, r7, #7
+    12e0:	781a      	ldrb	r2, [r3, #0]
+    12e2:	4b15      	ldr	r3, [pc, #84]	; (1338 <KBInit+0x7c>)
+    12e4:	0052      	lsls	r2, r2, #1
+    12e6:	5ad3      	ldrh	r3, [r2, r3]
+    12e8:	1c18      	adds	r0, r3, #0
+    12ea:	2101      	movs	r1, #1
+    12ec:	f000 faf6 	bl	18dc <gpio_pull>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:34 (discriminator 2)
+//=====================================================================
+void KBInit(void)
+{
+    uint_8 i; 
+    //定义列线为输入，且上拉
+    for(i = 0;i < 4;i++)
+    12f0:	1dfb      	adds	r3, r7, #7
+    12f2:	781a      	ldrb	r2, [r3, #0]
+    12f4:	1dfb      	adds	r3, r7, #7
+    12f6:	3201      	adds	r2, #1
+    12f8:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:34 (discriminator 1)
+    12fa:	1dfb      	adds	r3, r7, #7
+    12fc:	781b      	ldrb	r3, [r3, #0]
+    12fe:	2b03      	cmp	r3, #3
+    1300:	d9e3      	bls.n	12ca <KBInit+0xe>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:40
+    {
+        gpio_init(kbn[i],GPIO_IN,0);
+        gpio_pull(kbn[i],1);
+    }
+    //定义行线为输出，且初始状态为低电平，低电平是为中断方式时产生下降沿做准备
+    for(i = 0;i < 4;i++)
+    1302:	1dfb      	adds	r3, r7, #7
+    1304:	2200      	movs	r2, #0
+    1306:	701a      	strb	r2, [r3, #0]
+    1308:	e00e      	b.n	1328 <KBInit+0x6c>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:42 (discriminator 2)
+    {
+        gpio_init(kbm[i], GPIO_OUTPUT, 0);
+    130a:	1dfb      	adds	r3, r7, #7
+    130c:	781a      	ldrb	r2, [r3, #0]
+    130e:	4b0b      	ldr	r3, [pc, #44]	; (133c <KBInit+0x80>)
+    1310:	0052      	lsls	r2, r2, #1
+    1312:	5ad3      	ldrh	r3, [r2, r3]
+    1314:	1c18      	adds	r0, r3, #0
+    1316:	2101      	movs	r1, #1
+    1318:	2200      	movs	r2, #0
+    131a:	f000 fa01 	bl	1720 <gpio_init>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:40 (discriminator 2)
+    {
+        gpio_init(kbn[i],GPIO_IN,0);
+        gpio_pull(kbn[i],1);
+    }
+    //定义行线为输出，且初始状态为低电平，低电平是为中断方式时产生下降沿做准备
+    for(i = 0;i < 4;i++)
+    131e:	1dfb      	adds	r3, r7, #7
+    1320:	781a      	ldrb	r2, [r3, #0]
+    1322:	1dfb      	adds	r3, r7, #7
+    1324:	3201      	adds	r2, #1
+    1326:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:40 (discriminator 1)
+    1328:	1dfb      	adds	r3, r7, #7
+    132a:	781b      	ldrb	r3, [r3, #0]
+    132c:	2b03      	cmp	r3, #3
+    132e:	d9ec      	bls.n	130a <KBInit+0x4e>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:44
+    {
+        gpio_init(kbm[i], GPIO_OUTPUT, 0);
+    }
+}
+    1330:	46bd      	mov	sp, r7
+    1332:	b002      	add	sp, #8
+    1334:	bd80      	pop	{r7, pc}
+    1336:	46c0      	nop			; (mov r8, r8)
+    1338:	1ffff018 	.word	0x1ffff018
+    133c:	1ffff010 	.word	0x1ffff010
+
+00001340 <KBScanN>:
+KBScanN():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:55
+//功能概要：多次扫描键盘,返回键值，scan_cznt小于等于1，直接返回扫描1次键值，否则再
+//        继续扫描到（scan_cnt*0.5）次相同的键值,且键值不为0xFF时返回该键值，
+//        否则返回最后一次扫描值
+//======================================================================
+uint_8 KBScanN(uint_8 scan_cnt)
+{
+    1340:	b5f0      	push	{r4, r5, r6, r7, lr}
+    1342:	b085      	sub	sp, #20
+    1344:	af00      	add	r7, sp, #0
+    1346:	1c02      	adds	r2, r0, #0
+    1348:	1dfb      	adds	r3, r7, #7
+    134a:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:57
+    uint_8 i,KB_value,KB_value_last,same_count;
+    KB_value_last=0xFF;
+    134c:	1c3b      	adds	r3, r7, #0
+    134e:	330d      	adds	r3, #13
+    1350:	22ff      	movs	r2, #255	; 0xff
+    1352:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:58
+    if(scan_cnt<1 || scan_cnt>20)
+    1354:	1dfb      	adds	r3, r7, #7
+    1356:	781b      	ldrb	r3, [r3, #0]
+    1358:	2b00      	cmp	r3, #0
+    135a:	d003      	beq.n	1364 <KBScanN+0x24>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:58 (discriminator 1)
+    135c:	1dfb      	adds	r3, r7, #7
+    135e:	781b      	ldrb	r3, [r3, #0]
+    1360:	2b14      	cmp	r3, #20
+    1362:	d902      	bls.n	136a <KBScanN+0x2a>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:59
+        scan_cnt=1;
+    1364:	1dfb      	adds	r3, r7, #7
+    1366:	2201      	movs	r2, #1
+    1368:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:60
+    same_count=0;             //键值相同次数变量=0
+    136a:	1c3b      	adds	r3, r7, #0
+    136c:	330c      	adds	r3, #12
+    136e:	2200      	movs	r2, #0
+    1370:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:62
+    //以下多次扫描消除抖动
+    for (i=1; i<=scan_cnt; i++)
+    1372:	1c3b      	adds	r3, r7, #0
+    1374:	330f      	adds	r3, #15
+    1376:	2201      	movs	r2, #1
+    1378:	701a      	strb	r2, [r3, #0]
+    137a:	e04b      	b.n	1414 <KBScanN+0xd4>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:64
+    {
+        KB_value = KBScan1();   //扫描一次,获取一次键值
+    137c:	1c3c      	adds	r4, r7, #0
+    137e:	340e      	adds	r4, #14
+    1380:	f000 f894 	bl	14ac <KBScan1>
+    1384:	1c03      	adds	r3, r0, #0
+    1386:	7023      	strb	r3, [r4, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:65
+        if ((KB_value == KB_value_last) && (KB_value!=0xFF))  //相等情况
+    1388:	1c3a      	adds	r2, r7, #0
+    138a:	320e      	adds	r2, #14
+    138c:	1c3b      	adds	r3, r7, #0
+    138e:	330d      	adds	r3, #13
+    1390:	7812      	ldrb	r2, [r2, #0]
+    1392:	781b      	ldrb	r3, [r3, #0]
+    1394:	429a      	cmp	r2, r3
+    1396:	d12c      	bne.n	13f2 <KBScanN+0xb2>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:65 (discriminator 1)
+    1398:	1c3b      	adds	r3, r7, #0
+    139a:	330e      	adds	r3, #14
+    139c:	781b      	ldrb	r3, [r3, #0]
+    139e:	2bff      	cmp	r3, #255	; 0xff
+    13a0:	d027      	beq.n	13f2 <KBScanN+0xb2>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:67
+        {
+            same_count++;   //键值相同次数变量+1
+    13a2:	1c3b      	adds	r3, r7, #0
+    13a4:	330c      	adds	r3, #12
+    13a6:	781a      	ldrb	r2, [r3, #0]
+    13a8:	1c3b      	adds	r3, r7, #0
+    13aa:	330c      	adds	r3, #12
+    13ac:	3201      	adds	r2, #1
+    13ae:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:68
+            if(same_count>=scan_cnt*0.5)  break;  //返回键值
+    13b0:	1c3b      	adds	r3, r7, #0
+    13b2:	330c      	adds	r3, #12
+    13b4:	781b      	ldrb	r3, [r3, #0]
+    13b6:	1c18      	adds	r0, r3, #0
+    13b8:	f7ff fcb4 	bl	d24 <__aeabi_i2d>
+    13bc:	1c05      	adds	r5, r0, #0
+    13be:	1c0e      	adds	r6, r1, #0
+    13c0:	1dfb      	adds	r3, r7, #7
+    13c2:	781b      	ldrb	r3, [r3, #0]
+    13c4:	1c18      	adds	r0, r3, #0
+    13c6:	f7ff fcad 	bl	d24 <__aeabi_i2d>
+    13ca:	1c03      	adds	r3, r0, #0
+    13cc:	1c0c      	adds	r4, r1, #0
+    13ce:	1c18      	adds	r0, r3, #0
+    13d0:	1c21      	adds	r1, r4, #0
+    13d2:	4b18      	ldr	r3, [pc, #96]	; (1434 <KBScanN+0xf4>)
+    13d4:	4a16      	ldr	r2, [pc, #88]	; (1430 <KBScanN+0xf0>)
+    13d6:	f7ff fa15 	bl	804 <__aeabi_dmul>
+    13da:	1c03      	adds	r3, r0, #0
+    13dc:	1c0c      	adds	r4, r1, #0
+    13de:	1c28      	adds	r0, r5, #0
+    13e0:	1c31      	adds	r1, r6, #0
+    13e2:	1c1a      	adds	r2, r3, #0
+    13e4:	1c23      	adds	r3, r4, #0
+    13e6:	f7ff f8bd 	bl	564 <__aeabi_dcmpge>
+    13ea:	1c03      	adds	r3, r0, #0
+    13ec:	2b00      	cmp	r3, #0
+    13ee:	d00a      	beq.n	1406 <KBScanN+0xc6>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:68 (discriminator 1)
+    13f0:	e017      	b.n	1422 <KBScanN+0xe2>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:72
+        }
+        else    //不相等情况
+        {
+            KB_value_last=KB_value;  //保存当前键值
+    13f2:	1c3b      	adds	r3, r7, #0
+    13f4:	330d      	adds	r3, #13
+    13f6:	1c3a      	adds	r2, r7, #0
+    13f8:	320e      	adds	r2, #14
+    13fa:	7812      	ldrb	r2, [r2, #0]
+    13fc:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:73
+            same_count=1;            //键值相同次数变量=1
+    13fe:	1c3b      	adds	r3, r7, #0
+    1400:	330c      	adds	r3, #12
+    1402:	2201      	movs	r2, #1
+    1404:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:62
+    KB_value_last=0xFF;
+    if(scan_cnt<1 || scan_cnt>20)
+        scan_cnt=1;
+    same_count=0;             //键值相同次数变量=0
+    //以下多次扫描消除抖动
+    for (i=1; i<=scan_cnt; i++)
+    1406:	1c3b      	adds	r3, r7, #0
+    1408:	330f      	adds	r3, #15
+    140a:	781a      	ldrb	r2, [r3, #0]
+    140c:	1c3b      	adds	r3, r7, #0
+    140e:	330f      	adds	r3, #15
+    1410:	3201      	adds	r2, #1
+    1412:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:62 (discriminator 1)
+    1414:	1c3a      	adds	r2, r7, #0
+    1416:	320f      	adds	r2, #15
+    1418:	1dfb      	adds	r3, r7, #7
+    141a:	7812      	ldrb	r2, [r2, #0]
+    141c:	781b      	ldrb	r3, [r3, #0]
+    141e:	429a      	cmp	r2, r3
+    1420:	d9ac      	bls.n	137c <KBScanN+0x3c>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:76
+        {
+            KB_value_last=KB_value;  //保存当前键值
+            same_count=1;            //键值相同次数变量=1
+        }
+    }
+    return  KB_value;   //返回键值
+    1422:	1c3b      	adds	r3, r7, #0
+    1424:	330e      	adds	r3, #14
+    1426:	781b      	ldrb	r3, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:77
+}
+    1428:	1c18      	adds	r0, r3, #0
+    142a:	46bd      	mov	sp, r7
+    142c:	b005      	add	sp, #20
+    142e:	bdf0      	pop	{r4, r5, r6, r7, pc}
+    1430:	00000000 	.word	0x00000000
+    1434:	3fe00000 	.word	0x3fe00000
+
+00001438 <KBDef>:
+KBDef():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:86
+//函数返回：无
+//参数说明：键值value 
+//功能概要：键值转为定义值函数。
+//=====================================================================
+uint_8 KBDef(uint_8 value)
+{
+    1438:	b580      	push	{r7, lr}
+    143a:	b084      	sub	sp, #16
+    143c:	af00      	add	r7, sp, #0
+    143e:	1c02      	adds	r2, r0, #0
+    1440:	1dfb      	adds	r3, r7, #7
+    1442:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:89
+    uint_8 KeyPress;                //键定义值
+    uint_8 i;
+    i = 0;
+    1444:	1c3b      	adds	r3, r7, #0
+    1446:	330e      	adds	r3, #14
+    1448:	2200      	movs	r2, #0
+    144a:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:90
+    KeyPress = 0xff;
+    144c:	1c3b      	adds	r3, r7, #0
+    144e:	330f      	adds	r3, #15
+    1450:	22ff      	movs	r2, #255	; 0xff
+    1452:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:91
+    while (KBtable[i] != 0x00)      //在键盘定义表中搜索欲转换的键值,直至表尾
+    1454:	e019      	b.n	148a <KBDef+0x52>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:93
+    {
+        if(KBtable[i] == value)     //在表中找到相应的键值
+    1456:	1c3b      	adds	r3, r7, #0
+    1458:	330e      	adds	r3, #14
+    145a:	781b      	ldrb	r3, [r3, #0]
+    145c:	4a12      	ldr	r2, [pc, #72]	; (14a8 <KBDef+0x70>)
+    145e:	5cd3      	ldrb	r3, [r2, r3]
+    1460:	1dfa      	adds	r2, r7, #7
+    1462:	7812      	ldrb	r2, [r2, #0]
+    1464:	429a      	cmp	r2, r3
+    1466:	d109      	bne.n	147c <KBDef+0x44>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:95
+        {
+            KeyPress = KBtable[i+1];//取出对应的键定义值
+    1468:	1c3b      	adds	r3, r7, #0
+    146a:	330e      	adds	r3, #14
+    146c:	781b      	ldrb	r3, [r3, #0]
+    146e:	1c5a      	adds	r2, r3, #1
+    1470:	1c3b      	adds	r3, r7, #0
+    1472:	330f      	adds	r3, #15
+    1474:	490c      	ldr	r1, [pc, #48]	; (14a8 <KBDef+0x70>)
+    1476:	5c8a      	ldrb	r2, [r1, r2]
+    1478:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:96
+            break;
+    147a:	e00d      	b.n	1498 <KBDef+0x60>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:98
+        }
+        i += 2;                     //指向下一个键值,继续判断
+    147c:	1c3b      	adds	r3, r7, #0
+    147e:	330e      	adds	r3, #14
+    1480:	1c3a      	adds	r2, r7, #0
+    1482:	320e      	adds	r2, #14
+    1484:	7812      	ldrb	r2, [r2, #0]
+    1486:	3202      	adds	r2, #2
+    1488:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:91 (discriminator 1)
+{
+    uint_8 KeyPress;                //键定义值
+    uint_8 i;
+    i = 0;
+    KeyPress = 0xff;
+    while (KBtable[i] != 0x00)      //在键盘定义表中搜索欲转换的键值,直至表尾
+    148a:	1c3b      	adds	r3, r7, #0
+    148c:	330e      	adds	r3, #14
+    148e:	781b      	ldrb	r3, [r3, #0]
+    1490:	4a05      	ldr	r2, [pc, #20]	; (14a8 <KBDef+0x70>)
+    1492:	5cd3      	ldrb	r3, [r2, r3]
+    1494:	2b00      	cmp	r3, #0
+    1496:	d1de      	bne.n	1456 <KBDef+0x1e>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:100
+            KeyPress = KBtable[i+1];//取出对应的键定义值
+            break;
+        }
+        i += 2;                     //指向下一个键值,继续判断
+    }
+    return KeyPress;
+    1498:	1c3b      	adds	r3, r7, #0
+    149a:	330f      	adds	r3, #15
+    149c:	781b      	ldrb	r3, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:101
+}
+    149e:	1c18      	adds	r0, r3, #0
+    14a0:	46bd      	mov	sp, r7
+    14a2:	b004      	add	sp, #16
+    14a4:	bd80      	pop	{r7, pc}
+    14a6:	46c0      	nop			; (mov r8, r8)
+    14a8:	00001c48 	.word	0x00001c48
+
+000014ac <KBScan1>:
+KBScan1():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:111
+//函数返回：扫描到的键值
+//参数说明：无
+//功能概要：扫描1次4*4键盘,返回扫描到的键值,若无按键,返回0xff 。
+//======================================================================
+uint_8 KBScan1(void)
+{
+    14ac:	b580      	push	{r7, lr}
+    14ae:	b082      	sub	sp, #8
+    14b0:	af00      	add	r7, sp, #0
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:115
+    uint_8 keyvalue;  //声明键值临时变量
+    uint_8 i,n,flag;  //声明临时变量
+
+    keyvalue = 0xff;  //键值临时变量初值
+    14b2:	1dfb      	adds	r3, r7, #7
+    14b4:	22ff      	movs	r2, #255	; 0xff
+    14b6:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:116
+    flag=0;
+    14b8:	1d3b      	adds	r3, r7, #4
+    14ba:	2200      	movs	r2, #0
+    14bc:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:118
+
+    KBInit();         //键盘初始化
+    14be:	f7ff fefd 	bl	12bc <KBInit>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:120
+    //进行行扫描
+    for (i = 0; i <= 3; i++)
+    14c2:	1dbb      	adds	r3, r7, #6
+    14c4:	2200      	movs	r2, #0
+    14c6:	701a      	strb	r2, [r3, #0]
+    14c8:	e065      	b.n	1596 <KBScan1+0xea>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:123
+    {
+        //令第i行=低，其余各行拉高
+        for(n=0;n<4;n++)
+    14ca:	1d7b      	adds	r3, r7, #5
+    14cc:	2200      	movs	r2, #0
+    14ce:	701a      	strb	r2, [r3, #0]
+    14d0:	e00d      	b.n	14ee <KBScan1+0x42>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:125 (discriminator 2)
+        {
+            gpio_set(kbm[n],1);
+    14d2:	1d7b      	adds	r3, r7, #5
+    14d4:	781a      	ldrb	r2, [r3, #0]
+    14d6:	4b35      	ldr	r3, [pc, #212]	; (15ac <KBScan1+0x100>)
+    14d8:	0052      	lsls	r2, r2, #1
+    14da:	5ad3      	ldrh	r3, [r2, r3]
+    14dc:	1c18      	adds	r0, r3, #0
+    14de:	2101      	movs	r1, #1
+    14e0:	f000 f992 	bl	1808 <gpio_set>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:123 (discriminator 2)
+    KBInit();         //键盘初始化
+    //进行行扫描
+    for (i = 0; i <= 3; i++)
+    {
+        //令第i行=低，其余各行拉高
+        for(n=0;n<4;n++)
+    14e4:	1d7b      	adds	r3, r7, #5
+    14e6:	781a      	ldrb	r2, [r3, #0]
+    14e8:	1d7b      	adds	r3, r7, #5
+    14ea:	3201      	adds	r2, #1
+    14ec:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:123 (discriminator 1)
+    14ee:	1d7b      	adds	r3, r7, #5
+    14f0:	781b      	ldrb	r3, [r3, #0]
+    14f2:	2b03      	cmp	r3, #3
+    14f4:	d9ed      	bls.n	14d2 <KBScan1+0x26>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:127
+        {
+            gpio_set(kbm[n],1);
+        }
+        gpio_set(kbm[i],0);
+    14f6:	1dbb      	adds	r3, r7, #6
+    14f8:	781a      	ldrb	r2, [r3, #0]
+    14fa:	4b2c      	ldr	r3, [pc, #176]	; (15ac <KBScan1+0x100>)
+    14fc:	0052      	lsls	r2, r2, #1
+    14fe:	5ad3      	ldrh	r3, [r2, r3]
+    1500:	1c18      	adds	r0, r3, #0
+    1502:	2100      	movs	r1, #0
+    1504:	f000 f980 	bl	1808 <gpio_set>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:129
+        //延时
+        asm("NOP");
+    1508:	46c0      	nop			; (mov r8, r8)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:130
+        asm("NOP");
+    150a:	46c0      	nop			; (mov r8, r8)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:132
+        //检查列线，看是否有由于按键被按下而被拉低的列
+        for(n=0;n<4;n++)
+    150c:	1d7b      	adds	r3, r7, #5
+    150e:	2200      	movs	r2, #0
+    1510:	701a      	strb	r2, [r3, #0]
+    1512:	e032      	b.n	157a <KBScan1+0xce>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:134
+        {
+            if(0==(gpio_get(kbn[n])))   //找到具体列线
+    1514:	1d7b      	adds	r3, r7, #5
+    1516:	781a      	ldrb	r2, [r3, #0]
+    1518:	4b25      	ldr	r3, [pc, #148]	; (15b0 <KBScan1+0x104>)
+    151a:	0052      	lsls	r2, r2, #1
+    151c:	5ad3      	ldrh	r3, [r2, r3]
+    151e:	1c18      	adds	r0, r3, #0
+    1520:	f000 f9b2 	bl	1888 <gpio_get>
+    1524:	1c03      	adds	r3, r0, #0
+    1526:	2b00      	cmp	r3, #0
+    1528:	d122      	bne.n	1570 <KBScan1+0xc4>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:136
+            {
+                BCLR(i+4,keyvalue);     //计算键值（对应行线=0）
+    152a:	1dbb      	adds	r3, r7, #6
+    152c:	781b      	ldrb	r3, [r3, #0]
+    152e:	3304      	adds	r3, #4
+    1530:	2201      	movs	r2, #1
+    1532:	1c11      	adds	r1, r2, #0
+    1534:	4099      	lsls	r1, r3
+    1536:	1c0b      	adds	r3, r1, #0
+    1538:	b2db      	uxtb	r3, r3
+    153a:	43db      	mvns	r3, r3
+    153c:	b2db      	uxtb	r3, r3
+    153e:	1dfa      	adds	r2, r7, #7
+    1540:	7812      	ldrb	r2, [r2, #0]
+    1542:	4013      	ands	r3, r2
+    1544:	b2da      	uxtb	r2, r3
+    1546:	1dfb      	adds	r3, r7, #7
+    1548:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:137
+                BCLR(n,keyvalue);       //计算键值（对应列线=0）
+    154a:	1d7b      	adds	r3, r7, #5
+    154c:	781b      	ldrb	r3, [r3, #0]
+    154e:	2201      	movs	r2, #1
+    1550:	1c11      	adds	r1, r2, #0
+    1552:	4099      	lsls	r1, r3
+    1554:	1c0b      	adds	r3, r1, #0
+    1556:	b2db      	uxtb	r3, r3
+    1558:	43db      	mvns	r3, r3
+    155a:	b2db      	uxtb	r3, r3
+    155c:	1dfa      	adds	r2, r7, #7
+    155e:	7812      	ldrb	r2, [r2, #0]
+    1560:	4013      	ands	r3, r2
+    1562:	b2da      	uxtb	r2, r3
+    1564:	1dfb      	adds	r3, r7, #7
+    1566:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:139
+                //至此，有按键，且键值在临时变量keyvalue中
+                flag=1;  //有按键标志
+    1568:	1d3b      	adds	r3, r7, #4
+    156a:	2201      	movs	r2, #1
+    156c:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:140
+                break;
+    156e:	e008      	b.n	1582 <KBScan1+0xd6>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:132
+        gpio_set(kbm[i],0);
+        //延时
+        asm("NOP");
+        asm("NOP");
+        //检查列线，看是否有由于按键被按下而被拉低的列
+        for(n=0;n<4;n++)
+    1570:	1d7b      	adds	r3, r7, #5
+    1572:	781a      	ldrb	r2, [r3, #0]
+    1574:	1d7b      	adds	r3, r7, #5
+    1576:	3201      	adds	r2, #1
+    1578:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:132 (discriminator 1)
+    157a:	1d7b      	adds	r3, r7, #5
+    157c:	781b      	ldrb	r3, [r3, #0]
+    157e:	2b03      	cmp	r3, #3
+    1580:	d9c8      	bls.n	1514 <KBScan1+0x68>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:143
+                //至此，有按键，且键值在临时变量keyvalue中
+                flag=1;  //有按键标志
+                break;
+            }
+        }
+    if (1==flag) break; //有按键
+    1582:	1d3b      	adds	r3, r7, #4
+    1584:	781b      	ldrb	r3, [r3, #0]
+    1586:	2b01      	cmp	r3, #1
+    1588:	d100      	bne.n	158c <KBScan1+0xe0>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:143 (discriminator 1)
+    158a:	e008      	b.n	159e <KBScan1+0xf2>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:120
+    keyvalue = 0xff;  //键值临时变量初值
+    flag=0;
+
+    KBInit();         //键盘初始化
+    //进行行扫描
+    for (i = 0; i <= 3; i++)
+    158c:	1dbb      	adds	r3, r7, #6
+    158e:	781a      	ldrb	r2, [r3, #0]
+    1590:	1dbb      	adds	r3, r7, #6
+    1592:	3201      	adds	r2, #1
+    1594:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:120 (discriminator 1)
+    1596:	1dbb      	adds	r3, r7, #6
+    1598:	781b      	ldrb	r3, [r3, #0]
+    159a:	2b03      	cmp	r3, #3
+    159c:	d995      	bls.n	14ca <KBScan1+0x1e>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:145
+                break;
+            }
+        }
+    if (1==flag) break; //有按键
+    }
+    return(keyvalue);   //返回键值。（若无按键，该值为0xff）
+    159e:	1dfb      	adds	r3, r7, #7
+    15a0:	781b      	ldrb	r3, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../06_App_Component/kb/kb.c:146
+}
+    15a2:	1c18      	adds	r0, r3, #0
+    15a4:	46bd      	mov	sp, r7
+    15a6:	b002      	add	sp, #8
+    15a8:	bd80      	pop	{r7, pc}
+    15aa:	46c0      	nop			; (mov r8, r8)
+    15ac:	1ffff010 	.word	0x1ffff010
+    15b0:	1ffff018 	.word	0x1ffff018
+
+000015b4 <NVIC_SetPriority>:
+NVIC_SetPriority():
+D:/suda/KL25_BOOK/SD-KL-CD(V6.5)-20160505/02-Software/KL25-program/ch08-KB-LED-LCD-20160509/KB-LED-LCD-kbwithoutint/02_CPU/core_cm0plus.h:751
+
+    \param [in]      IRQn  Interrupt number.
+    \param [in]  priority  Priority to set.
+ */
+__STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+{
+    15b4:	b5b0      	push	{r4, r5, r7, lr}
+    15b6:	b082      	sub	sp, #8
+    15b8:	af00      	add	r7, sp, #0
+    15ba:	1c02      	adds	r2, r0, #0
+    15bc:	6039      	str	r1, [r7, #0]
+    15be:	1dfb      	adds	r3, r7, #7
+    15c0:	701a      	strb	r2, [r3, #0]
+D:/suda/KL25_BOOK/SD-KL-CD(V6.5)-20160505/02-Software/KL25-program/ch08-KB-LED-LCD-20160509/KB-LED-LCD-kbwithoutint/02_CPU/core_cm0plus.h:752
+  if((int32_t)(IRQn) < 0) {
+    15c2:	1dfb      	adds	r3, r7, #7
+    15c4:	781b      	ldrb	r3, [r3, #0]
+    15c6:	2b7f      	cmp	r3, #127	; 0x7f
+    15c8:	d932      	bls.n	1630 <NVIC_SetPriority+0x7c>
+D:/suda/KL25_BOOK/SD-KL-CD(V6.5)-20160505/02-Software/KL25-program/ch08-KB-LED-LCD-20160509/KB-LED-LCD-kbwithoutint/02_CPU/core_cm0plus.h:753
+    SCB->SHP[_SHP_IDX(IRQn)] = ((uint32_t)(SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFFUL << _BIT_SHIFT(IRQn))) |
+    15ca:	4930      	ldr	r1, [pc, #192]	; (168c <NVIC_SetPriority+0xd8>)
+    15cc:	1dfb      	adds	r3, r7, #7
+    15ce:	781b      	ldrb	r3, [r3, #0]
+    15d0:	1c1a      	adds	r2, r3, #0
+    15d2:	230f      	movs	r3, #15
+    15d4:	4013      	ands	r3, r2
+    15d6:	3b08      	subs	r3, #8
+    15d8:	0898      	lsrs	r0, r3, #2
+    15da:	4a2c      	ldr	r2, [pc, #176]	; (168c <NVIC_SetPriority+0xd8>)
+    15dc:	1dfb      	adds	r3, r7, #7
+    15de:	781b      	ldrb	r3, [r3, #0]
+    15e0:	1c1c      	adds	r4, r3, #0
+    15e2:	230f      	movs	r3, #15
+    15e4:	4023      	ands	r3, r4
+    15e6:	3b08      	subs	r3, #8
+    15e8:	089b      	lsrs	r3, r3, #2
+    15ea:	3306      	adds	r3, #6
+    15ec:	009b      	lsls	r3, r3, #2
+    15ee:	18d3      	adds	r3, r2, r3
+    15f0:	685b      	ldr	r3, [r3, #4]
+    15f2:	1dfa      	adds	r2, r7, #7
+    15f4:	7812      	ldrb	r2, [r2, #0]
+    15f6:	1c14      	adds	r4, r2, #0
+    15f8:	2203      	movs	r2, #3
+    15fa:	4022      	ands	r2, r4
+    15fc:	00d2      	lsls	r2, r2, #3
+    15fe:	24ff      	movs	r4, #255	; 0xff
+    1600:	1c25      	adds	r5, r4, #0
+    1602:	4095      	lsls	r5, r2
+    1604:	1c2a      	adds	r2, r5, #0
+    1606:	43d2      	mvns	r2, r2
+    1608:	401a      	ands	r2, r3
+D:/suda/KL25_BOOK/SD-KL-CD(V6.5)-20160505/02-Software/KL25-program/ch08-KB-LED-LCD-20160509/KB-LED-LCD-kbwithoutint/02_CPU/core_cm0plus.h:754
+       (((priority << (8 - __NVIC_PRIO_BITS)) & (uint32_t)0xFFUL) << _BIT_SHIFT(IRQn)));
+    160a:	683b      	ldr	r3, [r7, #0]
+    160c:	019c      	lsls	r4, r3, #6
+    160e:	23ff      	movs	r3, #255	; 0xff
+    1610:	401c      	ands	r4, r3
+    1612:	1dfb      	adds	r3, r7, #7
+    1614:	781b      	ldrb	r3, [r3, #0]
+    1616:	1c1d      	adds	r5, r3, #0
+    1618:	2303      	movs	r3, #3
+    161a:	402b      	ands	r3, r5
+    161c:	00db      	lsls	r3, r3, #3
+    161e:	1c25      	adds	r5, r4, #0
+    1620:	409d      	lsls	r5, r3
+    1622:	1c2b      	adds	r3, r5, #0
+D:/suda/KL25_BOOK/SD-KL-CD(V6.5)-20160505/02-Software/KL25-program/ch08-KB-LED-LCD-20160509/KB-LED-LCD-kbwithoutint/02_CPU/core_cm0plus.h:753
+    \param [in]  priority  Priority to set.
+ */
+__STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+{
+  if((int32_t)(IRQn) < 0) {
+    SCB->SHP[_SHP_IDX(IRQn)] = ((uint32_t)(SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFFUL << _BIT_SHIFT(IRQn))) |
+    1624:	431a      	orrs	r2, r3
+    1626:	1d83      	adds	r3, r0, #6
+    1628:	009b      	lsls	r3, r3, #2
+    162a:	18cb      	adds	r3, r1, r3
+    162c:	605a      	str	r2, [r3, #4]
+    162e:	e029      	b.n	1684 <NVIC_SetPriority+0xd0>
+D:/suda/KL25_BOOK/SD-KL-CD(V6.5)-20160505/02-Software/KL25-program/ch08-KB-LED-LCD-20160509/KB-LED-LCD-kbwithoutint/02_CPU/core_cm0plus.h:757
+       (((priority << (8 - __NVIC_PRIO_BITS)) & (uint32_t)0xFFUL) << _BIT_SHIFT(IRQn)));
+  }
+  else {
+    NVIC->IP[_IP_IDX(IRQn)]  = ((uint32_t)(NVIC->IP[_IP_IDX(IRQn)]  & ~(0xFFUL << _BIT_SHIFT(IRQn))) |
+    1630:	4b17      	ldr	r3, [pc, #92]	; (1690 <NVIC_SetPriority+0xdc>)
+    1632:	1dfa      	adds	r2, r7, #7
+    1634:	7812      	ldrb	r2, [r2, #0]
+    1636:	b252      	sxtb	r2, r2
+    1638:	0892      	lsrs	r2, r2, #2
+    163a:	4915      	ldr	r1, [pc, #84]	; (1690 <NVIC_SetPriority+0xdc>)
+    163c:	1df8      	adds	r0, r7, #7
+    163e:	7800      	ldrb	r0, [r0, #0]
+    1640:	b240      	sxtb	r0, r0
+    1642:	0880      	lsrs	r0, r0, #2
+    1644:	30c0      	adds	r0, #192	; 0xc0
+    1646:	0080      	lsls	r0, r0, #2
+    1648:	5841      	ldr	r1, [r0, r1]
+    164a:	1df8      	adds	r0, r7, #7
+    164c:	7800      	ldrb	r0, [r0, #0]
+    164e:	1c04      	adds	r4, r0, #0
+    1650:	2003      	movs	r0, #3
+    1652:	4020      	ands	r0, r4
+    1654:	00c0      	lsls	r0, r0, #3
+    1656:	24ff      	movs	r4, #255	; 0xff
+    1658:	1c25      	adds	r5, r4, #0
+    165a:	4085      	lsls	r5, r0
+    165c:	1c28      	adds	r0, r5, #0
+    165e:	43c0      	mvns	r0, r0
+    1660:	4008      	ands	r0, r1
+D:/suda/KL25_BOOK/SD-KL-CD(V6.5)-20160505/02-Software/KL25-program/ch08-KB-LED-LCD-20160509/KB-LED-LCD-kbwithoutint/02_CPU/core_cm0plus.h:758
+       (((priority << (8 - __NVIC_PRIO_BITS)) & (uint32_t)0xFFUL) << _BIT_SHIFT(IRQn)));
+    1662:	6839      	ldr	r1, [r7, #0]
+    1664:	018c      	lsls	r4, r1, #6
+    1666:	21ff      	movs	r1, #255	; 0xff
+    1668:	400c      	ands	r4, r1
+    166a:	1df9      	adds	r1, r7, #7
+    166c:	7809      	ldrb	r1, [r1, #0]
+    166e:	1c0d      	adds	r5, r1, #0
+    1670:	2103      	movs	r1, #3
+    1672:	4029      	ands	r1, r5
+    1674:	00c9      	lsls	r1, r1, #3
+    1676:	1c25      	adds	r5, r4, #0
+    1678:	408d      	lsls	r5, r1
+    167a:	1c29      	adds	r1, r5, #0
+D:/suda/KL25_BOOK/SD-KL-CD(V6.5)-20160505/02-Software/KL25-program/ch08-KB-LED-LCD-20160509/KB-LED-LCD-kbwithoutint/02_CPU/core_cm0plus.h:757
+  if((int32_t)(IRQn) < 0) {
+    SCB->SHP[_SHP_IDX(IRQn)] = ((uint32_t)(SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFFUL << _BIT_SHIFT(IRQn))) |
+       (((priority << (8 - __NVIC_PRIO_BITS)) & (uint32_t)0xFFUL) << _BIT_SHIFT(IRQn)));
+  }
+  else {
+    NVIC->IP[_IP_IDX(IRQn)]  = ((uint32_t)(NVIC->IP[_IP_IDX(IRQn)]  & ~(0xFFUL << _BIT_SHIFT(IRQn))) |
+    167c:	4301      	orrs	r1, r0
+    167e:	32c0      	adds	r2, #192	; 0xc0
+    1680:	0092      	lsls	r2, r2, #2
+    1682:	50d1      	str	r1, [r2, r3]
+D:/suda/KL25_BOOK/SD-KL-CD(V6.5)-20160505/02-Software/KL25-program/ch08-KB-LED-LCD-20160509/KB-LED-LCD-kbwithoutint/02_CPU/core_cm0plus.h:760
+       (((priority << (8 - __NVIC_PRIO_BITS)) & (uint32_t)0xFFUL) << _BIT_SHIFT(IRQn)));
+  }
+}
+    1684:	46bd      	mov	sp, r7
+    1686:	b002      	add	sp, #8
+    1688:	bdb0      	pop	{r4, r5, r7, pc}
+    168a:	46c0      	nop			; (mov r8, r8)
+    168c:	e000ed00 	.word	0xe000ed00
+    1690:	e000e100 	.word	0xe000e100
+
+00001694 <systick_init>:
+systick_init():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/systick/systick.c:24
+//KL25的SysTick时钟源可以是内核时钟，也可设置为内核时钟的16分频。
+//24位计数器，减1计数
+//时间范围：1ms~349ms（内核时钟）;1ms~5592ms（内核时钟的16分频）
+//=====================================================================
+void systick_init(uint_8 clk_src_sel, uint_8 int_ms)
+{
+    1694:	b590      	push	{r4, r7, lr}
+    1696:	b083      	sub	sp, #12
+    1698:	af00      	add	r7, sp, #0
+    169a:	1c0a      	adds	r2, r1, #0
+    169c:	1dfb      	adds	r3, r7, #7
+    169e:	1c01      	adds	r1, r0, #0
+    16a0:	7019      	strb	r1, [r3, #0]
+    16a2:	1dbb      	adds	r3, r7, #6
+    16a4:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/systick/systick.c:25
+    SysTick->CTRL = 0;   //设置前先关闭systick
+    16a6:	4b1c      	ldr	r3, [pc, #112]	; (1718 <systick_init+0x84>)
+    16a8:	2200      	movs	r2, #0
+    16aa:	601a      	str	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/systick/systick.c:26
+    SysTick->VAL  = 0;   //清除计数器
+    16ac:	4b1a      	ldr	r3, [pc, #104]	; (1718 <systick_init+0x84>)
+    16ae:	2200      	movs	r2, #0
+    16b0:	609a      	str	r2, [r3, #8]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/systick/systick.c:29
+
+    //根据计数频率，确定并设置重载寄存器的值
+    if(0==clk_src_sel)              //0:内核时钟/16
+    16b2:	1dfb      	adds	r3, r7, #7
+    16b4:	781b      	ldrb	r3, [r3, #0]
+    16b6:	2b00      	cmp	r3, #0
+    16b8:	d10e      	bne.n	16d8 <systick_init+0x44>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/systick/systick.c:35
+    {
+        if((int_ms<1)&&(int_ms>5592))
+        {
+            int_ms = 10;
+        }
+        SysTick->LOAD = SYSTEM_CLK_KHZ*int_ms/16;
+    16ba:	4c17      	ldr	r4, [pc, #92]	; (1718 <systick_init+0x84>)
+    16bc:	4b17      	ldr	r3, [pc, #92]	; (171c <systick_init+0x88>)
+    16be:	681b      	ldr	r3, [r3, #0]
+    16c0:	1c18      	adds	r0, r3, #0
+    16c2:	23fa      	movs	r3, #250	; 0xfa
+    16c4:	0099      	lsls	r1, r3, #2
+    16c6:	f7fe fec9 	bl	45c <__aeabi_uidiv>
+    16ca:	1c03      	adds	r3, r0, #0
+    16cc:	1dba      	adds	r2, r7, #6
+    16ce:	7812      	ldrb	r2, [r2, #0]
+    16d0:	4353      	muls	r3, r2
+    16d2:	091b      	lsrs	r3, r3, #4
+    16d4:	6063      	str	r3, [r4, #4]
+    16d6:	e00f      	b.n	16f8 <systick_init+0x64>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/systick/systick.c:43
+    {
+        if((int_ms<1)&&(int_ms>349))
+        {
+            int_ms = 10;
+        }
+        SysTick->LOAD = SYSTEM_CLK_KHZ*int_ms;
+    16d8:	4c0f      	ldr	r4, [pc, #60]	; (1718 <systick_init+0x84>)
+    16da:	4b10      	ldr	r3, [pc, #64]	; (171c <systick_init+0x88>)
+    16dc:	681b      	ldr	r3, [r3, #0]
+    16de:	1c18      	adds	r0, r3, #0
+    16e0:	23fa      	movs	r3, #250	; 0xfa
+    16e2:	0099      	lsls	r1, r3, #2
+    16e4:	f7fe feba 	bl	45c <__aeabi_uidiv>
+    16e8:	1c03      	adds	r3, r0, #0
+    16ea:	1dba      	adds	r2, r7, #6
+    16ec:	7812      	ldrb	r2, [r2, #0]
+    16ee:	4353      	muls	r3, r2
+    16f0:	6063      	str	r3, [r4, #4]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/systick/systick.c:44
+        SysTick->CTRL = (SysTick_CTRL_CLKSOURCE_Msk);
+    16f2:	4b09      	ldr	r3, [pc, #36]	; (1718 <systick_init+0x84>)
+    16f4:	2204      	movs	r2, #4
+    16f6:	601a      	str	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/systick/systick.c:47
+    }
+    //设定 SysTick优先级为3(SHPR3寄存器的最高字节=0xC0)
+    NVIC_SetPriority (SysTick_IRQn, (1UL << __NVIC_PRIO_BITS) - 1UL);
+    16f8:	2301      	movs	r3, #1
+    16fa:	425b      	negs	r3, r3
+    16fc:	1c18      	adds	r0, r3, #0
+    16fe:	2103      	movs	r1, #3
+    1700:	f7ff ff58 	bl	15b4 <NVIC_SetPriority>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/systick/systick.c:49
+    //设置时钟源,允许中断,使能该模块,开始计数
+    SysTick->CTRL |= ( SysTick_CTRL_ENABLE_Msk|SysTick_CTRL_TICKINT_Msk );
+    1704:	4b04      	ldr	r3, [pc, #16]	; (1718 <systick_init+0x84>)
+    1706:	4a04      	ldr	r2, [pc, #16]	; (1718 <systick_init+0x84>)
+    1708:	6812      	ldr	r2, [r2, #0]
+    170a:	2103      	movs	r1, #3
+    170c:	430a      	orrs	r2, r1
+    170e:	601a      	str	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/systick/systick.c:50
+}
+    1710:	46bd      	mov	sp, r7
+    1712:	b003      	add	sp, #12
+    1714:	bd90      	pop	{r4, r7, pc}
+    1716:	46c0      	nop			; (mov r8, r8)
+    1718:	e000e010 	.word	0xe000e010
+    171c:	1ffff020 	.word	0x1ffff020
+
+00001720 <gpio_init>:
+gpio_init():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:27
+//          state：端口引脚初始状态（0=低电平，1=高电平）
+//功能概要：初始化指定端口引脚作为GPIO引脚功能，并定义为输入或输出，若是输出，
+//          还指定初始状态是低电平或高电平
+//=====================================================================
+void gpio_init(uint_16 port_pin, uint_8 dir, uint_8 state)
+{
+    1720:	b580      	push	{r7, lr}
+    1722:	b086      	sub	sp, #24
+    1724:	af00      	add	r7, sp, #0
+    1726:	1dbb      	adds	r3, r7, #6
+    1728:	8018      	strh	r0, [r3, #0]
+    172a:	1d7b      	adds	r3, r7, #5
+    172c:	7019      	strb	r1, [r3, #0]
+    172e:	1d3b      	adds	r3, r7, #4
+    1730:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:33
+    //局部变量声明
+    PORT_MemMapPtr port_ptr;    //声明port_ptr为PORT结构体类型指针 
+    GPIO_MemMapPtr gpio_ptr;    //声明port_ptr为GPIO结构体类型指针
+    uint_8 port,pin;            //声明端口port、引脚pin变量
+    //根据带入参数port_pin，解析出端口与引脚分别赋给port,pin
+    gpio_get_port_pin(port_pin , &port , &pin);
+    1732:	1dbb      	adds	r3, r7, #6
+    1734:	8819      	ldrh	r1, [r3, #0]
+    1736:	1c3a      	adds	r2, r7, #0
+    1738:	320f      	adds	r2, #15
+    173a:	1c3b      	adds	r3, r7, #0
+    173c:	330e      	adds	r3, #14
+    173e:	1c08      	adds	r0, r1, #0
+    1740:	1c11      	adds	r1, r2, #0
+    1742:	1c1a      	adds	r2, r3, #0
+    1744:	f000 f958 	bl	19f8 <gpio_get_port_pin>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:35
+    //根据port，给局部变量port_ptr、gpio_ptr赋值（获得两个基地址）
+    port_ptr = PORT_ARR[port];  //获得PORT模块相应口基地址
+    1748:	1c3b      	adds	r3, r7, #0
+    174a:	330f      	adds	r3, #15
+    174c:	781b      	ldrb	r3, [r3, #0]
+    174e:	1c1a      	adds	r2, r3, #0
+    1750:	4b2a      	ldr	r3, [pc, #168]	; (17fc <gpio_init+0xdc>)
+    1752:	0092      	lsls	r2, r2, #2
+    1754:	58d3      	ldr	r3, [r2, r3]
+    1756:	617b      	str	r3, [r7, #20]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:36
+    gpio_ptr = GPIO_ARR[port];  //获得GPIO模块相应口基地址
+    1758:	1c3b      	adds	r3, r7, #0
+    175a:	330f      	adds	r3, #15
+    175c:	781b      	ldrb	r3, [r3, #0]
+    175e:	1c1a      	adds	r2, r3, #0
+    1760:	4b27      	ldr	r3, [pc, #156]	; (1800 <gpio_init+0xe0>)
+    1762:	0092      	lsls	r2, r2, #2
+    1764:	58d3      	ldr	r3, [r2, r3]
+    1766:	613b      	str	r3, [r7, #16]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:39
+
+    //设定相应端口的相应引脚功能为GPIO（即令引脚控制寄存器的MUX=0b001）
+    PORT_PCR_REG(port_ptr, pin) &= ~PORT_PCR_MUX_MASK; //置D10-D8=000
+    1768:	1c3b      	adds	r3, r7, #0
+    176a:	330e      	adds	r3, #14
+    176c:	781b      	ldrb	r3, [r3, #0]
+    176e:	1c1a      	adds	r2, r3, #0
+    1770:	1c3b      	adds	r3, r7, #0
+    1772:	330e      	adds	r3, #14
+    1774:	781b      	ldrb	r3, [r3, #0]
+    1776:	1c19      	adds	r1, r3, #0
+    1778:	697b      	ldr	r3, [r7, #20]
+    177a:	0089      	lsls	r1, r1, #2
+    177c:	58c9      	ldr	r1, [r1, r3]
+    177e:	4b21      	ldr	r3, [pc, #132]	; (1804 <gpio_init+0xe4>)
+    1780:	4019      	ands	r1, r3
+    1782:	697b      	ldr	r3, [r7, #20]
+    1784:	0092      	lsls	r2, r2, #2
+    1786:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:40
+    PORT_PCR_REG(port_ptr, pin) |= PORT_PCR_MUX(1);    //置D10-D8=001
+    1788:	1c3b      	adds	r3, r7, #0
+    178a:	330e      	adds	r3, #14
+    178c:	781b      	ldrb	r3, [r3, #0]
+    178e:	1c1a      	adds	r2, r3, #0
+    1790:	1c3b      	adds	r3, r7, #0
+    1792:	330e      	adds	r3, #14
+    1794:	781b      	ldrb	r3, [r3, #0]
+    1796:	1c19      	adds	r1, r3, #0
+    1798:	697b      	ldr	r3, [r7, #20]
+    179a:	0089      	lsls	r1, r1, #2
+    179c:	58cb      	ldr	r3, [r1, r3]
+    179e:	2180      	movs	r1, #128	; 0x80
+    17a0:	0049      	lsls	r1, r1, #1
+    17a2:	4319      	orrs	r1, r3
+    17a4:	697b      	ldr	r3, [r7, #20]
+    17a6:	0092      	lsls	r2, r2, #2
+    17a8:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:43
+
+    //根据带入参数dir，决定引脚为输出还是输入
+    if (1 == dir)   //希望为输出
+    17aa:	1d7b      	adds	r3, r7, #5
+    17ac:	781b      	ldrb	r3, [r3, #0]
+    17ae:	2b01      	cmp	r3, #1
+    17b0:	d114      	bne.n	17dc <gpio_init+0xbc>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:45
+    {
+         BSET(pin,GPIO_PDDR_REG(gpio_ptr));//数据方向寄存器的pin位=1，定义为输出
+    17b2:	693b      	ldr	r3, [r7, #16]
+    17b4:	695a      	ldr	r2, [r3, #20]
+    17b6:	1c3b      	adds	r3, r7, #0
+    17b8:	330e      	adds	r3, #14
+    17ba:	781b      	ldrb	r3, [r3, #0]
+    17bc:	2101      	movs	r1, #1
+    17be:	1c08      	adds	r0, r1, #0
+    17c0:	4098      	lsls	r0, r3
+    17c2:	1c03      	adds	r3, r0, #0
+    17c4:	431a      	orrs	r2, r3
+    17c6:	693b      	ldr	r3, [r7, #16]
+    17c8:	615a      	str	r2, [r3, #20]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:46
+         gpio_set(port_pin, state);  //调用gpio_set函数，设定引脚初始状态
+    17ca:	1dbb      	adds	r3, r7, #6
+    17cc:	881a      	ldrh	r2, [r3, #0]
+    17ce:	1d3b      	adds	r3, r7, #4
+    17d0:	781b      	ldrb	r3, [r3, #0]
+    17d2:	1c10      	adds	r0, r2, #0
+    17d4:	1c19      	adds	r1, r3, #0
+    17d6:	f000 f817 	bl	1808 <gpio_set>
+    17da:	e00c      	b.n	17f6 <gpio_init+0xd6>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:50
+    }
+    else           //希望为输入
+    {
+        BCLR(pin,GPIO_PDDR_REG(gpio_ptr));//数据方向寄存器的pin位=0，定义为输入
+    17dc:	693b      	ldr	r3, [r7, #16]
+    17de:	695b      	ldr	r3, [r3, #20]
+    17e0:	1c3a      	adds	r2, r7, #0
+    17e2:	320e      	adds	r2, #14
+    17e4:	7812      	ldrb	r2, [r2, #0]
+    17e6:	2101      	movs	r1, #1
+    17e8:	1c08      	adds	r0, r1, #0
+    17ea:	4090      	lsls	r0, r2
+    17ec:	1c02      	adds	r2, r0, #0
+    17ee:	43d2      	mvns	r2, r2
+    17f0:	401a      	ands	r2, r3
+    17f2:	693b      	ldr	r3, [r7, #16]
+    17f4:	615a      	str	r2, [r3, #20]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:52
+    }
+}
+    17f6:	46bd      	mov	sp, r7
+    17f8:	b006      	add	sp, #24
+    17fa:	bd80      	pop	{r7, pc}
+    17fc:	00001c6c 	.word	0x00001c6c
+    1800:	00001c80 	.word	0x00001c80
+    1804:	fffff8ff 	.word	0xfffff8ff
+
+00001808 <gpio_set>:
+gpio_set():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:62
+//参数说明：port_pin：端口号|引脚号（如：(PTB_NUM)|(9) 表示为B口9号脚）
+//       state：引脚初始状态（0=低电平，1=高电平）
+//功能概要：设定引脚状态为低电平或高电平
+//=====================================================================
+void gpio_set(uint_16 port_pin, uint_8 state)
+{
+    1808:	b580      	push	{r7, lr}
+    180a:	b084      	sub	sp, #16
+    180c:	af00      	add	r7, sp, #0
+    180e:	1c0a      	adds	r2, r1, #0
+    1810:	1dbb      	adds	r3, r7, #6
+    1812:	1c01      	adds	r1, r0, #0
+    1814:	8019      	strh	r1, [r3, #0]
+    1816:	1d7b      	adds	r3, r7, #5
+    1818:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:67
+    //局部变量声明
+    GPIO_MemMapPtr  gpio_ptr;  //声明port_ptr为GPIO结构体类型指针（首地址）
+    uint_8 port,pin;           //声明端口port、引脚pin变量
+    //根据带入参数port_pin，解析出端口与引脚分别赋给port,pin
+    gpio_get_port_pin(port_pin , &port , &pin);
+    181a:	1dbb      	adds	r3, r7, #6
+    181c:	8819      	ldrh	r1, [r3, #0]
+    181e:	1c3a      	adds	r2, r7, #0
+    1820:	320b      	adds	r2, #11
+    1822:	1c3b      	adds	r3, r7, #0
+    1824:	330a      	adds	r3, #10
+    1826:	1c08      	adds	r0, r1, #0
+    1828:	1c11      	adds	r1, r2, #0
+    182a:	1c1a      	adds	r2, r3, #0
+    182c:	f000 f8e4 	bl	19f8 <gpio_get_port_pin>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:70
+
+    //根据port，给局部变量gpio_ptr赋值（GPIO基地址）
+    gpio_ptr = GPIO_ARR[port]; 
+    1830:	1c3b      	adds	r3, r7, #0
+    1832:	330b      	adds	r3, #11
+    1834:	781b      	ldrb	r3, [r3, #0]
+    1836:	1c1a      	adds	r2, r3, #0
+    1838:	4b12      	ldr	r3, [pc, #72]	; (1884 <gpio_set+0x7c>)
+    183a:	0092      	lsls	r2, r2, #2
+    183c:	58d3      	ldr	r3, [r2, r3]
+    183e:	60fb      	str	r3, [r7, #12]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:73
+
+    //根据带入参数state，决定引脚为输出1还是0
+    if (1==state)
+    1840:	1d7b      	adds	r3, r7, #5
+    1842:	781b      	ldrb	r3, [r3, #0]
+    1844:	2b01      	cmp	r3, #1
+    1846:	d10c      	bne.n	1862 <gpio_set+0x5a>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:75
+    {
+        BSET(pin,GPIO_PDOR_REG(gpio_ptr));
+    1848:	68fb      	ldr	r3, [r7, #12]
+    184a:	681a      	ldr	r2, [r3, #0]
+    184c:	1c3b      	adds	r3, r7, #0
+    184e:	330a      	adds	r3, #10
+    1850:	781b      	ldrb	r3, [r3, #0]
+    1852:	2101      	movs	r1, #1
+    1854:	1c08      	adds	r0, r1, #0
+    1856:	4098      	lsls	r0, r3
+    1858:	1c03      	adds	r3, r0, #0
+    185a:	431a      	orrs	r2, r3
+    185c:	68fb      	ldr	r3, [r7, #12]
+    185e:	601a      	str	r2, [r3, #0]
+    1860:	e00c      	b.n	187c <gpio_set+0x74>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:79
+    }
+    else
+    {
+        BCLR(pin,GPIO_PDOR_REG(gpio_ptr));
+    1862:	68fb      	ldr	r3, [r7, #12]
+    1864:	681b      	ldr	r3, [r3, #0]
+    1866:	1c3a      	adds	r2, r7, #0
+    1868:	320a      	adds	r2, #10
+    186a:	7812      	ldrb	r2, [r2, #0]
+    186c:	2101      	movs	r1, #1
+    186e:	1c08      	adds	r0, r1, #0
+    1870:	4090      	lsls	r0, r2
+    1872:	1c02      	adds	r2, r0, #0
+    1874:	43d2      	mvns	r2, r2
+    1876:	401a      	ands	r2, r3
+    1878:	68fb      	ldr	r3, [r7, #12]
+    187a:	601a      	str	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:81
+    }
+}
+    187c:	46bd      	mov	sp, r7
+    187e:	b004      	add	sp, #16
+    1880:	bd80      	pop	{r7, pc}
+    1882:	46c0      	nop			; (mov r8, r8)
+    1884:	00001c80 	.word	0x00001c80
+
+00001888 <gpio_get>:
+gpio_get():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:90
+//函数返回：指定引脚的状态（1或0）
+//参数说明：port_pin：端口号|引脚号（如：(PTB_NUM)|(9) 表示为B口9号脚）
+//功能概要：获取指定引脚的状态（1或0）
+//=====================================================================
+uint_8 gpio_get(uint_16 port_pin)
+{
+    1888:	b580      	push	{r7, lr}
+    188a:	b084      	sub	sp, #16
+    188c:	af00      	add	r7, sp, #0
+    188e:	1c02      	adds	r2, r0, #0
+    1890:	1dbb      	adds	r3, r7, #6
+    1892:	801a      	strh	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:95
+    //局部变量声明
+    GPIO_MemMapPtr  gpio_ptr;  //声明port_ptr为GPIO结构体类型指针（首地址）
+    uint_8 port,pin;           //声明端口port、引脚pin变量
+    //根据带入参数port_pin，解析出端口与引脚分别赋给port,pin
+    gpio_get_port_pin(port_pin , &port , &pin);
+    1894:	1dbb      	adds	r3, r7, #6
+    1896:	8819      	ldrh	r1, [r3, #0]
+    1898:	1c3a      	adds	r2, r7, #0
+    189a:	320b      	adds	r2, #11
+    189c:	1c3b      	adds	r3, r7, #0
+    189e:	330a      	adds	r3, #10
+    18a0:	1c08      	adds	r0, r1, #0
+    18a2:	1c11      	adds	r1, r2, #0
+    18a4:	1c1a      	adds	r2, r3, #0
+    18a6:	f000 f8a7 	bl	19f8 <gpio_get_port_pin>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:98
+
+    //根据port，给局部变量gpio_ptr赋值（GPIO基地址）
+    gpio_ptr = GPIO_ARR[port];
+    18aa:	1c3b      	adds	r3, r7, #0
+    18ac:	330b      	adds	r3, #11
+    18ae:	781b      	ldrb	r3, [r3, #0]
+    18b0:	1c1a      	adds	r2, r3, #0
+    18b2:	4b09      	ldr	r3, [pc, #36]	; (18d8 <gpio_get+0x50>)
+    18b4:	0092      	lsls	r2, r2, #2
+    18b6:	58d3      	ldr	r3, [r2, r3]
+    18b8:	60fb      	str	r3, [r7, #12]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:101
+
+    //返回引脚的状态
+    return ((BGET(pin,GPIO_PDIR_REG(gpio_ptr)))>=1 ? 1:0);
+    18ba:	68fb      	ldr	r3, [r7, #12]
+    18bc:	691a      	ldr	r2, [r3, #16]
+    18be:	1c3b      	adds	r3, r7, #0
+    18c0:	330a      	adds	r3, #10
+    18c2:	781b      	ldrb	r3, [r3, #0]
+    18c4:	40da      	lsrs	r2, r3
+    18c6:	2301      	movs	r3, #1
+    18c8:	4013      	ands	r3, r2
+    18ca:	1e5a      	subs	r2, r3, #1
+    18cc:	4193      	sbcs	r3, r2
+    18ce:	b2db      	uxtb	r3, r3
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:102
+}
+    18d0:	1c18      	adds	r0, r3, #0
+    18d2:	46bd      	mov	sp, r7
+    18d4:	b004      	add	sp, #16
+    18d6:	bd80      	pop	{r7, pc}
+    18d8:	00001c80 	.word	0x00001c80
+
+000018dc <gpio_pull>:
+gpio_pull():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:133
+//参数说明：port_pin：端口号|引脚号（如：(PTB_NUM)|(9) 表示为B口9号脚）
+//        pullselect：引脚拉高低电平（ 0=拉低电平，1=拉高电平）
+//功能概要：使指定引脚上拉高电平或下拉低电平
+//=====================================================================
+void gpio_pull(uint_16 port_pin, uint_8 pullselect)
+{
+    18dc:	b580      	push	{r7, lr}
+    18de:	b084      	sub	sp, #16
+    18e0:	af00      	add	r7, sp, #0
+    18e2:	1c0a      	adds	r2, r1, #0
+    18e4:	1dbb      	adds	r3, r7, #6
+    18e6:	1c01      	adds	r1, r0, #0
+    18e8:	8019      	strh	r1, [r3, #0]
+    18ea:	1d7b      	adds	r3, r7, #5
+    18ec:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:138
+    //局部变量声明
+    PORT_MemMapPtr port_ptr;   //声明port_ptr为PORT结构体类型指针
+    uint_8 port,pin;           //声明端口port、引脚pin变量
+    //根据带入参数port_pin，解析出端口与引脚分别赋给port,pin
+    gpio_get_port_pin(port_pin , &port , &pin);
+    18ee:	1dbb      	adds	r3, r7, #6
+    18f0:	8819      	ldrh	r1, [r3, #0]
+    18f2:	1c3a      	adds	r2, r7, #0
+    18f4:	320b      	adds	r2, #11
+    18f6:	1c3b      	adds	r3, r7, #0
+    18f8:	330a      	adds	r3, #10
+    18fa:	1c08      	adds	r0, r1, #0
+    18fc:	1c11      	adds	r1, r2, #0
+    18fe:	1c1a      	adds	r2, r3, #0
+    1900:	f000 f87a 	bl	19f8 <gpio_get_port_pin>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:141
+
+    //根据port，给局部变量port_ptr赋值（获得基地址）
+    port_ptr = PORT_ARR[port];  //获得PORT模块相应口基地址
+    1904:	1c3b      	adds	r3, r7, #0
+    1906:	330b      	adds	r3, #11
+    1908:	781b      	ldrb	r3, [r3, #0]
+    190a:	1c1a      	adds	r2, r3, #0
+    190c:	4b38      	ldr	r3, [pc, #224]	; (19f0 <gpio_pull+0x114>)
+    190e:	0092      	lsls	r2, r2, #2
+    1910:	58d3      	ldr	r3, [r2, r3]
+    1912:	60fb      	str	r3, [r7, #12]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:144
+
+    //设定相应端口的相应引脚功能为GPIO（即令引脚控制寄存器的MUX=0b001）
+    PORT_PCR_REG(port_ptr, pin) &= ~PORT_PCR_MUX_MASK; //置D10-D8=000
+    1914:	1c3b      	adds	r3, r7, #0
+    1916:	330a      	adds	r3, #10
+    1918:	781b      	ldrb	r3, [r3, #0]
+    191a:	1c1a      	adds	r2, r3, #0
+    191c:	1c3b      	adds	r3, r7, #0
+    191e:	330a      	adds	r3, #10
+    1920:	781b      	ldrb	r3, [r3, #0]
+    1922:	1c19      	adds	r1, r3, #0
+    1924:	68fb      	ldr	r3, [r7, #12]
+    1926:	0089      	lsls	r1, r1, #2
+    1928:	58c9      	ldr	r1, [r1, r3]
+    192a:	4b32      	ldr	r3, [pc, #200]	; (19f4 <gpio_pull+0x118>)
+    192c:	4019      	ands	r1, r3
+    192e:	68fb      	ldr	r3, [r7, #12]
+    1930:	0092      	lsls	r2, r2, #2
+    1932:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:145
+    PORT_PCR_REG(port_ptr, pin) |= PORT_PCR_MUX(1);    //置D10-D8=001
+    1934:	1c3b      	adds	r3, r7, #0
+    1936:	330a      	adds	r3, #10
+    1938:	781b      	ldrb	r3, [r3, #0]
+    193a:	1c1a      	adds	r2, r3, #0
+    193c:	1c3b      	adds	r3, r7, #0
+    193e:	330a      	adds	r3, #10
+    1940:	781b      	ldrb	r3, [r3, #0]
+    1942:	1c19      	adds	r1, r3, #0
+    1944:	68fb      	ldr	r3, [r7, #12]
+    1946:	0089      	lsls	r1, r1, #2
+    1948:	58cb      	ldr	r3, [r1, r3]
+    194a:	2180      	movs	r1, #128	; 0x80
+    194c:	0049      	lsls	r1, r1, #1
+    194e:	4319      	orrs	r1, r3
+    1950:	68fb      	ldr	r3, [r7, #12]
+    1952:	0092      	lsls	r2, r2, #2
+    1954:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:148
+
+    //设定正常驱动能力（低驱动能力）（5mA）
+    BCLR(PORT_PCR_DSE_SHIFT,PORT_PCR_REG(port_ptr, pin));
+    1956:	1c3b      	adds	r3, r7, #0
+    1958:	330a      	adds	r3, #10
+    195a:	781b      	ldrb	r3, [r3, #0]
+    195c:	1c1a      	adds	r2, r3, #0
+    195e:	1c3b      	adds	r3, r7, #0
+    1960:	330a      	adds	r3, #10
+    1962:	781b      	ldrb	r3, [r3, #0]
+    1964:	1c19      	adds	r1, r3, #0
+    1966:	68fb      	ldr	r3, [r7, #12]
+    1968:	0089      	lsls	r1, r1, #2
+    196a:	58cb      	ldr	r3, [r1, r3]
+    196c:	2140      	movs	r1, #64	; 0x40
+    196e:	1c18      	adds	r0, r3, #0
+    1970:	4388      	bics	r0, r1
+    1972:	1c01      	adds	r1, r0, #0
+    1974:	68fb      	ldr	r3, [r7, #12]
+    1976:	0092      	lsls	r2, r2, #2
+    1978:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:150
+    //将引脚上下拉使能
+    BSET(PORT_PCR_PE_SHIFT,PORT_PCR_REG(port_ptr, pin));
+    197a:	1c3b      	adds	r3, r7, #0
+    197c:	330a      	adds	r3, #10
+    197e:	781b      	ldrb	r3, [r3, #0]
+    1980:	1c1a      	adds	r2, r3, #0
+    1982:	1c3b      	adds	r3, r7, #0
+    1984:	330a      	adds	r3, #10
+    1986:	781b      	ldrb	r3, [r3, #0]
+    1988:	1c19      	adds	r1, r3, #0
+    198a:	68fb      	ldr	r3, [r7, #12]
+    198c:	0089      	lsls	r1, r1, #2
+    198e:	58cb      	ldr	r3, [r1, r3]
+    1990:	2102      	movs	r1, #2
+    1992:	4319      	orrs	r1, r3
+    1994:	68fb      	ldr	r3, [r7, #12]
+    1996:	0092      	lsls	r2, r2, #2
+    1998:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:152
+    //根据带入参数pullselect，决定引脚拉高还是拉低
+    if (1==pullselect) 
+    199a:	1d7b      	adds	r3, r7, #5
+    199c:	781b      	ldrb	r3, [r3, #0]
+    199e:	2b01      	cmp	r3, #1
+    19a0:	d110      	bne.n	19c4 <gpio_pull+0xe8>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:154
+    {
+        BSET(PORT_PCR_PS_SHIFT,PORT_PCR_REG(port_ptr, pin));
+    19a2:	1c3b      	adds	r3, r7, #0
+    19a4:	330a      	adds	r3, #10
+    19a6:	781b      	ldrb	r3, [r3, #0]
+    19a8:	1c1a      	adds	r2, r3, #0
+    19aa:	1c3b      	adds	r3, r7, #0
+    19ac:	330a      	adds	r3, #10
+    19ae:	781b      	ldrb	r3, [r3, #0]
+    19b0:	1c19      	adds	r1, r3, #0
+    19b2:	68fb      	ldr	r3, [r7, #12]
+    19b4:	0089      	lsls	r1, r1, #2
+    19b6:	58cb      	ldr	r3, [r1, r3]
+    19b8:	2101      	movs	r1, #1
+    19ba:	4319      	orrs	r1, r3
+    19bc:	68fb      	ldr	r3, [r7, #12]
+    19be:	0092      	lsls	r2, r2, #2
+    19c0:	50d1      	str	r1, [r2, r3]
+    19c2:	e011      	b.n	19e8 <gpio_pull+0x10c>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:158
+    }
+    else
+    {
+        BCLR(PORT_PCR_PS_SHIFT,PORT_PCR_REG(port_ptr, pin));
+    19c4:	1c3b      	adds	r3, r7, #0
+    19c6:	330a      	adds	r3, #10
+    19c8:	781b      	ldrb	r3, [r3, #0]
+    19ca:	1c1a      	adds	r2, r3, #0
+    19cc:	1c3b      	adds	r3, r7, #0
+    19ce:	330a      	adds	r3, #10
+    19d0:	781b      	ldrb	r3, [r3, #0]
+    19d2:	1c19      	adds	r1, r3, #0
+    19d4:	68fb      	ldr	r3, [r7, #12]
+    19d6:	0089      	lsls	r1, r1, #2
+    19d8:	58cb      	ldr	r3, [r1, r3]
+    19da:	2101      	movs	r1, #1
+    19dc:	1c18      	adds	r0, r3, #0
+    19de:	4388      	bics	r0, r1
+    19e0:	1c01      	adds	r1, r0, #0
+    19e2:	68fb      	ldr	r3, [r7, #12]
+    19e4:	0092      	lsls	r2, r2, #2
+    19e6:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:160
+    }
+}
+    19e8:	46bd      	mov	sp, r7
+    19ea:	b004      	add	sp, #16
+    19ec:	bd80      	pop	{r7, pc}
+    19ee:	46c0      	nop			; (mov r8, r8)
+    19f0:	00001c6c 	.word	0x00001c6c
+    19f4:	fffff8ff 	.word	0xfffff8ff
+
+000019f8 <gpio_get_port_pin>:
+gpio_get_port_pin():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:334
+//       pin:引脚号（0~31，实际取值由芯片的物理引脚决定）（传指带出参数）
+//功能概要：将传进参数port_pin进行解析，得出具体端口号与引脚号，分别赋值给port与pin,返回。
+//       （例：(PTB_NUM)|(9)解析为PORTB与9，并将其分别赋值给port与pin）。
+//=====================================================================
+void gpio_get_port_pin(uint_16 port_pin,uint_8* port,uint_8* pin)
+{
+    19f8:	b580      	push	{r7, lr}
+    19fa:	b084      	sub	sp, #16
+    19fc:	af00      	add	r7, sp, #0
+    19fe:	60b9      	str	r1, [r7, #8]
+    1a00:	607a      	str	r2, [r7, #4]
+    1a02:	1c3b      	adds	r3, r7, #0
+    1a04:	330e      	adds	r3, #14
+    1a06:	1c02      	adds	r2, r0, #0
+    1a08:	801a      	strh	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:335
+    *port = (port_pin>>8);
+    1a0a:	1c3b      	adds	r3, r7, #0
+    1a0c:	330e      	adds	r3, #14
+    1a0e:	881b      	ldrh	r3, [r3, #0]
+    1a10:	0a1b      	lsrs	r3, r3, #8
+    1a12:	b29b      	uxth	r3, r3
+    1a14:	b2da      	uxtb	r2, r3
+    1a16:	68bb      	ldr	r3, [r7, #8]
+    1a18:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:336
+    *pin = port_pin;
+    1a1a:	1c3b      	adds	r3, r7, #0
+    1a1c:	330e      	adds	r3, #14
+    1a1e:	881b      	ldrh	r3, [r3, #0]
+    1a20:	b2da      	uxtb	r2, r3
+    1a22:	687b      	ldr	r3, [r7, #4]
+    1a24:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../05_Driver/gpio/gpio.c:337
+}
+    1a26:	46bd      	mov	sp, r7
+    1a28:	b004      	add	sp, #16
+    1a2a:	bd80      	pop	{r7, pc}
+
+00001a2c <SystemInit>:
+SystemInit():
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:111
+//函数名称：SystemInit
+//函数返回：无
+//参数说明：无
+//功能概要：初始化系统的时钟
+//=====================================================================
+void SystemInit (void) {
+    1a2c:	b580      	push	{r7, lr}
+    1a2e:	af00      	add	r7, sp, #0
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:114
+
+#if (DISABLE_WDOG)  //关闭看门狗
+    SIM->COPC = (uint32_t)0x00u;    //SIM_COPC: COPT=0,COPCLKS=0,COPW=0
+    1a30:	4a53      	ldr	r2, [pc, #332]	; (1b80 <SystemInit+0x154>)
+    1a32:	2388      	movs	r3, #136	; 0x88
+    1a34:	015b      	lsls	r3, r3, #5
+    1a36:	2100      	movs	r1, #0
+    1a38:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:118
+#endif
+
+#ifdef CLOCK_SETUP
+  if((RCM->SRS0 & RCM_SRS0_WAKEUP_MASK) != 0x00U)
+    1a3a:	4b52      	ldr	r3, [pc, #328]	; (1b84 <SystemInit+0x158>)
+    1a3c:	781b      	ldrb	r3, [r3, #0]
+    1a3e:	b2db      	uxtb	r3, r3
+    1a40:	1c1a      	adds	r2, r3, #0
+    1a42:	2301      	movs	r3, #1
+    1a44:	4013      	ands	r3, r2
+    1a46:	d00e      	beq.n	1a66 <SystemInit+0x3a>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:120
+  {
+    if((PMC->REGSC & PMC_REGSC_ACKISO_MASK) != 0x00U)
+    1a48:	4b4f      	ldr	r3, [pc, #316]	; (1b88 <SystemInit+0x15c>)
+    1a4a:	789b      	ldrb	r3, [r3, #2]
+    1a4c:	b2db      	uxtb	r3, r3
+    1a4e:	1c1a      	adds	r2, r3, #0
+    1a50:	2308      	movs	r3, #8
+    1a52:	4013      	ands	r3, r2
+    1a54:	d007      	beq.n	1a66 <SystemInit+0x3a>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:122
+    {
+       PMC->REGSC |= PMC_REGSC_ACKISO_MASK; /* 释放ACKISO */
+    1a56:	4b4c      	ldr	r3, [pc, #304]	; (1b88 <SystemInit+0x15c>)
+    1a58:	4a4b      	ldr	r2, [pc, #300]	; (1b88 <SystemInit+0x15c>)
+    1a5a:	7892      	ldrb	r2, [r2, #2]
+    1a5c:	b2d2      	uxtb	r2, r2
+    1a5e:	2108      	movs	r1, #8
+    1a60:	430a      	orrs	r2, r1
+    1a62:	b2d2      	uxtb	r2, r2
+    1a64:	709a      	strb	r2, [r3, #2]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:128
+    }
+  }
+
+  /* 电源模式保护初始化 */
+#ifdef SYSTEM_SMC_PMPROT_VALUE
+  SMC->PMPROT = SYSTEM_SMC_PMPROT_VALUE;
+    1a66:	4b49      	ldr	r3, [pc, #292]	; (1b8c <SystemInit+0x160>)
+    1a68:	222a      	movs	r2, #42	; 0x2a
+    1a6a:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:148
+#if defined(SLOW_TRIM_ADDRESS)
+  }
+  #endif
+
+  /* 设置系统预分频和时钟的值 */
+  SIM->CLKDIV1 = SYSTEM_SIM_CLKDIV1_VALUE; /* Set system prescalers */
+    1a6c:	4a44      	ldr	r2, [pc, #272]	; (1b80 <SystemInit+0x154>)
+    1a6e:	4b48      	ldr	r3, [pc, #288]	; (1b90 <SystemInit+0x164>)
+    1a70:	4948      	ldr	r1, [pc, #288]	; (1b94 <SystemInit+0x168>)
+    1a72:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:149
+  SIM->SOPT1 = ((SIM->SOPT1) & (uint32_t)(~(SIM_SOPT1_OSC32KSEL_MASK))) | ((SYSTEM_SIM_SOPT1_VALUE) & (SIM_SOPT1_OSC32KSEL_MASK)); /* Set 32 kHz clock source (ERCLK32K) */
+    1a74:	4b42      	ldr	r3, [pc, #264]	; (1b80 <SystemInit+0x154>)
+    1a76:	4a42      	ldr	r2, [pc, #264]	; (1b80 <SystemInit+0x154>)
+    1a78:	6812      	ldr	r2, [r2, #0]
+    1a7a:	21c0      	movs	r1, #192	; 0xc0
+    1a7c:	0309      	lsls	r1, r1, #12
+    1a7e:	430a      	orrs	r2, r1
+    1a80:	601a      	str	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:150
+  SIM->SOPT2 = ((SIM->SOPT2) & (uint32_t)(~(SIM_SOPT2_PLLFLLSEL_MASK))) | ((SYSTEM_SIM_SOPT2_VALUE) & (SIM_SOPT2_PLLFLLSEL_MASK)); /* Selects the high frequency clock for various peripheral clocking options. */
+    1a82:	4a3f      	ldr	r2, [pc, #252]	; (1b80 <SystemInit+0x154>)
+    1a84:	493e      	ldr	r1, [pc, #248]	; (1b80 <SystemInit+0x154>)
+    1a86:	4b44      	ldr	r3, [pc, #272]	; (1b98 <SystemInit+0x16c>)
+    1a88:	58cb      	ldr	r3, [r1, r3]
+    1a8a:	2180      	movs	r1, #128	; 0x80
+    1a8c:	0249      	lsls	r1, r1, #9
+    1a8e:	4319      	orrs	r1, r3
+    1a90:	4b41      	ldr	r3, [pc, #260]	; (1b98 <SystemInit+0x16c>)
+    1a92:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:151
+  SIM->SOPT2 = ((SIM->SOPT2) & (uint32_t)(~(SIM_SOPT2_TPMSRC_MASK))) | ((SYSTEM_SIM_SOPT2_VALUE) & (SIM_SOPT2_TPMSRC_MASK)); /* Selects the clock source for the TPM counter clock. */
+    1a94:	4a3a      	ldr	r2, [pc, #232]	; (1b80 <SystemInit+0x154>)
+    1a96:	493a      	ldr	r1, [pc, #232]	; (1b80 <SystemInit+0x154>)
+    1a98:	4b3f      	ldr	r3, [pc, #252]	; (1b98 <SystemInit+0x16c>)
+    1a9a:	58c9      	ldr	r1, [r1, r3]
+    1a9c:	4b3f      	ldr	r3, [pc, #252]	; (1b9c <SystemInit+0x170>)
+    1a9e:	400b      	ands	r3, r1
+    1aa0:	2180      	movs	r1, #128	; 0x80
+    1aa2:	0449      	lsls	r1, r1, #17
+    1aa4:	4319      	orrs	r1, r3
+    1aa6:	4b3c      	ldr	r3, [pc, #240]	; (1b98 <SystemInit+0x16c>)
+    1aa8:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:185
+  #endif
+
+#else /* MCG_MODE */
+  /* Set MCG and OSC */
+  /* SIM_SCGC5: PORTA=1 */
+  SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
+    1aaa:	4a35      	ldr	r2, [pc, #212]	; (1b80 <SystemInit+0x154>)
+    1aac:	4934      	ldr	r1, [pc, #208]	; (1b80 <SystemInit+0x154>)
+    1aae:	4b3c      	ldr	r3, [pc, #240]	; (1ba0 <SystemInit+0x174>)
+    1ab0:	58cb      	ldr	r3, [r1, r3]
+    1ab2:	2180      	movs	r1, #128	; 0x80
+    1ab4:	0089      	lsls	r1, r1, #2
+    1ab6:	4319      	orrs	r1, r3
+    1ab8:	4b39      	ldr	r3, [pc, #228]	; (1ba0 <SystemInit+0x174>)
+    1aba:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:187
+  /* PORTA_PCR18: ISF=0,MUX=0 */
+  PORTA_PCR18 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
+    1abc:	4b39      	ldr	r3, [pc, #228]	; (1ba4 <SystemInit+0x178>)
+    1abe:	4a39      	ldr	r2, [pc, #228]	; (1ba4 <SystemInit+0x178>)
+    1ac0:	6c91      	ldr	r1, [r2, #72]	; 0x48
+    1ac2:	4a39      	ldr	r2, [pc, #228]	; (1ba8 <SystemInit+0x17c>)
+    1ac4:	400a      	ands	r2, r1
+    1ac6:	649a      	str	r2, [r3, #72]	; 0x48
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:190
+  if (((SYSTEM_MCG_C2_VALUE) & MCG_C2_EREFS0_MASK) != 0x00U) {
+  /* PORTA_PCR19: ISF=0,MUX=0 */
+  PORTA_PCR19 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
+    1ac8:	4b36      	ldr	r3, [pc, #216]	; (1ba4 <SystemInit+0x178>)
+    1aca:	4a36      	ldr	r2, [pc, #216]	; (1ba4 <SystemInit+0x178>)
+    1acc:	6cd1      	ldr	r1, [r2, #76]	; 0x4c
+    1ace:	4a36      	ldr	r2, [pc, #216]	; (1ba8 <SystemInit+0x17c>)
+    1ad0:	400a      	ands	r2, r1
+    1ad2:	64da      	str	r2, [r3, #76]	; 0x4c
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:192
+  }
+  MCG->SC = SYSTEM_MCG_SC_VALUE;       /* Set SC (fast clock internal reference divider) */
+    1ad4:	4b35      	ldr	r3, [pc, #212]	; (1bac <SystemInit+0x180>)
+    1ad6:	2200      	movs	r2, #0
+    1ad8:	721a      	strb	r2, [r3, #8]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:193
+  MCG->C2 = (SYSTEM_MCG_C2_VALUE) & (uint8_t)(~(MCG_C2_LP_MASK)); /* Set C2 (freq. range, ext. and int. reference selection etc.; low power bit is set later) */
+    1ada:	4b34      	ldr	r3, [pc, #208]	; (1bac <SystemInit+0x180>)
+    1adc:	2224      	movs	r2, #36	; 0x24
+    1ade:	705a      	strb	r2, [r3, #1]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:194
+  OSC0->CR = SYSTEM_OSC0_CR_VALUE;     /* Set OSC_CR (OSCERCLK enable, oscillator capacitor load) */
+    1ae0:	4b33      	ldr	r3, [pc, #204]	; (1bb0 <SystemInit+0x184>)
+    1ae2:	2280      	movs	r2, #128	; 0x80
+    1ae4:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:196
+  #if (MCG_MODE == MCG_MODE_PEE)
+  MCG->C1 = (SYSTEM_MCG_C1_VALUE) | MCG_C1_CLKS(0x02); /* Set C1 (clock source selection, FLL ext. reference divider, int. reference enable etc.) - PBE mode*/
+    1ae6:	4b31      	ldr	r3, [pc, #196]	; (1bac <SystemInit+0x180>)
+    1ae8:	229a      	movs	r2, #154	; 0x9a
+    1aea:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:201
+  #else
+  MCG->C1 = SYSTEM_MCG_C1_VALUE;       /* Set C1 (clock source selection, FLL ext. reference divider, int. reference enable etc.) */
+  #endif
+  if (((SYSTEM_MCG_C2_VALUE) & MCG_C2_EREFS0_MASK) != 0x00U) {
+    while((MCG->S & MCG_S_OSCINIT0_MASK) == 0x00U) { /* Check that the oscillator is running */
+    1aec:	46c0      	nop			; (mov r8, r8)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:201 (discriminator 1)
+    1aee:	4b2f      	ldr	r3, [pc, #188]	; (1bac <SystemInit+0x180>)
+    1af0:	799b      	ldrb	r3, [r3, #6]
+    1af2:	b2db      	uxtb	r3, r3
+    1af4:	1c1a      	adds	r2, r3, #0
+    1af6:	2302      	movs	r3, #2
+    1af8:	4013      	ands	r3, r2
+    1afa:	d0f8      	beq.n	1aee <SystemInit+0xc2>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:209
+  /* Check that the source of the FLL reference clock is the requested one. */
+  if (((SYSTEM_MCG_C1_VALUE) & MCG_C1_IREFS_MASK) != 0x00U) {
+    while((MCG->S & MCG_S_IREFST_MASK) == 0x00U) {
+    }
+  } else {
+    while((MCG->S & MCG_S_IREFST_MASK) != 0x00U) {
+    1afc:	46c0      	nop			; (mov r8, r8)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:209 (discriminator 1)
+    1afe:	4b2b      	ldr	r3, [pc, #172]	; (1bac <SystemInit+0x180>)
+    1b00:	799b      	ldrb	r3, [r3, #6]
+    1b02:	b2db      	uxtb	r3, r3
+    1b04:	1c1a      	adds	r2, r3, #0
+    1b06:	2310      	movs	r3, #16
+    1b08:	4013      	ands	r3, r2
+    1b0a:	d1f8      	bne.n	1afe <SystemInit+0xd2>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:212
+    }
+  }
+  MCG->C4 = ((SYSTEM_MCG_C4_VALUE)  & (uint8_t)(~(MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK))) | (MCG->C4 & (MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK)); /* Set C4 (FLL output; trim values not changed) */
+    1b0c:	4b27      	ldr	r3, [pc, #156]	; (1bac <SystemInit+0x180>)
+    1b0e:	4a27      	ldr	r2, [pc, #156]	; (1bac <SystemInit+0x180>)
+    1b10:	78d2      	ldrb	r2, [r2, #3]
+    1b12:	b2d1      	uxtb	r1, r2
+    1b14:	221f      	movs	r2, #31
+    1b16:	400a      	ands	r2, r1
+    1b18:	b2d2      	uxtb	r2, r2
+    1b1a:	70da      	strb	r2, [r3, #3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:218
+#endif /* MCG_MODE */
+
+  /* Common for all MCG modes */
+
+  /* PLL clock can be used to generate clock for some devices regardless of clock generator (MCGOUTCLK) mode. */
+  MCG->C5 = (SYSTEM_MCG_C5_VALUE) & (uint8_t)(~(MCG_C5_PLLCLKEN0_MASK)); /* Set C5 (PLL settings, PLL reference divider etc.) */
+    1b1c:	4b23      	ldr	r3, [pc, #140]	; (1bac <SystemInit+0x180>)
+    1b1e:	2201      	movs	r2, #1
+    1b20:	711a      	strb	r2, [r3, #4]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:219
+  MCG->C6 = (SYSTEM_MCG_C6_VALUE) & (uint8_t)~(MCG_C6_PLLS_MASK); /* Set C6 (PLL select, VCO divider etc.) */
+    1b22:	4b22      	ldr	r3, [pc, #136]	; (1bac <SystemInit+0x180>)
+    1b24:	2200      	movs	r2, #0
+    1b26:	715a      	strb	r2, [r3, #5]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:228
+  /* BLPE, PEE and PBE MCG mode specific */
+
+#if (MCG_MODE == MCG_MODE_BLPE)
+  MCG->C2 |= (MCG_C2_LP_MASK);         /* Disable FLL and PLL in bypass mode */
+#elif ((MCG_MODE == MCG_MODE_PBE) || (MCG_MODE == MCG_MODE_PEE))
+  MCG->C6 |= (MCG_C6_PLLS_MASK);       /* Set C6 (PLL select, VCO divider etc.) */
+    1b28:	4b20      	ldr	r3, [pc, #128]	; (1bac <SystemInit+0x180>)
+    1b2a:	4a20      	ldr	r2, [pc, #128]	; (1bac <SystemInit+0x180>)
+    1b2c:	7952      	ldrb	r2, [r2, #5]
+    1b2e:	b2d2      	uxtb	r2, r2
+    1b30:	2140      	movs	r1, #64	; 0x40
+    1b32:	430a      	orrs	r2, r1
+    1b34:	b2d2      	uxtb	r2, r2
+    1b36:	715a      	strb	r2, [r3, #5]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:229
+  while((MCG->S & MCG_S_LOCK0_MASK) == 0x00U) { /* Wait until PLL is locked*/
+    1b38:	46c0      	nop			; (mov r8, r8)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:229 (discriminator 1)
+    1b3a:	4b1c      	ldr	r3, [pc, #112]	; (1bac <SystemInit+0x180>)
+    1b3c:	799b      	ldrb	r3, [r3, #6]
+    1b3e:	b2db      	uxtb	r3, r3
+    1b40:	1c1a      	adds	r2, r3, #0
+    1b42:	2340      	movs	r3, #64	; 0x40
+    1b44:	4013      	ands	r3, r2
+    1b46:	d0f8      	beq.n	1b3a <SystemInit+0x10e>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:232
+  }
+  #if (MCG_MODE == MCG_MODE_PEE)
+  MCG->C1 &= (uint8_t)~(MCG_C1_CLKS_MASK);
+    1b48:	4b18      	ldr	r3, [pc, #96]	; (1bac <SystemInit+0x180>)
+    1b4a:	4a18      	ldr	r2, [pc, #96]	; (1bac <SystemInit+0x180>)
+    1b4c:	7812      	ldrb	r2, [r2, #0]
+    1b4e:	b2d1      	uxtb	r1, r2
+    1b50:	223f      	movs	r2, #63	; 0x3f
+    1b52:	400a      	ands	r2, r1
+    1b54:	b2d2      	uxtb	r2, r2
+    1b56:	701a      	strb	r2, [r3, #0]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:255
+  }
+#elif ((MCG_MODE == MCG_MODE_FBE) || (MCG_MODE == MCG_MODE_PBE) || (MCG_MODE == MCG_MODE_BLPE))
+  while((MCG->S & MCG_S_CLKST_MASK) != 0x08U) { /* Wait until external reference clock is selected as MCG output */
+  }
+#elif (MCG_MODE == MCG_MODE_PEE)
+  while((MCG->S & MCG_S_CLKST_MASK) != 0x0CU) { /* Wait until output of the PLL is selected */
+    1b58:	46c0      	nop			; (mov r8, r8)
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:255 (discriminator 1)
+    1b5a:	4b14      	ldr	r3, [pc, #80]	; (1bac <SystemInit+0x180>)
+    1b5c:	799b      	ldrb	r3, [r3, #6]
+    1b5e:	b2db      	uxtb	r3, r3
+    1b60:	1c1a      	adds	r2, r3, #0
+    1b62:	230c      	movs	r3, #12
+    1b64:	4013      	ands	r3, r2
+    1b66:	2b0c      	cmp	r3, #12
+    1b68:	d1f7      	bne.n	1b5a <SystemInit+0x12e>
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:271
+    NVIC_EnableIRQ(MCG_IRQn);          /* Enable PLL loss of lock interrupt request */
+  }
+#endif
+
+    //初始化后，开始PORT模块时钟
+    SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK
+    1b6a:	4a05      	ldr	r2, [pc, #20]	; (1b80 <SystemInit+0x154>)
+    1b6c:	4904      	ldr	r1, [pc, #16]	; (1b80 <SystemInit+0x154>)
+    1b6e:	4b0c      	ldr	r3, [pc, #48]	; (1ba0 <SystemInit+0x174>)
+    1b70:	58cb      	ldr	r3, [r1, r3]
+    1b72:	21f8      	movs	r1, #248	; 0xf8
+    1b74:	0189      	lsls	r1, r1, #6
+    1b76:	4319      	orrs	r1, r3
+    1b78:	4b09      	ldr	r3, [pc, #36]	; (1ba0 <SystemInit+0x174>)
+    1b7a:	50d1      	str	r1, [r2, r3]
+D:\suda\KL25_BOOK\SD-KL-CD(V6.5)-20160505\02-Software\KL25-program\ch08-KB-LED-LCD-20160509\KB-LED-LCD-kbwithoutint\Debug/../03_MCU/system_MKL25Z4.c:276
+                | SIM_SCGC5_PORTB_MASK
+                | SIM_SCGC5_PORTC_MASK
+                | SIM_SCGC5_PORTD_MASK
+                | SIM_SCGC5_PORTE_MASK;
+}
+    1b7c:	46bd      	mov	sp, r7
+    1b7e:	bd80      	pop	{r7, pc}
+    1b80:	40047000 	.word	0x40047000
+    1b84:	4007f000 	.word	0x4007f000
+    1b88:	4007d000 	.word	0x4007d000
+    1b8c:	4007e000 	.word	0x4007e000
+    1b90:	00001044 	.word	0x00001044
+    1b94:	10010000 	.word	0x10010000
+    1b98:	00001004 	.word	0x00001004
+    1b9c:	fcffffff 	.word	0xfcffffff
+    1ba0:	00001038 	.word	0x00001038
+    1ba4:	40049000 	.word	0x40049000
+    1ba8:	fefff8ff 	.word	0xfefff8ff
+    1bac:	40064000 	.word	0x40064000
+    1bb0:	40065000 	.word	0x40065000
+$d():
+    1bb4:	20656854 	.word	0x20656854
+    1bb8:	6279656b 	.word	0x6279656b
+    1bbc:	6472616f 	.word	0x6472616f
+    1bc0:	756f7920 	.word	0x756f7920
+    1bc4:	73756a20 	.word	0x73756a20
+    1bc8:	6e692074 	.word	0x6e692074
+    1bcc:	20747570 	.word	0x20747570
+    1bd0:	2e207369 	.word	0x2e207369
+    1bd4:	00000000 	.word	0x00000000
+    1bd8:	000009e8 	.word	0x000009e8
+    1bdc:	00000bd6 	.word	0x00000bd6
+    1be0:	00000bd6 	.word	0x00000bd6
+    1be4:	000009c8 	.word	0x000009c8
+    1be8:	000008b2 	.word	0x000008b2
+    1bec:	000008b2 	.word	0x000008b2
+    1bf0:	000009ba 	.word	0x000009ba
+    1bf4:	000009c8 	.word	0x000009c8
+    1bf8:	000008b2 	.word	0x000008b2
+    1bfc:	000009ba 	.word	0x000009ba
+    1c00:	000008b2 	.word	0x000008b2
+    1c04:	000009c8 	.word	0x000009c8
+    1c08:	000008b0 	.word	0x000008b0
+    1c0c:	000008b0 	.word	0x000008b0
+    1c10:	000008b0 	.word	0x000008b0
+    1c14:	00000bde 	.word	0x00000bde
+
+00001c18 <LEDcodetable>:
+    1c18:	4f5b063f 077d6d66 86bf6f7f 6d664fdb     ?.[Ofm}..o...Ofm
+    1c28:	6fff077d 00ff7179                       }..oyq..
+
+00001c30 <led_cs>:
+    1c30:	01120113 01100111                       ........
+
+00001c38 <led_d>:
+    1c38:	010a010b 01080109 01020103 01000101     ................
+
+00001c48 <KBtable>:
+    1c48:	34ed37ee 30e731eb 35dd38de 41d732db     .7.4.1.0.8.5.2.A
+    1c58:	36bd39be 42b733bb 447d437e 4677457b     .9.6.3.B~C}D{EwF
+    1c68:	00000000                                ....
+
+00001c6c <PORT_ARR>:
+    1c6c:	40049000 4004a000 4004b000 4004c000     ...@...@...@...@
+    1c7c:	4004d000                                ...@
+
+00001c80 <GPIO_ARR>:
+    1c80:	400ff000 400ff040 400ff080 400ff0c0     ...@@..@...@...@
+    1c90:	400ff100                                ...@

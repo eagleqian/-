@@ -1,0 +1,235 @@
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\Tempture.exe
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\Tempture.pdb
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\obj\x86\Debug\Tempture.FormSCI.resources
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\obj\x86\Debug\Tempture.Properties.Resources.resources
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\obj\x86\Debug\Tempture.exe
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\obj\x86\Debug\Tempture.pdb
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\ZedGraph.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\ZedGraph.xml
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Jane\Documents\Visual Studio 2010\Projects\Tempture\Tempture\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\obj\x86\Debug\Tempture.exe
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\obj\x86\Debug\Tempture.pdb
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\Tempture.exe
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\Tempture.pdb
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\ZedGraph.xml
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\obj\x86\Debug\Tempture.FormSCI.resources
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\obj\x86\Debug\Tempture.Properties.Resources.resources
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Jane\Desktop\C#芯片温度测试程序\Tempture\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\obj\x86\Debug\Tempture.exe
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\obj\x86\Debug\Tempture.pdb
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\Tempture.exe
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\Tempture.pdb
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\ZedGraph.xml
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\de\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\es\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\fr\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\hu\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\it\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\ja\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\pt\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\ru\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\sk\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\sv\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\tr\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\zh-cn\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\bin\Debug\zh-tw\ZedGraph.resources.dll
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\obj\x86\Debug\Tempture.FormSCI.resources
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\obj\x86\Debug\Tempture.Properties.Resources.resources
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\BOOK\2012-2014 KL25\KL25-2\CH10-20141212\C#芯片温度测试程序20141212\Tempture\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Jane\Desktop\CH10-20141212\C#芯片温度测试程序20141212\Tempture\obj\x86\Debug\Tempture.exe
+C:\Users\Jane\Desktop\CH10-20141212\C#芯片温度测试程序20141212\Tempture\obj\x86\Debug\Tempture.pdb
+C:\Users\Jane\Desktop\KL25\CH10-20141213\C#芯片温度测试程序20141212\Tempture\obj\x86\Debug\Tempture.exe
+C:\Users\Jane\Desktop\KL25\CH10-20141213\C#芯片温度测试程序20141212\Tempture\obj\x86\Debug\Tempture.pdb
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\obj\x86\Debug\Tempture.exe
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\obj\x86\Debug\Tempture.pdb
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\Tempture.exe
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\Tempture.pdb
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\ZedGraph.xml
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\obj\x86\Debug\Tempture.FormSCI.resources
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\obj\x86\Debug\Tempture.Properties.Resources.resources
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Jane\Desktop\CH10-20141218\C#芯片温度测试程序20141213\Tempture\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\obj\x86\Debug\Tempture.exe
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\obj\x86\Debug\Tempture.pdb
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\Tempture.exe
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\Tempture.pdb
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\ZedGraph.xml
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\obj\x86\Debug\Tempture.FormSCI.resources
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\obj\x86\Debug\Tempture.Properties.Resources.resources
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Jane\Desktop\CH10-20141226\C#芯片温度测试程序20141226\Tempture\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Jane\Desktop\CH10-20141226\C#通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.exe
+C:\Users\Jane\Desktop\CH10-20141226\C#通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.pdb
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.exe
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.pdb
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\Tempture.exe
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\Tempture.pdb
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\ZedGraph.xml
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\de\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\es\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\fr\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\hu\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\it\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\ja\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\pt\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\ru\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\sk\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\sv\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\tr\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\zh-cn\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\zh-tw\ZedGraph.resources.dll
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.FormSCI.resources
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.Properties.Resources.resources
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\BOOK\2012-2015 KL25\KL25-2\KL25-ADC-20150114\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.exe
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.pdb
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\Tempture.exe
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\Tempture.pdb
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\ZedGraph.xml
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\de\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\es\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\fr\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\hu\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\it\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\ja\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\pt\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\ru\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\sk\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\sv\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\tr\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\zh-cn\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\bin\Debug\zh-tw\ZedGraph.resources.dll
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.csprojResolveAssemblyReference.cache
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.FormSCI.resources
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.Properties.Resources.resources
+F:\SD-FSL-KL25-CD(V3.3)KDS-20141018\KL25-Program\new-chap\KL25-ADC-20150115\C#2010-AD通道测试程序20141226\Tempture\obj\x86\Debug\Tempture.csproj.GenerateResource.Cache
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.exe
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.pdb
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\Tempture.exe
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\Tempture.pdb
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\ZedGraph.xml
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\de\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\es\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\fr\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\hu\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\it\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\ja\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\pt\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\ru\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\sk\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\sv\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\tr\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.csprojResolveAssemblyReference.cache
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.FormSCI.resources
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.Properties.Resources.resources
+D:\M0+2书稿参考\M0+2书稿参考\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.csproj.GenerateResource.Cache
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.exe
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.pdb
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\Tempture.exe
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\Tempture.pdb
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\ZedGraph.xml
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\de\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\es\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\fr\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\hu\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\it\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\ja\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\pt\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\ru\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\sk\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\sv\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\tr\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.csprojResolveAssemblyReference.cache
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.FormSCI.resources
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.Properties.Resources.resources
+D:\M0+2\M0+2\SD-FSL-KL25-CD(V4.0)KDS-20151012\02-Software\program\ch10-ADC-DAC-CMP(KDS)-20150116\KL25-ADC-20150116\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.csproj.GenerateResource.Cache
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20150116\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.exe
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20150116\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.pdb
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.exe
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.pdb
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\Tempture.exe
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\Tempture.pdb
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\ZedGraph.xml
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\de\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\es\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\fr\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\hu\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\it\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\ja\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\pt\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\ru\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\sk\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\sv\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\tr\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.csprojResolveAssemblyReference.cache
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.FormSCI.resources
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.Properties.Resources.resources
+D:\M0+2\ch10-ADC-DAC-CMP(KDS)-20160321\KL25_ADC(20160316)\C#2010-AD通道测试程序\Tempture\obj\x86\Debug\Tempture.csproj.GenerateResource.Cache

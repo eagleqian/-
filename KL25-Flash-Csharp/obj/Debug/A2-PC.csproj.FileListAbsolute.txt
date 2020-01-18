@@ -1,0 +1,66 @@
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\bin\Debug\KW01 ED.exe.config
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\bin\Debug\KW01 ED.exe
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\bin\Debug\KW01 ED.pdb
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\obj\Debug\A2-PC.csprojResolveAssemblyReference.cache
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\obj\Debug\SerialPort.FrmMain.resources
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\obj\Debug\SerialPort.Properties.Resources.resources
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\obj\Debug\A2-PC.csproj.GenerateResource.Cache
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\obj\Debug\KW01 ED.exe
+F:\LS\KW01-A2-20150804-1(wyh)\A2-PC-C#-20150804\obj\Debug\KW01 ED.pdb
+E:\A2-Node\A2-PC-C#-20150804-2\bin\Debug\KW01 ED.exe.config
+E:\A2-Node\A2-PC-C#-20150804-2\obj\Debug\KW01 ED.exe
+E:\A2-Node\A2-PC-C#-20150804-2\obj\Debug\KW01 ED.pdb
+E:\A2-Node\A2-PC-C#-20150804-2\obj\Debug\A2-PC.csprojResolveAssemblyReference.cache
+E:\A2-Node\A2-PC-C#-20150804-2\obj\Debug\SerialPort.FrmMain.resources
+E:\A2-Node\A2-PC-C#-20150804-2\obj\Debug\SerialPort.Properties.Resources.resources
+E:\A2-Node\A2-PC-C#-20150804-2\obj\Debug\A2-PC.csproj.GenerateResource.Cache
+E:\A2-Node\A2-PC-C#-20150804-2\bin\Debug\KW01 ED.exe
+E:\A2-Node\A2-PC-C#-20150804-2\bin\Debug\KW01 ED.pdb
+E:\A2-Node\A2-PC-C#-20150804-2--没有封装\bin\Debug\KW01 ED.exe.config
+E:\A2-Node\A2-PC-C#-20150804-2--没有封装\obj\Debug\KW01 ED.exe
+E:\A2-Node\A2-PC-C#-20150804-2--没有封装\obj\Debug\KW01 ED.pdb
+E:\A2-Node\A2-PC-C#-20150804-2--没有封装\bin\Debug\KW01 ED.exe
+E:\A2-Node\A2-PC-C#-20150804-2--没有封装\bin\Debug\KW01 ED.pdb
+E:\A2-Node\A2-PC-C#-20150804-2--没有封装\obj\Debug\A2-PC.csprojResolveAssemblyReference.cache
+E:\A2-Node\A2-PC-C#-20150804-2--没有封装\obj\Debug\SerialPort.FrmMain.resources
+E:\A2-Node\A2-PC-C#-20150804-2--没有封装\obj\Debug\SerialPort.Properties.Resources.resources
+E:\A2-Node\A2-PC-C#-20150804-2--没有封装\obj\Debug\A2-PC.csproj.GenerateResource.Cache
+E:\work\suda.edu.cn\2014-2015-2\KW01\20150805\A2-PC-C#-20150804-2--没有封装\bin\Debug\KW01 ED.exe.config
+E:\work\suda.edu.cn\2014-2015-2\KW01\20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\KW01 ED.exe
+E:\work\suda.edu.cn\2014-2015-2\KW01\20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\KW01 ED.pdb
+E:\work\suda.edu.cn\2014-2015-2\KW01\20150805\A2-PC-C#-20150804-2--没有封装\bin\Debug\KW01 ED.exe
+E:\work\suda.edu.cn\2014-2015-2\KW01\20150805\A2-PC-C#-20150804-2--没有封装\bin\Debug\KW01 ED.pdb
+E:\work\suda.edu.cn\2014-2015-2\KW01\20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\A2-PC.csprojResolveAssemblyReference.cache
+E:\work\suda.edu.cn\2014-2015-2\KW01\20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\SerialPort.FrmMain.resources
+E:\work\suda.edu.cn\2014-2015-2\KW01\20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\SerialPort.Properties.Resources.resources
+E:\work\suda.edu.cn\2014-2015-2\KW01\20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\A2-PC.csproj.GenerateResource.Cache
+E:\work\suda.edu.cn\2014-2015-2\KW01\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\bin\Debug\KW01 ED.exe.config
+E:\work\suda.edu.cn\2014-2015-2\KW01\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\KW01 ED.exe
+E:\work\suda.edu.cn\2014-2015-2\KW01\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\A2-PC.csprojResolveAssemblyReference.cache
+E:\work\suda.edu.cn\2014-2015-2\KW01\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\SerialPort.FrmMain.resources
+E:\work\suda.edu.cn\2014-2015-2\KW01\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\SerialPort.Properties.Resources.resources
+E:\work\suda.edu.cn\2014-2015-2\KW01\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\A2-PC.csproj.GenerateResource.Cache
+E:\work\suda.edu.cn\2014-2015-2\KW01\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\bin\Debug\KW01 ED.exe
+E:\work\suda.edu.cn\2014-2015-2\KW01\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\bin\Debug\KW01 ED.pdb
+E:\work\suda.edu.cn\2014-2015-2\KW01\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\KW01 ED.pdb
+E:\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\bin\Debug\KW01 ED.exe.config
+E:\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\KW01 ED.exe
+E:\KW01-A2-20150805\A2-PC-C#-20150804-2--没有封装\obj\Debug\KW01 ED.pdb
+E:\KW01-A2-20150805\B1-PC-C#-20150806-1\bin\Debug\KW01 ED.exe.config
+E:\KW01-A2-20150805\B1-PC-C#-20150806-1\obj\Debug\KW01 ED.exe
+E:\KW01-A2-20150805\B1-PC-C#-20150806-1\obj\Debug\KW01 ED.pdb
+E:\KW01-B1-20150806\B1-PC-C#-20150806-1\bin\Debug\KW01 ED.exe.config
+E:\KW01-B1-20150806\B1-PC-C#-20150806-1\obj\Debug\KW01 ED.exe
+E:\KW01-B1-20150806\B1-PC-C#-20150806-1\obj\Debug\KW01 ED.pdb
+E:\KW01-B1-20150806\B1-PC-C#-20150806-1\bin\Debug\KW01 ED.exe
+E:\KW01-B1-20150806\B1-PC-C#-20150806-1\bin\Debug\KW01 ED.pdb
+E:\KW01-B1-20150806\B1-PC-C#-20150806-1\obj\Debug\A2-PC.csprojResolveAssemblyReference.cache
+E:\KW01-B1-20150806\B1-PC-C#-20150806-1\obj\Debug\SerialPort.FrmMain.resources
+E:\KW01-B1-20150806\B1-PC-C#-20150806-1\obj\Debug\SerialPort.Properties.Resources.resources
+E:\KW01-B1-20150806\B1-PC-C#-20150806-1\obj\Debug\A2-PC.csproj.GenerateResource.Cache
+F:\LS\B1-PC-C#-20150806-1\bin\Debug\KW01 ED.exe.config
+F:\LS\B1-PC-C#-20150806-1\obj\Debug\KW01 ED.exe
+F:\LS\B1-PC-C#-20150806-1\obj\Debug\KW01 ED.pdb
+F:\LS\KW01-A1-20150806-2\KW01-A1-PC-Csharp\bin\Debug\KW01 ED.exe.config
+F:\LS\KW01-A1-20150806-2\KW01-A1-PC-Csharp\obj\Debug\KW01 ED.exe
+F:\LS\KW01-A1-20150806-2\KW01-A1-PC-Csharp\obj\Debug\KW01 ED.pdb

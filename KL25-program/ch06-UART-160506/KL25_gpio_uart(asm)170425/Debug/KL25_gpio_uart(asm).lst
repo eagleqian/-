@@ -1,0 +1,3792 @@
+
+KL25_gpio_uart(asm).elf:     file format elf32-littlearm
+KL25_gpio_uart(asm).elf
+architecture: arm, flags 0x00000012:
+EXEC_P, HAS_SYMS
+start address 0x00000dbd
+
+Program Header:
+    LOAD off    0x000000b4 vaddr 0x00000000 paddr 0x00000000 align 2**2
+         filesz 0x000000c0 memsz 0x000000c0 flags r--
+    LOAD off    0x00000174 vaddr 0x00000400 paddr 0x00000400 align 2**0
+         filesz 0x00000010 memsz 0x00000010 flags r--
+    LOAD off    0x00000184 vaddr 0x00000800 paddr 0x00000800 align 2**2
+         filesz 0x00000930 memsz 0x00000930 flags r-x
+    LOAD off    0x00000ab4 vaddr 0x1ffff000 paddr 0x1ffff000 align 2**0
+         filesz 0x00000000 memsz 0x00000800 flags rw-
+private flags = 5000002: [Version5 EABI] [has entry point]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn  Flags
+  0 .interrupts   000000c0  00000000  00000000  000000b4  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .flash_config 00000010  00000400  00000400  00000174  2**0  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .text         00000930  00000800  00000800  00000184  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .heap         00000400  1ffff000  1ffff000  00000ab4  2**0  ALLOC
+  4 .stack        00000400  1ffff400  1ffff400  00000ab4  2**0  ALLOC
+  5 .ARM.attributes 0000002e  00000000  00000000  00000ab4  2**0  CONTENTS, READONLY
+  6 .debug_line   0000077b  00000000  00000000  00000ae2  2**0  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   00000698  00000000  00000000  0000125d  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 0000018c  00000000  00000000  000018f5  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_aranges 00000100  00000000  00000000  00001a88  2**3  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000010  00000000  00000000  00001b88  2**0  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_macro  00009238  00000000  00000000  00001b98  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_str    0003197a  00000000  00000000  0000add0  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .comment      00000070  00000000  00000000  0003c74a  2**0  CONTENTS, READONLY
+ 14 .debug_frame  00000050  00000000  00000000  0003c7bc  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00000000 l    d  .interrupts	00000000 .interrupts
+00000400 l    d  .flash_config	00000000 .flash_config
+00000800 l    d  .text	00000000 .text
+1ffff000 l    d  .heap	00000000 .heap
+1ffff400 l    d  .stack	00000000 .stack
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./03_MCU/startup_MKL25Z4.o
+00000000 l    df *ABS*	00000000 ./08_Source/isr.o
+00000000 l       *ABS*	00000000 PTA_NUM
+00000100 l       *ABS*	00000000 PTB_NUM
+00000200 l       *ABS*	00000000 PTC_NUM
+00000300 l       *ABS*	00000000 PTD_NUM
+00000400 l       *ABS*	00000000 PTE_NUM
+00000000 l       *ABS*	00000000 GPIO_IN
+00000001 l       *ABS*	00000000 GPIO_OUTPUT
+00000008 l       *ABS*	00000000 LOW_LEVEL
+0000000c l       *ABS*	00000000 HIGH_LEVEL
+00000009 l       *ABS*	00000000 RISING_EDGE
+0000000a l       *ABS*	00000000 FALLING_EDGE
+0000000b l       *ABS*	00000000 DOUBLE_EDGE
+40049000 l       *ABS*	00000000 PORT_PCR_BASE
+400ff000 l       *ABS*	00000000 PORT_GPIO
+00000113 l       *ABS*	00000000 LIGHT_RED
+00000109 l       *ABS*	00000000 LIGHT_BLUE
+00000112 l       *ABS*	00000000 LIGHT_GREEN
+00000000 l       *ABS*	00000000 LIGHT_ON
+00000001 l       *ABS*	00000000 LIGHT_OFF
+00000000 l       *ABS*	00000000 UART0
+00000001 l       *ABS*	00000000 UART1
+00000002 l       *ABS*	00000000 UART2
+00000fa0 l       *ABS*	00000000 MCGIRCLK
+0000bb80 l       *ABS*	00000000 MCGPLL
+00005dc0 l       *ABS*	00000000 BUSCLK
+00000fa0 l       *ABS*	00000000 UART0_MCGIRCLK
+0000bb80 l       *ABS*	00000000 UART0_MCGPLL
+00015dc0 l       *ABS*	00000000 UART1_BUSCLK
+00025dc0 l       *ABS*	00000000 UART2_BUSCLK
+40048004 l       *ABS*	00000000 SIM_SOPT2
+0c000000 l       *ABS*	00000000 SIM_MCGIRCLK
+04000000 l       *ABS*	00000000 SIM_MCGFLLCLK
+40048034 l       *ABS*	00000000 SIM_SCGC4
+00000000 l       *ABS*	00000000 UART_BDH
+00000001 l       *ABS*	00000000 UART_BDL
+00000002 l       *ABS*	00000000 UART_C1
+00000003 l       *ABS*	00000000 UART_C2
+00000006 l       *ABS*	00000000 UART_C3
+0000000a l       *ABS*	00000000 UART_C4
+00000008 l       *ABS*	00000000 UART_MA1
+00000009 l       *ABS*	00000000 UART_MA2
+00000004 l       *ABS*	00000000 UART_S1
+00000005 l       *ABS*	00000000 UART_S2
+00000007 l       *ABS*	00000000 UART_D
+00000080 l       *ABS*	00000000 uart_s1_TDRE_mask
+00000020 l       *ABS*	00000000 uart_c2_RIE_mask
+00000020 l       *ABS*	00000000 uart_s1_RDRF_mask
+00000812 l       .text	00000000 irq_end
+00000000 l    df *ABS*	00000000 ./08_Source/main.o
+00000000 l       *ABS*	00000000 PTA_NUM
+00000100 l       *ABS*	00000000 PTB_NUM
+00000200 l       *ABS*	00000000 PTC_NUM
+00000300 l       *ABS*	00000000 PTD_NUM
+00000400 l       *ABS*	00000000 PTE_NUM
+00000000 l       *ABS*	00000000 GPIO_IN
+00000001 l       *ABS*	00000000 GPIO_OUTPUT
+00000008 l       *ABS*	00000000 LOW_LEVEL
+0000000c l       *ABS*	00000000 HIGH_LEVEL
+00000009 l       *ABS*	00000000 RISING_EDGE
+0000000a l       *ABS*	00000000 FALLING_EDGE
+0000000b l       *ABS*	00000000 DOUBLE_EDGE
+40049000 l       *ABS*	00000000 PORT_PCR_BASE
+400ff000 l       *ABS*	00000000 PORT_GPIO
+00000113 l       *ABS*	00000000 LIGHT_RED
+00000109 l       *ABS*	00000000 LIGHT_BLUE
+00000112 l       *ABS*	00000000 LIGHT_GREEN
+00000000 l       *ABS*	00000000 LIGHT_ON
+00000001 l       *ABS*	00000000 LIGHT_OFF
+00000000 l       *ABS*	00000000 UART0
+00000001 l       *ABS*	00000000 UART1
+00000002 l       *ABS*	00000000 UART2
+00000fa0 l       *ABS*	00000000 MCGIRCLK
+0000bb80 l       *ABS*	00000000 MCGPLL
+00005dc0 l       *ABS*	00000000 BUSCLK
+00000fa0 l       *ABS*	00000000 UART0_MCGIRCLK
+0000bb80 l       *ABS*	00000000 UART0_MCGPLL
+00015dc0 l       *ABS*	00000000 UART1_BUSCLK
+00025dc0 l       *ABS*	00000000 UART2_BUSCLK
+00001048 l       .text	00000000 UART_BASE_PTR
+00001054 l       .text	00000000 UART_BASE_TXD
+00001060 l       .text	00000000 UART_BASE_RXD
+40048004 l       *ABS*	00000000 SIM_SOPT2
+0c000000 l       *ABS*	00000000 SIM_MCGIRCLK
+04000000 l       *ABS*	00000000 SIM_MCGFLLCLK
+40048034 l       *ABS*	00000000 SIM_SCGC4
+00000000 l       *ABS*	00000000 UART_BDH
+00000001 l       *ABS*	00000000 UART_BDL
+00000002 l       *ABS*	00000000 UART_C1
+00000003 l       *ABS*	00000000 UART_C2
+00000006 l       *ABS*	00000000 UART_C3
+0000000a l       *ABS*	00000000 UART_C4
+00000008 l       *ABS*	00000000 UART_MA1
+00000009 l       *ABS*	00000000 UART_MA2
+00000004 l       *ABS*	00000000 UART_S1
+00000005 l       *ABS*	00000000 UART_S2
+00000007 l       *ABS*	00000000 UART_D
+00000080 l       *ABS*	00000000 uart_s1_TDRE_mask
+00000020 l       *ABS*	00000000 uart_c2_RIE_mask
+00000020 l       *ABS*	00000000 uart_s1_RDRF_mask
+0000106c l       .text	00000000 declaration
+0000106c l       .text	00000000 RUN_COUNTER_MAX
+00001070 l       .text	00000000 test
+00001093 l       .text	00000000 test2
+00000864 l       .text	00000000 main_repeat
+00000868 l       .text	00000000 .hidden main_loop
+00000000 l    df *ABS*	00000000 ./06_App_Component/light/light.o
+00000000 l       *ABS*	00000000 PTA_NUM
+00000100 l       *ABS*	00000000 PTB_NUM
+00000200 l       *ABS*	00000000 PTC_NUM
+00000300 l       *ABS*	00000000 PTD_NUM
+00000400 l       *ABS*	00000000 PTE_NUM
+00000000 l       *ABS*	00000000 GPIO_IN
+00000001 l       *ABS*	00000000 GPIO_OUTPUT
+00000008 l       *ABS*	00000000 LOW_LEVEL
+0000000c l       *ABS*	00000000 HIGH_LEVEL
+00000009 l       *ABS*	00000000 RISING_EDGE
+0000000a l       *ABS*	00000000 FALLING_EDGE
+0000000b l       *ABS*	00000000 DOUBLE_EDGE
+40049000 l       *ABS*	00000000 PORT_PCR_BASE
+400ff000 l       *ABS*	00000000 PORT_GPIO
+00000113 l       *ABS*	00000000 LIGHT_RED
+00000109 l       *ABS*	00000000 LIGHT_BLUE
+00000112 l       *ABS*	00000000 LIGHT_GREEN
+00000000 l       *ABS*	00000000 LIGHT_ON
+00000001 l       *ABS*	00000000 LIGHT_OFF
+00000000 l    df *ABS*	00000000 ./05_Driver/uart/uart.o
+00000000 l       *ABS*	00000000 PTA_NUM
+00000100 l       *ABS*	00000000 PTB_NUM
+00000200 l       *ABS*	00000000 PTC_NUM
+00000300 l       *ABS*	00000000 PTD_NUM
+00000400 l       *ABS*	00000000 PTE_NUM
+00000000 l       *ABS*	00000000 GPIO_IN
+00000001 l       *ABS*	00000000 GPIO_OUTPUT
+00000008 l       *ABS*	00000000 LOW_LEVEL
+0000000c l       *ABS*	00000000 HIGH_LEVEL
+00000009 l       *ABS*	00000000 RISING_EDGE
+0000000a l       *ABS*	00000000 FALLING_EDGE
+0000000b l       *ABS*	00000000 DOUBLE_EDGE
+40049000 l       *ABS*	00000000 PORT_PCR_BASE
+400ff000 l       *ABS*	00000000 PORT_GPIO
+00000000 l       *ABS*	00000000 UART0
+00000001 l       *ABS*	00000000 UART1
+00000002 l       *ABS*	00000000 UART2
+00000fa0 l       *ABS*	00000000 MCGIRCLK
+0000bb80 l       *ABS*	00000000 MCGPLL
+00005dc0 l       *ABS*	00000000 BUSCLK
+00000fa0 l       *ABS*	00000000 UART0_MCGIRCLK
+0000bb80 l       *ABS*	00000000 UART0_MCGPLL
+00015dc0 l       *ABS*	00000000 UART1_BUSCLK
+00025dc0 l       *ABS*	00000000 UART2_BUSCLK
+00001108 l       .text	00000000 UART_BASE_PTR
+00001114 l       .text	00000000 UART_BASE_TXD
+00001120 l       .text	00000000 UART_BASE_RXD
+40048004 l       *ABS*	00000000 SIM_SOPT2
+0c000000 l       *ABS*	00000000 SIM_MCGIRCLK
+04000000 l       *ABS*	00000000 SIM_MCGFLLCLK
+40048034 l       *ABS*	00000000 SIM_SCGC4
+00000000 l       *ABS*	00000000 UART_BDH
+00000001 l       *ABS*	00000000 UART_BDL
+00000002 l       *ABS*	00000000 UART_C1
+00000003 l       *ABS*	00000000 UART_C2
+00000006 l       *ABS*	00000000 UART_C3
+0000000a l       *ABS*	00000000 UART_C4
+00000008 l       *ABS*	00000000 UART_MA1
+00000009 l       *ABS*	00000000 UART_MA2
+00000004 l       *ABS*	00000000 UART_S1
+00000005 l       *ABS*	00000000 UART_S2
+00000007 l       *ABS*	00000000 UART_D
+00000080 l       *ABS*	00000000 uart_s1_TDRE_mask
+00000020 l       *ABS*	00000000 uart_c2_RIE_mask
+00000020 l       *ABS*	00000000 uart_s1_RDRF_mask
+0000112c l       .text	00000000 table_irq_uart
+00000000 l       *ABS*	00000000 uart_clk
+00000944 l       .text	00000000 u12
+000008ba l       .text	00000000 u0
+000009d0 l       .text	00000000 uart_init_end
+0000094e l       .text	00000000 u1
+0000096a l       .text	00000000 u2
+00000984 l       .text	00000000 set_u12
+000009d8 l       .text	00000000 uart_send1_loop
+000009f6 l       .text	00000000 uart_send1_exit
+00000a00 l       .text	00000000 uart_send1_suc
+00000a02 l       .text	00000000 uart_send1_end
+00000a0e l       .text	00000000 uart_sendN_loop
+00000a22 l       .text	00000000 uart_sendN_fail
+00000a26 l       .text	00000000 uart_sendN_suc
+00000a28 l       .text	00000000 uart_sendN_end
+00000a32 l       .text	00000000 uart_sendstr_loop
+00000a46 l       .text	00000000 uart_sendstr_back
+00000a50 l       .text	00000000 uart_sendstr_suc
+00000a52 l       .text	00000000 uart_sendstr_end
+00000a5a l       .text	00000000 uart_re1_loop
+00000a78 l       .text	00000000 uart_re1_back
+00000a82 l       .text	00000000 uart_re1_suc
+00000a84 l       .text	00000000 uart_re1_end
+00000a8e l       .text	00000000 uart_reN_loop
+00000aa0 l       .text	00000000 uart_reN_back
+00000aa8 l       .text	00000000 uart_reN_suc
+00000aaa l       .text	00000000 uart_reN_end
+00000000 l    df *ABS*	00000000 ./05_Driver/gpio/gpio.o
+00000000 l       *ABS*	00000000 PTA_NUM
+00000100 l       *ABS*	00000000 PTB_NUM
+00000200 l       *ABS*	00000000 PTC_NUM
+00000300 l       *ABS*	00000000 PTD_NUM
+00000400 l       *ABS*	00000000 PTE_NUM
+00000000 l       *ABS*	00000000 GPIO_IN
+00000001 l       *ABS*	00000000 GPIO_OUTPUT
+00000008 l       *ABS*	00000000 LOW_LEVEL
+0000000c l       *ABS*	00000000 HIGH_LEVEL
+00000009 l       *ABS*	00000000 RISING_EDGE
+0000000a l       *ABS*	00000000 FALLING_EDGE
+0000000b l       *ABS*	00000000 DOUBLE_EDGE
+40049000 l       *ABS*	00000000 PORT_PCR_BASE
+400ff000 l       *ABS*	00000000 PORT_GPIO
+00000d68 l       .text	00000000 gpio_port_pin_resolution
+00000b84 l       .text	00000000 gpio_init_1
+00000b8c l       .text	00000000 gpio_init_2
+00000ba0 l       .text	00000000 gpio_init_3
+00000ba8 l       .text	00000000 gpio_init_4
+00000bc8 l       .text	00000000 gpio_set_1
+00000bd2 l       .text	00000000 gpio_set_2
+00000bd4 l       .text	00000000 gpio_get
+00000bf6 l       .text	00000000 gpio_get_1
+00000bf8 l       .text	00000000 gpio_get_2
+00000c1a l       .text	00000000 gpio_pull
+00000c4e l       .text	00000000 gpio_pull_0
+00000c5c l       .text	00000000 gpio_pull_1
+00000c6a l       .text	00000000 gpio_pull_2
+00000c6e l       .text	00000000 gpio_pull_3
+00000c70 l       .text	00000000 gpio_drive_strength
+00000c98 l       .text	00000000 gpio_enable_int
+00000cd2 l       .text	00000000 gpio_enable_int_0
+00000cf8 l       .text	00000000 gpio_enable_int_1
+00000d1a l       .text	00000000 gpio_enable_int_2
+00000d1c l       .text	00000000 gpio_disable_int
+00000d52 l       .text	00000000 gpio_disable_int_0
+00000d5e l       .text	00000000 gpio_disable_int_1
+00000d66 l       .text	00000000 gpio_disable_int_2
+00000000 l    df *ABS*	00000000 _udivsi3.o
+00000e0c l       .text	00000000 .udivsi3_skip_div0_test
+00000000 l    df *ABS*	00000000 _dvmd_tls.o
+00000000 l    df *ABS*	00000000 system_MKL25Z4.c
+00000000 l    df *ABS*	00000000 ./07_Soft_Component/common/common.o
+000010b4 l       .text	00000000 NVIC_BASE_PTR
+000010d0 l       .text	00000000 enable_irq_start
+000010f2 l       .text	00000000 disable_irq_start
+00000000 l    df *ABS*	00000000 
+00000400 l       *ABS*	00000000 STACK_SIZE
+1ffff400 l       .heap	00000000 __HeapLimit
+00000400 l       *ABS*	00000000 HEAP_SIZE
+00001130 l       .text	00000000 __DATA_ROM
+20002c00 l       *ABS*	00000000 __StackLimit
+1ffff000 g       .heap	00000000 __HeapBase
+1ffff000 g       .text	00000000 __data_start__
+00000e00  w    F .text	00000004 I2C0_IRQHandler
+00000a2a g       .text	00000000 uart_send_str
+00000e00  w    F .text	00000004 HardFault_Handler
+00000e00  w    F .text	00000004 SysTick_Handler
+00000890 g       .text	00000000 light_init
+00000e00  w    F .text	00000004 PendSV_Handler
+00000e00  w    F .text	00000004 NMI_Handler
+00001130 g       .text	00000000 __exidx_end
+00000a04 g       .text	00000000 uart_sendN
+00000e00  w    F .text	00000004 I2C1_IRQHandler
+00000800 g     F .text	00000000 UART1_IRQHandler
+00001130 g       .text	00000000 __etext
+00000e00  w    F .text	00000004 DMA2_IRQHandler
+00000aac g       .text	00000000 uart_enable_re_int
+00000e00  w    F .text	00000004 TPM0_IRQHandler
+00000e00  w    F .text	00000004 LLWU_IRQHandler
+00000e00  w    F .text	00000004 TSI0_IRQHandler
+00000e00  w    F .text	00000004 UART0_IRQHandler
+000010c8 g       .text	00000000 enable_irq
+00001130 g       .text	00000000 __DTOR_END__
+00000e00  w    F .text	00000004 ADC0_IRQHandler
+00000e00  w    F .text	00000004 Reserved39_IRQHandler
+00000e08 g     F .text	00000088 .hidden __udivsi3
+1ffff000 g       .text	00000000 __START_BSS
+1ffff000 g       .text	00000000 __bss_start__
+00000e00  w    F .text	00000004 SPI1_IRQHandler
+00000e00  w    F .text	00000004 DefaultISR
+00000ace g       .text	00000000 uart_disable_re_int
+00000e00  w    F .text	00000004 PORTD_IRQHandler
+00001130 g       .text	00000000 __exidx_start
+00000e00  w    F .text	00000004 TPM2_IRQHandler
+00000e00  w    F .text	00000004 RTC_IRQHandler
+00000dbc  w    F .text	00000044 Reset_Handler
+00000a86 g       .text	00000000 uart_reN
+00000e00  w    F .text	00000004 RTC_Seconds_IRQHandler
+00000e00  w    F .text	00000004 MCG_IRQHandler
+00000e00  w    F .text	00000004 UART2_IRQHandler
+1ffff000 g       .text	00000000 __data_end__
+00001130 g       .text	00000000 __CTOR_LIST__
+000008ac g       .text	00000000 uart_init
+1ffff000 g       .text	00000000 __bss_end__
+00000e00  w    F .text	00000004 Reserved20_IRQHandler
+00000ea4  w    F .text	00000002 .hidden __aeabi_ldiv0
+00000e00  w    F .text	00000004 USB0_IRQHandler
+00000a54 g       .text	00000000 uart_re1
+000008a4 g       .text	00000000 light_change
+00000000 g       .interrupts	000000c0 __isr_vector
+00000814 g     F .text	00000000 main
+00000e00  w    F .text	00000004 PIT_IRQHandler
+00000e08 g     F .text	00000000 .hidden __aeabi_uidiv
+00000e00  w    F .text	00000004 SVC_Handler
+1ffff000 g       .text	00000000 __DATA_RAM
+1ffff000 g       .heap	00000000 __end__
+00001130 g       .text	00000000 __CTOR_END__
+00000e00  w    F .text	00000004 DMA3_IRQHandler
+00001130 g       .text	00000000 __DTOR_LIST__
+1ffff000 g       .text	00000000 __END_BSS
+00000ea8 g     F .text	000001a0 SystemInit
+00000e00  w    F .text	00000004 DMA0_IRQHandler
+00000e00  w    F .text	00000004 DAC0_IRQHandler
+20003000 g       *ABS*	00000000 __StackTop
+1ffff000 g       .text	00000000 _mtb_end
+00001130 g       .text	00000000 __DATA_END
+00000e00  w    F .text	00000004 Reserved45_IRQHandler
+00000e00  w    F .text	00000004 TPM1_IRQHandler
+0000089a g       .text	00000000 light_control
+00000e90 g     F .text	00000012 .hidden __aeabi_uidivmod
+00000e00  w    F .text	00000004 LVD_LVW_IRQHandler
+00000e00  w    F .text	00000004 SPI0_IRQHandler
+00000e00  w    F .text	00000004 PORTA_IRQHandler
+00000000 g       .interrupts	00000000 __VECTOR_TABLE
+00000e00  w    F .text	00000004 FTFA_IRQHandler
+1ffff000 g       .text	00000000 _mtb_start
+00000ea4  w    F .text	00000002 .hidden __aeabi_idiv0
+00000e00  w    F .text	00000004 LPTMR0_IRQHandler
+000009d2 g       .text	00000000 uart_send1
+00000baa g       .text	00000000 gpio_set
+00000bfa g       .text	00000000 gpio_reverse
+00000b44 g       .text	00000000 gpio_init
+00000e00  w    F .text	00000004 CMP0_IRQHandler
+00000e00  w    F .text	00000004 DMA1_IRQHandler
+000010ea g       .text	00000000 disable_irq
+
+
+
+Disassembly of section .text:
+
+00000800 <UART1_IRQHandler>:
+$t():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/isr.S:24
+# 函数返回：无
+# 参数说明：无
+# 功能概要：UART1中断服务例程，将接收的单字节数据发送出去
+#===========================================================================
+UART1_IRQHandler:
+    push {r4-r7,lr}
+     800:	b5f0      	push	{r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/isr.S:25
+    cpsid i
+     802:	b672      	cpsid	i
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/isr.S:27
+    
+    ldr r0,=UART1
+     804:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/isr.S:28
+    bl uart_re1
+     806:	f000 f925 	bl	a54 <uart_re1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/isr.S:30
+    
+    ldr r0,=UART1
+     80a:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/isr.S:31
+    bl uart_send1
+     80c:	f000 f8e1 	bl	9d2 <uart_send1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/isr.S:33
+
+    cpsie i
+     810:	b662      	cpsie	i
+
+00000812 <irq_end>:
+irq_end():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/isr.S:35
+irq_end:    
+    pop {r4-r7,pc}
+     812:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+00000814 <main>:
+$t():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:19
+    .align 2
+#end  函数定义区域
+
+ main:
+    .syntax divided
+    cpsid i                                 @关闭总中断，进行初始化
+     814:	b672      	cpsid	i
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:21
+#小灯初始化
+    ldr r0,=LIGHT_BLUE
+     816:	4818      	ldr	r0, [pc, #96]	; (878 <main_loop+0x10>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:22
+    ldr r3,=LIGHT_ON
+     818:	2300      	movs	r3, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:23
+    bl light_init                           @调用小灯初始化函数
+     81a:	f000 f839 	bl	890 <light_init>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:26
+
+#UART1初始化
+    ldr r0,=UART1_BUSCLK
+     81e:	4817      	ldr	r0, [pc, #92]	; (87c <main_loop+0x14>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:27
+    ldr r1,=9600
+     820:	4917      	ldr	r1, [pc, #92]	; (880 <main_loop+0x18>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:28
+    mov r2,#0
+     822:	2200      	movs	r2, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:29
+    mov r3,#0
+     824:	2300      	movs	r3, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:30
+    bl  uart_init
+     826:	f000 f841 	bl	8ac <uart_init>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:35
+
+#串口输出测试语句
+
+#使用uart_send_str函数发送
+    ldr r0,=UART1
+     82a:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:36
+    ldr r1,=test
+     82c:	4915      	ldr	r1, [pc, #84]	; (884 <main_loop+0x1c>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:37
+    bl uart_send_str
+     82e:	f000 f8fc 	bl	a2a <uart_send_str>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:40
+
+#使用uart_send1函数发送
+    ldr r0,=UART1
+     832:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:41
+    mov r1,#10    @回车
+     834:	210a      	movs	r1, #10
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:42
+    bl uart_send1
+     836:	f000 f8cc 	bl	9d2 <uart_send1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:43
+    ldr r0,=UART1
+     83a:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:44
+    mov r1,#10    @回车
+     83c:	210a      	movs	r1, #10
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:45
+    bl uart_send1
+     83e:	f000 f8c8 	bl	9d2 <uart_send1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:48
+
+#使用uart_sendN函数发送
+    ldr r0,=UART1
+     842:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:49
+    ldr r1,=test2
+     844:	4910      	ldr	r1, [pc, #64]	; (888 <main_loop+0x20>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:50
+    mov r2,#31
+     846:	221f      	movs	r2, #31
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:51
+    bl uart_sendN
+     848:	f000 f8dc 	bl	a04 <uart_sendN>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:54
+
+#使用uart_send1函数发送
+    ldr r0,=UART1
+     84c:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:55
+    mov r1,#10    @回车
+     84e:	210a      	movs	r1, #10
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:56
+    bl uart_send1
+     850:	f000 f8bf 	bl	9d2 <uart_send1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:57
+    ldr r0,=UART1
+     854:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:58
+    mov r1,#10    @回车
+     856:	210a      	movs	r1, #10
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:59
+    bl uart_send1
+     858:	f000 f8bb 	bl	9d2 <uart_send1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:62
+
+#打开串口中断
+    ldr r0,=UART1
+     85c:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:63
+    bl uart_enable_re_int
+     85e:	f000 f925 	bl	aac <uart_enable_re_int>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:64
+	cpsie  i                                @开总中断
+     862:	b662      	cpsie	i
+
+00000864 <main_repeat>:
+main_repeat():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:68
+
+#主循环，通过RUN_COUNTER_MAX递减来延迟，设定小灯的闪烁间隔
+main_repeat:
+    ldr r4,=RUN_COUNTER_MAX                 @取延时计数值RUN_COUNTER_MAX的存储地址到r4
+     864:	4c09      	ldr	r4, [pc, #36]	; (88c <main_loop+0x24>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:69
+    ldr r4,[r4]
+     866:	6824      	ldr	r4, [r4, #0]
+
+00000868 <main_loop>:
+main_loop():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:77
+/*    ldrb r0,=UART1
+    ldr r1,=test
+    bl uart_send_str
+*/
+main_loop:                                       @取延时计数值RUN_COUNTER_MAX的值到r4
+    sub r4,#1
+     868:	3c01      	subs	r4, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:78
+    cmp r4,#1                               @判断延时时间是否已到
+     86a:	2c01      	cmp	r4, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:79
+    bne main_loop
+     86c:	d1fc      	bne.n	868 <main_loop>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:81
+
+    ldr r0,=LIGHT_BLUE
+     86e:	4802      	ldr	r0, [pc, #8]	; (878 <main_loop+0x10>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:82
+    bl light_change                         @如延时时间已到，则调用小灯亮暗转变函数
+     870:	f000 f818 	bl	8a4 <light_change>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:84
+
+    b main_repeat
+     874:	e7f6      	b.n	864 <main_repeat>
+     876:	46c0      	nop			; (mov r8, r8)
+$d():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:21
+
+ main:
+    .syntax divided
+    cpsid i                                 @关闭总中断，进行初始化
+#小灯初始化
+    ldr r0,=LIGHT_BLUE
+     878:	00000109 	.word	0x00000109
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:26
+    ldr r3,=LIGHT_ON
+    bl light_init                           @调用小灯初始化函数
+
+#UART1初始化
+    ldr r0,=UART1_BUSCLK
+     87c:	00015dc0 	.word	0x00015dc0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:27
+    ldr r1,=9600
+     880:	00002580 	.word	0x00002580
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:36
+
+#串口输出测试语句
+
+#使用uart_send_str函数发送
+    ldr r0,=UART1
+    ldr r1,=test
+     884:	00001070 	.word	0x00001070
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:49
+    mov r1,#10    @回车
+    bl uart_send1
+
+#使用uart_sendN函数发送
+    ldr r0,=UART1
+    ldr r1,=test2
+     888:	00001093 	.word	0x00001093
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../08_Source/main.S:68
+    bl uart_enable_re_int
+	cpsie  i                                @开总中断
+
+#主循环，通过RUN_COUNTER_MAX递减来延迟，设定小灯的闪烁间隔
+main_repeat:
+    ldr r4,=RUN_COUNTER_MAX                 @取延时计数值RUN_COUNTER_MAX的存储地址到r4
+     88c:	0000106c 	.word	0x0000106c
+
+00000890 <light_init>:
+$t():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../06_App_Component/light/light.S:17
+# 参数说明：r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+#          r3:设定小灯状态。由light.inc中宏定义。
+# 功能概要：  指示灯驱动初始化
+#============================================================================
+light_init:
+    push {r0-r3,lr}         @保存现场，将下一条指令地址入栈
+     890:	b50f      	push	{r0, r1, r2, r3, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../06_App_Component/light/light.S:18
+    mov r2,#1               @小灯为输出
+     892:	2201      	movs	r2, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../06_App_Component/light/light.S:19
+    bl gpio_init            @调用gpio初始化函数
+     894:	f000 f956 	bl	b44 <gpio_init>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../06_App_Component/light/light.S:20
+    pop {r0-r3,pc}          @恢复现场，返回主程序处继续执行
+     898:	bd0f      	pop	{r0, r1, r2, r3, pc}
+
+0000089a <light_control>:
+light_control():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../06_App_Component/light/light.S:30
+# 参数说明：   r0：(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+#            r3：设定小灯状态。由light.inc中宏定义。
+# 功能概要：控制指示灯亮暗。
+#============================================================================
+light_control:
+    push {r0-r3,lr}
+     89a:	b50f      	push	{r0, r1, r2, r3, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../06_App_Component/light/light.S:31
+    mov r2,#1               @小灯为输出
+     89c:	2201      	movs	r2, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../06_App_Component/light/light.S:32
+    bl gpio_set             @调用gpio引脚设置函数
+     89e:	f000 f984 	bl	baa <gpio_set>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../06_App_Component/light/light.S:33
+    pop {r0-r3,pc}
+     8a2:	bd0f      	pop	{r0, r1, r2, r3, pc}
+
+000008a4 <light_change>:
+light_change():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../06_App_Component/light/light.S:42
+# 函数返回：     无                
+# 参数说明：    r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+# 功能概要：切换指示灯亮暗。
+#============================================================================
+light_change:
+    push {r0-r3,lr}
+     8a4:	b50f      	push	{r0, r1, r2, r3, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../06_App_Component/light/light.S:43
+    bl gpio_reverse            @调用后sgpio引脚反转函数
+     8a6:	f000 f9a8 	bl	bfa <gpio_reverse>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../06_App_Component/light/light.S:44
+    pop {r0-r3,pc}
+     8aa:	bd0f      	pop	{r0, r1, r2, r3, pc}
+
+000008ac <uart_init>:
+$t():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:31
+#           r1: 波特率：300、600、1200、2400、4800、9600、19200、115200...
+# 功能概要：初始化uart模块。当选择UART0时,时钟源只能选择MCGIRCLK或MCGPLL（若选择MCGIRCLK时
+#           波特率需小于19200）;当为UART1、2时，时钟源只能选择BUSCLK
+#===========================================================================
+uart_init:
+    push {r4-r7,lr}             @保存现场,pc(lr)入栈
+     8ac:	b5f0      	push	{r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:32
+    uart_clk                    @解析串口号r0和时钟源r2
+     8ae:	1c02      	adds	r2, r0, #0
+     8b0:	0c00      	lsrs	r0, r0, #16
+     8b2:	4b8f      	ldr	r3, [pc, #572]	; (af0 <uart_disable_re_int+0x22>)
+     8b4:	401a      	ands	r2, r3
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:33
+    cmp r0,#0                   @判断是否为串口0
+     8b6:	2800      	cmp	r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:34
+    bne u12                     @非串口0，转u12处理
+     8b8:	d144      	bne.n	944 <u12>
+
+000008ba <u0>:
+u0():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:37
+u0:                             @处理串口0
+#使用MCGPLLCLK=48000Khz时钟源
+    ldr r4,=SIM_MCGFLLCLK
+     8ba:	4c8e      	ldr	r4, [pc, #568]	; (af4 <uart_disable_re_int+0x26>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:38
+    ldr r5,=SIM_SOPT2 
+     8bc:	4d8e      	ldr	r5, [pc, #568]	; (af8 <uart_disable_re_int+0x2a>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:39
+    ldr r6,[r5]
+     8be:	682e      	ldr	r6, [r5, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:40
+    orr r4,r6
+     8c0:	4334      	orrs	r4, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:41
+    ldr r6,=0x10000
+     8c2:	4e8e      	ldr	r6, [pc, #568]	; (afc <uart_disable_re_int+0x2e>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:42
+    orr r4,r6
+     8c4:	4334      	orrs	r4, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:43
+    str r4,[r5] 
+     8c6:	602c      	str	r4, [r5, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:45
+#使能UART0_TXD、UART0_RXD
+    lsl r0,r0,#2           
+     8c8:	0080      	lsls	r0, r0, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:46
+    ldr r7,=UART_BASE_RXD
+     8ca:	4f8d      	ldr	r7, [pc, #564]	; (b00 <uart_disable_re_int+0x32>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:47
+    ldr r7,[r7,r0]              @得到串口基地址
+     8cc:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:48
+    ldr r6,=0x100                             
+     8ce:	4e8d      	ldr	r6, [pc, #564]	; (b04 <uart_disable_re_int+0x36>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:49
+    str r6,[r7]                     
+     8d0:	603e      	str	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:50
+    ldr r7,=UART_BASE_TXD
+     8d2:	4f8d      	ldr	r7, [pc, #564]	; (b08 <uart_disable_re_int+0x3a>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:51
+    ldr r7,[r7,r0]                
+     8d4:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:52
+    str r6,[r7]                 
+     8d6:	603e      	str	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:54
+#启动串口0时钟
+    ldr r7,=SIM_SCGC4
+     8d8:	4f8c      	ldr	r7, [pc, #560]	; (b0c <uart_disable_re_int+0x3e>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:55
+    ldr r6,[r7]
+     8da:	683e      	ldr	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:56
+    ldr r5,=0x400
+     8dc:	4d8c      	ldr	r5, [pc, #560]	; (b10 <uart_disable_re_int+0x42>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:57
+    orr r6,r5
+     8de:	432e      	orrs	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:58
+    str r6,[r7]
+     8e0:	603e      	str	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:60
+#暂时关闭串口0发送、接收功能
+    ldr r7,=UART_BASE_PTR
+     8e2:	4f8c      	ldr	r7, [pc, #560]	; (b14 <uart_disable_re_int+0x46>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:61
+    ldr r7,[r7,r0]
+     8e4:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:62
+    ldrb r6,[r7,#3]             @uart_C2
+     8e6:	78fe      	ldrb	r6, [r7, #3]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:63
+    ldr r5,=0xFFFFFFF3
+     8e8:	4d8b      	ldr	r5, [pc, #556]	; (b18 <uart_disable_re_int+0x4a>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:64
+    and r6,r5
+     8ea:	402e      	ands	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:65
+    str r6,[r7]
+     8ec:	603e      	str	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:67
+#配置串口工作模式:8位无校验模式
+    ldr r4,=1000
+     8ee:	4c8b      	ldr	r4, [pc, #556]	; (b1c <uart_disable_re_int+0x4e>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:68
+    ldr r2,=MCGPLL
+     8f0:	4a8b      	ldr	r2, [pc, #556]	; (b20 <uart_disable_re_int+0x52>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:69
+    mul r2,r4                  @r2=MCGPLL时钟48000000Hz
+     8f2:	4362      	muls	r2, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:70
+    lsl r1,r1,#4        
+     8f4:	0109      	lsls	r1, r1, #4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:71
+    mov r0,r2     
+     8f6:	1c10      	adds	r0, r2, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:72
+    bl __aeabi_uidiv
+     8f8:	f000 fa86 	bl	e08 <__aeabi_uidiv>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:73
+    uxth r1,r0    
+     8fc:	b281      	uxth	r1, r0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:74
+    ldrb r6,[r7]
+     8fe:	783e      	ldrb	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:75
+    uxth r6,r6        
+     900:	b2b6      	uxth	r6, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:76
+    mov r5,#31   
+     902:	251f      	movs	r5, #31
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:77
+    bic r6,r5
+     904:	43ae      	bics	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:78
+    ldr r3,=0x1F00
+     906:	4b87      	ldr	r3, [pc, #540]	; (b24 <uart_disable_re_int+0x56>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:79
+    and r3,r1    
+     908:	400b      	ands	r3, r1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:80
+    asr r3,#8                   @得到分频因子
+     90a:	121b      	asrs	r3, r3, #8
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:81
+    uxtb r2,r3
+     90c:	b2da      	uxtb	r2, r3
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:82
+    orr r2,r6    
+     90e:	4332      	orrs	r2, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:83
+    strb r2,[r7]                @高位寄存器     
+     910:	703a      	strb	r2, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:84
+    strb r1,[r7,#1]             @低位寄存器
+     912:	7079      	strb	r1, [r7, #1]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:86
+#初始化控制寄存器,清标志位
+    mov r6,#0
+     914:	2600      	movs	r6, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:87
+    strb r6,[r7,#2] 
+     916:	70be      	strb	r6, [r7, #2]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:88
+    strb r6,[r7,#6]
+     918:	71be      	strb	r6, [r7, #6]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:89
+    mov r6,#0x0F
+     91a:	260f      	movs	r6, #15
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:90
+    strb r6,[r7,#10] 
+     91c:	72be      	strb	r6, [r7, #10]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:91
+    mov r6,#0
+     91e:	2600      	movs	r6, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:92
+    strb r6,[r7,#8] 
+     920:	723e      	strb	r6, [r7, #8]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:93
+    strb r6,[r7,#9]
+     922:	727e      	strb	r6, [r7, #9]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:94
+    ldrb r5,[r7,#4]
+     924:	793d      	ldrb	r5, [r7, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:95
+    uxtb r5,r5
+     926:	b2ed      	uxtb	r5, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:96
+    mov r6,#0x1F
+     928:	261f      	movs	r6, #31
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:97
+    orr r6,r5
+     92a:	432e      	orrs	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:98
+    strb r6,[r7,#4] 
+     92c:	713e      	strb	r6, [r7, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:99
+    ldrb r5,[r7,#5]
+     92e:	797d      	ldrb	r5, [r7, #5]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:100
+    uxtb r5,r5
+     930:	b2ed      	uxtb	r5, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:101
+    mov r6,#0xC0
+     932:	26c0      	movs	r6, #192	; 0xc0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:102
+    orr r6,r5
+     934:	432e      	orrs	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:103
+    strb r6,[r7,#5]
+     936:	717e      	strb	r6, [r7, #5]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:105
+#启动发送接收
+    ldrb r5,[r7,#3]
+     938:	78fd      	ldrb	r5, [r7, #3]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:106
+    uxtb r5,r5
+     93a:	b2ed      	uxtb	r5, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:107
+    mov r6,#0xC
+     93c:	260c      	movs	r6, #12
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:108
+    orr r6,r5
+     93e:	432e      	orrs	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:109
+    strb r6,[r7,#3]
+     940:	70fe      	strb	r6, [r7, #3]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:110
+    b  uart_init_end
+     942:	e045      	b.n	9d0 <uart_init_end>
+
+00000944 <u12>:
+u12():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:113
+u12:                     @开始处理串口1、2
+#判断串口1还是2
+    cmp r0,#1
+     944:	2801      	cmp	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:114
+    beq u1               @串口1，转u1设置处理
+     946:	d002      	beq.n	94e <u1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:115
+    cmp r0,#2
+     948:	2802      	cmp	r0, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:116
+    beq u2               @串口2，转u2设置处理
+     94a:	d00e      	beq.n	96a <u2>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:117
+    b uart_init_end      @非串口1、2，初始化结束
+     94c:	e040      	b.n	9d0 <uart_init_end>
+
+0000094e <u1>:
+u1():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:120
+u1:                      @串口1设置
+#使能UART1_TXD、UART1_RXD
+    lsl r0,#2  
+     94e:	0080      	lsls	r0, r0, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:121
+    ldr r7,=UART_BASE_TXD         
+     950:	4f6d      	ldr	r7, [pc, #436]	; (b08 <uart_disable_re_int+0x3a>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:122
+    ldr r7,[r7,r0]
+     952:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:123
+    ldr r6,=0x300                             
+     954:	4e74      	ldr	r6, [pc, #464]	; (b28 <uart_disable_re_int+0x5a>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:124
+    str r6,[r7]                    
+     956:	603e      	str	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:125
+    ldr r7,=UART_BASE_RXD 
+     958:	4f69      	ldr	r7, [pc, #420]	; (b00 <uart_disable_re_int+0x32>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:126
+    ldr r7,[r7,r0]                
+     95a:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:127
+    str r6,[r7]                
+     95c:	603e      	str	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:129
+#启动串口1时钟
+    ldr r7,=SIM_SCGC4
+     95e:	4f6b      	ldr	r7, [pc, #428]	; (b0c <uart_disable_re_int+0x3e>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:130
+    ldr r6,[r7]
+     960:	683e      	ldr	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:131
+    ldr r5,=0x800
+     962:	4d72      	ldr	r5, [pc, #456]	; (b2c <uart_disable_re_int+0x5e>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:132
+    orr r6,r5
+     964:	432e      	orrs	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:133
+    str r6,[r7]
+     966:	603e      	str	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:134
+    b set_u12
+     968:	e00c      	b.n	984 <set_u12>
+
+0000096a <u2>:
+u2():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:137
+u2:                         @串口2设置
+#使能UART2_TXD、UART2_RXD
+    lsl r0,#2  
+     96a:	0080      	lsls	r0, r0, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:138
+    ldr r7,=UART_BASE_TXD     
+     96c:	4f66      	ldr	r7, [pc, #408]	; (b08 <uart_disable_re_int+0x3a>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:139
+    ldr r7,[r7,r0]
+     96e:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:140
+    ldr r6,=0x400                             
+     970:	4e67      	ldr	r6, [pc, #412]	; (b10 <uart_disable_re_int+0x42>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:141
+    str r6,[r7]                     
+     972:	603e      	str	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:142
+    ldr r7,=UART_BASE_RXD 
+     974:	4f62      	ldr	r7, [pc, #392]	; (b00 <uart_disable_re_int+0x32>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:143
+    ldr r7,[r7,r0]                 
+     976:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:144
+    str r6,[r7]               
+     978:	603e      	str	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:146
+#启动串口2时钟
+    ldr r7,=SIM_SCGC4
+     97a:	4f64      	ldr	r7, [pc, #400]	; (b0c <uart_disable_re_int+0x3e>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:147
+    ldr r6,[r7]
+     97c:	683e      	ldr	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:148
+    ldr r5,=0x1000
+     97e:	4d6c      	ldr	r5, [pc, #432]	; (b30 <uart_disable_re_int+0x62>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:149
+    orr r6,r5
+     980:	432e      	orrs	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:150
+    str r6,[r7]
+     982:	603e      	str	r6, [r7, #0]
+
+00000984 <set_u12>:
+set_u12():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:153
+set_u12:                   @串口1、2公共设置
+#暂时关闭串口1、2发送与接收功能
+    ldr r7,=UART_BASE_PTR
+     984:	4f63      	ldr	r7, [pc, #396]	; (b14 <uart_disable_re_int+0x46>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:154
+    ldr r7,[r7,r0]
+     986:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:155
+    ldrb r4,[r7,#3]         
+     988:	78fc      	ldrb	r4, [r7, #3]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:156
+    uxtb r4,r4
+     98a:	b2e4      	uxtb	r4, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:157
+    mov r5,#12
+     98c:	250c      	movs	r5, #12
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:158
+    bic r4,r5
+     98e:	43ac      	bics	r4, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:159
+    strb r4,[r7,#3]     
+     990:	70fc      	strb	r4, [r7, #3]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:161
+#配置串口工作模式:8位无校验模式
+    mov r4,#0                    
+     992:	2400      	movs	r4, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:162
+    strb r4,[r7,#2]
+     994:	70bc      	strb	r4, [r7, #2]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:164
+
+    ldr r4,=1000
+     996:	4c61      	ldr	r4, [pc, #388]	; (b1c <uart_disable_re_int+0x4e>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:165
+    ldr r0,=BUSCLK
+     998:	4866      	ldr	r0, [pc, #408]	; (b34 <uart_disable_re_int+0x66>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:166
+    mul r0,r4             @r0=总线时钟24000000Hz
+     99a:	4360      	muls	r0, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:168
+
+    lsl r1,r1,#4     
+     99c:	0109      	lsls	r1, r1, #4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:169
+    bl __aeabi_uidiv
+     99e:	f000 fa33 	bl	e08 <__aeabi_uidiv>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:170
+    uxth r1,r0    
+     9a2:	b281      	uxth	r1, r0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:171
+    ldrb r6,[r7]    
+     9a4:	783e      	ldrb	r6, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:172
+    uxth r6,r6
+     9a6:	b2b6      	uxth	r6, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:173
+    mov r5,#31
+     9a8:	251f      	movs	r5, #31
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:174
+    bic r6,r5       
+     9aa:	43ae      	bics	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:175
+    ldr r3,=0x1F00
+     9ac:	4b5d      	ldr	r3, [pc, #372]	; (b24 <uart_disable_re_int+0x56>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:176
+    and r3,r0
+     9ae:	4003      	ands	r3, r0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:177
+    asr r3,#8
+     9b0:	121b      	asrs	r3, r3, #8
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:178
+    uxtb r2,r3
+     9b2:	b2da      	uxtb	r2, r3
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:179
+    orr r2,r6
+     9b4:	4332      	orrs	r2, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:180
+    strb r2,[r7]
+     9b6:	703a      	strb	r2, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:181
+    strb r0,[r7,#1]
+     9b8:	7078      	strb	r0, [r7, #1]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:183
+#初始化控制寄存器
+    mov r6,#0
+     9ba:	2600      	movs	r6, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:184
+    strb r6,[r7,#2]
+     9bc:	70be      	strb	r6, [r7, #2]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:185
+    strb r6,[r7,#6]
+     9be:	71be      	strb	r6, [r7, #6]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:186
+    strb r6,[r7,#5]
+     9c0:	717e      	strb	r6, [r7, #5]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:187
+    mov  r6,#0x1F
+     9c2:	261f      	movs	r6, #31
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:188
+    strb r6,[r7,#4]
+     9c4:	713e      	strb	r6, [r7, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:190
+#启动发送接收
+    ldrb r5,[r7,#3]
+     9c6:	78fd      	ldrb	r5, [r7, #3]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:191
+    uxtb r5,r5
+     9c8:	b2ed      	uxtb	r5, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:192
+    mov r6,#0xC
+     9ca:	260c      	movs	r6, #12
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:193
+    orr r6,r5
+     9cc:	432e      	orrs	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:194
+    strb r6,[r7,#3]    
+     9ce:	70fe      	strb	r6, [r7, #3]
+
+000009d0 <uart_init_end>:
+uart_init_end():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:196
+uart_init_end:
+    pop {r4-r7,pc}          @恢复现场,lr出栈到pc
+     9d0:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+000009d2 <uart_send1>:
+uart_send1():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:207
+#          r1:待发送的字节
+#函数返回：r0:0=正常,1=异常
+#功能概要：串行发送1个字节    
+#============================================================================
+uart_send1:
+    push {r4-r7,lr}  @保存现场,pc(lr)入栈
+     9d2:	b5f0      	push	{r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:208
+    mov r5 ,#0       @r5=0
+     9d4:	2500      	movs	r5, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:209
+    lsl r0,#2        @r0=r0*4,基地址单元地址偏移量
+     9d6:	0080      	lsls	r0, r0, #2
+
+000009d8 <uart_send1_loop>:
+uart_send1_loop():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:211
+uart_send1_loop:
+    ldr r4,=0xFBBB   @r4=发送缓冲区是否为空轮询次数阈值
+     9d8:	4c57      	ldr	r4, [pc, #348]	; (b38 <uart_disable_re_int+0x6a>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:212
+    cmp r5,r4        @判断循环变量值
+     9da:	42a5      	cmp	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:213
+    bcs uart_send1_exit  @达到轮询次数阈值转uart_send1_exit处理
+     9dc:	d20b      	bcs.n	9f6 <uart_send1_exit>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:214
+    add r5,#1         @当前轮询次数加1
+     9de:	3501      	adds	r5, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:216
+    
+    ldr r7,=UART_BASE_PTR @r7=所有UART的基地址
+     9e0:	4f4c      	ldr	r7, [pc, #304]	; (b14 <uart_disable_re_int+0x46>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:217
+    ldr r7,[r7,r0]    @r7=特定UART的基地址
+     9e2:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:218
+    ldr r6,=UART_S1   @r6=S1寄存器偏移地址
+     9e4:	2604      	movs	r6, #4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:219
+    ldrb r4,[r7,r6]  @r4=S1寄存器内容
+     9e6:	5dbc      	ldrb	r4, [r7, r6]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:220
+    uxth r4,r4       @扩展成32位无符号数
+     9e8:	b2a4      	uxth	r4, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:221
+    ldr r6,=uart_s1_TDRE_mask @r6=S1寄存器的TDRE位掩码
+     9ea:	2680      	movs	r6, #128	; 0x80
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:222
+    and r4,r6                 @取出S1中TDRE位的值
+     9ec:	4034      	ands	r4, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:223
+    cmp r4,#0         @判断发送缓冲区是否为空
+     9ee:	2c00      	cmp	r4, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:224
+    beq uart_send1_loop @非空则轮询状态，为空则继续
+     9f0:	d0f2      	beq.n	9d8 <uart_send1_loop>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:225
+    ldr r6,=UART_D     @为空，r6=D寄存器偏移地址
+     9f2:	2607      	movs	r6, #7
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:226
+    strb r1,[r7,r6]   @将待发送字节送D寄存器发送
+     9f4:	55b9      	strb	r1, [r7, r6]
+
+000009f6 <uart_send1_exit>:
+uart_send1_exit():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:228
+uart_send1_exit:
+    ldr r4,=0xFBBB    @r4=0xFBBB
+     9f6:	4c50      	ldr	r4, [pc, #320]	; (b38 <uart_disable_re_int+0x6a>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:229
+    cmp r5,r4         @比较循环变量r5与0xFBBB的大小
+     9f8:	42a5      	cmp	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:230
+    bcc uart_send1_suc@若r5<0xFBBB发送成功,转uart_send1_suc处理
+     9fa:	d301      	bcc.n	a00 <uart_send1_suc>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:231
+    mov r0,#1         @发送失败,r0=1
+     9fc:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:232
+    b uart_send1_end  @转uart_send1_end处理
+     9fe:	e000      	b.n	a02 <uart_send1_end>
+
+00000a00 <uart_send1_suc>:
+uart_send1_suc():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:234
+uart_send1_suc:
+    mov r0,#0         @发送成功,r0=0
+     a00:	2000      	movs	r0, #0
+
+00000a02 <uart_send1_end>:
+uart_send1_end():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:236
+uart_send1_end:    
+    pop {r4-r7,pc}    @现场恢复,lr出栈到pc
+     a02:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+00000a04 <uart_sendN>:
+uart_sendN():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:247
+#         r2:发送长度
+#函数返回： r0:0=正常,1=异常。
+#功能概要：串行发送n个字节
+#============================================================================
+uart_sendN:
+     push {r4-r7,lr}          @保存现场,pc(lr)入栈
+     a04:	b5f0      	push	{r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:248
+     mov r5,r0                @r5=r0=串口号
+     a06:	1c05      	adds	r5, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:249
+     mov r7,r1                @r7=发送缓冲区首地址
+     a08:	1c0f      	adds	r7, r1, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:250
+     mov r4,r2                @r4=发送长度
+     a0a:	1c14      	adds	r4, r2, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:251
+     mov r6,#0                @设置计数初值
+     a0c:	2600      	movs	r6, #0
+
+00000a0e <uart_sendN_loop>:
+uart_sendN_loop():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:253
+uart_sendN_loop:
+     mov r0,r5                 @r0=串口号
+     a0e:	1c28      	adds	r0, r5, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:254
+     ldrb r1,[r7,r6]           @r1=待发送的字节
+     a10:	5db9      	ldrb	r1, [r7, r6]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:255
+     bl uart_send1             @发送字节
+     a12:	f7ff ffde 	bl	9d2 <uart_send1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:256
+     cmp r0,#0                 @判断发送是否成功
+     a16:	2800      	cmp	r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:257
+     bne uart_sendN_fail       @发送失败,转uart_sendN_fail,发送成功继续
+     a18:	d103      	bne.n	a22 <uart_sendN_fail>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:258
+     add r6,#1                 @计数值加1
+     a1a:	3601      	adds	r6, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:259
+     cmp r6,r4                 @判断循环次数是否等于发送长度
+     a1c:	42a6      	cmp	r6, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:260
+     bcc uart_sendN_loop       @若小于发送长度则继续循环
+     a1e:	d3f6      	bcc.n	a0e <uart_sendN_loop>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:261
+     b uart_sendN_suc          @若等于发送长度则转发送成功处
+     a20:	e001      	b.n	a26 <uart_sendN_suc>
+
+00000a22 <uart_sendN_fail>:
+uart_sendN_fail():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:263
+uart_sendN_fail:
+     mov  r0,#1                @发送失败,r0=1
+     a22:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:264
+     b uart_sendN_end          @转uart_sendN_end处理
+     a24:	e000      	b.n	a28 <uart_sendN_end>
+
+00000a26 <uart_sendN_suc>:
+uart_sendN_suc():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:266
+uart_sendN_suc:
+     mov r0,#0                 @发送成功,r0=0
+     a26:	2000      	movs	r0, #0
+
+00000a28 <uart_sendN_end>:
+uart_sendN_end():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:268
+uart_sendN_end:
+    pop {r4-r7,pc}             @现场恢复,lr出栈到pc
+     a28:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+00000a2a <uart_send_str>:
+uart_send_str():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:278
+#         r1:待发送字符串的首地址
+#函数返回： r0:0=正常,1=异常
+#功能概要：从指定串口发送一个以'\0'结束的字符串
+#============================================================================
+uart_send_str:
+     push {r4-r7,lr}          @保存现场,pc(lr)入栈
+     a2a:	b5f0      	push	{r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:279
+     mov r4,r0                @r4=r0=串口号
+     a2c:	1c04      	adds	r4, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:280
+     mov r7,r1                @r7=待发送字符串首地址
+     a2e:	1c0f      	adds	r7, r1, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:281
+     mov r6,#0                @待发送字符所在单元偏移地址
+     a30:	2600      	movs	r6, #0
+
+00000a32 <uart_sendstr_loop>:
+uart_sendstr_loop():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:283
+uart_sendstr_loop:
+     mov r0,r4                @r0=串口号
+     a32:	1c20      	adds	r0, r4, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:284
+     ldrb r1,[r7,r6]          @r1=字符串中待发送的字符
+     a34:	5db9      	ldrb	r1, [r7, r6]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:285
+     mov r5,#0
+     a36:	2500      	movs	r5, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:286
+     cmp r1,r5                @判断是否是字符串结束符'\0'
+     a38:	42a9      	cmp	r1, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:287
+     beq uart_sendstr_back    @是结束符'\0',则转uart_sendstr_back
+     a3a:	d004      	beq.n	a46 <uart_sendstr_back>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:288
+     bl uart_send1            @发送单个字符
+     a3c:	f7ff ffc9 	bl	9d2 <uart_send1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:289
+     add r6,#1                @下一个待发送字符所在单元偏移地址
+     a40:	3601      	adds	r6, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:290
+     cmp r0,#0                @判断发送是否成功
+     a42:	2800      	cmp	r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:291
+     beq uart_sendstr_loop    @发送单个字符成功,则继续循环
+     a44:	d0f5      	beq.n	a32 <uart_sendstr_loop>
+
+00000a46 <uart_sendstr_back>:
+uart_sendstr_back():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:293
+uart_sendstr_back:
+     mov r5,#0
+     a46:	2500      	movs	r5, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:294
+     cmp r1,r5               @判断是否是字符串结束符'\0'
+     a48:	42a9      	cmp	r1, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:295
+     beq uart_sendstr_suc    @是结束符'\0',发送成功，转uart_sendstr_suc处理
+     a4a:	d001      	beq.n	a50 <uart_sendstr_suc>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:296
+     mov  r0,#1              @发送失败,r0=1
+     a4c:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:297
+     b uart_sendstr_end      @转uart_sendstr_end处理
+     a4e:	e000      	b.n	a52 <uart_sendstr_end>
+
+00000a50 <uart_sendstr_suc>:
+uart_sendstr_suc():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:299
+uart_sendstr_suc:
+     mov r0,#0               @发送成功,r0=0
+     a50:	2000      	movs	r0, #0
+
+00000a52 <uart_sendstr_end>:
+uart_sendstr_end():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:301
+uart_sendstr_end:    
+    pop {r4-r7,pc}           @现场恢复,lr出栈到pc
+     a52:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+00000a54 <uart_re1>:
+uart_re1():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:312
+#函数返回：r0:0=正常,1=异常
+#          r1:接收返回字节
+#功能概要：串行接收1个字节
+#============================================================================
+uart_re1:
+     push {r4-r7,lr}     
+     a54:	b5f0      	push	{r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:313
+     lsl r0,#2
+     a56:	0080      	lsls	r0, r0, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:314
+     mov r5,#0
+     a58:	2500      	movs	r5, #0
+
+00000a5a <uart_re1_loop>:
+uart_re1_loop():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:316
+uart_re1_loop:
+     ldr r6,=0xFBBB
+     a5a:	4e37      	ldr	r6, [pc, #220]	; (b38 <uart_disable_re_int+0x6a>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:317
+     cmp r5,r6                  @判断循环次数
+     a5c:	42b5      	cmp	r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:318
+     bcs uart_re1_back
+     a5e:	d20b      	bcs.n	a78 <uart_re1_back>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:319
+     add r5,#1
+     a60:	3501      	adds	r5, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:320
+     ldr r7, =UART_BASE_PTR    
+     a62:	4f2c      	ldr	r7, [pc, #176]	; (b14 <uart_disable_re_int+0x46>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:321
+     ldr r7,[r7,r0]             @得到串口基地址
+     a64:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:322
+     ldr r6,=UART_S1
+     a66:	2604      	movs	r6, #4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:323
+     ldr r4,[r7,r6]
+     a68:	59bc      	ldr	r4, [r7, r6]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:324
+     uxth r4,r4
+     a6a:	b2a4      	uxth	r4, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:325
+     ldr r6,=uart_s1_RDRF_mask
+     a6c:	2620      	movs	r6, #32
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:326
+     and r4,r6
+     a6e:	4034      	ands	r4, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:327
+     cmp r4,#0                  @判断接收缓冲区是否满
+     a70:	2c00      	cmp	r4, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:328
+     beq uart_re1_loop
+     a72:	d0f2      	beq.n	a5a <uart_re1_loop>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:329
+     ldr r6,=UART_D
+     a74:	2607      	movs	r6, #7
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:330
+     ldrb r1,[r7,r6]            @收到数据
+     a76:	5db9      	ldrb	r1, [r7, r6]
+
+00000a78 <uart_re1_back>:
+uart_re1_back():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:332
+uart_re1_back:
+     ldr r6,=0xFBBB
+     a78:	4e2f      	ldr	r6, [pc, #188]	; (b38 <uart_disable_re_int+0x6a>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:333
+     cmp r5,r6
+     a7a:	42b5      	cmp	r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:334
+     bcc uart_re1_suc
+     a7c:	d301      	bcc.n	a82 <uart_re1_suc>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:335
+     mov  r0,#1
+     a7e:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:336
+     b uart_re1_end
+     a80:	e000      	b.n	a84 <uart_re1_end>
+
+00000a82 <uart_re1_suc>:
+uart_re1_suc():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:338
+uart_re1_suc:
+     mov r0,#0
+     a82:	2000      	movs	r0, #0
+
+00000a84 <uart_re1_end>:
+uart_re1_end():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:340
+uart_re1_end:    
+    pop {r4-r7,pc} 
+     a84:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+00000a86 <uart_reN>:
+uart_reN():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:352
+#         r2:接收长度
+#函数返回：r0:0=正常,1=异常。
+#功能概要：串行接收N个字节
+#============================================================================
+uart_reN:
+     push {r4-r7,lr}  
+     a86:	b5f0      	push	{r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:353
+     mov r5,r0                  @保存串口号
+     a88:	1c05      	adds	r5, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:354
+     mov r7,r1
+     a8a:	1c0f      	adds	r7, r1, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:355
+     mov r6,#0                  @设置计数初值
+     a8c:	2600      	movs	r6, #0
+
+00000a8e <uart_reN_loop>:
+uart_reN_loop():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:357
+uart_reN_loop:
+     mov r0,r5   
+     a8e:	1c28      	adds	r0, r5, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:358
+     bl uart_re1
+     a90:	f7ff ffe0 	bl	a54 <uart_re1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:359
+     cmp r0,#0                  @判断接收是否成功
+     a94:	2800      	cmp	r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:360
+     bne uart_reN_back
+     a96:	d103      	bne.n	aa0 <uart_reN_back>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:361
+     strb r1,[r7,r6]            @存储到接收缓冲区中
+     a98:	55b9      	strb	r1, [r7, r6]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:362
+     add r6,#1
+     a9a:	3601      	adds	r6, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:363
+     cmp r6,r4                  @判断循环次数
+     a9c:	42a6      	cmp	r6, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:364
+     bcc uart_reN_loop
+     a9e:	d3f6      	bcc.n	a8e <uart_reN_loop>
+
+00000aa0 <uart_reN_back>:
+uart_reN_back():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:366
+uart_reN_back:
+     cmp r6,r4
+     aa0:	42a6      	cmp	r6, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:367
+     bls uart_reN_suc
+     aa2:	d901      	bls.n	aa8 <uart_reN_suc>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:368
+     mov  r0,#1
+     aa4:	2001      	movs	r0, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:369
+     b uart_reN_end
+     aa6:	e000      	b.n	aaa <uart_reN_end>
+
+00000aa8 <uart_reN_suc>:
+uart_reN_suc():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:371
+uart_reN_suc:
+     mov r0,#0
+     aa8:	2000      	movs	r0, #0
+
+00000aaa <uart_reN_end>:
+uart_reN_end():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:373
+uart_reN_end:    
+    pop {r4-r7,pc}   
+     aaa:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+00000aac <uart_enable_re_int>:
+uart_enable_re_int():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:383
+#参数说明：r0:串口号
+#函数返回：无
+#功能概要：开串口接收中断
+#============================================================================
+uart_enable_re_int:
+     push {r4-r7,lr}
+     aac:	b5f0      	push	{r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:384
+     lsl r0,#2
+     aae:	0080      	lsls	r0, r0, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:385
+     ldr r7,=UART_BASE_PTR
+     ab0:	4f18      	ldr	r7, [pc, #96]	; (b14 <uart_disable_re_int+0x46>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:386
+     ldr r7,[r7,r0]             @得到串口基地址
+     ab2:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:387
+     ldr r6,=UART_C2
+     ab4:	2603      	movs	r6, #3
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:388
+     ldrb r4,[r7,r6]
+     ab6:	5dbc      	ldrb	r4, [r7, r6]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:389
+     uxth r4,r4
+     ab8:	b2a4      	uxth	r4, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:390
+     ldr r5,=uart_c2_RIE_mask
+     aba:	2520      	movs	r5, #32
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:391
+     orr r4,r5
+     abc:	432c      	orrs	r4, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:392
+     strb r4,[r7,r6]            @开放UART中断
+     abe:	55bc      	strb	r4, [r7, r6]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:393
+     lsr r0,#2
+     ac0:	0880      	lsrs	r0, r0, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:394
+     ldr r7,=table_irq_uart
+     ac2:	4f1e      	ldr	r7, [pc, #120]	; (b3c <uart_disable_re_int+0x6e>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:395
+     ldrb r0,[r7,r0]            @读取IRQ号
+     ac4:	5c38      	ldrb	r0, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:396
+     uxth r0,r0
+     ac6:	b280      	uxth	r0, r0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:397
+     bl enable_irq              @开中断控制器IRQ中断
+     ac8:	f000 fafe 	bl	10c8 <enable_irq>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:398
+     pop {r4-r7,pc}
+     acc:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+00000ace <uart_disable_re_int>:
+uart_disable_re_int():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:407
+#参数说明：r0:串口号
+#函数返回：无
+#功能概要：关串口接收中断
+#============================================================================
+uart_disable_re_int:
+     push {r4-r7,lr}
+     ace:	b5f0      	push	{r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:408
+     lsl r0,#2
+     ad0:	0080      	lsls	r0, r0, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:409
+     ldr r7,=UART_BASE_PTR
+     ad2:	4f10      	ldr	r7, [pc, #64]	; (b14 <uart_disable_re_int+0x46>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:410
+     ldr r7,[r7,r0]             @得到串口基地址
+     ad4:	583f      	ldr	r7, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:411
+     ldr r6,=UART_C2
+     ad6:	2603      	movs	r6, #3
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:412
+     ldrb r4,[r7,r6]
+     ad8:	5dbc      	ldrb	r4, [r7, r6]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:413
+     uxth r4,r4
+     ada:	b2a4      	uxth	r4, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:414
+     ldr r5,=~uart_c2_RIE_mask
+     adc:	4d18      	ldr	r5, [pc, #96]	; (b40 <uart_disable_re_int+0x72>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:415
+     and r4,r5
+     ade:	402c      	ands	r4, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:416
+     strb r4,[r7,r6]            @关闭UART中断
+     ae0:	55bc      	strb	r4, [r7, r6]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:417
+     lsr r0,#2
+     ae2:	0880      	lsrs	r0, r0, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:418
+     ldr r7,=table_irq_uart
+     ae4:	4f15      	ldr	r7, [pc, #84]	; (b3c <uart_disable_re_int+0x6e>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:419
+     ldrb r0,[r7,r0]            @读取IRQ号
+     ae6:	5c38      	ldrb	r0, [r7, r0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:420
+     uxth r0,r0
+     ae8:	b280      	uxth	r0, r0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:421
+     bl disable_irq             @关中断控制器IRQ中断
+     aea:	f000 fafe 	bl	10ea <disable_irq>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:422
+     pop {r4-r7,pc}
+     aee:	bdf0      	pop	{r4, r5, r6, r7, pc}
+$d():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:32
+# 功能概要：初始化uart模块。当选择UART0时,时钟源只能选择MCGIRCLK或MCGPLL（若选择MCGIRCLK时
+#           波特率需小于19200）;当为UART1、2时，时钟源只能选择BUSCLK
+#===========================================================================
+uart_init:
+    push {r4-r7,lr}             @保存现场,pc(lr)入栈
+    uart_clk                    @解析串口号r0和时钟源r2
+     af0:	0000ffff 	.word	0x0000ffff
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:37
+    cmp r0,#0                   @判断是否为串口0
+    bne u12                     @非串口0，转u12处理
+u0:                             @处理串口0
+#使用MCGPLLCLK=48000Khz时钟源
+    ldr r4,=SIM_MCGFLLCLK
+     af4:	04000000 	.word	0x04000000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:38
+    ldr r5,=SIM_SOPT2 
+     af8:	40048004 	.word	0x40048004
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:41
+    ldr r6,[r5]
+    orr r4,r6
+    ldr r6,=0x10000
+     afc:	00010000 	.word	0x00010000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:46
+    orr r4,r6
+    str r4,[r5] 
+#使能UART0_TXD、UART0_RXD
+    lsl r0,r0,#2           
+    ldr r7,=UART_BASE_RXD
+     b00:	00001120 	.word	0x00001120
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:48
+    ldr r7,[r7,r0]              @得到串口基地址
+    ldr r6,=0x100                             
+     b04:	00000100 	.word	0x00000100
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:50
+    str r6,[r7]                     
+    ldr r7,=UART_BASE_TXD
+     b08:	00001114 	.word	0x00001114
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:54
+    ldr r7,[r7,r0]                
+    str r6,[r7]                 
+#启动串口0时钟
+    ldr r7,=SIM_SCGC4
+     b0c:	40048034 	.word	0x40048034
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:56
+    ldr r6,[r7]
+    ldr r5,=0x400
+     b10:	00000400 	.word	0x00000400
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:60
+    orr r6,r5
+    str r6,[r7]
+#暂时关闭串口0发送、接收功能
+    ldr r7,=UART_BASE_PTR
+     b14:	00001108 	.word	0x00001108
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:63
+    ldr r7,[r7,r0]
+    ldrb r6,[r7,#3]             @uart_C2
+    ldr r5,=0xFFFFFFF3
+     b18:	fffffff3 	.word	0xfffffff3
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:67
+    and r6,r5
+    str r6,[r7]
+#配置串口工作模式:8位无校验模式
+    ldr r4,=1000
+     b1c:	000003e8 	.word	0x000003e8
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:68
+    ldr r2,=MCGPLL
+     b20:	0000bb80 	.word	0x0000bb80
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:78
+    uxth r1,r0    
+    ldrb r6,[r7]
+    uxth r6,r6        
+    mov r5,#31   
+    bic r6,r5
+    ldr r3,=0x1F00
+     b24:	00001f00 	.word	0x00001f00
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:123
+u1:                      @串口1设置
+#使能UART1_TXD、UART1_RXD
+    lsl r0,#2  
+    ldr r7,=UART_BASE_TXD         
+    ldr r7,[r7,r0]
+    ldr r6,=0x300                             
+     b28:	00000300 	.word	0x00000300
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:131
+    ldr r7,[r7,r0]                
+    str r6,[r7]                
+#启动串口1时钟
+    ldr r7,=SIM_SCGC4
+    ldr r6,[r7]
+    ldr r5,=0x800
+     b2c:	00000800 	.word	0x00000800
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:148
+    ldr r7,[r7,r0]                 
+    str r6,[r7]               
+#启动串口2时钟
+    ldr r7,=SIM_SCGC4
+    ldr r6,[r7]
+    ldr r5,=0x1000
+     b30:	00001000 	.word	0x00001000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:165
+#配置串口工作模式:8位无校验模式
+    mov r4,#0                    
+    strb r4,[r7,#2]
+
+    ldr r4,=1000
+    ldr r0,=BUSCLK
+     b34:	00005dc0 	.word	0x00005dc0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:211
+uart_send1:
+    push {r4-r7,lr}  @保存现场,pc(lr)入栈
+    mov r5 ,#0       @r5=0
+    lsl r0,#2        @r0=r0*4,基地址单元地址偏移量
+uart_send1_loop:
+    ldr r4,=0xFBBB   @r4=发送缓冲区是否为空轮询次数阈值
+     b38:	0000fbbb 	.word	0x0000fbbb
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:394
+     uxth r4,r4
+     ldr r5,=uart_c2_RIE_mask
+     orr r4,r5
+     strb r4,[r7,r6]            @开放UART中断
+     lsr r0,#2
+     ldr r7,=table_irq_uart
+     b3c:	0000112c 	.word	0x0000112c
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/uart/uart.S:414
+     ldr r7,=UART_BASE_PTR
+     ldr r7,[r7,r0]             @得到串口基地址
+     ldr r6,=UART_C2
+     ldrb r4,[r7,r6]
+     uxth r4,r4
+     ldr r5,=~uart_c2_RIE_mask
+     b40:	ffffffdf 	.word	0xffffffdf
+
+00000b44 <gpio_init>:
+$t():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:22
+#          还指定初始状态是低电平或高电平
+# 备    注：端口x的每个引脚控制寄存器PORTx_PCRn的地址=PORT_PCR_BASE+x*0x1000+n*4
+#           其中:x=0~4，对应A~E;n=0~31
+#============================================================================
+gpio_init:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈
+     b44:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:25
+    #------------------------------------------------------------------------
+    #从入口参数r0中解析出端口号引脚号，分别放在r0和r1中
+    bl gpio_port_pin_resolution  @调用内部解析函数,r0=端口号,r1=引脚号
+     b46:	f000 f90f 	bl	d68 <gpio_port_pin_resolution>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:27
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+     b4a:	1c07      	adds	r7, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:28
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+     b4c:	4c8b      	ldr	r4, [pc, #556]	; (d7c <gpio_port_pin_resolution+0x14>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:29
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+     b4e:	4367      	muls	r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:30
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE)
+     b50:	4c8b      	ldr	r4, [pc, #556]	; (d80 <gpio_port_pin_resolution+0x18>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:31
+    add r7,r4                    @r7=待操作端口的第一个PCR寄存器的地址
+     b52:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:33
+    #获得待操作引脚PCR寄存器的地址
+    mov r4,r1                    @r4=r1=引脚号
+     b54:	1c0c      	adds	r4, r1, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:34
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+     b56:	2504      	movs	r5, #4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:35
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+     b58:	436c      	muls	r4, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:36
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+     b5a:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:38
+    #待操作引脚PCR寄存器的MUX位（10-8位）清0
+    ldr r4,=0xfffff8ff
+     b5c:	4c89      	ldr	r4, [pc, #548]	; (d84 <gpio_port_pin_resolution+0x1c>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:39
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+     b5e:	683d      	ldr	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:40
+    and r5,r4                    @待操作引脚PCR寄存器的MUX字段清零，其余位不变
+     b60:	4025      	ands	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:42
+    #待操作引脚PCR寄存器的MUX位（10-8位）置001,即设置为GPIO功能
+    ldr r4,=0x00000100
+     b62:	4c89      	ldr	r4, [pc, #548]	; (d88 <gpio_port_pin_resolution+0x20>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:43
+    orr r5,r4                    @或运算设MUX=001，引脚被配置为GPIO功能
+     b64:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:44
+    str r5,[r7]                  @将r5中的MUX值更新到待操作引脚PCR寄存器中
+     b66:	603d      	str	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:46
+    #求待操作GPIO口的基地址（也就是PDOR的地址）
+    ldr r4,=PORT_GPIO            @r4=PORTA基地址（GPIO的基地址）
+     b68:	4c88      	ldr	r4, [pc, #544]	; (d8c <gpio_port_pin_resolution+0x24>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:47
+    mov r7,r0                    @r7=r0=端口号
+     b6a:	1c07      	adds	r7, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:48
+    mov r6,#0x40                 @r6=各GPIO口基地址差值（40h）
+     b6c:	2640      	movs	r6, #64	; 0x40
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:49
+    mul r6,r6,r7                 @r6=待操作GPIO口的地址偏移
+     b6e:	437e      	muls	r6, r7
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:50
+    add r4,r6                    @r4=待操作GPIO口的地址,也就是PDOR的地址
+     b70:	19a4      	adds	r4, r4, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:53
+
+    #根据入口参数r3，通过对PDOR的编程，设置相应引脚为低电平或者高电平
+    mov r6,#1
+     b72:	2601      	movs	r6, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:54
+    lsl r6,r6,r1                 @r6=待操作的PDOR掩码（为1的位由r1决定）
+     b74:	408e      	lsls	r6, r1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:55
+    cmp r3,#1
+     b76:	2b01      	cmp	r3, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:56
+    bne gpio_init_1              @r3≠1转gpio_init_1，r3=1继续执行
+     b78:	d104      	bne.n	b84 <gpio_init_1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:58
+    #r3=1，设置PDOR相应位为1
+    ldr r5,[r4]                  @r5=PDOR中内容
+     b7a:	6825      	ldr	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:59
+    orr r5,r6                    @或运算设置PDOR相应位为1
+     b7c:	4335      	orrs	r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:60
+    str r5,[r4]                  @将r5中的值更新到待操作端口PDOR寄存器中
+     b7e:	6025      	str	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:61
+    bl gpio_init_2
+     b80:	f000 f804 	bl	b8c <gpio_init_2>
+
+00000b84 <gpio_init_1>:
+gpio_init_1():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:64
+gpio_init_1:
+    #r3=0，设置PDOR相应位为0
+    mvn r6,r6                    @r6进行取反，即0变1,1变0
+     b84:	43f6      	mvns	r6, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:65
+    ldr r5,[r4]                  @r5=PDOR中内容
+     b86:	6825      	ldr	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:66
+    and r5,r6                    @与运算设置PDOR相应位为0
+     b88:	4035      	ands	r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:67
+    str r5,[r4]                  @将r5中的值更新到待操作端口PDOR寄存器中
+     b8a:	6025      	str	r5, [r4, #0]
+
+00000b8c <gpio_init_2>:
+gpio_init_2():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:69
+gpio_init_2:
+    add r4,#0x14                 @r4=待操作GPIO口PDDR寄存器的地址
+     b8c:	3414      	adds	r4, #20
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:71
+    #根据入口参数r2，通过对PDDR进行编程，确定引脚为输入或者输出（0为输入，1为输出）
+    mov r6,#1
+     b8e:	2601      	movs	r6, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:72
+    lsl r6,r6,r1                 @r6=待操作引脚的PDDR掩码（为1的位由r1决定）
+     b90:	408e      	lsls	r6, r1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:73
+    cmp r2,#1
+     b92:	2a01      	cmp	r2, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:74
+    bne gpio_init_3              @r2≠1转gpio_init_3，r2=1继续执行
+     b94:	d104      	bne.n	ba0 <gpio_init_3>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:76
+    #r2=1，设置PDDR相应位为1
+    ldr r5,[r4]                  @r5=PDDR中内容
+     b96:	6825      	ldr	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:77
+    orr r5,r6                    @或运算设置PDDR相应位为1
+     b98:	4335      	orrs	r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:78
+    str r5,[r4]                  @将r5中的值更新到待操作端口PDDR寄存器中
+     b9a:	6025      	str	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:79
+    bl gpio_init_4
+     b9c:	f000 f804 	bl	ba8 <gpio_init_4>
+
+00000ba0 <gpio_init_3>:
+gpio_init_3():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:82
+gpio_init_3:
+    #r2=0，设置PDDR相应位为0
+    mvn r6,r6                    @r6进行取反,即0变1,1变0
+     ba0:	43f6      	mvns	r6, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:83
+    ldr r5,[r4]                  @r5=PDDR中内容
+     ba2:	6825      	ldr	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:84
+    and r5,r6                    @与运算设置PDDR相应位为0
+     ba4:	4035      	ands	r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:85
+    str r5,[r4]                  @将r5中的值更新到待操作端口PDDR寄存器中
+     ba6:	6025      	str	r5, [r4, #0]
+
+00000ba8 <gpio_init_4>:
+gpio_init_4():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:88
+gpio_init_4:
+    #-----------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+     ba8:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+00000baa <gpio_set>:
+gpio_set():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:98
+# 参数说明：r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+#         r3：希望设置的端口引脚状态（0=低电平，1=高电平）
+# 功能概要： 当指定端口引脚被定义为GPIO功能且为输出时，本函数设定引脚状态
+#============================================================================
+gpio_set:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈
+     baa:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:101
+    #------------------------------------------------------------------------
+    #从入口参数r0中解析出端口号引脚号，分别放在r0和r1中
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+     bac:	f000 f8dc 	bl	d68 <gpio_port_pin_resolution>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:103
+    #通过对PSOR进行编程，将PDOR相应位置1
+    mov r5,r0                    @r5=r0=端口号
+     bb0:	1c05      	adds	r5, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:104
+    mov r6,#0x40                 @r6=各GPIO口的基地址差值（40h）
+     bb2:	2640      	movs	r6, #64	; 0x40
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:105
+    mul r6,r6,r5                 @r6=待操作GPIO口与PORTA的地址偏移
+     bb4:	436e      	muls	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:106
+    cmp r3,#1                    @判断引脚初始状态
+     bb6:	2b01      	cmp	r3, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:107
+    bne gpio_set_1               @若为低电平，转到gpio_set_1，将PDOR相应位清0
+     bb8:	d106      	bne.n	bc8 <gpio_set_1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:108
+    ldr r5,=PORT_GPIO+0x04       @r5=PORTA的输出置1寄存器PSOR的地址
+     bba:	4d75      	ldr	r5, [pc, #468]	; (d90 <gpio_port_pin_resolution+0x28>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:109
+    add r5,r6                    @r5=待操作引脚PSOR的地址
+     bbc:	19ad      	adds	r5, r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:110
+    mov r6,#1
+     bbe:	2601      	movs	r6, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:111
+    lsl r6,r6,r1                 @r6=待操作引脚的PSOR掩码（为1的位由r1决定）
+     bc0:	408e      	lsls	r6, r1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:112
+    str r6,[r5]                  @将相应引脚的PSOR寄存器置1
+     bc2:	602e      	str	r6, [r5, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:113
+    bl  gpio_set_2
+     bc4:	f000 f805 	bl	bd2 <gpio_set_2>
+
+00000bc8 <gpio_set_1>:
+gpio_set_1():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:116
+gpio_set_1:
+    #通过对PCOR进行编程，将PDOR相应位清0
+    ldr r5,=PORT_GPIO+0x08       @r5=PORTA的PCOR的地址
+     bc8:	4d72      	ldr	r5, [pc, #456]	; (d94 <gpio_port_pin_resolution+0x2c>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:117
+    add r5,r6                    @r5=待操作引脚PCOR的地址
+     bca:	19ad      	adds	r5, r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:118
+    mov r6,#1
+     bcc:	2601      	movs	r6, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:119
+    lsl r6,r6,r1                 @r6=待操作的PCOR掩码（为1的位由r1决定）
+     bce:	408e      	lsls	r6, r1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:120
+    str r6,[r5]                  @将相应引脚的PCOR寄存器置1
+     bd0:	602e      	str	r6, [r5, #0]
+
+00000bd2 <gpio_set_2>:
+gpio_set_2():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:123
+gpio_set_2:
+    #------------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+     bd2:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+00000bd4 <gpio_get>:
+gpio_get():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:132
+# 函数返回：r2:指定端口引脚的状态（1或0）
+# 参数说明：r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+# 功能概要：当指定端口引脚被定义为GPIO功能且为输入时，本函数获取指定引脚状态
+#============================================================================
+gpio_get:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈
+     bd4:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:134
+    #------------------------------------------------------------------------
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+     bd6:	f000 f8c7 	bl	d68 <gpio_port_pin_resolution>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:136
+    #求待操作GPIO口的基地址（也就是PDIR的地址）
+    mov r5,r0                    @r5=r0=端口号
+     bda:	1c05      	adds	r5, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:137
+    mov r6,#0x40                 @r6=各GPIO口基地址差值（40h）
+     bdc:	2640      	movs	r6, #64	; 0x40
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:138
+    mul r6,r6,r5                 @r6=待操作GPIO口与PORTA的地址偏移
+     bde:	436e      	muls	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:139
+    ldr r5,=PORT_GPIO+0x10       @r5=PORTA的PDIR地址
+     be0:	4d6d      	ldr	r5, [pc, #436]	; (d98 <gpio_port_pin_resolution+0x30>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:140
+    add r5,r6                    @r5=待操作GPIO口的PDIR的地址
+     be2:	19ad      	adds	r5, r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:142
+    #读取PDIR相应位
+    mov r6,#1
+     be4:	2601      	movs	r6, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:143
+    lsl r6,r6,r1                 @r6=待操作引脚的PDIR掩码
+     be6:	408e      	lsls	r6, r1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:144
+    ldr r4,[r5]                  @r4=PDIR中内容
+     be8:	682c      	ldr	r4, [r5, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:145
+    and r4,r6
+     bea:	4034      	ands	r4, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:146
+    cmp r4,#0                    @判断引脚状态是否为低电平
+     bec:	2c00      	cmp	r4, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:147
+    bne gpio_get_1
+     bee:	d102      	bne.n	bf6 <gpio_get_1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:148
+    mov r2,#0                    @r2=指定引脚状态
+     bf0:	2200      	movs	r2, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:149
+    bl gpio_get_2
+     bf2:	f000 f801 	bl	bf8 <gpio_get_2>
+
+00000bf6 <gpio_get_1>:
+gpio_get_1():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:151
+gpio_get_1:
+    mov r2,#1                    @r2=指定引脚状态
+     bf6:	2201      	movs	r2, #1
+
+00000bf8 <gpio_get_2>:
+gpio_get_2():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:154
+gpio_get_2:
+    #------------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+     bf8:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+00000bfa <gpio_reverse>:
+gpio_reverse():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:163
+# 函数返回：无
+# 参数说明：r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+# 功能概要：反转指定引脚状态
+#============================================================================
+gpio_reverse:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈
+     bfa:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:165
+    #------------------------------------------------------------------------
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号，r1=引脚号
+     bfc:	f000 f8b4 	bl	d68 <gpio_port_pin_resolution>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:167
+    #求待操作GPIO口的基地址（也就是PTOR的地址）
+    mov r5,r0                    @r5=r0=端口号
+     c00:	1c05      	adds	r5, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:168
+    mov r6,#0x40                 @r6=各GPIO口基地址差值（40h）
+     c02:	2640      	movs	r6, #64	; 0x40
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:169
+    mul r6,r6,r5                 @r6=待操作GPIO口的地址偏移
+     c04:	436e      	muls	r6, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:170
+    ldr r5,=PORT_GPIO+0x0c       @r5=PORTA的PTOR的地址
+     c06:	4d65      	ldr	r5, [pc, #404]	; (d9c <gpio_port_pin_resolution+0x34>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:171
+    add r5,r6                    @r5=待操作引脚PTOR的地址
+     c08:	19ad      	adds	r5, r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:173
+    #**********此段代码仅为观察PTOR对PTDR的影响，无实际意义，R7保存修改之前PTDR寄存器的值**************
+    ldr r4,=PORT_GPIO            @r4=PORTA的PTDR的地址
+     c0a:	4c60      	ldr	r4, [pc, #384]	; (d8c <gpio_port_pin_resolution+0x24>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:174
+    add r4,r6                    @r4=待操作引脚PTDR的地址
+     c0c:	19a4      	adds	r4, r4, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:175
+    ldr r7,[r4]                  @r7=引脚输出数据寄存器内容，以待观察变化
+     c0e:	6827      	ldr	r7, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:178
+    #*******************************************************************************************
+    #设置PTOR相应位为1
+    mov r6,#1
+     c10:	2601      	movs	r6, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:179
+    lsl r6,r6,r1                 @r6=待操作的PTOR掩码
+     c12:	408e      	lsls	r6, r1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:180
+    str r6,[r5]                  @将r6中的值更新到待操作端口PTOR寄存器中
+     c14:	602e      	str	r6, [r5, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:182
+    #***********此段代码仅为观察PTOR对PTDR的影响，无实际意义，R7保存修改之后PTDR寄存器的值***********
+    ldr r7,[r4]                  @r7=引脚输出数据寄存器内容，观察变化操作PTOR寄存器后对PTDR的影响
+     c16:	6827      	ldr	r7, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:185
+    #*****************************************************************************************
+    #------------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+     c18:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+00000c1a <gpio_pull>:
+gpio_pull():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:195
+# 参数说明：r0:(端口号)|(引脚号),例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+#           r3:引脚拉高低电平（ 0=拉低电平，1=拉高电平，2=关闭上下拉）
+# 功能概要：使指定引脚上拉高电平、下拉低电平或关闭上下拉
+#============================================================================
+gpio_pull:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈	            #------------------------------------------------------------------------
+     c1a:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:196
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+     c1c:	f000 f8a4 	bl	d68 <gpio_port_pin_resolution>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:198
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+     c20:	1c07      	adds	r7, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:199
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+     c22:	4c56      	ldr	r4, [pc, #344]	; (d7c <gpio_port_pin_resolution+0x14>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:200
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+     c24:	4367      	muls	r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:201
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE）
+     c26:	4c56      	ldr	r4, [pc, #344]	; (d80 <gpio_port_pin_resolution+0x18>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:202
+    add r7,r4                    @r7=待操作端口的第一个PCR寄存器的地址
+     c28:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:204
+    #获得待操作引脚PCR寄存器的地址
+    mov r4,r1                    @r4=r1=引脚号
+     c2a:	1c0c      	adds	r4, r1, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:205
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+     c2c:	2504      	movs	r5, #4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:206
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+     c2e:	436c      	muls	r4, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:207
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+     c30:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:209
+    #待操作引脚PCR寄存器的MUX位（10-8位）清0
+    ldr r4,=0xfffff8ff
+     c32:	4c54      	ldr	r4, [pc, #336]	; (d84 <gpio_port_pin_resolution+0x1c>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:210
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+     c34:	683d      	ldr	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:211
+    and r5,r4                    @待操作引脚PCR寄存器的MUX字段清零，其余位不变
+     c36:	4025      	ands	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:213
+    #待操作引脚PCR寄存器的MUX位（10-8位）置001,即设置为GPIO功能
+    ldr r4,=0x00000100
+     c38:	4c53      	ldr	r4, [pc, #332]	; (d88 <gpio_port_pin_resolution+0x20>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:214
+    orr r5,r4                    @或运算设MUX=001，引脚被配置为GPIO功能
+     c3a:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:215
+    str r5,[r7]                  @将r5中的MUX值更新到待操作引脚PCR寄存器中
+     c3c:	603d      	str	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:217
+    #根据入口参数r3，通过对PCR的PE及PS位的编程，使能或关闭相应引脚的上下拉功能
+    cmp r3,#0
+     c3e:	2b00      	cmp	r3, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:218
+    beq gpio_pull_0              @r3=0，转到下拉配置子程序
+     c40:	d005      	beq.n	c4e <gpio_pull_0>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:219
+    cmp r3,#1
+     c42:	2b01      	cmp	r3, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:220
+	beq gpio_pull_1              @r3=1，转到上拉配置子程序
+     c44:	d00a      	beq.n	c5c <gpio_pull_1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:221
+	cmp r3,#2
+     c46:	2b02      	cmp	r3, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:222
+	beq gpio_pull_2              @r3=2，转到关闭上下拉子程序
+     c48:	d00f      	beq.n	c6a <gpio_pull_2>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:223
+	bl gpio_pull_3               @r3=其他值，函数直接返回
+     c4a:	f000 f810 	bl	c6e <gpio_pull_3>
+
+00000c4e <gpio_pull_0>:
+gpio_pull_0():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:225
+gpio_pull_0:
+	ldr r4,=0x00000002
+     c4e:	2402      	movs	r4, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:226
+	orr r5,r4                    @或运算，将对应引脚PCR寄存器的PE位置1，使能引脚上下拉功能
+     c50:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:227
+	ldr r4,=0xFFFFFFFE
+     c52:	4c53      	ldr	r4, [pc, #332]	; (da0 <gpio_port_pin_resolution+0x38>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:228
+	and r5,r4                    @与运算，将对应引脚PCR寄存器的PS位清0，使指定引脚下拉低电平
+     c54:	4025      	ands	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:229
+	str r5,[r7]                  @将r5中的PE、PS值更新到待操作引脚PCR寄存器中
+     c56:	603d      	str	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:230
+	bl gpio_pull_3
+     c58:	f000 f809 	bl	c6e <gpio_pull_3>
+
+00000c5c <gpio_pull_1>:
+gpio_pull_1():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:232
+gpio_pull_1:
+	ldr r4,=0x00000002
+     c5c:	2402      	movs	r4, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:233
+	orr r5,r4                    @或运算，将对应引脚PCR寄存器的PE位置1，使能引脚上下拉功能
+     c5e:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:234
+	ldr r4,=0x00000001
+     c60:	2401      	movs	r4, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:235
+	orr r5,r4                    @或运算，将对应引脚PCR寄存器的PS位置1，使指定引脚上拉高电平
+     c62:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:236
+	str r5,[r7]                  @将r5中的PE、PS值更新到待操作引脚PCR寄存器中
+     c64:	603d      	str	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:237
+	bl gpio_pull_3
+     c66:	f000 f802 	bl	c6e <gpio_pull_3>
+
+00000c6a <gpio_pull_2>:
+gpio_pull_2():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:239
+gpio_pull_2:
+	ldr r4,=0xFFFFFFFD
+     c6a:	4c4e      	ldr	r4, [pc, #312]	; (da4 <gpio_port_pin_resolution+0x3c>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:240
+	and r5,r4                    @与运算，将对应引脚PCR寄存器的PE位清0，关闭引脚上下拉功能
+     c6c:	4025      	ands	r5, r4
+
+00000c6e <gpio_pull_3>:
+gpio_pull_3():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:243
+gpio_pull_3:	    
+    #-----------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+     c6e:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+00000c70 <gpio_drive_strength>:
+gpio_drive_strength():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:255
+#                   1=高驱动能力(18mA),对KL25/KW01只有PTB0,PTB1,PTD6,PTD7可配
+#功能概要：当指定端口引脚被定义为GPIO功能，设定引脚驱动能力
+#备    注：引脚驱动能力是指引脚输入或输出电流的承受力，一般用mA单位度量
+#===========================================================================
+gpio_drive_strength:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈
+     c70:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:257
+    #------------------------------------------------------------------------
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+     c72:	f000 f879 	bl	d68 <gpio_port_pin_resolution>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:259
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+     c76:	1c07      	adds	r7, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:260
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+     c78:	4c40      	ldr	r4, [pc, #256]	; (d7c <gpio_port_pin_resolution+0x14>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:261
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+     c7a:	4367      	muls	r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:262
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE）
+     c7c:	4c40      	ldr	r4, [pc, #256]	; (d80 <gpio_port_pin_resolution+0x18>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:263
+    add r7,r4                    @r7=待操作端口的第一个PCR寄存器的地址
+     c7e:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:265
+    #获得待操作引脚PCR寄存器的地址
+    mov r4,r1                    @r4=r1=引脚号
+     c80:	1c0c      	adds	r4, r1, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:266
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+     c82:	2504      	movs	r5, #4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:267
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+     c84:	436c      	muls	r4, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:268
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+     c86:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:270
+    #待操作引脚PCR寄存器的DSE位（6位）清0
+    ldr r4,=0xffffffbf
+     c88:	4c47      	ldr	r4, [pc, #284]	; (da8 <gpio_port_pin_resolution+0x40>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:271
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+     c8a:	683d      	ldr	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:272
+    and r5,r4                    @待操作引脚PCR寄存器的DSE位清零，其余位不变
+     c8c:	4025      	ands	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:274
+    #对待操作引脚PCR寄存器的DSE位（6位）进行设置
+    mov r6,r3                    @r6=r3=DSE位的设置值
+     c8e:	1c1e      	adds	r6, r3, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:275
+    lsl r6,r6,#6                 @r6=设置值左移到DSE位
+     c90:	01b6      	lsls	r6, r6, #6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:276
+    orr r5,r6                    @r5=最终得到的待操作引脚PCR寄存器的值
+     c92:	4335      	orrs	r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:277
+    str r5,[r7]                  @将r5中的值更新到待操作引脚PCR寄存器中
+     c94:	603d      	str	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:279
+    #------------------------------------------------------------------------
+    pop {r0-r7,pc}               @恢复现场，lr出栈到pc（即子程序返回）
+     c96:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+00000c98 <gpio_enable_int>:
+gpio_enable_int():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:297
+#           中断触发条件。
+# 备    注： KL25芯片，只有PORTA、PORTD口具有GPIO类中断功能
+#           KW01芯片，只有PORTA、PORTC、PORTD口具有GPIO类中断功能
+#============================================================================
+gpio_enable_int:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈	            #------------------------------------------------------------------------
+     c98:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:298
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+     c9a:	f000 f865 	bl	d68 <gpio_port_pin_resolution>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:300
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+     c9e:	1c07      	adds	r7, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:301
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+     ca0:	4c36      	ldr	r4, [pc, #216]	; (d7c <gpio_port_pin_resolution+0x14>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:302
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+     ca2:	4367      	muls	r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:303
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE）
+     ca4:	4c36      	ldr	r4, [pc, #216]	; (d80 <gpio_port_pin_resolution+0x18>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:304
+    add r7,r4                    @r7=待操作端口的第一个PCR寄存器的地址
+     ca6:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:306
+    #获得待操作引脚PCR寄存器的地址
+    mov r4,r1                    @r4=r1=引脚号
+     ca8:	1c0c      	adds	r4, r1, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:307
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+     caa:	2504      	movs	r5, #4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:308
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+     cac:	436c      	muls	r4, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:309
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+     cae:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:311
+    #待操作引脚PCR寄存器的ISF位（第24位）置1（清除引脚中断标志）
+    ldr r4,=0x01000000           @r4=对应引脚PCR_ISF位的掩码
+     cb0:	4c3e      	ldr	r4, [pc, #248]	; (dac <gpio_port_pin_resolution+0x44>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:312
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+     cb2:	683d      	ldr	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:313
+    orr r5,r4                    @待操作引脚PCR寄存器的ISF位置1，其余位不变
+     cb4:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:315
+    #待操作引脚PCR寄存器的IRQC字段（19-16位）清0
+    ldr r4,=0xfff0ffff
+     cb6:	4c3e      	ldr	r4, [pc, #248]	; (db0 <gpio_port_pin_resolution+0x48>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:316
+    and r5,r4                    @待操作引脚PCR寄存器的IRQC字段清零，其余位不变
+     cb8:	4025      	ands	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:318
+    #待操作引脚PCR寄存器的IRQC字段（19-16位）置为r3的值，即设置中断类型
+    mov r4,r3                    @r4=r3=引脚的中断类型
+     cba:	1c1c      	adds	r4, r3, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:319
+    lsl r4,r4,#16                @r4=待操作的IRQC掩码
+     cbc:	0424      	lsls	r4, r4, #16
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:320
+    orr r5,r4                    @或运算设MUX=001，引脚被配置为GPIO功能
+     cbe:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:321
+    str r5,[r7]                  @将r5中的MUX值更新到待操作引脚PCR寄存器中
+     cc0:	603d      	str	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:324
+
+	#根据引脚号r0，通过对NVIC的ICPR及ISER的编程，使能中断控制器中的对应口的IRQ中断
+	cmp r0,#0
+     cc2:	2800      	cmp	r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:325
+	beq gpio_enable_int_0        @r0=0(PTA口)，跳转到相应子程序
+     cc4:	d005      	beq.n	cd2 <gpio_enable_int_0>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:326
+	cmp r0,#2
+     cc6:	2802      	cmp	r0, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:327
+	beq gpio_enable_int_1        @r0=0(PTC口)，跳转到相应子程序
+     cc8:	d016      	beq.n	cf8 <gpio_enable_int_1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:328
+	cmp r0,#3
+     cca:	2803      	cmp	r0, #3
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:329
+	beq gpio_enable_int_1        @r0=0(PTD口)，跳转到相应子程序
+     ccc:	d014      	beq.n	cf8 <gpio_enable_int_1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:330
+	bl gpio_enable_int_2         @r0=其他值，函数直接返回
+     cce:	f000 f824 	bl	d1a <gpio_enable_int_2>
+
+00000cd2 <gpio_enable_int_0>:
+gpio_enable_int_0():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:333
+gpio_enable_int_0:                   @开中断控制器中PTA的IRQ中断
+	#将PTA口对应的NVIC_ICPR置1（清挂起中断）
+	ldr r6,=0xE000E100           @r6=NVIC的基地址
+     cd2:	4e38      	ldr	r6, [pc, #224]	; (db4 <gpio_port_pin_resolution+0x4c>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:334
+	ldr r4,=0x180                @r4=ICPR的偏移地址
+     cd4:	4c38      	ldr	r4, [pc, #224]	; (db8 <gpio_port_pin_resolution+0x50>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:335
+	mov r7,r6
+     cd6:	1c37      	adds	r7, r6, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:336
+	add r7,r4                    @r7=NVIC_ICPR的地址
+     cd8:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:337
+	ldr r5,[r7]                  @r5=NVIC_ICPR寄存器的值
+     cda:	683d      	ldr	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:338
+	mov r4,#1;
+     cdc:	2401      	movs	r4, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:339
+	lsl r4,r4,#30                @r4=PTA的NVIC_ICPR掩码
+     cde:	07a4      	lsls	r4, r4, #30
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:340
+	orr r5,r4                    @或运算，清PTA的挂起中断
+     ce0:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:341
+	str r5,[r7]                  @将r5中的值更新到NVIC_ICPR寄存器中
+     ce2:	603d      	str	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:343
+	#将PTA口对应的NVIC_ISER置1（使能中断）
+	ldr r4,=0x0                  @r4=ISER的偏移地址
+     ce4:	2400      	movs	r4, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:344
+	mov r7,r6
+     ce6:	1c37      	adds	r7, r6, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:345
+	add r7,r4                    @r7=NVIC_ISER的地址
+     ce8:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:346
+	ldr r5,[r7]                  @r5=NVIC_ICPR寄存器的值
+     cea:	683d      	ldr	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:347
+	mov r4,#1;
+     cec:	2401      	movs	r4, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:348
+	lsl r4,r4,#30                @r4=PTA的NVIC_ISER掩码
+     cee:	07a4      	lsls	r4, r4, #30
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:349
+	orr r5,r4                    @或运算，使能PTA中断
+     cf0:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:350
+	str r5,[r7]                  @将r5中的值更新到NVIC_ISER寄存器中
+     cf2:	603d      	str	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:351
+	bl gpio_enable_int_2
+     cf4:	f000 f811 	bl	d1a <gpio_enable_int_2>
+
+00000cf8 <gpio_enable_int_1>:
+gpio_enable_int_1():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:354
+gpio_enable_int_1:                   @开中断控制器中PTC、PTD的IRQ中断
+	#将PTC、PTD口对应的NVIC_ICPR置1（清挂起中断）
+	ldr r6,=0xE000E100           @r6=NVIC的基地址
+     cf8:	4e2e      	ldr	r6, [pc, #184]	; (db4 <gpio_port_pin_resolution+0x4c>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:355
+	ldr r4,=0x180                @r4=ICPR的偏移地址
+     cfa:	4c2f      	ldr	r4, [pc, #188]	; (db8 <gpio_port_pin_resolution+0x50>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:356
+	mov r7,r6
+     cfc:	1c37      	adds	r7, r6, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:357
+	add r7,r4                    @r7=NVIC_ICPR的地址
+     cfe:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:358
+	ldr r5,[r7]                  @r5=NVIC_ICPR寄存器的值
+     d00:	683d      	ldr	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:359
+	mov r4,#1;
+     d02:	2401      	movs	r4, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:360
+	lsl r4,r4,#31                @r4=PTC、PTD的NVIC_ICPR掩码
+     d04:	07e4      	lsls	r4, r4, #31
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:361
+	orr r5,r4                    @或运算，清PTC、PTD的挂起中断
+     d06:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:362
+	str r5,[r7]                  @将r5中的值更新到NVIC_ICPR寄存器中
+     d08:	603d      	str	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:364
+	#将PTA口对应的NVIC_ISER置1（使能中断）
+	ldr r4,=0x0                  @r4=ISER的偏移地址
+     d0a:	2400      	movs	r4, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:365
+	mov r7,r6
+     d0c:	1c37      	adds	r7, r6, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:366
+	add r7,r4                    @r7=NVIC_ISER的地址
+     d0e:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:367
+	ldr r5,[r7]                  @r5=NVIC_ICPR寄存器的值
+     d10:	683d      	ldr	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:368
+	mov r4,#1;
+     d12:	2401      	movs	r4, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:369
+	lsl r4,r4,#31                @r4=PTA的NVIC_ISER掩码
+     d14:	07e4      	lsls	r4, r4, #31
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:370
+	orr r5,r4                    @或运算，使能PTC、PTD中断
+     d16:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:371
+	str r5,[r7]                  @将r5中的值更新到NVIC_ISER寄存器中
+     d18:	603d      	str	r5, [r7, #0]
+
+00000d1a <gpio_enable_int_2>:
+gpio_enable_int_2():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:374
+gpio_enable_int_2:	    
+    #-----------------------------------------------------------------------
+    pop {r0-r7,pc}                   @恢复现场，lr出栈到pc（即子程序返回）
+     d1a:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+00000d1c <gpio_disable_int>:
+gpio_disable_int():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:385
+# 功能概要：当指定端口引脚被定义为GPIO功能且为输入时，本函数关闭引脚中断
+# 备    注： KL25芯片，只有PORTA、PORTD口具有GPIO类中断功能
+#           KW01芯片，只有PORTA、PORTC、PORTD口具有GPIO类中断功能
+#============================================================================
+gpio_disable_int:
+    push {r0-r7,lr}              @保存现场，pc(lr)入栈	
+     d1c:	b5ff      	push	{r0, r1, r2, r3, r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:387
+    #------------------------------------------------------------------------
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+     d1e:	f000 f823 	bl	d68 <gpio_port_pin_resolution>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:389
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+     d22:	1c07      	adds	r7, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:390
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+     d24:	4c15      	ldr	r4, [pc, #84]	; (d7c <gpio_port_pin_resolution+0x14>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:391
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+     d26:	4367      	muls	r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:392
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE）
+     d28:	4c15      	ldr	r4, [pc, #84]	; (d80 <gpio_port_pin_resolution+0x18>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:393
+    add r7,r4                    @r7=待操作端口的第一个PCR寄存器的地址
+     d2a:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:395
+    #获得待操作引脚PCR寄存器的地址
+    mov r4,r1                    @r4=r1=引脚号
+     d2c:	1c0c      	adds	r4, r1, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:396
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+     d2e:	2504      	movs	r5, #4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:397
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+     d30:	436c      	muls	r4, r5
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:398
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+     d32:	193f      	adds	r7, r7, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:400
+    #待操作引脚PCR寄存器的IRQC字段（19-16位）清0(禁用引脚中断)
+    ldr r4,=0xfff0ffff
+     d34:	4c1e      	ldr	r4, [pc, #120]	; (db0 <gpio_port_pin_resolution+0x48>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:401
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+     d36:	683d      	ldr	r5, [r7, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:402
+    and r5,r4                    @待操作引脚PCR寄存器的IRQC字段清零，其余位不变
+     d38:	4025      	ands	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:405
+
+	#获取NVIC_ICER寄存器的地址
+	ldr r6,=0xE000E100           @r6=NVIC的基地址
+     d3a:	4e1e      	ldr	r6, [pc, #120]	; (db4 <gpio_port_pin_resolution+0x4c>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:406
+	ldr r4,=0x80                 @r4=ICER的偏移地址
+     d3c:	2480      	movs	r4, #128	; 0x80
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:407
+	add r6,r4                    @r6=NVIC_ICER的地址
+     d3e:	1936      	adds	r6, r6, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:408
+	ldr r5,[r6]                  @r5=NVIC_ICER寄存器的值
+     d40:	6835      	ldr	r5, [r6, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:411
+
+	#根据引脚号r0，通过对NVIC的ICER寄存器的编程，关闭中断控制器中的对应口的IRQ中断
+	cmp r0,#0
+     d42:	2800      	cmp	r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:412
+	beq gpio_disable_int_0       @r0=0(PTA口)，跳转到相应子程序
+     d44:	d005      	beq.n	d52 <gpio_disable_int_0>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:413
+	cmp r0,#2
+     d46:	2802      	cmp	r0, #2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:414
+	beq gpio_disable_int_1       @r0=0(PTC口)，跳转到相应子程序
+     d48:	d009      	beq.n	d5e <gpio_disable_int_1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:415
+	cmp r0,#3
+     d4a:	2803      	cmp	r0, #3
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:416
+	beq gpio_disable_int_1       @r0=0(PTD口)，跳转到相应子程序
+     d4c:	d007      	beq.n	d5e <gpio_disable_int_1>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:417
+	bl gpio_disable_int_2        @r0=其他值，函数直接返回
+     d4e:	f000 f80a 	bl	d66 <gpio_disable_int_2>
+
+00000d52 <gpio_disable_int_0>:
+gpio_disable_int_0():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:420
+gpio_disable_int_0:                  @关中断控制器中PTA的IRQ中断
+	#将PTA口对应的NVIC_ICER置1（关闭中断）
+	mov r4,#1;
+     d52:	2401      	movs	r4, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:421
+	lsl r4,r4,#30                @r4=PTA的NVIC_ICER掩码
+     d54:	07a4      	lsls	r4, r4, #30
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:422
+	orr r5,r4                    @或运算，关闭PTA口的中断
+     d56:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:423
+	str r5,[r6]                  @将r5中的值更新到NVIC_ICER寄存器中
+     d58:	6035      	str	r5, [r6, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:424
+	bl gpio_enable_int_2
+     d5a:	f7ff ffde 	bl	d1a <gpio_enable_int_2>
+
+00000d5e <gpio_disable_int_1>:
+gpio_disable_int_1():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:427
+gpio_disable_int_1:                  @关中断控制器中PTC、PTD的IRQ中断
+	#将PTC、PTD口对应的NVIC_ICER置1（关闭中断）
+	mov r4,#1;
+     d5e:	2401      	movs	r4, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:428
+	lsl r4,r4,#31                @r4=PTC、PTD的NVIC_ICER掩码
+     d60:	07e4      	lsls	r4, r4, #31
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:429
+	orr r5,r4                    @或运算，关闭PTC、PTD口的中断
+     d62:	4325      	orrs	r5, r4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:430
+	str r5,[r6]                  @将r5中的值更新到NVIC_ICER寄存器中
+     d64:	6035      	str	r5, [r6, #0]
+
+00000d66 <gpio_disable_int_2>:
+gpio_disable_int_2():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:433
+gpio_disable_int_2:
+    #-----------------------------------------------------------------------
+    pop {r0-r7,pc}                   @恢复现场，lr出栈到pc（即子程序返回）
+     d66:	bdff      	pop	{r0, r1, r2, r3, r4, r5, r6, r7, pc}
+
+00000d68 <gpio_port_pin_resolution>:
+gpio_port_pin_resolution():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:446
+#参数说明：r0：端口号|引脚号,例:(PTB_NUM|(5u))表示B口5脚,头文件中有宏定义
+#功能概要：将传进参数r0进行解析，得出具体端口号与引脚号（如：PORTB|(5)
+#          解析为PORTB与5，并将其分别赋值给r0与r1）。
+#============================================================================
+gpio_port_pin_resolution:
+    push {lr}             @保存现场，pc(lr)入栈
+     d68:	b500      	push	{lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:448
+    #------------------------------------------------------------------------
+    mov r4,r0             @r4=r0=端口号|引脚号
+     d6a:	1c04      	adds	r4, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:449
+    mov r5,r0             @r5=r0=端口号|引脚号
+     d6c:	1c05      	adds	r5, r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:450
+    lsr r4,#8             @逻辑左移获得端口号，r4=端口号
+     d6e:	0a24      	lsrs	r4, r4, #8
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:451
+    mov r0,r4             @r0=r4=端口号
+     d70:	1c20      	adds	r0, r4, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:452
+    mov r6,#0x000000ff
+     d72:	26ff      	movs	r6, #255	; 0xff
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:453
+    and r5,r6             @r5=引脚号
+     d74:	4035      	ands	r5, r6
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:454
+    mov r1,r5             @r1=r5=引脚号
+     d76:	1c29      	adds	r1, r5, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:456
+    #-----------------------------------------------------------------------
+    pop {pc}              @恢复现场，lr出栈到pc（即子程序返回）
+     d78:	bd00      	pop	{pc}
+$d():
+     d7a:	0000      	.short	0x0000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:28
+    #------------------------------------------------------------------------
+    #从入口参数r0中解析出端口号引脚号，分别放在r0和r1中
+    bl gpio_port_pin_resolution  @调用内部解析函数,r0=端口号,r1=引脚号
+    #获得待操作端口的第一个PCR寄存器的地址
+    mov r7,r0                    @r7=r0=端口号
+    ldr r4,=0x1000               @r4=各端口基地址差值(0x1000)
+     d7c:	00001000 	.word	0x00001000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:30
+    mul r7,r7,r4                 @r7=待操作端口与A口的偏移地址
+    ldr r4,=PORT_PCR_BASE        @r4=端口A的PCR基地址(即PORT_PCR_BASE)
+     d80:	40049000 	.word	0x40049000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:38
+    mov r4,r1                    @r4=r1=引脚号
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+    #待操作引脚PCR寄存器的MUX位（10-8位）清0
+    ldr r4,=0xfffff8ff
+     d84:	fffff8ff 	.word	0xfffff8ff
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:42
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+    and r5,r4                    @待操作引脚PCR寄存器的MUX字段清零，其余位不变
+    #待操作引脚PCR寄存器的MUX位（10-8位）置001,即设置为GPIO功能
+    ldr r4,=0x00000100
+     d88:	00000100 	.word	0x00000100
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:46
+    orr r5,r4                    @或运算设MUX=001，引脚被配置为GPIO功能
+    str r5,[r7]                  @将r5中的MUX值更新到待操作引脚PCR寄存器中
+    #求待操作GPIO口的基地址（也就是PDOR的地址）
+    ldr r4,=PORT_GPIO            @r4=PORTA基地址（GPIO的基地址）
+     d8c:	400ff000 	.word	0x400ff000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:108
+    mov r5,r0                    @r5=r0=端口号
+    mov r6,#0x40                 @r6=各GPIO口的基地址差值（40h）
+    mul r6,r6,r5                 @r6=待操作GPIO口与PORTA的地址偏移
+    cmp r3,#1                    @判断引脚初始状态
+    bne gpio_set_1               @若为低电平，转到gpio_set_1，将PDOR相应位清0
+    ldr r5,=PORT_GPIO+0x04       @r5=PORTA的输出置1寄存器PSOR的地址
+     d90:	400ff004 	.word	0x400ff004
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:116
+    lsl r6,r6,r1                 @r6=待操作引脚的PSOR掩码（为1的位由r1决定）
+    str r6,[r5]                  @将相应引脚的PSOR寄存器置1
+    bl  gpio_set_2
+gpio_set_1:
+    #通过对PCOR进行编程，将PDOR相应位清0
+    ldr r5,=PORT_GPIO+0x08       @r5=PORTA的PCOR的地址
+     d94:	400ff008 	.word	0x400ff008
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:139
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号,r1=引脚号
+    #求待操作GPIO口的基地址（也就是PDIR的地址）
+    mov r5,r0                    @r5=r0=端口号
+    mov r6,#0x40                 @r6=各GPIO口基地址差值（40h）
+    mul r6,r6,r5                 @r6=待操作GPIO口与PORTA的地址偏移
+    ldr r5,=PORT_GPIO+0x10       @r5=PORTA的PDIR地址
+     d98:	400ff010 	.word	0x400ff010
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:170
+    bl gpio_port_pin_resolution  @调用内部函数，r0=端口号，r1=引脚号
+    #求待操作GPIO口的基地址（也就是PTOR的地址）
+    mov r5,r0                    @r5=r0=端口号
+    mov r6,#0x40                 @r6=各GPIO口基地址差值（40h）
+    mul r6,r6,r5                 @r6=待操作GPIO口的地址偏移
+    ldr r5,=PORT_GPIO+0x0c       @r5=PORTA的PTOR的地址
+     d9c:	400ff00c 	.word	0x400ff00c
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:227
+	beq gpio_pull_2              @r3=2，转到关闭上下拉子程序
+	bl gpio_pull_3               @r3=其他值，函数直接返回
+gpio_pull_0:
+	ldr r4,=0x00000002
+	orr r5,r4                    @或运算，将对应引脚PCR寄存器的PE位置1，使能引脚上下拉功能
+	ldr r4,=0xFFFFFFFE
+     da0:	fffffffe 	.word	0xfffffffe
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:239
+	ldr r4,=0x00000001
+	orr r5,r4                    @或运算，将对应引脚PCR寄存器的PS位置1，使指定引脚上拉高电平
+	str r5,[r7]                  @将r5中的PE、PS值更新到待操作引脚PCR寄存器中
+	bl gpio_pull_3
+gpio_pull_2:
+	ldr r4,=0xFFFFFFFD
+     da4:	fffffffd 	.word	0xfffffffd
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:270
+    mov r4,r1                    @r4=r1=引脚号
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+    #待操作引脚PCR寄存器的DSE位（6位）清0
+    ldr r4,=0xffffffbf
+     da8:	ffffffbf 	.word	0xffffffbf
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:311
+    mov r4,r1                    @r4=r1=引脚号
+    mov r5,#4                    @各引脚的PCR寄存器地址之间差为0x04
+    mul r4,r4,r5                 @r4=待操作引脚PCR寄存器的偏移地址
+    add r7,r4                    @r7=待操作引脚PCR寄存器的地址
+    #待操作引脚PCR寄存器的ISF位（第24位）置1（清除引脚中断标志）
+    ldr r4,=0x01000000           @r4=对应引脚PCR_ISF位的掩码
+     dac:	01000000 	.word	0x01000000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:315
+    ldr r5,[r7]                  @r5=待操作引脚PCR寄存器中的内容
+    orr r5,r4                    @待操作引脚PCR寄存器的ISF位置1，其余位不变
+    #待操作引脚PCR寄存器的IRQC字段（19-16位）清0
+    ldr r4,=0xfff0ffff
+     db0:	fff0ffff 	.word	0xfff0ffff
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:333
+	cmp r0,#3
+	beq gpio_enable_int_1        @r0=0(PTD口)，跳转到相应子程序
+	bl gpio_enable_int_2         @r0=其他值，函数直接返回
+gpio_enable_int_0:                   @开中断控制器中PTA的IRQ中断
+	#将PTA口对应的NVIC_ICPR置1（清挂起中断）
+	ldr r6,=0xE000E100           @r6=NVIC的基地址
+     db4:	e000e100 	.word	0xe000e100
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../05_Driver/gpio/gpio.S:334
+	ldr r4,=0x180                @r4=ICPR的偏移地址
+     db8:	00000180 	.word	0x00000180
+
+00000dbc <Reset_Handler>:
+Reset_Handler():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:117
+    .align 2
+    .globl   Reset_Handler
+    .weak    Reset_Handler
+    .type    Reset_Handler, %function
+Reset_Handler:
+    cpsid   i               /* 屏蔽中断 */
+     dbc:	b672      	cpsid	i
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:119
+#ifndef __NO_SYSTEM_INIT
+    bl SystemInit           /* 跳转到系统初始化函数，在system_MKL25Z4.c中 */
+     dbe:	f000 f873 	bl	ea8 <SystemInit>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:121
+#endif
+    cpsie   i               /* 解除屏蔽中断 */
+     dc2:	b662      	cpsie	i
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+     dc4:	4909      	ldr	r1, [pc, #36]	; (dec <Reset_Handler+0x30>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+     dc6:	4a0a      	ldr	r2, [pc, #40]	; (df0 <Reset_Handler+0x34>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+     dc8:	4b0a      	ldr	r3, [pc, #40]	; (df4 <Reset_Handler+0x38>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:131
+
+    subs    r3, r2
+     dca:	1a9b      	subs	r3, r3, r2
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:132
+    ble     .LC0
+     dcc:	dd03      	ble.n	dd6 <Reset_Handler+0x1a>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:135
+
+.LC1:
+    subs    r3, 4
+     dce:	3b04      	subs	r3, #4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:136
+    ldr    r0, [r1,r3]
+     dd0:	58c8      	ldr	r0, [r1, r3]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:137
+    str    r0, [r2,r3]
+     dd2:	50d0      	str	r0, [r2, r3]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:138
+    bgt    .LC1
+     dd4:	dcfb      	bgt.n	dce <Reset_Handler+0x12>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+     dd6:	4908      	ldr	r1, [pc, #32]	; (df8 <Reset_Handler+0x3c>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+     dd8:	4a08      	ldr	r2, [pc, #32]	; (dfc <Reset_Handler+0x40>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:153
+
+    subs    r2, r1
+     dda:	1a52      	subs	r2, r2, r1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:154
+    ble .LC3
+     ddc:	dd03      	ble.n	de6 <Reset_Handler+0x2a>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:156
+
+    movs    r0, 0
+     dde:	2000      	movs	r0, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:158
+.LC2:
+    str r0, [r1, r2]
+     de0:	5088      	str	r0, [r1, r2]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:159
+    subs    r2, 4
+     de2:	3a04      	subs	r2, #4
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:160
+    bge .LC2
+     de4:	dafc      	bge.n	de0 <Reset_Handler+0x24>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:166
+.LC3:
+#endif
+#ifndef __START
+#define __START main
+#endif
+    bl    __START
+     de6:	f7ff fd15 	bl	814 <main>
+     dea:	0000      	.short	0x0000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+     dec:	00001130 	.word	0x00001130
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+     df0:	1ffff000 	.word	0x1ffff000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+     df4:	1ffff000 	.word	0x1ffff000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+     df8:	1ffff000 	.word	0x1ffff000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+     dfc:	1ffff000 	.word	0x1ffff000
+
+00000e00 <ADC0_IRQHandler>:
+I2C0_IRQHandler():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+     e00:	4800      	ldr	r0, [pc, #0]	; (e04 <ADC0_IRQHandler+0x4>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:176
+    bx r0
+     e02:	4700      	bx	r0
+$d():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+     e04:	00000e01 	.word	0x00000e01
+
+00000e08 <__aeabi_uidiv>:
+__udivsi3():
+     e08:	2900      	cmp	r1, #0
+     e0a:	d034      	beq.n	e76 <.udivsi3_skip_div0_test+0x6a>
+
+00000e0c <.udivsi3_skip_div0_test>:
+     e0c:	2301      	movs	r3, #1
+     e0e:	2200      	movs	r2, #0
+     e10:	b410      	push	{r4}
+     e12:	4288      	cmp	r0, r1
+     e14:	d32c      	bcc.n	e70 <.udivsi3_skip_div0_test+0x64>
+     e16:	2401      	movs	r4, #1
+     e18:	0724      	lsls	r4, r4, #28
+     e1a:	42a1      	cmp	r1, r4
+     e1c:	d204      	bcs.n	e28 <.udivsi3_skip_div0_test+0x1c>
+     e1e:	4281      	cmp	r1, r0
+     e20:	d202      	bcs.n	e28 <.udivsi3_skip_div0_test+0x1c>
+     e22:	0109      	lsls	r1, r1, #4
+     e24:	011b      	lsls	r3, r3, #4
+     e26:	e7f8      	b.n	e1a <.udivsi3_skip_div0_test+0xe>
+     e28:	00e4      	lsls	r4, r4, #3
+     e2a:	42a1      	cmp	r1, r4
+     e2c:	d204      	bcs.n	e38 <.udivsi3_skip_div0_test+0x2c>
+     e2e:	4281      	cmp	r1, r0
+     e30:	d202      	bcs.n	e38 <.udivsi3_skip_div0_test+0x2c>
+     e32:	0049      	lsls	r1, r1, #1
+     e34:	005b      	lsls	r3, r3, #1
+     e36:	e7f8      	b.n	e2a <.udivsi3_skip_div0_test+0x1e>
+     e38:	4288      	cmp	r0, r1
+     e3a:	d301      	bcc.n	e40 <.udivsi3_skip_div0_test+0x34>
+     e3c:	1a40      	subs	r0, r0, r1
+     e3e:	431a      	orrs	r2, r3
+     e40:	084c      	lsrs	r4, r1, #1
+     e42:	42a0      	cmp	r0, r4
+     e44:	d302      	bcc.n	e4c <.udivsi3_skip_div0_test+0x40>
+     e46:	1b00      	subs	r0, r0, r4
+     e48:	085c      	lsrs	r4, r3, #1
+     e4a:	4322      	orrs	r2, r4
+     e4c:	088c      	lsrs	r4, r1, #2
+     e4e:	42a0      	cmp	r0, r4
+     e50:	d302      	bcc.n	e58 <.udivsi3_skip_div0_test+0x4c>
+     e52:	1b00      	subs	r0, r0, r4
+     e54:	089c      	lsrs	r4, r3, #2
+     e56:	4322      	orrs	r2, r4
+     e58:	08cc      	lsrs	r4, r1, #3
+     e5a:	42a0      	cmp	r0, r4
+     e5c:	d302      	bcc.n	e64 <.udivsi3_skip_div0_test+0x58>
+     e5e:	1b00      	subs	r0, r0, r4
+     e60:	08dc      	lsrs	r4, r3, #3
+     e62:	4322      	orrs	r2, r4
+     e64:	2800      	cmp	r0, #0
+     e66:	d003      	beq.n	e70 <.udivsi3_skip_div0_test+0x64>
+     e68:	091b      	lsrs	r3, r3, #4
+     e6a:	d001      	beq.n	e70 <.udivsi3_skip_div0_test+0x64>
+     e6c:	0909      	lsrs	r1, r1, #4
+     e6e:	e7e3      	b.n	e38 <.udivsi3_skip_div0_test+0x2c>
+     e70:	1c10      	adds	r0, r2, #0
+     e72:	bc10      	pop	{r4}
+     e74:	4770      	bx	lr
+     e76:	2800      	cmp	r0, #0
+     e78:	d001      	beq.n	e7e <.udivsi3_skip_div0_test+0x72>
+     e7a:	2000      	movs	r0, #0
+     e7c:	43c0      	mvns	r0, r0
+     e7e:	b407      	push	{r0, r1, r2}
+     e80:	4802      	ldr	r0, [pc, #8]	; (e8c <.udivsi3_skip_div0_test+0x80>)
+     e82:	a102      	add	r1, pc, #8	; (adr r1, e8c <.udivsi3_skip_div0_test+0x80>)
+     e84:	1840      	adds	r0, r0, r1
+     e86:	9002      	str	r0, [sp, #8]
+     e88:	bd03      	pop	{r0, r1, pc}
+     e8a:	46c0      	nop			; (mov r8, r8)
+     e8c:	00000019 	.word	0x00000019
+
+00000e90 <__aeabi_uidivmod>:
+__aeabi_uidivmod():
+     e90:	2900      	cmp	r1, #0
+     e92:	d0f0      	beq.n	e76 <.udivsi3_skip_div0_test+0x6a>
+     e94:	b503      	push	{r0, r1, lr}
+     e96:	f7ff ffb9 	bl	e0c <.udivsi3_skip_div0_test>
+     e9a:	bc0e      	pop	{r1, r2, r3}
+     e9c:	4342      	muls	r2, r0
+     e9e:	1a89      	subs	r1, r1, r2
+     ea0:	4718      	bx	r3
+     ea2:	46c0      	nop			; (mov r8, r8)
+
+00000ea4 <__aeabi_idiv0>:
+__aeabi_ldiv0():
+     ea4:	4770      	bx	lr
+     ea6:	46c0      	nop			; (mov r8, r8)
+
+00000ea8 <SystemInit>:
+SystemInit():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:111
+//函数名称：SystemInit
+//功能概要：初始化系统的时钟，并把PORT时钟门启用
+//参数说明：无
+//函数返回：无
+//============================================================================
+void SystemInit (void) {
+     ea8:	b580      	push	{r7, lr}
+     eaa:	b082      	sub	sp, #8
+     eac:	af00      	add	r7, sp, #0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:113
+
+	unsigned int i = 0;
+     eae:	2300      	movs	r3, #0
+     eb0:	607b      	str	r3, [r7, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:114
+	char temp_reg = 0;
+     eb2:	1cfb      	adds	r3, r7, #3
+     eb4:	2200      	movs	r2, #0
+     eb6:	701a      	strb	r2, [r3, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:117
+
+#if (DISABLE_WDOG)  //关闭看门狗
+    SIM->COPC = (uint32_t)0x00u;    //SIM_COPC: COPT=0,COPCLKS=0,COPW=0
+     eb8:	4a5b      	ldr	r2, [pc, #364]	; (1028 <MCGIRCLK+0x88>)
+     eba:	2388      	movs	r3, #136	; 0x88
+     ebc:	015b      	lsls	r3, r3, #5
+     ebe:	2100      	movs	r1, #0
+     ec0:	50d1      	str	r1, [r2, r3]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:125
+//1.首先从FEI模式过渡到FBE模式
+
+    //C2= 0x1C，因为我们的核心板上采用了外部晶振为8Mhz，属于高频率范围，
+    //C2[RANGE]设置为0b01；C2[HGO]设为1以配置晶振来进行高增益操作；因为
+    //正在使用的外部参考时钟源是晶振，所以C2[EREFS]设置为1。
+    MCG_C2 = (MCG_C2_RANGE0(1) | MCG_C2_EREFS0_MASK);
+     ec2:	4b5a      	ldr	r3, [pc, #360]	; (102c <MCGIRCLK+0x8c>)
+     ec4:	2214      	movs	r2, #20
+     ec6:	705a      	strb	r2, [r3, #1]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:130
+    //C1 = 0x90 ，C1[CLKS]设置为2’b10，以便选择作为系统时钟源的外部参考时钟。
+    //C1[FRDIV]设置为3'b011，对应256分频,因为8MHz/256=31.25kHz在由FLL要求的
+    //31.25kHz至39.0625 kHz频率范围内。C1[IREFS]清除为0，选择外部参考时钟和
+    //外部晶振。
+    MCG_C1 = (MCG_C1_CLKS(2) | MCG_C1_FRDIV(3));
+     ec8:	4b58      	ldr	r3, [pc, #352]	; (102c <MCGIRCLK+0x8c>)
+     eca:	2298      	movs	r2, #152	; 0x98
+     ecc:	701a      	strb	r2, [r3, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:132
+    //需要等到S[OSCINIT]被置位外部晶振才能使用
+    for (i = 0 ; i < 20000 ; i++)
+     ece:	2300      	movs	r3, #0
+     ed0:	607b      	str	r3, [r7, #4]
+     ed2:	e00a      	b.n	eea <SystemInit+0x42>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:135
+    {
+        //如果S[OSCINIT]在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_OSCINIT0_MASK) break;
+     ed4:	4b55      	ldr	r3, [pc, #340]	; (102c <MCGIRCLK+0x8c>)
+     ed6:	799b      	ldrb	r3, [r3, #6]
+     ed8:	b2db      	uxtb	r3, r3
+     eda:	1c1a      	adds	r2, r3, #0
+     edc:	2302      	movs	r3, #2
+     ede:	4013      	ands	r3, r2
+     ee0:	d000      	beq.n	ee4 <SystemInit+0x3c>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:135 (discriminator 1)
+     ee2:	e006      	b.n	ef2 <SystemInit+0x4a>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:132
+    //C1[FRDIV]设置为3'b011，对应256分频,因为8MHz/256=31.25kHz在由FLL要求的
+    //31.25kHz至39.0625 kHz频率范围内。C1[IREFS]清除为0，选择外部参考时钟和
+    //外部晶振。
+    MCG_C1 = (MCG_C1_CLKS(2) | MCG_C1_FRDIV(3));
+    //需要等到S[OSCINIT]被置位外部晶振才能使用
+    for (i = 0 ; i < 20000 ; i++)
+     ee4:	687b      	ldr	r3, [r7, #4]
+     ee6:	3301      	adds	r3, #1
+     ee8:	607b      	str	r3, [r7, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:132 (discriminator 1)
+     eea:	687a      	ldr	r2, [r7, #4]
+     eec:	4b50      	ldr	r3, [pc, #320]	; (1030 <MCGIRCLK+0x90>)
+     eee:	429a      	cmp	r2, r3
+     ef0:	d9f0      	bls.n	ed4 <SystemInit+0x2c>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:138
+    {
+        //如果S[OSCINIT]在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_OSCINIT0_MASK) break;
+    }
+    //等待参考时钟状态位清0
+    for (i = 0 ; i < 2000 ; i++)
+     ef2:	2300      	movs	r3, #0
+     ef4:	607b      	str	r3, [r7, #4]
+     ef6:	e00a      	b.n	f0e <SystemInit+0x66>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:141
+    {
+        //如果IREFST在循环结束之前被清0就跳出循环
+        if (!(MCG_S & MCG_S_IREFST_MASK)) break;
+     ef8:	4b4c      	ldr	r3, [pc, #304]	; (102c <MCGIRCLK+0x8c>)
+     efa:	799b      	ldrb	r3, [r3, #6]
+     efc:	b2db      	uxtb	r3, r3
+     efe:	1c1a      	adds	r2, r3, #0
+     f00:	2310      	movs	r3, #16
+     f02:	4013      	ands	r3, r2
+     f04:	d100      	bne.n	f08 <SystemInit+0x60>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:141 (discriminator 1)
+     f06:	e006      	b.n	f16 <SystemInit+0x6e>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:138
+    {
+        //如果S[OSCINIT]在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_OSCINIT0_MASK) break;
+    }
+    //等待参考时钟状态位清0
+    for (i = 0 ; i < 2000 ; i++)
+     f08:	687b      	ldr	r3, [r7, #4]
+     f0a:	3301      	adds	r3, #1
+     f0c:	607b      	str	r3, [r7, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:138 (discriminator 1)
+     f0e:	687a      	ldr	r2, [r7, #4]
+     f10:	4b48      	ldr	r3, [pc, #288]	; (1034 <MCGIRCLK+0x94>)
+     f12:	429a      	cmp	r2, r3
+     f14:	d9f0      	bls.n	ef8 <SystemInit+0x50>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:144
+    {
+        //如果IREFST在循环结束之前被清0就跳出循环
+        if (!(MCG_S & MCG_S_IREFST_MASK)) break;
+    }
+    //等待时钟状态位以显示时钟源为外部参考时钟
+    for (i = 0 ; i < 2000 ; i++)
+     f16:	2300      	movs	r3, #0
+     f18:	607b      	str	r3, [r7, #4]
+     f1a:	e00c      	b.n	f36 <SystemInit+0x8e>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:147
+    {
+        //如果CLKST显示外部时钟被选择，在循环结束之前就跳出循环
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x2) break;
+     f1c:	4b43      	ldr	r3, [pc, #268]	; (102c <MCGIRCLK+0x8c>)
+     f1e:	799b      	ldrb	r3, [r3, #6]
+     f20:	b2db      	uxtb	r3, r3
+     f22:	1c1a      	adds	r2, r3, #0
+     f24:	230c      	movs	r3, #12
+     f26:	4013      	ands	r3, r2
+     f28:	089b      	lsrs	r3, r3, #2
+     f2a:	2b02      	cmp	r3, #2
+     f2c:	d100      	bne.n	f30 <SystemInit+0x88>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:147 (discriminator 1)
+     f2e:	e006      	b.n	f3e <SystemInit+0x96>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:144
+    {
+        //如果IREFST在循环结束之前被清0就跳出循环
+        if (!(MCG_S & MCG_S_IREFST_MASK)) break;
+    }
+    //等待时钟状态位以显示时钟源为外部参考时钟
+    for (i = 0 ; i < 2000 ; i++)
+     f30:	687b      	ldr	r3, [r7, #4]
+     f32:	3301      	adds	r3, #1
+     f34:	607b      	str	r3, [r7, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:144 (discriminator 1)
+     f36:	687a      	ldr	r2, [r7, #4]
+     f38:	4b3e      	ldr	r3, [pc, #248]	; (1034 <MCGIRCLK+0x94>)
+     f3a:	429a      	cmp	r2, r3
+     f3c:	d9ee      	bls.n	f1c <SystemInit+0x74>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:152
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x2) break;
+    }
+
+//2.现在处于FBE状态，使能时钟监视器，由FBE直接转换为PBE模式
+
+    MCG_C6 |= MCG_C6_CME0_MASK;
+     f3e:	4b3b      	ldr	r3, [pc, #236]	; (102c <MCGIRCLK+0x8c>)
+     f40:	4a3a      	ldr	r2, [pc, #232]	; (102c <MCGIRCLK+0x8c>)
+     f42:	7952      	ldrb	r2, [r2, #5]
+     f44:	b2d2      	uxtb	r2, r2
+     f46:	2120      	movs	r1, #32
+     f48:	430a      	orrs	r2, r1
+     f4a:	b2d2      	uxtb	r2, r2
+     f4c:	715a      	strb	r2, [r3, #5]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:154
+    //配置PLL为2分频
+    MCG_C5 |= MCG_C5_PRDIV0(1);
+     f4e:	4b37      	ldr	r3, [pc, #220]	; (102c <MCGIRCLK+0x8c>)
+     f50:	4a36      	ldr	r2, [pc, #216]	; (102c <MCGIRCLK+0x8c>)
+     f52:	7912      	ldrb	r2, [r2, #4]
+     f54:	b2d2      	uxtb	r2, r2
+     f56:	2101      	movs	r1, #1
+     f58:	430a      	orrs	r2, r1
+     f5a:	b2d2      	uxtb	r2, r2
+     f5c:	711a      	strb	r2, [r3, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:156
+    //配置MCG_C6 以设置PLL倍频因子并且时能PLL，PLLS位被置位来时能PLL，MCGOUT时钟源仍然是外部参考时钟
+    temp_reg = MCG_C6; //存储当前C6的值（因为CME0位之前被置位了）
+     f5e:	4b33      	ldr	r3, [pc, #204]	; (102c <MCGIRCLK+0x8c>)
+     f60:	795b      	ldrb	r3, [r3, #5]
+     f62:	b2da      	uxtb	r2, r3
+     f64:	1cfb      	adds	r3, r7, #3
+     f66:	701a      	strb	r2, [r3, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:157
+    temp_reg &= ~MCG_C6_VDIV0_MASK; //将VDIV清0
+     f68:	1cfb      	adds	r3, r7, #3
+     f6a:	1cfa      	adds	r2, r7, #3
+     f6c:	7812      	ldrb	r2, [r2, #0]
+     f6e:	211f      	movs	r1, #31
+     f70:	438a      	bics	r2, r1
+     f72:	701a      	strb	r2, [r3, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:158
+    temp_reg |= MCG_C6_PLLS_MASK | MCG_C6_VDIV0(0); // 重新写值到VDIV 并且时能PLL
+     f74:	1cfb      	adds	r3, r7, #3
+     f76:	1cfa      	adds	r2, r7, #3
+     f78:	7812      	ldrb	r2, [r2, #0]
+     f7a:	2140      	movs	r1, #64	; 0x40
+     f7c:	430a      	orrs	r2, r1
+     f7e:	701a      	strb	r2, [r3, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:159
+    MCG_C6 = temp_reg; // 更新MCG_C6的值
+     f80:	4b2a      	ldr	r3, [pc, #168]	; (102c <MCGIRCLK+0x8c>)
+     f82:	1cfa      	adds	r2, r7, #3
+     f84:	7812      	ldrb	r2, [r2, #0]
+     f86:	715a      	strb	r2, [r3, #5]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:161
+    // 等待PLLST状态位被置
+    for (i = 0 ; i < 2000 ; i++)
+     f88:	2300      	movs	r3, #0
+     f8a:	607b      	str	r3, [r7, #4]
+     f8c:	e00a      	b.n	fa4 <MCGIRCLK+0x4>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:164
+    {
+        //如果PLLST在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_PLLST_MASK)
+     f8e:	4b27      	ldr	r3, [pc, #156]	; (102c <MCGIRCLK+0x8c>)
+     f90:	799b      	ldrb	r3, [r3, #6]
+     f92:	b2db      	uxtb	r3, r3
+     f94:	1c1a      	adds	r2, r3, #0
+     f96:	2320      	movs	r3, #32
+     f98:	4013      	ands	r3, r2
+     f9a:	d000      	beq.n	f9e <SystemInit+0xf6>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:165
+        	break;
+     f9c:	e006      	b.n	fac <MCGIRCLK+0xc>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:161
+    temp_reg = MCG_C6; //存储当前C6的值（因为CME0位之前被置位了）
+    temp_reg &= ~MCG_C6_VDIV0_MASK; //将VDIV清0
+    temp_reg |= MCG_C6_PLLS_MASK | MCG_C6_VDIV0(0); // 重新写值到VDIV 并且时能PLL
+    MCG_C6 = temp_reg; // 更新MCG_C6的值
+    // 等待PLLST状态位被置
+    for (i = 0 ; i < 2000 ; i++)
+     f9e:	687b      	ldr	r3, [r7, #4]
+     fa0:	3301      	adds	r3, #1
+     fa2:	607b      	str	r3, [r7, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:161 (discriminator 1)
+     fa4:	687a      	ldr	r2, [r7, #4]
+     fa6:	4b23      	ldr	r3, [pc, #140]	; (1034 <MCGIRCLK+0x94>)
+     fa8:	429a      	cmp	r2, r3
+     faa:	d9f0      	bls.n	f8e <SystemInit+0xe6>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:168
+        //如果PLLST在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_PLLST_MASK)
+        	break;
+    }
+    //等待LOCK位被置
+    for (i = 0 ; i < 4000 ; i++)
+     fac:	2300      	movs	r3, #0
+     fae:	607b      	str	r3, [r7, #4]
+     fb0:	e00a      	b.n	fc8 <MCGIRCLK+0x28>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:171
+    {
+        //如果LOCK在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_LOCK0_MASK)
+     fb2:	4b1e      	ldr	r3, [pc, #120]	; (102c <MCGIRCLK+0x8c>)
+     fb4:	799b      	ldrb	r3, [r3, #6]
+     fb6:	b2db      	uxtb	r3, r3
+     fb8:	1c1a      	adds	r2, r3, #0
+     fba:	2340      	movs	r3, #64	; 0x40
+     fbc:	4013      	ands	r3, r2
+     fbe:	d000      	beq.n	fc2 <MCGIRCLK+0x22>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:172
+        	break;
+     fc0:	e006      	b.n	fd0 <MCGIRCLK+0x30>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:168
+        //如果PLLST在循环结束之前被置位就跳出循环
+        if (MCG_S & MCG_S_PLLST_MASK)
+        	break;
+    }
+    //等待LOCK位被置
+    for (i = 0 ; i < 4000 ; i++)
+     fc2:	687b      	ldr	r3, [r7, #4]
+     fc4:	3301      	adds	r3, #1
+     fc6:	607b      	str	r3, [r7, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:168 (discriminator 1)
+     fc8:	687a      	ldr	r2, [r7, #4]
+     fca:	4b1b      	ldr	r3, [pc, #108]	; (1038 <MCGIRCLK+0x98>)
+     fcc:	429a      	cmp	r2, r3
+     fce:	d9f0      	bls.n	fb2 <MCGIRCLK+0x12>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:178
+    }
+
+//3.现在处于PBE模式。最后，PBE模式转换成PEE模式
+    // 设置核心时钟分频器2分频
+    //设置总线时钟分频器2分频 (总线时钟的时钟源是核心时钟)
+    SIM_CLKDIV1 = (SIM_CLKDIV1_OUTDIV1(1) | SIM_CLKDIV1_OUTDIV4(1) );
+     fd0:	4a15      	ldr	r2, [pc, #84]	; (1028 <MCGIRCLK+0x88>)
+     fd2:	4b1a      	ldr	r3, [pc, #104]	; (103c <MCGIRCLK+0x9c>)
+     fd4:	491a      	ldr	r1, [pc, #104]	; (1040 <MCGIRCLK+0xa0>)
+     fd6:	50d1      	str	r1, [r2, r3]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:180
+    //清CLKS来打开CLKS多路复用器来选择PLL作为MCGCLKOUT
+    MCG_C1 &= ~MCG_C1_CLKS_MASK;
+     fd8:	4b14      	ldr	r3, [pc, #80]	; (102c <MCGIRCLK+0x8c>)
+     fda:	4a14      	ldr	r2, [pc, #80]	; (102c <MCGIRCLK+0x8c>)
+     fdc:	7812      	ldrb	r2, [r2, #0]
+     fde:	b2d1      	uxtb	r1, r2
+     fe0:	223f      	movs	r2, #63	; 0x3f
+     fe2:	400a      	ands	r2, r1
+     fe4:	b2d2      	uxtb	r2, r2
+     fe6:	701a      	strb	r2, [r3, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:182
+    // 等待时钟状态位更新
+    for (i = 0 ; i < 2000 ; i++)
+     fe8:	2300      	movs	r3, #0
+     fea:	607b      	str	r3, [r7, #4]
+     fec:	e00c      	b.n	1008 <MCGIRCLK+0x68>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:185
+    {
+        //如果CLKST在循环结束之前等于3就跳出循环
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x3) break;
+     fee:	4b0f      	ldr	r3, [pc, #60]	; (102c <MCGIRCLK+0x8c>)
+     ff0:	799b      	ldrb	r3, [r3, #6]
+     ff2:	b2db      	uxtb	r3, r3
+     ff4:	1c1a      	adds	r2, r3, #0
+     ff6:	230c      	movs	r3, #12
+     ff8:	4013      	ands	r3, r2
+     ffa:	089b      	lsrs	r3, r3, #2
+     ffc:	2b03      	cmp	r3, #3
+     ffe:	d100      	bne.n	1002 <MCGIRCLK+0x62>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:185 (discriminator 1)
+    1000:	e006      	b.n	1010 <MCGIRCLK+0x70>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:182
+    //设置总线时钟分频器2分频 (总线时钟的时钟源是核心时钟)
+    SIM_CLKDIV1 = (SIM_CLKDIV1_OUTDIV1(1) | SIM_CLKDIV1_OUTDIV4(1) );
+    //清CLKS来打开CLKS多路复用器来选择PLL作为MCGCLKOUT
+    MCG_C1 &= ~MCG_C1_CLKS_MASK;
+    // 等待时钟状态位更新
+    for (i = 0 ; i < 2000 ; i++)
+    1002:	687b      	ldr	r3, [r7, #4]
+    1004:	3301      	adds	r3, #1
+    1006:	607b      	str	r3, [r7, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:182 (discriminator 1)
+    1008:	687a      	ldr	r2, [r7, #4]
+    100a:	4b0a      	ldr	r3, [pc, #40]	; (1034 <MCGIRCLK+0x94>)
+    100c:	429a      	cmp	r2, r3
+    100e:	d9ee      	bls.n	fee <MCGIRCLK+0x4e>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:190
+        if (((MCG_S & MCG_S_CLKST_MASK) >> MCG_S_CLKST_SHIFT) == 0x3) break;
+    }
+//4.现在处于PEE模式
+
+    //初始化后，开始PORT模块时钟
+    SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK
+    1010:	4a05      	ldr	r2, [pc, #20]	; (1028 <MCGIRCLK+0x88>)
+    1012:	4905      	ldr	r1, [pc, #20]	; (1028 <MCGIRCLK+0x88>)
+    1014:	4b0b      	ldr	r3, [pc, #44]	; (1044 <MCGIRCLK+0xa4>)
+    1016:	58cb      	ldr	r3, [r1, r3]
+    1018:	21f8      	movs	r1, #248	; 0xf8
+    101a:	0189      	lsls	r1, r1, #6
+    101c:	4319      	orrs	r1, r3
+    101e:	4b09      	ldr	r3, [pc, #36]	; (1044 <MCGIRCLK+0xa4>)
+    1020:	50d1      	str	r1, [r2, r3]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../03_MCU/system_MKL25Z4.c:195
+  			  | SIM_SCGC5_PORTB_MASK
+  			  | SIM_SCGC5_PORTC_MASK
+  			  | SIM_SCGC5_PORTD_MASK
+  			  | SIM_SCGC5_PORTE_MASK;
+}
+    1022:	46bd      	mov	sp, r7
+    1024:	b002      	add	sp, #8
+    1026:	bd80      	pop	{r7, pc}
+    1028:	40047000 	.word	0x40047000
+    102c:	40064000 	.word	0x40064000
+    1030:	00004e1f 	.word	0x00004e1f
+    1034:	000007cf 	.word	0x000007cf
+    1038:	00000f9f 	.word	0x00000f9f
+    103c:	00001044 	.word	0x00001044
+    1040:	10010000 	.word	0x10010000
+    1044:	00001038 	.word	0x00001038
+
+00001048 <UART_BASE_PTR>:
+UART_BASE_PTR():
+    1048:	4006a000 	.word	0x4006a000
+    104c:	4006b000 	.word	0x4006b000
+    1050:	4006c000 	.word	0x4006c000
+
+00001054 <UART_BASE_TXD>:
+UART_BASE_TXD():
+    1054:	40049038 	.word	0x40049038
+    1058:	4004d000 	.word	0x4004d000
+    105c:	4004d088 	.word	0x4004d088
+
+00001060 <UART_BASE_RXD>:
+UART_BASE_RXD():
+    1060:	4004903c 	.word	0x4004903c
+    1064:	4004d004 	.word	0x4004d004
+    1068:	4004d05c 	.word	0x4004d05c
+
+0000106c <RUN_COUNTER_MAX>:
+declaration():
+    106c:	0016e360 	.word	0x0016e360
+
+00001070 <test>:
+test():
+    1070:	dad4d6cf 	.word	0xdad4d6cf
+    1074:	d4cae2b2 	.word	0xd4cae2b2
+    1078:	74726175 	.word	0x74726175
+    107c:	6e65735f 	.word	0x6e65735f
+    1080:	74735f64 	.word	0x74735f64
+    1084:	caafba72 	.word	0xcaafba72
+    1088:	b9c4b5fd 	.word	0xb9c4b5fd
+    108c:	2edcc4a6 	.word	0x2edcc4a6
+    1090:	2e2e      	.short	0x2e2e
+	...
+
+00001093 <test2>:
+test2():
+    1093:	cf          	.byte	0xcf
+    1094:	b2dad4d6 	.word	0xb2dad4d6
+    1098:	75d4cae2 	.word	0x75d4cae2
+    109c:	5f747261 	.word	0x5f747261
+    10a0:	646e6573 	.word	0x646e6573
+    10a4:	caafba4e 	.word	0xcaafba4e
+    10a8:	b9c4b5fd 	.word	0xb9c4b5fd
+    10ac:	2edcc4a6 	.word	0x2edcc4a6
+    10b0:	2e2e      	.short	0x2e2e
+	...
+
+000010b4 <NVIC_BASE_PTR>:
+NVIC_BASE_PTR():
+    10b4:	e000e100 	.word	0xe000e100
+    10b8:	e000e180 	.word	0xe000e180
+    10bc:	e000e200 	.word	0xe000e200
+    10c0:	e000e280 	.word	0xe000e280
+    10c4:	e000e400 	.word	0xe000e400
+
+000010c8 <enable_irq>:
+$t():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:15
+#参数说明：r0:irq号
+#函数返回：无
+#功能概要：使能irq中断
+#============================================================================
+enable_irq:
+    push {r4-r7,lr}           @保存现场,pc(lr)入栈
+    10c8:	b5f0      	push	{r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:17
+
+    cmp r0,#32                @比较irq与32大小
+    10ca:	2820      	cmp	r0, #32
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:18
+	bcc enable_irq_start      @若irq不超过32，则转start_irq
+    10cc:	d300      	bcc.n	10d0 <enable_irq_start>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:19
+    mov r0,#0                 @若irq超过32，则irq=0
+    10ce:	2000      	movs	r0, #0
+
+000010d0 <enable_irq_start>:
+enable_irq_start():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:21
+enable_irq_start:
+    ldr r4,=NVIC_BASE_PTR
+    10d0:	4c0c      	ldr	r4, [pc, #48]	; (1104 <disable_irq_start+0x12>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:22
+    ldr r4,[r4,#0]            @得到ISER的地址
+    10d2:	6824      	ldr	r4, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:23
+	ldr r5,[r4]               @读取ISER的内容
+    10d4:	6825      	ldr	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:24
+	mov r7,#1
+    10d6:	2701      	movs	r7, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:25
+    lsl r7,r0                 @r7=1<<irq
+    10d8:	4087      	lsls	r7, r0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:26
+	orr r5,r7                 @r5=ISER|(1<<irq)
+    10da:	433d      	orrs	r5, r7
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:27
+	str r5,[r4]               @设置ISER
+    10dc:	6025      	str	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:29
+
+    ldr r4,=NVIC_BASE_PTR
+    10de:	4c09      	ldr	r4, [pc, #36]	; (1104 <disable_irq_start+0x12>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:30
+    ldr r4,[r4,#12]           @得到ICPR的地址
+    10e0:	68e4      	ldr	r4, [r4, #12]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:31
+	ldr r5,[r4]               @读取ICPR的内容
+    10e2:	6825      	ldr	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:32
+	orr r5,r7                 @r5=ICPR|(1<<irq)
+    10e4:	433d      	orrs	r5, r7
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:33
+	str r5,[r4]               @设置ICPR
+    10e6:	6025      	str	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:35
+
+    pop {r4-r7,pc}            @恢复现场,lr出栈到pc
+    10e8:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+000010ea <disable_irq>:
+disable_irq():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:45
+#参数说明：r0:irq号
+#函数返回：无
+#功能概要：禁止irq中断
+#============================================================================
+disable_irq:
+    push {r4-r7,lr}           @保存现场,pc(lr)入栈
+    10ea:	b5f0      	push	{r4, r5, r6, r7, lr}
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:47
+
+	cmp r0,#32                @比较irq与32大小
+    10ec:	2820      	cmp	r0, #32
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:48
+	bcc disable_irq_start     @若irq不超过32，则转start_irq
+    10ee:	d300      	bcc.n	10f2 <disable_irq_start>
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:49
+	mov r0,#0                 @若irq超过32，则irq=0
+    10f0:	2000      	movs	r0, #0
+
+000010f2 <disable_irq_start>:
+disable_irq_start():
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:51
+disable_irq_start:
+    ldr r4,=NVIC_BASE_PTR
+    10f2:	4c04      	ldr	r4, [pc, #16]	; (1104 <disable_irq_start+0x12>)
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:52
+    ldr r4,[r4,#4]            @得到ICER的地址
+    10f4:	6864      	ldr	r4, [r4, #4]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:53
+    ldr r5,[r4]               @读取ICER的内容
+    10f6:	6825      	ldr	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:54
+    mov r7,#1
+    10f8:	2701      	movs	r7, #1
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:55
+	lsl r7,r0                 @r7=1<<irq
+    10fa:	4087      	lsls	r7, r0
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:56
+	orr r5,r7                 @r5=ICER|(1<<irq)
+    10fc:	433d      	orrs	r5, r7
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:57
+	str r5,[r4]               @设置ICER
+    10fe:	6025      	str	r5, [r4, #0]
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:59
+
+	pop {r4-r7,pc}            @恢复现场,lr出栈到pc
+    1100:	bdf0      	pop	{r4, r5, r6, r7, pc}
+$d():
+    1102:	0000      	.short	0x0000
+F:\cbfkds\KL25_gpio_uart(asm)\Debug/../07_Soft_Component/common/common.S:21
+
+    cmp r0,#32                @比较irq与32大小
+	bcc enable_irq_start      @若irq不超过32，则转start_irq
+    mov r0,#0                 @若irq超过32，则irq=0
+enable_irq_start:
+    ldr r4,=NVIC_BASE_PTR
+    1104:	000010b4 	.word	0x000010b4
+
+00001108 <UART_BASE_PTR>:
+UART_BASE_PTR():
+    1108:	4006a000 	.word	0x4006a000
+    110c:	4006b000 	.word	0x4006b000
+    1110:	4006c000 	.word	0x4006c000
+
+00001114 <UART_BASE_TXD>:
+UART_BASE_TXD():
+    1114:	40049038 	.word	0x40049038
+    1118:	4004d000 	.word	0x4004d000
+    111c:	4004d088 	.word	0x4004d088
+
+00001120 <UART_BASE_RXD>:
+UART_BASE_RXD():
+    1120:	4004903c 	.word	0x4004903c
+    1124:	4004d004 	.word	0x4004d004
+    1128:	4004d05c 	.word	0x4004d05c
+
+0000112c <table_irq_uart>:
+table_irq_uart():
+    112c:	000e0d0c 	.word	0x000e0d0c

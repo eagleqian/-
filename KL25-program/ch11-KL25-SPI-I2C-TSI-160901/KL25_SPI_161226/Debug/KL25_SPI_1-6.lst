@@ -1,0 +1,3512 @@
+
+KL25_SPI_1-6.elf:     file format elf32-littlearm
+KL25_SPI_1-6.elf
+architecture: arm, flags 0x00000012:
+EXEC_P, HAS_SYMS
+start address 0x00000411
+
+Program Header:
+    LOAD off    0x000000b4 vaddr 0x00000000 paddr 0x00000000 align 2**2
+         filesz 0x000000c0 memsz 0x000000c0 flags r--
+    LOAD off    0x00000174 vaddr 0x00000400 paddr 0x00000400 align 2**0
+         filesz 0x00000010 memsz 0x00000010 flags r--
+    LOAD off    0x00000184 vaddr 0x00000410 paddr 0x00000410 align 2**2
+         filesz 0x00001088 memsz 0x00001088 flags r-x
+    LOAD off    0x0000120c vaddr 0x1ffff000 paddr 0x00001498 align 2**2
+         filesz 0x00000004 memsz 0x00000808 flags rw-
+private flags = 5000002: [Version5 EABI] [has entry point]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn  Flags
+  0 .interrupts   000000c0  00000000  00000000  000000b4  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .flash_config 00000010  00000400  00000400  00000174  2**0  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .text         00001088  00000410  00000410  00000184  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .data         00000004  1ffff000  00001498  0000120c  2**2  CONTENTS, ALLOC, LOAD, DATA
+  4 .heap         00000404  1ffff004  0000149c  00001210  2**0  ALLOC
+  5 .stack        00000400  1ffff408  000018a0  00001210  2**0  ALLOC
+  6 .ARM.attributes 00000030  00000000  00000000  00001210  2**0  CONTENTS, READONLY
+  7 .debug_info   00002582  00000000  00000000  00001240  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 000009ac  00000000  00000000  000037c2  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_aranges 00000248  00000000  00000000  00004170  2**3  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 000001a8  00000000  00000000  000043b8  2**0  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_macro  00009a8b  00000000  00000000  00004560  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_line   00001b8a  00000000  00000000  0000dfeb  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_str    000329d2  00000000  00000000  0000fb75  2**0  CONTENTS, READONLY, DEBUGGING
+ 14 .comment      00000070  00000000  00000000  00042547  2**0  CONTENTS, READONLY
+ 15 .debug_frame  00000654  00000000  00000000  000425b8  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00000000 l    d  .interrupts	00000000 .interrupts
+00000400 l    d  .flash_config	00000000 .flash_config
+00000410 l    d  .text	00000000 .text
+1ffff000 l    d  .data	00000000 .data
+1ffff004 l    d  .heap	00000000 .heap
+1ffff408 l    d  .stack	00000000 .stack
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./03_MCU/startup_MKL25Z4.o
+00000000 l    df *ABS*	00000000 _udivsi3.o
+00000460 l       .text	00000000 .udivsi3_skip_div0_test
+00000000 l    df *ABS*	00000000 _divsi3.o
+000004fc l       .text	00000000 .divsi3_skip_div0_test
+00000000 l    df *ABS*	00000000 _dvmd_tls.o
+00000000 l    df *ABS*	00000000 isr.c
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 common.c
+00000794 l     F .text	0000002c NVIC_EnableIRQ
+00000000 l    df *ABS*	00000000 light.c
+00000000 l    df *ABS*	00000000 uart.c
+00000838 l     F .text	0000002c NVIC_EnableIRQ
+00001468 l     O .text	00000008 UART_ARR
+1ffff000 l     O .data	00000003 table_irq_uart
+00000000 l    df *ABS*	00000000 spi.c
+00000000 l    df *ABS*	00000000 gpio.c
+00001470 l     O .text	00000014 PORT_ARR
+00001484 l     O .text	00000014 GPIO_ARR
+000010fc l     F .text	00000034 gpio_port_pin_resolution
+00000000 l    df *ABS*	00000000 system_MKL25Z4.c
+00000000 l    df *ABS*	00000000 
+00000400 l       *ABS*	00000000 STACK_SIZE
+1ffff408 l       .heap	00000000 __HeapLimit
+00000400 l       *ABS*	00000000 HEAP_SIZE
+00001498 l       .text	00000000 __DATA_ROM
+20002c00 l       *ABS*	00000000 __StackLimit
+1ffff008 g       .heap	00000000 __HeapBase
+1ffff000 g       .data	00000000 __data_start__
+00000454  w    F .text	00000004 I2C0_IRQHandler
+00000454  w    F .text	00000004 HardFault_Handler
+00000454  w    F .text	00000004 SysTick_Handler
+000007f0 g     F .text	0000002a light_init
+00000454  w    F .text	00000004 PendSV_Handler
+00000454  w    F .text	00000004 NMI_Handler
+00001498 g       .data	00000000 __exidx_end
+00000454  w    F .text	00000004 I2C1_IRQHandler
+000005bc g     F .text	0000003a UART1_IRQHandler
+00001498 g       .text	00000000 __etext
+00000454  w    F .text	00000004 DMA2_IRQHandler
+00000c38 g     F .text	0000006c uart_enable_re_int
+00000454  w    F .text	00000004 TPM0_IRQHandler
+00000454  w    F .text	00000004 LLWU_IRQHandler
+00000454  w    F .text	00000004 TSI0_IRQHandler
+00000454  w    F .text	00000004 UART0_IRQHandler
+000007c0 g     F .text	0000002e enable_irq
+00001498 g       .data	00000000 __DTOR_END__
+00000454  w    F .text	00000004 ADC0_IRQHandler
+00000454  w    F .text	00000004 Reserved39_IRQHandler
+0000045c g     F .text	00000088 .hidden __udivsi3
+1ffff004 g       .data	00000000 __START_BSS
+1ffff004 g       .data	00000000 __bss_start__
+00000634 g     F .text	00000046 SPI1_IRQHandler
+00000454  w    F .text	00000004 DefaultISR
+00000454  w    F .text	00000004 PORTD_IRQHandler
+00001498 g       .data	00000000 __exidx_start
+00000454  w    F .text	00000004 TPM2_IRQHandler
+00000454  w    F .text	00000004 RTC_IRQHandler
+00000410  w    F .text	00000044 Reset_Handler
+00000454  w    F .text	00000004 RTC_Seconds_IRQHandler
+000004f8 g     F .text	00000000 .hidden __aeabi_idiv
+00000454  w    F .text	00000004 MCG_IRQHandler
+00000b1c g     F .text	0000006e uart_send_string
+000005f8 g     F .text	0000003a UART2_IRQHandler
+1ffff004 g       .data	00000000 __data_end__
+00001498 g       .data	00000000 __CTOR_LIST__
+00000864 g     F .text	00000224 uart_init
+1ffff004 g       .data	00000000 __bss_end__
+00000454  w    F .text	00000004 Reserved20_IRQHandler
+0000109c g     F .text	0000003c SPI_receive1
+000005b8  w    F .text	00000002 .hidden __aeabi_ldiv0
+0000102c g     F .text	00000070 SPI_send1
+00000454  w    F .text	00000004 USB0_IRQHandler
+00000b8c g     F .text	000000ac uart_re1
+0000081c g     F .text	0000001c light_change
+00000000 g       .interrupts	000000c0 __isr_vector
+0000067c g     F .text	00000118 main
+00000454  w    F .text	00000004 PIT_IRQHandler
+0000045c g     F .text	00000000 .hidden __aeabi_uidiv
+00000454  w    F .text	00000004 SVC_Handler
+1ffff000 g       .data	00000000 __DATA_RAM
+1ffff008 g       .heap	00000000 __end__
+000004f8 g     F .text	000000ac .hidden __divsi3
+00001498 g       .data	00000000 __CTOR_END__
+00000454  w    F .text	00000004 DMA3_IRQHandler
+00001498 g       .data	00000000 __DTOR_LIST__
+1ffff004 g       .data	00000000 __END_BSS
+000012c8 g     F .text	00000188 SystemInit
+00000454  w    F .text	00000004 DMA0_IRQHandler
+00000454  w    F .text	00000004 DAC0_IRQHandler
+20003000 g       *ABS*	00000000 __StackTop
+1ffff000 g       .data	00000000 _mtb_end
+0000149c g       .text	00000000 __DATA_END
+00000454  w    F .text	00000004 Reserved45_IRQHandler
+00000454  w    F .text	00000004 TPM1_IRQHandler
+000004e4 g     F .text	00000012 .hidden __aeabi_uidivmod
+00000454  w    F .text	00000004 LVD_LVW_IRQHandler
+00000454  w    F .text	00000004 SPI0_IRQHandler
+00000454  w    F .text	00000004 PORTA_IRQHandler
+00000000 g       .interrupts	00000000 __VECTOR_TABLE
+00000ca4 g     F .text	00000388 SPI_init
+00000454  w    F .text	00000004 FTFA_IRQHandler
+1ffff000 g       .data	00000000 _mtb_start
+000005b8  w    F .text	00000002 .hidden __aeabi_idiv0
+00000454  w    F .text	00000004 LPTMR0_IRQHandler
+00000a88 g     F .text	00000094 uart_send1
+000011f4 g     F .text	00000080 gpio_set
+00001274 g     F .text	00000054 gpio_reverse
+00001130 g     F .text	000000c4 gpio_init
+000010d8 g     F .text	00000024 SPI_enable_re_int
+00000454  w    F .text	00000004 CMP0_IRQHandler
+000005a4 g     F .text	00000012 .hidden __aeabi_idivmod
+00000454  w    F .text	00000004 DMA1_IRQHandler
+
+
+
+Disassembly of section .text:
+
+00000410 <Reset_Handler>:
+Reset_Handler():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:117
+    .align 2
+    .globl   Reset_Handler
+    .weak    Reset_Handler
+    .type    Reset_Handler, %function
+Reset_Handler:
+    cpsid   i               /* 屏蔽中断 */
+     410:	b672      	cpsid	i
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:119
+#ifndef __NO_SYSTEM_INIT
+    bl SystemInit           /* 跳转到系统初始化函数，在system_MKL25Z4.c中 */
+     412:	f000 ff59 	bl	12c8 <SystemInit>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:121
+#endif
+    cpsie   i               /* 解除屏蔽中断 */
+     416:	b662      	cpsie	i
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+     418:	4909      	ldr	r1, [pc, #36]	; (440 <Reset_Handler+0x30>)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+     41a:	4a0a      	ldr	r2, [pc, #40]	; (444 <Reset_Handler+0x34>)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+     41c:	4b0a      	ldr	r3, [pc, #40]	; (448 <Reset_Handler+0x38>)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:131
+
+    subs    r3, r2
+     41e:	1a9b      	subs	r3, r3, r2
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:132
+    ble     .LC0
+     420:	dd03      	ble.n	42a <Reset_Handler+0x1a>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:135
+
+.LC1:
+    subs    r3, 4
+     422:	3b04      	subs	r3, #4
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:136
+    ldr    r0, [r1,r3]
+     424:	58c8      	ldr	r0, [r1, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:137
+    str    r0, [r2,r3]
+     426:	50d0      	str	r0, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:138
+    bgt    .LC1
+     428:	dcfb      	bgt.n	422 <Reset_Handler+0x12>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+     42a:	4908      	ldr	r1, [pc, #32]	; (44c <Reset_Handler+0x3c>)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+     42c:	4a08      	ldr	r2, [pc, #32]	; (450 <Reset_Handler+0x40>)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:153
+
+    subs    r2, r1
+     42e:	1a52      	subs	r2, r2, r1
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:154
+    ble .LC3
+     430:	dd03      	ble.n	43a <Reset_Handler+0x2a>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:156
+
+    movs    r0, 0
+     432:	2000      	movs	r0, #0
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:158
+.LC2:
+    str r0, [r1, r2]
+     434:	5088      	str	r0, [r1, r2]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:159
+    subs    r2, 4
+     436:	3a04      	subs	r2, #4
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:160
+    bge .LC2
+     438:	dafc      	bge.n	434 <Reset_Handler+0x24>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:166
+.LC3:
+#endif
+#ifndef __START
+#define __START main
+#endif
+    bl    __START
+     43a:	f000 f91f 	bl	67c <main>
+     43e:	0000      	.short	0x0000
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:127
+
+/*     把数据从ROM复制到RAM中。需要在连接文件中定义如下的标志。
+ *
+ *      __etext: 代码段结束标志, 比如： begin of data sections to copy from.
+ *      __data_start__/__data_end__: 数据需要复制到的RAM地址范围。边界必须4字节对齐  */
+    ldr    r1, =__etext
+     440:	00001498 	.word	0x00001498
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:128
+    ldr    r2, =__data_start__
+     444:	1ffff000 	.word	0x1ffff000
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:129
+    ldr    r3, =__data_end__
+     448:	1ffff004 	.word	0x1ffff004
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:150
+ *
+ *     清理BSS段需要在连接文件中定义如下的标志
+ *      __bss_start__: bss段的起始标志，需要对其到4字节
+ *      __bss_end__: bss段的结束标志. 需要对其到4字节
+ */
+    ldr r1, =__bss_start__
+     44c:	1ffff004 	.word	0x1ffff004
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:151
+    ldr r2, =__bss_end__
+     450:	1ffff004 	.word	0x1ffff004
+
+00000454 <ADC0_IRQHandler>:
+I2C0_IRQHandler():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+     454:	4800      	ldr	r0, [pc, #0]	; (458 <ADC0_IRQHandler+0x4>)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:176
+    bx r0
+     456:	4700      	bx	r0
+$d():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/startup_MKL25Z4.S:175
+    .align	1
+    .thumb_func
+    .weak DefaultISR
+    .type DefaultISR, %function
+DefaultISR:
+    ldr	r0, =DefaultISR
+     458:	00000455 	.word	0x00000455
+
+0000045c <__aeabi_uidiv>:
+__udivsi3():
+     45c:	2900      	cmp	r1, #0
+     45e:	d034      	beq.n	4ca <.udivsi3_skip_div0_test+0x6a>
+
+00000460 <.udivsi3_skip_div0_test>:
+     460:	2301      	movs	r3, #1
+     462:	2200      	movs	r2, #0
+     464:	b410      	push	{r4}
+     466:	4288      	cmp	r0, r1
+     468:	d32c      	bcc.n	4c4 <.udivsi3_skip_div0_test+0x64>
+     46a:	2401      	movs	r4, #1
+     46c:	0724      	lsls	r4, r4, #28
+     46e:	42a1      	cmp	r1, r4
+     470:	d204      	bcs.n	47c <.udivsi3_skip_div0_test+0x1c>
+     472:	4281      	cmp	r1, r0
+     474:	d202      	bcs.n	47c <.udivsi3_skip_div0_test+0x1c>
+     476:	0109      	lsls	r1, r1, #4
+     478:	011b      	lsls	r3, r3, #4
+     47a:	e7f8      	b.n	46e <.udivsi3_skip_div0_test+0xe>
+     47c:	00e4      	lsls	r4, r4, #3
+     47e:	42a1      	cmp	r1, r4
+     480:	d204      	bcs.n	48c <.udivsi3_skip_div0_test+0x2c>
+     482:	4281      	cmp	r1, r0
+     484:	d202      	bcs.n	48c <.udivsi3_skip_div0_test+0x2c>
+     486:	0049      	lsls	r1, r1, #1
+     488:	005b      	lsls	r3, r3, #1
+     48a:	e7f8      	b.n	47e <.udivsi3_skip_div0_test+0x1e>
+     48c:	4288      	cmp	r0, r1
+     48e:	d301      	bcc.n	494 <.udivsi3_skip_div0_test+0x34>
+     490:	1a40      	subs	r0, r0, r1
+     492:	431a      	orrs	r2, r3
+     494:	084c      	lsrs	r4, r1, #1
+     496:	42a0      	cmp	r0, r4
+     498:	d302      	bcc.n	4a0 <.udivsi3_skip_div0_test+0x40>
+     49a:	1b00      	subs	r0, r0, r4
+     49c:	085c      	lsrs	r4, r3, #1
+     49e:	4322      	orrs	r2, r4
+     4a0:	088c      	lsrs	r4, r1, #2
+     4a2:	42a0      	cmp	r0, r4
+     4a4:	d302      	bcc.n	4ac <.udivsi3_skip_div0_test+0x4c>
+     4a6:	1b00      	subs	r0, r0, r4
+     4a8:	089c      	lsrs	r4, r3, #2
+     4aa:	4322      	orrs	r2, r4
+     4ac:	08cc      	lsrs	r4, r1, #3
+     4ae:	42a0      	cmp	r0, r4
+     4b0:	d302      	bcc.n	4b8 <.udivsi3_skip_div0_test+0x58>
+     4b2:	1b00      	subs	r0, r0, r4
+     4b4:	08dc      	lsrs	r4, r3, #3
+     4b6:	4322      	orrs	r2, r4
+     4b8:	2800      	cmp	r0, #0
+     4ba:	d003      	beq.n	4c4 <.udivsi3_skip_div0_test+0x64>
+     4bc:	091b      	lsrs	r3, r3, #4
+     4be:	d001      	beq.n	4c4 <.udivsi3_skip_div0_test+0x64>
+     4c0:	0909      	lsrs	r1, r1, #4
+     4c2:	e7e3      	b.n	48c <.udivsi3_skip_div0_test+0x2c>
+     4c4:	1c10      	adds	r0, r2, #0
+     4c6:	bc10      	pop	{r4}
+     4c8:	4770      	bx	lr
+     4ca:	2800      	cmp	r0, #0
+     4cc:	d001      	beq.n	4d2 <.udivsi3_skip_div0_test+0x72>
+     4ce:	2000      	movs	r0, #0
+     4d0:	43c0      	mvns	r0, r0
+     4d2:	b407      	push	{r0, r1, r2}
+     4d4:	4802      	ldr	r0, [pc, #8]	; (4e0 <.udivsi3_skip_div0_test+0x80>)
+     4d6:	a102      	add	r1, pc, #8	; (adr r1, 4e0 <.udivsi3_skip_div0_test+0x80>)
+     4d8:	1840      	adds	r0, r0, r1
+     4da:	9002      	str	r0, [sp, #8]
+     4dc:	bd03      	pop	{r0, r1, pc}
+     4de:	46c0      	nop			; (mov r8, r8)
+     4e0:	000000d9 	.word	0x000000d9
+
+000004e4 <__aeabi_uidivmod>:
+__aeabi_uidivmod():
+     4e4:	2900      	cmp	r1, #0
+     4e6:	d0f0      	beq.n	4ca <.udivsi3_skip_div0_test+0x6a>
+     4e8:	b503      	push	{r0, r1, lr}
+     4ea:	f7ff ffb9 	bl	460 <.udivsi3_skip_div0_test>
+     4ee:	bc0e      	pop	{r1, r2, r3}
+     4f0:	4342      	muls	r2, r0
+     4f2:	1a89      	subs	r1, r1, r2
+     4f4:	4718      	bx	r3
+     4f6:	46c0      	nop			; (mov r8, r8)
+
+000004f8 <__aeabi_idiv>:
+__divsi3():
+     4f8:	2900      	cmp	r1, #0
+     4fa:	d041      	beq.n	580 <.divsi3_skip_div0_test+0x84>
+
+000004fc <.divsi3_skip_div0_test>:
+     4fc:	b410      	push	{r4}
+     4fe:	1c04      	adds	r4, r0, #0
+     500:	404c      	eors	r4, r1
+     502:	46a4      	mov	ip, r4
+     504:	2301      	movs	r3, #1
+     506:	2200      	movs	r2, #0
+     508:	2900      	cmp	r1, #0
+     50a:	d500      	bpl.n	50e <.divsi3_skip_div0_test+0x12>
+     50c:	4249      	negs	r1, r1
+     50e:	2800      	cmp	r0, #0
+     510:	d500      	bpl.n	514 <.divsi3_skip_div0_test+0x18>
+     512:	4240      	negs	r0, r0
+     514:	4288      	cmp	r0, r1
+     516:	d32c      	bcc.n	572 <.divsi3_skip_div0_test+0x76>
+     518:	2401      	movs	r4, #1
+     51a:	0724      	lsls	r4, r4, #28
+     51c:	42a1      	cmp	r1, r4
+     51e:	d204      	bcs.n	52a <.divsi3_skip_div0_test+0x2e>
+     520:	4281      	cmp	r1, r0
+     522:	d202      	bcs.n	52a <.divsi3_skip_div0_test+0x2e>
+     524:	0109      	lsls	r1, r1, #4
+     526:	011b      	lsls	r3, r3, #4
+     528:	e7f8      	b.n	51c <.divsi3_skip_div0_test+0x20>
+     52a:	00e4      	lsls	r4, r4, #3
+     52c:	42a1      	cmp	r1, r4
+     52e:	d204      	bcs.n	53a <.divsi3_skip_div0_test+0x3e>
+     530:	4281      	cmp	r1, r0
+     532:	d202      	bcs.n	53a <.divsi3_skip_div0_test+0x3e>
+     534:	0049      	lsls	r1, r1, #1
+     536:	005b      	lsls	r3, r3, #1
+     538:	e7f8      	b.n	52c <.divsi3_skip_div0_test+0x30>
+     53a:	4288      	cmp	r0, r1
+     53c:	d301      	bcc.n	542 <.divsi3_skip_div0_test+0x46>
+     53e:	1a40      	subs	r0, r0, r1
+     540:	431a      	orrs	r2, r3
+     542:	084c      	lsrs	r4, r1, #1
+     544:	42a0      	cmp	r0, r4
+     546:	d302      	bcc.n	54e <.divsi3_skip_div0_test+0x52>
+     548:	1b00      	subs	r0, r0, r4
+     54a:	085c      	lsrs	r4, r3, #1
+     54c:	4322      	orrs	r2, r4
+     54e:	088c      	lsrs	r4, r1, #2
+     550:	42a0      	cmp	r0, r4
+     552:	d302      	bcc.n	55a <.divsi3_skip_div0_test+0x5e>
+     554:	1b00      	subs	r0, r0, r4
+     556:	089c      	lsrs	r4, r3, #2
+     558:	4322      	orrs	r2, r4
+     55a:	08cc      	lsrs	r4, r1, #3
+     55c:	42a0      	cmp	r0, r4
+     55e:	d302      	bcc.n	566 <.divsi3_skip_div0_test+0x6a>
+     560:	1b00      	subs	r0, r0, r4
+     562:	08dc      	lsrs	r4, r3, #3
+     564:	4322      	orrs	r2, r4
+     566:	2800      	cmp	r0, #0
+     568:	d003      	beq.n	572 <.divsi3_skip_div0_test+0x76>
+     56a:	091b      	lsrs	r3, r3, #4
+     56c:	d001      	beq.n	572 <.divsi3_skip_div0_test+0x76>
+     56e:	0909      	lsrs	r1, r1, #4
+     570:	e7e3      	b.n	53a <.divsi3_skip_div0_test+0x3e>
+     572:	1c10      	adds	r0, r2, #0
+     574:	4664      	mov	r4, ip
+     576:	2c00      	cmp	r4, #0
+     578:	d500      	bpl.n	57c <.divsi3_skip_div0_test+0x80>
+     57a:	4240      	negs	r0, r0
+     57c:	bc10      	pop	{r4}
+     57e:	4770      	bx	lr
+     580:	2800      	cmp	r0, #0
+     582:	d006      	beq.n	592 <.divsi3_skip_div0_test+0x96>
+     584:	db03      	blt.n	58e <.divsi3_skip_div0_test+0x92>
+     586:	2000      	movs	r0, #0
+     588:	43c0      	mvns	r0, r0
+     58a:	0840      	lsrs	r0, r0, #1
+     58c:	e001      	b.n	592 <.divsi3_skip_div0_test+0x96>
+     58e:	2080      	movs	r0, #128	; 0x80
+     590:	0600      	lsls	r0, r0, #24
+     592:	b407      	push	{r0, r1, r2}
+     594:	4802      	ldr	r0, [pc, #8]	; (5a0 <.divsi3_skip_div0_test+0xa4>)
+     596:	a102      	add	r1, pc, #8	; (adr r1, 5a0 <.divsi3_skip_div0_test+0xa4>)
+     598:	1840      	adds	r0, r0, r1
+     59a:	9002      	str	r0, [sp, #8]
+     59c:	bd03      	pop	{r0, r1, pc}
+     59e:	46c0      	nop			; (mov r8, r8)
+     5a0:	00000019 	.word	0x00000019
+
+000005a4 <__aeabi_idivmod>:
+__aeabi_idivmod():
+     5a4:	2900      	cmp	r1, #0
+     5a6:	d0eb      	beq.n	580 <.divsi3_skip_div0_test+0x84>
+     5a8:	b503      	push	{r0, r1, lr}
+     5aa:	f7ff ffa7 	bl	4fc <.divsi3_skip_div0_test>
+     5ae:	bc0e      	pop	{r1, r2, r3}
+     5b0:	4342      	muls	r2, r0
+     5b2:	1a89      	subs	r1, r1, r2
+     5b4:	4718      	bx	r3
+     5b6:	46c0      	nop			; (mov r8, r8)
+
+000005b8 <__aeabi_idiv0>:
+__aeabi_ldiv0():
+     5b8:	4770      	bx	lr
+     5ba:	46c0      	nop			; (mov r8, r8)
+
+000005bc <UART1_IRQHandler>:
+UART1_IRQHandler():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:19
+//参  数: 无
+//返  回: 无
+//说  明: 需要启动中断并注册才可使用
+//=====================================================================
+void UART1_IRQHandler(void)
+{
+     5bc:	b590      	push	{r4, r7, lr}
+     5be:	b083      	sub	sp, #12
+     5c0:	af00      	add	r7, sp, #0
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:21
+    uint_8 ch;
+    uint_8 flag = 1;
+     5c2:	1dbb      	adds	r3, r7, #6
+     5c4:	2201      	movs	r2, #1
+     5c6:	701a      	strb	r2, [r3, #0]
+__disable_irq():
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cmFunc.h:344
+  This function disables IRQ interrupts by setting the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+{
+  __ASM volatile ("cpsid i" : : : "memory");
+     5c8:	b672      	cpsid	i
+UART1_IRQHandler():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:25
+    
+    DISABLE_INTERRUPTS;
+    
+    ch = uart_re1(UART_1, &flag);
+     5ca:	1dfc      	adds	r4, r7, #7
+     5cc:	1dbb      	adds	r3, r7, #6
+     5ce:	2001      	movs	r0, #1
+     5d0:	1c19      	adds	r1, r3, #0
+     5d2:	f000 fadb 	bl	b8c <uart_re1>
+     5d6:	1c03      	adds	r3, r0, #0
+     5d8:	7023      	strb	r3, [r4, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:26
+    if (0 == flag)
+     5da:	1dbb      	adds	r3, r7, #6
+     5dc:	781b      	ldrb	r3, [r3, #0]
+     5de:	2b00      	cmp	r3, #0
+     5e0:	d105      	bne.n	5ee <UART1_IRQHandler+0x32>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:28
+    {
+        uart_send1(UART_1, ch);
+     5e2:	1dfb      	adds	r3, r7, #7
+     5e4:	781b      	ldrb	r3, [r3, #0]
+     5e6:	2001      	movs	r0, #1
+     5e8:	1c19      	adds	r1, r3, #0
+     5ea:	f000 fa4d 	bl	a88 <uart_send1>
+__enable_irq():
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cmFunc.h:333
+  This function enables IRQ interrupts by clearing the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+{
+  __ASM volatile ("cpsie i" : : : "memory");
+     5ee:	b662      	cpsie	i
+UART1_IRQHandler():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:32
+    }
+ 
+    ENABLE_INTERRUPTS;
+}
+     5f0:	46bd      	mov	sp, r7
+     5f2:	b003      	add	sp, #12
+     5f4:	bd90      	pop	{r4, r7, pc}
+     5f6:	46c0      	nop			; (mov r8, r8)
+
+000005f8 <UART2_IRQHandler>:
+UART2_IRQHandler():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:35
+
+void UART2_IRQHandler(void)
+{
+     5f8:	b590      	push	{r4, r7, lr}
+     5fa:	b083      	sub	sp, #12
+     5fc:	af00      	add	r7, sp, #0
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:37
+    uint_8 ch;
+    uint_8 flag = 1;
+     5fe:	1dbb      	adds	r3, r7, #6
+     600:	2201      	movs	r2, #1
+     602:	701a      	strb	r2, [r3, #0]
+__disable_irq():
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cmFunc.h:344
+  This function disables IRQ interrupts by setting the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+{
+  __ASM volatile ("cpsid i" : : : "memory");
+     604:	b672      	cpsid	i
+UART2_IRQHandler():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:41
+
+    DISABLE_INTERRUPTS;
+
+    ch = uart_re1(UART_2, &flag);
+     606:	1dfc      	adds	r4, r7, #7
+     608:	1dbb      	adds	r3, r7, #6
+     60a:	2002      	movs	r0, #2
+     60c:	1c19      	adds	r1, r3, #0
+     60e:	f000 fabd 	bl	b8c <uart_re1>
+     612:	1c03      	adds	r3, r0, #0
+     614:	7023      	strb	r3, [r4, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:42
+    if (0 == flag)
+     616:	1dbb      	adds	r3, r7, #6
+     618:	781b      	ldrb	r3, [r3, #0]
+     61a:	2b00      	cmp	r3, #0
+     61c:	d105      	bne.n	62a <UART2_IRQHandler+0x32>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:44
+    {
+        uart_send1(UART_2, ch);
+     61e:	1dfb      	adds	r3, r7, #7
+     620:	781b      	ldrb	r3, [r3, #0]
+     622:	2002      	movs	r0, #2
+     624:	1c19      	adds	r1, r3, #0
+     626:	f000 fa2f 	bl	a88 <uart_send1>
+__enable_irq():
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cmFunc.h:333
+  This function enables IRQ interrupts by clearing the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+{
+  __ASM volatile ("cpsie i" : : : "memory");
+     62a:	b662      	cpsie	i
+UART2_IRQHandler():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:48
+    }
+
+    ENABLE_INTERRUPTS;
+}
+     62c:	46bd      	mov	sp, r7
+     62e:	b003      	add	sp, #12
+     630:	bd90      	pop	{r4, r7, pc}
+     632:	46c0      	nop			; (mov r8, r8)
+
+00000634 <SPI1_IRQHandler>:
+SPI1_IRQHandler():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:58
+//参  数: 无
+//返  回: 无
+//说  明: 需要启动中断并注册才可使用
+//=====================================================================
+void SPI1_IRQHandler(void)
+{
+     634:	b590      	push	{r4, r7, lr}
+     636:	b083      	sub	sp, #12
+     638:	af00      	add	r7, sp, #0
+__disable_irq():
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cmFunc.h:344
+  This function disables IRQ interrupts by setting the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+{
+  __ASM volatile ("cpsid i" : : : "memory");
+     63a:	b672      	cpsid	i
+SPI1_IRQHandler():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:61
+    uint_8 redata;
+    DISABLE_INTERRUPTS;
+    redata=SPI_receive1(SPI_1);    //接收主机发送过来的一个字节数据。
+     63c:	1dfc      	adds	r4, r7, #7
+     63e:	2001      	movs	r0, #1
+     640:	f000 fd2c 	bl	109c <SPI_receive1>
+     644:	1c03      	adds	r3, r0, #0
+     646:	7023      	strb	r3, [r4, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:62
+    if(redata!='0')
+     648:	1dfb      	adds	r3, r7, #7
+     64a:	781b      	ldrb	r3, [r3, #0]
+     64c:	2b30      	cmp	r3, #48	; 0x30
+     64e:	d010      	beq.n	672 <SPI1_IRQHandler+0x3e>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:64
+    {
+    	uart_send1(UART_2,redata);
+     650:	1dfb      	adds	r3, r7, #7
+     652:	781b      	ldrb	r3, [r3, #0]
+     654:	2002      	movs	r0, #2
+     656:	1c19      	adds	r1, r3, #0
+     658:	f000 fa16 	bl	a88 <uart_send1>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:65
+    	redata++;
+     65c:	1dfb      	adds	r3, r7, #7
+     65e:	781a      	ldrb	r2, [r3, #0]
+     660:	1dfb      	adds	r3, r7, #7
+     662:	3201      	adds	r2, #1
+     664:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:66
+    	SPI_send1(SPI_1,redata);
+     666:	1dfb      	adds	r3, r7, #7
+     668:	781b      	ldrb	r3, [r3, #0]
+     66a:	2001      	movs	r0, #1
+     66c:	1c19      	adds	r1, r3, #0
+     66e:	f000 fcdd 	bl	102c <SPI_send1>
+__enable_irq():
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cmFunc.h:333
+  This function enables IRQ interrupts by clearing the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+{
+  __ASM volatile ("cpsie i" : : : "memory");
+     672:	b662      	cpsie	i
+SPI1_IRQHandler():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/isr.c:69
+    }
+    ENABLE_INTERRUPTS;
+}
+     674:	46bd      	mov	sp, r7
+     676:	b003      	add	sp, #12
+     678:	bd90      	pop	{r4, r7, pc}
+     67a:	46c0      	nop			; (mov r8, r8)
+
+0000067c <main>:
+main():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:26
+	    asm ("NOP");
+	  }
+}
+
+int main(void)
+{
+     67c:	b580      	push	{r7, lr}
+     67e:	b086      	sub	sp, #24
+     680:	af02      	add	r7, sp, #8
+__disable_irq():
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cmFunc.h:344
+  This function disables IRQ interrupts by setting the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+{
+  __ASM volatile ("cpsid i" : : : "memory");
+     682:	b672      	cpsid	i
+main():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:36
+    uint_8 i;
+    //2. 关总中断
+    DISABLE_INTERRUPTS;
+
+    //3. 初始化外设模块
+    light_init(RUN_LIGHT_BLUE,LIGHT_OFF);//初始化蓝灯
+     684:	230a      	movs	r3, #10
+     686:	33ff      	adds	r3, #255	; 0xff
+     688:	1c18      	adds	r0, r3, #0
+     68a:	2101      	movs	r1, #1
+     68c:	f000 f8b0 	bl	7f0 <light_init>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:37
+    uart_init (UART_1, 9600);     //串口1初始化,波特率9600
+     690:	2396      	movs	r3, #150	; 0x96
+     692:	019b      	lsls	r3, r3, #6
+     694:	2001      	movs	r0, #1
+     696:	1c19      	adds	r1, r3, #0
+     698:	f000 f8e4 	bl	864 <uart_init>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:38
+    uart_init (UART_2, 9600);     //串口2初始化,波特率9600
+     69c:	2396      	movs	r3, #150	; 0x96
+     69e:	019b      	lsls	r3, r3, #6
+     6a0:	2002      	movs	r0, #2
+     6a2:	1c19      	adds	r1, r3, #0
+     6a4:	f000 f8de 	bl	864 <uart_init>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:39
+    uart_send_string(UART_1, "This is a SPI Test!\r\n");
+     6a8:	4b36      	ldr	r3, [pc, #216]	; (784 <main+0x108>)
+     6aa:	2001      	movs	r0, #1
+     6ac:	1c19      	adds	r1, r3, #0
+     6ae:	f000 fa35 	bl	b1c <uart_send_string>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:40
+    uart_send_string(UART_2, "This is a SPI Test!\r\n");
+     6b2:	4b34      	ldr	r3, [pc, #208]	; (784 <main+0x108>)
+     6b4:	2002      	movs	r0, #2
+     6b6:	1c19      	adds	r1, r3, #0
+     6b8:	f000 fa30 	bl	b1c <uart_send_string>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:42
+    //把SPI0初始化为主机,波特率6000，时钟极性0，时钟相位0
+    SPI_init(SPI_0,1,6000,0,0);
+     6bc:	4b32      	ldr	r3, [pc, #200]	; (788 <main+0x10c>)
+     6be:	2200      	movs	r2, #0
+     6c0:	9200      	str	r2, [sp, #0]
+     6c2:	2000      	movs	r0, #0
+     6c4:	2101      	movs	r1, #1
+     6c6:	1c1a      	adds	r2, r3, #0
+     6c8:	2300      	movs	r3, #0
+     6ca:	f000 faeb 	bl	ca4 <SPI_init>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:44
+    //把SPI1初始化为从机,波特率6000，时钟极性0，时钟相位0
+    SPI_init(SPI_1,0,6000,0,0);
+     6ce:	4b2e      	ldr	r3, [pc, #184]	; (788 <main+0x10c>)
+     6d0:	2200      	movs	r2, #0
+     6d2:	9200      	str	r2, [sp, #0]
+     6d4:	2001      	movs	r0, #1
+     6d6:	2100      	movs	r1, #0
+     6d8:	1c1a      	adds	r2, r3, #0
+     6da:	2300      	movs	r3, #0
+     6dc:	f000 fae2 	bl	ca4 <SPI_init>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:46
+    //4. 给有关变量赋初值
+    mRuncount1=0;
+     6e0:	2300      	movs	r3, #0
+     6e2:	60fb      	str	r3, [r7, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:47
+    mRuncount2=0;
+     6e4:	2300      	movs	r3, #0
+     6e6:	60bb      	str	r3, [r7, #8]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:48
+    TransferTemp='A';
+     6e8:	1dfb      	adds	r3, r7, #7
+     6ea:	2241      	movs	r2, #65	; 0x41
+     6ec:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:49
+    i=0;
+     6ee:	1dbb      	adds	r3, r7, #6
+     6f0:	2200      	movs	r2, #0
+     6f2:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:51
+    //5. 使能模块中断
+    uart_enable_re_int(UART_1);     //uart接收中断
+     6f4:	2001      	movs	r0, #1
+     6f6:	f000 fa9f 	bl	c38 <uart_enable_re_int>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:52
+    uart_enable_re_int(UART_2);     //uart接收中断
+     6fa:	2002      	movs	r0, #2
+     6fc:	f000 fa9c 	bl	c38 <uart_enable_re_int>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:53
+    SPI_enable_re_int(SPI_1);       //从机SPI_1的接收中断
+     700:	2001      	movs	r0, #1
+     702:	f000 fce9 	bl	10d8 <SPI_enable_re_int>
+__enable_irq():
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cmFunc.h:333
+  This function enables IRQ interrupts by clearing the I-bit in the CPSR.
+  Can only be executed in Privileged modes.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+{
+  __ASM volatile ("cpsie i" : : : "memory");
+     706:	b662      	cpsie	i
+main():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:62
+
+    //进入主循环
+    //主循环开始============================================================
+    for(;;)
+    {
+        mRuncount1++;                       //辅助循环次数计数器+1
+     708:	68fb      	ldr	r3, [r7, #12]
+     70a:	3301      	adds	r3, #1
+     70c:	60fb      	str	r3, [r7, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:63
+        mRuncount2++;                       //用户程序循环次数计数器+1
+     70e:	68bb      	ldr	r3, [r7, #8]
+     710:	3301      	adds	r3, #1
+     712:	60bb      	str	r3, [r7, #8]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:64
+        if (mRuncount1 >= RUN_COUNTER_MAX2)  //辅助循环次数计数器计数
+     714:	68fa      	ldr	r2, [r7, #12]
+     716:	4b1d      	ldr	r3, [pc, #116]	; (78c <main+0x110>)
+     718:	429a      	cmp	r2, r3
+     71a:	d906      	bls.n	72a <main+0xae>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:66
+        {
+               mRuncount1=0;    //主循环次数计数器清零
+     71c:	2300      	movs	r3, #0
+     71e:	60fb      	str	r3, [r7, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:67
+               light_change(RUN_LIGHT_BLUE);    //蓝灯变化
+     720:	230a      	movs	r3, #10
+     722:	33ff      	adds	r3, #255	; 0xff
+     724:	1c18      	adds	r0, r3, #0
+     726:	f000 f879 	bl	81c <light_change>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:70
+        }
+       //以下加入用户程序------------------------------------------------
+        if (mRuncount2 >= RUN_COUNTER_MAX2)  //用户程序循环次数计数器计数
+     72a:	68ba      	ldr	r2, [r7, #8]
+     72c:	4b17      	ldr	r3, [pc, #92]	; (78c <main+0x110>)
+     72e:	429a      	cmp	r2, r3
+     730:	d926      	bls.n	780 <main+0x104>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:72
+           {
+               mRuncount2=0;    //主循环次数计数器清零
+     732:	2300      	movs	r3, #0
+     734:	60bb      	str	r3, [r7, #8]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:73
+               SPI_send1(SPI_0,TransferTemp++);
+     736:	1dfb      	adds	r3, r7, #7
+     738:	781b      	ldrb	r3, [r3, #0]
+     73a:	1dfa      	adds	r2, r7, #7
+     73c:	1c59      	adds	r1, r3, #1
+     73e:	7011      	strb	r1, [r2, #0]
+     740:	2000      	movs	r0, #0
+     742:	1c19      	adds	r1, r3, #0
+     744:	f000 fc72 	bl	102c <SPI_send1>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:74
+               while(i<5 && !SPI_S_REG(SPI_baseadd(SPI_0))&SPI_S_SPRF_MASK)
+     748:	1dbb      	adds	r3, r7, #6
+     74a:	781b      	ldrb	r3, [r3, #0]
+     74c:	2b04      	cmp	r3, #4
+     74e:	d801      	bhi.n	754 <main+0xd8>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:74 (discriminator 2)
+     750:	4b0f      	ldr	r3, [pc, #60]	; (790 <main+0x114>)
+     752:	78db      	ldrb	r3, [r3, #3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:79
+               {							//通信原理可参考01_Doc文本中的硬件说明
+            	   SPI_send1(SPI_0,'0');	//为从机向主机发送数据提供时钟信号；此时主机发送的内容应被从机自动过滤。
+            	   i++;						//i：计数器，做限时用，一定时间后跳出while，默认从机未向主机发送数据
+               }
+               if(SPI_S_REG(SPI_baseadd(SPI_0))&SPI_S_SPRF_MASK)	//若主机接收缓冲区满，则返回接收到的数据
+     754:	4b0e      	ldr	r3, [pc, #56]	; (790 <main+0x114>)
+     756:	78db      	ldrb	r3, [r3, #3]
+     758:	b2db      	uxtb	r3, r3
+     75a:	b2db      	uxtb	r3, r3
+     75c:	b25b      	sxtb	r3, r3
+     75e:	2b00      	cmp	r3, #0
+     760:	da06      	bge.n	770 <main+0xf4>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:80
+            	   uart_send1(UART_1,SPI_D_REG(SPI_baseadd(SPI_0)));
+     762:	4b0b      	ldr	r3, [pc, #44]	; (790 <main+0x114>)
+     764:	795b      	ldrb	r3, [r3, #5]
+     766:	b2db      	uxtb	r3, r3
+     768:	2001      	movs	r0, #1
+     76a:	1c19      	adds	r1, r3, #0
+     76c:	f000 f98c 	bl	a88 <uart_send1>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:81
+               if(TransferTemp>='Z')
+     770:	1dfb      	adds	r3, r7, #7
+     772:	781b      	ldrb	r3, [r3, #0]
+     774:	2b59      	cmp	r3, #89	; 0x59
+     776:	d903      	bls.n	780 <main+0x104>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:82
+            	   TransferTemp='A'-1;
+     778:	1dfb      	adds	r3, r7, #7
+     77a:	2240      	movs	r2, #64	; 0x40
+     77c:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../08_Source/main.c:84
+           }
+    }  //主循环end_for
+     77e:	e7c3      	b.n	708 <main+0x8c>
+     780:	e7c2      	b.n	708 <main+0x8c>
+     782:	46c0      	nop			; (mov r8, r8)
+     784:	00001450 	.word	0x00001450
+     788:	00001770 	.word	0x00001770
+     78c:	0016e35f 	.word	0x0016e35f
+     790:	40076000 	.word	0x40076000
+
+00000794 <NVIC_EnableIRQ>:
+NVIC_EnableIRQ():
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cm0plus.h:684
+    The function enables a device-specific interrupt in the NVIC interrupt controller.
+
+    \param [in]      IRQn  External interrupt number. Value cannot be negative.
+ */
+__STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+{
+     794:	b580      	push	{r7, lr}
+     796:	b082      	sub	sp, #8
+     798:	af00      	add	r7, sp, #0
+     79a:	1c02      	adds	r2, r0, #0
+     79c:	1dfb      	adds	r3, r7, #7
+     79e:	701a      	strb	r2, [r3, #0]
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cm0plus.h:685
+  NVIC->ISER[0] = (uint32_t)(1UL << (((uint32_t)(int32_t)IRQn) & 0x1FUL));
+     7a0:	4b06      	ldr	r3, [pc, #24]	; (7bc <NVIC_EnableIRQ+0x28>)
+     7a2:	1dfa      	adds	r2, r7, #7
+     7a4:	7812      	ldrb	r2, [r2, #0]
+     7a6:	1c11      	adds	r1, r2, #0
+     7a8:	221f      	movs	r2, #31
+     7aa:	400a      	ands	r2, r1
+     7ac:	2101      	movs	r1, #1
+     7ae:	1c08      	adds	r0, r1, #0
+     7b0:	4090      	lsls	r0, r2
+     7b2:	1c02      	adds	r2, r0, #0
+     7b4:	601a      	str	r2, [r3, #0]
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cm0plus.h:686
+}
+     7b6:	46bd      	mov	sp, r7
+     7b8:	b002      	add	sp, #8
+     7ba:	bd80      	pop	{r7, pc}
+     7bc:	e000e100 	.word	0xe000e100
+
+000007c0 <enable_irq>:
+enable_irq():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../07_Soft_Component/common/common.c:65
+//函数返回：无
+//参数说明：irq：irq号, 各个模块的中断号定义在MKL25Z.h中
+//功能概要：使能irq中断 
+//============================================================================
+void enable_irq (IRQn_Type irq)
+{
+     7c0:	b580      	push	{r7, lr}
+     7c2:	b082      	sub	sp, #8
+     7c4:	af00      	add	r7, sp, #0
+     7c6:	1c02      	adds	r2, r0, #0
+     7c8:	1dfb      	adds	r3, r7, #7
+     7ca:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../07_Soft_Component/common/common.c:67
+    //确定irq号为有效的irq号
+    if (irq > 32)	irq=32;
+     7cc:	1dfb      	adds	r3, r7, #7
+     7ce:	781b      	ldrb	r3, [r3, #0]
+     7d0:	b25b      	sxtb	r3, r3
+     7d2:	2b20      	cmp	r3, #32
+     7d4:	dd02      	ble.n	7dc <enable_irq+0x1c>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../07_Soft_Component/common/common.c:67 (discriminator 1)
+     7d6:	1dfb      	adds	r3, r7, #7
+     7d8:	2220      	movs	r2, #32
+     7da:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../07_Soft_Component/common/common.c:69
+    
+    NVIC_EnableIRQ(irq);
+     7dc:	1dfb      	adds	r3, r7, #7
+     7de:	781b      	ldrb	r3, [r3, #0]
+     7e0:	b25b      	sxtb	r3, r3
+     7e2:	1c18      	adds	r0, r3, #0
+     7e4:	f7ff ffd6 	bl	794 <NVIC_EnableIRQ>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../07_Soft_Component/common/common.c:71
+
+}
+     7e8:	46bd      	mov	sp, r7
+     7ea:	b002      	add	sp, #8
+     7ec:	bd80      	pop	{r7, pc}
+     7ee:	46c0      	nop			; (mov r8, r8)
+
+000007f0 <light_init>:
+light_init():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../06_App_Component/light/light.c:18
+//       state：设定小灯状态。由light.h中宏定义。
+//函数返回：无
+//功能概要：指示灯驱动初始化。
+//===========================================================================
+void light_init(uint_16 port_pin, uint_8 state)
+{
+     7f0:	b580      	push	{r7, lr}
+     7f2:	b082      	sub	sp, #8
+     7f4:	af00      	add	r7, sp, #0
+     7f6:	1c0a      	adds	r2, r1, #0
+     7f8:	1dbb      	adds	r3, r7, #6
+     7fa:	1c01      	adds	r1, r0, #0
+     7fc:	8019      	strh	r1, [r3, #0]
+     7fe:	1d7b      	adds	r3, r7, #5
+     800:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../06_App_Component/light/light.c:19
+    gpio_init(port_pin, GPIO_OUTPUT, state);
+     802:	1dbb      	adds	r3, r7, #6
+     804:	881a      	ldrh	r2, [r3, #0]
+     806:	1d7b      	adds	r3, r7, #5
+     808:	781b      	ldrb	r3, [r3, #0]
+     80a:	1c10      	adds	r0, r2, #0
+     80c:	2101      	movs	r1, #1
+     80e:	1c1a      	adds	r2, r3, #0
+     810:	f000 fc8e 	bl	1130 <gpio_init>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../06_App_Component/light/light.c:20
+}
+     814:	46bd      	mov	sp, r7
+     816:	b002      	add	sp, #8
+     818:	bd80      	pop	{r7, pc}
+     81a:	46c0      	nop			; (mov r8, r8)
+
+0000081c <light_change>:
+light_change():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../06_App_Component/light/light.c:41
+//函数参数：port_pin：(端口号)|(引脚号)（如：(PORTB)|(5) 表示为B口5号脚）
+//函数返回：无
+//功能概要：切换指示灯亮暗。
+//===========================================================================
+void light_change(uint_16 port_pin)
+{
+     81c:	b580      	push	{r7, lr}
+     81e:	b082      	sub	sp, #8
+     820:	af00      	add	r7, sp, #0
+     822:	1c02      	adds	r2, r0, #0
+     824:	1dbb      	adds	r3, r7, #6
+     826:	801a      	strh	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../06_App_Component/light/light.c:42
+    gpio_reverse(port_pin);
+     828:	1dbb      	adds	r3, r7, #6
+     82a:	881b      	ldrh	r3, [r3, #0]
+     82c:	1c18      	adds	r0, r3, #0
+     82e:	f000 fd21 	bl	1274 <gpio_reverse>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../06_App_Component/light/light.c:43
+}
+     832:	46bd      	mov	sp, r7
+     834:	b002      	add	sp, #8
+     836:	bd80      	pop	{r7, pc}
+
+00000838 <NVIC_EnableIRQ>:
+NVIC_EnableIRQ():
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cm0plus.h:684
+    The function enables a device-specific interrupt in the NVIC interrupt controller.
+
+    \param [in]      IRQn  External interrupt number. Value cannot be negative.
+ */
+__STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+{
+     838:	b580      	push	{r7, lr}
+     83a:	b082      	sub	sp, #8
+     83c:	af00      	add	r7, sp, #0
+     83e:	1c02      	adds	r2, r0, #0
+     840:	1dfb      	adds	r3, r7, #7
+     842:	701a      	strb	r2, [r3, #0]
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cm0plus.h:685
+  NVIC->ISER[0] = (uint32_t)(1UL << (((uint32_t)(int32_t)IRQn) & 0x1FUL));
+     844:	4b06      	ldr	r3, [pc, #24]	; (860 <NVIC_EnableIRQ+0x28>)
+     846:	1dfa      	adds	r2, r7, #7
+     848:	7812      	ldrb	r2, [r2, #0]
+     84a:	1c11      	adds	r1, r2, #0
+     84c:	221f      	movs	r2, #31
+     84e:	400a      	ands	r2, r1
+     850:	2101      	movs	r1, #1
+     852:	1c08      	adds	r0, r1, #0
+     854:	4090      	lsls	r0, r2
+     856:	1c02      	adds	r2, r0, #0
+     858:	601a      	str	r2, [r3, #0]
+C:/Users/XZH/Desktop/KL25_SPI_1-6/02_CPU/core_cm0plus.h:686
+}
+     85a:	46bd      	mov	sp, r7
+     85c:	b002      	add	sp, #8
+     85e:	bd80      	pop	{r7, pc}
+     860:	e000e100 	.word	0xe000e100
+
+00000864 <uart_init>:
+uart_init():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:23
+//参数说明：uartNo:串口号：UART_0、UART_1、UART_2 
+//          baud:波特率：300、600、1200、2400、4800、9600、19200、115200...
+//函数返回：无
+//============================================================================
+ void  uart_init (uint_8 uartNo, uint_32 baud_rate)
+ {	  
+     864:	b580      	push	{r7, lr}
+     866:	b086      	sub	sp, #24
+     868:	af00      	add	r7, sp, #0
+     86a:	1c02      	adds	r2, r0, #0
+     86c:	6039      	str	r1, [r7, #0]
+     86e:	1dfb      	adds	r3, r7, #7
+     870:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:27
+	//局部变量声明
+	uint_16 sbr;
+	uint_8 temp;  
+	UART0_MemMapPtr uartch1=UART0_BASE_PTR;//声明uartch1为UARTLP_MemMapPtr结构体类型指针
+     872:	4b7d      	ldr	r3, [pc, #500]	; (a68 <uart_init+0x204>)
+     874:	617b      	str	r3, [r7, #20]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:32
+    UART_MemMapPtr uartch2;     //声明uartch2为UART_MemMapPtr结构体类型指针 
+	
+	//根据带入参数uartNo，给局部变量uartch1赋值
+	
+	if(uartNo==0)
+     876:	1dfb      	adds	r3, r7, #7
+     878:	781b      	ldrb	r3, [r3, #0]
+     87a:	2b00      	cmp	r3, #0
+     87c:	d176      	bne.n	96c <uart_init+0x108>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:35
+	{
+
+		SIM_SOPT2 |= SIM_SOPT2_UART0SRC(0x1);   //UART0选择MCGFLLCLK_khz=48000Khz时钟源
+     87e:	4a7b      	ldr	r2, [pc, #492]	; (a6c <uart_init+0x208>)
+     880:	497a      	ldr	r1, [pc, #488]	; (a6c <uart_init+0x208>)
+     882:	4b7b      	ldr	r3, [pc, #492]	; (a70 <uart_init+0x20c>)
+     884:	58cb      	ldr	r3, [r1, r3]
+     886:	2180      	movs	r1, #128	; 0x80
+     888:	04c9      	lsls	r1, r1, #19
+     88a:	4319      	orrs	r1, r3
+     88c:	4b78      	ldr	r3, [pc, #480]	; (a70 <uart_init+0x20c>)
+     88e:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:36
+		SIM_SOPT2 |= SIM_SOPT2_PLLFLLSEL_MASK;
+     890:	4a76      	ldr	r2, [pc, #472]	; (a6c <uart_init+0x208>)
+     892:	4976      	ldr	r1, [pc, #472]	; (a6c <uart_init+0x208>)
+     894:	4b76      	ldr	r3, [pc, #472]	; (a70 <uart_init+0x20c>)
+     896:	58cb      	ldr	r3, [r1, r3]
+     898:	2180      	movs	r1, #128	; 0x80
+     89a:	0249      	lsls	r1, r1, #9
+     89c:	4319      	orrs	r1, r3
+     89e:	4b74      	ldr	r3, [pc, #464]	; (a70 <uart_init+0x20c>)
+     8a0:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:65
+			PORTD_PCR7 |= PORT_PCR_MUX(0x3);     //使能UART0_TXD
+			PORTD_PCR6 |= PORT_PCR_MUX(0x3);     //使能UART0_RXD
+			break;
+		}
+#endif
+		SIM_SCGC4 |= SIM_SCGC4_UART0_MASK;    //启动串口0时钟
+     8a2:	4a72      	ldr	r2, [pc, #456]	; (a6c <uart_init+0x208>)
+     8a4:	4971      	ldr	r1, [pc, #452]	; (a6c <uart_init+0x208>)
+     8a6:	4b73      	ldr	r3, [pc, #460]	; (a74 <uart_init+0x210>)
+     8a8:	58cb      	ldr	r3, [r1, r3]
+     8aa:	2180      	movs	r1, #128	; 0x80
+     8ac:	00c9      	lsls	r1, r1, #3
+     8ae:	4319      	orrs	r1, r3
+     8b0:	4b70      	ldr	r3, [pc, #448]	; (a74 <uart_init+0x210>)
+     8b2:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:68
+		
+		//暂时关闭串口0发送与接收功能  
+		uartch1->C2 &= ~(UART_C2_TE_MASK | UART_C2_RE_MASK); 
+     8b4:	697b      	ldr	r3, [r7, #20]
+     8b6:	78db      	ldrb	r3, [r3, #3]
+     8b8:	b2db      	uxtb	r3, r3
+     8ba:	220c      	movs	r2, #12
+     8bc:	4393      	bics	r3, r2
+     8be:	b2da      	uxtb	r2, r3
+     8c0:	697b      	ldr	r3, [r7, #20]
+     8c2:	70da      	strb	r2, [r3, #3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:71
+   
+		//配置串口工作模式:8位无校验模式
+		sbr = (uint_16)((SYSTEM_CLK_KHZ*1000)/(baud_rate * 16));
+     8c4:	683b      	ldr	r3, [r7, #0]
+     8c6:	011b      	lsls	r3, r3, #4
+     8c8:	486b      	ldr	r0, [pc, #428]	; (a78 <uart_init+0x214>)
+     8ca:	1c19      	adds	r1, r3, #0
+     8cc:	f7ff fdc6 	bl	45c <__aeabi_uidiv>
+     8d0:	1c03      	adds	r3, r0, #0
+     8d2:	1c1a      	adds	r2, r3, #0
+     8d4:	1c3b      	adds	r3, r7, #0
+     8d6:	3312      	adds	r3, #18
+     8d8:	801a      	strh	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:72
+		temp = UART_BDH_REG(uartch1) & ~(UART_BDH_SBR(0x1F));
+     8da:	697b      	ldr	r3, [r7, #20]
+     8dc:	781b      	ldrb	r3, [r3, #0]
+     8de:	b2da      	uxtb	r2, r3
+     8e0:	1c3b      	adds	r3, r7, #0
+     8e2:	3311      	adds	r3, #17
+     8e4:	211f      	movs	r1, #31
+     8e6:	438a      	bics	r2, r1
+     8e8:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:73
+		UART_BDH_REG(uartch1) = temp |  UART_BDH_SBR(((sbr & 0x1F00) >> 8));
+     8ea:	1c3b      	adds	r3, r7, #0
+     8ec:	3312      	adds	r3, #18
+     8ee:	881a      	ldrh	r2, [r3, #0]
+     8f0:	23f8      	movs	r3, #248	; 0xf8
+     8f2:	015b      	lsls	r3, r3, #5
+     8f4:	4013      	ands	r3, r2
+     8f6:	121b      	asrs	r3, r3, #8
+     8f8:	b2da      	uxtb	r2, r3
+     8fa:	231f      	movs	r3, #31
+     8fc:	4013      	ands	r3, r2
+     8fe:	b2da      	uxtb	r2, r3
+     900:	1c3b      	adds	r3, r7, #0
+     902:	3311      	adds	r3, #17
+     904:	781b      	ldrb	r3, [r3, #0]
+     906:	4313      	orrs	r3, r2
+     908:	b2da      	uxtb	r2, r3
+     90a:	697b      	ldr	r3, [r7, #20]
+     90c:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:74
+		UART_BDL_REG(uartch1) = (uint_8)(sbr & UART_BDL_SBR_MASK);
+     90e:	1c3b      	adds	r3, r7, #0
+     910:	3312      	adds	r3, #18
+     912:	881b      	ldrh	r3, [r3, #0]
+     914:	b2da      	uxtb	r2, r3
+     916:	697b      	ldr	r3, [r7, #20]
+     918:	705a      	strb	r2, [r3, #1]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:77
+
+		//初始化控制寄存器、清标志位
+		UART0_C4 = 0x0F;
+     91a:	4b53      	ldr	r3, [pc, #332]	; (a68 <uart_init+0x204>)
+     91c:	220f      	movs	r2, #15
+     91e:	729a      	strb	r2, [r3, #10]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:78
+		UART0_C1 = 0x00;
+     920:	4b51      	ldr	r3, [pc, #324]	; (a68 <uart_init+0x204>)
+     922:	2200      	movs	r2, #0
+     924:	709a      	strb	r2, [r3, #2]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:79
+		UART0_C3 = 0x00;
+     926:	4b50      	ldr	r3, [pc, #320]	; (a68 <uart_init+0x204>)
+     928:	2200      	movs	r2, #0
+     92a:	719a      	strb	r2, [r3, #6]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:80
+		UART0_MA1 = 0x00;
+     92c:	4b4e      	ldr	r3, [pc, #312]	; (a68 <uart_init+0x204>)
+     92e:	2200      	movs	r2, #0
+     930:	721a      	strb	r2, [r3, #8]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:81
+		UART0_MA2 = 0x00;
+     932:	4b4d      	ldr	r3, [pc, #308]	; (a68 <uart_init+0x204>)
+     934:	2200      	movs	r2, #0
+     936:	725a      	strb	r2, [r3, #9]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:82
+		UART0_S1 |= 0x1F;
+     938:	4b4b      	ldr	r3, [pc, #300]	; (a68 <uart_init+0x204>)
+     93a:	4a4b      	ldr	r2, [pc, #300]	; (a68 <uart_init+0x204>)
+     93c:	7912      	ldrb	r2, [r2, #4]
+     93e:	b2d2      	uxtb	r2, r2
+     940:	211f      	movs	r1, #31
+     942:	430a      	orrs	r2, r1
+     944:	b2d2      	uxtb	r2, r2
+     946:	711a      	strb	r2, [r3, #4]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:83
+		UART0_S2 |= 0xC0;    
+     948:	4b47      	ldr	r3, [pc, #284]	; (a68 <uart_init+0x204>)
+     94a:	4a47      	ldr	r2, [pc, #284]	; (a68 <uart_init+0x204>)
+     94c:	7952      	ldrb	r2, [r2, #5]
+     94e:	b2d2      	uxtb	r2, r2
+     950:	2140      	movs	r1, #64	; 0x40
+     952:	4249      	negs	r1, r1
+     954:	430a      	orrs	r2, r1
+     956:	b2d2      	uxtb	r2, r2
+     958:	715a      	strb	r2, [r3, #5]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:86
+	   	
+		//启动发送接收
+		uartch1->C2 |= (UART_C2_TE_MASK | UART_C2_RE_MASK);    
+     95a:	697b      	ldr	r3, [r7, #20]
+     95c:	78db      	ldrb	r3, [r3, #3]
+     95e:	b2db      	uxtb	r3, r3
+     960:	220c      	movs	r2, #12
+     962:	4313      	orrs	r3, r2
+     964:	b2da      	uxtb	r2, r3
+     966:	697b      	ldr	r3, [r7, #20]
+     968:	70da      	strb	r2, [r3, #3]
+     96a:	e07a      	b.n	a62 <uart_init+0x1fe>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:90
+	}
+	else
+	{
+		 switch (uartNo)
+     96c:	1dfb      	adds	r3, r7, #7
+     96e:	781b      	ldrb	r3, [r3, #0]
+     970:	2b01      	cmp	r3, #1
+     972:	d002      	beq.n	97a <uart_init+0x116>
+     974:	2b02      	cmp	r3, #2
+     976:	d013      	beq.n	9a0 <uart_init+0x13c>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:135
+		    	   }
+#endif
+		           SIM_SCGC4 |= SIM_SCGC4_UART2_MASK;//启动串口2时钟
+		           break;
+		       default:
+		    	   break;  //传参错误，返回
+     978:	e025      	b.n	9c6 <uart_init+0x162>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:97
+		       case UART_1:
+#ifdef UART_1_GROUP
+		    	   switch(UART_1_GROUP)
+		    	   {
+		    	   case 0:
+		    		   PORTE_PCR0 = PORT_PCR_MUX(0x3);    //使能UART1_TXD
+     97a:	4b40      	ldr	r3, [pc, #256]	; (a7c <uart_init+0x218>)
+     97c:	22c0      	movs	r2, #192	; 0xc0
+     97e:	0092      	lsls	r2, r2, #2
+     980:	601a      	str	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:98
+		    		   PORTE_PCR1 = PORT_PCR_MUX(0x3);    //使能UART1_RXD
+     982:	4b3e      	ldr	r3, [pc, #248]	; (a7c <uart_init+0x218>)
+     984:	22c0      	movs	r2, #192	; 0xc0
+     986:	0092      	lsls	r2, r2, #2
+     988:	605a      	str	r2, [r3, #4]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:99
+		    		   break;
+     98a:	46c0      	nop			; (mov r8, r8)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:111
+		    		   PORTC_PCR4 = PORT_PCR_MUX(0x3);    //使能UART1_TXD
+		    		   PORTC_PCR5 = PORT_PCR_MUX(0x3);    //使能UART1_RXD
+		    		   break;
+		    	   }
+#endif
+		           SIM_SCGC4 |= SIM_SCGC4_UART1_MASK; //启动串口1时钟
+     98c:	4a37      	ldr	r2, [pc, #220]	; (a6c <uart_init+0x208>)
+     98e:	4937      	ldr	r1, [pc, #220]	; (a6c <uart_init+0x208>)
+     990:	4b38      	ldr	r3, [pc, #224]	; (a74 <uart_init+0x210>)
+     992:	58cb      	ldr	r3, [r1, r3]
+     994:	2180      	movs	r1, #128	; 0x80
+     996:	0109      	lsls	r1, r1, #4
+     998:	4319      	orrs	r1, r3
+     99a:	4b36      	ldr	r3, [pc, #216]	; (a74 <uart_init+0x210>)
+     99c:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:112
+		           break;
+     99e:	e012      	b.n	9c6 <uart_init+0x162>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:118
+		       case UART_2:
+#ifdef UART_2_GROUP
+		    	   switch(UART_2_GROUP)
+		    	   {
+		    	   case 0:
+		    		   PORTE_PCR22 = PORT_PCR_MUX(0x4); //使能UART2_TXD
+     9a0:	4b36      	ldr	r3, [pc, #216]	; (a7c <uart_init+0x218>)
+     9a2:	2280      	movs	r2, #128	; 0x80
+     9a4:	00d2      	lsls	r2, r2, #3
+     9a6:	659a      	str	r2, [r3, #88]	; 0x58
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:119
+		    		   PORTE_PCR23 = PORT_PCR_MUX(0x4); //使能UART2_RXD
+     9a8:	4b34      	ldr	r3, [pc, #208]	; (a7c <uart_init+0x218>)
+     9aa:	2280      	movs	r2, #128	; 0x80
+     9ac:	00d2      	lsls	r2, r2, #3
+     9ae:	65da      	str	r2, [r3, #92]	; 0x5c
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:120
+		    		   break;
+     9b0:	46c0      	nop			; (mov r8, r8)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:132
+		    		   PORTD_PCR5 = PORT_PCR_MUX(0x3); //使能UART2_TXD
+		    		   PORTD_PCR6 = PORT_PCR_MUX(0x3); //使能UART2_RXD
+		    		   break;
+		    	   }
+#endif
+		           SIM_SCGC4 |= SIM_SCGC4_UART2_MASK;//启动串口2时钟
+     9b2:	4a2e      	ldr	r2, [pc, #184]	; (a6c <uart_init+0x208>)
+     9b4:	492d      	ldr	r1, [pc, #180]	; (a6c <uart_init+0x208>)
+     9b6:	4b2f      	ldr	r3, [pc, #188]	; (a74 <uart_init+0x210>)
+     9b8:	58cb      	ldr	r3, [r1, r3]
+     9ba:	2180      	movs	r1, #128	; 0x80
+     9bc:	0149      	lsls	r1, r1, #5
+     9be:	4319      	orrs	r1, r3
+     9c0:	4b2c      	ldr	r3, [pc, #176]	; (a74 <uart_init+0x210>)
+     9c2:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:133
+		           break;
+     9c4:	46c0      	nop			; (mov r8, r8)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:138
+		       default:
+		    	   break;  //传参错误，返回
+		       }
+
+		uartch2 = UART_ARR[uartNo-1]; //获得UART1、2模块相应口基地址
+     9c6:	1dfb      	adds	r3, r7, #7
+     9c8:	781b      	ldrb	r3, [r3, #0]
+     9ca:	1e5a      	subs	r2, r3, #1
+     9cc:	4b2c      	ldr	r3, [pc, #176]	; (a80 <uart_init+0x21c>)
+     9ce:	0092      	lsls	r2, r2, #2
+     9d0:	58d3      	ldr	r3, [r2, r3]
+     9d2:	60fb      	str	r3, [r7, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:141
+
+		 //暂时关闭串口1、2发送与接收功能  
+		uartch2->C2 &= ~(UART_C2_TE_MASK | UART_C2_RE_MASK);
+     9d4:	68fb      	ldr	r3, [r7, #12]
+     9d6:	78db      	ldrb	r3, [r3, #3]
+     9d8:	b2db      	uxtb	r3, r3
+     9da:	220c      	movs	r2, #12
+     9dc:	4393      	bics	r3, r2
+     9de:	b2da      	uxtb	r2, r3
+     9e0:	68fb      	ldr	r3, [r7, #12]
+     9e2:	70da      	strb	r2, [r3, #3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:145
+		   	  
+		//配置波特率,KL25串口1、2时钟频率使用 Bus clock = 24M 总线时钟
+		//配置串口工作模式,8位无校验模式
+		uartch2->C1 = 0;          
+     9e4:	68fb      	ldr	r3, [r7, #12]
+     9e6:	2200      	movs	r2, #0
+     9e8:	709a      	strb	r2, [r3, #2]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:146
+		sbr = (uint_16)((BUS_CLK_KHZ*1000)/(baud_rate * 16));
+     9ea:	683b      	ldr	r3, [r7, #0]
+     9ec:	011b      	lsls	r3, r3, #4
+     9ee:	4825      	ldr	r0, [pc, #148]	; (a84 <uart_init+0x220>)
+     9f0:	1c19      	adds	r1, r3, #0
+     9f2:	f7ff fd33 	bl	45c <__aeabi_uidiv>
+     9f6:	1c03      	adds	r3, r0, #0
+     9f8:	1c1a      	adds	r2, r3, #0
+     9fa:	1c3b      	adds	r3, r7, #0
+     9fc:	3312      	adds	r3, #18
+     9fe:	801a      	strh	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:147
+		temp = UART_BDH_REG(uartch2) & ~(UART_BDH_SBR(0x1F));
+     a00:	68fb      	ldr	r3, [r7, #12]
+     a02:	781b      	ldrb	r3, [r3, #0]
+     a04:	b2da      	uxtb	r2, r3
+     a06:	1c3b      	adds	r3, r7, #0
+     a08:	3311      	adds	r3, #17
+     a0a:	211f      	movs	r1, #31
+     a0c:	438a      	bics	r2, r1
+     a0e:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:148
+		UART_BDH_REG(uartch2) = temp |  UART_BDH_SBR(((sbr & 0x1F00) >> 8));
+     a10:	1c3b      	adds	r3, r7, #0
+     a12:	3312      	adds	r3, #18
+     a14:	881a      	ldrh	r2, [r3, #0]
+     a16:	23f8      	movs	r3, #248	; 0xf8
+     a18:	015b      	lsls	r3, r3, #5
+     a1a:	4013      	ands	r3, r2
+     a1c:	121b      	asrs	r3, r3, #8
+     a1e:	b2da      	uxtb	r2, r3
+     a20:	231f      	movs	r3, #31
+     a22:	4013      	ands	r3, r2
+     a24:	b2da      	uxtb	r2, r3
+     a26:	1c3b      	adds	r3, r7, #0
+     a28:	3311      	adds	r3, #17
+     a2a:	781b      	ldrb	r3, [r3, #0]
+     a2c:	4313      	orrs	r3, r2
+     a2e:	b2da      	uxtb	r2, r3
+     a30:	68fb      	ldr	r3, [r7, #12]
+     a32:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:149
+		UART_BDL_REG(uartch2) = (uint_8)(sbr & UART_BDL_SBR_MASK);
+     a34:	1c3b      	adds	r3, r7, #0
+     a36:	3312      	adds	r3, #18
+     a38:	881b      	ldrh	r3, [r3, #0]
+     a3a:	b2da      	uxtb	r2, r3
+     a3c:	68fb      	ldr	r3, [r7, #12]
+     a3e:	705a      	strb	r2, [r3, #1]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:152
+		           
+		//初始化控制寄存器、清标志位
+		uartch2->C1 = 0x00;
+     a40:	68fb      	ldr	r3, [r7, #12]
+     a42:	2200      	movs	r2, #0
+     a44:	709a      	strb	r2, [r3, #2]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:153
+		uartch2->C3 = 0x00;
+     a46:	68fb      	ldr	r3, [r7, #12]
+     a48:	2200      	movs	r2, #0
+     a4a:	719a      	strb	r2, [r3, #6]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:155
+//		uartch2->S1 = 0x1F;
+		uartch2->S2 = 0x00;   	               
+     a4c:	68fb      	ldr	r3, [r7, #12]
+     a4e:	2200      	movs	r2, #0
+     a50:	715a      	strb	r2, [r3, #5]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:157
+		//启动发送接收
+		uartch2->C2 |= (UART_C2_TE_MASK | UART_C2_RE_MASK);                           	
+     a52:	68fb      	ldr	r3, [r7, #12]
+     a54:	78db      	ldrb	r3, [r3, #3]
+     a56:	b2db      	uxtb	r3, r3
+     a58:	220c      	movs	r2, #12
+     a5a:	4313      	orrs	r3, r2
+     a5c:	b2da      	uxtb	r2, r3
+     a5e:	68fb      	ldr	r3, [r7, #12]
+     a60:	70da      	strb	r2, [r3, #3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:159
+	}
+ }
+     a62:	46bd      	mov	sp, r7
+     a64:	b006      	add	sp, #24
+     a66:	bd80      	pop	{r7, pc}
+     a68:	4006a000 	.word	0x4006a000
+     a6c:	40047000 	.word	0x40047000
+     a70:	00001004 	.word	0x00001004
+     a74:	00001034 	.word	0x00001034
+     a78:	02dc6c00 	.word	0x02dc6c00
+     a7c:	4004d000 	.word	0x4004d000
+     a80:	00001468 	.word	0x00001468
+     a84:	016e3600 	.word	0x016e3600
+
+00000a88 <uart_send1>:
+uart_send1():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:168
+//          ch:要发送的字节
+//函数返回：函数执行状态：0=正常；非0=异常。
+//功能概要：串行发送1个字节
+ //============================================================================
+uint_8 uart_send1(uint_8 uartNo, uint_8 ch)
+{
+     a88:	b580      	push	{r7, lr}
+     a8a:	b086      	sub	sp, #24
+     a8c:	af00      	add	r7, sp, #0
+     a8e:	1c0a      	adds	r2, r1, #0
+     a90:	1dfb      	adds	r3, r7, #7
+     a92:	1c01      	adds	r1, r0, #0
+     a94:	7019      	strb	r1, [r3, #0]
+     a96:	1dbb      	adds	r3, r7, #6
+     a98:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:170
+    uint_32 t;       
+    UART0_MemMapPtr uartch1=UART0_BASE_PTR; //获取UART0基地址
+     a9a:	4b1d      	ldr	r3, [pc, #116]	; (b10 <uart_send1+0x88>)
+     a9c:	613b      	str	r3, [r7, #16]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:171
+    UART_MemMapPtr uartch2 = UART_ARR[uartNo-1]; //获取UART1或者2基地址
+     a9e:	1dfb      	adds	r3, r7, #7
+     aa0:	781b      	ldrb	r3, [r3, #0]
+     aa2:	1e5a      	subs	r2, r3, #1
+     aa4:	4b1b      	ldr	r3, [pc, #108]	; (b14 <uart_send1+0x8c>)
+     aa6:	0092      	lsls	r2, r2, #2
+     aa8:	58d3      	ldr	r3, [r2, r3]
+     aaa:	60fb      	str	r3, [r7, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:173
+    
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     aac:	2300      	movs	r3, #0
+     aae:	617b      	str	r3, [r7, #20]
+     ab0:	e01e      	b.n	af0 <uart_send1+0x68>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:176
+    {
+        
+    	if(0==uartNo)     //判断使用的哪个串口
+     ab2:	1dfb      	adds	r3, r7, #7
+     ab4:	781b      	ldrb	r3, [r3, #0]
+     ab6:	2b00      	cmp	r3, #0
+     ab8:	d10b      	bne.n	ad2 <uart_send1+0x4a>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:178
+    	{
+			if ( (uartch1->S1) & UART_S1_TDRE_MASK )//判断发送缓冲区是否为空
+     aba:	693b      	ldr	r3, [r7, #16]
+     abc:	791b      	ldrb	r3, [r3, #4]
+     abe:	b2db      	uxtb	r3, r3
+     ac0:	b2db      	uxtb	r3, r3
+     ac2:	b25b      	sxtb	r3, r3
+     ac4:	2b00      	cmp	r3, #0
+     ac6:	da10      	bge.n	aea <uart_send1+0x62>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:180
+			{
+				uartch1->D = ch;   //获取数据并发送
+     ac8:	693b      	ldr	r3, [r7, #16]
+     aca:	1dba      	adds	r2, r7, #6
+     acc:	7812      	ldrb	r2, [r2, #0]
+     ace:	71da      	strb	r2, [r3, #7]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:181
+				break;             //跳出循环
+     ad0:	e012      	b.n	af8 <uart_send1+0x70>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:186
+			}
+    	}
+    	else
+    	{
+			if ( (uartch2->S1) & UART_S1_TDRE_MASK )//判断发送缓冲区是否为空
+     ad2:	68fb      	ldr	r3, [r7, #12]
+     ad4:	791b      	ldrb	r3, [r3, #4]
+     ad6:	b2db      	uxtb	r3, r3
+     ad8:	b2db      	uxtb	r3, r3
+     ada:	b25b      	sxtb	r3, r3
+     adc:	2b00      	cmp	r3, #0
+     ade:	da04      	bge.n	aea <uart_send1+0x62>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:188
+			{
+				uartch2->D = ch;   //获取数据并发送
+     ae0:	68fb      	ldr	r3, [r7, #12]
+     ae2:	1dba      	adds	r2, r7, #6
+     ae4:	7812      	ldrb	r2, [r2, #0]
+     ae6:	71da      	strb	r2, [r3, #7]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:189
+				break;             //跳出循环
+     ae8:	e006      	b.n	af8 <uart_send1+0x70>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:173
+{
+    uint_32 t;       
+    UART0_MemMapPtr uartch1=UART0_BASE_PTR; //获取UART0基地址
+    UART_MemMapPtr uartch2 = UART_ARR[uartNo-1]; //获取UART1或者2基地址
+    
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     aea:	697b      	ldr	r3, [r7, #20]
+     aec:	3301      	adds	r3, #1
+     aee:	617b      	str	r3, [r7, #20]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:173 (discriminator 1)
+     af0:	697a      	ldr	r2, [r7, #20]
+     af2:	4b09      	ldr	r3, [pc, #36]	; (b18 <uart_send1+0x90>)
+     af4:	429a      	cmp	r2, r3
+     af6:	d9dc      	bls.n	ab2 <uart_send1+0x2a>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:194
+				break;             //跳出循环
+			}
+    	}
+        
+    }//end for
+    if (t >= 0xFBBB)
+     af8:	697a      	ldr	r2, [r7, #20]
+     afa:	4b07      	ldr	r3, [pc, #28]	; (b18 <uart_send1+0x90>)
+     afc:	429a      	cmp	r2, r3
+     afe:	d901      	bls.n	b04 <uart_send1+0x7c>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:195
+        return 1; //发送超时，发送失败
+     b00:	2301      	movs	r3, #1
+     b02:	e000      	b.n	b06 <uart_send1+0x7e>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:197
+    else
+        return 0; //成功发送
+     b04:	2300      	movs	r3, #0
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:199
+        
+}
+     b06:	1c18      	adds	r0, r3, #0
+     b08:	46bd      	mov	sp, r7
+     b0a:	b006      	add	sp, #24
+     b0c:	bd80      	pop	{r7, pc}
+     b0e:	46c0      	nop			; (mov r8, r8)
+     b10:	4006a000 	.word	0x4006a000
+     b14:	00001468 	.word	0x00001468
+     b18:	0000fbba 	.word	0x0000fbba
+
+00000b1c <uart_send_string>:
+uart_send_string():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:233
+//          buff:要发送的字符串的首地址
+//函数返回： 函数执行状态：0=正常；非0=异常。
+//功能概要：从指定UART端口发送一个以'\0'结束的字符串
+//============================================================================
+uint_8 uart_send_string(uint_8 uartNo, void *buff)
+{
+     b1c:	b580      	push	{r7, lr}
+     b1e:	b084      	sub	sp, #16
+     b20:	af00      	add	r7, sp, #0
+     b22:	1c02      	adds	r2, r0, #0
+     b24:	6039      	str	r1, [r7, #0]
+     b26:	1dfb      	adds	r3, r7, #7
+     b28:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:234
+    uint_16 i = 0;
+     b2a:	1c3b      	adds	r3, r7, #0
+     b2c:	330e      	adds	r3, #14
+     b2e:	2200      	movs	r2, #0
+     b30:	801a      	strh	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:235
+    uint_8 *buff_ptr = (uint_8 *)buff;    //定义指针指向要发送字符串首地址
+     b32:	683b      	ldr	r3, [r7, #0]
+     b34:	60bb      	str	r3, [r7, #8]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:236
+    for(i = 0; buff_ptr[i] != '\0'; i++)  //遍历字符串里的字符
+     b36:	1c3b      	adds	r3, r7, #0
+     b38:	330e      	adds	r3, #14
+     b3a:	2200      	movs	r2, #0
+     b3c:	801a      	strh	r2, [r3, #0]
+     b3e:	e017      	b.n	b70 <uart_send_string+0x54>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:238
+    {
+        if (uart_send1(uartNo,buff_ptr[i]))//发送指针对应的字符
+     b40:	1c3b      	adds	r3, r7, #0
+     b42:	330e      	adds	r3, #14
+     b44:	881b      	ldrh	r3, [r3, #0]
+     b46:	68ba      	ldr	r2, [r7, #8]
+     b48:	18d3      	adds	r3, r2, r3
+     b4a:	781b      	ldrb	r3, [r3, #0]
+     b4c:	1dfa      	adds	r2, r7, #7
+     b4e:	7812      	ldrb	r2, [r2, #0]
+     b50:	1c10      	adds	r0, r2, #0
+     b52:	1c19      	adds	r1, r3, #0
+     b54:	f7ff ff98 	bl	a88 <uart_send1>
+     b58:	1c03      	adds	r3, r0, #0
+     b5a:	2b00      	cmp	r3, #0
+     b5c:	d001      	beq.n	b62 <uart_send_string+0x46>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:239
+            return 1;  //发送失败
+     b5e:	2301      	movs	r3, #1
+     b60:	e00f      	b.n	b82 <uart_send_string+0x66>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:236
+//============================================================================
+uint_8 uart_send_string(uint_8 uartNo, void *buff)
+{
+    uint_16 i = 0;
+    uint_8 *buff_ptr = (uint_8 *)buff;    //定义指针指向要发送字符串首地址
+    for(i = 0; buff_ptr[i] != '\0'; i++)  //遍历字符串里的字符
+     b62:	1c3b      	adds	r3, r7, #0
+     b64:	330e      	adds	r3, #14
+     b66:	881a      	ldrh	r2, [r3, #0]
+     b68:	1c3b      	adds	r3, r7, #0
+     b6a:	330e      	adds	r3, #14
+     b6c:	3201      	adds	r2, #1
+     b6e:	801a      	strh	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:236 (discriminator 1)
+     b70:	1c3b      	adds	r3, r7, #0
+     b72:	330e      	adds	r3, #14
+     b74:	881b      	ldrh	r3, [r3, #0]
+     b76:	68ba      	ldr	r2, [r7, #8]
+     b78:	18d3      	adds	r3, r2, r3
+     b7a:	781b      	ldrb	r3, [r3, #0]
+     b7c:	2b00      	cmp	r3, #0
+     b7e:	d1df      	bne.n	b40 <uart_send_string+0x24>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:241
+    {
+        if (uart_send1(uartNo,buff_ptr[i]))//发送指针对应的字符
+            return 1;  //发送失败
+    }
+    return 0;         //发送成功
+     b80:	2300      	movs	r3, #0
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:242
+}
+     b82:	1c18      	adds	r0, r3, #0
+     b84:	46bd      	mov	sp, r7
+     b86:	b004      	add	sp, #16
+     b88:	bd80      	pop	{r7, pc}
+     b8a:	46c0      	nop			; (mov r8, r8)
+
+00000b8c <uart_re1>:
+uart_re1():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:252
+//          fp:接收成功标志的指针:*fp=0，成功接收；*fp=1，接收失败
+//函数返回：接收返回字节
+//功能概要：串行接收1个字节
+//============================================================================
+uint_8 uart_re1 (uint_8 uartNo,uint_8 *fp)
+{
+     b8c:	b580      	push	{r7, lr}
+     b8e:	b086      	sub	sp, #24
+     b90:	af00      	add	r7, sp, #0
+     b92:	1c02      	adds	r2, r0, #0
+     b94:	6039      	str	r1, [r7, #0]
+     b96:	1dfb      	adds	r3, r7, #7
+     b98:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:255
+    uint_32 t;
+    uint_8  dat;
+    UART0_MemMapPtr uartch1=UART0_BASE_PTR;    //获取UART0基地址
+     b9a:	4b24      	ldr	r3, [pc, #144]	; (c2c <uart_re1+0xa0>)
+     b9c:	60fb      	str	r3, [r7, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:256
+    UART_MemMapPtr uartch2 = UART_ARR[uartNo-1];//获取UART1或者2基地址
+     b9e:	1dfb      	adds	r3, r7, #7
+     ba0:	781b      	ldrb	r3, [r3, #0]
+     ba2:	1e5a      	subs	r2, r3, #1
+     ba4:	4b22      	ldr	r3, [pc, #136]	; (c30 <uart_re1+0xa4>)
+     ba6:	0092      	lsls	r2, r2, #2
+     ba8:	58d3      	ldr	r3, [r2, r3]
+     baa:	60bb      	str	r3, [r7, #8]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:258
+
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     bac:	2300      	movs	r3, #0
+     bae:	617b      	str	r3, [r7, #20]
+     bb0:	e026      	b.n	c00 <uart_re1+0x74>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:260
+    {
+    	if(0==uartNo)  //判断使用的哪个串口
+     bb2:	1dfb      	adds	r3, r7, #7
+     bb4:	781b      	ldrb	r3, [r3, #0]
+     bb6:	2b00      	cmp	r3, #0
+     bb8:	d10f      	bne.n	bda <uart_re1+0x4e>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:263
+    	{
+            //判断接收缓冲区是否满
+            if ((uartch1->S1) & UART_S1_RDRF_MASK )
+     bba:	68fb      	ldr	r3, [r7, #12]
+     bbc:	791b      	ldrb	r3, [r3, #4]
+     bbe:	b2db      	uxtb	r3, r3
+     bc0:	1c1a      	adds	r2, r3, #0
+     bc2:	2320      	movs	r3, #32
+     bc4:	4013      	ands	r3, r2
+     bc6:	d018      	beq.n	bfa <uart_re1+0x6e>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:265
+            {
+                dat = uartch1->D; //获取数据 
+     bc8:	1c3b      	adds	r3, r7, #0
+     bca:	3313      	adds	r3, #19
+     bcc:	68fa      	ldr	r2, [r7, #12]
+     bce:	79d2      	ldrb	r2, [r2, #7]
+     bd0:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:266
+                *fp= 0;  //接受成功
+     bd2:	683b      	ldr	r3, [r7, #0]
+     bd4:	2200      	movs	r2, #0
+     bd6:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:267
+                break;
+     bd8:	e016      	b.n	c08 <uart_re1+0x7c>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:273
+            }
+    	}
+    	else
+    	{
+            //判断接收缓冲区是否满
+            if ((uartch2->S1) & UART_S1_RDRF_MASK )
+     bda:	68bb      	ldr	r3, [r7, #8]
+     bdc:	791b      	ldrb	r3, [r3, #4]
+     bde:	b2db      	uxtb	r3, r3
+     be0:	1c1a      	adds	r2, r3, #0
+     be2:	2320      	movs	r3, #32
+     be4:	4013      	ands	r3, r2
+     be6:	d008      	beq.n	bfa <uart_re1+0x6e>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:275
+            {
+                dat = uartch2->D; //获取数据 
+     be8:	1c3b      	adds	r3, r7, #0
+     bea:	3313      	adds	r3, #19
+     bec:	68ba      	ldr	r2, [r7, #8]
+     bee:	79d2      	ldrb	r2, [r2, #7]
+     bf0:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:276
+                *fp= 0;  //接受成功
+     bf2:	683b      	ldr	r3, [r7, #0]
+     bf4:	2200      	movs	r2, #0
+     bf6:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:277
+                break;
+     bf8:	e006      	b.n	c08 <uart_re1+0x7c>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:258
+    uint_32 t;
+    uint_8  dat;
+    UART0_MemMapPtr uartch1=UART0_BASE_PTR;    //获取UART0基地址
+    UART_MemMapPtr uartch2 = UART_ARR[uartNo-1];//获取UART1或者2基地址
+
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     bfa:	697b      	ldr	r3, [r7, #20]
+     bfc:	3301      	adds	r3, #1
+     bfe:	617b      	str	r3, [r7, #20]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:258 (discriminator 1)
+     c00:	697a      	ldr	r2, [r7, #20]
+     c02:	4b0c      	ldr	r3, [pc, #48]	; (c34 <uart_re1+0xa8>)
+     c04:	429a      	cmp	r2, r3
+     c06:	d9d4      	bls.n	bb2 <uart_re1+0x26>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:282
+                break;
+            }
+    	}
+
+    }//end for
+    if(t >= 0xFBBB) 
+     c08:	697a      	ldr	r2, [r7, #20]
+     c0a:	4b0a      	ldr	r3, [pc, #40]	; (c34 <uart_re1+0xa8>)
+     c0c:	429a      	cmp	r2, r3
+     c0e:	d906      	bls.n	c1e <uart_re1+0x92>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:284
+    {
+        dat = 0xFF; 
+     c10:	1c3b      	adds	r3, r7, #0
+     c12:	3313      	adds	r3, #19
+     c14:	22ff      	movs	r2, #255	; 0xff
+     c16:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:285
+        *fp = 1;    //未收到数据
+     c18:	683b      	ldr	r3, [r7, #0]
+     c1a:	2201      	movs	r2, #1
+     c1c:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:287
+    }
+    return dat;    //返回接收到的数据
+     c1e:	1c3b      	adds	r3, r7, #0
+     c20:	3313      	adds	r3, #19
+     c22:	781b      	ldrb	r3, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:289
+    
+}
+     c24:	1c18      	adds	r0, r3, #0
+     c26:	46bd      	mov	sp, r7
+     c28:	b006      	add	sp, #24
+     c2a:	bd80      	pop	{r7, pc}
+     c2c:	4006a000 	.word	0x4006a000
+     c30:	00001468 	.word	0x00001468
+     c34:	0000fbba 	.word	0x0000fbba
+
+00000c38 <uart_enable_re_int>:
+uart_enable_re_int():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:322
+//参数说明：uartNo: 串口号:UART_0、UART_1、UART_2 
+//函数返回：无
+//功能概要：开串口接收中断
+//============================================================================
+void uart_enable_re_int(uint_8 uartNo)
+{
+     c38:	b580      	push	{r7, lr}
+     c3a:	b084      	sub	sp, #16
+     c3c:	af00      	add	r7, sp, #0
+     c3e:	1c02      	adds	r2, r0, #0
+     c40:	1dfb      	adds	r3, r7, #7
+     c42:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:323
+	UART0_MemMapPtr uartch1=UART0_BASE_PTR;
+     c44:	4b14      	ldr	r3, [pc, #80]	; (c98 <uart_enable_re_int+0x60>)
+     c46:	60fb      	str	r3, [r7, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:324
+    UART_MemMapPtr uartch2 = UART_ARR[uartNo-1];
+     c48:	1dfb      	adds	r3, r7, #7
+     c4a:	781b      	ldrb	r3, [r3, #0]
+     c4c:	1e5a      	subs	r2, r3, #1
+     c4e:	4b13      	ldr	r3, [pc, #76]	; (c9c <uart_enable_re_int+0x64>)
+     c50:	0092      	lsls	r2, r2, #2
+     c52:	58d3      	ldr	r3, [r2, r3]
+     c54:	60bb      	str	r3, [r7, #8]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:325
+    if(0 == uartNo)
+     c56:	1dfb      	adds	r3, r7, #7
+     c58:	781b      	ldrb	r3, [r3, #0]
+     c5a:	2b00      	cmp	r3, #0
+     c5c:	d108      	bne.n	c70 <uart_enable_re_int+0x38>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:326
+      uartch1->C2 |= UART_C2_RIE_MASK;        //开放UART接收中断
+     c5e:	68fb      	ldr	r3, [r7, #12]
+     c60:	78db      	ldrb	r3, [r3, #3]
+     c62:	b2db      	uxtb	r3, r3
+     c64:	2220      	movs	r2, #32
+     c66:	4313      	orrs	r3, r2
+     c68:	b2da      	uxtb	r2, r3
+     c6a:	68fb      	ldr	r3, [r7, #12]
+     c6c:	70da      	strb	r2, [r3, #3]
+     c6e:	e007      	b.n	c80 <uart_enable_re_int+0x48>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:328
+    else 
+      uartch2->C2 |= UART_C2_RIE_MASK;        //开放UART接收中断
+     c70:	68bb      	ldr	r3, [r7, #8]
+     c72:	78db      	ldrb	r3, [r3, #3]
+     c74:	b2db      	uxtb	r3, r3
+     c76:	2220      	movs	r2, #32
+     c78:	4313      	orrs	r3, r2
+     c7a:	b2da      	uxtb	r2, r3
+     c7c:	68bb      	ldr	r3, [r7, #8]
+     c7e:	70da      	strb	r2, [r3, #3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:329
+    NVIC_EnableIRQ(table_irq_uart[uartNo]);   //开中断控制器IRQ中断
+     c80:	1dfb      	adds	r3, r7, #7
+     c82:	781b      	ldrb	r3, [r3, #0]
+     c84:	4a06      	ldr	r2, [pc, #24]	; (ca0 <uart_enable_re_int+0x68>)
+     c86:	5cd3      	ldrb	r3, [r2, r3]
+     c88:	b25b      	sxtb	r3, r3
+     c8a:	1c18      	adds	r0, r3, #0
+     c8c:	f7ff fdd4 	bl	838 <NVIC_EnableIRQ>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/uart/uart.c:330
+}
+     c90:	46bd      	mov	sp, r7
+     c92:	b004      	add	sp, #16
+     c94:	bd80      	pop	{r7, pc}
+     c96:	46c0      	nop			; (mov r8, r8)
+     c98:	4006a000 	.word	0x4006a000
+     c9c:	00001468 	.word	0x00001468
+     ca0:	1ffff000 	.word	0x1ffff000
+
+00000ca4 <SPI_init>:
+SPI_init():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:21
+//       CPHA：CPHA=0相位为0； CPHA=1相位为1；
+//函数返回：无
+//=====================================================================
+void SPI_init(uint_8 No,uint_8 MSTR,uint_16 BaudRate,\
+                                               uint_8 CPOL,uint_8 CPHA)
+{
+     ca4:	b590      	push	{r4, r7, lr}
+     ca6:	b085      	sub	sp, #20
+     ca8:	af00      	add	r7, sp, #0
+     caa:	1c04      	adds	r4, r0, #0
+     cac:	1c08      	adds	r0, r1, #0
+     cae:	1c11      	adds	r1, r2, #0
+     cb0:	1c1a      	adds	r2, r3, #0
+     cb2:	1dfb      	adds	r3, r7, #7
+     cb4:	701c      	strb	r4, [r3, #0]
+     cb6:	1dbb      	adds	r3, r7, #6
+     cb8:	7018      	strb	r0, [r3, #0]
+     cba:	1d3b      	adds	r3, r7, #4
+     cbc:	8019      	strh	r1, [r3, #0]
+     cbe:	1cfb      	adds	r3, r7, #3
+     cc0:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:25
+    uint_8 BaudRate_Mode;
+    uint_8 BaudRate_High;
+    uint_8 BaudRate_Low;
+    if(No<0||No>1)   No=0;    //如果SPI号参数错误则强制选择 0号模块
+     cc2:	1dfb      	adds	r3, r7, #7
+     cc4:	781b      	ldrb	r3, [r3, #0]
+     cc6:	2b01      	cmp	r3, #1
+     cc8:	d902      	bls.n	cd0 <SPI_init+0x2c>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:25 (discriminator 1)
+     cca:	1dfb      	adds	r3, r7, #7
+     ccc:	2200      	movs	r2, #0
+     cce:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:26
+    if(No==0)                 //初始化SPI0功能
+     cd0:	1dfb      	adds	r3, r7, #7
+     cd2:	781b      	ldrb	r3, [r3, #0]
+     cd4:	2b00      	cmp	r3, #0
+     cd6:	d000      	beq.n	cda <SPI_init+0x36>
+     cd8:	e0d0      	b.n	e7c <SPI_init+0x1d8>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:28
+    {
+        BSET(SIM_SCGC4_SPI0_SHIFT,SIM_SCGC4);   //打开SPI0模块时钟。
+     cda:	4acd      	ldr	r2, [pc, #820]	; (1010 <SPI_init+0x36c>)
+     cdc:	49cc      	ldr	r1, [pc, #816]	; (1010 <SPI_init+0x36c>)
+     cde:	4bcd      	ldr	r3, [pc, #820]	; (1014 <SPI_init+0x370>)
+     ce0:	58cb      	ldr	r3, [r1, r3]
+     ce2:	2180      	movs	r1, #128	; 0x80
+     ce4:	03c9      	lsls	r1, r1, #15
+     ce6:	4319      	orrs	r1, r3
+     ce8:	4bca      	ldr	r3, [pc, #808]	; (1014 <SPI_init+0x370>)
+     cea:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:38
+        PORTD_PCR2=(0|PORT_PCR_MUX(0x02));        //选择PTD2的MOSI功能
+        PORTD_PCR3=(0|PORT_PCR_MUX(0x02));        //选择PTD3的MIOS功能
+        #endif
+
+        #if (SPI_0_GROUP == 2)
+        PORTA_PCR14=(0|PORT_PCR_MUX(0x02));        //选择PTA14的SS功能
+     cec:	4bca      	ldr	r3, [pc, #808]	; (1018 <SPI_init+0x374>)
+     cee:	2280      	movs	r2, #128	; 0x80
+     cf0:	0092      	lsls	r2, r2, #2
+     cf2:	639a      	str	r2, [r3, #56]	; 0x38
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:39
+        PORTA_PCR15=(0|PORT_PCR_MUX(0x02));        //选择PTA15的SCK功能
+     cf4:	4bc8      	ldr	r3, [pc, #800]	; (1018 <SPI_init+0x374>)
+     cf6:	2280      	movs	r2, #128	; 0x80
+     cf8:	0092      	lsls	r2, r2, #2
+     cfa:	63da      	str	r2, [r3, #60]	; 0x3c
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:40
+        PORTA_PCR16=(0|PORT_PCR_MUX(0x02));        //选择PTA16的MOSI功能
+     cfc:	4bc6      	ldr	r3, [pc, #792]	; (1018 <SPI_init+0x374>)
+     cfe:	2280      	movs	r2, #128	; 0x80
+     d00:	0092      	lsls	r2, r2, #2
+     d02:	641a      	str	r2, [r3, #64]	; 0x40
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:41
+        PORTA_PCR17=(0|PORT_PCR_MUX(0x02));        //选择PTA17的MIOS功能
+     d04:	4bc4      	ldr	r3, [pc, #784]	; (1018 <SPI_init+0x374>)
+     d06:	2280      	movs	r2, #128	; 0x80
+     d08:	0092      	lsls	r2, r2, #2
+     d0a:	645a      	str	r2, [r3, #68]	; 0x44
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:51
+        PORTC_PCR5=(0|PORT_PCR_MUX(0x02));        //选择PTC5的SCK功能
+        PORTC_PCR6=(0|PORT_PCR_MUX(0x02));        //选择PTC6的MOSI功能
+        PORTC_PCR7=(0|PORT_PCR_MUX(0x02));        //选择PTC7的MIOS功能
+        #endif
+
+        SPI0_C1=0x00;                           //SPI控制寄存器1清零
+     d0c:	4bc3      	ldr	r3, [pc, #780]	; (101c <SPI_init+0x378>)
+     d0e:	2200      	movs	r2, #0
+     d10:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:52
+        BSET(SPI_C1_SPE_SHIFT,SPI0_C1);         //使能SPI模块
+     d12:	4bc2      	ldr	r3, [pc, #776]	; (101c <SPI_init+0x378>)
+     d14:	4ac1      	ldr	r2, [pc, #772]	; (101c <SPI_init+0x378>)
+     d16:	7812      	ldrb	r2, [r2, #0]
+     d18:	b2d2      	uxtb	r2, r2
+     d1a:	2140      	movs	r1, #64	; 0x40
+     d1c:	430a      	orrs	r2, r1
+     d1e:	b2d2      	uxtb	r2, r2
+     d20:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:56
+
+        //MSTR=1为主机模式；
+        //MSTR=0为从机模式（因MSTR初始值为0，无需更改）
+        (MSTR==1)?BSET(SPI_C1_MSTR_SHIFT,SPI0_C1):\
+     d22:	1dbb      	adds	r3, r7, #6
+     d24:	781b      	ldrb	r3, [r3, #0]
+     d26:	2b01      	cmp	r3, #1
+     d28:	d108      	bne.n	d3c <SPI_init+0x98>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:56 (discriminator 1)
+     d2a:	4bbc      	ldr	r3, [pc, #752]	; (101c <SPI_init+0x378>)
+     d2c:	4abb      	ldr	r2, [pc, #748]	; (101c <SPI_init+0x378>)
+     d2e:	7812      	ldrb	r2, [r2, #0]
+     d30:	b2d2      	uxtb	r2, r2
+     d32:	2110      	movs	r1, #16
+     d34:	430a      	orrs	r2, r1
+     d36:	b2d2      	uxtb	r2, r2
+     d38:	701a      	strb	r2, [r3, #0]
+     d3a:	e008      	b.n	d4e <SPI_init+0xaa>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:57 (discriminator 2)
+                       BSET(SPI_C1_SPIE_SHIFT,SPI0_C1);
+     d3c:	4bb7      	ldr	r3, [pc, #732]	; (101c <SPI_init+0x378>)
+     d3e:	4ab7      	ldr	r2, [pc, #732]	; (101c <SPI_init+0x378>)
+     d40:	7812      	ldrb	r2, [r2, #0]
+     d42:	b2d2      	uxtb	r2, r2
+     d44:	2180      	movs	r1, #128	; 0x80
+     d46:	4249      	negs	r1, r1
+     d48:	430a      	orrs	r2, r1
+     d4a:	b2d2      	uxtb	r2, r2
+     d4c:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:60
+
+        //时钟极性配置，CPOL=0，平时时钟为高电平，反之CPOL=1，平时时钟为低电平
+        (0==CPOL)?BCLR(SPI_C1_CPOL_SHIFT,SPI0_C1):\
+     d4e:	1cfb      	adds	r3, r7, #3
+     d50:	781b      	ldrb	r3, [r3, #0]
+     d52:	2b00      	cmp	r3, #0
+     d54:	d108      	bne.n	d68 <SPI_init+0xc4>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:60 (discriminator 1)
+     d56:	4bb1      	ldr	r3, [pc, #708]	; (101c <SPI_init+0x378>)
+     d58:	4ab0      	ldr	r2, [pc, #704]	; (101c <SPI_init+0x378>)
+     d5a:	7812      	ldrb	r2, [r2, #0]
+     d5c:	b2d2      	uxtb	r2, r2
+     d5e:	2108      	movs	r1, #8
+     d60:	438a      	bics	r2, r1
+     d62:	b2d2      	uxtb	r2, r2
+     d64:	701a      	strb	r2, [r3, #0]
+     d66:	e007      	b.n	d78 <SPI_init+0xd4>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:61 (discriminator 2)
+                        BSET(SPI_C1_CPOL_SHIFT,SPI0_C1);
+     d68:	4bac      	ldr	r3, [pc, #688]	; (101c <SPI_init+0x378>)
+     d6a:	4aac      	ldr	r2, [pc, #688]	; (101c <SPI_init+0x378>)
+     d6c:	7812      	ldrb	r2, [r2, #0]
+     d6e:	b2d2      	uxtb	r2, r2
+     d70:	2108      	movs	r1, #8
+     d72:	430a      	orrs	r2, r1
+     d74:	b2d2      	uxtb	r2, r2
+     d76:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:64
+
+        //时钟相位CPHA
+        (0 == CPHA)?BCLR(SPI_C1_CPHA_SHIFT,SPI0_C1):\
+     d78:	1c3b      	adds	r3, r7, #0
+     d7a:	3320      	adds	r3, #32
+     d7c:	781b      	ldrb	r3, [r3, #0]
+     d7e:	2b00      	cmp	r3, #0
+     d80:	d108      	bne.n	d94 <SPI_init+0xf0>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:64 (discriminator 1)
+     d82:	4ba6      	ldr	r3, [pc, #664]	; (101c <SPI_init+0x378>)
+     d84:	4aa5      	ldr	r2, [pc, #660]	; (101c <SPI_init+0x378>)
+     d86:	7812      	ldrb	r2, [r2, #0]
+     d88:	b2d2      	uxtb	r2, r2
+     d8a:	2104      	movs	r1, #4
+     d8c:	438a      	bics	r2, r1
+     d8e:	b2d2      	uxtb	r2, r2
+     d90:	701a      	strb	r2, [r3, #0]
+     d92:	e007      	b.n	da4 <SPI_init+0x100>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:65 (discriminator 2)
+                              BSET(SPI_C1_CPHA_SHIFT,SPI0_C1);
+     d94:	4ba1      	ldr	r3, [pc, #644]	; (101c <SPI_init+0x378>)
+     d96:	4aa1      	ldr	r2, [pc, #644]	; (101c <SPI_init+0x378>)
+     d98:	7812      	ldrb	r2, [r2, #0]
+     d9a:	b2d2      	uxtb	r2, r2
+     d9c:	2104      	movs	r1, #4
+     d9e:	430a      	orrs	r2, r1
+     da0:	b2d2      	uxtb	r2, r2
+     da2:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:68
+
+        ////SSOE为1,MODFEN为1，配置本模块为自动SS输出
+        BSET(SPI_C1_SSOE_SHIFT,SPI0_C1);
+     da4:	4b9d      	ldr	r3, [pc, #628]	; (101c <SPI_init+0x378>)
+     da6:	4a9d      	ldr	r2, [pc, #628]	; (101c <SPI_init+0x378>)
+     da8:	7812      	ldrb	r2, [r2, #0]
+     daa:	b2d2      	uxtb	r2, r2
+     dac:	2102      	movs	r1, #2
+     dae:	430a      	orrs	r2, r1
+     db0:	b2d2      	uxtb	r2, r2
+     db2:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:70
+        //对SPI0的C1寄存器配置为主机模式、从机选择自动模式并使能SPI0模块。
+        SPI0_C2=0x00;
+     db4:	4b99      	ldr	r3, [pc, #612]	; (101c <SPI_init+0x378>)
+     db6:	2200      	movs	r2, #0
+     db8:	705a      	strb	r2, [r3, #1]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:71
+        if(MSTR == 1 )  //主机模式
+     dba:	1dbb      	adds	r3, r7, #6
+     dbc:	781b      	ldrb	r3, [r3, #0]
+     dbe:	2b01      	cmp	r3, #1
+     dc0:	d107      	bne.n	dd2 <SPI_init+0x12e>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:72
+            BSET(SPI_C2_MODFEN_SHIFT,SPI0_C2);
+     dc2:	4b96      	ldr	r3, [pc, #600]	; (101c <SPI_init+0x378>)
+     dc4:	4a95      	ldr	r2, [pc, #596]	; (101c <SPI_init+0x378>)
+     dc6:	7852      	ldrb	r2, [r2, #1]
+     dc8:	b2d2      	uxtb	r2, r2
+     dca:	2110      	movs	r1, #16
+     dcc:	430a      	orrs	r2, r1
+     dce:	b2d2      	uxtb	r2, r2
+     dd0:	705a      	strb	r2, [r3, #1]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:73
+        BSET(SPI_C1_SPIE_SHIFT,SPI0_C1);
+     dd2:	4b92      	ldr	r3, [pc, #584]	; (101c <SPI_init+0x378>)
+     dd4:	4a91      	ldr	r2, [pc, #580]	; (101c <SPI_init+0x378>)
+     dd6:	7812      	ldrb	r2, [r2, #0]
+     dd8:	b2d2      	uxtb	r2, r2
+     dda:	2180      	movs	r1, #128	; 0x80
+     ddc:	4249      	negs	r1, r1
+     dde:	430a      	orrs	r2, r1
+     de0:	b2d2      	uxtb	r2, r2
+     de2:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:74
+        SPI0_BR = 0x00U;//波特率寄存器清零
+     de4:	4b8d      	ldr	r3, [pc, #564]	; (101c <SPI_init+0x378>)
+     de6:	2200      	movs	r2, #0
+     de8:	709a      	strb	r2, [r3, #2]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:76
+        //重新设置波特率
+        BaudRate_High=0;
+     dea:	1c3b      	adds	r3, r7, #0
+     dec:	330d      	adds	r3, #13
+     dee:	2200      	movs	r2, #0
+     df0:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:77
+        BaudRate_Low=0;
+     df2:	1c3b      	adds	r3, r7, #0
+     df4:	330e      	adds	r3, #14
+     df6:	2200      	movs	r2, #0
+     df8:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:78
+        BaudRate_Mode=12000/BaudRate;
+     dfa:	1d3b      	adds	r3, r7, #4
+     dfc:	881b      	ldrh	r3, [r3, #0]
+     dfe:	4888      	ldr	r0, [pc, #544]	; (1020 <SPI_init+0x37c>)
+     e00:	1c19      	adds	r1, r3, #0
+     e02:	f7ff fb79 	bl	4f8 <__aeabi_idiv>
+     e06:	1c03      	adds	r3, r0, #0
+     e08:	1c1a      	adds	r2, r3, #0
+     e0a:	1c3b      	adds	r3, r7, #0
+     e0c:	330f      	adds	r3, #15
+     e0e:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:79
+        while(BaudRate_Mode % 2 == 0)
+     e10:	e00d      	b.n	e2e <SPI_init+0x18a>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:81
+        {
+            BaudRate_Mode=BaudRate_Mode/2;
+     e12:	1c3b      	adds	r3, r7, #0
+     e14:	330f      	adds	r3, #15
+     e16:	1c3a      	adds	r2, r7, #0
+     e18:	320f      	adds	r2, #15
+     e1a:	7812      	ldrb	r2, [r2, #0]
+     e1c:	0852      	lsrs	r2, r2, #1
+     e1e:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:82
+            BaudRate_Low++;
+     e20:	1c3b      	adds	r3, r7, #0
+     e22:	330e      	adds	r3, #14
+     e24:	781a      	ldrb	r2, [r3, #0]
+     e26:	1c3b      	adds	r3, r7, #0
+     e28:	330e      	adds	r3, #14
+     e2a:	3201      	adds	r2, #1
+     e2c:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:79 (discriminator 1)
+        SPI0_BR = 0x00U;//波特率寄存器清零
+        //重新设置波特率
+        BaudRate_High=0;
+        BaudRate_Low=0;
+        BaudRate_Mode=12000/BaudRate;
+        while(BaudRate_Mode % 2 == 0)
+     e2e:	1c3b      	adds	r3, r7, #0
+     e30:	330f      	adds	r3, #15
+     e32:	781a      	ldrb	r2, [r3, #0]
+     e34:	2301      	movs	r3, #1
+     e36:	4013      	ands	r3, r2
+     e38:	b2db      	uxtb	r3, r3
+     e3a:	2b00      	cmp	r3, #0
+     e3c:	d0e9      	beq.n	e12 <SPI_init+0x16e>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:84
+        {
+            BaudRate_Mode=BaudRate_Mode/2;
+            BaudRate_Low++;
+        }
+        BaudRate_High=--BaudRate_Mode;
+     e3e:	1c3b      	adds	r3, r7, #0
+     e40:	330f      	adds	r3, #15
+     e42:	1c3a      	adds	r2, r7, #0
+     e44:	320f      	adds	r2, #15
+     e46:	7812      	ldrb	r2, [r2, #0]
+     e48:	3a01      	subs	r2, #1
+     e4a:	701a      	strb	r2, [r3, #0]
+     e4c:	1c3b      	adds	r3, r7, #0
+     e4e:	330d      	adds	r3, #13
+     e50:	1c3a      	adds	r2, r7, #0
+     e52:	320f      	adds	r2, #15
+     e54:	7812      	ldrb	r2, [r2, #0]
+     e56:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:85
+        SPI0_BR=BaudRate_High<<4;//数值赋给SPI0_BR的SPPR的D6D5D4位
+     e58:	4b70      	ldr	r3, [pc, #448]	; (101c <SPI_init+0x378>)
+     e5a:	1c3a      	adds	r2, r7, #0
+     e5c:	320d      	adds	r2, #13
+     e5e:	7812      	ldrb	r2, [r2, #0]
+     e60:	0112      	lsls	r2, r2, #4
+     e62:	b2d2      	uxtb	r2, r2
+     e64:	709a      	strb	r2, [r3, #2]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:86
+        SPI0_BR|=BaudRate_Low;//赋值给SPI0_BR的SPR的 D2D1D0位
+     e66:	4b6d      	ldr	r3, [pc, #436]	; (101c <SPI_init+0x378>)
+     e68:	4a6c      	ldr	r2, [pc, #432]	; (101c <SPI_init+0x378>)
+     e6a:	7892      	ldrb	r2, [r2, #2]
+     e6c:	b2d1      	uxtb	r1, r2
+     e6e:	1c3a      	adds	r2, r7, #0
+     e70:	320e      	adds	r2, #14
+     e72:	7812      	ldrb	r2, [r2, #0]
+     e74:	430a      	orrs	r2, r1
+     e76:	b2d2      	uxtb	r2, r2
+     e78:	709a      	strb	r2, [r3, #2]
+     e7a:	e0c6      	b.n	100a <SPI_init+0x366>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:91
+
+    }
+     else         //初始化SPI1功能
+    {
+        BSET(SIM_SCGC4_SPI1_SHIFT,SIM_SCGC4);   //打开SPI1模块时钟。
+     e7c:	4a64      	ldr	r2, [pc, #400]	; (1010 <SPI_init+0x36c>)
+     e7e:	4964      	ldr	r1, [pc, #400]	; (1010 <SPI_init+0x36c>)
+     e80:	4b64      	ldr	r3, [pc, #400]	; (1014 <SPI_init+0x370>)
+     e82:	58cb      	ldr	r3, [r1, r3]
+     e84:	2180      	movs	r1, #128	; 0x80
+     e86:	0409      	lsls	r1, r1, #16
+     e88:	4319      	orrs	r1, r3
+     e8a:	4b62      	ldr	r3, [pc, #392]	; (1014 <SPI_init+0x370>)
+     e8c:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:101
+        PORTE_PCR3=(0|PORT_PCR_MUX(0x02));        //选择PTE3的MIOS功能
+        PORTE_PCR4=(0|PORT_PCR_MUX(0x02));        //选择PTE4的SS功能
+        #endif
+
+        #if (SPI_1_GROUP == 2)
+        PORTB_PCR10=(0|PORT_PCR_MUX(0x02));        //选择PTB10的SS功能
+     e8e:	4b65      	ldr	r3, [pc, #404]	; (1024 <SPI_init+0x380>)
+     e90:	2280      	movs	r2, #128	; 0x80
+     e92:	0092      	lsls	r2, r2, #2
+     e94:	629a      	str	r2, [r3, #40]	; 0x28
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:102
+        PORTB_PCR11=(0|PORT_PCR_MUX(0x02));        //选择PTB11的SCK功能
+     e96:	4b63      	ldr	r3, [pc, #396]	; (1024 <SPI_init+0x380>)
+     e98:	2280      	movs	r2, #128	; 0x80
+     e9a:	0092      	lsls	r2, r2, #2
+     e9c:	62da      	str	r2, [r3, #44]	; 0x2c
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:103
+        PORTB_PCR16=(0|PORT_PCR_MUX(0x02));        //选择PTB16的MOSI功能
+     e9e:	4b61      	ldr	r3, [pc, #388]	; (1024 <SPI_init+0x380>)
+     ea0:	2280      	movs	r2, #128	; 0x80
+     ea2:	0092      	lsls	r2, r2, #2
+     ea4:	641a      	str	r2, [r3, #64]	; 0x40
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:104
+        PORTB_PCR17=(0|PORT_PCR_MUX(0x02));        //选择PTB17的MIOS功能
+     ea6:	4b5f      	ldr	r3, [pc, #380]	; (1024 <SPI_init+0x380>)
+     ea8:	2280      	movs	r2, #128	; 0x80
+     eaa:	0092      	lsls	r2, r2, #2
+     eac:	645a      	str	r2, [r3, #68]	; 0x44
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:114
+        PORTD_PCR5=(0|PORT_PCR_MUX(0x02));        //选择PTD5的SCK功能
+        PORTD_PCR6=(0|PORT_PCR_MUX(0x02));        //选择PTD6的MOSI功能
+        PORTD_PCR7=(0|PORT_PCR_MUX(0x02));        //选择PTD7的MIOS功能
+        #endif
+
+        SPI1_C1=0x00;                     //SPI控制寄存器1清零
+     eae:	4b5e      	ldr	r3, [pc, #376]	; (1028 <SPI_init+0x384>)
+     eb0:	2200      	movs	r2, #0
+     eb2:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:115
+        BSET(SPI_C1_SPE_SHIFT,SPI1_C1);   //使能SPI模块
+     eb4:	4b5c      	ldr	r3, [pc, #368]	; (1028 <SPI_init+0x384>)
+     eb6:	4a5c      	ldr	r2, [pc, #368]	; (1028 <SPI_init+0x384>)
+     eb8:	7812      	ldrb	r2, [r2, #0]
+     eba:	b2d2      	uxtb	r2, r2
+     ebc:	2140      	movs	r1, #64	; 0x40
+     ebe:	430a      	orrs	r2, r1
+     ec0:	b2d2      	uxtb	r2, r2
+     ec2:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:118
+        //MSTR=1为主机模式；
+        //MSTR=0为从机模式（因MSTR初始值为0，无需更改）
+        (MSTR==1)?BSET(SPI_C1_MSTR_SHIFT,SPI1_C1):\
+     ec4:	1dbb      	adds	r3, r7, #6
+     ec6:	781b      	ldrb	r3, [r3, #0]
+     ec8:	2b01      	cmp	r3, #1
+     eca:	d108      	bne.n	ede <SPI_init+0x23a>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:118 (discriminator 1)
+     ecc:	4b56      	ldr	r3, [pc, #344]	; (1028 <SPI_init+0x384>)
+     ece:	4a56      	ldr	r2, [pc, #344]	; (1028 <SPI_init+0x384>)
+     ed0:	7812      	ldrb	r2, [r2, #0]
+     ed2:	b2d2      	uxtb	r2, r2
+     ed4:	2110      	movs	r1, #16
+     ed6:	430a      	orrs	r2, r1
+     ed8:	b2d2      	uxtb	r2, r2
+     eda:	701a      	strb	r2, [r3, #0]
+     edc:	e008      	b.n	ef0 <SPI_init+0x24c>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:119 (discriminator 2)
+                                            BSET(SPI_C1_SPIE_SHIFT,SPI1_C1);
+     ede:	4b52      	ldr	r3, [pc, #328]	; (1028 <SPI_init+0x384>)
+     ee0:	4a51      	ldr	r2, [pc, #324]	; (1028 <SPI_init+0x384>)
+     ee2:	7812      	ldrb	r2, [r2, #0]
+     ee4:	b2d2      	uxtb	r2, r2
+     ee6:	2180      	movs	r1, #128	; 0x80
+     ee8:	4249      	negs	r1, r1
+     eea:	430a      	orrs	r2, r1
+     eec:	b2d2      	uxtb	r2, r2
+     eee:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:122
+
+        //时钟极性配置，CPOL=0，平时时钟为高电平，反之CPOL=1，平时时钟为低电平
+        (0 == CPOL)?BCLR(SPI_C1_CPOL_SHIFT,SPI1_C1):\
+     ef0:	1cfb      	adds	r3, r7, #3
+     ef2:	781b      	ldrb	r3, [r3, #0]
+     ef4:	2b00      	cmp	r3, #0
+     ef6:	d108      	bne.n	f0a <SPI_init+0x266>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:122 (discriminator 1)
+     ef8:	4b4b      	ldr	r3, [pc, #300]	; (1028 <SPI_init+0x384>)
+     efa:	4a4b      	ldr	r2, [pc, #300]	; (1028 <SPI_init+0x384>)
+     efc:	7812      	ldrb	r2, [r2, #0]
+     efe:	b2d2      	uxtb	r2, r2
+     f00:	2108      	movs	r1, #8
+     f02:	438a      	bics	r2, r1
+     f04:	b2d2      	uxtb	r2, r2
+     f06:	701a      	strb	r2, [r3, #0]
+     f08:	e007      	b.n	f1a <SPI_init+0x276>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:123 (discriminator 2)
+                                            BSET(SPI_C1_CPOL_SHIFT,SPI1_C1);
+     f0a:	4b47      	ldr	r3, [pc, #284]	; (1028 <SPI_init+0x384>)
+     f0c:	4a46      	ldr	r2, [pc, #280]	; (1028 <SPI_init+0x384>)
+     f0e:	7812      	ldrb	r2, [r2, #0]
+     f10:	b2d2      	uxtb	r2, r2
+     f12:	2108      	movs	r1, #8
+     f14:	430a      	orrs	r2, r1
+     f16:	b2d2      	uxtb	r2, r2
+     f18:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:127
+
+        //CPHA=0时钟信号的第一个边沿出现在8周期数据传输的第一个周期的中央；
+        //CPHA=1时钟信号的第一个边沿出现在8周期数据传输的第一个周期的起点。
+        (0 == CPHA)?BCLR(SPI_C1_CPHA_SHIFT,SPI1_C1): \
+     f1a:	1c3b      	adds	r3, r7, #0
+     f1c:	3320      	adds	r3, #32
+     f1e:	781b      	ldrb	r3, [r3, #0]
+     f20:	2b00      	cmp	r3, #0
+     f22:	d108      	bne.n	f36 <SPI_init+0x292>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:127 (discriminator 1)
+     f24:	4b40      	ldr	r3, [pc, #256]	; (1028 <SPI_init+0x384>)
+     f26:	4a40      	ldr	r2, [pc, #256]	; (1028 <SPI_init+0x384>)
+     f28:	7812      	ldrb	r2, [r2, #0]
+     f2a:	b2d2      	uxtb	r2, r2
+     f2c:	2104      	movs	r1, #4
+     f2e:	438a      	bics	r2, r1
+     f30:	b2d2      	uxtb	r2, r2
+     f32:	701a      	strb	r2, [r3, #0]
+     f34:	e007      	b.n	f46 <SPI_init+0x2a2>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:128 (discriminator 2)
+                                            BSET(SPI_C1_CPHA_SHIFT,SPI1_C1);
+     f36:	4b3c      	ldr	r3, [pc, #240]	; (1028 <SPI_init+0x384>)
+     f38:	4a3b      	ldr	r2, [pc, #236]	; (1028 <SPI_init+0x384>)
+     f3a:	7812      	ldrb	r2, [r2, #0]
+     f3c:	b2d2      	uxtb	r2, r2
+     f3e:	2104      	movs	r1, #4
+     f40:	430a      	orrs	r2, r1
+     f42:	b2d2      	uxtb	r2, r2
+     f44:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:130
+
+        BSET(SPI_C1_SSOE_SHIFT,SPI1_C1);//SSOE为1,MODFEN为1，配置本模块为自动SS输出
+     f46:	4b38      	ldr	r3, [pc, #224]	; (1028 <SPI_init+0x384>)
+     f48:	4a37      	ldr	r2, [pc, #220]	; (1028 <SPI_init+0x384>)
+     f4a:	7812      	ldrb	r2, [r2, #0]
+     f4c:	b2d2      	uxtb	r2, r2
+     f4e:	2102      	movs	r1, #2
+     f50:	430a      	orrs	r2, r1
+     f52:	b2d2      	uxtb	r2, r2
+     f54:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:134
+        //对SPI0的C1寄存器配置为主机模式、从机选择自动模式并使能SPI0模块。
+
+//        BSET(SPI_C1_SPIE_SHIFT,SPI1_C1);  //开本模块的SPI中断
+        SPI1_C2 = 0x00U;
+     f56:	4b34      	ldr	r3, [pc, #208]	; (1028 <SPI_init+0x384>)
+     f58:	2200      	movs	r2, #0
+     f5a:	705a      	strb	r2, [r3, #1]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:135
+        if(MSTR == 1 )  //主机模式
+     f5c:	1dbb      	adds	r3, r7, #6
+     f5e:	781b      	ldrb	r3, [r3, #0]
+     f60:	2b01      	cmp	r3, #1
+     f62:	d107      	bne.n	f74 <SPI_init+0x2d0>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:136
+            BSET(SPI_C2_MODFEN_SHIFT,SPI1_C2);
+     f64:	4b30      	ldr	r3, [pc, #192]	; (1028 <SPI_init+0x384>)
+     f66:	4a30      	ldr	r2, [pc, #192]	; (1028 <SPI_init+0x384>)
+     f68:	7852      	ldrb	r2, [r2, #1]
+     f6a:	b2d2      	uxtb	r2, r2
+     f6c:	2110      	movs	r1, #16
+     f6e:	430a      	orrs	r2, r1
+     f70:	b2d2      	uxtb	r2, r2
+     f72:	705a      	strb	r2, [r3, #1]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:137
+        SPI1_BR = 0x00U;
+     f74:	4b2c      	ldr	r3, [pc, #176]	; (1028 <SPI_init+0x384>)
+     f76:	2200      	movs	r2, #0
+     f78:	709a      	strb	r2, [r3, #2]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:139
+        //重新设置波特率
+        BaudRate_High=0;
+     f7a:	1c3b      	adds	r3, r7, #0
+     f7c:	330d      	adds	r3, #13
+     f7e:	2200      	movs	r2, #0
+     f80:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:140
+        BaudRate_Low=0;
+     f82:	1c3b      	adds	r3, r7, #0
+     f84:	330e      	adds	r3, #14
+     f86:	2200      	movs	r2, #0
+     f88:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:141
+        BaudRate_Mode=12000/BaudRate;   //取除数用于寄存器中数据计算
+     f8a:	1d3b      	adds	r3, r7, #4
+     f8c:	881b      	ldrh	r3, [r3, #0]
+     f8e:	4824      	ldr	r0, [pc, #144]	; (1020 <SPI_init+0x37c>)
+     f90:	1c19      	adds	r1, r3, #0
+     f92:	f7ff fab1 	bl	4f8 <__aeabi_idiv>
+     f96:	1c03      	adds	r3, r0, #0
+     f98:	1c1a      	adds	r2, r3, #0
+     f9a:	1c3b      	adds	r3, r7, #0
+     f9c:	330f      	adds	r3, #15
+     f9e:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:142
+        while(BaudRate_Mode % 2 == 0)
+     fa0:	e00d      	b.n	fbe <SPI_init+0x31a>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:144
+        {
+            BaudRate_Mode=BaudRate_Mode/2;
+     fa2:	1c3b      	adds	r3, r7, #0
+     fa4:	330f      	adds	r3, #15
+     fa6:	1c3a      	adds	r2, r7, #0
+     fa8:	320f      	adds	r2, #15
+     faa:	7812      	ldrb	r2, [r2, #0]
+     fac:	0852      	lsrs	r2, r2, #1
+     fae:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:145
+            BaudRate_Low++;
+     fb0:	1c3b      	adds	r3, r7, #0
+     fb2:	330e      	adds	r3, #14
+     fb4:	781a      	ldrb	r2, [r3, #0]
+     fb6:	1c3b      	adds	r3, r7, #0
+     fb8:	330e      	adds	r3, #14
+     fba:	3201      	adds	r2, #1
+     fbc:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:142 (discriminator 1)
+        SPI1_BR = 0x00U;
+        //重新设置波特率
+        BaudRate_High=0;
+        BaudRate_Low=0;
+        BaudRate_Mode=12000/BaudRate;   //取除数用于寄存器中数据计算
+        while(BaudRate_Mode % 2 == 0)
+     fbe:	1c3b      	adds	r3, r7, #0
+     fc0:	330f      	adds	r3, #15
+     fc2:	781a      	ldrb	r2, [r3, #0]
+     fc4:	2301      	movs	r3, #1
+     fc6:	4013      	ands	r3, r2
+     fc8:	b2db      	uxtb	r3, r3
+     fca:	2b00      	cmp	r3, #0
+     fcc:	d0e9      	beq.n	fa2 <SPI_init+0x2fe>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:147
+        {
+            BaudRate_Mode=BaudRate_Mode/2;
+            BaudRate_Low++;
+        }
+        BaudRate_High=--BaudRate_Mode;
+     fce:	1c3b      	adds	r3, r7, #0
+     fd0:	330f      	adds	r3, #15
+     fd2:	1c3a      	adds	r2, r7, #0
+     fd4:	320f      	adds	r2, #15
+     fd6:	7812      	ldrb	r2, [r2, #0]
+     fd8:	3a01      	subs	r2, #1
+     fda:	701a      	strb	r2, [r3, #0]
+     fdc:	1c3b      	adds	r3, r7, #0
+     fde:	330d      	adds	r3, #13
+     fe0:	1c3a      	adds	r2, r7, #0
+     fe2:	320f      	adds	r2, #15
+     fe4:	7812      	ldrb	r2, [r2, #0]
+     fe6:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:148
+        SPI1_BR=BaudRate_High<<4;//数值赋给SPI0_BR的SPPR的D6D5D4位
+     fe8:	4b0f      	ldr	r3, [pc, #60]	; (1028 <SPI_init+0x384>)
+     fea:	1c3a      	adds	r2, r7, #0
+     fec:	320d      	adds	r2, #13
+     fee:	7812      	ldrb	r2, [r2, #0]
+     ff0:	0112      	lsls	r2, r2, #4
+     ff2:	b2d2      	uxtb	r2, r2
+     ff4:	709a      	strb	r2, [r3, #2]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:149
+        SPI1_BR|=BaudRate_Low;//赋值给SPI0_BR的SPR的 D2D1D0位
+     ff6:	4b0c      	ldr	r3, [pc, #48]	; (1028 <SPI_init+0x384>)
+     ff8:	4a0b      	ldr	r2, [pc, #44]	; (1028 <SPI_init+0x384>)
+     ffa:	7892      	ldrb	r2, [r2, #2]
+     ffc:	b2d1      	uxtb	r1, r2
+     ffe:	1c3a      	adds	r2, r7, #0
+    1000:	320e      	adds	r2, #14
+    1002:	7812      	ldrb	r2, [r2, #0]
+    1004:	430a      	orrs	r2, r1
+    1006:	b2d2      	uxtb	r2, r2
+    1008:	709a      	strb	r2, [r3, #2]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:151
+    }      
+}
+    100a:	46bd      	mov	sp, r7
+    100c:	b005      	add	sp, #20
+    100e:	bd90      	pop	{r4, r7, pc}
+    1010:	40047000 	.word	0x40047000
+    1014:	00001034 	.word	0x00001034
+    1018:	40049000 	.word	0x40049000
+    101c:	40076000 	.word	0x40076000
+    1020:	00002ee0 	.word	0x00002ee0
+    1024:	4004a000 	.word	0x4004a000
+    1028:	40077000 	.word	0x40077000
+
+0000102c <SPI_send1>:
+SPI_send1():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:161
+//函数参数：No：模块号。 其取值为0或1
+//       data：     需要发送的一字节数据。
+//函数返回：0：发送失败；1：发送成功。
+//=====================================================================
+uint_8 SPI_send1(uint_8 No,uint_8 data)
+{
+    102c:	b580      	push	{r7, lr}
+    102e:	b084      	sub	sp, #16
+    1030:	af00      	add	r7, sp, #0
+    1032:	1c0a      	adds	r2, r1, #0
+    1034:	1dfb      	adds	r3, r7, #7
+    1036:	1c01      	adds	r1, r0, #0
+    1038:	7019      	strb	r1, [r3, #0]
+    103a:	1dbb      	adds	r3, r7, #6
+    103c:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:163
+    uint_32 i;
+    SPI_MemMapPtr baseadd=SPI_baseadd(No);
+    103e:	1dfb      	adds	r3, r7, #7
+    1040:	781b      	ldrb	r3, [r3, #0]
+    1042:	4a14      	ldr	r2, [pc, #80]	; (1094 <SPI_send1+0x68>)
+    1044:	189b      	adds	r3, r3, r2
+    1046:	031b      	lsls	r3, r3, #12
+    1048:	60bb      	str	r3, [r7, #8]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:164
+    while(!(SPI_S_REG(baseadd)&SPI_S_SPTEF_MASK));//等待发送缓冲区空闲
+    104a:	46c0      	nop			; (mov r8, r8)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:164 (discriminator 1)
+    104c:	68bb      	ldr	r3, [r7, #8]
+    104e:	78db      	ldrb	r3, [r3, #3]
+    1050:	b2db      	uxtb	r3, r3
+    1052:	1c1a      	adds	r2, r3, #0
+    1054:	2320      	movs	r3, #32
+    1056:	4013      	ands	r3, r2
+    1058:	d0f8      	beq.n	104c <SPI_send1+0x20>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:165
+        SPI_D_REG(baseadd)=data;//数据寄存器接收数据
+    105a:	68bb      	ldr	r3, [r7, #8]
+    105c:	1dba      	adds	r2, r7, #6
+    105e:	7812      	ldrb	r2, [r2, #0]
+    1060:	715a      	strb	r2, [r3, #5]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:166
+    for(i=0;i<0xFFF0;i++)        //在一定时间内发送不能完成，则认为发送失败。
+    1062:	2300      	movs	r3, #0
+    1064:	60fb      	str	r3, [r7, #12]
+    1066:	e00b      	b.n	1080 <SPI_send1+0x54>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:168
+    {
+        if(SPI_S_REG(baseadd)&SPI_S_SPTEF_MASK)//判断发送缓冲区是否接到数据
+    1068:	68bb      	ldr	r3, [r7, #8]
+    106a:	78db      	ldrb	r3, [r3, #3]
+    106c:	b2db      	uxtb	r3, r3
+    106e:	1c1a      	adds	r2, r3, #0
+    1070:	2320      	movs	r3, #32
+    1072:	4013      	ands	r3, r2
+    1074:	d001      	beq.n	107a <SPI_send1+0x4e>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:170
+        {
+            return(1);
+    1076:	2301      	movs	r3, #1
+    1078:	e007      	b.n	108a <SPI_send1+0x5e>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:166
+{
+    uint_32 i;
+    SPI_MemMapPtr baseadd=SPI_baseadd(No);
+    while(!(SPI_S_REG(baseadd)&SPI_S_SPTEF_MASK));//等待发送缓冲区空闲
+        SPI_D_REG(baseadd)=data;//数据寄存器接收数据
+    for(i=0;i<0xFFF0;i++)        //在一定时间内发送不能完成，则认为发送失败。
+    107a:	68fb      	ldr	r3, [r7, #12]
+    107c:	3301      	adds	r3, #1
+    107e:	60fb      	str	r3, [r7, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:166 (discriminator 1)
+    1080:	68fa      	ldr	r2, [r7, #12]
+    1082:	4b05      	ldr	r3, [pc, #20]	; (1098 <SPI_send1+0x6c>)
+    1084:	429a      	cmp	r2, r3
+    1086:	d9ef      	bls.n	1068 <SPI_send1+0x3c>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:173
+        if(SPI_S_REG(baseadd)&SPI_S_SPTEF_MASK)//判断发送缓冲区是否接到数据
+        {
+            return(1);
+        }
+     }
+    return(0);
+    1088:	2300      	movs	r3, #0
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:174
+}
+    108a:	1c18      	adds	r0, r3, #0
+    108c:	46bd      	mov	sp, r7
+    108e:	b004      	add	sp, #16
+    1090:	bd80      	pop	{r7, pc}
+    1092:	46c0      	nop			; (mov r8, r8)
+    1094:	00040076 	.word	0x00040076
+    1098:	0000ffef 	.word	0x0000ffef
+
+0000109c <SPI_receive1>:
+SPI_receive1():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:204
+//功能说明：SPI接收一个字节的数据
+//函数参数：No：模块号。 其取值为0或1
+//函数返回：接收到的数据。
+//=====================================================================
+uint_8 SPI_receive1(uint_8 No)
+{
+    109c:	b580      	push	{r7, lr}
+    109e:	b084      	sub	sp, #16
+    10a0:	af00      	add	r7, sp, #0
+    10a2:	1c02      	adds	r2, r0, #0
+    10a4:	1dfb      	adds	r3, r7, #7
+    10a6:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:205
+    SPI_MemMapPtr baseadd=SPI_baseadd(No);
+    10a8:	1dfb      	adds	r3, r7, #7
+    10aa:	781b      	ldrb	r3, [r3, #0]
+    10ac:	4a09      	ldr	r2, [pc, #36]	; (10d4 <SPI_receive1+0x38>)
+    10ae:	189b      	adds	r3, r3, r2
+    10b0:	031b      	lsls	r3, r3, #12
+    10b2:	60fb      	str	r3, [r7, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:206
+    while(!(SPI_S_REG(baseadd)& SPI_S_SPRF_MASK));    //检测SPI是否收到了数据。
+    10b4:	46c0      	nop			; (mov r8, r8)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:206 (discriminator 1)
+    10b6:	68fb      	ldr	r3, [r7, #12]
+    10b8:	78db      	ldrb	r3, [r3, #3]
+    10ba:	b2db      	uxtb	r3, r3
+    10bc:	b2db      	uxtb	r3, r3
+    10be:	b25b      	sxtb	r3, r3
+    10c0:	2b00      	cmp	r3, #0
+    10c2:	daf8      	bge.n	10b6 <SPI_receive1+0x1a>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:207
+        return SPI_D_REG(baseadd);
+    10c4:	68fb      	ldr	r3, [r7, #12]
+    10c6:	795b      	ldrb	r3, [r3, #5]
+    10c8:	b2db      	uxtb	r3, r3
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:208
+}
+    10ca:	1c18      	adds	r0, r3, #0
+    10cc:	46bd      	mov	sp, r7
+    10ce:	b004      	add	sp, #16
+    10d0:	bd80      	pop	{r7, pc}
+    10d2:	46c0      	nop			; (mov r8, r8)
+    10d4:	00040076 	.word	0x00040076
+
+000010d8 <SPI_enable_re_int>:
+SPI_enable_re_int():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:260
+//功能说明：打开SPI接收中断。
+//函数参数：No：模块号。 其取值为0或1。
+//函数返回：无。
+//=====================================================================
+void SPI_enable_re_int(uint_8 No)
+{
+    10d8:	b580      	push	{r7, lr}
+    10da:	b082      	sub	sp, #8
+    10dc:	af00      	add	r7, sp, #0
+    10de:	1c02      	adds	r2, r0, #0
+    10e0:	1dfb      	adds	r3, r7, #7
+    10e2:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:261
+    enable_irq (No+10);
+    10e4:	1dfb      	adds	r3, r7, #7
+    10e6:	781b      	ldrb	r3, [r3, #0]
+    10e8:	330a      	adds	r3, #10
+    10ea:	b2db      	uxtb	r3, r3
+    10ec:	b2db      	uxtb	r3, r3
+    10ee:	b25b      	sxtb	r3, r3
+    10f0:	1c18      	adds	r0, r3, #0
+    10f2:	f7ff fb65 	bl	7c0 <enable_irq>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/spi/spi.c:262
+}
+    10f6:	46bd      	mov	sp, r7
+    10f8:	b002      	add	sp, #8
+    10fa:	bd80      	pop	{r7, pc}
+
+000010fc <gpio_port_pin_resolution>:
+gpio_port_pin_resolution():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:27
+//		   pin:引脚号（0~31，实际取值由芯片的物理引脚决定）
+//功能概要：将传进参数port_pin进行解析，得出具体端口号与引脚号（例：PORTB|(5)
+//         解析为PORTB与5，并将其分别赋值给port与pin）。
+//===========================================================================
+static void gpio_port_pin_resolution(uint_16 port_pin,uint_8* port,uint_8* pin)
+{
+    10fc:	b580      	push	{r7, lr}
+    10fe:	b084      	sub	sp, #16
+    1100:	af00      	add	r7, sp, #0
+    1102:	60b9      	str	r1, [r7, #8]
+    1104:	607a      	str	r2, [r7, #4]
+    1106:	1c3b      	adds	r3, r7, #0
+    1108:	330e      	adds	r3, #14
+    110a:	1c02      	adds	r2, r0, #0
+    110c:	801a      	strh	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:28
+	*port = (port_pin>>8);
+    110e:	1c3b      	adds	r3, r7, #0
+    1110:	330e      	adds	r3, #14
+    1112:	881b      	ldrh	r3, [r3, #0]
+    1114:	0a1b      	lsrs	r3, r3, #8
+    1116:	b29b      	uxth	r3, r3
+    1118:	b2da      	uxtb	r2, r3
+    111a:	68bb      	ldr	r3, [r7, #8]
+    111c:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:29
+	*pin = port_pin;
+    111e:	1c3b      	adds	r3, r7, #0
+    1120:	330e      	adds	r3, #14
+    1122:	881b      	ldrh	r3, [r3, #0]
+    1124:	b2da      	uxtb	r2, r3
+    1126:	687b      	ldr	r3, [r7, #4]
+    1128:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:30
+}
+    112a:	46bd      	mov	sp, r7
+    112c:	b004      	add	sp, #16
+    112e:	bd80      	pop	{r7, pc}
+
+00001130 <gpio_init>:
+gpio_init():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:43
+//          state：端口引脚初始状态（0=低电平，1=高电平）
+//功能概要：初始化指定端口引脚作为GPIO引脚功能，并定义为输入或输出，若是输出，
+//          还指定初始状态是低电平或高电平
+//===========================================================================
+void gpio_init(uint_16 port_pin, uint_8 dir, uint_8 state)
+{
+    1130:	b580      	push	{r7, lr}
+    1132:	b086      	sub	sp, #24
+    1134:	af00      	add	r7, sp, #0
+    1136:	1dbb      	adds	r3, r7, #6
+    1138:	8018      	strh	r0, [r3, #0]
+    113a:	1d7b      	adds	r3, r7, #5
+    113c:	7019      	strb	r1, [r3, #0]
+    113e:	1d3b      	adds	r3, r7, #4
+    1140:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:49
+	//局部变量声明
+	PORT_MemMapPtr port_ptr;    //声明port_ptr为PORT结构体类型指针 
+	GPIO_MemMapPtr gpio_ptr;    //声明port_ptr为GPIO结构体类型指针
+	uint_8 port;
+	uint_8 pin;
+	gpio_port_pin_resolution(port_pin , &port , &pin);
+    1142:	1dbb      	adds	r3, r7, #6
+    1144:	8819      	ldrh	r1, [r3, #0]
+    1146:	1c3a      	adds	r2, r7, #0
+    1148:	320f      	adds	r2, #15
+    114a:	1c3b      	adds	r3, r7, #0
+    114c:	330e      	adds	r3, #14
+    114e:	1c08      	adds	r0, r1, #0
+    1150:	1c11      	adds	r1, r2, #0
+    1152:	1c1a      	adds	r2, r3, #0
+    1154:	f7ff ffd2 	bl	10fc <gpio_port_pin_resolution>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:53
+	
+	
+	//根据带入参数port，给局部变量port_ptr、gpio_ptr赋值（获得两个基地址）
+	port_ptr = PORT_ARR[port];  //获得PORT模块相应口基地址
+    1158:	1c3b      	adds	r3, r7, #0
+    115a:	330f      	adds	r3, #15
+    115c:	781b      	ldrb	r3, [r3, #0]
+    115e:	1c1a      	adds	r2, r3, #0
+    1160:	4b22      	ldr	r3, [pc, #136]	; (11ec <gpio_init+0xbc>)
+    1162:	0092      	lsls	r2, r2, #2
+    1164:	58d3      	ldr	r3, [r2, r3]
+    1166:	617b      	str	r3, [r7, #20]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:54
+	gpio_ptr = GPIO_ARR[port];  //获得GPIO模块相应口基地址
+    1168:	1c3b      	adds	r3, r7, #0
+    116a:	330f      	adds	r3, #15
+    116c:	781b      	ldrb	r3, [r3, #0]
+    116e:	1c1a      	adds	r2, r3, #0
+    1170:	4b1f      	ldr	r3, [pc, #124]	; (11f0 <gpio_init+0xc0>)
+    1172:	0092      	lsls	r2, r2, #2
+    1174:	58d3      	ldr	r3, [r2, r3]
+    1176:	613b      	str	r3, [r7, #16]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:59
+	
+	//根据带入参数pin,指定该引脚功能为GPIO功能（即令引脚控制寄存器的MUX=0b001）
+
+//	PORT_PCR_REG(port_ptr, pin) &= ~PORT_PCR_MUX_MASK;
+	PORT_PCR_REG(port_ptr, pin) |= PORT_PCR_MUX(1);
+    1178:	1c3b      	adds	r3, r7, #0
+    117a:	330e      	adds	r3, #14
+    117c:	781b      	ldrb	r3, [r3, #0]
+    117e:	1c1a      	adds	r2, r3, #0
+    1180:	1c3b      	adds	r3, r7, #0
+    1182:	330e      	adds	r3, #14
+    1184:	781b      	ldrb	r3, [r3, #0]
+    1186:	1c19      	adds	r1, r3, #0
+    1188:	697b      	ldr	r3, [r7, #20]
+    118a:	0089      	lsls	r1, r1, #2
+    118c:	58cb      	ldr	r3, [r1, r3]
+    118e:	2180      	movs	r1, #128	; 0x80
+    1190:	0049      	lsls	r1, r1, #1
+    1192:	4319      	orrs	r1, r3
+    1194:	697b      	ldr	r3, [r7, #20]
+    1196:	0092      	lsls	r2, r2, #2
+    1198:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:62
+    
+      //根据带入参数dir，决定引脚为输出还是输入
+    if (1 == dir)   //希望为输出
+    119a:	1d7b      	adds	r3, r7, #5
+    119c:	781b      	ldrb	r3, [r3, #0]
+    119e:	2b01      	cmp	r3, #1
+    11a0:	d114      	bne.n	11cc <gpio_init+0x9c>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:64
+    {
+	    BSET(pin,gpio_ptr->PDDR);     //数据方向寄存器的pin位=1，定义为输出
+    11a2:	693b      	ldr	r3, [r7, #16]
+    11a4:	695a      	ldr	r2, [r3, #20]
+    11a6:	1c3b      	adds	r3, r7, #0
+    11a8:	330e      	adds	r3, #14
+    11aa:	781b      	ldrb	r3, [r3, #0]
+    11ac:	2101      	movs	r1, #1
+    11ae:	1c08      	adds	r0, r1, #0
+    11b0:	4098      	lsls	r0, r3
+    11b2:	1c03      	adds	r3, r0, #0
+    11b4:	431a      	orrs	r2, r3
+    11b6:	693b      	ldr	r3, [r7, #16]
+    11b8:	615a      	str	r2, [r3, #20]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:65
+	    gpio_set(port_pin, state);   //调用gpio_set函数，设定引脚初始状态
+    11ba:	1dbb      	adds	r3, r7, #6
+    11bc:	881a      	ldrh	r2, [r3, #0]
+    11be:	1d3b      	adds	r3, r7, #4
+    11c0:	781b      	ldrb	r3, [r3, #0]
+    11c2:	1c10      	adds	r0, r2, #0
+    11c4:	1c19      	adds	r1, r3, #0
+    11c6:	f000 f815 	bl	11f4 <gpio_set>
+    11ca:	e00c      	b.n	11e6 <gpio_init+0xb6>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:68
+    }
+    else           //希望为输入
+	    BCLR(pin,gpio_ptr->PDDR);  //数据方向寄存器的pin位=0，定义为输入
+    11cc:	693b      	ldr	r3, [r7, #16]
+    11ce:	695b      	ldr	r3, [r3, #20]
+    11d0:	1c3a      	adds	r2, r7, #0
+    11d2:	320e      	adds	r2, #14
+    11d4:	7812      	ldrb	r2, [r2, #0]
+    11d6:	2101      	movs	r1, #1
+    11d8:	1c08      	adds	r0, r1, #0
+    11da:	4090      	lsls	r0, r2
+    11dc:	1c02      	adds	r2, r0, #0
+    11de:	43d2      	mvns	r2, r2
+    11e0:	401a      	ands	r2, r3
+    11e2:	693b      	ldr	r3, [r7, #16]
+    11e4:	615a      	str	r2, [r3, #20]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:69
+}
+    11e6:	46bd      	mov	sp, r7
+    11e8:	b006      	add	sp, #24
+    11ea:	bd80      	pop	{r7, pc}
+    11ec:	00001470 	.word	0x00001470
+    11f0:	00001484 	.word	0x00001484
+
+000011f4 <gpio_set>:
+gpio_set():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:79
+//参数说明：port_pin：端口号|引脚号（例：PORTB|(5) 表示为B口5号脚）
+//         state：引脚初始状态（0=低电平，1=高电平）
+//功能概要：设定引脚状态为低电平或高电平
+//===========================================================================
+void gpio_set(uint_16 port_pin, uint_8 state)
+{
+    11f4:	b580      	push	{r7, lr}
+    11f6:	b084      	sub	sp, #16
+    11f8:	af00      	add	r7, sp, #0
+    11fa:	1c0a      	adds	r2, r1, #0
+    11fc:	1dbb      	adds	r3, r7, #6
+    11fe:	1c01      	adds	r1, r0, #0
+    1200:	8019      	strh	r1, [r3, #0]
+    1202:	1d7b      	adds	r3, r7, #5
+    1204:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:83
+	GPIO_MemMapPtr gpio_ptr;    //声明port_ptr为GPIO结构体类型指针
+	uint_8 port;
+	uint_8 pin;
+	gpio_port_pin_resolution(port_pin , &port , &pin);
+    1206:	1dbb      	adds	r3, r7, #6
+    1208:	8819      	ldrh	r1, [r3, #0]
+    120a:	1c3a      	adds	r2, r7, #0
+    120c:	320b      	adds	r2, #11
+    120e:	1c3b      	adds	r3, r7, #0
+    1210:	330a      	adds	r3, #10
+    1212:	1c08      	adds	r0, r1, #0
+    1214:	1c11      	adds	r1, r2, #0
+    1216:	1c1a      	adds	r2, r3, #0
+    1218:	f7ff ff70 	bl	10fc <gpio_port_pin_resolution>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:86
+	
+	//根据带入参数port，给局部变量gpio_ptr赋值（GPIO基地址）
+	gpio_ptr = GPIO_ARR[port]; 
+    121c:	1c3b      	adds	r3, r7, #0
+    121e:	330b      	adds	r3, #11
+    1220:	781b      	ldrb	r3, [r3, #0]
+    1222:	1c1a      	adds	r2, r3, #0
+    1224:	4b12      	ldr	r3, [pc, #72]	; (1270 <gpio_set+0x7c>)
+    1226:	0092      	lsls	r2, r2, #2
+    1228:	58d3      	ldr	r3, [r2, r3]
+    122a:	60fb      	str	r3, [r7, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:89
+	
+	//根据带入参数state，决定引脚为输出1还是0
+	if (1==state)
+    122c:	1d7b      	adds	r3, r7, #5
+    122e:	781b      	ldrb	r3, [r3, #0]
+    1230:	2b01      	cmp	r3, #1
+    1232:	d10c      	bne.n	124e <gpio_set+0x5a>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:90
+	    {BSET(pin,gpio_ptr->PDOR);}
+    1234:	68fb      	ldr	r3, [r7, #12]
+    1236:	681a      	ldr	r2, [r3, #0]
+    1238:	1c3b      	adds	r3, r7, #0
+    123a:	330a      	adds	r3, #10
+    123c:	781b      	ldrb	r3, [r3, #0]
+    123e:	2101      	movs	r1, #1
+    1240:	1c08      	adds	r0, r1, #0
+    1242:	4098      	lsls	r0, r3
+    1244:	1c03      	adds	r3, r0, #0
+    1246:	431a      	orrs	r2, r3
+    1248:	68fb      	ldr	r3, [r7, #12]
+    124a:	601a      	str	r2, [r3, #0]
+    124c:	e00c      	b.n	1268 <gpio_set+0x74>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:92
+	else
+	    {BCLR(pin,gpio_ptr->PDOR);}
+    124e:	68fb      	ldr	r3, [r7, #12]
+    1250:	681b      	ldr	r3, [r3, #0]
+    1252:	1c3a      	adds	r2, r7, #0
+    1254:	320a      	adds	r2, #10
+    1256:	7812      	ldrb	r2, [r2, #0]
+    1258:	2101      	movs	r1, #1
+    125a:	1c08      	adds	r0, r1, #0
+    125c:	4090      	lsls	r0, r2
+    125e:	1c02      	adds	r2, r0, #0
+    1260:	43d2      	mvns	r2, r2
+    1262:	401a      	ands	r2, r3
+    1264:	68fb      	ldr	r3, [r7, #12]
+    1266:	601a      	str	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:93
+}
+    1268:	46bd      	mov	sp, r7
+    126a:	b004      	add	sp, #16
+    126c:	bd80      	pop	{r7, pc}
+    126e:	46c0      	nop			; (mov r8, r8)
+    1270:	00001484 	.word	0x00001484
+
+00001274 <gpio_reverse>:
+gpio_reverse():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:122
+//函数返回：无
+//参数说明：port_pin：端口号|引脚号（例：PORTB|(5) 表示为B口5号脚）
+//功能概要：反转指定引脚输出状态。
+//===========================================================================
+void gpio_reverse(uint_16 port_pin)
+{
+    1274:	b580      	push	{r7, lr}
+    1276:	b084      	sub	sp, #16
+    1278:	af00      	add	r7, sp, #0
+    127a:	1c02      	adds	r2, r0, #0
+    127c:	1dbb      	adds	r3, r7, #6
+    127e:	801a      	strh	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:126
+	GPIO_MemMapPtr gpio_ptr;    //声明port_ptr为GPIO结构体类型指针（首地址）
+	uint_8 port;
+	uint_8 pin;
+	gpio_port_pin_resolution(port_pin , &port , &pin);
+    1280:	1dbb      	adds	r3, r7, #6
+    1282:	8819      	ldrh	r1, [r3, #0]
+    1284:	1c3a      	adds	r2, r7, #0
+    1286:	320b      	adds	r2, #11
+    1288:	1c3b      	adds	r3, r7, #0
+    128a:	330a      	adds	r3, #10
+    128c:	1c08      	adds	r0, r1, #0
+    128e:	1c11      	adds	r1, r2, #0
+    1290:	1c1a      	adds	r2, r3, #0
+    1292:	f7ff ff33 	bl	10fc <gpio_port_pin_resolution>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:129
+	
+	//根据带入参数port，给局部变量port_ptr赋值（GPIO基地址）
+	gpio_ptr = GPIO_ARR[port]; 
+    1296:	1c3b      	adds	r3, r7, #0
+    1298:	330b      	adds	r3, #11
+    129a:	781b      	ldrb	r3, [r3, #0]
+    129c:	1c1a      	adds	r2, r3, #0
+    129e:	4b09      	ldr	r3, [pc, #36]	; (12c4 <gpio_reverse+0x50>)
+    12a0:	0092      	lsls	r2, r2, #2
+    12a2:	58d3      	ldr	r3, [r2, r3]
+    12a4:	60fb      	str	r3, [r7, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:132
+	
+	//反转指定引脚输出状态
+	BSET(pin,gpio_ptr->PTOR);
+    12a6:	68fb      	ldr	r3, [r7, #12]
+    12a8:	68da      	ldr	r2, [r3, #12]
+    12aa:	1c3b      	adds	r3, r7, #0
+    12ac:	330a      	adds	r3, #10
+    12ae:	781b      	ldrb	r3, [r3, #0]
+    12b0:	2101      	movs	r1, #1
+    12b2:	1c08      	adds	r0, r1, #0
+    12b4:	4098      	lsls	r0, r3
+    12b6:	1c03      	adds	r3, r0, #0
+    12b8:	431a      	orrs	r2, r3
+    12ba:	68fb      	ldr	r3, [r7, #12]
+    12bc:	60da      	str	r2, [r3, #12]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../05_Driver/gpio/gpio.c:133
+}
+    12be:	46bd      	mov	sp, r7
+    12c0:	b004      	add	sp, #16
+    12c2:	bd80      	pop	{r7, pc}
+    12c4:	00001484 	.word	0x00001484
+
+000012c8 <SystemInit>:
+SystemInit():
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:111
+//函数名称：SystemInit
+//函数返回：无
+//参数说明：无
+//功能概要：初始化系统的时钟
+//===========================================================================
+void SystemInit (void) {
+    12c8:	b580      	push	{r7, lr}
+    12ca:	af00      	add	r7, sp, #0
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:114
+
+#if (DISABLE_WDOG)  //关闭看门狗
+    SIM->COPC = (uint32_t)0x00u;    //SIM_COPC: COPT=0,COPCLKS=0,COPW=0
+    12cc:	4a53      	ldr	r2, [pc, #332]	; (141c <SystemInit+0x154>)
+    12ce:	2388      	movs	r3, #136	; 0x88
+    12d0:	015b      	lsls	r3, r3, #5
+    12d2:	2100      	movs	r1, #0
+    12d4:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:118
+#endif
+
+#ifdef CLOCK_SETUP
+  if((RCM->SRS0 & RCM_SRS0_WAKEUP_MASK) != 0x00U)
+    12d6:	4b52      	ldr	r3, [pc, #328]	; (1420 <SystemInit+0x158>)
+    12d8:	781b      	ldrb	r3, [r3, #0]
+    12da:	b2db      	uxtb	r3, r3
+    12dc:	1c1a      	adds	r2, r3, #0
+    12de:	2301      	movs	r3, #1
+    12e0:	4013      	ands	r3, r2
+    12e2:	d00e      	beq.n	1302 <SystemInit+0x3a>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:120
+  {
+    if((PMC->REGSC & PMC_REGSC_ACKISO_MASK) != 0x00U)
+    12e4:	4b4f      	ldr	r3, [pc, #316]	; (1424 <SystemInit+0x15c>)
+    12e6:	789b      	ldrb	r3, [r3, #2]
+    12e8:	b2db      	uxtb	r3, r3
+    12ea:	1c1a      	adds	r2, r3, #0
+    12ec:	2308      	movs	r3, #8
+    12ee:	4013      	ands	r3, r2
+    12f0:	d007      	beq.n	1302 <SystemInit+0x3a>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:122
+    {
+       PMC->REGSC |= PMC_REGSC_ACKISO_MASK; /* 释放ACKISO */
+    12f2:	4b4c      	ldr	r3, [pc, #304]	; (1424 <SystemInit+0x15c>)
+    12f4:	4a4b      	ldr	r2, [pc, #300]	; (1424 <SystemInit+0x15c>)
+    12f6:	7892      	ldrb	r2, [r2, #2]
+    12f8:	b2d2      	uxtb	r2, r2
+    12fa:	2108      	movs	r1, #8
+    12fc:	430a      	orrs	r2, r1
+    12fe:	b2d2      	uxtb	r2, r2
+    1300:	709a      	strb	r2, [r3, #2]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:128
+    }
+  }
+
+  /* 电源模式保护初始化 */
+#ifdef SYSTEM_SMC_PMPROT_VALUE
+  SMC->PMPROT = SYSTEM_SMC_PMPROT_VALUE;
+    1302:	4b49      	ldr	r3, [pc, #292]	; (1428 <SystemInit+0x160>)
+    1304:	222a      	movs	r2, #42	; 0x2a
+    1306:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:148
+#if defined(SLOW_TRIM_ADDRESS)
+  }
+  #endif
+
+  /* 设置系统预分频和时钟的值 */
+  SIM->CLKDIV1 = SYSTEM_SIM_CLKDIV1_VALUE; /* Set system prescalers */
+    1308:	4a44      	ldr	r2, [pc, #272]	; (141c <SystemInit+0x154>)
+    130a:	4b48      	ldr	r3, [pc, #288]	; (142c <SystemInit+0x164>)
+    130c:	4948      	ldr	r1, [pc, #288]	; (1430 <SystemInit+0x168>)
+    130e:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:149
+  SIM->SOPT1 = ((SIM->SOPT1) & (uint32_t)(~(SIM_SOPT1_OSC32KSEL_MASK))) | ((SYSTEM_SIM_SOPT1_VALUE) & (SIM_SOPT1_OSC32KSEL_MASK)); /* Set 32 kHz clock source (ERCLK32K) */
+    1310:	4b42      	ldr	r3, [pc, #264]	; (141c <SystemInit+0x154>)
+    1312:	4a42      	ldr	r2, [pc, #264]	; (141c <SystemInit+0x154>)
+    1314:	6812      	ldr	r2, [r2, #0]
+    1316:	21c0      	movs	r1, #192	; 0xc0
+    1318:	0309      	lsls	r1, r1, #12
+    131a:	430a      	orrs	r2, r1
+    131c:	601a      	str	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:150
+  SIM->SOPT2 = ((SIM->SOPT2) & (uint32_t)(~(SIM_SOPT2_PLLFLLSEL_MASK))) | ((SYSTEM_SIM_SOPT2_VALUE) & (SIM_SOPT2_PLLFLLSEL_MASK)); /* Selects the high frequency clock for various peripheral clocking options. */
+    131e:	4a3f      	ldr	r2, [pc, #252]	; (141c <SystemInit+0x154>)
+    1320:	493e      	ldr	r1, [pc, #248]	; (141c <SystemInit+0x154>)
+    1322:	4b44      	ldr	r3, [pc, #272]	; (1434 <SystemInit+0x16c>)
+    1324:	58cb      	ldr	r3, [r1, r3]
+    1326:	2180      	movs	r1, #128	; 0x80
+    1328:	0249      	lsls	r1, r1, #9
+    132a:	4319      	orrs	r1, r3
+    132c:	4b41      	ldr	r3, [pc, #260]	; (1434 <SystemInit+0x16c>)
+    132e:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:151
+  SIM->SOPT2 = ((SIM->SOPT2) & (uint32_t)(~(SIM_SOPT2_TPMSRC_MASK))) | ((SYSTEM_SIM_SOPT2_VALUE) & (SIM_SOPT2_TPMSRC_MASK)); /* Selects the clock source for the TPM counter clock. */
+    1330:	4a3a      	ldr	r2, [pc, #232]	; (141c <SystemInit+0x154>)
+    1332:	493a      	ldr	r1, [pc, #232]	; (141c <SystemInit+0x154>)
+    1334:	4b3f      	ldr	r3, [pc, #252]	; (1434 <SystemInit+0x16c>)
+    1336:	58c9      	ldr	r1, [r1, r3]
+    1338:	4b3f      	ldr	r3, [pc, #252]	; (1438 <SystemInit+0x170>)
+    133a:	400b      	ands	r3, r1
+    133c:	2180      	movs	r1, #128	; 0x80
+    133e:	0449      	lsls	r1, r1, #17
+    1340:	4319      	orrs	r1, r3
+    1342:	4b3c      	ldr	r3, [pc, #240]	; (1434 <SystemInit+0x16c>)
+    1344:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:185
+  #endif
+
+#else /* MCG_MODE */
+  /* Set MCG and OSC */
+  /* SIM_SCGC5: PORTA=1 */
+  SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
+    1346:	4a35      	ldr	r2, [pc, #212]	; (141c <SystemInit+0x154>)
+    1348:	4934      	ldr	r1, [pc, #208]	; (141c <SystemInit+0x154>)
+    134a:	4b3c      	ldr	r3, [pc, #240]	; (143c <SystemInit+0x174>)
+    134c:	58cb      	ldr	r3, [r1, r3]
+    134e:	2180      	movs	r1, #128	; 0x80
+    1350:	0089      	lsls	r1, r1, #2
+    1352:	4319      	orrs	r1, r3
+    1354:	4b39      	ldr	r3, [pc, #228]	; (143c <SystemInit+0x174>)
+    1356:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:187
+  /* PORTA_PCR18: ISF=0,MUX=0 */
+  PORTA_PCR18 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
+    1358:	4b39      	ldr	r3, [pc, #228]	; (1440 <SystemInit+0x178>)
+    135a:	4a39      	ldr	r2, [pc, #228]	; (1440 <SystemInit+0x178>)
+    135c:	6c91      	ldr	r1, [r2, #72]	; 0x48
+    135e:	4a39      	ldr	r2, [pc, #228]	; (1444 <SystemInit+0x17c>)
+    1360:	400a      	ands	r2, r1
+    1362:	649a      	str	r2, [r3, #72]	; 0x48
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:190
+  if (((SYSTEM_MCG_C2_VALUE) & MCG_C2_EREFS0_MASK) != 0x00U) {
+  /* PORTA_PCR19: ISF=0,MUX=0 */
+  PORTA_PCR19 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
+    1364:	4b36      	ldr	r3, [pc, #216]	; (1440 <SystemInit+0x178>)
+    1366:	4a36      	ldr	r2, [pc, #216]	; (1440 <SystemInit+0x178>)
+    1368:	6cd1      	ldr	r1, [r2, #76]	; 0x4c
+    136a:	4a36      	ldr	r2, [pc, #216]	; (1444 <SystemInit+0x17c>)
+    136c:	400a      	ands	r2, r1
+    136e:	64da      	str	r2, [r3, #76]	; 0x4c
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:192
+  }
+  MCG->SC = SYSTEM_MCG_SC_VALUE;       /* Set SC (fast clock internal reference divider) */
+    1370:	4b35      	ldr	r3, [pc, #212]	; (1448 <SystemInit+0x180>)
+    1372:	2200      	movs	r2, #0
+    1374:	721a      	strb	r2, [r3, #8]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:193
+  MCG->C2 = (SYSTEM_MCG_C2_VALUE) & (uint8_t)(~(MCG_C2_LP_MASK)); /* Set C2 (freq. range, ext. and int. reference selection etc.; low power bit is set later) */
+    1376:	4b34      	ldr	r3, [pc, #208]	; (1448 <SystemInit+0x180>)
+    1378:	2224      	movs	r2, #36	; 0x24
+    137a:	705a      	strb	r2, [r3, #1]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:194
+  OSC0->CR = SYSTEM_OSC0_CR_VALUE;     /* Set OSC_CR (OSCERCLK enable, oscillator capacitor load) */
+    137c:	4b33      	ldr	r3, [pc, #204]	; (144c <SystemInit+0x184>)
+    137e:	2280      	movs	r2, #128	; 0x80
+    1380:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:196
+  #if (MCG_MODE == MCG_MODE_PEE)
+  MCG->C1 = (SYSTEM_MCG_C1_VALUE) | MCG_C1_CLKS(0x02); /* Set C1 (clock source selection, FLL ext. reference divider, int. reference enable etc.) - PBE mode*/
+    1382:	4b31      	ldr	r3, [pc, #196]	; (1448 <SystemInit+0x180>)
+    1384:	229a      	movs	r2, #154	; 0x9a
+    1386:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:201
+  #else
+  MCG->C1 = SYSTEM_MCG_C1_VALUE;       /* Set C1 (clock source selection, FLL ext. reference divider, int. reference enable etc.) */
+  #endif
+  if (((SYSTEM_MCG_C2_VALUE) & MCG_C2_EREFS0_MASK) != 0x00U) {
+    while((MCG->S & MCG_S_OSCINIT0_MASK) == 0x00U) { /* Check that the oscillator is running */
+    1388:	46c0      	nop			; (mov r8, r8)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:201 (discriminator 1)
+    138a:	4b2f      	ldr	r3, [pc, #188]	; (1448 <SystemInit+0x180>)
+    138c:	799b      	ldrb	r3, [r3, #6]
+    138e:	b2db      	uxtb	r3, r3
+    1390:	1c1a      	adds	r2, r3, #0
+    1392:	2302      	movs	r3, #2
+    1394:	4013      	ands	r3, r2
+    1396:	d0f8      	beq.n	138a <SystemInit+0xc2>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:209
+  /* Check that the source of the FLL reference clock is the requested one. */
+  if (((SYSTEM_MCG_C1_VALUE) & MCG_C1_IREFS_MASK) != 0x00U) {
+    while((MCG->S & MCG_S_IREFST_MASK) == 0x00U) {
+    }
+  } else {
+    while((MCG->S & MCG_S_IREFST_MASK) != 0x00U) {
+    1398:	46c0      	nop			; (mov r8, r8)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:209 (discriminator 1)
+    139a:	4b2b      	ldr	r3, [pc, #172]	; (1448 <SystemInit+0x180>)
+    139c:	799b      	ldrb	r3, [r3, #6]
+    139e:	b2db      	uxtb	r3, r3
+    13a0:	1c1a      	adds	r2, r3, #0
+    13a2:	2310      	movs	r3, #16
+    13a4:	4013      	ands	r3, r2
+    13a6:	d1f8      	bne.n	139a <SystemInit+0xd2>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:212
+    }
+  }
+  MCG->C4 = ((SYSTEM_MCG_C4_VALUE)  & (uint8_t)(~(MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK))) | (MCG->C4 & (MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK)); /* Set C4 (FLL output; trim values not changed) */
+    13a8:	4b27      	ldr	r3, [pc, #156]	; (1448 <SystemInit+0x180>)
+    13aa:	4a27      	ldr	r2, [pc, #156]	; (1448 <SystemInit+0x180>)
+    13ac:	78d2      	ldrb	r2, [r2, #3]
+    13ae:	b2d1      	uxtb	r1, r2
+    13b0:	221f      	movs	r2, #31
+    13b2:	400a      	ands	r2, r1
+    13b4:	b2d2      	uxtb	r2, r2
+    13b6:	70da      	strb	r2, [r3, #3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:218
+#endif /* MCG_MODE */
+
+  /* Common for all MCG modes */
+
+  /* PLL clock can be used to generate clock for some devices regardless of clock generator (MCGOUTCLK) mode. */
+  MCG->C5 = (SYSTEM_MCG_C5_VALUE) & (uint8_t)(~(MCG_C5_PLLCLKEN0_MASK)); /* Set C5 (PLL settings, PLL reference divider etc.) */
+    13b8:	4b23      	ldr	r3, [pc, #140]	; (1448 <SystemInit+0x180>)
+    13ba:	2201      	movs	r2, #1
+    13bc:	711a      	strb	r2, [r3, #4]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:219
+  MCG->C6 = (SYSTEM_MCG_C6_VALUE) & (uint8_t)~(MCG_C6_PLLS_MASK); /* Set C6 (PLL select, VCO divider etc.) */
+    13be:	4b22      	ldr	r3, [pc, #136]	; (1448 <SystemInit+0x180>)
+    13c0:	2200      	movs	r2, #0
+    13c2:	715a      	strb	r2, [r3, #5]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:228
+  /* BLPE, PEE and PBE MCG mode specific */
+
+#if (MCG_MODE == MCG_MODE_BLPE)
+  MCG->C2 |= (MCG_C2_LP_MASK);         /* Disable FLL and PLL in bypass mode */
+#elif ((MCG_MODE == MCG_MODE_PBE) || (MCG_MODE == MCG_MODE_PEE))
+  MCG->C6 |= (MCG_C6_PLLS_MASK);       /* Set C6 (PLL select, VCO divider etc.) */
+    13c4:	4b20      	ldr	r3, [pc, #128]	; (1448 <SystemInit+0x180>)
+    13c6:	4a20      	ldr	r2, [pc, #128]	; (1448 <SystemInit+0x180>)
+    13c8:	7952      	ldrb	r2, [r2, #5]
+    13ca:	b2d2      	uxtb	r2, r2
+    13cc:	2140      	movs	r1, #64	; 0x40
+    13ce:	430a      	orrs	r2, r1
+    13d0:	b2d2      	uxtb	r2, r2
+    13d2:	715a      	strb	r2, [r3, #5]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:229
+  while((MCG->S & MCG_S_LOCK0_MASK) == 0x00U) { /* Wait until PLL is locked*/
+    13d4:	46c0      	nop			; (mov r8, r8)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:229 (discriminator 1)
+    13d6:	4b1c      	ldr	r3, [pc, #112]	; (1448 <SystemInit+0x180>)
+    13d8:	799b      	ldrb	r3, [r3, #6]
+    13da:	b2db      	uxtb	r3, r3
+    13dc:	1c1a      	adds	r2, r3, #0
+    13de:	2340      	movs	r3, #64	; 0x40
+    13e0:	4013      	ands	r3, r2
+    13e2:	d0f8      	beq.n	13d6 <SystemInit+0x10e>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:232
+  }
+  #if (MCG_MODE == MCG_MODE_PEE)
+  MCG->C1 &= (uint8_t)~(MCG_C1_CLKS_MASK);
+    13e4:	4b18      	ldr	r3, [pc, #96]	; (1448 <SystemInit+0x180>)
+    13e6:	4a18      	ldr	r2, [pc, #96]	; (1448 <SystemInit+0x180>)
+    13e8:	7812      	ldrb	r2, [r2, #0]
+    13ea:	b2d1      	uxtb	r1, r2
+    13ec:	223f      	movs	r2, #63	; 0x3f
+    13ee:	400a      	ands	r2, r1
+    13f0:	b2d2      	uxtb	r2, r2
+    13f2:	701a      	strb	r2, [r3, #0]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:255
+  }
+#elif ((MCG_MODE == MCG_MODE_FBE) || (MCG_MODE == MCG_MODE_PBE) || (MCG_MODE == MCG_MODE_BLPE))
+  while((MCG->S & MCG_S_CLKST_MASK) != 0x08U) { /* Wait until external reference clock is selected as MCG output */
+  }
+#elif (MCG_MODE == MCG_MODE_PEE)
+  while((MCG->S & MCG_S_CLKST_MASK) != 0x0CU) { /* Wait until output of the PLL is selected */
+    13f4:	46c0      	nop			; (mov r8, r8)
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:255 (discriminator 1)
+    13f6:	4b14      	ldr	r3, [pc, #80]	; (1448 <SystemInit+0x180>)
+    13f8:	799b      	ldrb	r3, [r3, #6]
+    13fa:	b2db      	uxtb	r3, r3
+    13fc:	1c1a      	adds	r2, r3, #0
+    13fe:	230c      	movs	r3, #12
+    1400:	4013      	ands	r3, r2
+    1402:	2b0c      	cmp	r3, #12
+    1404:	d1f7      	bne.n	13f6 <SystemInit+0x12e>
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:271
+    NVIC_EnableIRQ(MCG_IRQn);          /* Enable PLL loss of lock interrupt request */
+  }
+#endif
+
+    //初始化后，开始PORT模块时钟
+    SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK
+    1406:	4a05      	ldr	r2, [pc, #20]	; (141c <SystemInit+0x154>)
+    1408:	4904      	ldr	r1, [pc, #16]	; (141c <SystemInit+0x154>)
+    140a:	4b0c      	ldr	r3, [pc, #48]	; (143c <SystemInit+0x174>)
+    140c:	58cb      	ldr	r3, [r1, r3]
+    140e:	21f8      	movs	r1, #248	; 0xf8
+    1410:	0189      	lsls	r1, r1, #6
+    1412:	4319      	orrs	r1, r3
+    1414:	4b09      	ldr	r3, [pc, #36]	; (143c <SystemInit+0x174>)
+    1416:	50d1      	str	r1, [r2, r3]
+C:\Users\XZH\Desktop\KL25_SPI_1-6\Debug/../03_MCU/system_MKL25Z4.c:276
+  			  | SIM_SCGC5_PORTB_MASK
+  			  | SIM_SCGC5_PORTC_MASK
+  			  | SIM_SCGC5_PORTD_MASK
+  			  | SIM_SCGC5_PORTE_MASK;
+}
+    1418:	46bd      	mov	sp, r7
+    141a:	bd80      	pop	{r7, pc}
+    141c:	40047000 	.word	0x40047000
+    1420:	4007f000 	.word	0x4007f000
+    1424:	4007d000 	.word	0x4007d000
+    1428:	4007e000 	.word	0x4007e000
+    142c:	00001044 	.word	0x00001044
+    1430:	10010000 	.word	0x10010000
+    1434:	00001004 	.word	0x00001004
+    1438:	fcffffff 	.word	0xfcffffff
+    143c:	00001038 	.word	0x00001038
+    1440:	40049000 	.word	0x40049000
+    1444:	fefff8ff 	.word	0xfefff8ff
+    1448:	40064000 	.word	0x40064000
+    144c:	40065000 	.word	0x40065000
+$d():
+    1450:	73696854 	.word	0x73696854
+    1454:	20736920 	.word	0x20736920
+    1458:	50532061 	.word	0x50532061
+    145c:	65542049 	.word	0x65542049
+    1460:	0d217473 	.word	0x0d217473
+    1464:	0000000a 	.word	0x0000000a
+
+00001468 <UART_ARR>:
+    1468:	4006b000 4006c000                       ...@...@
+
+00001470 <PORT_ARR>:
+    1470:	40049000 4004a000 4004b000 4004c000     ...@...@...@...@
+    1480:	4004d000                                ...@
+
+00001484 <GPIO_ARR>:
+    1484:	400ff000 400ff040 400ff080 400ff0c0     ...@@..@...@...@
+    1494:	400ff100                                ...@
